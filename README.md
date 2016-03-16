@@ -1,2 +1,2 @@
-# portfolio
-Source code for http://bassi.li/
+# [Portfolio](http://bassi.li)
+Source code for my portfolio.
