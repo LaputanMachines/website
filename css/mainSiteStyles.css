@@ -11,6 +11,9 @@ go write your own. ( ͡° ͜ʖ ͡°)
 * {
   /*Normalize*/
   margin: 0;
+  /*Typography*/
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
 }
 
 /*Force Scrollbar; Just for me)*/
@@ -489,7 +492,7 @@ a:focus::after {
       color: #090F0F;
       text-align: center;
       font-size: 1.85em;
-      font-weight: 300;
+      font-weight: normal;
     }
     .about > h3 {
       /*Vertical Spacing*/
@@ -636,8 +639,8 @@ a:focus::after {
     width: 100%;
     height: auto;
     /*Vertical Spacing*/
-    padding-top: 1.5%;
-    padding-bottom: 1.5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
     /*Background*/
     background-image: url(../assets/stardust.jpg);
   	background-position: 0px 0px;
