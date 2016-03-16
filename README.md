@@ -10,6 +10,11 @@ Well, some of it anyway. Using my fingers and a stable caffeine drip, a web-base
 
 To reiterate: I am a freelance Web Developer based out of Vancouver, BC.
 
+#### Looking to Get in Touch?
+Everyone deserves a good looking website; whether you run a small business or make keychains to sell on Etsy, your website is your online business card. For whatever reason, you need a good looking website to make your mark! Our lives are located online so why not set up shop?
+
+[LinkedIn](https://www.linkedin.com/in/michaelbassili) • [GitHub](https://github.com/mikajis)
+
 ---
 
 © 2015-16 Michael Bassili
