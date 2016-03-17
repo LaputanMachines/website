@@ -466,7 +466,8 @@ a:focus::after {
       font-size: 2.5em;
       font-weight: 300;
     }
-    .about > h2 {
+    .about > h2,
+    .contact > h2  {
       /*Vertical Spacing*/
       padding-top: 0%;
       padding-bottom: 1%;
@@ -479,20 +480,6 @@ a:focus::after {
       text-align: center;
       font-size: 1.85em;
       font-weight: 300;
-    }
-    .contact > h2 {
-      /*Vertical Spacing*/
-      padding-top: 0%;
-      padding-bottom: 0%;
-      /*Horizontal Spacing*/
-      padding-left: 25%;
-      padding-right: 25%;
-      /*Typography*/
-      font-family: 'Open Sans', sans-serif;
-      color: #090F0F;
-      text-align: center;
-      font-size: 1.85em;
-      font-weight: normal;
     }
     .about > h3 {
       /*Vertical Spacing*/
