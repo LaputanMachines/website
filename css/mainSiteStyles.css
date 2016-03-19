@@ -348,9 +348,10 @@ a:focus::after {
     padding-bottom: 12%;
     /*Background*/
     background-image: url(../assets/stardust.jpg);
-  	background-position: 0px 0px;
+  	background-position: center bottom;
   	background-repeat: repeat;
     background-attachment: fixed;
+    background-size: 40%;
     /*Box Shadow*/
     -webkit-box-shadow: 0px -.2em .2em 0px rgba(0,0,0,0.6);
     -moz-box-shadow: 0px -.2em .2em 0px rgba(0,0,0,0.6);
@@ -362,7 +363,7 @@ a:focus::after {
     	from { background-position: 0 0; }
     	to { background-position: 100% 0; }
     }
-    .welcomeBar > h1 {
+    .welcomeBar h1 {
       /*Vertical Spacing*/
       padding-top: 10%;
       padding-bottom: 0%;
@@ -377,7 +378,7 @@ a:focus::after {
       font-size: 5.05em;
       font-weight: 300;
     }
-    .welcomeBar > h2 {
+    .welcomeBar h2 {
       /*Vertical Spacing*/
       padding-top: 0%;
       padding-bottom: 0%;
@@ -619,6 +620,14 @@ a:focus::after {
     /*text-indent: 2%;*/
     line-height: 135%;
   }
+  .portfolio h2 img {
+    /*Image Positioning*/
+    float: right;
+    vertical-align: top;
+    /*Sizing*/
+    max-width: 60px;
+    max-height: none;
+  }
 
   /*Desktop Footer*/
   .footer {
@@ -626,19 +635,8 @@ a:focus::after {
     width: 100%;
     height: auto;
     /*Vertical Spacing*/
-    padding-top: 2%;
-    padding-bottom: 2%;
-    /*Background*/
-    background-image: url(../assets/stardust.jpg);
-  	background-position: 0px 0px;
-  	background-repeat: repeat;
-    background-attachment: fixed;
-    /*Box Shadow*/
-    -webkit-box-shadow: 0px .2em .2em 0px rgba(0,0,0,0.6);
-    -moz-box-shadow: 0px .2em .2em 0px rgba(0,0,0,0.6);
-    box-shadow: 0px .2em .2em 0px rgba(0,0,0,0.6);
-    /*Animation*/
-  	animation: animatedBackground 50s linear infinite;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
   }
     .footer  h1 {
       /*Horizontal Spacing*/
@@ -646,7 +644,7 @@ a:focus::after {
       padding-right: 7%;
       /*Typography*/
       font-family: 'Open Sans', sans-serif;
-      color: white;
+      color: black;
       text-align: center;
       font-size: 1em;
       font-weight: 300;
@@ -657,7 +655,7 @@ a:focus::after {
       padding-right: 20%;
       /*Typography*/
       font-family: 'Open Sans', sans-serif;
-      color: white;
+      color: black;
       text-align: center;
       font-size: .95em;
       font-weight: 300;
