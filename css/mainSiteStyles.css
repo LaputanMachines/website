@@ -358,11 +358,11 @@ a:focus::after {
     height: 100%;
     padding-bottom: 12%;
     /*Background*/
-    background-image: url(../assets/work.jpg);
+    background-image: url(../assets/stardust.jpg);
   	background-position: center bottom;
   	background-repeat: repeat;
     background-attachment: fixed;
-    background-size: cover;
+    background-size: 40%;
     background-color: black;
     opacity: .98;
     background-blend-mode: normal;
@@ -371,7 +371,7 @@ a:focus::after {
     -moz-box-shadow: 0px -.2em .5em 0px rgba(0,0,0,0.6);
     box-shadow: 0px -.2em .5em 0px rgba(0,0,0,0.6);
     /*Animation*/
-  	/*animation: animatedBackground 50s linear infinite;*/
+  	animation: animatedBackground 50s linear infinite;
   }
     @keyframes animatedBackground {
     	from { background-position: 0 0; }
