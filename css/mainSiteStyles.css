@@ -26,6 +26,17 @@ body {
   overflow-x: hidden;
 }
 
+/*Scrollbar transparency*/
+.scrollable-content::-webkit-scrollbar * {
+    background:transparent;
+}
+
+/*Scrolling Settings*/
+.scrollable-content {
+      overflow-x:hidden;
+      overflow-y:scroll;
+    }
+
 /*Sexy-Ass Faded Line*/
 .fadedLine {
     /*margin-top: 0%;*/
@@ -100,7 +111,7 @@ a:focus::after {
       padding-left: 10%;
       padding-right: 10%;
     }
-    #mobilePicture > h1 {
+    #mobilePicture h1 {
       /*Vertical Spacing*/
       padding-top: 1%;
       padding-bottom: 2%;
@@ -108,7 +119,7 @@ a:focus::after {
       padding-left: 10%;
       padding-right: 10%;
       /*Typography*/
-      font-family: 'Open Sans', sans-serif;
+      font-family: 'Lato', sans-serif;
       color: Black;
       text-align: center;
       font-size: 2em;
@@ -121,7 +132,7 @@ a:focus::after {
       width: 100%;
       height: auto;
     }
-      .about > h1 {
+      .about h1 {
         /*Vertical Spacing*/
         padding-top: 2%;
         padding-bottom: 0%;
@@ -129,13 +140,13 @@ a:focus::after {
         padding-left: 9%;
         padding-right: 9%;
         /*Typography*/
-        font-family: 'Open Sans', sans-serif;
+        font-family: 'Lato', sans-serif;
         color: Black;
         text-align: center;
         font-size: 2.5em;
         font-weight: 300;
       }
-      .about > h2 {
+      .about h2 {
         /*Vertical Spacing*/
         padding-top: 0%;
         padding-bottom: 1%;
@@ -143,13 +154,13 @@ a:focus::after {
         padding-left: 9%;
         padding-right: 9%;
         /*Typography*/
-        font-family: 'Open Sans', sans-serif;
+        font-family: 'Lato', sans-serif;
         color: #090F0F;
         text-align: center;
         font-size: 1.75em;
         font-weight: 300;
       }
-      .about > h3 {
+      .about h3 {
         /*Vertical Spacing*/
         padding-top: 0%;
         padding-bottom: 0%;
@@ -157,7 +168,7 @@ a:focus::after {
         padding-left: 9%;
         padding-right: 9%;
         /*Typography*/
-        font-family: 'Open Sans', sans-serif;
+        font-family: 'Lato', sans-serif;
         color: Black;
         text-align: left;
         font-size: 1.15em;
@@ -166,7 +177,7 @@ a:focus::after {
         /*text-indent: 2%;*/
         line-height: 135%;
       }
-      .about > h4 {
+      .about h4 {
         /*Vertical Spacing*/
         padding-top: 0%;
         padding-bottom: 2%;
@@ -174,7 +185,7 @@ a:focus::after {
         padding-left: 9%;
         padding-right: 9%;
         /*Typography*/
-        font-family: 'Open Sans', sans-serif;
+        font-family: 'Lato', sans-serif;
         color: Black;
         text-align: left;
         font-size: 1.15em;
@@ -198,7 +209,7 @@ a:focus::after {
         padding-left: 7%;
         padding-right: 7%;
         /*Typography*/
-        font-family: 'Open Sans', sans-serif;
+        font-family: 'Lato', sans-serif;
         color: Black;
         text-align: center;
         font-size: 1em;
@@ -209,7 +220,7 @@ a:focus::after {
         padding-left: 20%;
         padding-right: 20%;
         /*Typography*/
-        font-family: 'Open Sans', sans-serif;
+        font-family: 'Lato', sans-serif;
         color: #090F0F;
         text-align: center;
         font-size: .9em;
@@ -238,7 +249,7 @@ a:focus::after {
       	from { background-position: 0 0; }
       	to { background-position: 100% 0; }
       }
-      .welcomeBar > h1 {
+      .welcomeBar h1 {
         /*Vertical Spacing*/
         padding-top: 9%;
         padding-bottom: 0%;
@@ -253,7 +264,7 @@ a:focus::after {
         font-size: 4.65em;
         font-weight: 300;
       }
-      .welcomeBar > h2 {
+      .welcomeBar h2 {
         /*Vertical Spacing*/
         padding-top: 0%;
         padding-bottom: 0%;
@@ -261,14 +272,14 @@ a:focus::after {
         padding-left: 7%;
         padding-right: 7%;
         /*Typography*/
-        font-family: 'Open Sans', sans-serif;
+        font-family: 'Lato', sans-serif;
         color: white; /*color: #090F0F;*/
         text-align: center;
         font-size: 2em;
         font-weight: 300;
       }
-    .welcomeBar > .selections,
-    .welcomeBar > h2 {
+    .welcomeBar .selections,
+    .welcomeBar h2 {
       /*Vertically Lists Elements*/
       display: none;
       visibility: hidden;
@@ -296,7 +307,7 @@ a:focus::after {
       height: 100%;
       padding-bottom: 5%;
     }
-    .mobile > h1 {
+    .mobile h1 {
       /*Vertical Spacing*/
       padding-top: 5%;
       padding-bottom: 0%;
@@ -305,13 +316,13 @@ a:focus::after {
       padding-left: 7%;
       padding-right: 7%;
       /*Typography*/
-      font-family: 'Open Sans', sans-serif;
+      font-family: 'Lato', sans-serif;
       color: black;
       text-align: center;
       font-size: 2em;
       font-weight: 300;
     }
-    .mobile > h2 {
+    .mobile h2 {
       /*Vertical Spacing*/
       padding-top: 1%;
       padding-bottom: 0%;
@@ -319,7 +330,7 @@ a:focus::after {
       padding-left: 7%;
       padding-right: 7%;
       /*Typography*/
-      font-family: 'Open Sans', sans-serif;
+      font-family: 'Lato', sans-serif;
       color: #444349; /*color: #090F0F;*/
       text-align: center;
       font-size: 1.75em;
@@ -347,17 +358,20 @@ a:focus::after {
     height: 100%;
     padding-bottom: 12%;
     /*Background*/
-    background-image: url(../assets/stardust.jpg);
+    background-image: url(../assets/work.jpg);
   	background-position: center bottom;
   	background-repeat: repeat;
     background-attachment: fixed;
-    background-size: 40%;
+    background-size: cover;
+    background-color: black;
+    opacity: .98;
+    background-blend-mode: normal;
     /*Box Shadow*/
-    -webkit-box-shadow: 0px -.2em .2em 0px rgba(0,0,0,0.6);
-    -moz-box-shadow: 0px -.2em .2em 0px rgba(0,0,0,0.6);
-    box-shadow: 0px -.2em .2em 0px rgba(0,0,0,0.6);
+    -webkit-box-shadow: 0px -.2em .5em 0px rgba(0,0,0,0.6);
+    -moz-box-shadow: 0px -.2em .5em 0px rgba(0,0,0,0.6);
+    box-shadow: 0px -.2em .5em 0px rgba(0,0,0,0.6);
     /*Animation*/
-  	animation: animatedBackground 50s linear infinite;
+  	/*animation: animatedBackground 50s linear infinite;*/
   }
     @keyframes animatedBackground {
     	from { background-position: 0 0; }
@@ -386,7 +400,7 @@ a:focus::after {
       padding-left: 7%;
       padding-right: 7%;
       /*Typography*/
-      font-family: 'Open Sans', sans-serif;
+      font-family: 'Lato', sans-serif;
       color: white; /*color: #090F0F;*/
       text-align: center;
       font-size: 2em;
@@ -402,7 +416,7 @@ a:focus::after {
       /*Background*/
       background-color: white;
     }
-      .welcomeBarPort > h1 {
+      .welcomeBarPort h1 {
         /*Vertical Spacing*/
         padding-top: 1%;
         padding-bottom: 0%;
@@ -417,7 +431,7 @@ a:focus::after {
         font-size: 4.25em;
         font-weight: 300;
       }
-      .welcomeBarPort > h2 {
+      .welcomeBarPort h2 {
         /*Vertical Spacing*/
         padding-top: 0%;
         padding-bottom: 0%;
@@ -425,7 +439,7 @@ a:focus::after {
         padding-left: 7%;
         padding-right: 7%;
         /*Typography*/
-        font-family: 'Open Sans', sans-serif;
+        font-family: 'Lato', sans-serif;
         color: black; /*color: #090F0F;*/
         text-align: center;
         font-size: 2em;
@@ -452,45 +466,53 @@ a:focus::after {
     padding-top: 1%;
     padding-bottom: 1%;
   }
-    .about > h1,
-    .contact > h1 {
+    .about h1,
+    .contact h1 {
       /*Vertical Spacing*/
       padding-top: 0%;
       padding-bottom: 0%;
       /*Horizontal Spacing*/
-      padding-left: 25%;
-      padding-right: 25%;
+      padding-left: 20%;
+      padding-right: 20%;
       /*Typography*/
-      font-family: 'Open Sans', sans-serif;
+      font-family: 'Lato', sans-serif;
       color: Black;
       text-align: center;
       font-size: 2.5em;
       font-weight: 300;
     }
-    .about > h2,
-    .contact > h2  {
+    .about h2,
+    .contact h2  {
       /*Vertical Spacing*/
       padding-top: 0%;
       padding-bottom: 1%;
       /*Horizontal Spacing*/
-      padding-left: 25%;
-      padding-right: 25%;
+      padding-left: 20%;
+      padding-right: 20%;
       /*Typography*/
-      font-family: 'Open Sans', sans-serif;
-      color: #090F0F;
+      font-family: 'Lato', sans-serif;
+      color: black;
       text-align: center;
       font-size: 1.85em;
       font-weight: 300;
     }
-    .about > h3 {
+      .contact h2 a {
+        /*Typography*/
+        font-family: 'Lato', sans-serif;
+        text-align: center;
+        font-size: 1em;
+        font-weight: 200;
+        color: #0e1717;
+      }
+    .about h3 {
       /*Vertical Spacing*/
       padding-top: 0%;
       padding-bottom: 0%;
       /*Horizontal Spacing*/
-      padding-left: 25%;
-      padding-right: 25%;
+      padding-left: 20%;
+      padding-right: 20%;
       /*Typography*/
-      font-family: 'Open Sans', sans-serif;
+      font-family: 'Lato', sans-serif;
       color: Black;
       text-align: left;
       font-size: 1.25em;
@@ -499,15 +521,15 @@ a:focus::after {
       /*text-indent: 2%;*/
       line-height: 135%;
     }
-    .contact > h3 {
+    .contact h3 {
       /*Vertical Spacing*/
       padding-top: 0%;
       padding-bottom: 1%;
       /*Horizontal Spacing*/
-      padding-left: 25%;
-      padding-right: 25%;
+      padding-left: 20%;
+      padding-right: 20%;
       /*Typography*/
-      font-family: 'Open Sans', sans-serif;
+      font-family: 'Lato', sans-serif;
       color: Black;
       text-align: left;
       font-size: 1.25em;
@@ -516,15 +538,15 @@ a:focus::after {
       /*text-indent: 2%;*/
       line-height: 135%;
     }
-    .about > h4 {
+    .about h4 {
       /*Vertical Spacing*/
       padding-top: 0%;
       padding-bottom: .5%;
       /*Horizontal Spacing*/
-      padding-left: 25%;
-      padding-right: 25%;
+      padding-left: 20%;
+      padding-right: 20%;
       /*Typography*/
-      font-family: 'Open Sans', sans-serif;
+      font-family: 'Lato', sans-serif;
       color: Black;
       text-align: left;
       font-size: 1.25em;
@@ -545,7 +567,7 @@ a:focus::after {
     margin-right: auto;
     /*Vertical Spacing*/
     padding-top: 1%;
-    padding-bottom: 1%;
+    padding-bottom: .25%;
   }
   .portfolio .portfolioItem {
     /*Sizing*/
@@ -557,6 +579,8 @@ a:focus::after {
     /*Horizontal Spacing*/
     padding-left: 25%;
     padding-right: 25%;
+    /*Vertical Spacing*/
+    padding-bottom: 1%;
   }
   .portfolio h1 {
     /*Vertical Spacing*/
@@ -566,7 +590,7 @@ a:focus::after {
     padding-left: 25%;
     padding-right: 25%;
     /*Typography*/
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Lato', sans-serif;
     color: Black;
     text-align: center;
     font-size: 2.5em;
@@ -580,7 +604,7 @@ a:focus::after {
     /*padding-left: 25%;
     padding-right: 25%;*/
     /*Typography*/
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Lato', sans-serif;
     color: #090F0F;
     text-align: left;
     font-size: 1.1em;
@@ -594,7 +618,7 @@ a:focus::after {
     /*padding-left: 25%;
     padding-right: 25%;*/
     /*Typography*/
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Lato', sans-serif;
     color: Black;
     text-align: left;
     font-size: .95em;
@@ -611,7 +635,7 @@ a:focus::after {
     /*padding-left: 25%;
     padding-right: 25%;*/
     /*Typography*/
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Lato', sans-serif;
     color: Black;
     text-align: left;
     font-size: 1.15em;
@@ -628,6 +652,13 @@ a:focus::after {
     max-width: 60px;
     max-height: none;
   }
+  .portfolio a {
+    /*Typography*/
+    font-family: 'Lato', sans-serif;
+    color: Black;
+    text-align: center;
+    font-weight: 300;
+  }
 
   /*Desktop Footer*/
   .footer {
@@ -643,7 +674,7 @@ a:focus::after {
       padding-left: 7%;
       padding-right: 7%;
       /*Typography*/
-      font-family: 'Open Sans', sans-serif;
+      font-family: 'Lato', sans-serif;
       color: black;
       text-align: center;
       font-size: 1em;
@@ -654,12 +685,20 @@ a:focus::after {
       padding-left: 20%;
       padding-right: 20%;
       /*Typography*/
-      font-family: 'Open Sans', sans-serif;
+      font-family: 'Lato', sans-serif;
       color: black;
       text-align: center;
       font-size: .95em;
       font-weight: 300;
     }
+      .footer a {
+        /*Typography*/
+        font-family: 'Lato', sans-serif;
+        text-align: center;
+        font-size: 1em;
+        font-weight: 300;
+        color: #0e1717;
+      }
 }
 
 
