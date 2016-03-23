@@ -11,9 +11,6 @@ go write your own. ( ͡° ͜ʖ ͡°)
 * {
   /*Normalize*/
   margin: 0;
-  /*Typography*/
-  font-weight: normal;
-  -webkit-font-smoothing: antialiased;
 }
 
 /*Force Scrollbar; Just for me)*/
@@ -119,7 +116,7 @@ a:focus::after {
       padding-left: 10%;
       padding-right: 10%;
       /*Typography*/
-      font-family: 'Lato', sans-serif;
+      font-family: 'Open Sans', sans-serif;
       color: Black;
       text-align: center;
       font-size: 2em;
@@ -140,7 +137,7 @@ a:focus::after {
         padding-left: 9%;
         padding-right: 9%;
         /*Typography*/
-        font-family: 'Lato', sans-serif;
+        font-family: 'Open Sans', sans-serif;
         color: Black;
         text-align: center;
         font-size: 2.5em;
@@ -154,7 +151,7 @@ a:focus::after {
         padding-left: 9%;
         padding-right: 9%;
         /*Typography*/
-        font-family: 'Lato', sans-serif;
+        font-family: 'Open Sans', sans-serif;
         color: #090F0F;
         text-align: center;
         font-size: 1.75em;
@@ -168,7 +165,7 @@ a:focus::after {
         padding-left: 9%;
         padding-right: 9%;
         /*Typography*/
-        font-family: 'Lato', sans-serif;
+        font-family: 'Open Sans', sans-serif;
         color: Black;
         text-align: left;
         font-size: 1.15em;
@@ -185,7 +182,7 @@ a:focus::after {
         padding-left: 9%;
         padding-right: 9%;
         /*Typography*/
-        font-family: 'Lato', sans-serif;
+        font-family: 'Open Sans', sans-serif;
         color: Black;
         text-align: left;
         font-size: 1.15em;
@@ -209,7 +206,7 @@ a:focus::after {
         padding-left: 7%;
         padding-right: 7%;
         /*Typography*/
-        font-family: 'Lato', sans-serif;
+        font-family: 'Open Sans', sans-serif;
         color: Black;
         text-align: center;
         font-size: 1em;
@@ -220,7 +217,7 @@ a:focus::after {
         padding-left: 20%;
         padding-right: 20%;
         /*Typography*/
-        font-family: 'Lato', sans-serif;
+        font-family: 'Open Sans', sans-serif;
         color: #090F0F;
         text-align: center;
         font-size: .9em;
@@ -239,9 +236,9 @@ a:focus::after {
     	background-repeat: repeat;
       background-attachment: fixed;
       /*Box Shadow*/
-      -webkit-box-shadow: 0px .2em 1px 0px rgba(0,0,0,0.6);
+      /*-webkit-box-shadow: 0px .2em 1px 0px rgba(0,0,0,0.6);
       -moz-box-shadow: 0px .2em 1px 0px rgba(0,0,0,0.6);
-      box-shadow: 0px .2em 1px 0px rgba(0,0,0,0.6);
+      box-shadow: 0px .2em 1px 0px rgba(0,0,0,0.6);*/
       /*Animation*/
     	animation: animatedBackground 50s linear infinite;
     }
@@ -272,7 +269,7 @@ a:focus::after {
         padding-left: 7%;
         padding-right: 7%;
         /*Typography*/
-        font-family: 'Lato', sans-serif;
+        font-family: 'Open Sans', sans-serif;
         color: white; /*color: #090F0F;*/
         text-align: center;
         font-size: 2em;
@@ -316,7 +313,7 @@ a:focus::after {
       padding-left: 7%;
       padding-right: 7%;
       /*Typography*/
-      font-family: 'Lato', sans-serif;
+      font-family: 'Open Sans', sans-serif;
       color: black;
       text-align: center;
       font-size: 2em;
@@ -330,7 +327,7 @@ a:focus::after {
       padding-left: 7%;
       padding-right: 7%;
       /*Typography*/
-      font-family: 'Lato', sans-serif;
+      font-family: 'Open Sans', sans-serif;
       color: #444349; /*color: #090F0F;*/
       text-align: center;
       font-size: 1.75em;
@@ -367,9 +364,9 @@ a:focus::after {
     opacity: .98;
     background-blend-mode: normal;
     /*Box Shadow*/
-    -webkit-box-shadow: 0px -.2em .5em 0px rgba(0,0,0,0.6);
+    /*-webkit-box-shadow: 0px -.2em .5em 0px rgba(0,0,0,0.6);
     -moz-box-shadow: 0px -.2em .5em 0px rgba(0,0,0,0.6);
-    box-shadow: 0px -.2em .5em 0px rgba(0,0,0,0.6);
+    box-shadow: 0px -.2em .5em 0px rgba(0,0,0,0.6);*/
     /*Animation*/
   	animation: animatedBackground 50s linear infinite;
   }
@@ -400,11 +397,11 @@ a:focus::after {
       padding-left: 7%;
       padding-right: 7%;
       /*Typography*/
-      font-family: 'Lato', sans-serif;
+      font-family: 'Open Sans', sans-serif;
       color: white; /*color: #090F0F;*/
       text-align: center;
       font-size: 2em;
-      font-weight: 200;
+      font-weight: 100;
     }
 
     /*Desktop Welcome Portfolio*/
@@ -439,7 +436,7 @@ a:focus::after {
         padding-left: 7%;
         padding-right: 7%;
         /*Typography*/
-        font-family: 'Lato', sans-serif;
+        font-family: 'Open Sans', sans-serif;
         color: black; /*color: #090F0F;*/
         text-align: center;
         font-size: 2em;
@@ -475,11 +472,12 @@ a:focus::after {
       padding-left: 20%;
       padding-right: 20%;
       /*Typography*/
-      font-family: 'Lato', sans-serif;
+      font-family: 'Open Sans', sans-serif;
       color: Black;
       text-align: center;
       font-size: 2.5em;
-      font-weight: 300;
+      font-weight: 400;
+      /**/
     }
     .about h2,
     .contact h2  {
@@ -490,18 +488,18 @@ a:focus::after {
       padding-left: 20%;
       padding-right: 20%;
       /*Typography*/
-      font-family: 'Lato', sans-serif;
+      font-family: 'Open Sans', sans-serif;
       color: black;
       text-align: center;
       font-size: 1.85em;
-      font-weight: 300;
+      font-weight: 400;
     }
       .contact h2 a {
         /*Typography*/
-        font-family: 'Lato', sans-serif;
+        font-family: 'Open Sans', sans-serif;
         text-align: center;
         font-size: 1em;
-        font-weight: 200;
+        font-weight: 400;
         color: #0e1717;
       }
     .about h3 {
@@ -512,11 +510,11 @@ a:focus::after {
       padding-left: 20%;
       padding-right: 20%;
       /*Typography*/
-      font-family: 'Lato', sans-serif;
+      font-family: 'Open Sans', sans-serif;
       color: Black;
       text-align: left;
-      font-size: 1.25em;
-      font-weight: 200;
+      font-size: 1.2em;
+      font-weight: 400;
       text-indent: 1em;
       /*text-indent: 2%;*/
       line-height: 135%;
@@ -529,11 +527,11 @@ a:focus::after {
       padding-left: 20%;
       padding-right: 20%;
       /*Typography*/
-      font-family: 'Lato', sans-serif;
+      font-family: 'Open Sans', sans-serif;
       color: Black;
       text-align: left;
-      font-size: 1.25em;
-      font-weight: 200;
+      font-size: 1.2em;
+      font-weight: 400;
       text-indent: 1em;
       /*text-indent: 2%;*/
       line-height: 135%;
@@ -546,11 +544,11 @@ a:focus::after {
       padding-left: 20%;
       padding-right: 20%;
       /*Typography*/
-      font-family: 'Lato', sans-serif;
+      font-family: 'Open Sans', sans-serif;
       color: Black;
       text-align: left;
-      font-size: 1.25em;
-      font-weight: 200;
+      font-size: 1.2em;
+      font-weight: 400;
       text-indent: 1em;
       /*text-indent: 2%;*/
       line-height: 135%;
@@ -571,14 +569,14 @@ a:focus::after {
   }
   .portfolio .portfolioItem {
     /*Sizing*/
-    width: 50%;
+    width: 60%;
     height: auto;
     /*Spacing*/
     display: inline-block;
     position: relative;
     /*Horizontal Spacing*/
-    padding-left: 25%;
-    padding-right: 25%;
+    padding-left: 20%;
+    padding-right: 20%;
     /*Vertical Spacing*/
     padding-bottom: 1%;
   }
@@ -587,10 +585,10 @@ a:focus::after {
     padding-top: 0%;
     padding-bottom: 0%;
     /*Horizontal Spacing*/
-    padding-left: 25%;
-    padding-right: 25%;
+    padding-left: 20%;
+    padding-right: 20%;
     /*Typography*/
-    font-family: 'Lato', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     color: Black;
     text-align: center;
     font-size: 2.5em;
@@ -604,7 +602,7 @@ a:focus::after {
     /*padding-left: 25%;
     padding-right: 25%;*/
     /*Typography*/
-    font-family: 'Lato', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     color: #090F0F;
     text-align: left;
     font-size: 1.1em;
@@ -618,7 +616,7 @@ a:focus::after {
     /*padding-left: 25%;
     padding-right: 25%;*/
     /*Typography*/
-    font-family: 'Lato', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     color: Black;
     text-align: left;
     font-size: .95em;
@@ -635,7 +633,7 @@ a:focus::after {
     /*padding-left: 25%;
     padding-right: 25%;*/
     /*Typography*/
-    font-family: 'Lato', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     color: Black;
     text-align: left;
     font-size: 1.15em;
@@ -654,7 +652,7 @@ a:focus::after {
   }
   .portfolio a {
     /*Typography*/
-    font-family: 'Lato', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     color: Black;
     text-align: center;
     font-weight: 300;
@@ -674,7 +672,7 @@ a:focus::after {
       padding-left: 7%;
       padding-right: 7%;
       /*Typography*/
-      font-family: 'Lato', sans-serif;
+      font-family: 'Open Sans', sans-serif;
       color: black;
       text-align: center;
       font-size: 1em;
@@ -685,7 +683,7 @@ a:focus::after {
       padding-left: 20%;
       padding-right: 20%;
       /*Typography*/
-      font-family: 'Lato', sans-serif;
+      font-family: 'Open Sans', sans-serif;
       color: black;
       text-align: center;
       font-size: .95em;
@@ -693,7 +691,7 @@ a:focus::after {
     }
       .footer a {
         /*Typography*/
-        font-family: 'Lato', sans-serif;
+        font-family: 'Open Sans', sans-serif;
         text-align: center;
         font-size: 1em;
         font-weight: 300;
