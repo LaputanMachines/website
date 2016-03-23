@@ -384,7 +384,7 @@ a:focus::after {
       margin-left: auto;
       margin-right: auto;
       /*Sizing*/
-      width: 5vw;
+      width: 1.75em;
     }
     .welcomeBar h1 {
       /*Vertical Spacing*/
