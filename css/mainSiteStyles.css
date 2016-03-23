@@ -128,6 +128,8 @@ a:focus::after {
       /*Sizing*/
       width: 100%;
       height: auto;
+      /*Background*/
+      background-color: #ebeff2;
     }
       .about h1 {
         /*Vertical Spacing*/
@@ -141,7 +143,7 @@ a:focus::after {
         color: Black;
         text-align: center;
         font-size: 2.5em;
-        font-weight: 300;
+        font-weight: 200;
       }
       .about h2 {
         /*Vertical Spacing*/
@@ -155,7 +157,7 @@ a:focus::after {
         color: #090F0F;
         text-align: center;
         font-size: 1.75em;
-        font-weight: 300;
+        font-weight: 200;
       }
       .about h3 {
         /*Vertical Spacing*/
@@ -169,7 +171,7 @@ a:focus::after {
         color: Black;
         text-align: left;
         font-size: 1.15em;
-        font-weight: 300;
+        font-weight: 200;
         text-indent: 1em;
         /*text-indent: 2%;*/
         line-height: 135%;
@@ -186,7 +188,7 @@ a:focus::after {
         color: Black;
         text-align: left;
         font-size: 1.15em;
-        font-weight: 300;
+        font-weight: 200;
         text-indent: 1em;
         /*text-indent: 2%;*/
         line-height: 135%;
@@ -231,7 +233,8 @@ a:focus::after {
       height: 100%;
       padding-bottom: 12%;
       /*Background*/
-      background-image: url(../assets/stardust.jpg);
+      /*background-image: url(../assets/stardust.jpg);*/
+      background-color: #32425c;
     	background-position: 0px 0px;
     	background-repeat: repeat;
       background-attachment: fixed;
@@ -240,7 +243,7 @@ a:focus::after {
       -moz-box-shadow: 0px .2em 1px 0px rgba(0,0,0,0.6);
       box-shadow: 0px .2em 1px 0px rgba(0,0,0,0.6);*/
       /*Animation*/
-    	animation: animatedBackground 50s linear infinite;
+    	/*animation: animatedBackground 50s linear infinite;*/
     }
       @keyframes animatedBackground {
       	from { background-position: 0 0; }
@@ -259,7 +262,7 @@ a:focus::after {
         color: white;
         text-align: center;
         font-size: 4.65em;
-        font-weight: 300;
+        /*font-weight: 300;*/
       }
       .welcomeBar h2 {
         /*Vertical Spacing*/
@@ -270,7 +273,7 @@ a:focus::after {
         padding-right: 7%;
         /*Typography*/
         font-family: 'Open Sans', sans-serif;
-        color: white; /*color: #090F0F;*/
+        color: #607189;
         text-align: center;
         font-size: 2em;
         font-weight: 300;
@@ -355,30 +358,39 @@ a:focus::after {
     height: 100%;
     padding-bottom: 12%;
     /*Background*/
-    background-image: url(../assets/stardust.jpg);
+    /*background-image: url(../assets/stardust.jpg);*/
+    background-color: #32425c;
   	background-position: center bottom;
   	background-repeat: repeat;
     background-attachment: fixed;
     background-size: 40%;
-    background-color: black;
-    opacity: .98;
     background-blend-mode: normal;
     /*Box Shadow*/
     /*-webkit-box-shadow: 0px -.2em .5em 0px rgba(0,0,0,0.6);
     -moz-box-shadow: 0px -.2em .5em 0px rgba(0,0,0,0.6);
     box-shadow: 0px -.2em .5em 0px rgba(0,0,0,0.6);*/
     /*Animation*/
-  	animation: animatedBackground 50s linear infinite;
+  	/*animation: animatedBackground 50s linear infinite;*/
   }
     @keyframes animatedBackground {
     	from { background-position: 0 0; }
     	to { background-position: 100% 0; }
     }
+    .welcomeBar img {
+      /*Spacing*/
+      padding-top: 5%;
+      /*Display*/
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      /*Sizing*/
+      width: 5vw;
+    }
     .welcomeBar h1 {
       /*Vertical Spacing*/
-      padding-top: 10%;
+      padding-top: 0%;
       padding-bottom: 0%;
-      margin-top: 0%;
+      margin: 0;
       /*Horizontal Spacing*/
       padding-left: 7%;
       padding-right: 7%;
@@ -387,7 +399,7 @@ a:focus::after {
       color: white;
       text-align: center;
       font-size: 5.05em;
-      font-weight: 300;
+      /*font-weight: 300;*/
     }
     .welcomeBar h2 {
       /*Vertical Spacing*/
@@ -398,7 +410,7 @@ a:focus::after {
       padding-right: 7%;
       /*Typography*/
       font-family: 'Open Sans', sans-serif;
-      color: white; /*color: #090F0F;*/
+      color: #607189;
       text-align: center;
       font-size: 2em;
       font-weight: 100;
@@ -462,6 +474,8 @@ a:focus::after {
     /*Vertical Spacing*/
     padding-top: 1%;
     padding-bottom: 1%;
+    /*Background*/
+    background-color: #ebeff2;
   }
     .about h1,
     .contact h1 {
@@ -476,8 +490,7 @@ a:focus::after {
       color: Black;
       text-align: center;
       font-size: 2.5em;
-      font-weight: 400;
-      /**/
+      font-weight: 300
     }
     .about h2,
     .contact h2  {
@@ -491,15 +504,15 @@ a:focus::after {
       font-family: 'Open Sans', sans-serif;
       color: black;
       text-align: center;
-      font-size: 1.85em;
-      font-weight: 400;
+      font-size: 1.35em;
+      font-weight: 300;
     }
       .contact h2 a {
         /*Typography*/
         font-family: 'Open Sans', sans-serif;
         text-align: center;
         font-size: 1em;
-        font-weight: 400;
+        font-weight: 300;
         color: #0e1717;
       }
     .about h3 {
@@ -513,11 +526,11 @@ a:focus::after {
       font-family: 'Open Sans', sans-serif;
       color: Black;
       text-align: left;
-      font-size: 1.2em;
-      font-weight: 400;
-      text-indent: 1em;
+      font-size: 1em;
+      font-weight: 300;
+      text-indent: 1.2em;
       /*text-indent: 2%;*/
-      line-height: 135%;
+      line-height: 140%;
     }
     .contact h3 {
       /*Vertical Spacing*/
@@ -530,11 +543,11 @@ a:focus::after {
       font-family: 'Open Sans', sans-serif;
       color: Black;
       text-align: left;
-      font-size: 1.2em;
-      font-weight: 400;
-      text-indent: 1em;
+      font-size: 1em;
+      font-weight: 300;
+      text-indent: 1.2em;
       /*text-indent: 2%;*/
-      line-height: 135%;
+      line-height: 140%;
     }
     .about h4 {
       /*Vertical Spacing*/
@@ -547,11 +560,11 @@ a:focus::after {
       font-family: 'Open Sans', sans-serif;
       color: Black;
       text-align: left;
-      font-size: 1.2em;
-      font-weight: 400;
-      text-indent: 1em;
+      font-size: 1em;
+      font-weight: 300;
+      text-indent: 1.2em;
       /*text-indent: 2%;*/
-      line-height: 135%;
+      line-height: 140%;
     }
 
   /*Experience*/
@@ -666,6 +679,14 @@ a:focus::after {
     /*Vertical Spacing*/
     padding-top: 1.5%;
     padding-bottom: 1.5%;
+    /*Background*/
+    /*background-image: url(../assets/stardust.jpg);*/
+    background-color: #32425c;
+  	background-position: center bottom;
+  	background-repeat: repeat;
+    background-attachment: fixed;
+    background-size: 40%;
+    background-blend-mode: normal;
   }
     .footer  h1 {
       /*Horizontal Spacing*/
@@ -673,7 +694,7 @@ a:focus::after {
       padding-right: 7%;
       /*Typography*/
       font-family: 'Open Sans', sans-serif;
-      color: black;
+      color: white;
       text-align: center;
       font-size: 1em;
       font-weight: 300;
@@ -684,7 +705,7 @@ a:focus::after {
       padding-right: 20%;
       /*Typography*/
       font-family: 'Open Sans', sans-serif;
-      color: black;
+      color: #607189;
       text-align: center;
       font-size: .95em;
       font-weight: 300;
@@ -695,7 +716,7 @@ a:focus::after {
         text-align: center;
         font-size: 1em;
         font-weight: 300;
-        color: #0e1717;
+        color: #aab8cb;
       }
 }
 
