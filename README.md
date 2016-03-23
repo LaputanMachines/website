@@ -1,3 +1,6 @@
+[![Code Climate](https://codeclimate.com/github/Mikajis/portfolio/badges/gpa.svg)](https://codeclimate.com/github/Mikajis/portfolio) 
+[![Test Coverage](https://codeclimate.com/github/Mikajis/portfolio/badges/coverage.svg)](https://codeclimate.com/github/Mikajis/portfolio/coverage)
+[![Issue Count](https://codeclimate.com/github/Mikajis/portfolio/badges/issue_count.svg)](https://codeclimate.com/github/Mikajis/portfolio)
 # [Portfolio](http://bassi.li)
 
 Source code for my personal portfolio. Below is a brief description of who I am and what I do.
