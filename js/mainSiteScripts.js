@@ -24,6 +24,7 @@ $(document).ready(function () {
 
 });
 
+document.getElementById('#logo').ondragstart = function() { return false; };
 
 // handle ID Links Properly
 $(document).on('click', 'a[href^="#"]', function(e) {
