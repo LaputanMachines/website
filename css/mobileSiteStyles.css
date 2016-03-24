@@ -100,7 +100,7 @@ a:focus::after {
   /*Sizing*/
   width: 100%;
   height: 100%;
-  padding-bottom: 12%;
+  padding-bottom: 0%;
   /*Background*/
   /*background-image: url(../assets/stardust.jpg);*/
   background-color: #32425c;
@@ -120,15 +120,19 @@ a:focus::after {
   	from { background-position: 0 0; }
   	to { background-position: 100% 0; }
   }
-  .welcomeBar img {
+  .welcomeBar #logo {
     /*Spacing*/
-    padding-top: 5%;
+    padding-top: 2%;
     /*Display*/
     display: block;
     margin-left: auto;
     margin-right: auto;
     /*Sizing*/
     width: 1.75em;
+  }
+  .welcomeBar #workspace {
+    display: none;
+    visibility: hidden;
   }
   .welcomeBar h1 {
     /*Vertical Spacing*/
@@ -160,52 +164,13 @@ a:focus::after {
     font-weight: 100;
   }
 
-/*Mobile Welcome Portfolio*/
-.welcomeBarPort {
-  /*Sizing*/
-  width: 100%;
-  height: 100%;
-  padding-bottom: 1%;
-  /*Background*/
-  background-color: white;
-}
-  .welcomeBarPort h1 {
-    /*Vertical Spacing*/
-    padding-top: 1%;
-    padding-bottom: 0%;
-    margin-top: 0%;
-    /*Horizontal Spacing*/
-    padding-left: 7%;
-    padding-right: 7%;
-    /*Typography*/
-    font-family: 'Megrim', sans-serif;
-    color: black;
-    text-align: center;
-    font-size: 4.25em;
-    font-weight: 300;
-  }
-  .welcomeBarPort h2 {
-    /*Vertical Spacing*/
-    padding-top: 0%;
-    padding-bottom: 0%;
-    /*Horizontal Spacing*/
-    padding-left: 7%;
-    padding-right: 7%;
-    /*Typography*/
-    font-family: 'Open Sans', sans-serif;
-    color: black; /*color: #090F0F;*/
-    text-align: center;
-    font-size: 2em;
-    font-weight: 300;
-  }
-
 /*Mobile About*/
 .about {
   /*Sizing*/
   width: 100%;
   height: auto;
   /*Spacing*/
-  max-width: 2000px;
+  /*max-width: 2000px;*/
   margin-left: auto;
   margin-right: auto;
   /*Vertical Spacing*/
@@ -283,7 +248,7 @@ a:focus::after {
   width: 100%;
   height: auto;
   /*Spacing*/
-  max-width: 2000px;
+  /*max-width: 2000px;*/
   margin-left: auto;
   margin-right: auto;
   /*Vertical Spacing*/
