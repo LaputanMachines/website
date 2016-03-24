@@ -1,4 +1,4 @@
-/*--Main Site :: mainSiteStyles.css-*/
+/*--Mobile Site :: mobileSiteStyles.css-*/
 /*--
 ========================================
 So you like code huh? Well I've got alot
@@ -95,7 +95,7 @@ a:focus::after {
 	transform: translateX(0px);
 }
 
-/*Desktop Welcome*/
+/*Mobile Welcome*/
 .welcomeBar {
   /*Sizing*/
   width: 100%;
@@ -160,7 +160,7 @@ a:focus::after {
     font-weight: 100;
   }
 
-/*Desktop Welcome Portfolio*/
+/*Mobile Welcome Portfolio*/
 .welcomeBarPort {
   /*Sizing*/
   width: 100%;
@@ -199,7 +199,7 @@ a:focus::after {
     font-weight: 300;
   }
 
-/*Desktop About*/
+/*Mobile About*/
 .about {
   /*Sizing*/
   width: 100%;
@@ -277,7 +277,7 @@ a:focus::after {
     line-height: 140%;
   }
 
-/*Desktop Contact*/
+/*Mobile Contact*/
 .contact {
   /*Sizing*/
   width: 100%;
@@ -450,7 +450,7 @@ a:focus::after {
     font-weight: 300;
   }
 
-/*Desktop Footer*/
+/*Mobile Footer*/
 .footer {
   /*Sizing*/
   width: 100%;
@@ -497,39 +497,3 @@ a:focus::after {
       font-weight: 300;
       color: #aab8cb;
       }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*Stamp*/
