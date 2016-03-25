@@ -155,48 +155,105 @@ a:focus::after {
     -webkit-animation-name: rollIn;
             animation-name: rollIn;
   }
-  .welcomeBar #workspace {
-    /*Spacing*/
-    margin-top: 5%;
-    /*Display*/
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    /*Sizing*/
-    width: 25em;
+  /*Desktop .welcomeBar #workspace*/
+  @media screen and (min-width: 800px) {
+    .welcomeBar #workspace {
+      /*Spacing*/
+      margin-top: 5%;
+      /*Display*/
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      /*Sizing*/
+      width: 25em;
+    }
+  }
+  /*Mobile .welcomeBar #workspace*/
+  @media screen and (max-width: 799px) {
+    .welcomeBar #workspace {
+      /*Spacing*/
+      margin-top: 5%;
+      /*Display*/
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      /*Sizing*/
+      width: 50vw;
+    }
   }
   .welcomeBar nav {
     /*Sizing*/
     width: 100vw;
   }
-  .welcomeBar h1 {
-    /*Vertical Spacing*/
-    padding-top: 0%;
-    padding-bottom: 0%;
-    margin: 0;
-    /*Horizontal Spacing*/
-    padding-left: 7%;
-    padding-right: 7%;
-    /*Typography*/
-    font-family: 'Megrim', sans-serif;
-    color: white;
-    text-align: center;
-    font-size: 5.05em;
-    font-weight: 300;
+  /*Desktop .welcome h1*/
+  @media screen and (min-width: 800px) {
+    .welcomeBar h1 {
+      /*Vertical Spacing*/
+      padding-top: 0%;
+      padding-bottom: 0%;
+      margin: 0;
+      /*Horizontal Spacing*/
+      padding-left: 7%;
+      padding-right: 7%;
+      /*Typography*/
+      font-family: 'Megrim', sans-serif;
+      color: white;
+      text-align: center;
+      font-size: 5.05em;
+      font-weight: 300;
+    }
   }
-  .welcomeBar h2 {
-    /*Vertical Spacing*/
-    padding-top: 0%;
-    padding-bottom: 0%;
-    /*Horizontal Spacing*/
-    padding-left: 7%;
-    padding-right: 7%;
-    /*Typography*/
-    font-family: 'Open Sans', sans-serif;
-    color: #607189;
-    text-align: center;
-    font-size: 2em;
-    font-weight: 100;
+  /*Mobile .welcome h1*/
+  @media screen and (max-width: 799px) {
+    .welcomeBar h1 {
+      /*Vertical Spacing*/
+      padding-top: 0%;
+      padding-bottom: 0%;
+      margin: 0;
+      /*Horizontal Spacing*/
+      padding-left: 7%;
+      padding-right: 7%;
+      /*Typography*/
+      font-family: 'Megrim', sans-serif;
+      color: white;
+      text-align: center;
+      font-size: 4.05em;
+      font-weight: 300;
+    }
+  }
+  /*Desktop .welcome h2*/
+  @media screen and (min-width: 800px) {
+    .welcomeBar h2 {
+      /*Vertical Spacing*/
+      padding-top: 0%;
+      padding-bottom: 0%;
+      /*Horizontal Spacing*/
+      padding-left: 7%;
+      padding-right: 7%;
+      /*Typography*/
+      font-family: 'Open Sans', sans-serif;
+      color: #607189;
+      text-align: center;
+      font-size: 2em;
+      font-weight: 100;
+    }
+  }
+  /*Mobile .welcome h2*/
+  @media screen and (max-width: 800px) {
+    .welcomeBar h2 {
+      /*Vertical Spacing*/
+      padding-top: 0%;
+      padding-bottom: 0%;
+      /*Horizontal Spacing*/
+      padding-left: 7%;
+      padding-right: 7%;
+      /*Typography*/
+      font-family: 'Open Sans', sans-serif;
+      color: #607189;
+      text-align: center;
+      font-size: 1.5em;
+      font-weight: 100;
+    }
   }
 
 
@@ -232,36 +289,79 @@ a:focus::after {
     font-size: 2.25em;
     font-weight: lighter;
   }
-  .about h2 {
-    /*Vertical Spacing*/
-    padding-top: 0%;
-    padding-bottom: 1%;
-    /*Horizontal Spacing*/
-    padding-left: 23%;
-    padding-right: 23%;
-    /*Typography*/
-    font-family: 'Open Sans', sans-serif;
-    color: black;
-    text-align: center;
-    font-size: 1.3em;
-    font-weight: lighter;
+  /*Desktop .about h2*/
+  @media screen and (min-width: 800px) {
+    .about h2 {
+      /*Vertical Spacing*/
+      padding-top: 0%;
+      padding-bottom: 1%;
+      /*Horizontal Spacing*/
+      padding-left: 23%;
+      padding-right: 23%;
+      /*Typography*/
+      font-family: 'Open Sans', sans-serif;
+      color: black;
+      text-align: center;
+      font-size: 1.3em;
+      font-weight: lighter;
+    }
   }
-  .about h3 {
-    /*Vertical Spacing*/
-    padding-top: 0%;
-    padding-bottom: 0%;
-    /*Horizontal Spacing*/
-    padding-left: 23%;
-    padding-right: 23%;
-    /*Typography*/
-    font-family: 'Open Sans', sans-serif;
-    color: Black;
-    text-align: left;
-    font-size: 1.1em;
-    font-weight: lighter;
-    text-indent: 1em;
-    /*text-indent: 2%;*/
-    line-height: 140%;
+  /*Mobile .about h2*/
+  @media screen and (max-width: 799px) {
+    .about h2 {
+      /*Vertical Spacing*/
+      padding-top: 0%;
+      padding-bottom: 1%;
+      /*Horizontal Spacing*/
+      padding-left: 5%;
+      padding-right: 5%;
+      /*Typography*/
+      font-family: 'Open Sans', sans-serif;
+      color: black;
+      text-align: center;
+      font-size: 1.3em;
+      font-weight: lighter;
+    }
+  }
+  /*Desktop .about h3*/
+  @media screen and (min-width: 800px) {
+    .about h3 {
+      /*Vertical Spacing*/
+      padding-top: 0%;
+      padding-bottom: 0%;
+      /*Horizontal Spacing*/
+      padding-left: 23%;
+      padding-right: 23%;
+      /*Typography*/
+      font-family: 'Open Sans', sans-serif;
+      color: Black;
+      text-align: left;
+      font-size: 1.1em;
+      font-weight: lighter;
+      text-indent: 1em;
+      /*text-indent: 2%;*/
+      line-height: 140%;
+    }
+  }
+  /*Mobile .about h3*/
+  @media screen and (max-width: 799px) {
+    .about h3 {
+      /*Vertical Spacing*/
+      padding-top: 1%;
+      padding-bottom: 0%;
+      /*Horizontal Spacing*/
+      padding-left: 5%;
+      padding-right: 5%;
+      /*Typography*/
+      font-family: 'Open Sans', sans-serif;
+      color: Black;
+      text-align: left;
+      font-size: 1.1em;
+      font-weight: lighter;
+      text-indent: 1em;
+      /*text-indent: 2%;*/
+      line-height: 140%;
+    }
   }
 
 
@@ -284,18 +384,37 @@ a:focus::after {
   /*Spacing*/
   padding: 1%;
 }
-  .portfolio .portfolioItem {
-    /*Display*/
-    display: table-column;
-    float: left;
-    /*Sizing*/
-    width: 47%;
-    height: auto;
-    /*Spacing*/
-    padding: .5%;
-    margin: 1%;
-    /*Background*/
-    background-color: #ebeff2;
+  /*Desktop .portfolio .portfolioItem*/
+  @media screen and (min-width: 800px) {
+    .portfolio .portfolioItem {
+      /*Display*/
+      display: table-column;
+      float: left;
+      /*Sizing*/
+      width: 47%;
+      height: auto;
+      /*Spacing*/
+      padding: .5%;
+      margin: 1%;
+      /*Background*/
+      background-color: #ebeff2;
+    }
+  }
+  /*Mobile .portfolio .portfolioItem*/
+  @media screen and (max-width: 799px) {
+    .portfolio .portfolioItem {
+      /*Display*/
+      display: block;
+      float: left;
+      /*Sizing*/
+      width: 98%;
+      height: auto;
+      /*Spacing*/
+      padding: .5%;
+      margin: 1%;
+      /*Background*/
+      background-color: #ebeff2;
+    }
   }
     .portfolio .portfolioItem img {
       /*Sizing*/
@@ -336,19 +455,39 @@ a:focus::after {
       font-size: 2.25em;
       font-weight: 300;
     }
-    .contact h2  {
-      /*Vertical Spacing*/
-      padding-top: 0%;
-      padding-bottom: 1%;
-      /*Horizontal Spacing*/
-      padding-left: 23%;
-      padding-right: 23%;
-      /*Typography*/
-      font-family: 'Open Sans', sans-serif;
-      color: black;
-      text-align: center;
-      font-size: 1.3em;
-      font-weight: 300;
+    /*Desktop .contact h2*/
+    @media screen and (min-width: 800px) {
+      .contact h2  {
+        /*Vertical Spacing*/
+        padding-top: 0%;
+        padding-bottom: 1%;
+        /*Horizontal Spacing*/
+        padding-left: 23%;
+        padding-right: 23%;
+        /*Typography*/
+        font-family: 'Open Sans', sans-serif;
+        color: black;
+        text-align: center;
+        font-size: 1.3em;
+        font-weight: 300;
+      }
+    }
+    /*Mobile .contact h2*/
+    @media screen and (max-width: 799px) {
+      .contact h2  {
+        /*Vertical Spacing*/
+        padding-top: 0%;
+        padding-bottom: 1%;
+        /*Horizontal Spacing*/
+        padding-left: 5%;
+        padding-right: 5%;
+        /*Typography*/
+        font-family: 'Open Sans', sans-serif;
+        color: black;
+        text-align: center;
+        font-size: 1.3em;
+        font-weight: 300;
+      }
     }
       .contact h2 a {
         /*Typography*/
@@ -358,22 +497,45 @@ a:focus::after {
         font-weight: 300;
         color: #0e1717;
       }
-    .contact h3 {
-      /*Vertical Spacing*/
-      padding-top: 0%;
-      padding-bottom: 1%;
-      /*Horizontal Spacing*/
-      padding-left: 23%;
-      padding-right: 23%;
-      /*Typography*/
-      font-family: 'Open Sans', sans-serif;
-      color: Black;
-      text-align: left;
-      font-size: 1em;
-      font-weight: 300;
-      text-indent: 1em;
-      /*text-indent: 2%;*/
-      line-height: 140%;
+    /*Desktop .contact h3*/
+    @media screen and (min-width: 800px) {
+      .contact h3 {
+        /*Vertical Spacing*/
+        padding-top: 0%;
+        padding-bottom: 1%;
+        /*Horizontal Spacing*/
+        padding-left: 23%;
+        padding-right: 23%;
+        /*Typography*/
+        font-family: 'Open Sans', sans-serif;
+        color: Black;
+        text-align: left;
+        font-size: 1em;
+        font-weight: 300;
+        text-indent: 1em;
+        /*text-indent: 2%;*/
+        line-height: 140%;
+      }
+    }
+    /*Mobile .contact h3*/
+    @media screen and (max-width: 799px) {
+      .contact h3 {
+        /*Vertical Spacing*/
+        padding-top: 1%;
+        padding-bottom: 1%;
+        /*Horizontal Spacing*/
+        padding-left: 5%;
+        padding-right: 5%;
+        /*Typography*/
+        font-family: 'Open Sans', sans-serif;
+        color: Black;
+        text-align: left;
+        font-size: 1em;
+        font-weight: 300;
+        text-indent: 1em;
+        /*text-indent: 2%;*/
+        line-height: 140%;
+      }
     }
 
 
@@ -397,28 +559,62 @@ a:focus::after {
   background-size: 40%;
   background-blend-mode: normal;
 }
-  .footer  h1 {
-    /*Horizontal Spacing*/
-    padding-left: 23%;
-    padding-right: 23%;
-    /*Typography*/
-    font-family: 'Open Sans', sans-serif;
-    color: white;
-    text-align: center;
-    font-size: 1em;
-    font-weight: 300;
-  }
-  .footer  h2 {
-    /*Horizontal Spacing*/
-    padding-left: 23%;
-    padding-right: 23%;
-    /*Typography*/
-    font-family: 'Open Sans', sans-serif;
-    color: #607189;
-    text-align: center;
-    font-size: .95em;
-    font-weight: 300;
+  /*Desktop .footer h1*/
+  @media screen and (min-width: 800px) {
+    .footer  h1 {
+      /*Horizontal Spacing*/
+      padding-left: 23%;
+      padding-right: 23%;
+      /*Typography*/
+      font-family: 'Open Sans', sans-serif;
+      color: white;
+      text-align: center;
+      font-size: 1em;
+      font-weight: 300;
     }
+  }
+  /*Mobile .footer h1*/
+  @media screen and (max-width: 799px) {
+    .footer  h1 {
+      /*Horizontal Spacing*/
+      padding-left: 5%;
+      padding-right: 5%;
+      /*Typography*/
+      font-family: 'Open Sans', sans-serif;
+      color: white;
+      text-align: center;
+      font-size: 1em;
+      font-weight: 300;
+    }
+  }
+  /*Desktop .footer h2*/
+  @media screen and (min-width: 800px) {
+    .footer  h2 {
+      /*Horizontal Spacing*/
+      padding-left: 23%;
+      padding-right: 23%;
+      /*Typography*/
+      font-family: 'Open Sans', sans-serif;
+      color: #607189;
+      text-align: center;
+      font-size: .95em;
+      font-weight: 300;
+      }
+    }
+    /*Mobile .footer h2*/
+    @media screen and (max-width: 799px) {
+      .footer  h2 {
+        /*Horizontal Spacing*/
+        padding-left: 5
+        padding-right: 5%;
+        /*Typography*/
+        font-family: 'Open Sans', sans-serif;
+        color: #607189;
+        text-align: center;
+        font-size: .95em;
+        font-weight: 300;
+        }
+      }
     .footer a {
       /*Typography*/
       font-family: 'Open Sans', sans-serif;
@@ -427,29 +623,65 @@ a:focus::after {
       font-weight: 300;
       color: #aab8cb;
       }
-    .footer h3 {
-      /*Spacing*/
-      padding-left: 23%;
-      padding-right: 23%;
-      padding-bottom: 0%;
-      /*Typography*/
-      font-family: 'Open Sans', sans-serif;
-      color: #607189;
-      text-align: center;
-      font-size: 1.5em;
-      font-weight: 300;
+    /*Desktop .footer h3*/
+    @media screen and (min-width: 800px) {
+      .footer h3 {
+        /*Spacing*/
+        padding-left: 23%;
+        padding-right: 23%;
+        padding-bottom: 0%;
+        /*Typography*/
+        font-family: 'Open Sans', sans-serif;
+        color: #607189;
+        text-align: center;
+        font-size: 1.5em;
+        font-weight: 300;
+      }
     }
-    .footer h4 {
-      /*Spacing*/
-      padding-left: 23%;
-      padding-right: 23%;
-      padding-bottom: 1%;
-      /*Typography*/
-      font-family: 'Open Sans', sans-serif;
-      color: #607189;
-      text-align: center;
-      font-size: 1.1em;
-      font-weight: 300;
+    /*Mobile .footer h4*/
+    @media screen and (max-width: 799px) {
+      .footer h3 {
+        /*Spacing*/
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: 0%;
+        /*Typography*/
+        font-family: 'Open Sans', sans-serif;
+        color: #607189;
+        text-align: center;
+        font-size: 1.5em;
+        font-weight: 300;
+      }
+    }
+    /*Desktop .footer h4*/
+    @media screen and (min-width: 800px) {
+      .footer h4 {
+        /*Spacing*/
+        padding-left: 23%;
+        padding-right: 23%;
+        padding-bottom: 1%;
+        /*Typography*/
+        font-family: 'Open Sans', sans-serif;
+        color: #607189;
+        text-align: center;
+        font-size: 1.1em;
+        font-weight: 300;
+      }
+    }
+    /*Mobile .footer h4*/
+    @media screen and (max-width: 799px) {
+      .footer h4 {
+        /*Spacing*/
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: 1%;
+        /*Typography*/
+        font-family: 'Open Sans', sans-serif;
+        color: #607189;
+        text-align: center;
+        font-size: 1.1em;
+        font-weight: 300;
+      }
     }
 
 
