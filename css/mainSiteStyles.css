@@ -122,13 +122,14 @@ a:focus::after {
   }
   .welcomeBar #logo {
     /*Spacing*/
-    padding-top: 2%;
+    padding-top: 5%;
+    padding-bottom: 3%;
     /*Display*/
     display: block;
     margin-left: auto;
     margin-right: auto;
     /*Sizing*/
-    width: 1.75em;
+    width: 1.05em;
   }
   .welcomeBar #workspace {
     /*Spacing*/
@@ -138,7 +139,7 @@ a:focus::after {
     margin-left: auto;
     margin-right: auto;
     /*Sizing*/
-    width: 30em;
+    width: 28em;
   }
   .welcomeBar h1 {
     /*Vertical Spacing*/
@@ -181,7 +182,7 @@ a:focus::after {
   margin-right: auto;
   /*Vertical Spacing*/
   padding-top: 2%;
-  padding-bottom: 1%;
+  padding-bottom: 2%;
   /*Background*/
   background-color: #ebeff2;
 }
@@ -196,8 +197,8 @@ a:focus::after {
     font-family: 'Open Sans', sans-serif;
     color: Black;
     text-align: center;
-    font-size: 2.5em;
-    font-weight: 300
+    font-size: 2.25em;
+    font-weight: lighter;
   }
   .about h2 {
     /*Vertical Spacing*/
@@ -210,8 +211,8 @@ a:focus::after {
     font-family: 'Open Sans', sans-serif;
     color: black;
     text-align: center;
-    font-size: 1.5em;
-    font-weight: 300;
+    font-size: 1.3em;
+    font-weight: lighter;
   }
   .about h3 {
     /*Vertical Spacing*/
@@ -224,8 +225,8 @@ a:focus::after {
     font-family: 'Open Sans', sans-serif;
     color: Black;
     text-align: left;
-    font-size: 1.3em;
-    font-weight: 300;
+    font-size: 1.1em;
+    font-weight: lighter;
     text-indent: 1em;
     /*text-indent: 2%;*/
     line-height: 140%;
@@ -241,7 +242,7 @@ a:focus::after {
     font-family: 'Open Sans', sans-serif;
     color: Black;
     text-align: left;
-    font-size: 1.3em;
+    font-size: 1.1em;
     font-weight: 300;
     text-indent: 1em;
     /*text-indent: 2%;*/
@@ -285,19 +286,19 @@ a:focus::after {
   padding-top: 0%;
   padding-bottom: 0%;
   /*Horizontal Spacing*/
-  padding-left: 30%;
-  padding-right: 30%;
+  padding-left: 23%;
+  padding-right: 23%;
   /*Typography*/
   font-family: 'Open Sans', sans-serif;
   color: Black;
   text-align: left;
-  font-size: 1.8em;
+  font-size: 1.75em;
   font-weight: 300
 }
   .portfolioLink-light h1 span,
   .portfolioLink-dark h1 span {
     /*Typography*/
-    font-size: .7em;
+    font-size: .6em;
     /*Spacing*/
     padding-left: 1%;
   }
@@ -309,7 +310,7 @@ a:focus::after {
     float: right;
     overflow: hidden;
     /*Spacing*/
-    padding-right: 1%;
+    padding-left: 1%;
     padding-bottom: 1%;
   }
   .portfolioLink-light #employer-site,
@@ -319,6 +320,8 @@ a:focus::after {
     /*Positioning*/
     float: right;
     display: block;
+    /*Spacing*/
+    padding-bottom: 1%;
   }
 .portfolioLink-light h2,
 .portfolioLink-dark h2  {
@@ -326,8 +329,8 @@ a:focus::after {
   padding-top: 0%;
   padding-bottom: 0%;
   /*Horizontal Spacing*/
-  padding-left: 30%;
-  padding-right: 30%;
+  padding-left: 23%;
+  padding-right: 23%;
   /*Typography*/
   /*font-family: 'Open Sans', sans-serif;
   color: black;
@@ -341,13 +344,13 @@ a:focus::after {
   padding-top: 1%;
   padding-bottom: 1%;
   /*Horizontal Spacing*/
-  padding-left: 30%;
-  padding-right: 30%;
+  padding-left: 23%;
+  padding-right: 23%;
   /*Typography*/
   font-family: 'Open Sans', sans-serif;
   color: Black;
   text-align: left;
-  font-size: 1.2em;
+  font-size: 1em;
   font-weight: 300;
   text-indent: 0em;
   /*text-indent: 2%;*/
@@ -364,7 +367,7 @@ a:focus::after {
   margin-left: auto;
   margin-right: auto;
   /*Vertical Spacing*/
-  padding-top: 1%;
+  padding-top: 2%;
   padding-bottom: 2%;
   /*Background*/
   background-color: #ebeff2;
@@ -380,7 +383,7 @@ a:focus::after {
       font-family: 'Open Sans', sans-serif;
       color: Black;
       text-align: center;
-      font-size: 2.5em;
+      font-size: 2.25em;
       font-weight: 300
     }
     .contact h2  {
@@ -394,7 +397,7 @@ a:focus::after {
       font-family: 'Open Sans', sans-serif;
       color: black;
       text-align: center;
-      font-size: 1.5em;
+      font-size: 1.3em;
       font-weight: 300;
     }
       .contact h2 a {
@@ -416,7 +419,7 @@ a:focus::after {
       font-family: 'Open Sans', sans-serif;
       color: Black;
       text-align: left;
-      font-size: 1.3em;
+      font-size: 1em;
       font-weight: 300;
       text-indent: 1em;
       /*text-indent: 2%;*/
@@ -429,8 +432,8 @@ a:focus::after {
   width: 100%;
   height: auto;
   /*Vertical Spacing*/
-  padding-top: 1.5%;
-  padding-bottom: 1.5%;
+  padding-top: 2%;
+  padding-bottom: 2%;
   /*Background*/
   /*background-image: url(../assets/stardust.jpg);*/
   background-color: #32425c;
@@ -442,8 +445,8 @@ a:focus::after {
 }
   .footer  h1 {
     /*Horizontal Spacing*/
-    padding-left: 7%;
-    padding-right: 7%;
+    padding-left: 23%;
+    padding-right: 23%;
     /*Typography*/
     font-family: 'Open Sans', sans-serif;
     color: white;
@@ -453,8 +456,8 @@ a:focus::after {
   }
   .footer  h2 {
     /*Horizontal Spacing*/
-    padding-left: 20%;
-    padding-right: 20%;
+    padding-left: 23%;
+    padding-right: 23%;
     /*Typography*/
     font-family: 'Open Sans', sans-serif;
     color: #607189;
@@ -470,7 +473,30 @@ a:focus::after {
       font-weight: 300;
       color: #aab8cb;
       }
-
+    .footer h3 {
+      /*Spacing*/
+      padding-left: 23%;
+      padding-right: 23%;
+      padding-bottom: 0%;
+      /*Typography*/
+      font-family: 'Open Sans', sans-serif;
+      color: #607189;
+      text-align: center;
+      font-size: 1.5em;
+      font-weight: 300;
+    }
+    .footer h4 {
+      /*Spacing*/
+      padding-left: 23%;
+      padding-right: 23%;
+      padding-bottom: 1%;
+      /*Typography*/
+      font-family: 'Open Sans', sans-serif;
+      color: #607189;
+      text-align: center;
+      font-size: 1.1em;
+      font-weight: 300;
+    }
 
 
 
