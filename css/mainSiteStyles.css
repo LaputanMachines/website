@@ -7,32 +7,43 @@ go write your own. ( ͡° ͜ʖ ͡°)
 ========================================
 --*/
 
+
+
+
+
 /*General Styles*/
 * {
   /*Normalize*/
   margin: 0;
+  /*Typography*/
+  font-weight: lighter;
+  /*Box Sizing*/
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
-
-/*Force Scrollbar; Just for me)*/
 html {
+  /*Force Scrollbar; Just for me)*/
   overflow-y: scroll;
-}
-
-/*Remove Horz Scroll on Odd Devices*/
-body {
   overflow-x: hidden;
 }
+
+
+
+
 
 /*Scrollbar transparency*/
 .scrollable-content::-webkit-scrollbar * {
     background:transparent;
 }
-
-/*Scrolling Settings*/
 .scrollable-content {
       overflow-x:hidden;
       overflow-y:scroll;
     }
+
+
+
+
 
 /*Sexy-Ass Faded Line*/
 .fadedLine {
@@ -48,19 +59,25 @@ body {
     /*background: -webkit-gradient(linear, 0 0, 100% 0, from(white), to(white), color-stop(50%, #444349));*/
 }
 
+
+
+
+
 /*Normalize Links*/
 a:link, a:hover, a:visited {
   color: inherit;
   text-decoration: none;
 }
-
-/*Highlight Color*/
 ::selection {
   background: #D3D3D3; /* WebKit/Blink Browsers */
 }
 ::-moz-selection {
   background: #D3D3D3; /* Gecko Browsers */
 }
+
+
+
+
 
 /*Sexy-Ass Links*/
 a::before,
@@ -95,12 +112,17 @@ a:focus::after {
 	transform: translateX(0px);
 }
 
+
+
+
+
 /*Desktop Welcome*/
 .welcomeBar {
   /*Sizing*/
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: auto;
   padding-bottom: 0%;
+  padding-top: 5%;
   /*Background*/
   /*background-image: url(../assets/stardust.jpg);*/
   background-color: #32425c;
@@ -109,10 +131,6 @@ a:focus::after {
   background-attachment: fixed;
   background-size: 40%;
   background-blend-mode: normal;
-  /*Box Shadow*/
-  /*-webkit-box-shadow: 0px -.2em .5em 0px rgba(0,0,0,0.6);
-  -moz-box-shadow: 0px -.2em .5em 0px rgba(0,0,0,0.6);
-  box-shadow: 0px -.2em .5em 0px rgba(0,0,0,0.6);*/
   /*Animation*/
 	/*animation: animatedBackground 50s linear infinite;*/
 }
@@ -122,24 +140,34 @@ a:focus::after {
   }
   .welcomeBar #logo {
     /*Spacing*/
-    padding-top: 5%;
-    padding-bottom: 3%;
+    margin-bottom: 1%;
     /*Display*/
     display: block;
     margin-left: auto;
     margin-right: auto;
     /*Sizing*/
     width: 1.05em;
+    /*Animations*/
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+    -webkit-animation-name: rollIn;
+            animation-name: rollIn;
   }
   .welcomeBar #workspace {
     /*Spacing*/
-    padding-top: 5%;
+    margin-top: 5%;
     /*Display*/
     display: block;
     margin-left: auto;
     margin-right: auto;
     /*Sizing*/
-    width: 28em;
+    width: 25em;
+  }
+  .welcomeBar nav {
+    /*Sizing*/
+    width: 100vw;
   }
   .welcomeBar h1 {
     /*Vertical Spacing*/
@@ -171,10 +199,14 @@ a:focus::after {
     font-weight: 100;
   }
 
+
+
+
+
 /*Desktop About*/
 .about {
   /*Sizing*/
-  width: 100%;
+  width: 100vw;
   height: auto;
   /*Spacing*/
   /*max-width: 2000px;*/
@@ -231,136 +263,54 @@ a:focus::after {
     /*text-indent: 2%;*/
     line-height: 140%;
   }
-  .about h4 {
-    /*Vertical Spacing*/
-    padding-top: 0%;
-    padding-bottom: .5%;
-    /*Horizontal Spacing*/
-    padding-left: 23%;
-    padding-right: 23%;
-    /*Typography*/
-    font-family: 'Open Sans', sans-serif;
-    color: Black;
-    text-align: left;
-    font-size: 1.1em;
-    font-weight: 300;
-    text-indent: 1em;
-    /*text-indent: 2%;*/
-    line-height: 140%;
-  }
+
+
+
+
 
 /*Portfolio Link*/
-.portfolioLink-light {
+.portfolio {
   /*Sizing*/
-  width: 100%;
+  width: 100vw;
   height: auto;
+  display: grid;
   /*Spacing*/
   /*max-width: 2000px;*/
   margin-left: auto;
   margin-right: auto;
-  /*Vertical Spacing*/
-  padding-top: 2%;
-  padding-bottom: 2%;
   /*Background*/
-  overflow-y: auto;
+  overflow: auto;
   background-color: white;
-}
-.portfolioLink-dark {
-  /*Sizing*/
-  width: 100%;
-  height: auto;
   /*Spacing*/
-  /*max-width: 2000px;*/
-  margin-left: auto;
-  margin-right: auto;
-  /*Vertical Spacing*/
-  padding-top: 2%;
-  padding-bottom: 2%;
-  /*Background*/
-  overflow-y: auto;
-  background-color: #ebeff2;
+  padding: 1%;
 }
-.portfolioLink-light h1,
-.portfolioLink-dark h1 {
-  /*Vertical Spacing*/
-  padding-top: 0%;
-  padding-bottom: 0%;
-  /*Horizontal Spacing*/
-  padding-left: 23%;
-  padding-right: 23%;
-  /*Typography*/
-  font-family: 'Open Sans', sans-serif;
-  color: Black;
-  text-align: left;
-  font-size: 1.75em;
-  font-weight: 300
-}
-  .portfolioLink-light h1 span,
-  .portfolioLink-dark h1 span {
-    /*Typography*/
-    font-size: .6em;
-    /*Spacing*/
-    padding-left: 1%;
-  }
-  .portfolioLink-light #employer,
-  .portfolioLink-dark #employer {
+  .portfolio .portfolioItem {
+    /*Display*/
+    display: table-column;
+    float: left;
     /*Sizing*/
-    width: 5%;
-    /*Positioning*/
-    float: right;
-    overflow: hidden;
+    width: 47%;
+    height: auto;
     /*Spacing*/
-    padding-left: 1%;
-    padding-bottom: 1%;
+    padding: .5%;
+    margin: 1%;
+    /*Background*/
+    background-color: #ebeff2;
   }
-  .portfolioLink-light #employer-site,
-  .portfolioLink-dark #employer-site {
-    /*Sizing*/
-    width: 100%;
-    /*Positioning*/
-    float: right;
-    display: block;
-    /*Spacing*/
-    padding-bottom: 1%;
-  }
-.portfolioLink-light h2,
-.portfolioLink-dark h2  {
-  /*Vertical Spacing*/
-  padding-top: 0%;
-  padding-bottom: 0%;
-  /*Horizontal Spacing*/
-  padding-left: 23%;
-  padding-right: 23%;
-  /*Typography*/
-  /*font-family: 'Open Sans', sans-serif;
-  color: black;
-  text-align: center;
-  font-size: 1.25em;
-  font-weight: 300;*/
-}
-.portfolioLink-light h3,
-.portfolioLink-dark h3 {
-  /*Vertical Spacing*/
-  padding-top: 1%;
-  padding-bottom: 1%;
-  /*Horizontal Spacing*/
-  padding-left: 23%;
-  padding-right: 23%;
-  /*Typography*/
-  font-family: 'Open Sans', sans-serif;
-  color: Black;
-  text-align: left;
-  font-size: 1em;
-  font-weight: 300;
-  text-indent: 0em;
-  /*text-indent: 2%;*/
-  line-height: 140%;
-}
+    .portfolio .portfolioItem img {
+      /*Sizing*/
+      width: 100%;
+      height: auto;
+    }
+
+
+
+
 
 /*Desktop Contact*/
 .contact {
   /*Sizing*/
-  width: 100%;
+  width: 100vw;
   height: auto;
   /*Spacing*/
   /*max-width: 2000px;*/
@@ -384,7 +334,7 @@ a:focus::after {
       color: Black;
       text-align: center;
       font-size: 2.25em;
-      font-weight: 300
+      font-weight: 300;
     }
     .contact h2  {
       /*Vertical Spacing*/
@@ -425,6 +375,10 @@ a:focus::after {
       /*text-indent: 2%;*/
       line-height: 140%;
     }
+
+
+
+
 
 /*Desktop Footer*/
 .footer {
