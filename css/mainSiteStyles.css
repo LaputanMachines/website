@@ -231,7 +231,7 @@ a:focus::after {
       padding-left: 7%;
       padding-right: 7%;
       /*Typography*/
-      font-family: 'Open Sans', sans-serif;
+      font-family: 'Roboto', sans-serif;
       color: #607189;
       text-align: center;
       font-size: 2em;
@@ -248,7 +248,7 @@ a:focus::after {
       padding-left: 7%;
       padding-right: 7%;
       /*Typography*/
-      font-family: 'Open Sans', sans-serif;
+      font-family: 'Roboto', sans-serif;
       color: #607189;
       text-align: center;
       font-size: 1.5em;
@@ -283,7 +283,7 @@ a:focus::after {
     padding-left: 23%;
     padding-right: 23%;
     /*Typography*/
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: Black;
     text-align: center;
     font-size: 2.25em;
@@ -299,7 +299,7 @@ a:focus::after {
       padding-left: 23%;
       padding-right: 23%;
       /*Typography*/
-      font-family: 'Open Sans', sans-serif;
+      font-family: 'Roboto', sans-serif;
       color: black;
       text-align: center;
       font-size: 1.3em;
@@ -316,7 +316,7 @@ a:focus::after {
       padding-left: 5%;
       padding-right: 5%;
       /*Typography*/
-      font-family: 'Open Sans', sans-serif;
+      font-family: 'Roboto', sans-serif;
       color: black;
       text-align: center;
       font-size: 1.3em;
@@ -333,14 +333,14 @@ a:focus::after {
       padding-left: 23%;
       padding-right: 23%;
       /*Typography*/
-      font-family: 'Open Sans', sans-serif;
+      font-family: 'Roboto', sans-serif;
       color: Black;
       text-align: left;
-      font-size: 1.1em;
+      font-size: 1.2em;
       font-weight: lighter;
       text-indent: 1em;
       /*text-indent: 2%;*/
-      line-height: 140%;
+      line-height: 130%;
     }
   }
   /*Mobile .about h3*/
@@ -353,14 +353,14 @@ a:focus::after {
       padding-left: 5%;
       padding-right: 5%;
       /*Typography*/
-      font-family: 'Open Sans', sans-serif;
+      font-family: 'Roboto', sans-serif;
       color: Black;
       text-align: left;
-      font-size: 1.1em;
+      font-size: 1.2em;
       font-weight: lighter;
       text-indent: 1em;
       /*text-indent: 2%;*/
-      line-height: 140%;
+      line-height: 130%;
     }
   }
 
@@ -449,7 +449,7 @@ a:focus::after {
       padding-left: 23%;
       padding-right: 23%;
       /*Typography*/
-      font-family: 'Open Sans', sans-serif;
+      font-family: 'Roboto', sans-serif;
       color: Black;
       text-align: center;
       font-size: 2.25em;
@@ -465,7 +465,7 @@ a:focus::after {
         padding-left: 23%;
         padding-right: 23%;
         /*Typography*/
-        font-family: 'Open Sans', sans-serif;
+        font-family: 'Roboto', sans-serif;
         color: black;
         text-align: center;
         font-size: 1.3em;
@@ -482,7 +482,7 @@ a:focus::after {
         padding-left: 5%;
         padding-right: 5%;
         /*Typography*/
-        font-family: 'Open Sans', sans-serif;
+        font-family: 'Roboto', sans-serif;
         color: black;
         text-align: center;
         font-size: 1.3em;
@@ -491,7 +491,7 @@ a:focus::after {
     }
       .contact h2 a {
         /*Typography*/
-        font-family: 'Open Sans', sans-serif;
+        font-family: 'Roboto', sans-serif;
         text-align: center;
         font-size: 1em;
         font-weight: 300;
@@ -507,14 +507,14 @@ a:focus::after {
         padding-left: 23%;
         padding-right: 23%;
         /*Typography*/
-        font-family: 'Open Sans', sans-serif;
+        font-family: 'Roboto', sans-serif;
         color: Black;
         text-align: left;
-        font-size: 1em;
+        font-size: 1.3em;
         font-weight: 300;
         text-indent: 1em;
         /*text-indent: 2%;*/
-        line-height: 140%;
+        line-height: 130%;
       }
     }
     /*Mobile .contact h3*/
@@ -527,14 +527,14 @@ a:focus::after {
         padding-left: 5%;
         padding-right: 5%;
         /*Typography*/
-        font-family: 'Open Sans', sans-serif;
+        font-family: 'Roboto', sans-serif;
         color: Black;
         text-align: left;
-        font-size: 1em;
+        font-size: 1.3em;
         font-weight: 300;
         text-indent: 1em;
         /*text-indent: 2%;*/
-        line-height: 140%;
+        line-height: 130%;
       }
     }
 
@@ -566,7 +566,7 @@ a:focus::after {
       padding-left: 23%;
       padding-right: 23%;
       /*Typography*/
-      font-family: 'Open Sans', sans-serif;
+      font-family: 'Roboto', sans-serif;
       color: white;
       text-align: center;
       font-size: 1em;
@@ -580,7 +580,7 @@ a:focus::after {
       padding-left: 5%;
       padding-right: 5%;
       /*Typography*/
-      font-family: 'Open Sans', sans-serif;
+      font-family: 'Roboto', sans-serif;
       color: white;
       text-align: center;
       font-size: 1em;
@@ -594,7 +594,7 @@ a:focus::after {
       padding-left: 23%;
       padding-right: 23%;
       /*Typography*/
-      font-family: 'Open Sans', sans-serif;
+      font-family: 'Roboto', sans-serif;
       color: #607189;
       text-align: center;
       font-size: .95em;
@@ -608,7 +608,7 @@ a:focus::after {
         padding-left: 5
         padding-right: 5%;
         /*Typography*/
-        font-family: 'Open Sans', sans-serif;
+        font-family: 'Roboto', sans-serif;
         color: #607189;
         text-align: center;
         font-size: .95em;
@@ -617,7 +617,7 @@ a:focus::after {
       }
     .footer a {
       /*Typography*/
-      font-family: 'Open Sans', sans-serif;
+      font-family: 'Roboto', sans-serif;
       text-align: center;
       font-size: 1em;
       font-weight: 300;
@@ -631,7 +631,7 @@ a:focus::after {
         padding-right: 23%;
         padding-bottom: 0%;
         /*Typography*/
-        font-family: 'Open Sans', sans-serif;
+        font-family: 'Roboto', sans-serif;
         color: #607189;
         text-align: center;
         font-size: 1.5em;
@@ -646,7 +646,7 @@ a:focus::after {
         padding-right: 5%;
         padding-bottom: 0%;
         /*Typography*/
-        font-family: 'Open Sans', sans-serif;
+        font-family: 'Roboto', sans-serif;
         color: #607189;
         text-align: center;
         font-size: 1.5em;
@@ -661,7 +661,7 @@ a:focus::after {
         padding-right: 23%;
         padding-bottom: 1%;
         /*Typography*/
-        font-family: 'Open Sans', sans-serif;
+        font-family: 'Roboto', sans-serif;
         color: #607189;
         text-align: center;
         font-size: 1.1em;
@@ -676,7 +676,7 @@ a:focus::after {
         padding-right: 5%;
         padding-bottom: 1%;
         /*Typography*/
-        font-family: 'Open Sans', sans-serif;
+        font-family: 'Roboto', sans-serif;
         color: #607189;
         text-align: center;
         font-size: 1.1em;
