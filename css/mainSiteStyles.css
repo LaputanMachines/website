@@ -385,7 +385,7 @@ a:focus::after {
   padding: 1%;
 }
   /*Desktop .portfolio .portfolioItem*/
-  @media screen and (min-width: 800px) {
+  @media screen and (min-width: 1200px) {
     .portfolio .portfolioItem {
       /*Display*/
       display: table-column;
@@ -394,14 +394,14 @@ a:focus::after {
       width: 47%;
       height: auto;
       /*Spacing*/
-      padding: .5%;
+      padding: 0.25%;
       margin: 1%;
       /*Background*/
       background-color: #ebeff2;
     }
   }
   /*Mobile .portfolio .portfolioItem*/
-  @media screen and (max-width: 799px) {
+  @media screen and (max-width: 1199px) {
     .portfolio .portfolioItem {
       /*Display*/
       display: block;
