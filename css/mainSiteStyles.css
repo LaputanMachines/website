@@ -565,8 +565,8 @@ a:focus::after {
   width: 100%;
   height: auto;
   /*Vertical Spacing*/
-  padding-top: 2%;
-  padding-bottom: 2%;
+  padding-top: 1.5%;
+  padding-bottom: 1.5%;
   /*Background*/
   /*background-image: url(../assets/stardust.jpg);*/
   background-color: #32425c;
