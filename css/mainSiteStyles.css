@@ -138,10 +138,14 @@ a:focus::after {
 @media screen and (min-width: 800px) {
   .welcomeBar {
     /*Sizing*/
-    width: 100vw;
-    height: auto;
-    padding-bottom: 12%;
-    padding-top: 8%;
+    width: 96vw;
+    height: 90vh;
+    padding-bottom: 10%;
+    padding-top: 10%;
+    /*Whitespace*/
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 2%;
     /*Background*/
     background: linear-gradient(
                   rgba(34, 49, 63, .5),
@@ -596,11 +600,15 @@ a:focus::after {
 @media screen and (min-width: 800px) {
   .footer {
     /*Sizing*/
-    width: 100%;
+    width: 96vw;
     height: auto;
     /*Vertical Spacing*/
     padding-top: 1.5%;
     padding-bottom: 1.5%;
+    /*Whitespace*/
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 2%;
     /*Background*/
     background: linear-gradient(
                   rgba(34, 49, 63, .5),
@@ -615,7 +623,7 @@ a:focus::after {
     /*background-blend-mode: overlay;*/
   }
 }
-/*Desktop .footer*/
+/*Mobile .footer*/
 @media screen and (max-width: 799px) {
   .footer {
     /*Sizing*/
