@@ -162,14 +162,46 @@ a:focus::after {
   	/*animation: animatedBackground 50s linear infinite;*/
   }
 }
-/*Mobile .welcomeBar*/
-@media screen and (max-width: 799px) {
+/*Mobile .welcomeBar portrait*/
+@media screen and (max-width: 799px) and (orientation: portrait) {
   .welcomeBar {
     /*Sizing*/
-    width: 100vw;
-    height: auto;
-    padding-bottom: 12%;
-    padding-top: 8%;
+    width: 96vw;
+    height: 98vh;
+    padding-bottom: 25vh;
+    padding-top: 25vh;
+    /*Whitespace*/
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 2%;
+    /*Background*/
+    background: linear-gradient(
+                  rgba(34, 49, 63, .5),
+                  rgba(34, 49, 63, .5)
+                  ),
+                  url(../assets/welcomeBackground.jpg);
+    /*background-color: #2c3e50;*/
+  	background-position: center top;
+    /*background-repeat: repeat;*/
+    /*background-attachment: fixed;*/
+    background-size: cover;
+    /*background-blend-mode: overlay;*/
+    /*Animation*/
+  	/*animation: animatedBackground 50s linear infinite;*/
+  }
+}
+/*Mobile .welcomeBar landscape*/
+@media screen and (max-width: 799px) and (orientation: landscape) {
+  .welcomeBar {
+    /*Sizing*/
+    width: 96vw;
+    height: 93vh;
+    padding-bottom: 25vh;
+    padding-top: 25vh;
+    /*Whitespace*/
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 2%;
     /*Background*/
     background: linear-gradient(
                   rgba(34, 49, 63, .5),
@@ -627,11 +659,15 @@ a:focus::after {
 @media screen and (max-width: 799px) {
   .footer {
     /*Sizing*/
-    width: 100%;
+    width: 96vw;
     height: auto;
     /*Vertical Spacing*/
     padding-top: 1.5%;
     padding-bottom: 1.5%;
+    /*Whitespace*/
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 2%;
     /*Background*/
     background: linear-gradient(
                   rgba(34, 49, 63, .5),
@@ -728,16 +764,9 @@ a:focus::after {
     /*Mobile .footer h4*/
     @media screen and (max-width: 799px) {
       .footer h3 {
-        /*Spacing*/
-        padding-left: 5%;
-        padding-right: 5%;
-        padding-bottom: 0%;
-        /*Typography*/
-        font-family: 'Roboto', sans-serif;
-        color: white;
-        text-align: center;
-        font-size: 1.5em;
-        font-weight: 300;
+        /*Hide on mobile*/
+        display: none;
+        visibility: hidden;
       }
     }
     /*Desktop .footer h4*/
@@ -758,16 +787,9 @@ a:focus::after {
     /*Mobile .footer h4*/
     @media screen and (max-width: 799px) {
       .footer h4 {
-        /*Spacing*/
-        padding-left: 5%;
-        padding-right: 5%;
-        padding-bottom: 1%;
-        /*Typography*/
-        font-family: 'Roboto', sans-serif;
-        color: white;
-        text-align: center;
-        font-size: 1.1em;
-        font-weight: 300;
+        /*Hide on mobile*/
+        display: none;
+        visibility: hidden;
       }
     }
 
