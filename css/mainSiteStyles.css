@@ -379,7 +379,7 @@ a:focus::after {
     .about h2 {
       /*Vertical Spacing*/
       padding-top: 0%;
-      padding-bottom: 1%;
+      padding-bottom: 2%;
       /*Horizontal Spacing*/
       padding-left: 23%;
       padding-right: 23%;
@@ -396,7 +396,7 @@ a:focus::after {
     .about h2 {
       /*Vertical Spacing*/
       padding-top: 0%;
-      padding-bottom: 1%;
+      padding-bottom: 2%;
       /*Horizontal Spacing*/
       padding-left: 5%;
       padding-right: 5%;
@@ -432,7 +432,7 @@ a:focus::after {
   @media screen and (max-width: 799px) {
     .about h3 {
       /*Vertical Spacing*/
-      padding-top: 1%;
+      padding-top: 0%;
       padding-bottom: 0%;
       /*Horizontal Spacing*/
       padding-left: 5%;
@@ -479,7 +479,7 @@ a:focus::after {
       max-width: 50%;
       height: auto;
       /*Spacing*/
-      padding: 0.75%;
+      padding: 1%;
       /*margin: .5%;*/
       /*Background*/
       background-color: white;
@@ -495,7 +495,7 @@ a:focus::after {
       width: 98%;
       height: auto;
       /*Spacing*/
-      padding: .75%;
+      padding: 1%;
       /*margin: 1%;*/
       /*Background*/
       background-color: white;
@@ -545,7 +545,7 @@ a:focus::after {
       .contact h2  {
         /*Vertical Spacing*/
         padding-top: 0%;
-        padding-bottom: 1%;
+        padding-bottom: 2%;
         /*Horizontal Spacing*/
         padding-left: 23%;
         padding-right: 23%;
@@ -562,7 +562,7 @@ a:focus::after {
       .contact h2  {
         /*Vertical Spacing*/
         padding-top: 0%;
-        padding-bottom: 1%;
+        padding-bottom: 2%;
         /*Horizontal Spacing*/
         padding-left: 5%;
         padding-right: 5%;
