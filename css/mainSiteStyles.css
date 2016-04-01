@@ -134,22 +134,53 @@ a:focus::after {
 
 
 /*Desktop Welcome*/
-.welcomeBar {
-  /*Sizing*/
-  width: 100vw;
-  height: auto;
-  padding-bottom: 0%;
-  padding-top: 5%;
-  /*Background*/
-  /*background-image: url(../assets/stardust.jpg);*/
-  background-color: #32425c;
-	background-position: center bottom;
-  background-repeat: repeat;
-  background-attachment: fixed;
-  background-size: 40%;
-  background-blend-mode: normal;
-  /*Animation*/
-	/*animation: animatedBackground 50s linear infinite;*/
+/*Desktop .welcomeBar*/
+@media screen and (min-width: 800px) {
+  .welcomeBar {
+    /*Sizing*/
+    width: 100vw;
+    height: auto;
+    padding-bottom: 12%;
+    padding-top: 8%;
+    /*Background*/
+    background: linear-gradient(
+                  rgba(34, 49, 63, .5),
+                  rgba(34, 49, 63, .5)
+                  ),
+                  url(../assets/welcomeBackground.jpg);
+    /*background-color: #2c3e50;*/
+  	background-position: center top;
+    /*background-repeat: repeat;*/
+    background-attachment: fixed;
+    background-size: cover;
+    /*background-blend-mode: overlay;*/
+    /*Animation*/
+  	/*animation: animatedBackground 50s linear infinite;*/
+  }
+}
+/*Mobile .welcomeBar*/
+@media screen and (max-width: 799px) {
+  .welcomeBar {
+    /*Sizing*/
+    width: 100vw;
+    height: auto;
+    padding-bottom: 12%;
+    padding-top: 8%;
+    /*Background*/
+    background: linear-gradient(
+                  rgba(34, 49, 63, .5),
+                  rgba(34, 49, 63, .5)
+                  ),
+                  url(../assets/welcomeBackground.jpg);
+    /*background-color: #2c3e50;*/
+  	background-position: center top;
+    /*background-repeat: repeat;*/
+    /*background-attachment: fixed;*/
+    background-size: cover;
+    /*background-blend-mode: overlay;*/
+    /*Animation*/
+  	/*animation: animatedBackground 50s linear infinite;*/
+  }
 }
   @keyframes animatedBackground {
   	from { background-position: 0 0; }
@@ -163,14 +194,15 @@ a:focus::after {
     margin-left: auto;
     margin-right: auto;
     /*Sizing*/
-    width: 1.05em;
+    width: 1em;
+    font-family: 'Roboto', sans-serif;
     /*Animations*/
-    -webkit-animation-duration: 1s;
+    /*-webkit-animation-duration: 1s;
             animation-duration: 1s;
     -webkit-animation-fill-mode: both;
             animation-fill-mode: both;
     -webkit-animation-name: rollIn;
-            animation-name: rollIn;
+            animation-name: rollIn;*/
   }
   /*Desktop .welcomeBar #workspace*/
   @media screen and (min-width: 800px) {
@@ -249,7 +281,7 @@ a:focus::after {
       padding-right: 7%;
       /*Typography*/
       font-family: 'Roboto', sans-serif;
-      color: #607189;
+      color: #bdc3c7; /*#607189 */
       text-align: center;
       font-size: 2em;
       font-weight: 100;
@@ -266,7 +298,7 @@ a:focus::after {
       padding-right: 7%;
       /*Typography*/
       font-family: 'Roboto', sans-serif;
-      color: #607189;
+      color: #bdc3c7; /*#607189 */
       text-align: center;
       font-size: 1.5em;
       font-weight: 100;
@@ -560,21 +592,51 @@ a:focus::after {
 
 
 /*Desktop Footer*/
-.footer {
-  /*Sizing*/
-  width: 100%;
-  height: auto;
-  /*Vertical Spacing*/
-  padding-top: 1.5%;
-  padding-bottom: 1.5%;
-  /*Background*/
-  /*background-image: url(../assets/stardust.jpg);*/
-  background-color: #32425c;
-	background-position: center bottom;
-	background-repeat: repeat;
-  background-attachment: fixed;
-  background-size: 40%;
-  background-blend-mode: normal;
+/*Desktop .footer*/
+@media screen and (min-width: 800px) {
+  .footer {
+    /*Sizing*/
+    width: 100%;
+    height: auto;
+    /*Vertical Spacing*/
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+    /*Background*/
+    background: linear-gradient(
+                  rgba(34, 49, 63, .5),
+                  rgba(34, 49, 63, .5)
+                  ),
+                  url(../assets/welcomeBackground.jpg);
+    /*background-color: #2c3e50;*/
+    background-position: center bottom;
+    /*background-repeat: repeat;*/
+    background-attachment: fixed;
+    background-size: cover;
+    /*background-blend-mode: overlay;*/
+  }
+}
+/*Desktop .footer*/
+@media screen and (max-width: 799px) {
+  .footer {
+    /*Sizing*/
+    width: 100%;
+    height: auto;
+    /*Vertical Spacing*/
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+    /*Background*/
+    background: linear-gradient(
+                  rgba(34, 49, 63, .5),
+                  rgba(34, 49, 63, .5)
+                  ),
+                  url(../assets/welcomeBackground.jpg);
+    /*background-color: #2c3e50;*/
+    background-position: center bottom;
+    /*background-repeat: repeat;*/
+    /*background-attachment: fixed;*/
+    background-size: cover;
+    /*background-blend-mode: overlay;*/
+  }
 }
   /*Desktop .footer h1*/
   @media screen and (min-width: 800px) {
@@ -612,7 +674,7 @@ a:focus::after {
       padding-right: 23%;
       /*Typography*/
       font-family: 'Roboto', sans-serif;
-      color: #607189;
+      color: #white;
       text-align: center;
       font-size: .95em;
       font-weight: 300;
@@ -626,7 +688,7 @@ a:focus::after {
         padding-right: 5%;
         /*Typography*/
         font-family: 'Roboto', sans-serif;
-        color: #607189;
+        color: white;
         text-align: center;
         font-size: .95em;
         font-weight: 300;
@@ -638,7 +700,7 @@ a:focus::after {
       text-align: center;
       font-size: 1em;
       font-weight: 300;
-      color: #aab8cb;
+      color: white;
       }
     /*Desktop .footer h3*/
     @media screen and (min-width: 800px) {
@@ -649,7 +711,7 @@ a:focus::after {
         padding-bottom: 0%;
         /*Typography*/
         font-family: 'Roboto', sans-serif;
-        color: #607189;
+        color: white;
         text-align: center;
         font-size: 1.5em;
         font-weight: 300;
@@ -664,7 +726,7 @@ a:focus::after {
         padding-bottom: 0%;
         /*Typography*/
         font-family: 'Roboto', sans-serif;
-        color: #607189;
+        color: white;
         text-align: center;
         font-size: 1.5em;
         font-weight: 300;
@@ -679,7 +741,7 @@ a:focus::after {
         padding-bottom: 1%;
         /*Typography*/
         font-family: 'Roboto', sans-serif;
-        color: #607189;
+        color: white;
         text-align: center;
         font-size: 1.1em;
         font-weight: 300;
@@ -694,7 +756,7 @@ a:focus::after {
         padding-bottom: 1%;
         /*Typography*/
         font-family: 'Roboto', sans-serif;
-        color: #607189;
+        color: white;
         text-align: center;
         font-size: 1.1em;
         font-weight: 300;
