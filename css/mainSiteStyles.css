@@ -180,14 +180,8 @@ a:focus::after {
                   rgba(34, 49, 63, .5)
                   ),
                   url(../assets/welcomeBackground.jpg);
-    /*background-color: #2c3e50;*/
   	background-position: center top;
-    /*background-repeat: repeat;*/
-    /*background-attachment: fixed;*/
     background-size: cover;
-    /*background-blend-mode: overlay;*/
-    /*Animation*/
-  	/*animation: animatedBackground 50s linear infinite;*/
   }
 }
 /*Mobile .welcomeBar landscape*/
@@ -210,18 +204,9 @@ a:focus::after {
                   url(../assets/welcomeBackground.jpg);
     /*background-color: #2c3e50;*/
   	background-position: center top;
-    /*background-repeat: repeat;*/
-    /*background-attachment: fixed;*/
     background-size: cover;
-    /*background-blend-mode: overlay;*/
-    /*Animation*/
-  	/*animation: animatedBackground 50s linear infinite;*/
   }
 }
-  @keyframes animatedBackground {
-  	from { background-position: 0 0; }
-  	to { background-position: 100% 0; }
-  }
   .welcomeBar #logo {
     /*Spacing*/
     margin-bottom: 1%;
@@ -233,38 +218,12 @@ a:focus::after {
     width: 1em;
     font-family: 'Roboto', sans-serif;
     /*Animations*/
-    /*-webkit-animation-duration: 1s;
+    -webkit-animation-duration: 1s;
             animation-duration: 1s;
     -webkit-animation-fill-mode: both;
             animation-fill-mode: both;
     -webkit-animation-name: rollIn;
-            animation-name: rollIn;*/
-  }
-  /*Desktop .welcomeBar #workspace*/
-  @media screen and (min-width: 800px) {
-    .welcomeBar #workspace {
-      /*Spacing*/
-      margin-top: 5%;
-      /*Display*/
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      /*Sizing*/
-      width: 25em;
-    }
-  }
-  /*Mobile .welcomeBar #workspace*/
-  @media screen and (max-width: 799px) {
-    .welcomeBar #workspace {
-      /*Spacing*/
-      margin-top: 5%;
-      /*Display*/
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      /*Sizing*/
-      width: 50vw;
-    }
+            animation-name: rollIn;
   }
   .welcomeBar nav {
     /*Sizing*/
@@ -350,7 +309,8 @@ a:focus::after {
   /*Sizing*/
   width: 100vw;
   height: auto;
-  /*Spacing*/
+  /*Overflow*/
+  overflow: auto;
   /*max-width: 2000px;*/
   margin-left: auto;
   margin-right: auto;
