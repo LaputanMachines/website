@@ -141,11 +141,16 @@ a:focus::after {
     width: 96vw;
     height: 90vh;
     padding-bottom: 10%;
-    padding-top: 10%;
+    /*padding-top: 10%;*/
     /*Whitespace*/
     margin-left: 2%;
     margin-right: 2%;
     margin-top: 2%;
+  }
+  .welcomeBar::before {
+    /*Sizing*/
+    width: 96vw;
+    height: 90vh;
     /*Background*/
     background: linear-gradient(
                   rgba(34, 49, 63, .5),
@@ -154,12 +159,13 @@ a:focus::after {
                   url(../assets/welcomeBackground.jpg);
     /*background-color: #2c3e50;*/
   	background-position: center top;
-    /*background-repeat: repeat;*/
-    background-attachment: inherit;
+    background-attachment: fixed;
     background-size: cover;
-    /*background-blend-mode: overlay;*/
-    /*Animation*/
-  	/*animation: animatedBackground 50s linear infinite;*/
+    background-repeat: no-repeat;
+    /*Display*/
+    position: absolute;
+    content: "";
+    z-index: -1;
   }
 }
 /*Mobile .welcomeBar portrait*/
@@ -233,7 +239,7 @@ a:focus::after {
   @media screen and (min-width: 800px) {
     .welcomeBar h1 {
       /*Vertical Spacing*/
-      padding-top: 0%;
+      padding-top: 10%;
       padding-bottom: 0%;
       margin: 0;
       /*Horizontal Spacing*/
@@ -595,8 +601,8 @@ a:focus::after {
     width: 96vw;
     height: auto;
     /*Vertical Spacing*/
-    padding-top: 1.5%;
-    padding-bottom: 1.5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
     /*Whitespace*/
     margin-left: 2%;
     margin-right: 2%;
@@ -622,8 +628,8 @@ a:focus::after {
     width: 96vw;
     height: auto;
     /*Vertical Spacing*/
-    padding-top: 1.5%;
-    padding-bottom: 1.5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
     /*Whitespace*/
     margin-left: 2%;
     margin-right: 2%;
@@ -688,7 +694,7 @@ a:focus::after {
     @media screen and (max-width: 799px) {
       .footer  h2 {
         /*Horizontal Spacing*/
-        padding-left: 5
+        padding-left: 5%;
         padding-right: 5%;
         /*Typography*/
         font-family: 'Roboto', sans-serif;
