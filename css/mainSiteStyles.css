@@ -420,45 +420,20 @@ a:focus::after {
 
 
 /*Portfolio Link*/
-@media screen and (min-width: 1200px) {
-  .portfolio {
-    /*Sizing*/
-    width: 54vw;
-    height: auto;
-    /*Display*/
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    /*Spacing*/
-    /*max-width: 2000px;*/
-    margin-left: auto;
-    margin-right: auto;
-    /*Background*/
-    overflow: auto;
-    background-color: white;
-    /*Spacing*/
-    padding-top: 2%;
-    padding-bottom: 1%;
-  }
-}
-@media screen and (max-width: 1199px) {
-  .portfolio {
-    /*Sizing*/
-    max-width: 100vw;
-    height: auto;
-    display: block;
-    /*Spacing*/
-    /*max-width: 2000px;*/
-    margin-left: auto;
-    margin-right: auto;
-    /*Background*/
-    overflow: auto;
-    background-color: white;
-    /*Spacing*/
-    padding-left: 1%;
-    padding-right: 1%;
-  }
+.portfolio {
+  /*Sizing*/
+  max-width: 100vw;
+  height: auto;
+  display: grid;
+  /*Spacing*/
+  /*max-width: 2000px;*/
+  margin-left: auto;
+  margin-right: auto;
+  /*Background*/
+  overflow: auto;
+  background-color: white;
+  /*Spacing*/
+  padding: 1%;
 }
   /*Desktop .portfolio .portfolioItem*/
   @media screen and (min-width: 1200px) {
@@ -470,8 +445,8 @@ a:focus::after {
       max-width: 50%;
       height: auto;
       /*Spacing*/
-      padding-right: 1.5%;
-      padding-bottom: 1%;
+      padding: 1%;
+      /*margin: .5%;*/
       /*Background*/
       background-color: white;
     }
