@@ -449,17 +449,32 @@ a:focus::after {
   /*Spacing*/
   padding: 1%;
 }
-.portfolio .portfolioContainer {
-  /*Centering*/
-  margin: 0 auto;
-  vertical-align: middle;
-  text-align: center;
-  /*Horizontal Spacing*/
-  padding-left: 15%;
-  padding-right: 15%;
+/*Desktop .portfolio .portfolioContainer*/
+@media screen and (min-width: 800px) {
+  .portfolio .portfolioContainer {
+    /*Centering*/
+    margin: 0 auto;
+    vertical-align: middle;
+    text-align: center;
+    /*Horizontal Spacing*/
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+}
+/*Mobile .portfolio .portfolioContainer*/
+@media screen and (max-width: 799px) {
+  .portfolio .portfolioContainer {
+    /*Centering*/
+    margin: 0 auto;
+    vertical-align: middle;
+    text-align: center;
+    /*Horizontal Spacing*/
+    padding-left: 2%;
+    padding-right: 2%;
+  }
 }
   /*Desktop .portfolio .portfolioItem*/
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 800px) {
     .portfolio .portfolioItem {
       /*Display*/
       display: block;
@@ -474,7 +489,7 @@ a:focus::after {
     }
   }
   /*Mobile .portfolio .portfolioItem*/
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 799px) {
     .portfolio .portfolioItem {
       /*Display*/
       display: block;
