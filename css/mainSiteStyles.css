@@ -455,8 +455,8 @@ a:focus::after {
   vertical-align: middle;
   text-align: center;
   /*Horizontal Spacing*/
-  padding-left: 11%;
-  padding-right: 11%;
+  padding-left: 15%;
+  padding-right: 15%;
 }
   /*Desktop .portfolio .portfolioItem*/
   @media screen and (min-width: 1200px) {
