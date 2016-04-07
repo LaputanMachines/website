@@ -213,23 +213,40 @@ a:focus::after {
     background-size: cover;
   }
 }
-  .welcomeBar #logo {
-    /*Spacing*/
-    margin-bottom: 1%;
-    /*Display*/
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    /*Sizing*/
-    width: 1em;
-    font-family: 'Roboto', sans-serif;
-    /*Animations*/
-    -webkit-animation-duration: 1s;
-            animation-duration: 1s;
-    -webkit-animation-fill-mode: both;
-            animation-fill-mode: both;
-    -webkit-animation-name: rollIn;
-            animation-name: rollIn;
+  /*Desktop .welcome #logo*/
+  @media screen and (min-width: 800px) {
+    .welcomeBar #logo {
+      /*Spacing*/
+      margin-bottom: 1%;
+      /*Display*/
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      /*Sizing*/
+      width: 1em;
+      font-family: 'Roboto', sans-serif;
+      /*Animations*/
+      -webkit-animation-duration: 1s;
+              animation-duration: 1s;
+      -webkit-animation-fill-mode: both;
+              animation-fill-mode: both;
+      -webkit-animation-name: rollIn;
+              animation-name: rollIn;
+    }
+  }
+  /*Mobile .welcome #logo*/
+  @media screen and (max-width: 799px) {
+    .welcomeBar #logo {
+      /*Spacing*/
+      margin-bottom: 1%;
+      /*Display*/
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      /*Sizing*/
+      width: 1em;
+      font-family: 'Roboto', sans-serif;
+    }
   }
   .welcomeBar nav {
     /*Sizing*/
