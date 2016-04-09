@@ -165,7 +165,7 @@ a:focus::after {
     /*Display*/
     position: absolute;
     content: "";
-    z-index: -1;
+    z-index: -100;*
   }
 }
 /*Mobile .welcomeBar portrait*/
@@ -655,6 +655,7 @@ a:focus::after {
     /*background-repeat: repeat;*/
     background-attachment: fixed;
     background-size: cover;
+    z-index: -100;
     /*background-blend-mode: overlay;*/
   }
 }
