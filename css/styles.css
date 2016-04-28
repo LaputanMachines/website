@@ -11,8 +11,8 @@
 
 /*Fonts*/
 
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,300);
 @import url(https://fonts.googleapis.com/css?family=Megrim);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300);
 
 /*General*/
 
@@ -92,74 +92,3 @@ a:active {
   height: 1px;
   background: black;
 }
-
-
-
-
-
-/*Header Cotnaienr*/
-
-.container {
-  /*Sizing*/
-  width: 1000px;
-  /*Centering*/
-  vertical-align: middle;
-  padding-top: 3px;
-  padding-bottom: 3px;
-}
-
-
-
-
-
-/*Welcome*/
-.welcome {
-  /*Sizing*/
-  width: 100vw;
-  height: 80vh;
-  /*Background*/
-  background: linear-gradient(
-                    rgba(255, 255, 255, .08),
-                    rgba(255, 255, 255, .08)
-                    ),url(https://static.pexels.com/photos/1380/black-and-white-city-skyline-buildings.jpg);
-  background-size: cover;
-  background-position: center bottom;
-  /*Centering*/
-  position: relative;
-}
-
-  .welcome > .container {
-    /*Centering*/
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    /*Border*/
-    border: 2px solid white;
-    border-radius: 20px;
-  }
-
-    .welcome > .container h1,
-    .welcome > .container h2 {
-      /*Centering*/
-      text-align: center;
-    }
-
-    .welcome > .container h1 {
-      /*Typography*/
-      font-family: 'Megrim', sans-serif;
-      font-weight: lighter;
-      font-size: 5.5em;
-      color: white;
-    }
-
-    .welcome > .container h2 {
-      /*Typography*/
-      font-family: 'Roboto', sans-serif;
-      font-weight: lighter;
-      font-size: 2em;
-      color: white;
-      opacity: .8;
-      /*Margin*/
-      margin-top: -.5em;
-    }
