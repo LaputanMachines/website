@@ -39,15 +39,20 @@ html, body {
 
 /*a-link Animations*/
 
-a:link {
+a, a:before, a:after {
+  /*Normalize*/
+  text-decoration: none; 
+}
+
+a:link, a:visited {
   /*Opacity*/
   -webkit-opacity: .85;
      -moz-opacity: .85;
           opacity: .85;
   /*Transition*/
-  -webkit-transition: all .2s ease-in-out;
-     -moz-transition: all .2s ease-in-out;
-          transition: all .2s ease-in-out;
+  -webkit-transition: all .15s ease-in-out;
+     -moz-transition: all .15s ease-in-out;
+          transition: all .15s ease-in-out;
   /*Typography*/
   color: inherit;
   text-decoration: none;
@@ -55,23 +60,15 @@ a:link {
 
 a:hover {
   /*Opacity*/
-  -webkit-opacity: 0.75;
-     -moz-opacity: 0.75;
-          opacity: 0.75;
+  -webkit-opacity: 1;
+     -moz-opacity: 1;
+          opacity: 1;
   /*Transition*/
-  -webkit-transition: all .2s ease-in-out;
-     -moz-transition: all .2s ease-in-out;
-          transition: all .2s ease-in-out;
+  -webkit-transition: all .15s ease-in-out;
+     -moz-transition: all .15s ease-in-out;
+          transition: all .15s ease-in-out;
   /*Typography*/
   color: #2980B9;
-  text-decoration: none;
-}
-
-a:visited {
-  /*Opacity*/
-  opacity: .85;
-  /*Typography*/
-  color: inherit;
   text-decoration: none;
 }
 
@@ -102,6 +99,13 @@ a:active {
   background: black;
 }
 
+/*Selection*/
+
+::selection, ::-moz-selection {
+  background: rgba(41, 128, 185, .5); /* WebKit/Blink Browsers */
+  color: white;
+}
+
 
 
 
@@ -110,29 +114,31 @@ a:active {
 
 /*Desktop*/
 @media screen and (min-width: 800px) {
-  header.header {
+  .header {
     /*Sizing*/
-    width: 100%;
+    width: 100vw;
+    top: 0; left: 0;
     /*Background*/
     background-color: #f5f5f5;
     border-bottom: 1px solid #e5e5e5;
     /*Display*/
     position: fixed;
+    z-index: 2;
   }
 
-  header.header > #title {
+  .header > #title {
     /*Typography*/
     font-family: 'Roboto', Helvetica, sans-serif;
     font-weight: lighter;
     font-size: 1.5em;
     color: grey;
     /*Spacing*/
-    padding: 10px;
+    padding: 15px;
     /*Positioning*/
     float: left;
   }
 
-  header.header > #navigation {
+  .header > #navigationDesktop {
     /*Typography*/
     font-family: 'Roboto', Helvetica, sans-serif;
     font-weight: lighter;
@@ -140,14 +146,132 @@ a:active {
     color: grey;
     /*Spacing*/
     word-spacing: .5em;
-    padding: 10px;
+    padding: 15px;
     /*Positioning*/
     float: right;
     line-height: 1.5em;
+  }
+
+  .header > #navigationMobile {
+    /*Hide*/
+    display: none;
+    visibility: hidden;
+  }
+
+    .header > #navigationDesktop #navigationAccent {
+      /*Underline Letters*/
+      border-bottom: 1px solid grey;
+    }
+}
+
+/*Mobile*/
+@media screen and (max-width: 800px) {
+  .header {
+    /*Sizing*/
+    width: 100vw;
+    top: 0; left: 0;
+    /*Background*/
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #e5e5e5;
+    /*Display*/
+    position: fixed;
+    z-index: 2;
+  }
+
+  .header > #title {
+    /*Typography*/
+    font-family: 'Roboto', Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: 1.5em;
+    color: grey;
+    /*Spacing*/
+    padding: 15px;
+    /*Positioning*/
+    float: left;
+  }
+
+  .header > #navigationDesktop {
+    /*Hide*/
+    display: none;
+    visibility: hidden;
+  }
+
+  .header > #navigationMobile {
+    /*Typography*/
+    font-family: 'Roboto', Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: 1.25em;
+    color: grey;
+    /*Spacing*/
+    word-spacing: .5em;
+    padding: 15px;
+    /*Positioning*/
+    float: right;
+    line-height: 1.5em;
+  }
+
+    .header > #navigationMobile a {
+      /*Underline Letters*/
+      /*border-bottom: 1px solid grey;*/
+    }
+}
+
+
+
+
+
+/*Footer*/
+
+/*Desktop*/
+@media screen and (min-width: 800px) {
+  .footer {
+    /*Sizing*/
+    width: 800px;
+    /*Background*/
+    border-top: 1px solid #e5e5e5;
+    /*Centering*/
+    margin-left: auto;
+    margin-right: auto;
+    /*Display*/
+    z-index: 1;
+  }
+
+  .footer > #copyright {
+    /*Typography*/
+    font-family: 'Roboto', Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: 1.1em;
+    color: grey;
+    /*Spacing*/
+    padding: 15px; 
+    /*Display*/
+    display: block;
   }
 }
 
 /*Mobile*/
 @media screen and (max-width: 800px) {
+  .footer {
+    /*Sizing*/
+    width: 90vw;
+    /*Background*/
+    border-top: 1px solid #e5e5e5;
+    /*Centering*/
+    margin-left: auto;
+    margin-right: auto;
+    /*Display*/
+    z-index: 1;
+  }
 
+  .footer > #copyright {
+    /*Typography*/
+    font-family: 'Roboto', Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: 1.1em;
+    color: grey;
+    /*Spacing*/
+    padding: 15px; 
+    /*Display*/
+    display: block;
+  }
 }
