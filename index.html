@@ -5,12 +5,14 @@
 ========================================
 -->
 
-<!DOCTYPE HTML>
+<!DOCTYPE html lang="en">
+
+<html>
 
 <head>
 
   <!-- Title -->
-  <title>Michael Bassili</title>
+  <title>Michael Bassili | Everyone's Pal</title>
 
   <!-- Meta Data -->
   <meta charset="utf-8">
@@ -26,19 +28,19 @@
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Michael Bassili | Web Developer" />
   <meta property="og:description" content="A comprehensive timeline of the Deus Ex universe." />
-  <meta property="og:image" content="" />
+  <meta property="og:image" content="assets/logo.png" />
 
   <!-- CSS -->
   <link rel="stylesheet" type="text/css" href="css/styles.css">
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/animate.css">
-  <link rel="stylesheet" type="text/css" href="css/mint.css">
 
   <!--Favicon-->
   <link rel="icon" type="image/ico" href="assets/logo.ico" />
 
   <!-- JS -->
   <script type="text/javascript" src="js/scripts.js"></script>
+  <script type="text/javascript" src="js/wow.min.js"></script>
 
 </head>
 
@@ -48,24 +50,17 @@
 
 
 
-  <!--Head-->
-  <header class="header grey fixed">
-    <!-- Logo -->
-    <div class="logo">  
-      <a href="#welcome"><h1>Michael Bassili</h1></a>
-    </div>
-
-    <!-- Navigation -->
-    <div class="nav-right">
-      <nav class="navbar">
-          <ul>
-              <li><a href="#about">About</a></li>
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="#testimonials">Testimonials</a></li>
-              <li><a href="#contact">Contact</a></li>
-          </ul>
-      </nav>
-    </div>
+  <!-- Header -->
+  <header class="header" id="header">
+    <!-- Title -->
+    <span id="title"><a href="#">Michael Bassili</a></span>
+    <!-- Nav Bar -->
+    <nav id="navigation">
+      <a href="#about">About</a> 
+      <a href="#projects">Projects</a> 
+      <a href="#testimonials">Testimonials</a> 
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
 
@@ -110,10 +105,8 @@
 
 </body>
 
-<footer class="footer grey">
-  
-  <div class="footer-container">
-    &copy; 2015-16 Michael Bassili | <a target="_blank" href="http://github.com/mikajis">@Mikajis</a>
-  </div>
+<footer class="footer" id="footer">
 
 </footer>
+
+</html>
