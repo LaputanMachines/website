@@ -1,8 +1,8 @@
 /*Portfolio :: styles.css*/
 /*
-========================================
+================================
 (C) 2015-16 Michael Bassili
-========================================
+================================
 */
 
 
@@ -12,8 +12,7 @@
 /*Fonts*/
 
 @import url(https://fonts.googleapis.com/css?family=Megrim);
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,300);
-
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300,100italic,300italic);
 /*General*/
 
 *, *:before, *:after {
@@ -29,7 +28,7 @@
 
 html, body {
   /*Handle Large Text-Blocks*/
-  text-rendering: optimizeSpeed;
+  text-rendering: optimizeLegibility;
   /*Antialiasing*/
   -webkit-font-smoothing: antialiased;
      -moz-font-smoothing: antialiased;
@@ -38,11 +37,6 @@ html, body {
 }
 
 /*a-link Animations*/
-
-a, a:before, a:after {
-  /*Normalize*/
-  text-decoration: none; 
-}
 
 a:link, a:visited {
   /*Opacity*/
@@ -102,7 +96,7 @@ a:active {
 /*Selection*/
 
 ::selection, ::-moz-selection {
-  background: rgba(41, 128, 185, .5); /* WebKit/Blink Browsers */
+  background: rgba(41, 128, 185, .5);
   color: white;
 }
 
@@ -129,7 +123,7 @@ a:active {
   .header > #title {
     /*Typography*/
     font-family: 'Roboto', Helvetica, sans-serif;
-    font-weight: lighter;
+    font-weight: 300;
     font-size: 1.5em;
     color: grey;
     /*Spacing*/
@@ -141,7 +135,7 @@ a:active {
   .header > #navigationDesktop {
     /*Typography*/
     font-family: 'Roboto', Helvetica, sans-serif;
-    font-weight: lighter;
+    font-weight: 300;
     font-size: 1.25em;
     color: grey;
     /*Spacing*/
@@ -181,7 +175,7 @@ a:active {
   .header > #title {
     /*Typography*/
     font-family: 'Roboto', Helvetica, sans-serif;
-    font-weight: lighter;
+    font-weight: 300;
     font-size: 1.5em;
     color: grey;
     /*Spacing*/
@@ -199,7 +193,7 @@ a:active {
   .header > #navigationMobile {
     /*Typography*/
     font-family: 'Roboto', Helvetica, sans-serif;
-    font-weight: lighter;
+    font-weight: 300;
     font-size: 1.25em;
     color: grey;
     /*Spacing*/
@@ -214,6 +208,302 @@ a:active {
       /*Underline Letters*/
       /*border-bottom: 1px solid grey;*/
     }
+}
+
+
+
+
+
+/*About*/
+
+/*Desktop*/
+@media screen and (min-width: 800px) {
+  .about {
+    /*Sizing*/
+    width: 800px;
+    /*Centering*/
+    margin-left: auto;
+    margin-right: auto;
+    /*Display*/
+    z-index: 1;
+    /*Spacing*/
+    margin-top: 4em;
+    padding: 15px;
+    /*Background*/
+    border-bottom: 1px solid #e5e5e5;
+
+  }
+
+    .about > #title {
+      /*Typography*/
+      font-family: 'Megrim' !important;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 4em;
+      color: #3F3F3F;
+      text-align: center;
+      /*Normalize*/
+      margin: 0;
+    }
+
+    .about > #subtitle {
+      /*Typography*/
+      font-family: 'Roboto', sans-serif;
+      font-weight: 300;
+      font-style: normal;
+      font-size: 1.72em;
+      color: #848484;
+      text-align: center;
+    }
+
+  .about > #headshots {
+    /*Display*/
+    display: -webkit-box;
+    overflow: hidden;
+    /*Centering*/
+    text-align: center;
+  }
+
+    .about > #headshots img {
+      /*Display*/
+      display: inline-block;
+      /*Sizing*/
+      width: calc(100% / 3 - 3px);
+      /*Spacing*/
+      padding: 15px;
+      /*Centering*/
+      margin: auto 0;
+    }
+
+  .about > #aboutMe {
+    /*Typography*/
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1.17em;
+    color: #666;
+    font-style: normal;
+    text-align: left;
+    text-indent: 1em;
+    line-height: 1.3em;
+    /*Spacing*/
+    padding: 15px;
+  }
+
+  .about > .skills {
+    /*Double Columns*/
+    column-count: 2;
+  }
+
+  .progressBar {
+    /*Sizing*/
+    width: calc(800px / 2 - 30px);
+    /*Spacing*/
+    padding: 15px; 
+    /*Display*/
+    display: inline-block;
+  }
+
+  .progressBar h4 {
+    /*Typography*/
+    font-size: 1.17em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #666;
+    font-style: normal;
+    /*Spacing*/
+    margin-bottom: 7px;
+    margin-bottom: .33em;
+  }
+
+  .progressBarContainer {
+    /*Sizing*/
+    width: 100%;
+    max-width: 350px;
+    height: 26px;
+    height: 1.66em;
+    /*Background*/
+    background: #e6eae3;
+    background: rgba(8,102,220,.2);
+    /*Position*/
+    overflow: hidden;
+    border-radius: 5px;
+  }
+   
+  .progressBarValue {
+    /*Sizing*/
+    height: 1.66em;
+    /*Position*/
+    float: left;
+  }
+
+  /*All Possible Values*/
+  .value-00 { width: 0; }
+  .value-10 { width: 10%; }
+  .value-20 { width: 20%; }
+  .value-30 { width: 30%; }
+  .value-40 { width: 40%; }
+  .value-50 { width: 50%; }
+  .value-60 { width: 60%; }
+  .value-70 { width: 70%; }
+  .value-80 { width: 80%; }
+  .value-90 { width: 90%; }
+  .value-100 { width: 100%; }
+
+  /*All Colors*/
+  .html { background: #e67e22; }
+  .css { background: #3498db; }
+  .js { background: #2c3e50; }
+  .c { background: #525252; }
+  .python { background: #2ecc71; }
+  .cpp { background: #0866dc; }
+}
+
+/*Mobile*/
+@media screen and (max-width: 800px) {
+  .about {
+    /*Sizing*/
+    width: 100%;
+    /*Centering*/
+    margin-left: auto;
+    margin-right: auto;
+    /*Display*/
+    z-index: 1;
+    /*Spacing*/
+    margin-top: 4em;
+    padding: 15px;
+    /*Background*/
+    border-bottom: 1px solid #e5e5e5;
+
+  }
+
+    .about > #title {
+      /*Typography*/
+      font-family: 'Megrim' !important;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 3.5em;
+      color: #3F3F3F;
+      text-align: center;
+      /*Normalize*/
+      margin: 0;
+    }
+
+    .about > #subtitle {
+      /*Typography*/
+      font-family: 'Roboto', sans-serif;
+      font-weight: 300;
+      font-style: normal;
+      font-size: 1.65em;
+      color: #848484;
+      text-align: center;
+    }
+
+  .about > #headshots {
+    /*Display*/
+    display: -webkit-box;
+    overflow: hidden;
+    /*Centering*/
+    text-align: center;
+  }
+
+    .about > #headshots img {
+      /*Display*/
+      display: inline-block;
+      /*Sizing*/
+      width: 100%;
+      /*Spacing*/
+      padding: 15px;
+      /*Centering*/
+      margin: auto 0;
+    }
+
+    .about > #headshots #imageMobile {
+      /*Hide*/
+      visibility: hidden;
+      display: none; 
+    }
+
+  .about > #aboutMe {
+    /*Typography*/
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1.17em;
+    color: #666;
+    font-style: normal;
+    text-align: left;
+    text-indent: 1em;
+    line-height: 1.3em;
+    /*Spacing*/
+    padding: 15px;
+  }
+
+  .about > .skills {
+    /*Double Columns*/
+    column-count: 1;
+  }
+
+  .progressBar {
+    /*Sizing*/
+    width: 100%;
+    /*Spacing*/
+    padding: 15px; 
+    /*Display*/
+    display: inline-block;
+  }
+
+  .progressBar h4 {
+    /*Typography*/
+    font-size: 1.17em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #666;
+    font-style: normal;
+    /*Spacing*/
+    margin-bottom: 7px;
+    margin-bottom: .33em;
+  }
+
+  .progressBarContainer {
+    /*Sizing*/
+    width: 100%;
+    max-width: 350px;
+    height: 26px;
+    height: 1.66em;
+    /*Background*/
+    background: #e6eae3;
+    background: rgba(8,102,220,.2);
+    /*Position*/
+    overflow: hidden;
+    border-radius: 5px;
+  }
+   
+  .progressBarValue {
+    /*Sizing*/
+    height: 1.66em;
+    /*Position*/
+    float: left;
+  }
+
+  /*All Possible Values*/
+  .value-00 { width: 0; }
+  .value-10 { width: 10%; }
+  .value-20 { width: 20%; }
+  .value-30 { width: 30%; }
+  .value-40 { width: 40%; }
+  .value-50 { width: 50%; }
+  .value-60 { width: 60%; }
+  .value-70 { width: 70%; }
+  .value-80 { width: 80%; }
+  .value-90 { width: 90%; }
+  .value-100 { width: 100%; }
+
+  /*All Colors*/
+  .html { background: #e67e22; }
+  .css { background: #3498db; }
+  .js { background: #2c3e50; }
+  .c { background: #525252; }
+  .python { background: #2ecc71; }
+  .cpp { background: #0866dc; }
 }
 
 
@@ -239,9 +529,9 @@ a:active {
   .footer > #copyright {
     /*Typography*/
     font-family: 'Roboto', Helvetica, sans-serif;
-    font-weight: lighter;
+    font-weight: 300;
     font-size: 1.1em;
-    color: grey;
+    color: #767676;
     /*Spacing*/
     padding: 15px; 
     /*Display*/
@@ -266,9 +556,9 @@ a:active {
   .footer > #copyright {
     /*Typography*/
     font-family: 'Roboto', Helvetica, sans-serif;
-    font-weight: lighter;
+    font-weight: 300;
     font-size: 1.1em;
-    color: grey;
+    color: #767676;
     /*Spacing*/
     padding: 15px; 
     /*Display*/

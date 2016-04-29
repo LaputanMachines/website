@@ -1,8 +1,8 @@
 <!-- Portfolio :: index.html -->
 <!--
-========================================
+=================================
 (C) 2015-16 Michael Bassili
-========================================
+=================================
 -->
 
 <!DOCTYPE html lang="en">
@@ -41,6 +41,7 @@
   <!-- JS -->
   <script type="text/javascript" src="js/scripts.js"></script>
   <script type="text/javascript" src="js/wow.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
 </head>
 
@@ -50,7 +51,8 @@
 
 
 
-  <!-- Header -->  <div class="header" id="header">
+  <!-- Header -->  
+  <div class="header" id="header">
     <!-- Title -->
     <span id="title"><a href="#">Michael Bassili</a></span>
     <!-- Desktop Nav Bar -->
@@ -75,7 +77,70 @@
 
   <!-- About -->
   <div class="about" id="about">
+    <!-- Titles -->
+    <h1 id="title">Michael Bassili</h1>
+    <h2 id="subtitle">Web Developer // Programmer // Mathematician</h2>
+    <!-- Headshots -->
+    <div id="headshots">
+      <img id="imageMobile" src="assets/test.jpg">
+      <img src="assets/test.jpg">
+      <img id="imageMobile" src="assets/test.jpg">
+    </div>
+    <!-- About Me -->
+    <div id="aboutMe">
+      I am currently a student at Simon Fraser University studying Mathematics and Computing Science. On the side, I pursue freelance projects and play the occasional video game. I enjoy exercising my creativity as a designer as well as stretching my mind with a challenging puzzle.
+    </div>
+    <!-- Skills -->
+    <div class="skills">
 
+      <!-- HTML5 -->
+      <div class="progressBar">
+        <h4>HTML5</h4>
+        <div class="progressBarContainer">
+          <div class="progressBarValue value-100 html"></div>
+        </div>
+      </div>
+
+      <!-- CSS3 -->
+      <div class="progressBar">
+        <h4>CSS3</h4>
+        <div class="progressBarContainer">
+          <div class="progressBarValue value-100 css"></div>
+        </div>
+      </div>
+
+      <!-- JS -->
+      <div class="progressBar">
+        <h4>JavaScript</h4>
+        <div class="progressBarContainer">
+          <div class="progressBarValue value-20 js"></div>
+        </div>
+      </div>
+
+      <!-- C -->
+      <div class="progressBar">
+        <h4>C</h4>
+        <div class="progressBarContainer">
+          <div class="progressBarValue value-90 c"></div>
+        </div>
+      </div>
+
+      <!-- Python -->
+      <div class="progressBar">
+        <h4>Python</h4>
+        <div class="progressBarContainer">
+          <div class="progressBarValue value-70 python"></div>
+        </div>
+      </div>
+
+      <!-- C++ -->
+      <div class="progressBar">
+        <h4>C++</h4>
+        <div class="progressBarContainer">
+          <div class="progressBarValue value-30 cpp"></div>
+        </div>
+      </div>
+    </div>
   </div>
 
 
