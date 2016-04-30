@@ -120,7 +120,14 @@ a:active {
     z-index: 2;
   }
 
-  .header > #title {
+  .header #headerContainer {
+    /*Sizing*/
+    width: 800px;
+    /*Centering*/
+    margin: 0 auto;
+  }
+
+  .header #title {
     /*Typography*/
     font-family: 'Roboto', Helvetica, sans-serif;
     font-weight: 300;
@@ -132,7 +139,7 @@ a:active {
     float: left;
   }
 
-  .header > #navigationDesktop {
+  .header #navigationDesktop {
     /*Typography*/
     font-family: 'Roboto', Helvetica, sans-serif;
     font-weight: 300;
@@ -146,13 +153,13 @@ a:active {
     line-height: 1.5em;
   }
 
-  .header > #navigationMobile {
+  .header #navigationMobile {
     /*Hide*/
     display: none;
     visibility: hidden;
   }
 
-    .header > #navigationDesktop #navigationAccent {
+    .header #navigationDesktop #navigationAccent {
       /*Underline Letters*/
       border-bottom: 1px solid grey;
     }
@@ -172,7 +179,7 @@ a:active {
     z-index: 2;
   }
 
-  .header > #title {
+  .header #title {
     /*Typography*/
     font-family: 'Roboto', Helvetica, sans-serif;
     font-weight: 300;
@@ -184,13 +191,13 @@ a:active {
     float: left;
   }
 
-  .header > #navigationDesktop {
+  .header #navigationDesktop {
     /*Hide*/
     display: none;
     visibility: hidden;
   }
 
-  .header > #navigationMobile {
+  .header #navigationMobile {
     /*Typography*/
     font-family: 'Roboto', Helvetica, sans-serif;
     font-weight: 300;
@@ -204,7 +211,7 @@ a:active {
     line-height: 1.5em;
   }
 
-    .header > #navigationMobile a {
+    .header #navigationMobile a {
       /*Underline Letters*/
       /*border-bottom: 1px solid grey;*/
     }
@@ -456,6 +463,8 @@ a:active {
     padding: 15px; 
     /*Display*/
     display: inline-block;
+    /*Centering*/
+    text-align: -webkit-center;
   }
 
   .progressBar h4 {
@@ -571,7 +580,7 @@ a:active {
     /*Typography*/
     font-family: 'Roboto', Helvetica, sans-serif;
     font-weight: 300;
-    font-size: 1.1em;
+    font-size: 1em;
     color: #767676;
     /*Spacing*/
     padding: 15px; 
