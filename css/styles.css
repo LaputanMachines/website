@@ -234,7 +234,7 @@ a:active {
 
   }
 
-    .about > #title {
+    .about #title {
       /*Typography*/
       font-family: 'Megrim' !important;
       font-style: normal;
@@ -246,7 +246,7 @@ a:active {
       margin: 0;
     }
 
-    .about > #subtitle {
+    .about #subtitle {
       /*Typography*/
       font-family: 'Roboto', sans-serif;
       font-weight: 300;
@@ -256,7 +256,7 @@ a:active {
       text-align: center;
     }
 
-  .about > #headshots {
+  .about #headshots {
     /*Display*/
     display: -webkit-box;
     overflow: hidden;
@@ -264,7 +264,7 @@ a:active {
     text-align: center;
   }
 
-    .about > #headshots img {
+    .about #headshots img {
       /*Display*/
       display: inline-block;
       /*Sizing*/
@@ -275,7 +275,7 @@ a:active {
       margin: auto 0;
     }
 
-  .about > #aboutMe {
+  .about #aboutMe {
     /*Typography*/
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
@@ -289,7 +289,7 @@ a:active {
     padding: 15px;
   }
 
-  .about > .skills {
+  .about .skills {
     /*Double Columns*/
     column-count: 2;
   }
@@ -320,7 +320,7 @@ a:active {
     width: 100%;
     max-width: 350px;
     height: 26px;
-    height: 1.66em;
+    height: 1.25em;
     /*Background*/
     background: #e6eae3;
     background: rgba(8,102,220,.2);
@@ -331,9 +331,16 @@ a:active {
    
   .progressBarValue {
     /*Sizing*/
-    height: 1.66em;
+    height: 1.25em;
     /*Position*/
     float: left;
+    /*Typography*/
+    text-align: right;
+    line-height: 1.25em;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 300;
   }
 
   /*All Possible Values*/
@@ -376,7 +383,7 @@ a:active {
 
   }
 
-    .about > #title {
+    .about #title {
       /*Typography*/
       font-family: 'Megrim' !important;
       font-style: normal;
@@ -388,7 +395,7 @@ a:active {
       margin: 0;
     }
 
-    .about > #subtitle {
+    .about #subtitle {
       /*Typography*/
       font-family: 'Roboto', sans-serif;
       font-weight: 300;
@@ -398,7 +405,7 @@ a:active {
       text-align: center;
     }
 
-  .about > #headshots {
+  .about #headshots {
     /*Display*/
     display: -webkit-box;
     overflow: hidden;
@@ -406,7 +413,7 @@ a:active {
     text-align: center;
   }
 
-    .about > #headshots img {
+    .about #headshots img {
       /*Display*/
       display: inline-block;
       /*Sizing*/
@@ -417,13 +424,13 @@ a:active {
       margin: auto 0;
     }
 
-    .about > #headshots #imageMobile {
+    .about #headshots #imageMobile {
       /*Hide*/
       visibility: hidden;
       display: none; 
     }
 
-  .about > #aboutMe {
+  .about #aboutMe {
     /*Typography*/
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
@@ -437,7 +444,7 @@ a:active {
     padding: 15px;
   }
 
-  .about > .skills {
+  .about .skills {
     /*Double Columns*/
     column-count: 1;
   }
@@ -468,7 +475,7 @@ a:active {
     width: 100%;
     max-width: 350px;
     height: 26px;
-    height: 1.66em;
+    height: 1.25em;
     /*Background*/
     background: #e6eae3;
     background: rgba(8,102,220,.2);
@@ -479,9 +486,16 @@ a:active {
    
   .progressBarValue {
     /*Sizing*/
-    height: 1.66em;
+    height: 1.25em;
     /*Position*/
     float: left;
+    /*Typography*/
+    text-align: right;
+    line-height: 1.25em;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 300;
   }
 
   /*All Possible Values*/

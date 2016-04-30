@@ -41,6 +41,10 @@
   <!-- JS -->
   <script type="text/javascript" src="js/scripts.js"></script>
   <script type="text/javascript" src="js/wow.min.js"></script>
+  <script type="text/javascript">
+    // Wow
+    new WOW().init();
+  </script>
 
 </head>
 
@@ -77,60 +81,62 @@
   <!-- About -->
   <div class="about" id="about">
     <!-- Titles -->
-    <h1 id="title">Michael Bassili</h1>
-    <h2 id="subtitle">Web Developer // Programmer // Mathematician</h2>
+    <div class="wow fadeIn titles" data-wow-duration=".45s" id="titles">
+      <h1 id="title">Michael Bassili</h1>
+      <h2 id="subtitle">Web Developer // Programmer // Mathematician</h2>
+    </div>
     <!-- Headshots -->
-    <div id="headshots">
+    <div class="wow fadeIn" id="headshots">
       <img id="imageMobile" src="assets/test.jpg">
       <img src="assets/test.jpg">
       <img id="imageMobile" src="assets/test.jpg">
     </div>
     <!-- About Me -->
-    <div id="aboutMe">
+    <div class="wow fadeIn" data-wow-duration=".45s" id="aboutMe">
       I am currently a student at Simon Fraser University studying Mathematics and Computing Science. On the side, I pursue freelance projects and play the occasional video game. I enjoy exercising my creativity as a designer as well as stretching my mind with a challenging puzzle.
     </div>
     <!-- Skills -->
-    <div class="skills">
+    <div class="wow fadeIn skills" data-wow-duration=".45s" id="skills">
       <!-- HTML5 -->
       <div class="progressBar">
         <h4>HTML5</h4>
         <div class="progressBarContainer">
-          <div class="progressBarValue value-100 html"></div>
+          <div class="progressBarValue value-100 html">100% &nbsp;</div>
         </div>
       </div>
       <!-- CSS3 -->
       <div class="progressBar">
         <h4>CSS3</h4>
         <div class="progressBarContainer">
-          <div class="progressBarValue value-100 css"></div>
+          <div class="progressBarValue value-100 css">100% &nbsp;</div>
         </div>
       </div>
       <!-- JS -->
       <div class="progressBar">
         <h4>JavaScript</h4>
         <div class="progressBarContainer">
-          <div class="progressBarValue value-20 js"></div>
+          <div class="progressBarValue value-20 js">20% &nbsp;</div>
         </div>
       </div>
       <!-- C -->
       <div class="progressBar">
         <h4>C</h4>
         <div class="progressBarContainer">
-          <div class="progressBarValue value-90 c"></div>
+          <div class="progressBarValue value-90 c">90% &nbsp;</div>
         </div>
       </div>
       <!-- Python -->
       <div class="progressBar">
         <h4>Python</h4>
         <div class="progressBarContainer">
-          <div class="progressBarValue value-70 python"></div>
+          <div class="progressBarValue value-70 python">70% &nbsp;</div>
         </div>
       </div>
       <!-- C++ -->
       <div class="progressBar">
         <h4>C++</h4>
         <div class="progressBarContainer">
-          <div class="progressBarValue value-30 cpp"></div>
+          <div class="progressBarValue value-30 cpp">30% &nbsp;</div>
         </div>
       </div>
     </div>
