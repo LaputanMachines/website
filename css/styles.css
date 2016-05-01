@@ -404,7 +404,7 @@ a:active {
       font-family: 'Megrim' !important;
       font-style: normal;
       font-weight: 400;
-      font-size: 3.5em;
+      font-size: 3.45em;
       color: #3F3F3F;
       text-align: center;
       /*Normalize*/
@@ -491,7 +491,7 @@ a:active {
   .progressBarContainer {
     /*Sizing*/
     width: 100%;
-    max-width: 350px;
+    /*max-width: 350px;*/
     height: 26px;
     height: 1.25em;
     /*Background*/
