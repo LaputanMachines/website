@@ -68,7 +68,7 @@ a:hover {
 
 a:active {
   /*Typography*/
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 /*Faded Line*/
@@ -542,6 +542,7 @@ a:active {
 
 
 
+
 /*Projects*/
 
 /*Desktop*/
@@ -804,6 +805,70 @@ a:active {
     width: 100%;
     height: auto;
   }
+}
+
+
+
+
+
+
+/*Testimonials*/
+
+
+/*Desktop*/
+@media screen and (min-width: 800px) {
+  .testimonials {
+    /*Sizing*/
+    width: 800px;
+    /*Centering*/
+    margin-left: auto;
+    margin-right: auto;
+    /*Display*/
+    z-index: 1;
+    /*Spacing*/
+    margin-top: 1em;
+    padding: 15px;
+    /*Background*/
+    border-bottom: 1px solid #e5e5e5;
+  }
+
+    .testimonials #title {
+      /*Typography*/
+      font-family: 'Roboto', sans-serif;
+      font-weight: 300;
+      font-style: normal;
+      font-size: 1.72em;
+      color: #848484;
+      text-align: center;
+    }
+}
+
+/*Mobile*/
+@media screen and (max-width: 800px) {
+  .testimonials {
+    /*Sizing*/
+    width: 100vw;
+    /*Centering*/
+    margin-left: auto;
+    margin-right: auto;
+    /*Display*/
+    z-index: 1;
+    /*Spacing*/
+    margin-top: 1em;
+    padding: 15px;
+    /*Background*/
+    border-bottom: 1px solid #e5e5e5;
+  }
+
+    .testimonials #title {
+      /*Typography*/
+      font-family: 'Roboto', sans-serif;
+      font-weight: 300;
+      font-style: normal;
+      font-size: 1.72em;
+      color: #848484;
+      text-align: center;
+    }
 }
 
 
