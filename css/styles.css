@@ -221,7 +221,7 @@ a:active {
 
     .header #navigationMobile a {
       /*Underline Letters*/
-      /*border-bottom: 1px solid grey;*/
+      border-bottom: 1px solid grey;
     }
 }
 
@@ -269,6 +269,8 @@ a:active {
       font-size: 1.72em;
       color: #848484;
       text-align: center;
+      /*Spacing*/
+      padding-bottom: 15px;
     }
 
   .about #headshots {
@@ -396,7 +398,6 @@ a:active {
     padding-bottom: calc(15px + 1em);
     /*Background*/
     border-bottom: 1px solid #e5e5e5;
-
   }
 
     .about #title {
@@ -419,6 +420,8 @@ a:active {
       font-size: 1.65em;
       color: #848484;
       text-align: center;
+      /*Spacing*/
+      padding-bottom: 15px;
     }
 
   .about #headshots {
@@ -570,6 +573,8 @@ a:active {
     font-size: 1.72em;
     color: #848484;
     text-align: center;
+    /*Spacing*/
+    padding-bottom: 15px;
   }
 
   .projects #projectList {
@@ -701,6 +706,8 @@ a:active {
     font-size: 1.72em;
     color: #848484;
     text-align: center;
+    /*Spacing*/
+    padding-bottom: 15px;
   }
 
   .projects #projectList {
@@ -840,6 +847,41 @@ a:active {
       font-size: 1.72em;
       color: #848484;
       text-align: center;
+      /*Spacing*/
+      padding-bottom: 15px;
+    }
+
+    .testimonials #quote {
+      /*Display*/
+      display: block;
+      /*Typography*/
+      font-family: 'Roboto', sans-serif;
+      font-weight: 300;
+      font-size: 1.25em;
+      color: #555;
+      font-style: italic;
+      text-align: center;
+      line-height: 1.3em;
+      /*Spacing*/
+      padding: 15px;
+    }
+
+    .testimonials #author {
+      /*Display*/
+      display: block;
+      /*Typography*/
+      font-family: 'Roboto', sans-serif;
+      font-weight: 300;
+      font-size: 1.15em;
+      color: #666;
+      font-style: normal;
+      text-align: right;
+      text-indent: 1em;
+      line-height: 1.3em;
+      /*Spacing*/
+      padding: 15px;
+      margin-top: -20px;
+      margin-right: 15px;
     }
 }
 
@@ -868,7 +910,176 @@ a:active {
       font-size: 1.72em;
       color: #848484;
       text-align: center;
+      /*Spacing*/
+      padding-bottom: 15px;
     }
+
+  .testimonials #quote {
+    /*Display*/
+    display: block;
+    /*Typography*/
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1.2em;
+    color: #555;
+    font-style: italic;
+    text-align: left;
+    line-height: 1.3em;
+    /*Spacing*/
+    padding: 15px;
+  }
+
+  .testimonials #author {
+    /*Display*/
+    display: block;
+    /*Typography*/
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1.15em;
+    color: #666;
+    font-style: normal;
+    text-align: right;
+    text-indent: 1em;
+    line-height: 1.3em;
+    /*Spacing*/
+    padding: 15px;
+    margin-top: -20px;
+    margin-right: 15px;
+  }
+}
+
+
+
+
+
+/*Contact*/
+
+/*Desktop*/
+
+@media screen and (min-width: 800px) {
+  .contact {
+    /*Sizing*/
+    width: 800px;
+    /*Centering*/
+    margin-left: auto;
+    margin-right: auto;
+    /*Display*/
+    z-index: 1;
+    /*Spacing*/
+    margin-top: 1em;
+    padding: 15px;
+  }
+
+  .contact #title {
+    /*Typography*/
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1.72em;
+    color: #848484;
+    text-align: center;
+    /*Spacing*/
+    padding-bottom: 15px;
+  }
+
+  .contact #availability {
+    /*Display*/
+    display: block;
+    /*Typography*/
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1.25em;
+    color: #666;
+    font-style: normal;
+    text-align: center;
+    line-height: 1.3em;
+  }
+
+  .contact #contactText {
+    /*Typography*/
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1.17em;
+    color: #666;
+    font-style: normal;
+    text-align: left;
+    text-indent: 1em;
+    line-height: 1.3em;
+    /*Spacing*/
+    padding: 15px;
+    /*Display*/
+    display: block;
+  }
+
+  .contact #contactLinks {
+    /*Typography*/
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1.35em;
+    color: #666;
+    font-style: normal;
+    text-align: center;
+    line-height: 1.3em;
+    word-spacing: 1em;
+    /*Spacing*/
+    padding-bottom: 15px;
+    /*Display*/
+    display: block;
+  }
+
+  .contact #contactLinks button {
+    padding: 8px 30px;
+    font-weight: 300;
+    font-size: 0.92em;
+    border-radius: 2px;
+    color: #fff;
+    margin: 20px 0 10px;
+  }
+
+    .git {
+      padding: 8px 30px;
+      background-color: #F27935;
+      border: 1px solid #E67E22;
+      font-weight: 300;
+      font-size: 0.92em;
+      border-radius: 2px;
+      color: #fff;
+      background-color: #F27935;
+      border: 1px solid #E67E22;
+      margin: 20px 0 10px;
+    }
+
+    .email {
+      padding: 8px 30px;
+      background-color: #3498DB;
+      border: 1px solid #4183D7;
+      font-weight: 300;
+      font-size: 0.92em;
+      border-radius: 2px;
+      color: #fff;
+      background-color: #3498DB;
+      border: 1px solid #4183D7;
+      margin: 20px 0 10px;
+    }
+
+    .linkedin {
+      padding: 8px 30px;
+      background-color: #D24D57;
+      border: 1px solid #D64541;
+      font-weight: 300;
+      font-size: 0.92em;
+      border-radius: 2px;
+      color: #fff;
+      background-color: #D24D57;
+      border: 1px solid #D64541;
+      margin: 20px 0 10px;
+    }
+}
+
+/*Mobile*/
+
+@media screen and (max-width: 800px) {
+
 }
 
 
