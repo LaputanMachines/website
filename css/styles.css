@@ -12,7 +12,8 @@
 /*Fonts*/
 
 @import url(https://fonts.googleapis.com/css?family=Megrim);
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300,100italic,300italic);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,300italic);
+
 /*General*/
 
 *, *:before, *:after {
@@ -24,11 +25,11 @@
   /*Normalize (fallback)*/
   margin: 0;
   padding: 0;
+  /*Handle Large Text-Blocks*/
+  text-rendering: optimizeLegibility;
 }
 
 html, body {
-  /*Handle Large Text-Blocks*/
-  text-rendering: optimizeLegibility;
   /*Antialiasing*/
   -webkit-font-smoothing: antialiased;
      -moz-font-smoothing: antialiased;
@@ -137,9 +138,9 @@ a:active {
 
   .header #title {
     /*Typography*/
-    font-family: 'Roboto', Helvetica, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 300;
-    font-size: 1.5em;
+    font-size: 1.25em;
     color: grey;
     /*Spacing*/
     padding: 15px;
@@ -149,16 +150,16 @@ a:active {
 
   .header #navigationDesktop {
     /*Typography*/
-    font-family: 'Roboto', Helvetica, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 300;
-    font-size: 1.25em;
+    font-size: 1.15em;
     color: grey;
     /*Spacing*/
     word-spacing: .5em;
     padding: 15px;
     /*Positioning*/
     float: right;
-    line-height: 1.5em;
+    line-height: 1.25em;
   }
 
   .header #navigationMobile {
@@ -189,9 +190,9 @@ a:active {
 
   .header #title {
     /*Typography*/
-    font-family: 'Roboto', Helvetica, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 300;
-    font-size: 1.5em;
+    font-size: 1.25em;
     color: grey;
     /*Spacing*/
     padding: 15px;
@@ -207,16 +208,16 @@ a:active {
 
   .header #navigationMobile {
     /*Typography*/
-    font-family: 'Roboto', Helvetica, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 300;
-    font-size: 1.25em;
+    font-size: 1.15em;
     color: grey;
     /*Spacing*/
     word-spacing: .5em;
     padding: 15px;
     /*Positioning*/
     float: right;
-    line-height: 1.5em;
+    line-height: 1.25em;
   }
 
     .header #navigationMobile a {
@@ -251,11 +252,11 @@ a:active {
 
     .about #title {
       /*Typography*/
-      font-family: 'Megrim' !important;
+      font-family: 'Megrim';
       font-style: normal;
       font-weight: 400;
-      font-size: 4em;
-      color: #3F3F3F;
+      font-size: 3.5em;
+      color: #222;
       text-align: center;
       /*Normalize*/
       margin: 0;
@@ -263,11 +264,11 @@ a:active {
 
     .about #subtitle {
       /*Typography*/
-      font-family: 'Roboto', sans-serif;
+      font-family: 'Open Sans', sans-serif;
       font-weight: 300;
       font-style: normal;
-      font-size: 1.72em;
-      color: #848484;
+      font-size: 1.5em;
+      color: #666;
       text-align: center;
       /*Spacing*/
       padding-bottom: 15px;
@@ -294,10 +295,10 @@ a:active {
 
   .about #aboutMe {
     /*Typography*/
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     font-size: 1.17em;
-    color: #666;
+    color: #333;
     font-style: normal;
     text-align: left;
     text-indent: 1em;
@@ -323,7 +324,7 @@ a:active {
   .progressBar h4 {
     /*Typography*/
     font-size: 1.17em;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     color: #666;
     font-style: normal;
@@ -355,9 +356,9 @@ a:active {
     text-align: right;
     line-height: 1.25em;
     color: white;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-style: normal;
-    font-weight: 300;
+    font-weight: 400;
   }
 
   /*All Possible Values*/
@@ -402,11 +403,11 @@ a:active {
 
     .about #title {
       /*Typography*/
-      font-family: 'Megrim' !important;
+      font-family: 'Megrim';
       font-style: normal;
       font-weight: 400;
-      font-size: 3.45em;
-      color: #3F3F3F;
+      font-size: 3em;
+      color: #222;
       text-align: center;
       /*Normalize*/
       margin: 0;
@@ -414,11 +415,11 @@ a:active {
 
     .about #subtitle {
       /*Typography*/
-      font-family: 'Roboto', sans-serif;
+      font-family: 'Open Sans', sans-serif;
       font-weight: 300;
       font-style: normal;
-      font-size: 1.65em;
-      color: #848484;
+      font-size: 1.5em;
+      color: #666;
       text-align: center;
       /*Spacing*/
       padding-bottom: 15px;
@@ -451,14 +452,14 @@ a:active {
 
   .about #aboutMe {
     /*Typography*/
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 300;
-    font-size: 1.17em;
-    color: #666;
+    font-size: 1.15em;
+    color: #333;
     font-style: normal;
     text-align: left;
     text-indent: 1em;
-    line-height: 1.3em;
+    line-height: 1.5em;
     /*Spacing*/
     padding: 15px;
   }
@@ -482,7 +483,7 @@ a:active {
   .progressBar h4 {
     /*Typography*/
     font-size: 1.17em;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     color: #666;
     font-style: normal;
@@ -514,9 +515,9 @@ a:active {
     text-align: right;
     line-height: 1.25em;
     color: white;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-style: normal;
-    font-weight: 300;
+    font-weight: 400;
   }
 
   /*All Possible Values*/
@@ -567,11 +568,11 @@ a:active {
 
   .projects #title {
     /*Typography*/
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     font-style: normal;
     font-size: 1.72em;
-    color: #848484;
+    color: #666;
     text-align: center;
     /*Spacing*/
     padding-bottom: 15px;
@@ -640,10 +641,10 @@ a:active {
   .card.photo > .card-content {
     padding: 15px;
     /*Typography*/
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 300;
-    font-size: 1.2em;
-    color: #666;
+    font-size: 1.17em;
+    color: #333;
     font-style: normal;
     text-align: center;
     line-height: 1.5em;
@@ -653,7 +654,7 @@ a:active {
     padding: 8px 30px;
     background-color: #f0f0f0;
     border: 1px solid #dadada;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 0.92em;
     border-radius: 2px;
     color: #fff;
@@ -666,7 +667,7 @@ a:active {
     padding: 8px 30px;
     background-color: #27ae60;
     border: 1px solid #2ecc71;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 0.92em;
     border-radius: 2px;
     color: #fff;
@@ -700,7 +701,7 @@ a:active {
 
   .projects #title {
     /*Typography*/
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     font-style: normal;
     font-size: 1.72em;
@@ -773,10 +774,10 @@ a:active {
   .card.photo > .card-content {
     padding: 15px;
     /*Typography*/
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 300;
-    font-size: 1.2em;
-    color: #666;
+    font-size: 1.17em;
+    color: #333;
     font-style: normal;
     text-align: center;
     line-height: 1.5em;
@@ -786,7 +787,7 @@ a:active {
     padding: 8px 30px;
     background-color: #f0f0f0;
     border: 1px solid #dadada;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 0.92em;
     border-radius: 2px;
     color: #fff;
@@ -799,7 +800,7 @@ a:active {
     padding: 8px 30px;
     background-color: #27ae60;
     border: 1px solid #2ecc71;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 0.92em;
     border-radius: 2px;
     color: #fff;
@@ -841,11 +842,11 @@ a:active {
 
     .testimonials #title {
       /*Typography*/
-      font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
       font-weight: 300;
       font-style: normal;
       font-size: 1.72em;
-      color: #848484;
+      color: #666;
       text-align: center;
       /*Spacing*/
       padding-bottom: 15px;
@@ -855,11 +856,11 @@ a:active {
       /*Display*/
       display: block;
       /*Typography*/
-      font-family: 'Roboto', sans-serif;
+      font-family: 'Open Sans', sans-serif;
       font-weight: 300;
-      font-size: 1.25em;
-      color: #555;
-      font-style: italic;
+      font-size: 1.17em;
+      color: #333;
+      font-style: normal;
       text-align: center;
       line-height: 1.3em;
       /*Spacing*/
@@ -870,10 +871,10 @@ a:active {
       /*Display*/
       display: block;
       /*Typography*/
-      font-family: 'Roboto', sans-serif;
+      font-family: 'Open Sans', sans-serif;
       font-weight: 300;
       font-size: 1.15em;
-      color: #666;
+      color: #444;
       font-style: normal;
       text-align: right;
       text-indent: 1em;
@@ -904,11 +905,11 @@ a:active {
 
     .testimonials #title {
       /*Typography*/
-      font-family: 'Roboto', sans-serif;
+      font-family: 'Open Sans', sans-serif;
       font-weight: 300;
       font-style: normal;
       font-size: 1.72em;
-      color: #848484;
+      color: #666;
       text-align: center;
       /*Spacing*/
       padding-bottom: 15px;
@@ -918,13 +919,13 @@ a:active {
     /*Display*/
     display: block;
     /*Typography*/
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 300;
-    font-size: 1.2em;
-    color: #555;
-    font-style: italic;
+    font-size: 1.15em;
+    color: #333;
+    font-style: normal;
     text-align: left;
-    line-height: 1.3em;
+    line-height: 1.5em;
     /*Spacing*/
     padding: 15px;
   }
@@ -933,10 +934,10 @@ a:active {
     /*Display*/
     display: block;
     /*Typography*/
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 300;
-    font-size: 1.15em;
-    color: #666;
+    font-size: 1.1em;
+    color: #444;
     font-style: normal;
     text-align: right;
     text-indent: 1em;
@@ -972,11 +973,11 @@ a:active {
 
   .contact #title {
     /*Typography*/
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     font-style: normal;
     font-size: 1.72em;
-    color: #848484;
+    color: #666;
     text-align: center;
     /*Spacing*/
     padding-bottom: 15px;
@@ -986,21 +987,26 @@ a:active {
     /*Display*/
     display: block;
     /*Typography*/
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     font-size: 1.25em;
-    color: #666;
+    color: #555;
     font-style: normal;
     text-align: center;
     line-height: 1.3em;
   }
 
+    .contact #availability span {
+      /*Underline Letters*/
+      border-bottom: 1px solid grey;
+    }
+
   .contact #contactText {
     /*Typography*/
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     font-size: 1.17em;
-    color: #666;
+    color: #333;
     font-style: normal;
     text-align: left;
     text-indent: 1em;
@@ -1013,10 +1019,10 @@ a:active {
 
   .contact #contactLinks {
     /*Typography*/
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
     font-size: 1.35em;
-    color: #666;
+    color: #444;
     font-style: normal;
     text-align: center;
     line-height: 1.3em;
@@ -1028,11 +1034,19 @@ a:active {
   }
 
   .contact #contactLinks button {
+    /*Typography*/
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: .82em;
+    color: #444;
+    font-style: normal;
+    text-align: center;
+    line-height: 1.3em;
+    word-spacing: 1em;
     padding: 8px 30px;
-    font-weight: 300;
-    font-size: 0.92em;
+    /*Spacing*/
     border-radius: 2px;
-    color: #fff;
+    color: #FEFEFE;
     margin: 20px 0 10px;
   }
 
@@ -1041,7 +1055,7 @@ a:active {
       background-color: #F27935;
       border: 1px solid #E67E22;
       font-weight: 300;
-      font-size: 0.92em;
+      /*font-size: 0.92em;*/
       border-radius: 2px;
       color: #fff;
       background-color: #F27935;
@@ -1051,14 +1065,14 @@ a:active {
 
     .email {
       padding: 8px 30px;
-      background-color: #3498DB;
-      border: 1px solid #4183D7;
+      background-color: #5C9DED;
+      border: 1px solid #4B8CDC;
       font-weight: 300;
-      font-size: 0.92em;
+      /*font-size: 0.92em;*/
       border-radius: 2px;
       color: #fff;
-      background-color: #3498DB;
-      border: 1px solid #4183D7;
+      background-color: #5C9DED;
+      border: 1px solid #4B8CDC;
       margin: 20px 0 10px;
     }
 
@@ -1067,7 +1081,7 @@ a:active {
       background-color: #D24D57;
       border: 1px solid #D64541;
       font-weight: 300;
-      font-size: 0.92em;
+      /*font-size: 0.92em;*/
       border-radius: 2px;
       color: #fff;
       background-color: #D24D57;
@@ -1079,7 +1093,136 @@ a:active {
 /*Mobile*/
 
 @media screen and (max-width: 800px) {
+  .contact {
+    /*Sizing*/
+    width: 100vw;
+    /*Centering*/
+    margin-left: auto;
+    margin-right: auto;
+    /*Display*/
+    z-index: 1;
+    /*Spacing*/
+    margin-top: 1em;
+    padding: 15px;
+  }
 
+  .contact #title {
+    /*Typography*/
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1.72em;
+    color: #666;
+    text-align: center;
+    /*Spacing*/
+    padding-bottom: 15px;
+  }
+
+  .contact #availability {
+    /*Display*/
+    display: block;
+    /*Typography*/
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 1.2em;
+    color: #555;
+    font-style: normal;
+    text-align: center;
+    line-height: 1.3em;
+  }
+
+    .contact #availability span {
+      /*Underline Letters*/
+      border-bottom: 1px solid grey;
+    }
+
+  .contact #contactText {
+    /*Typography*/
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 1.15em;
+    color: #333;
+    font-style: normal;
+    text-align: left;
+    text-indent: 1em;
+    line-height: 1.5em;
+    /*Spacing*/
+    padding: 15px;
+    /*Display*/
+    display: block;
+  }
+
+  .contact #contactLinks {
+    /*Typography*/
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.25em;
+    color: #444;
+    font-style: normal;
+    text-align: center;
+    line-height: 1.3em;
+    word-spacing: 1em;
+    /*Spacing*/
+    padding-bottom: 15px;
+    /*Display*/
+    display: block;
+  }
+
+  .contact #contactLinks button {
+    /*Typography*/
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: .82em;
+    color: #444;
+    font-style: normal;
+    text-align: center;
+    line-height: 1.3em;
+    word-spacing: 1em;
+    padding: 8px 30px;
+    /*Spacing*/
+    border-radius: 2px;
+    color: #FEFEFE;
+    margin: 20px 0 10px;
+  }
+
+    .git {
+      padding: 8px 30px;
+      background-color: #F27935;
+      border: 1px solid #E67E22;
+      font-weight: 300;
+      /*font-size: 0.92em;*/
+      border-radius: 2px;
+      color: #fff;
+      background-color: #F27935;
+      border: 1px solid #E67E22;
+      margin: 20px 0 10px;
+    }
+
+    .email {
+      padding: 8px 30px;
+      background-color: #5C9DED;
+      border: 1px solid #4B8CDC;
+      font-weight: 300;
+      /*font-size: 0.92em;*/
+      border-radius: 2px;
+      color: #fff;
+      background-color: #5C9DED;
+      border: 1px solid #4B8CDC;
+      margin: 20px 0 10px;
+    }
+
+    .linkedin {
+      padding: 8px 30px;
+      background-color: #D24D57;
+      border: 1px solid #D64541;
+      font-weight: 300;
+      /*font-size: 0.92em;*/
+      border-radius: 2px;
+      color: #fff;
+      background-color: #D24D57;
+      border: 1px solid #D64541;
+      margin: 20px 0 10px;
+    }
 }
 
 
@@ -1104,10 +1247,10 @@ a:active {
 
   .footer > #copyright {
     /*Typography*/
-    font-family: 'Roboto', Helvetica, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     font-size: 1.1em;
-    color: #767676;
+    color: #666;
     /*Spacing*/
     padding: 15px; 
     /*Display*/
@@ -1119,7 +1262,7 @@ a:active {
 @media screen and (max-width: 800px) {
   .footer {
     /*Sizing*/
-    width: 90vw;
+    width: 100vw;
     /*Background*/
     border-top: 1px solid #e5e5e5;
     /*Centering*/
@@ -1131,10 +1274,10 @@ a:active {
 
   .footer > #copyright {
     /*Typography*/
-    font-family: 'Roboto', Helvetica, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     font-size: 1em;
-    color: #767676;
+    color: #666;
     /*Spacing*/
     padding: 15px; 
     /*Display*/
