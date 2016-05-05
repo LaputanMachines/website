@@ -374,9 +374,10 @@ a:active {
       /*Display*/
       display: inline-block;
       /*Sizing*/
-      width: calc(100% / 3 - 3px);
+      width: calc(100% / 4.5 - 3px);
       /*Spacing*/
       padding: 15px;
+      border-radius: 50%;
       /*Centering*/
       margin: auto 0;
     }
