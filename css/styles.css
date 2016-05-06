@@ -461,7 +461,7 @@ a:active {
       /*Display*/
       display: inline-block;
       /*Sizing*/
-      width: calc(100% / 4.5 - 3px);
+      width: calc(100% / 5 - 3px);
       /*Spacing*/
       padding: 15px;
       border-radius: 50%;
@@ -472,7 +472,7 @@ a:active {
 
     .about #headshots #imageMobile {
       /*Alternate Sizing*/
-      width: calc(100% / 6.25 - 3px);
+      width: calc(100% / 6.75 - 3px);
     }
 
   .about #aboutMe {
