@@ -88,7 +88,7 @@ a:active {
   /*Styling*/
   color: #dcdcdc;
   height: 1px;
-  background: black;
+  background: #777;
 }
 
 /*Selection*/
@@ -131,7 +131,7 @@ a:active {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     font-size: 1.25em;
-    color: grey;
+    color: #777;
     /*Spacing*/
     padding: 15px;
     /*Positioning*/
@@ -143,8 +143,8 @@ a:active {
     /*Typography*/
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
-    font-size: 1.15em;
-    color: grey;
+    font-size: 1em;
+    color: #777;
     /*Spacing*/
     word-spacing: .5em;
     padding: 15px;
@@ -163,7 +163,7 @@ a:active {
 
     .header #navigationAccent {
       /*Underline Letters*/
-      border-bottom: 1px solid grey;
+      border-bottom: 1px solid #777;
     }
 }
 
@@ -186,7 +186,7 @@ a:active {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     font-size: 1.25em;
-    color: grey;
+    color: #777;
     /*Spacing*/
     padding: 15px;
     /*Positioning*/
@@ -203,8 +203,8 @@ a:active {
     /*Typography*/
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
-    font-size: 1.15em;
-    color: grey;
+    font-size: 1em;
+    color: #777;
     /*Spacing*/
     word-spacing: .5em;
     padding: 15px;
@@ -216,7 +216,7 @@ a:active {
 
     .header #navigationMobile a {
       /*Underline Letters*/
-      border-bottom: 1px solid grey;
+      border-bottom: 1px solid #777;
     }
 }
 
@@ -231,50 +231,6 @@ a:active {
   .welcome {
     /*Sizing*/
     width: 800px;
-    /*Centering*/
-    margin-left: auto;
-    margin-right: auto;
-    /*Display*/
-    z-index: 1;
-    /*Spacing*/
-    margin-top: 4em;
-    padding: 15px;
-    padding-bottom: calc(15px + .25em);
-    /*Background*/
-    border-bottom: 1px solid #e5e5e5;
-  }
-
-  .welcome #title {
-    /*Typography*/
-    font-family: 'Megrim', sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 3.25em;
-    color: #666;
-    text-align: center;
-    /*Spacing*/
-    padding-bottom: 15px;
-  }
-
-  .welcome #subtitle {
-    /*Typography*/
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 1.5em;
-    color: #666;
-    text-align: center;
-    /*Spacing*/
-    margin-top: -.75em;
-    padding-bottom: 15px;
-  }
-}
-
-/*Mobile*/
-@media screen and (max-width: 800px) {
-  .welcome {
-    /*Sizing*/
-    width: 100vw;
     /*Centering*/
     margin-left: auto;
     margin-right: auto;
@@ -314,6 +270,50 @@ a:active {
   }
 }
 
+/*Mobile*/
+@media screen and (max-width: 800px) {
+  .welcome {
+    /*Sizing*/
+    width: 100vw;
+    /*Centering*/
+    margin-left: auto;
+    margin-right: auto;
+    /*Display*/
+    z-index: 1;
+    /*Spacing*/
+    margin-top: 4em;
+    padding: 15px;
+    padding-bottom: calc(15px + .25em);
+    /*Background*/
+    border-bottom: 1px solid #e5e5e5;
+  }
+
+  .welcome #title {
+    /*Typography*/
+    font-family: 'Megrim', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 2.75em;
+    color: #666;
+    text-align: center;
+    /*Spacing*/
+    padding-bottom: 15px;
+  }
+
+  .welcome #subtitle {
+    /*Typography*/
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1.15em;
+    color: #666;
+    text-align: center;
+    /*Spacing*/
+    margin-top: -.75em;
+    padding-bottom: 15px;
+  }
+}
+
 
 
 
@@ -343,18 +343,6 @@ a:active {
       font-family: 'Open Sans', sans-serif;
       font-weight: 300;
       font-style: normal;
-      font-size: 1.72em;
-      color: #666;
-      text-align: center;
-      /*Spacing*/
-      padding-bottom: 15px;
-    }
-
-    .about #subtitle {
-      /*Typography*/
-      font-family: 'Open Sans', sans-serif;
-      font-weight: 300;
-      font-style: normal;
       font-size: 1.5em;
       color: #666;
       text-align: center;
@@ -380,14 +368,20 @@ a:active {
       border-radius: 50%;
       /*Centering*/
       margin: auto 0;
+      vertical-align: middle;
+    }
+
+    .about #headshots #imageMobile {
+      /*Alternate Sizing*/
+      width: calc(100% / 6.25 - 3px);
     }
 
   .about #aboutMe {
     /*Typography*/
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
-    font-size: 1.17em;
-    color: #333;
+    font-size: 1em;
+    color: #555;
     font-style: normal;
     text-align: left;
     text-indent: 1em;
@@ -412,10 +406,10 @@ a:active {
 
   .progressBar h4 {
     /*Typography*/
-    font-size: 1.17em;
+    font-size: 1em;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
-    color: #666;
+    color: #555;
     font-style: normal;
     /*Spacing*/
     margin-bottom: 7px;
@@ -495,18 +489,6 @@ a:active {
       font-family: 'Open Sans', sans-serif;
       font-weight: 300;
       font-style: normal;
-      font-size: 1.72em;
-      color: #848484;
-      text-align: center;
-      /*Spacing*/
-      padding-bottom: 15px;
-    }
-
-    .about #subtitle {
-      /*Typography*/
-      font-family: 'Open Sans', sans-serif;
-      font-weight: 300;
-      font-style: normal;
       font-size: 1.5em;
       color: #666;
       text-align: center;
@@ -526,9 +508,12 @@ a:active {
       /*Display*/
       display: inline-block;
       /*Sizing*/
-      width: 100%;
+      width: 35%;
       /*Spacing*/
       padding: 15px;
+      padding-bottom: 0px;
+      padding-top: 0px;
+      border-radius: 50%;
       /*Centering*/
       margin: auto 0;
     }
@@ -543,8 +528,8 @@ a:active {
     /*Typography*/
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
-    font-size: 1.15em;
-    color: #333;
+    font-size: 1em;
+    color: #555;
     font-style: normal;
     text-align: left;
     text-indent: 1em;
@@ -571,10 +556,10 @@ a:active {
 
   .progressBar h4 {
     /*Typography*/
-    font-size: 1.17em;
+    font-size: 1em;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
-    color: #666;
+    color: #555;
     font-style: normal;
     /*Spacing*/
     margin-bottom: 7px;
@@ -661,7 +646,7 @@ a:active {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     font-style: normal;
-    font-size: 1.72em;
+    font-size: 1.5em;
     color: #666;
     text-align: center;
     /*Spacing*/
@@ -733,8 +718,8 @@ a:active {
     /*Typography*/
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
-    font-size: 1.17em;
-    color: #333;
+    font-size: 1em;
+    color: #555;
     font-style: normal;
     text-align: center;
     line-height: 1.5em;
@@ -795,7 +780,7 @@ a:active {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     font-style: normal;
-    font-size: 1.72em;
+    font-size: 1.5em;
     color: #848484;
     text-align: center;
     /*Spacing*/
@@ -867,8 +852,8 @@ a:active {
     /*Typography*/
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
-    font-size: 1.17em;
-    color: #333;
+    font-size: 1em;
+    color: #555;
     font-style: normal;
     text-align: center;
     line-height: 1.5em;
@@ -937,7 +922,7 @@ a:active {
     font-family: 'Open Sans', sans-serif;
       font-weight: 300;
       font-style: normal;
-      font-size: 1.72em;
+      font-size: 1.5em;
       color: #666;
       text-align: center;
       /*Spacing*/
@@ -950,8 +935,8 @@ a:active {
       /*Typography*/
       font-family: 'Open Sans', sans-serif;
       font-weight: 300;
-      font-size: 1.17em;
-      color: #333;
+      font-size: 1em;
+      color: #555;
       font-style: normal;
       text-align: center;
       line-height: 1.3em;
@@ -965,8 +950,8 @@ a:active {
       /*Typography*/
       font-family: 'Open Sans', sans-serif;
       font-weight: 300;
-      font-size: 1.15em;
-      color: #444;
+      font-size: 1em;
+      color: #555;
       font-style: normal;
       text-align: right;
       text-indent: 1em;
@@ -1001,7 +986,7 @@ a:active {
       font-family: 'Open Sans', sans-serif;
       font-weight: 300;
       font-style: normal;
-      font-size: 1.72em;
+      font-size: 1.5em;
       color: #666;
       text-align: center;
       /*Spacing*/
@@ -1014,8 +999,8 @@ a:active {
     /*Typography*/
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
-    font-size: 1.15em;
-    color: #333;
+    font-size: 1em;
+    color: #555;
     font-style: normal;
     text-align: left;
     line-height: 1.5em;
@@ -1029,8 +1014,8 @@ a:active {
     /*Typography*/
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
-    font-size: 1.1em;
-    color: #444;
+    font-size: 1em;
+    color: #555;
     font-style: normal;
     text-align: right;
     text-indent: 1em;
@@ -1069,7 +1054,7 @@ a:active {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     font-style: normal;
-    font-size: 1.72em;
+    font-size: 1.5em;
     color: #666;
     text-align: center;
     /*Spacing*/
@@ -1098,8 +1083,8 @@ a:active {
     /*Typography*/
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
-    font-size: 1.17em;
-    color: #333;
+    font-size: 1em;
+    color: #555;
     font-style: normal;
     text-align: left;
     text-indent: 1em;
@@ -1114,7 +1099,7 @@ a:active {
     /*Typography*/
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
-    font-size: 1.35em;
+    font-size: 1em;
     color: #444;
     font-style: normal;
     text-align: center;
@@ -1130,7 +1115,7 @@ a:active {
     /*Typography*/
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
-    font-size: .82em;
+    font-size: 1em;
     color: #444;
     font-style: normal;
     text-align: center;
@@ -1204,7 +1189,7 @@ a:active {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     font-style: normal;
-    font-size: 1.72em;
+    font-size: 1.5em;
     color: #666;
     text-align: center;
     /*Spacing*/
@@ -1217,7 +1202,7 @@ a:active {
     /*Typography*/
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
-    font-size: 1.2em;
+    font-size: 1.25em;
     color: #555;
     font-style: normal;
     text-align: center;
@@ -1233,8 +1218,8 @@ a:active {
     /*Typography*/
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
-    font-size: 1.15em;
-    color: #333;
+    font-size: 1em;
+    color: #555;
     font-style: normal;
     text-align: left;
     text-indent: 1em;
@@ -1249,7 +1234,7 @@ a:active {
     /*Typography*/
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
-    font-size: 1.25em;
+    font-size: 1em;
     color: #444;
     font-style: normal;
     text-align: center;
@@ -1265,7 +1250,7 @@ a:active {
     /*Typography*/
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
-    font-size: .82em;
+    font-size: 1em;
     color: #444;
     font-style: normal;
     text-align: center;
@@ -1342,7 +1327,7 @@ a:active {
     /*Typography*/
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
-    font-size: 1.1em;
+    font-size: 1em;
     color: #666;
     /*Spacing*/
     padding: 15px; 
