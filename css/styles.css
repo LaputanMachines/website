@@ -27,9 +27,10 @@
   padding: 0;
 }
 
-html, body {
+*, html, body {
   /*Antialiasing*/
   -webkit-font-smoothing: antialiased;
+ -moz-osx-font-smoothing: grayscale;
      -moz-font-smoothing: antialiased;
        -o-font-smoothing: antialiased;
           font-smoothing: antialiased;
@@ -130,7 +131,7 @@ a:active {
     /*Typography*/
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
-    font-size: 1.5em;
+    font-size: 1.3em;
     color: #777;
     /*Spacing*/
     padding: 15px;
@@ -143,7 +144,7 @@ a:active {
     /*Typography*/
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
-    font-size: 1.25em;
+    font-size: 1.2em;
     color: #777;
     /*Spacing*/
     word-spacing: .5em;
@@ -152,7 +153,7 @@ a:active {
     /*Positioning*/
     display: block;
     float: right;
-    line-height: 1.75em;
+    line-height: 1.5em;
   }
 
   .header #navigationMobile {
@@ -304,7 +305,7 @@ a:active {
     font-family: 'Megrim', sans-serif;
     font-weight: 300;
     font-style: normal;
-    font-size: 3.25em;
+    font-size: 3.5em;
     color: #666;
     text-align: center;
     /*Spacing*/
@@ -316,7 +317,7 @@ a:active {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     font-style: normal;
-    font-size: 1.7em;
+    font-size: 1.4em;
     color: #666;
     text-align: center;
     /*Spacing*/
@@ -442,7 +443,7 @@ a:active {
       font-family: 'Open Sans', sans-serif;
       font-weight: 300;
       font-style: normal;
-      font-size: 1.7em;
+      font-size: 1.5em;
       color: #666;
       text-align: center;
       /*Spacing*/
@@ -461,7 +462,7 @@ a:active {
       /*Display*/
       display: inline-block;
       /*Sizing*/
-      width: calc(100% / 5 - 3px);
+      width: calc(100% / 6 - 3px);
       /*Spacing*/
       padding: 15px;
       border-radius: 50%;
@@ -472,14 +473,14 @@ a:active {
 
     .about #headshots #imageMobile {
       /*Alternate Sizing*/
-      width: calc(100% / 6.75 - 3px);
+      width: calc(100% / 7.5 - 3px);
     }
 
   .about #aboutMe {
     /*Typography*/
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
-    font-size: 1.2em;
+    font-size: 1.1em;
     color: #555;
     font-style: normal;
     text-align: left;
@@ -505,7 +506,7 @@ a:active {
 
   .progressBar h4 {
     /*Typography*/
-    font-size: 1.2em;
+    font-size: 1.1em;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     color: #555;
@@ -890,7 +891,7 @@ a:active {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     font-style: normal;
-    font-size: 1.7em;
+    font-size: 1.5em;
     color: #666;
     text-align: center;
     /*Spacing*/
@@ -962,7 +963,7 @@ a:active {
     /*Typography*/
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
-    font-size: 1.2em;
+    font-size: 1.1em;
     color: #555;
     font-style: normal;
     text-align: center;
@@ -1299,7 +1300,7 @@ a:active {
     font-family: 'Open Sans', sans-serif;
       font-weight: 300;
       font-style: normal;
-      font-size: 1.7em;
+      font-size: 1.5em;
       color: #666;
       text-align: center;
       /*Spacing*/
@@ -1312,7 +1313,7 @@ a:active {
       /*Typography*/
       font-family: 'Open Sans', sans-serif;
       font-weight: 300;
-      font-size: 1.2em;
+      font-size: 1.1em;
       color: #555;
       font-style: normal;
       text-align: center;
@@ -1327,7 +1328,7 @@ a:active {
       /*Typography*/
       font-family: 'Open Sans', sans-serif;
       font-weight: 300;
-      font-size: 1.2em;
+      font-size: 1.1em;
       color: #555;
       font-style: normal;
       text-align: right;
@@ -1494,7 +1495,7 @@ a:active {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     font-style: normal;
-    font-size: 1.7em;
+    font-size: 1.5em;
     color: #666;
     text-align: center;
     /*Spacing*/
@@ -1507,7 +1508,7 @@ a:active {
     /*Typography*/
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
-    font-size: 1.45em;
+    font-size: 1.25em;
     color: #555;
     font-style: normal;
     text-align: center;
@@ -1523,7 +1524,7 @@ a:active {
     /*Typography*/
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
-    font-size: 1.2em;
+    font-size: 1.1em;
     color: #555;
     font-style: normal;
     text-align: left;
@@ -1539,7 +1540,7 @@ a:active {
     /*Typography*/
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
-    font-size: 1.2em;
+    font-size: 1.1em;
     color: #444;
     font-style: normal;
     text-align: center;
@@ -1901,7 +1902,7 @@ a:active {
     /*Typography*/
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
-    font-size: 1.2em;
+    font-size: 1.1em;
     color: #666;
     /*Spacing*/
     padding: 15px; 
