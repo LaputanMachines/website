@@ -153,7 +153,7 @@ a:active {
     /*Positioning*/
     display: block;
     float: right;
-    line-height: 1.5em;
+    line-height: 1.7m;
   }
 
   .header #navigationMobile {
@@ -208,7 +208,7 @@ a:active {
     /*Positioning*/
     display: block;
     float: right;
-    line-height: 1.25em;
+    line-height: 1.7em;
   }
 
   .header #navigationMobile {
@@ -267,7 +267,7 @@ a:active {
     margin-right: 30px;
     /*Positioning*/
     float: right;
-    line-height: 1.25em;
+    line-height: 1.7em;
   }
 
     .header #navigationMobile a {
