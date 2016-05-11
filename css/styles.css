@@ -970,6 +970,18 @@ a:active {
     line-height: 1.5em;
   }
 
+    .card-content  h3 {
+      padding: 5px;
+      /*Typography*/
+      font-family: 'Open Sans', sans-serif;
+      font-weight: normal;
+      font-size: 1.25em;
+      color: #555;
+      font-style: normal;
+      text-align: center;
+      line-height: 1.5em;
+    }
+
   .card.photo > .card-content button {
     padding: 8px 30px;
     background-color: #f0f0f0;
@@ -1104,6 +1116,18 @@ a:active {
     line-height: 1.5em;
   }
 
+    .card-content  h3 {
+      padding: 5px;
+      /*Typography*/
+      font-family: 'Open Sans', sans-serif;
+      font-weight: normal;
+      font-size: 1.25em;
+      color: #555;
+      font-style: normal;
+      text-align: center;
+      line-height: 1.5em;
+    }
+
   .card.photo > .card-content button {
     padding: 8px 30px;
     background-color: #f0f0f0;
@@ -1237,6 +1261,18 @@ a:active {
     text-align: center;
     line-height: 1.5em;
   }
+
+    .card-content  h3 {
+      padding: 5px;
+      /*Typography*/
+      font-family: 'Open Sans', sans-serif;
+      font-weight: normal;
+      font-size: 1.25em;
+      color: #555;
+      font-style: normal;
+      text-align: center;
+      line-height: 1.5em;
+    }
 
   .card.photo > .card-content button {
     padding: 8px 30px;
