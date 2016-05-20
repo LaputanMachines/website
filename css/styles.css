@@ -194,6 +194,10 @@ a:active {
     border-bottom: 1px solid #e5e5e5;
   }
 
+  #particles-js {
+    background-size: cover;
+  }
+
   .welcome #title {
     /*Typography*/
     font-family: 'Megrim', sans-serif;
