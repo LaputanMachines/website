@@ -213,7 +213,7 @@ a:active {
   #welcomeContainer {
     vertical-align: middle;
     position: absolute;
-    top: 35%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
@@ -243,10 +243,6 @@ a:active {
 
 /*4k*/
 @media screen and (min-width: 2000px) {
-  .welcome {
-    /*Sizing*/
-    margin-top: 4em;
-  }
 
   .welcome #title {
     font-size: 4.75em;
@@ -259,10 +255,6 @@ a:active {
 
 /*Desktop*/
 @media screen and (min-width: 800px) and (max-width: 2000px) {
-  .welcome {
-    /*Sizing*/
-    margin-top: 4em;
-  }
 
   .welcome #title {
     font-size: 4.5em;
@@ -275,11 +267,6 @@ a:active {
 
 /*Mobile*/
 @media screen and (max-width: 800px) {
-  .welcome {
-    /*Sizing*/
-    width: 100vw;
-    margin-top: 1.25em;
-  }
 
   .welcome #title {
     font-size: 2.75em;
@@ -287,10 +274,6 @@ a:active {
 
   .welcome #subtitle {
     font-size: 1.15em;
-  }
-
-  #welcomeContainer {
-    top: 45%;
   }
 }
 
