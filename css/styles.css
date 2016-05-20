@@ -187,6 +187,15 @@ a:active {
   z-index: -100;
 }
 
+/*Mobile*/
+
+@media screen and (max-width: 800px) {
+  #particles-js {
+    visibility: hidden;
+    display: none;
+  }
+}
+
 
 
 
