@@ -209,6 +209,7 @@ a:active {
 .welcome {
     /*Sizing*/
     height: 100vh;
+    position: relative;
     /*Centering*/
     margin-left: auto;
     margin-right: auto;
@@ -219,6 +220,14 @@ a:active {
     padding-bottom: calc(15px + .25em);
     /*Background*/
     border-bottom: 1px solid #e5e5e5;
+  }
+
+  #welcomeContainer {
+    vertical-align: middle;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
   .welcome #title {
@@ -237,7 +246,7 @@ a:active {
     font-family: 'Open Sans', 'Roboto', sans-serif;
     font-weight: 300;
     font-style: normal;
-    color: #666;
+    color: #888;
     text-align: center;
     /*Spacing*/
     margin-top: -.75em;
@@ -248,16 +257,15 @@ a:active {
 @media screen and (min-width: 2000px) {
   .welcome {
     /*Sizing*/
-    width: 1000px;
     margin-top: 4em;
   }
 
   .welcome #title {
-    font-size: 3.5em;
+    font-size: 4.75em;
   }
 
   .welcome #subtitle {
-    font-size: 1.4em;
+    font-size: 1.75em;
   }
 }
 
@@ -265,16 +273,15 @@ a:active {
 @media screen and (min-width: 800px) and (max-width: 2000px) {
   .welcome {
     /*Sizing*/
-    width: 800px;
     margin-top: 4em;
   }
 
   .welcome #title {
-    font-size: 3em;
+    font-size: 4.5em;
   }
 
   .welcome #subtitle {
-    font-size: 1.25em;
+    font-size: 1.5em;
   }
 }
 
@@ -292,6 +299,10 @@ a:active {
 
   .welcome #subtitle {
     font-size: 1.15em;
+  }
+
+  #welcomeContainer {
+    top: 45%;
   }
 }
 
@@ -319,7 +330,7 @@ a:active {
       font-family: 'Open Sans', 'Roboto', sans-serif;
       font-weight: 300;
       font-style: normal;
-      color: #666;
+      color: #848484;
       text-align: center;
       /*Spacing*/
       padding-bottom: 15px;
@@ -348,7 +359,7 @@ a:active {
     /*Typography*/
     font-family: 'Open Sans', 'Roboto', sans-serif;
     font-weight: 300;
-    color: #555;
+    color: #848484;
     font-style: normal;
     text-align: left;
     text-indent: 1em;
@@ -573,7 +584,7 @@ a:active {
     font-weight: 300;
     font-style: normal;
     font-size: 1.5em;
-    color: #666;
+    color: #848484;
     text-align: center;
     /*Spacing*/
     padding-bottom: 15px;
@@ -719,7 +730,7 @@ a:active {
     font-weight: 300;
     font-style: normal;
     font-size: 1.5em;
-    color: #666;
+    color: #848484;
     text-align: center;
     /*Spacing*/
     padding-bottom: 15px;
@@ -1018,7 +1029,7 @@ a:active {
       font-weight: 300;
       font-style: normal;
       font-size: 1.5em;
-      color: #666;
+      color: #848484;
       text-align: center;
       /*Spacing*/
       padding-bottom: 15px;
@@ -1082,7 +1093,7 @@ a:active {
       font-weight: 300;
       font-style: normal;
       font-size: 1.5em;
-      color: #666;
+      color: #848484;
       text-align: center;
       /*Spacing*/
       padding-bottom: 15px;
@@ -1146,7 +1157,7 @@ a:active {
       font-weight: 300;
       font-style: normal;
       font-size: 1.5em;
-      color: #666;
+      color: #848484;
       text-align: center;
       /*Spacing*/
       padding-bottom: 15px;
@@ -1213,7 +1224,7 @@ a:active {
     font-weight: 300;
     font-style: normal;
     font-size: 1.5em;
-    color: #666;
+    color: #848484;
     text-align: center;
     /*Spacing*/
     padding-bottom: 15px;
@@ -1346,7 +1357,7 @@ a:active {
     font-weight: 300;
     font-style: normal;
     font-size: 1.5em;
-    color: #666;
+    color: #848484;
     text-align: center;
     /*Spacing*/
     padding-bottom: 15px;
@@ -1479,7 +1490,7 @@ a:active {
     font-weight: 300;
     font-style: normal;
     font-size: 1.5em;
-    color: #666;
+    color: #848484;
     text-align: center;
     /*Spacing*/
     padding-bottom: 15px;
