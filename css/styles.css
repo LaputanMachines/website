@@ -191,15 +191,6 @@ a:active {
   z-index: -100;
 }
 
-/*Mobile*/
-
-@media screen and (max-width: 800px) {
-  #particles-js {
-    visibility: hidden;
-    display: none;
-  }
-}
-
 
 
 
@@ -215,9 +206,6 @@ a:active {
     margin-right: auto;
     /*Display*/
     z-index: 1;
-    /*Spacing*/
-    padding: 15px;
-    padding-bottom: calc(15px + .25em);
     /*Background*/
     border-bottom: 1px solid #e5e5e5;
   }
