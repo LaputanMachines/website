@@ -178,6 +178,15 @@ a:active {
 
 
 
+/*Particle Background*/
+#particles-js {
+  position: fixed;
+}
+
+
+
+
+
 /*Welcome*/
 
 .welcome {
