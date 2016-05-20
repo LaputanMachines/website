@@ -209,7 +209,6 @@ a:active {
     /*Display*/
     z-index: 1;
     /*Spacing*/
-    margin-top: 4em;
     padding: 15px;
     padding-bottom: calc(15px + .25em);
     /*Background*/
@@ -244,6 +243,7 @@ a:active {
   .welcome {
     /*Sizing*/
     width: 1000px;
+    margin-top: 4em;
   }
 
   .welcome #title {
@@ -260,6 +260,7 @@ a:active {
   .welcome {
     /*Sizing*/
     width: 800px;
+    margin-top: 4em;
   }
 
   .welcome #title {
@@ -276,6 +277,7 @@ a:active {
   .welcome {
     /*Sizing*/
     width: 100vw;
+    margin-top: 1.25em;
   }
 
   .welcome #title {
