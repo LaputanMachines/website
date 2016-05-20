@@ -99,9 +99,11 @@ a:active {
 
 /*Selection*/
 
-::selection, ::-moz-selection {
-  background: rgba(41, 128, 185, .5);
-  color: white;
+::selection {
+  background: rgba(0,0,0,0.2); /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: rgba(0,0,0,0.2); /* Gecko Browsers */
 }
 
 ::-webkit-scrollbar {
@@ -237,7 +239,7 @@ a:active {
     color: #888;
     text-align: center;
     /*Spacing*/
-    margin-top: -.75em;
+    margin-top: -.7em;
     padding-bottom: 15px;
   }
 
