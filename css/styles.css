@@ -39,6 +39,10 @@
   text-rendering: optimizeLegibility;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 /*a-link Animations*/
 
 a:link, a:visited {
@@ -181,7 +185,7 @@ a:active {
 /*Particle Background*/
 #particles-js {
   /*Sizing*/
-  position: fixed;
+  position: absolute;
   width: 100vw;
   height: 100vh;
   z-index: -100;
@@ -203,6 +207,8 @@ a:active {
 /*Welcome*/
 
 .welcome {
+    /*Sizing*/
+    height: 100vh;
     /*Centering*/
     margin-left: auto;
     margin-right: auto;
