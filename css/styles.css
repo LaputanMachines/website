@@ -134,7 +134,7 @@ a:active {
 
 .header #navTitle {
   /*Typography*/
-  font-family: 'Open Sans', 'Roboto', sans-serif;
+  font-family: 'Roboto', 'Open Sans', sans-serif;
   font-weight: 300;
   font-size: 1.15em;
   color: #666;
@@ -147,7 +147,7 @@ a:active {
 
 .header #navigationDesktop {
   /*Typography*/
-  font-family: 'Open Sans', 'Roboto', sans-serif;
+  font-family: 'Roboto', 'Open Sans', sans-serif;
   font-weight: 300;
   font-size: 1.15em;
   color: #666;
@@ -233,7 +233,7 @@ a:active {
 
   .welcome #subtitle {
     /*Typography*/
-    font-family: 'Open Sans', 'Roboto', sans-serif;
+    font-family: 'Roboto', 'Open Sans', sans-serif;
     font-weight: 300;
     font-style: normal;
     color: #888;
@@ -300,7 +300,7 @@ a:active {
 
     .about #title {
       /*Typography*/
-      font-family: 'Open Sans', 'Roboto', sans-serif;
+      font-family: 'Roboto', 'Open Sans', sans-serif;
       font-weight: 300;
       font-style: normal;
       color: #848484;
@@ -330,7 +330,7 @@ a:active {
 
   .about #aboutMe {
     /*Typography*/
-    font-family: 'Open Sans', 'Roboto', sans-serif;
+    font-family: 'Roboto', 'Open Sans', sans-serif;
     font-weight: 300;
     color: #848484;
     font-style: normal;
@@ -355,7 +355,7 @@ a:active {
 
   .progressBar h4 {
     /*Typography*/
-    font-family: 'Open Sans', 'Roboto', sans-serif;
+    font-family: 'Roboto', 'Open Sans', sans-serif;
     font-weight: 300;
     color: #555;
     font-style: normal;
@@ -386,7 +386,7 @@ a:active {
     text-align: right;
     line-height: 1.25em;
     color: white;
-    font-family: 'Open Sans', 'Roboto', sans-serif;
+    font-family: 'Roboto', 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 400;
   }
@@ -553,7 +553,7 @@ a:active {
 
   .projects #title {
     /*Typography*/
-    font-family: 'Open Sans', 'Roboto', sans-serif;
+    font-family: 'Roboto', 'Open Sans', sans-serif;
     font-weight: 300;
     font-style: normal;
     font-size: 1.5em;
@@ -626,7 +626,7 @@ a:active {
   .card.photo > .card-content {
     padding: 15px;
     /*Typography*/
-    font-family: 'Open Sans', 'Roboto', sans-serif;
+    font-family: 'Roboto', 'Open Sans', sans-serif;
     font-weight: 300;
     font-size: 1.05em;
     color: #555;
@@ -638,7 +638,7 @@ a:active {
     .card-content  h3 {
       padding: 5px;
       /*Typography*/
-      font-family: 'Open Sans', 'Roboto', sans-serif;
+      font-family: 'Roboto', 'Open Sans', sans-serif;
       font-weight: normal;
       font-size: 1.25em;
       color: #555;
@@ -699,7 +699,7 @@ a:active {
 
   .projects #title {
     /*Typography*/
-    font-family: 'Open Sans', 'Roboto', sans-serif;
+    font-family: 'Roboto', 'Open Sans', sans-serif;
     font-weight: 300;
     font-style: normal;
     font-size: 1.5em;
@@ -772,7 +772,7 @@ a:active {
   .card.photo > .card-content {
     padding: 15px;
     /*Typography*/
-    font-family: 'Open Sans', 'Roboto', sans-serif;
+    font-family: 'Roboto', 'Open Sans', sans-serif;
     font-weight: 300;
     font-size: 1em;
     color: #555;
@@ -784,7 +784,7 @@ a:active {
     .card-content  h3 {
       padding: 5px;
       /*Typography*/
-      font-family: 'Open Sans', 'Roboto', sans-serif;
+      font-family: 'Roboto', 'Open Sans', sans-serif;
       font-weight: normal;
       font-size: 1.25em;
       color: #555;
@@ -845,7 +845,7 @@ a:active {
 
   .projects #title {
     /*Typography*/
-    font-family: 'Open Sans', 'Roboto', sans-serif;
+    font-family: 'Roboto', 'Open Sans', sans-serif;
     font-weight: 300;
     font-style: normal;
     font-size: 1.5em;
@@ -918,7 +918,7 @@ a:active {
   .card.photo > .card-content {
     padding: 15px;
     /*Typography*/
-    font-family: 'Open Sans', 'Roboto', sans-serif;
+    font-family: 'Roboto', 'Open Sans', sans-serif;
     font-weight: 300;
     font-size: 1em;
     color: #555;
@@ -930,7 +930,7 @@ a:active {
     .card-content  h3 {
       padding: 5px;
       /*Typography*/
-      font-family: 'Open Sans', 'Roboto', sans-serif;
+      font-family: 'Roboto', 'Open Sans', sans-serif;
       font-weight: normal;
       font-size: 1.25em;
       color: #555;
@@ -998,7 +998,7 @@ a:active {
 
     .testimonials #title {
       /*Typography*/
-    font-family: 'Open Sans', 'Roboto', sans-serif;
+    font-family: 'Roboto', 'Open Sans', sans-serif;
       font-weight: 300;
       font-style: normal;
       font-size: 1.5em;
@@ -1012,7 +1012,7 @@ a:active {
       /*Display*/
       display: block;
       /*Typography*/
-      font-family: 'Open Sans', 'Roboto', sans-serif;
+      font-family: 'Roboto', 'Open Sans', sans-serif;
       font-weight: 300;
       font-size: 1.05em;
       color: #555;
@@ -1027,7 +1027,7 @@ a:active {
       /*Display*/
       display: block;
       /*Typography*/
-      font-family: 'Open Sans', 'Roboto', sans-serif;
+      font-family: 'Roboto', 'Open Sans', sans-serif;
       font-weight: 300;
       font-size: 1.05em;
       color: #555;
@@ -1062,7 +1062,7 @@ a:active {
 
     .testimonials #title {
       /*Typography*/
-    font-family: 'Open Sans', 'Roboto', sans-serif;
+    font-family: 'Roboto', 'Open Sans', sans-serif;
       font-weight: 300;
       font-style: normal;
       font-size: 1.5em;
@@ -1076,7 +1076,7 @@ a:active {
       /*Display*/
       display: block;
       /*Typography*/
-      font-family: 'Open Sans', 'Roboto', sans-serif;
+      font-family: 'Roboto', 'Open Sans', sans-serif;
       font-weight: 300;
       font-size: 1em;
       color: #555;
@@ -1091,7 +1091,7 @@ a:active {
       /*Display*/
       display: block;
       /*Typography*/
-      font-family: 'Open Sans', 'Roboto', sans-serif;
+      font-family: 'Roboto', 'Open Sans', sans-serif;
       font-weight: 300;
       font-size: 1em;
       color: #555;
@@ -1126,7 +1126,7 @@ a:active {
 
     .testimonials #title {
       /*Typography*/
-      font-family: 'Open Sans', 'Roboto', sans-serif;
+      font-family: 'Roboto', 'Open Sans', sans-serif;
       font-weight: 300;
       font-style: normal;
       font-size: 1.5em;
@@ -1140,7 +1140,7 @@ a:active {
     /*Display*/
     display: block;
     /*Typography*/
-    font-family: 'Open Sans', 'Roboto', sans-serif;
+    font-family: 'Roboto', 'Open Sans', sans-serif;
     font-weight: 300;
     font-size: 1em;
     color: #555;
@@ -1155,7 +1155,7 @@ a:active {
     /*Display*/
     display: block;
     /*Typography*/
-    font-family: 'Open Sans', 'Roboto', sans-serif;
+    font-family: 'Roboto', 'Open Sans', sans-serif;
     font-weight: 300;
     font-size: 1em;
     color: #555;
@@ -1193,7 +1193,7 @@ a:active {
 
   .contact #title {
     /*Typography*/
-    font-family: 'Open Sans', 'Roboto', sans-serif;
+    font-family: 'Roboto', 'Open Sans', sans-serif;
     font-weight: 300;
     font-style: normal;
     font-size: 1.5em;
@@ -1207,7 +1207,7 @@ a:active {
     /*Display*/
     display: block;
     /*Typography*/
-    font-family: 'Open Sans', 'Roboto', sans-serif;
+    font-family: 'Roboto', 'Open Sans', sans-serif;
     font-weight: 300;
     font-size: 1.25em;
     color: #555;
@@ -1223,7 +1223,7 @@ a:active {
 
   .contact #contactText {
     /*Typography*/
-    font-family: 'Open Sans', 'Roboto', sans-serif;
+    font-family: 'Roboto', 'Open Sans', sans-serif;
     font-weight: 300;
     font-size: 1.05em;
     color: #555;
@@ -1239,7 +1239,7 @@ a:active {
 
   .contact #contactLinks {
     /*Typography*/
-    font-family: 'Open Sans', 'Roboto', sans-serif;
+    font-family: 'Roboto', 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 1.05em;
     color: #444;
@@ -1254,7 +1254,7 @@ a:active {
 
   .contact #contactLinks button {
     /*Typography*/
-    font-family: 'Open Sans', 'Roboto', sans-serif;
+    font-family: 'Roboto', 'Open Sans', sans-serif;
     font-weight: 300;
     font-size: 1em;
     color: #444;
@@ -1326,7 +1326,7 @@ a:active {
 
   .contact #title {
     /*Typography*/
-    font-family: 'Open Sans', 'Roboto', sans-serif;
+    font-family: 'Roboto', 'Open Sans', sans-serif;
     font-weight: 300;
     font-style: normal;
     font-size: 1.5em;
@@ -1340,7 +1340,7 @@ a:active {
     /*Display*/
     display: block;
     /*Typography*/
-    font-family: 'Open Sans', 'Roboto', sans-serif;
+    font-family: 'Roboto', 'Open Sans', sans-serif;
     font-weight: 300;
     font-size: 1.25em;
     color: #555;
@@ -1356,7 +1356,7 @@ a:active {
 
   .contact #contactText {
     /*Typography*/
-    font-family: 'Open Sans', 'Roboto', sans-serif;
+    font-family: 'Roboto', 'Open Sans', sans-serif;
     font-weight: 300;
     font-size: 1em;
     color: #555;
@@ -1372,7 +1372,7 @@ a:active {
 
   .contact #contactLinks {
     /*Typography*/
-    font-family: 'Open Sans', 'Roboto', sans-serif;
+    font-family: 'Roboto', 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 1em;
     color: #444;
@@ -1387,7 +1387,7 @@ a:active {
 
   .contact #contactLinks button {
     /*Typography*/
-    font-family: 'Open Sans', 'Roboto', sans-serif;
+    font-family: 'Roboto', 'Open Sans', sans-serif;
     font-weight: 300;
     font-size: 1em;
     color: #444;
@@ -1459,7 +1459,7 @@ a:active {
 
   .contact #title {
     /*Typography*/
-    font-family: 'Open Sans', 'Roboto', sans-serif;
+    font-family: 'Roboto', 'Open Sans', sans-serif;
     font-weight: 300;
     font-style: normal;
     font-size: 1.5em;
@@ -1473,7 +1473,7 @@ a:active {
     /*Display*/
     display: block;
     /*Typography*/
-    font-family: 'Open Sans', 'Roboto', sans-serif;
+    font-family: 'Roboto', 'Open Sans', sans-serif;
     font-weight: 300;
     font-size: 1.25em;
     color: #555;
@@ -1489,7 +1489,7 @@ a:active {
 
   .contact #contactText {
     /*Typography*/
-    font-family: 'Open Sans', 'Roboto', sans-serif;
+    font-family: 'Roboto', 'Open Sans', sans-serif;
     font-weight: 300;
     font-size: 1em;
     color: #555;
@@ -1505,7 +1505,7 @@ a:active {
 
   .contact #contactLinks {
     /*Typography*/
-    font-family: 'Open Sans', 'Roboto', sans-serif;
+    font-family: 'Roboto', 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 1em;
     color: #444;
@@ -1520,7 +1520,7 @@ a:active {
 
   .contact #contactLinks button {
     /*Typography*/
-    font-family: 'Open Sans', 'Roboto', sans-serif;
+    font-family: 'Roboto', 'Open Sans', sans-serif;
     font-weight: 300;
     font-size: 1em;
     color: #444;
@@ -1592,7 +1592,7 @@ a:active {
 
   .footer > #copyright {
     /*Typography*/
-    font-family: 'Open Sans', 'Roboto', sans-serif;
+    font-family: 'Roboto', 'Open Sans', sans-serif;
     font-weight: 300;
     color: #555;
     /*Spacing*/
