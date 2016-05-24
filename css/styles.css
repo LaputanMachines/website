@@ -336,7 +336,6 @@ a:active {
     font-style: normal;
     text-align: left;
     text-indent: 1em;
-    line-height: 1.3em;
     /*Spacing*/
     padding: 15px;
   }
@@ -384,7 +383,6 @@ a:active {
     float: left;
     /*Typography*/
     text-align: right;
-    line-height: 1.25em;
     color: white;
     font-family: 'Open Sans', 'Roboto', sans-serif;
     font-style: normal;
@@ -468,7 +466,7 @@ a:active {
     }
 
   .about #aboutMe {
-    font-size: 1em;
+    font-size: 1.05em;
   }
 
   .progressBar {
@@ -590,14 +588,10 @@ a:active {
     background-color: #fcfcfc;
     position: relative;
     box-shadow: 1px 1px 3px rgba(0,0,0,.15);
-    padding: 10px;
-    line-height: 22px;
-    color: #444;
+    padding: 10px;    color: #444;
     font-weight: 300;
     margin-bottom: 20px;
-    font-size: 0.95em;
-    line-height: 28px;
-}
+    font-size: 0.95em;}
 
   .card.info {
     background-color: #5C9DED;
@@ -638,7 +632,6 @@ a:active {
     color: #666;
     font-style: normal;
     text-align: center;
-    line-height: 1.45em;
   }
 
     .card-content  h3 {
@@ -650,7 +643,7 @@ a:active {
       color: #555;
       font-style: normal;
       text-align: center;
-      line-height: 1.45em;
+
     }
 
   .card.photo > .card-content button {
@@ -736,14 +729,10 @@ a:active {
     background-color: #fcfcfc;
     position: relative;
     box-shadow: 1px 1px 3px rgba(0,0,0,.15);
-    padding: 10px;
-    line-height: 22px;
-    color: #444;
+    padding: 10px;    color: #444;
     font-weight: 300;
     margin-bottom: 20px;
-    font-size: 0.95em;
-    line-height: 28px;
-}
+    font-size: 0.95em;}
 
   .card.info {
     background-color: #5C9DED;
@@ -780,11 +769,10 @@ a:active {
     /*Typography*/
     font-family: 'Open Sans', 'Roboto', sans-serif;
     font-weight: 300;
-    font-size: 1em;
+    font-size: 1.05em;
     color: #666;
     font-style: normal;
     text-align: center;
-    line-height: 1.45em;
   }
 
     .card-content  h3 {
@@ -796,7 +784,7 @@ a:active {
       color: #555;
       font-style: normal;
       text-align: center;
-      line-height: 1.45em;
+
     }
 
   .card.photo > .card-content button {
@@ -885,14 +873,10 @@ a:active {
     background-color: #fcfcfc;
     position: relative;
     box-shadow: 1px 1px 3px rgba(0,0,0,.15);
-    padding: 10px;
-    line-height: 22px;
-    color: #444;
+    padding: 10px;    color: #444;
     font-weight: 300;
     margin-bottom: 20px;
-    font-size: 0.95em;
-    line-height: 28px;
-  }
+    font-size: 0.95em;  }
 
   .card.info {
     background-color: #5C9DED;
@@ -933,7 +917,6 @@ a:active {
     color: #666;
     font-style: normal;
     text-align: center;
-    line-height: 1.45em;
   }
 
     .card-content  h3 {
@@ -945,7 +928,7 @@ a:active {
       color: #555;
       font-style: normal;
       text-align: center;
-      line-height: 1.45em;
+
     }
 
   .card.photo > .card-content button {
@@ -1027,7 +1010,7 @@ a:active {
       color: #666;
       font-style: normal;
       text-align: center;
-      line-height: 1.3em;
+
       /*Spacing*/
       padding: 15px;
     }
@@ -1043,7 +1026,7 @@ a:active {
       font-style: normal;
       text-align: right;
       text-indent: 1em;
-      line-height: 1.3em;
+
       /*Spacing*/
       padding: 15px;
       margin-top: -20px;
@@ -1091,7 +1074,7 @@ a:active {
       color: #666;
       font-style: normal;
       text-align: center;
-      line-height: 1.3em;
+
       /*Spacing*/
       padding: 15px;
     }
@@ -1107,7 +1090,7 @@ a:active {
       font-style: normal;
       text-align: right;
       text-indent: 1em;
-      line-height: 1.3em;
+
       /*Spacing*/
       padding: 15px;
       margin-top: -20px;
@@ -1155,7 +1138,6 @@ a:active {
     color: #666;
     font-style: normal;
     text-align: left;
-    line-height: 1.45em;
     /*Spacing*/
     padding: 15px;
   }
@@ -1171,7 +1153,6 @@ a:active {
     font-style: normal;
     text-align: right;
     text-indent: 1em;
-    line-height: 1.3em;
     /*Spacing*/
     padding: 15px;
     margin-top: -20px;
@@ -1222,7 +1203,6 @@ a:active {
     color: #666;
     font-style: normal;
     text-align: center;
-    line-height: 1.3em;
   }
 
     .contact #availability span {
@@ -1239,7 +1219,6 @@ a:active {
     font-style: normal;
     text-align: left;
     text-indent: 1em;
-    line-height: 1.3em;
     /*Spacing*/
     padding: 15px;
     /*Display*/
@@ -1254,7 +1233,6 @@ a:active {
     color: #444;
     font-style: normal;
     text-align: center;
-    line-height: 1.3em;
     /*Spacing*/
     padding-bottom: 15px;
     /*Display*/
@@ -1269,7 +1247,6 @@ a:active {
     color: #444;
     font-style: normal;
     text-align: center;
-    line-height: 1.3em;
     word-spacing: 1em;
     padding: 8px 30px;
     /*Spacing*/
@@ -1355,7 +1332,6 @@ a:active {
     color: #666;
     font-style: normal;
     text-align: center;
-    line-height: 1.3em;
   }
 
     .contact #availability span {
@@ -1372,7 +1348,6 @@ a:active {
     font-style: normal;
     text-align: left;
     text-indent: 1em;
-    line-height: 1.3em;
     /*Spacing*/
     padding: 15px;
     /*Display*/
@@ -1387,7 +1362,6 @@ a:active {
     color: #444;
     font-style: normal;
     text-align: center;
-    line-height: 1.3em;
     /*Spacing*/
     padding-bottom: 15px;
     /*Display*/
@@ -1402,7 +1376,6 @@ a:active {
     color: #444;
     font-style: normal;
     text-align: center;
-    line-height: 1.3em;
     padding: 8px 30px;
     /*Spacing*/
     border-radius: 2px;
@@ -1488,7 +1461,6 @@ a:active {
     color: #666;
     font-style: normal;
     text-align: center;
-    line-height: 1.3em;
   }
 
     .contact #availability span {
@@ -1505,7 +1477,6 @@ a:active {
     font-style: normal;
     text-align: left;
     text-indent: 1em;
-    line-height: 1.45em;
     /*Spacing*/
     padding: 15px;
     /*Display*/
@@ -1520,7 +1491,6 @@ a:active {
     color: #444;
     font-style: normal;
     text-align: center;
-    line-height: 1.3em;
     /*Spacing*/
     padding-bottom: 15px;
     /*Display*/
@@ -1535,7 +1505,6 @@ a:active {
     color: #444;
     font-style: normal;
     text-align: center;
-    line-height: 1.3em;
     padding: 8px 30px;
     /*Spacing*/
     border-radius: 2px;
