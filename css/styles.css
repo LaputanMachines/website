@@ -568,6 +568,7 @@ a:active {
 
 /*4k*/
 @media screen and (min-width: 2000px) {
+
   .projects {
     /*Sizing*/
     width: 1000px;
@@ -704,6 +705,10 @@ a:active {
   .card.photo img {
     width: 100%;
     height: auto;
+  }
+
+  .portfolioTitle {
+    margin-top: 2.25em;
   }
 }
 
@@ -845,6 +850,10 @@ a:active {
   .card.photo img {
     width: 100%;
     height: auto;
+  }
+
+  .portfolioTitle {
+    margin-top: 2.25em;
   }
 }
 
@@ -990,6 +999,14 @@ a:active {
     width: 100%;
     height: auto;
   }
+
+  .portfolioTitle {
+    margin-top: 0em;
+  }
+}
+
+.portfolio {
+  border-bottom: none; 
 }
 
 
