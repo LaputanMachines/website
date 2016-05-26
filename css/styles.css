@@ -124,6 +124,7 @@ a:active {
   position: relative;
   height: 100vh;
   width: 100vw;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 #building #buildingContainer {
@@ -140,6 +141,15 @@ a:active {
   font-family: 'Open Sans', 'Roboto', sans-serif;
   font-weight: 300;
   font-size: 2.8em;
+  color: #777;
+  text-align: center;
+}
+
+#building #buildingContainer p {
+  /*Typography*/
+  font-family: 'Open Sans', 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 1.25em;
   color: #777;
   text-align: center;
 }
@@ -556,6 +566,7 @@ a:active {
 
   .progressBarContainer {
     width: 100%;
+    max-width: 500px;
   }
 }
 
@@ -566,12 +577,7 @@ a:active {
 
 /*Projects*/
 
-/*4k*/
-@media screen and (min-width: 2000px) {
-
-  .projects {
-    /*Sizing*/
-    width: 1000px;
+.projects {
     /*Centering*/
     margin-left: auto;
     margin-right: auto;
@@ -590,7 +596,6 @@ a:active {
     font-family: 'Open Sans', 'Roboto', sans-serif;
     font-weight: 300;
     font-style: normal;
-    font-size: 1.5em;
     color: #848484;
     text-align: center;
     /*Spacing*/
@@ -606,8 +611,6 @@ a:active {
   .projects #projectItem {
     /*Display*/
     display: inline-block;
-    /*Sizing*/
-    width: calc(50% - 3px);
     /*Spacing*/
     padding: 15px;
     vertical-align: top;
@@ -621,7 +624,7 @@ a:active {
     padding: 10px;    color: #444;
     font-weight: 300;
     margin-bottom: 20px;
-    font-size: 0.95em;}
+  }
 
   .card.info {
     background-color: #5C9DED;
@@ -658,7 +661,6 @@ a:active {
     /*Typography*/
     font-family: 'Open Sans', 'Roboto', sans-serif;
     font-weight: 300;
-    font-size: 1.05em;
     color: #666;
     font-style: normal;
     text-align: center;
@@ -669,7 +671,6 @@ a:active {
       /*Typography*/
       font-family: 'Open Sans', 'Roboto', sans-serif;
       font-weight: normal;
-      font-size: 1.25em;
       color: #555;
       font-style: normal;
       text-align: center;
@@ -681,7 +682,6 @@ a:active {
     background-color: #f0f0f0;
     border: 1px solid #dadada;
     font-weight: 300;
-    font-size: 1em;
     border-radius: 2px;
     color: #fff;
     background-color: #5C9DED;
@@ -694,7 +694,6 @@ a:active {
     background-color: #27ae60;
     border: 1px solid #2ecc71;
     font-weight: 300;
-    font-size: 1em;
     border-radius: 2px;
     color: #fff;
     background-color: #27ae60;
@@ -709,6 +708,53 @@ a:active {
 
   .portfolioTitle {
     margin-top: 2.25em;
+  }
+
+/*4k*/
+@media screen and (min-width: 2000px) {
+  .projects {
+    /*Sizing*/
+    width: 1000px;
+  }
+
+  .projects #title {
+    /*Typography*/
+    font-size: 1.5em;
+  }
+
+  .projects #projectList {
+    /*Centering*/
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .projects #projectItem {
+    /*Display*/
+    display: inline-block;
+    /*Sizing*/
+    width: calc(50% - 3px);
+  }
+
+  .card {
+    font-size: 0.95em;
+  }
+
+  .card.photo > .card-content {
+    /*Typography*/
+    font-size: 1.05em;
+  }
+
+    .card-content  h3 {
+      /*Typography*/
+      font-size: 1.25em;
+    }
+
+  .card.photo > .card-content button {
+    font-size: 1em;
+  }
+
+  .card.photo > .card-content .repo {
+    font-size: 1em;
   }
 }
 
@@ -717,35 +763,11 @@ a:active {
   .projects {
     /*Sizing*/
     width: 800px;
-    /*Centering*/
-    margin-left: auto;
-    margin-right: auto;
-    /*Display*/
-    z-index: 1;
-    /*Spacing*/
-    margin-top: .5em;
-    padding: 15px;
-    padding-bottom: calc(15px - .25em);
-    /*Background*/
-    border-bottom: 1px solid #e5e5e5;
   }
 
   .projects #title {
     /*Typography*/
-    font-family: 'Open Sans', 'Roboto', sans-serif;
-    font-weight: 300;
-    font-style: normal;
     font-size: 1.5em;
-    color: #848484;
-    text-align: center;
-    /*Spacing*/
-    padding-bottom: 15px;
-  }
-
-  .projects #projectList {
-    /*Centering*/
-    margin: 0 auto;
-    text-align: center;
   }
 
   .projects #projectItem {
@@ -753,107 +775,29 @@ a:active {
     display: inline-block;
     /*Sizing*/
     width: calc(50% - 3px);
-    /*Spacing*/
-    padding: 15px;
-    vertical-align: top;
   }
 
   .card {
-    width: 100%;
-    background-color: #fcfcfc;
-    position: relative;
-    box-shadow: 1px 1px 3px rgba(0,0,0,.15);
-    padding: 10px;    color: #444;
-    font-weight: 300;
-    margin-bottom: 20px;
-    font-size: 0.95em;}
-
-  .card.info {
-    background-color: #5C9DED;
-    color: #fff;
-    box-shadow: 1px 1px 4px #e5e5e5;
-  }
-
-  .card.info button {
-    border: 1px solid #fff;
-    background-color: transparent;
-    padding: 5px 30px;
-    border-radius: 2px;
-    display: block;
-    margin: 10px auto;
-  }
-
-  .card.info button:hover {
-    background-color: #fff;
-    color: #5C9DED;
-  }
-
-  .card.info img {
-    width: 30%;
-    height: auto;
-    margin: 10px auto;
-  }
-
-  .card.photo {
-    padding: 0;
+    font-size: 0.95em;
   }
 
   .card.photo > .card-content {
-    padding: 15px;
     /*Typography*/
-    font-family: 'Open Sans', 'Roboto', sans-serif;
-    font-weight: 300;
     font-size: 1.05em;
-    color: #666;
-    font-style: normal;
-    text-align: center;
   }
 
     .card-content  h3 {
-      padding: 5px;
       /*Typography*/
-      font-family: 'Open Sans', 'Roboto', sans-serif;
-      font-weight: normal;
       font-size: 1.25em;
-      color: #555;
-      font-style: normal;
-      text-align: center;
 
     }
 
   .card.photo > .card-content button {
-    padding: 8px 30px;
-    background-color: #f0f0f0;
-    border: 1px solid #dadada;
-    font-weight: 300;
     font-size: 1em;
-    border-radius: 2px;
-    color: #fff;
-    background-color: #5C9DED;
-    border: 1px solid #4B8CDC;
-    margin: 20px 0 10px;
   }
 
   .card.photo > .card-content .repo {
-    padding: 8px 30px;
-    background-color: #27ae60;
-    border: 1px solid #2ecc71;
-    font-weight: 300;
     font-size: 1em;
-    border-radius: 2px;
-    color: #fff;
-    background-color: #27ae60;
-    border: 1px solid #2ecc71;
-    margin: 20px 0 10px;
-  }
-
-  .card.photo img {
-    width: 100%;
-    height: auto;
-  }
-
-  .portfolioTitle {
-    margin-top: 2.25em;
   }
 }
 
@@ -862,35 +806,11 @@ a:active {
   .projects {
       /*Sizing*/
       width: 100vw;
-      /*Centering*/
-      margin-left: auto;
-      margin-right: auto;
-      /*Display*/
-      z-index: 1;
-      /*Spacing*/
-      margin-top: .5em;
-      padding: 15px;
-      padding-bottom: calc(15px - .25em);
-      /*Background*/
-      border-bottom: 1px solid #e5e5e5;
     }
 
   .projects #title {
     /*Typography*/
-    font-family: 'Open Sans', 'Roboto', sans-serif;
-    font-weight: 300;
-    font-style: normal;
     font-size: 1.5em;
-    color: #848484;
-    text-align: center;
-    /*Spacing*/
-    padding-bottom: 15px;
-  }
-
-  .projects #projectList {
-    /*Centering*/
-    margin: 0 auto;
-    text-align: center;
   }
 
   .projects #projectItem {
@@ -898,110 +818,32 @@ a:active {
     display: block;
     /*Sizing*/
     width: 100%;
-    /*Spacing*/
-    padding: 15px;
-    vertical-align: top;
   }
 
   .card {
-    width: 100%;
     max-width: 500px;
+    font-size: 0.95em;
     margin-left: auto;
-    margin-right: auto;
-    background-color: #fcfcfc;
-    position: relative;
-    box-shadow: 1px 1px 3px rgba(0,0,0,.15);
-    padding: 10px;    color: #444;
-    font-weight: 300;
-    margin-bottom: 20px;
-    font-size: 0.95em;  }
-
-  .card.info {
-    background-color: #5C9DED;
-    color: #fff;
-    box-shadow: 1px 1px 4px #e5e5e5;
-  }
-
-  .card.info button {
-    border: 1px solid #fff;
-    background-color: transparent;
-    padding: 5px 30px;
-    border-radius: 2px;
-    display: block;
-    margin: 10px auto;
-  }
-
-  .card.info button:hover {
-    background-color: #fff;
-    color: #5C9DED;
-  }
-
-  .card.info img {
-    width: 30%;
-    height: auto;
-    margin: 10px auto;
-  }
-
-  .card.photo {
-    padding: 0;
+    margin-right: auto;  
   }
 
   .card.photo > .card-content {
-    padding: 15px;
     /*Typography*/
-    font-family: 'Open Sans', 'Roboto', sans-serif;
-    font-weight: 300;
     font-size: 1em;
-    color: #666;
-    font-style: normal;
-    text-align: center;
   }
 
     .card-content  h3 {
-      padding: 5px;
       /*Typography*/
-      font-family: 'Open Sans', 'Roboto', sans-serif;
-      font-weight: normal;
       font-size: 1.25em;
-      color: #555;
-      font-style: normal;
-      text-align: center;
 
     }
 
   .card.photo > .card-content button {
-    padding: 8px 30px;
-    background-color: #f0f0f0;
-    border: 1px solid #dadada;
-    font-weight: 300;
     font-size: 1em;
-    border-radius: 2px;
-    color: #fff;
-    background-color: #5C9DED;
-    border: 1px solid #4B8CDC;
-    margin: 20px 0 10px;
   }
 
   .card.photo > .card-content .repo {
-    padding: 8px 30px;
-    background-color: #27ae60;
-    border: 1px solid #2ecc71;
-    font-weight: 300;
     font-size: 1em;
-    border-radius: 2px;
-    color: #fff;
-    background-color: #27ae60;
-    border: 1px solid #2ecc71;
-    margin: 20px 0 10px;
-  }
-
-  .card.photo img {
-    width: 100%;
-    height: auto;
-  }
-
-  .portfolioTitle {
-    margin-top: 0em;
   }
 }
 
@@ -1016,11 +858,7 @@ a:active {
 
 /*Testimonials*/
 
-/*4k*/
-@media screen and (min-width: 2000px) {
-  .testimonials {
-    /*Sizing*/
-    width: 1000px;
+.testimonials {
     /*Centering*/
     margin-left: auto;
     margin-right: auto;
@@ -1036,10 +874,9 @@ a:active {
 
     .testimonials #title {
       /*Typography*/
-    font-family: 'Open Sans', 'Roboto', sans-serif;
+      font-family: 'Open Sans', 'Roboto', sans-serif;
       font-weight: 300;
       font-style: normal;
-      font-size: 1.5em;
       color: #848484;
       text-align: center;
       /*Spacing*/
@@ -1052,7 +889,6 @@ a:active {
       /*Typography*/
       font-family: 'Open Sans', 'Roboto', sans-serif;
       font-weight: 300;
-      font-size: 1.05em;
       color: #666;
       font-style: normal;
       text-align: center;
@@ -1067,7 +903,6 @@ a:active {
       /*Typography*/
       font-family: 'Open Sans', 'Roboto', sans-serif;
       font-weight: 300;
-      font-size: 1.05em;
       color: #666;
       font-style: normal;
       text-align: right;
@@ -1077,6 +912,28 @@ a:active {
       padding: 15px;
       margin-top: -20px;
       margin-right: 15px;
+    }
+
+/*4k*/
+@media screen and (min-width: 2000px) {
+  .testimonials {
+    /*Sizing*/
+    width: 1000px;
+  }
+
+    .testimonials #title {
+      /*Typography*/
+      font-size: 1.5em;
+    }
+
+    .testimonials #quote {
+      /*Typography*/
+      font-size: 1.05em;
+    }
+
+    .testimonials #author {
+      /*Typography*/
+      font-size: 1.05em;
     }
 }
 
@@ -1085,62 +942,21 @@ a:active {
   .testimonials {
     /*Sizing*/
     width: 800px;
-    /*Centering*/
-    margin-left: auto;
-    margin-right: auto;
-    /*Display*/
-    z-index: 1;
-    /*Spacing*/
-    margin-top: .5em;
-    padding: 15px;
-    padding-bottom: calc(15px + .25em);
-    /*Background*/
-    border-bottom: 1px solid #e5e5e5;
   }
 
     .testimonials #title {
       /*Typography*/
-    font-family: 'Open Sans', 'Roboto', sans-serif;
-      font-weight: 300;
-      font-style: normal;
       font-size: 1.5em;
-      color: #848484;
-      text-align: center;
-      /*Spacing*/
-      padding-bottom: 15px;
     }
 
     .testimonials #quote {
-      /*Display*/
-      display: block;
       /*Typography*/
-      font-family: 'Open Sans', 'Roboto', sans-serif;
-      font-weight: 300;
       font-size: 1em;
-      color: #666;
-      font-style: normal;
-      text-align: center;
-
-      /*Spacing*/
-      padding: 15px;
     }
 
     .testimonials #author {
-      /*Display*/
-      display: block;
       /*Typography*/
-      font-family: 'Open Sans', 'Roboto', sans-serif;
-      font-weight: 300;
       font-size: 1em;
-      color: #666;
-      font-style: normal;
-      text-align: right;
-      text-indent: 1em;
-
-      /*Spacing*/
-      padding: 15px;
-      margin-top: -20px;
-      margin-right: 15px;
     }
 }
 
@@ -1149,60 +965,21 @@ a:active {
   .testimonials {
     /*Sizing*/
     width: 100vw;
-    /*Centering*/
-    margin-left: auto;
-    margin-right: auto;
-    /*Display*/
-    z-index: 1;
-    /*Spacing*/
-    margin-top: .5em;
-    padding: 15px;
-    padding-bottom: calc(15px + .25em);
-    /*Background*/
-    border-bottom: 1px solid #e5e5e5;
   }
 
     .testimonials #title {
       /*Typography*/
-      font-family: 'Open Sans', 'Roboto', sans-serif;
-      font-weight: 300;
-      font-style: normal;
       font-size: 1.5em;
-      color: #848484;
-      text-align: center;
-      /*Spacing*/
-      padding-bottom: 15px;
     }
 
   .testimonials #quote {
-    /*Display*/
-    display: block;
     /*Typography*/
-    font-family: 'Open Sans', 'Roboto', sans-serif;
-    font-weight: 300;
     font-size: 1em;
-    color: #666;
-    font-style: normal;
-    text-align: left;
-    /*Spacing*/
-    padding: 15px;
   }
 
   .testimonials #author {
-    /*Display*/
-    display: block;
     /*Typography*/
-    font-family: 'Open Sans', 'Roboto', sans-serif;
-    font-weight: 300;
     font-size: 1em;
-    color: #666;
-    font-style: normal;
-    text-align: right;
-    text-indent: 1em;
-    /*Spacing*/
-    padding: 15px;
-    margin-top: -20px;
-    margin-right: 15px;
   }
 }
 
@@ -1212,11 +989,7 @@ a:active {
 
 /*Contact*/
 
-/*4k*/
-@media screen and (min-width: 2000px) {
-  .contact {
-    /*Sizing*/
-    width: 1000px;
+.contact {
     /*Centering*/
     margin-left: auto;
     margin-right: auto;
@@ -1232,7 +1005,6 @@ a:active {
     font-family: 'Open Sans', 'Roboto', sans-serif;
     font-weight: 300;
     font-style: normal;
-    font-size: 1.5em;
     color: #848484;
     text-align: center;
     /*Spacing*/
@@ -1245,7 +1017,6 @@ a:active {
     /*Typography*/
     font-family: 'Open Sans', 'Roboto', sans-serif;
     font-weight: 300;
-    font-size: 1.25em;
     color: #666;
     font-style: normal;
     text-align: center;
@@ -1260,7 +1031,6 @@ a:active {
     /*Typography*/
     font-family: 'Open Sans', 'Roboto', sans-serif;
     font-weight: 300;
-    font-size: 1.05em;
     color: #666;
     font-style: normal;
     text-align: left;
@@ -1275,7 +1045,6 @@ a:active {
     /*Typography*/
     font-family: 'Open Sans', 'Roboto', sans-serif;
     font-weight: 400;
-    font-size: 1.05em;
     color: #444;
     font-style: normal;
     text-align: center;
@@ -1289,7 +1058,6 @@ a:active {
     /*Typography*/
     font-family: 'Open Sans', 'Roboto', sans-serif;
     font-weight: 300;
-    font-size: 1em;
     color: #444;
     font-style: normal;
     text-align: center;
@@ -1339,6 +1107,38 @@ a:active {
       border: 1px solid #D64541;
       margin: 20px 0 10px;
     }
+
+/*4k*/
+@media screen and (min-width: 2000px) {
+  .contact {
+    /*Sizing*/
+    width: 1000px;
+  }
+
+  .contact #title {
+    /*Typography*/
+    font-size: 1.5em;
+  }
+
+  .contact #availability {
+    /*Typography*/
+    font-size: 1.25em;
+  }
+
+  .contact #contactText {
+    /*Typography*/
+    font-size: 1.05em;
+  }
+
+  .contact #contactLinks {
+    /*Typography*/
+    font-size: 1.05em;
+  }
+
+  .contact #contactLinks button {
+    /*Typography*/
+    font-size: 1em;
+  }
 }
 
 /*Desktop*/
@@ -1346,127 +1146,32 @@ a:active {
   .contact {
     /*Sizing*/
     width: 800px;
-    /*Centering*/
-    margin-left: auto;
-    margin-right: auto;
-    /*Display*/
-    z-index: 1;
-    /*Spacing*/
-    margin-top: .5em;
-    padding: 15px;
   }
 
   .contact #title {
     /*Typography*/
-    font-family: 'Open Sans', 'Roboto', sans-serif;
-    font-weight: 300;
-    font-style: normal;
     font-size: 1.5em;
-    color: #848484;
-    text-align: center;
-    /*Spacing*/
-    padding-bottom: 15px;
   }
 
   .contact #availability {
-    /*Display*/
-    display: block;
     /*Typography*/
-    font-family: 'Open Sans', 'Roboto', sans-serif;
-    font-weight: 300;
     font-size: 1.25em;
-    color: #666;
-    font-style: normal;
-    text-align: center;
   }
-
-    .contact #availability span {
-      /*Underline Letters*/
-      border-bottom: 1px solid grey;
-    }
 
   .contact #contactText {
     /*Typography*/
-    font-family: 'Open Sans', 'Roboto', sans-serif;
-    font-weight: 300;
     font-size: 1em;
-    color: #666;
-    font-style: normal;
-    text-align: left;
-    text-indent: 1em;
-    /*Spacing*/
-    padding: 15px;
-    /*Display*/
-    display: block;
   }
 
   .contact #contactLinks {
     /*Typography*/
-    font-family: 'Open Sans', 'Roboto', sans-serif;
-    font-weight: 400;
     font-size: 1em;
-    color: #444;
-    font-style: normal;
-    text-align: center;
-    /*Spacing*/
-    padding-bottom: 15px;
-    /*Display*/
-    display: block;
   }
 
   .contact #contactLinks button {
     /*Typography*/
-    font-family: 'Open Sans', 'Roboto', sans-serif;
-    font-weight: 300;
     font-size: 1em;
-    color: #444;
-    font-style: normal;
-    text-align: center;
-    padding: 8px 30px;
-    /*Spacing*/
-    border-radius: 2px;
-    color: #FEFEFE;
-    margin: 20px 0 10px;
   }
-
-    .git {
-      padding: 8px 30px;
-      background-color: #F27935;
-      border: 1px solid #E67E22;
-      font-weight: 300;
-      /*font-size: 0.92em;*/
-      border-radius: 2px;
-      color: #fff;
-      background-color: #F27935;
-      border: 1px solid #E67E22;
-      margin: 20px 0 10px;
-    }
-
-    .email {
-      padding: 8px 30px;
-      background-color: #5C9DED;
-      border: 1px solid #4B8CDC;
-      font-weight: 300;
-      /*font-size: 0.92em;*/
-      border-radius: 2px;
-      color: #fff;
-      background-color: #5C9DED;
-      border: 1px solid #4B8CDC;
-      margin: 20px 0 10px;
-    }
-
-    .linkedin {
-      padding: 8px 30px;
-      background-color: #D24D57;
-      border: 1px solid #D64541;
-      font-weight: 300;
-      /*font-size: 0.92em;*/
-      border-radius: 2px;
-      color: #fff;
-      background-color: #D24D57;
-      border: 1px solid #D64541;
-      margin: 20px 0 10px;
-    }
 }
 
 /*Mobile*/
@@ -1475,127 +1180,49 @@ a:active {
   .contact {
     /*Sizing*/
     width: 100vw;
-    /*Centering*/
-    margin-left: auto;
-    margin-right: auto;
-    /*Display*/
-    z-index: 1;
-    /*Spacing*/
-    margin-top: .5em;
-    padding: 15px;
   }
 
   .contact #title {
     /*Typography*/
-    font-family: 'Open Sans', 'Roboto', sans-serif;
-    font-weight: 300;
-    font-style: normal;
     font-size: 1.5em;
-    color: #848484;
-    text-align: center;
-    /*Spacing*/
-    padding-bottom: 15px;
   }
 
   .contact #availability {
-    /*Display*/
-    display: block;
     /*Typography*/
-    font-family: 'Open Sans', 'Roboto', sans-serif;
-    font-weight: 300;
     font-size: 1.25em;
-    color: #666;
-    font-style: normal;
-    text-align: center;
   }
-
-    .contact #availability span {
-      /*Underline Letters*/
-      border-bottom: 1px solid grey;
-    }
 
   .contact #contactText {
     /*Typography*/
-    font-family: 'Open Sans', 'Roboto', sans-serif;
-    font-weight: 300;
     font-size: 1em;
-    color: #666;
-    font-style: normal;
-    text-align: left;
-    text-indent: 1em;
-    /*Spacing*/
-    padding: 15px;
-    /*Display*/
-    display: block;
   }
 
   .contact #contactLinks {
     /*Typography*/
-    font-family: 'Open Sans', 'Roboto', sans-serif;
-    font-weight: 400;
     font-size: 1em;
-    color: #444;
-    font-style: normal;
-    text-align: center;
-    /*Spacing*/
-    padding-bottom: 15px;
-    /*Display*/
-    display: block;
   }
 
   .contact #contactLinks button {
     /*Typography*/
-    font-family: 'Open Sans', 'Roboto', sans-serif;
-    font-weight: 300;
     font-size: 1em;
-    color: #444;
-    font-style: normal;
-    text-align: center;
-    padding: 8px 30px;
-    /*Spacing*/
-    border-radius: 2px;
-    color: #FEFEFE;
-    margin: 20px 0 10px;
   }
+}
 
-    .git {
-      padding: 8px 30px;
-      background-color: #F27935;
-      border: 1px solid #E67E22;
-      font-weight: 300;
-      /*font-size: 0.92em;*/
-      border-radius: 2px;
-      color: #fff;
-      background-color: #F27935;
-      border: 1px solid #E67E22;
-      margin: 20px 0 10px;
-    }
 
-    .email {
-      padding: 8px 30px;
-      background-color: #5C9DED;
-      border: 1px solid #4B8CDC;
-      font-weight: 300;
-      /*font-size: 0.92em;*/
-      border-radius: 2px;
-      color: #fff;
-      background-color: #5C9DED;
-      border: 1px solid #4B8CDC;
-      margin: 20px 0 10px;
-    }
 
-    .linkedin {
-      padding: 8px 30px;
-      background-color: #D24D57;
-      border: 1px solid #D64541;
-      font-weight: 300;
-      /*font-size: 0.92em;*/
-      border-radius: 2px;
-      color: #fff;
-      background-color: #D24D57;
-      border: 1px solid #D64541;
-      margin: 20px 0 10px;
-    }
+
+
+/*Downloads*/
+
+.downloads h2 {
+  margin-top: 2.25em;
+}
+
+/*Mobile*/
+@media screen and (max-width: 800px) {
+  .downloads h2 {
+    margin-top: 0em;
+  }
 }
 
 
