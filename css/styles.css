@@ -134,7 +134,7 @@ a:active {
     list-style: none;
     background: rgb(35, 35, 35);
     /*Sizing*/
-    width: 215px;
+    width: 150px;
     height: 100%;
     /*Display*/
     position: fixed;
@@ -201,7 +201,7 @@ a:active {
     position: fixed;
     top: 10px;
     left: 10px;
-    z-index: 2;
+    z-index: 4;
     /*Sizing*/
     width: 40px;
     height: 40px;
@@ -224,7 +224,8 @@ a:active {
     left: 150px;
     overflow-x: hidden;
     overflow-y: hidden;
-    box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);
+    /*box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);*/
+    z-index: 3;
   }
 
   .nav-trigger:checked ~ #particles-js {
