@@ -118,6 +118,125 @@ a:active {
 
 
 
+/*Hamber Menu*/
+
+@media screen and (min-width: 800px) {
+  .nav-trigger {
+    visibility: hidden;
+    display: none;
+  }
+}
+
+/*Mobile*/
+@media screen and (max-width: 1500px) {
+  .navigation {
+    /*Generic Styles*/
+    list-style: none;
+    background: rgb(35, 35, 35);
+    /*Sizing*/
+    width: 215px;
+    height: 100%;
+    /*Display*/
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+    /*Spacing*/
+    padding-top: .5em;
+    /*Overflow*/
+    /*overflow: auto;*/
+    overflow-x: hidden;
+    overflow-y:scroll;
+    }
+
+    .nav-item {
+    /*Sizing*/
+    width: 200px;
+    padding: .5em;
+    /*Typography*/
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    color:  rgb(144, 194, 168);
+    font-size: 1.1em;
+    opacity: 1;
+    }
+
+    .nav-item a {
+    /*Display*/
+    display: block;
+    padding-left: .5em;
+    text-decoration: none;
+    transition: all 0.2s, background 0.5s;
+    /*Typography*/
+    font-size: .95em;
+    }
+
+    .nav-trigger {
+    /* critical styles - hide the checkbox input */
+    display: block;
+    height: 0;
+    width: 0
+    }
+
+  .site-wrap {
+    /*Sizing*/
+    min-width: 100%;
+    min-height: 100%;
+    /*Display*/
+    position: relative;
+    top: 0;
+    bottom: 100%;
+    left: 0;
+    z-index: 1;
+    background-color: white;
+    color: #1d1d1d;
+    will-change: transform;
+    overflow-x: hidden;
+  }
+
+  label[for="nav-trigger"] {
+    /*Display*/
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    z-index: 2;
+    /*Sizing*/
+    width: 30px;
+    height: 30px;
+    /*Hover*/
+    cursor: pointer;
+    /*Icon*/
+    background-image: url('http://image005.flaticon.com/1/svg/121/121077.svg');
+    background-size: auto;
+    opacity: .5;
+  }
+
+  .nav-trigger:checked + label {
+    /*Menu Movement*/
+    left: 175px;
+    overflow-x: hidden;
+  }
+
+  .nav-trigger:checked ~ .site-wrap {
+    /*Menu Movement & Sizing*/
+    left: 150px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);
+  }
+
+  .nav-trigger + label, .site-wrap {
+    /*Menu Animation*/
+    transition: left 0.15s;
+  }
+}
+
+
+
+
+
 /*Construction*/
 
 #building {
@@ -844,6 +963,10 @@ a:active {
 
   .card.photo > .card-content .repo {
     font-size: 1em;
+  }
+
+  .portfolioTitle {
+    margin-top: 0em;
   }
 }
 
