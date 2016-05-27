@@ -199,23 +199,23 @@ a:active {
   label[for="nav-trigger"] {
     /*Display*/
     position: fixed;
-    top: 15px;
-    left: 15px;
+    top: 10px;
+    left: 10px;
     z-index: 2;
     /*Sizing*/
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     /*Hover*/
     cursor: pointer;
     /*Icon*/
-    background-image: url('http://image005.flaticon.com/1/svg/121/121077.svg');
-    background-size: auto;
+    background-image: url('http://image005.flaticon.com/140/svg/127/127734.svg');
+    background-size: cover;
     opacity: .5;
   }
 
   .nav-trigger:checked + label {
     /*Menu Movement*/
-    left: 175px;
+    left: 160px;
     overflow-x: hidden;
   }
 
@@ -348,7 +348,7 @@ a:active {
   position: absolute;
   width: 100vw;
   height: 100vh;
-  z-index: 1;
+  z-index: 2;
 }
 
 
