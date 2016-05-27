@@ -128,7 +128,7 @@ a:active {
 }
 
 /*Mobile*/
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 800px) {
   .navigation {
     /*Generic Styles*/
     list-style: none;
@@ -348,7 +348,7 @@ a:active {
   position: absolute;
   width: 100vw;
   height: 100vh;
-  z-index: -100;
+  z-index: 1;
 }
 
 
