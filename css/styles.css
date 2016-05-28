@@ -203,7 +203,7 @@ a:active {
 
 /*Desktop*/
 @media screen and (min-width: 800px) {
-  #desktopNavigation {
+  #navigationDesktop {
     margin-right: 15px;
     font-size: 1.15em;
   }
@@ -215,7 +215,7 @@ a:active {
 
 /*Mobile*/
 @media screen and (max-width: 800px) {
-  #desktopNavigation {
+  #navigationDesktop {
     margin-right: 0px;
     font-size: 1em;
   }
