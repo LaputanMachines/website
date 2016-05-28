@@ -1,9 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?> 
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"> 
 <url>
+  <loc>http://bassi.li/index.html</loc>
+</url>
+<url>
+  <loc>http://bassi.li/html/downloads.html</loc>
+</url>
+<url>
+  <loc>http://bassi.li/html/portfolio.html</loc>
+</url>
+<url>
   <loc>http://bassi.li</loc>
 </url>
 <url>
   <loc>http://bassi.li/cookies.txt</loc>
 </url>
-</urlset>
+<url>
+  <loc>http://bassi.li/../index.html</loc>
+</url>
+<url>
+  <loc>http://bassi.li/downloads.html</loc>
+</url>
+<url>
+  <loc>http://bassi.li/portfolio.html</loc>
+</url>
+<url>
+  <loc>http://bassi.li/../cookies.txt</loc>
+</url>
+<url>
+  <loc>http://bassi.li/../assets/mehdi.jpg</loc>
+</url>
+<url>
+  <loc></loc>
+</url>
