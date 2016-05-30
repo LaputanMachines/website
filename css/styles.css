@@ -580,6 +580,91 @@ a:active {
 
 
 
+/*CV*/
+
+#cvItem {
+  /*Display*/
+  display: block;
+  /*Spacing*/
+  padding: 15px;
+}
+
+#cvTitle {
+  /*Typography*/
+  font-family: 'Open Sans', 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #444;
+}
+
+#cvInfo {
+  /*Typography*/
+  font-family: 'Open Sans', 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #666;
+  /*Spacing*/
+  padding: 5px;
+}
+
+#cvImage {
+  float: right;
+  top: 0;
+  /*Spacing*/
+  margin-bottom: 5px;
+  margin-left: 5px;
+}
+
+/*4k*/
+@media screen and (min-width: 2000px) {
+  #cvTitle {
+    font-size: 1.25em;
+  }
+
+  #cvInfo {
+    font-size: 1.05em;
+  }
+
+  #cvImage {
+    width: 40px;
+  }
+}
+
+/*Desktop*/
+@media screen and (min-width: 800px) and (max-width: 2000px) {
+  #cvTitle {
+    font-size: 1.25em;
+  }
+
+  #cvInfo {
+    font-size: 1.05em;
+  }
+
+  #cvImage {
+    width: 40px;
+  }
+}
+
+/*Mobile*/
+@media screen and (max-width: 800px) {
+  #cvTitle {
+    font-size: 1.1em;
+  }
+
+  #cvInfo {
+    font-size: .9em;
+  }
+
+  #cvImage {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+
+
+
+
 
 /*Projects*/
 
