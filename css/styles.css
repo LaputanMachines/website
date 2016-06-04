@@ -254,7 +254,7 @@ a:active {
     margin-left: auto;
     margin-right: auto;
     /*Display*/
-    z-index: 1;
+    z-index: 3;
     /*Background*/
     border-bottom: 1px solid #e5e5e5;
   }
