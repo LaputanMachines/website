@@ -168,7 +168,7 @@ a:active {
   border-bottom: 1px solid #e5e5e5;
   /*Display*/
   position: fixed;
-  z-index: 2;
+  z-index: 4;
 }
 
 .header #navTitle {
@@ -791,6 +791,18 @@ a:active {
     color: #fff;
     background-color: #27ae60;
     border: 1px solid #2ecc71;
+    margin: 20px 0 10px;
+  }
+
+  .card.photo > .card-content .image {
+    padding: 8px 30px;
+    background-color: #D2527F;
+    border: 1px solid #F1A9A0;
+    font-weight: 300;
+    border-radius: 2px;
+    color: #fff;
+    background-color: #D2527F;
+    border: 1px solid #F1A9A0;
     margin: 20px 0 10px;
   }
 
