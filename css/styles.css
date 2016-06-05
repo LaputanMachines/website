@@ -426,6 +426,7 @@ a:active {
   .progressBarValue {
     /*Sizing*/
     height: 1.25em;
+    line-height: 1.25em;
     /*Position*/
     float: left;
     /*Typography*/
