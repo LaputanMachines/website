@@ -169,7 +169,7 @@ a:active {
   border-bottom: 1px solid #e5e5e5;
   /*Display*/
   position: fixed;
-  z-index: 4;
+  z-index: 5;
 }
 
 .header #navTitle {
