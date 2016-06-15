@@ -817,6 +817,10 @@ a:active {
     margin-top: 2.25em;
   }
 
+  .designTitle {
+    margin-top: 0em;
+  }
+
 /*4k*/
 @media screen and (min-width: 2000px) {
   .projects {
