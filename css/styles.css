@@ -686,14 +686,6 @@ a:active {
     border-bottom: 1px solid #e5e5e5;
   }
 
-  .showcase {
-    /*Background*/
-    background-image: url(../assets/bg.svg);
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
-  }
-
   .separator {
     /*Background*/
     border-top: 1px solid #e5e5e5;
