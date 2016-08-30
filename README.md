@@ -3,7 +3,7 @@
 
 ![Og Image](https://github.com/Mikajis/portfolio/blob/gh-pages/assets/og.jpg "Og Image")
 
-#### About the website
+#### About the Website
 This is a clean and succinct place to showcase the things I build, design and publish.
 
 Older versions of this site will be cached to preserve their memories (and their code) while also allowing me to upgrade the website over time.
