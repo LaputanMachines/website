@@ -190,12 +190,35 @@ a:active {
   font-weight: 300;
   color: #666;
   /*Spacing*/
-  word-spacing: .5em;
+  padding-left: .5em;
   padding: 15px;
   /*Positioning*/
   display: block;
   float: right;
 }
+
+.header #navigationMobile {
+  /*Typography*/
+  font-family: 'Open Sans', 'Roboto', sans-serif;
+  font-weight: 300;
+  color: #666;
+  /*Spacing*/
+  padding-left: .5em;
+  padding: 15px;
+  /*Positioning*/
+  display: block;
+  float: right;
+}
+
+  .header #navigationDesktop a {
+    /*Spacing*/
+    margin-left: 15px;
+  }
+
+  .header #navigationMobile a {
+    /*Spacing*/
+    margin-left: 5px;
+  }
 
   .header #navigationAccent {
     /*Underline Letters*/
@@ -209,6 +232,11 @@ a:active {
     font-size: 1.15em;
   }
 
+  #navigationMobile {
+    display: none;
+    visibility: hidden;
+  }
+
   #navTitle {
     font-size: 1.15em;
   }
@@ -217,10 +245,14 @@ a:active {
 /*Mobile*/
 @media screen and (max-width: 800px) {
   #navigationDesktop {
-    margin-right: 0px;
-    font-size: 1em;
-    padding: 10px !important;
+    display: none !important;
+    visibility: hidden;
   }
+
+  #navigationMobile {
+      font-size: 1em;
+      padding: 10px !important;
+    }
 
   #navTitle {
     font-size: 1em;
@@ -340,7 +372,7 @@ a:active {
     /*Display*/
     z-index: 1;
     /*Spacing*/
-    margin-top: .5em;
+    margin-top: calc(1.5em + 30px + .5em);
     padding: 15px;
     /*Background*/
     border-bottom: 1px solid #e5e5e5;
@@ -454,6 +486,10 @@ a:active {
   /*All Colors*/
   .html { background: #e67e22; }
   .css { background: #3498db; }
+  .photo { background: #2c3e50; }
+  .illustrator { background: #d35400; }
+  .lightroom { background: #16a085; }
+  .inDesign { background: #2980b9; }
   .js { background: #2c3e50; }
   .c { background: #525252; }
   .python { background: #2ecc71; }
@@ -681,7 +717,7 @@ a:active {
     /*Spacing*/
     margin-top: .5em;
     padding: 15px;
-    padding-bottom: calc(15px - .25em);
+    padding-bottom: 30px;
     /*Background*/
     border-bottom: 1px solid #e5e5e5;
   }
@@ -821,7 +857,7 @@ a:active {
   }
 
   .portfolioTitle {
-    margin-top: 2.25em;
+    /*margin-top: 2.25em;*/
   }
 
   .designTitle {
@@ -965,12 +1001,12 @@ a:active {
   }
 
   .portfolioTitle {
-    margin-top: 2em;
+    /*margin-top: 2em;*/
   }
 }
 
 .portfolio {
-  border-bottom: none; 
+  border-bottom: 1px solid #e5e5e5;
 }
 
 
@@ -1118,7 +1154,7 @@ a:active {
     /*Display*/
     z-index: 1;
     /*Spacing*/
-    margin-top: .5em;
+    margin-top: calc(1.5em + 45px);
     padding: 15px;
   }
 
