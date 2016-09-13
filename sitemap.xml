@@ -1,35 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?> 
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"> 
 <url>
-  <loc>http://bassi.li/index.html</loc>
+  <loc>http://bassi.li/html/designer.html</loc>
 </url>
 <url>
-  <loc>http://bassi.li/html/downloads.html</loc>
-</url>
-<url>
-  <loc>http://bassi.li/html/portfolio.html</loc>
+  <loc>http://bassi.li/html/webDev.html</loc>
 </url>
 <url>
   <loc>http://bassi.li</loc>
 </url>
 <url>
-  <loc>http://bassi.li/cookies.txt</loc>
+  <loc>http://bassi.li/../cookies.txt</loc>
 </url>
 <url>
   <loc>http://bassi.li/../index.html</loc>
 </url>
 <url>
-  <loc>http://bassi.li/downloads.html</loc>
+  <loc>http://bassi.li/designer.html</loc>
 </url>
 <url>
-  <loc>http://bassi.li/portfolio.html</loc>
-</url>
-<url>
-  <loc>http://bassi.li/../cookies.txt</loc>
+  <loc>http://bassi.li/webDev.html</loc>
 </url>
 <url>
   <loc>http://bassi.li/../assets/mehdi.jpg</loc>
 </url>
 <url>
-  <loc></loc>
+  <loc>http://bassi.li/../assets/curvy.jpg</loc>
 </url>
