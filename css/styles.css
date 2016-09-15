@@ -240,11 +240,6 @@ a:active {
   #navTitle {
     font-size: 1.15em;
   }
-
-  .mobileLinks {
-    visibility: hidden;
-    display: none;
-  }
 }
 
 /*Mobile*/
@@ -255,18 +250,14 @@ a:active {
   }
 
   .desktopLinks {
-    display: none;
     visibility: hidden;
+    display: none;
   }
 
   #navigationMobile {
       font-size: 1em;
       padding: 10px !important;
     }
-
-  .mobileLinks a {
-    display: block;
-  }
 
   #navTitle {
     font-size: 1em;
