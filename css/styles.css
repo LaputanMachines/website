@@ -1389,11 +1389,23 @@ a:active {
   .contact #contactLinks {
     /*Typography*/
     font-size: 1em;
+    margin: 0 auto;
   }
 
-  .contact #contactLinks button {
-    /*Typography*/
-    font-size: 1em;
+  .contact button {
+      /*Typography*/
+      font-size: 1em;
+      display: block;
+      text-align: center;
+      margin: 0 auto;
+      width: calc(100vw - 50px);
+  }
+
+  .contact .buttonContainer {
+    /*Center Buttons*/
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
   }
 }
 
