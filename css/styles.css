@@ -427,8 +427,34 @@ a:active {
 
   .about .skills {
     /*Double Columns*/
-    column-count: 2;
+    display: flex;
+    justify-content: space-around;
+    /*White Space*/
+    padding: 10px;
   }
+
+  @media screen and (max-width: 400px) {
+    .about .skills {
+      display: none;
+      visibility: hidden;
+    }
+  }
+
+    .about .skills span {
+      /*Typography*/
+      text-align: center;
+      font-family: 'Open Sans', 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #848484;
+    font-style: normal;
+  }
+
+    .about .skills img {
+      /*Image Sizing*/
+      max-width: calc(150px - 45px);
+      height: auto;
+      align-self: center;
+    }
 
   .progressBar {
     /*Spacing*/
@@ -722,6 +748,7 @@ a:active {
     /*Spacing*/
     margin-top: .5em;
     padding: 15px;
+    padding-bottom: .5em;
     /*Background*/
     border-bottom: 1px solid #e5e5e5;
   }
