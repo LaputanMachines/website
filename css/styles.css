@@ -746,9 +746,8 @@ a:active {
     /*Display*/
     z-index: 1;
     /*Spacing*/
-    margin-top: .5em;
+    margin-top: 1m;
     padding: 15px;
-    padding-bottom: .5em;
     /*Background*/
     border-bottom: 1px solid #e5e5e5;
   }
@@ -1038,6 +1037,7 @@ a:active {
 
 .portfolio {
   border-bottom: 1px solid #e5e5e5;
+  margin-top: .75em;
 }
 
 
