@@ -1228,6 +1228,7 @@ a:active {
     padding: 15px;
     /*Display*/
     display: block;
+    margin: 0 auto;
   }
 
   .contact #contactLinks {
@@ -1398,7 +1399,7 @@ a:active {
       display: block;
       text-align: center;
       margin: 0 auto;
-      width: calc(100vw - 50px);
+      width: calc(100vw - 30px);
   }
 
   .contact .buttonContainer {
