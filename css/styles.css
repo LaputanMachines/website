@@ -155,6 +155,11 @@ a:active {
   text-align: center;
 }
 
+.center {
+  /*Centering*/
+  text-align: center !important;
+}
+
 
 
 
@@ -780,7 +785,7 @@ a:active {
     /*Display*/
     display: inline-block;
     /*Spacing*/
-    padding: 15px;
+    padding: 5px;
     vertical-align: top;
   }
 
