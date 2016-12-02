@@ -401,7 +401,6 @@ a:active {
 
   .about #headshots {
     /*Display*/
-    display: -webkit-box;
     overflow: hidden;
     /*Centering*/
     text-align: center;
