@@ -797,10 +797,18 @@ a:active {
     width: 100%;
     background-color: #fcfcfc;
     position: relative;
-    /*box-shadow: 1px 1px 3px rgba(0,0,0,.15);*/
-    padding: 10px;    color: #444;
+    box-shadow: 1px 1px 3px rgba(0,0,0,.15);
+    padding: 5px;    
+    color: #444;
     font-weight: 300;
     margin-bottom: 20px;
+  }
+
+  .card-image {
+    /*Frame*/
+    /*box-shadow: none !important;*/
+    padding: 8px !important;
+    box-shadow: 1px 1px 3px rgba(0,0,0,.15) ;
   }
 
   .card.info {
