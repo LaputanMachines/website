@@ -60,10 +60,6 @@ a:link, a:visited {
 }
 
 a:hover {
-  /*Opacity*/
-  /*-webkit-opacity: 1;*/
-     /*-moz-opacity: 1;*/
-          /*opacity: 1;*/
   /*Transition*/
   -webkit-transition: all .15s ease-in-out;
      -moz-transition: all .15s ease-in-out;
@@ -72,6 +68,13 @@ a:hover {
   color: #2980B9;
   text-decoration: none;
   /*border-bottom: 1px solid #2980B9;*/
+}
+
+a.images:hover {
+  /*Opacity*/
+  -webkit-opacity: .9;
+     -moz-opacity: .9;
+          opacity: .9;
 }
 
 a:active {
@@ -794,7 +797,7 @@ a:active {
     width: 100%;
     background-color: #fcfcfc;
     position: relative;
-    box-shadow: 1px 1px 3px rgba(0,0,0,.15);
+    /*box-shadow: 1px 1px 3px rgba(0,0,0,.15);*/
     padding: 10px;    color: #444;
     font-weight: 300;
     margin-bottom: 20px;
