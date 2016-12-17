@@ -354,7 +354,7 @@ a:active {
 @media screen and (min-width: 800px) and (max-width: 2000px) {
 
   .welcome #title {
-    font-size: 4.5em;
+    font-size: 4.75em;
   }
 
   .welcome #subtitle {
@@ -411,15 +411,31 @@ a:active {
     text-align: center;
   }
 
+  .about-image {
+    margin: 15px;
+    display: inline;
+  }
+
+  .about-image img {
+    /*width: 100%;*/
+    background-color: #fcfcfc;
+    /*position: relative;*/
+    box-shadow: 1px 1px 3px rgba(0,0,0,.15);
+    padding: 5px;
+    color: #444;
+    font-weight: 300;
+    margin-bottom: 20px;
+  }
+
     .about #headshots img {
       /*Display*/
       display: inline-block;
       /*Spacing*/
       padding: 15px;
-      border-radius: 50%;
+      /*border-radius: 50%;*/
       /*Centering*/
       margin: auto 0;
-      vertical-align: middle;
+      /*vertical-align: middle;*/
     }
 
   .about #aboutMe {
@@ -443,7 +459,8 @@ a:active {
   }
 
   @media screen and (max-width: 400px) {
-    .about .skills {
+    .about .skills,
+    .mobile-about-image {
       display: none;
       visibility: hidden;
     }
@@ -582,7 +599,7 @@ a:active {
     }
 
     .about #headshots img {
-      width: calc(100% / 4.5 - 3px);
+      width: calc(100% / 3.75 - 3px);
     }
 
     .about #headshots #imageMobile {
@@ -619,7 +636,8 @@ a:active {
   }
 
     .about #headshots img {
-      width: 30%;
+      width: 50%;
+      padding: 10px;
     }
 
     .about #headshots #imageMobile {
