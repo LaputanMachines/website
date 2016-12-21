@@ -819,7 +819,7 @@ a:active {
     padding: 5px;    
     color: #444;
     font-weight: 300;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 
   .card-image {
@@ -954,6 +954,13 @@ a:active {
     width: calc(45% - 0px);
   }
 
+  .projects #projectItemSmall {
+    /*Display*/
+    display: inline-block;
+    /*Sizing*/
+    width: calc(45% - 0px);
+  }
+
   .card {
     font-size: 0.95em;
   }
@@ -994,6 +1001,13 @@ a:active {
     display: inline-block;
     /*Sizing*/
     width: calc(50% - 3px);
+  }
+
+  .projects #projectItemSmall {
+    /*Display*/
+    display: inline-block;
+    /*Sizing*/
+    width: calc(32% - 0px);
   }
 
   .card {
