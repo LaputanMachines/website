@@ -176,7 +176,7 @@ a:active {
   background-color: #F3F5F6; /*-- rgba(255,255,255,.5) -*/
   border-bottom: 1px solid #e5e5e5;
   /*Display*/
-  position: fixed;
+  position: relative;
   z-index: 5;
 }
 
@@ -308,6 +308,9 @@ a:active {
   }
 
   #welcomeContainer {
+    /*Sizing*/
+    width: 100vw;
+    /*Centering*/
     vertical-align: middle;
     position: absolute;
     top: 45%;
@@ -338,6 +341,19 @@ a:active {
     padding-bottom: 15px;
   }
 
+#downArrow {
+  /*Positioning*/
+  position: relative;
+}
+
+#downArrow img {
+  /*Positioning*/
+  max-width: 5vw;
+  left: 50%;
+  bottom: 15px;
+  position: absolute; 
+}
+
 /*4k*/
 @media screen and (min-width: 2000px) {
 
@@ -346,7 +362,7 @@ a:active {
   }
 
   .welcome #subtitle {
-    font-size: 1.75em;
+    font-size: 1.85em;
   }
 }
 
@@ -358,7 +374,7 @@ a:active {
   }
 
   .welcome #subtitle {
-    font-size: 1.5em;
+    font-size: 1.85em;
   }
 }
 
@@ -370,7 +386,7 @@ a:active {
   }
 
   .welcome #subtitle {
-    font-size: 1.15em;
+    font-size: 1.06em;
   }
 }
 
