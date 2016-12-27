@@ -18,16 +18,29 @@
       
 $(document).ready(function() {
   
+  var screenWidth = $(window).width();
   $(window).scroll(function () {
       //if you hard code, then use console
       //.log to determine when you want the 
       //nav bar to stick.  
       console.log($(window).scrollTop())
-    if ($(window).scrollTop() > 900) {
-      $('#header').addClass('headerFixed');
+
+    if (screenWidth > 900) {
+      if ($(window).scrollTop() > 830) {
+        $('#header').addClass('headerFixed');
+      }
+      if ($(window).scrollTop() < 830) {
+        $('#header').removeClass('headerFixed');
+      }
     }
-    if ($(window).scrollTop() < 900) {
-      $('#header').removeClass('headerFixed');
+
+     if (screenWidth < 900) {
+      if ($(window).scrollTop() > 736) {
+        $('#header').addClass('headerFixed');
+      }
+      if ($(window).scrollTop() < 736) {
+        $('#header').removeClass('headerFixed');
+      }
     }
   });
 });
