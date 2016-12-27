@@ -353,7 +353,7 @@ a:active {
 
 #downArrow img {
   /*Positioning*/
-  max-width: 2vw;
+  max-width: 1.5vw;
   left: 0; 
   right: 0; 
   margin-left: auto; 
@@ -364,6 +364,11 @@ a:active {
 
 /*4k*/
 @media screen and (min-width: 2000px) {
+
+  #downArrow img {
+    /*Positioning*/
+    max-width: 1.25vw;
+  }
 
   .welcome #title {
     font-size: 4.75em;
