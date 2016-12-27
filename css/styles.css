@@ -181,6 +181,10 @@ a:active {
   overflow: hidden; 
 }
 
+.headerFixed {
+    position: fixed;
+}
+
 .header #navTitle {
   /*Typography*/
   font-family: 'Open Sans', 'Roboto', sans-serif;
@@ -349,8 +353,11 @@ a:active {
 
 #downArrow img {
   /*Positioning*/
-  max-width: 5vw;
-  left: 50%;
+  max-width: 2vw;
+  left: 0; 
+  right: 0; 
+  margin-left: auto; 
+  margin-right: auto; 
   bottom: 15px;
   position: absolute; 
 }
@@ -389,6 +396,11 @@ a:active {
   .welcome #subtitle {
     font-size: 1.06em;
   }
+
+  #downArrow img {
+  /*Size*/
+  max-width: 5vw;
+}
 }
 
 
@@ -976,7 +988,7 @@ a:active {
     /*Display*/
     display: inline-block;
     /*Sizing*/
-    width: calc(45% - 0px);
+    width: calc(32% - 0px);
   }
 
   .card {

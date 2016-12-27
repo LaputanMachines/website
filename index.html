@@ -61,6 +61,18 @@
       })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
       ga('create', 'UA-77100076-2', 'auto');
       ga('send', 'pageview');
+      // Scroll Tracking
+      $(document).ready(function() {
+        $(window).scroll(function () {
+            console.log($(window).scrollTop())
+          if ($(window).scrollTop() > 140) {
+            $('#header').addClass('headerFixed');
+          }
+          if ($(window).scrollTop() < 140) {
+            $('#header').removeClass('headerFixed');
+          }
+        });
+      });
     </script>
 
   </head>
@@ -83,12 +95,12 @@
           <div id="app"></div>
         </div>
 
+      </div>
+
         <!-- Down Arrow -->
         <div id="downArrow">
           <img src="assets/downArrow.svg" alt="Downwards pointng arrow.">
         </div>
-      </div>
-
 
 
 
