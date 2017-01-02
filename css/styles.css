@@ -70,11 +70,21 @@ a:hover {
   /*border-bottom: 1px solid #2980B9;*/
 }
 
-a.images:hover {
-  /*Opacity*/
-  -webkit-opacity: .9;
-     -moz-opacity: .9;
-          opacity: .9;
+.card-image:link, .card-image:visited {
+  /*Transition*/
+  -webkit-transition: all .15s ease-in-out;
+     -moz-transition: all .15s ease-in-out;
+          transition: all .15s ease-in-out;
+}
+
+.card-image:hover {
+  /*Transform*/
+  padding: 0px !important;
+  margin-bottom: 17px !important;
+  /*Transition*/
+  -webkit-transition: all .15s ease-in-out;
+     -moz-transition: all .15s ease-in-out;
+          transition: all .15s ease-in-out;
 }
 
 a:active {
