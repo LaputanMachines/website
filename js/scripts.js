@@ -15,32 +15,3 @@
       })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
       ga('create', 'UA-77100076-2', 'auto');
       ga('send', 'pageview');
-      
-$(document).ready(function() {
-  
-  var screenWidth = $(window).width();
-  $(window).scroll(function () {
-      //if you hard code, then use console
-      //.log to determine when you want the 
-      //nav bar to stick.  
-      console.log($(window).scrollTop())
-
-    if (screenWidth > 900) {
-      if ($(window).scrollTop() > 830) {
-        $('#header').addClass('headerFixed');
-      }
-      if ($(window).scrollTop() < 830) {
-        $('#header').removeClass('headerFixed');
-      }
-    }
-
-     if (screenWidth < 900) {
-      if ($(window).scrollTop() > 736) {
-        $('#header').addClass('headerFixed');
-      }
-      if ($(window).scrollTop() < 736) {
-        $('#header').removeClass('headerFixed');
-      }
-    }
-  });
-});

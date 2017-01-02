@@ -249,7 +249,7 @@ a:active {
   }
 
 /*Desktop*/
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 800px) {
   #navigationDesktop {
     margin-right: 15px;
     font-size: 1.15em;
@@ -267,7 +267,7 @@ a:active {
 }
 
 /*Mobile*/
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 800px) {
   #navigationDesktop {
     display: none !important;
     visibility: hidden;
@@ -390,7 +390,7 @@ a:active {
 }
 
 /*Desktop*/
-@media screen and (min-width: 1000px) and (max-width: 2000px) {
+@media screen and (min-width: 800px) and (max-width: 2000px) {
 
   .welcome #title {
     font-size: 4.75em;
@@ -402,7 +402,7 @@ a:active {
 }
 
 /*Mobile*/
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 800px) {
 
   .welcome #title {
     font-size: 2.75em;
@@ -461,8 +461,7 @@ a:active {
   }
 
   .about-image img {
-    width: 100%;
-    max-width: 25%;
+    /*width: 100%;*/
     background-color: #fcfcfc;
     /*position: relative;*/
     box-shadow: 1px 1px 3px rgba(0,0,0,.15);
@@ -633,9 +632,9 @@ a:active {
 }
 
 /*Desktop*/
-@media screen and (min-width: 1000px) and (max-width: 2000px) {
+@media screen and (min-width: 800px) and (max-width: 2000px) {
   .about {
-    width: 1000px;
+    width: 800px;
     padding-bottom: calc(15px + .25em);
   }
 
@@ -658,7 +657,7 @@ a:active {
 
   .progressBar {
     /*Sizing*/
-    width: calc(1000px / 2 - 30px);
+    width: calc(800px / 2 - 30px);
   }
 
   .progressBar h4 {
@@ -667,7 +666,7 @@ a:active {
 }
 
 /*Mobile*/
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 800px) {
   .about {
     width: 100%;
   }
@@ -774,7 +773,7 @@ a:active {
 }
 
 /*Desktop*/
-@media screen and (min-width: 1000px) and (max-width: 2000px) {
+@media screen and (min-width: 800px) and (max-width: 2000px) {
   #cvTitle {
     font-size: 1.25em;
   }
@@ -789,7 +788,7 @@ a:active {
 }
 
 /*Mobile*/
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 800px) {
   #cvTitle {
     font-size: 1.1em;
   }
@@ -1031,10 +1030,10 @@ a:active {
 }
 
 /*Desktop*/
-@media screen and (min-width: 1000px) and (max-width: 2000px) {
+@media screen and (min-width: 800px) and (max-width: 2000px) {
   .projects {
     /*Sizing*/
-    width: 1000px;
+    width: 800px;
   }
 
   .projects #title {
@@ -1081,7 +1080,7 @@ a:active {
 }
 
 /*Mobile*/
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 800px) {
   .projects {
       /*Sizing*/
       width: 100vw;
@@ -1222,10 +1221,10 @@ a:active {
 }
 
 /*Desktop*/
-@media screen and (min-width: 1000px) and (max-width: 2000px) {
+@media screen and (min-width: 800px) and (max-width: 2000px) {
   .testimonials {
     /*Sizing*/
-    width: 1000px;
+    width: 800px;
   }
 
     .testimonials #title {
@@ -1245,7 +1244,7 @@ a:active {
 }
 
 /*Mobile*/
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 800px) {
   .testimonials {
     /*Sizing*/
     width: 100vw;
@@ -1427,10 +1426,10 @@ a:active {
 }
 
 /*Desktop*/
-@media screen and (min-width: 1000px) and (max-width: 2000px) {
+@media screen and (min-width: 800px) and (max-width: 2000px) {
   .contact {
     /*Sizing*/
-    width: 1000px;
+    width: 800px;
   }
 
   .contact #title {
@@ -1461,7 +1460,7 @@ a:active {
 
 /*Mobile*/
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 800px) {
   .contact {
     /*Sizing*/
     width: 100vw;
@@ -1516,7 +1515,7 @@ a:active {
 }
 
 /*Mobile*/
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 800px) {
   .downloads h2 {
     margin-top: 0em;
   }
@@ -1562,10 +1561,10 @@ a:active {
 }
 
 /*Desktop*/
-@media screen and (min-width: 1000px) and (max-width: 2000px) {
+@media screen and (min-width: 800px) and (max-width: 2000px) {
   .footer {
     /*Sizing*/
-    width: 1000px;
+    width: 800px;
   }
 
   .footer > #copyright {
@@ -1574,7 +1573,7 @@ a:active {
 }
 
 /*Mobile*/
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 800px) {
   .footer {
     /*Sizing*/
     width: 100vw;
