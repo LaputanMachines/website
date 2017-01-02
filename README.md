@@ -1,4 +1,4 @@
-# [My Portfolio](http://bassi.li) - v5.0 [![License](http://img.shields.io/:license-mit-blue.svg)](http://doge.mit-license.org)
+# [My Portfolio](http://bassi.li) - v2.0 [![License](http://img.shields.io/:license-mit-blue.svg)](http://doge.mit-license.org)
 #### The source code for my personal website & portfolio.
 
 ![Og Image](https://github.com/Mikajis/portfolio/blob/gh-pages/assets/og.jpg "Og Image")
