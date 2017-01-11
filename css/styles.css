@@ -1364,6 +1364,11 @@ a:active {
     margin: 20px 0 10px;
   }
 
+    button:hover {
+      /*Background*/
+      text-decoration: underline;
+    } 
+
     .git {
       padding: 8px 30px;
       background-color: #F27935;
