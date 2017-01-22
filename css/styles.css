@@ -70,14 +70,14 @@ a:hover {
   /*border-bottom: 1px solid #2980B9;*/
 }
 
-.card-image:link, .card-image:visited {
+/*.card-image:link, .card-image:visited {
   /*Transition*/
   -webkit-transition: all .15s ease-in-out;
      -moz-transition: all .15s ease-in-out;
           transition: all .15s ease-in-out;
-}
+}*/
 
-.card-image:hover {
+/*.card-image:hover {
   /*Transform*/
   padding: 0px !important;
   margin-bottom: 17px !important;
@@ -85,7 +85,7 @@ a:hover {
   -webkit-transition: all .15s ease-in-out;
      -moz-transition: all .15s ease-in-out;
           transition: all .15s ease-in-out;
-}
+}*/
 
 a:active {
   /*Typography*/
@@ -971,6 +971,41 @@ a:active {
     border: 1px solid #F1A9A0;
     margin: 20px 0 10px;
   }
+
+  .card-image {
+    overflow: auto;
+  }
+
+  .card-image p {
+    display: block;
+    font-family: 'Open Sans', 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #848484;
+    font-style: normal;
+    text-align: left;
+    padding: 5px;
+    display: inline-block;
+    float: left;
+  }
+
+  .card-image p:hover {
+    /*Transition*/
+    text-decoration: underline;
+  }
+
+    .card-image span {
+      /*Typography*/
+      display: block;
+      font-family: 'Open Sans', 'Roboto', sans-serif;
+      font-weight: 300;
+      color: #848484;
+      font-style: normal;
+      text-align: left;
+      padding: 5px;
+      display: inline-block;
+      text-align: right;
+      float: right;
+    }
 
   .card.photo img {
     width: 100%;
