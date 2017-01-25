@@ -70,22 +70,22 @@ a:hover {
   /*border-bottom: 1px solid #2980B9;*/
 }
 
-/*.card-image:link, .card-image:visited {
+.card-image:link, .card-image:visited {
+  opacity: 1;
   /*Transition*/
   -webkit-transition: all .15s ease-in-out;
      -moz-transition: all .15s ease-in-out;
           transition: all .15s ease-in-out;
-}*/
+}
 
-/*.card-image:hover {
+.card-image:hover {
   /*Transform*/
-  padding: 0px !important;
-  margin-bottom: 17px !important;
+  opacity: .9;
   /*Transition*/
   -webkit-transition: all .15s ease-in-out;
      -moz-transition: all .15s ease-in-out;
           transition: all .15s ease-in-out;
-}*/
+}
 
 a:active {
   /*Typography*/
