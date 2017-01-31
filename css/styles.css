@@ -41,6 +41,7 @@
 
 body {
   overflow-x: hidden;
+  line-height: 1.5em;
 }
 
 /*a-link Animations*/
@@ -65,26 +66,9 @@ a:hover {
      -moz-transition: all .15s ease-in-out;
           transition: all .15s ease-in-out;
   /*Typography*/
-  color: #2980B9;
-  text-decoration: none;
+  /*color: #2980B9;*/
+  text-decoration: underline;
   /*border-bottom: 1px solid #2980B9;*/
-}
-
-.card-image:link, .card-image:visited {
-  opacity: 1;
-  /*Transition*/
-  -webkit-transition: all .15s ease-in-out;
-     -moz-transition: all .15s ease-in-out;
-          transition: all .15s ease-in-out;
-}
-
-.card-image:hover {
-  /*Transform*/
-  opacity: .9;
-  /*Transition*/
-  -webkit-transition: all .15s ease-in-out;
-     -moz-transition: all .15s ease-in-out;
-          transition: all .15s ease-in-out;
 }
 
 a:active {
@@ -362,7 +346,6 @@ a:active {
     color: #888;
     text-align: center;
     /*Spacing*/
-    margin-top: -.7em;
     padding-bottom: 15px;
   }
 
@@ -396,6 +379,7 @@ a:active {
 
   .welcome #subtitle {
     font-size: 1.85em;
+    letter-spacing: 1.8px;
   }
 }
 
@@ -407,7 +391,8 @@ a:active {
   }
 
   .welcome #subtitle {
-    font-size: 1.85em;
+    font-size: 1.5em;
+    letter-spacing: 4.5px;
   }
 }
 
@@ -419,7 +404,8 @@ a:active {
   }
 
   .welcome #subtitle {
-    font-size: 1.08em;
+    font-size: .88em;
+    letter-spacing: 2.5px;
   }
 
   #downArrow img {
@@ -988,7 +974,7 @@ a:active {
     float: left;
   }
 
-  .card-image p:hover {
+  .card-image span:hover {
     /*Transition*/
     text-decoration: underline;
   }
