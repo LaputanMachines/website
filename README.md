@@ -1,7 +1,5 @@
-# [Portfolio](http://bassi.li) - v2.0 [![License](http://img.shields.io/:license-mit-blue.svg)](http://doge.mit-license.org)
+# [Portfolio](http://bassi.li) - v2.0 
 #### The source code for my personal website & portfolio- which hosts my work as well as some relevant contact information.
-
-![Og Image](https://github.com/Mikajis/portfolio/blob/gh-pages/assets/og.jpg "Og Image")
 
 ## Overview
 
