@@ -167,8 +167,7 @@ a:active {
   width: 100vw;
   top: 0; left: 0;
   /*Background*/
-  /*-- rgba(255,255,255,.5) -*/
-  /*background-color: #F3F5F6;*/ 
+  background-color: #F3F5F6; /*-- rgba(255,255,255,.5) -*/
   border-bottom: 1px solid #e5e5e5;
   /*Display*/
   position: relative;
@@ -178,11 +177,6 @@ a:active {
   -webkit-transition: all .15s ease-in-out;
      -moz-transition: all .15s ease-in-out;
           transition: all .15s ease-in-out;
-}
-
-.header:hover,
-.focusHeader {
-  background-color: #F3F5F6;
 }
 
 .headerFixed {
@@ -309,14 +303,10 @@ a:active {
 
 /*Welcome*/
 
-.indexLanding {
-  overflow-y: hidden;
-}
-
 .welcome {
     /*Sizing*/
     height: 100vh;
-    /*position: relative;*/
+    position: relative;
     /*Centering*/
     margin-left: auto;
     margin-right: auto;
@@ -403,7 +393,6 @@ a:active {
   .welcome #subtitle {
     font-size: 1.5em;
     letter-spacing: 4.5px;
-    margin-top: -1em;
   }
 }
 
@@ -417,7 +406,6 @@ a:active {
   .welcome #subtitle {
     font-size: .88em;
     letter-spacing: 2.5px;
-    margin-top: -1em;
   }
 
   #downArrow img {
@@ -436,7 +424,6 @@ a:active {
     /*Centering*/
     margin-left: auto;
     margin-right: auto;
-    line-height: 1.5em;
     /*Display*/
     z-index: 1;
     /*Spacing*/
@@ -467,7 +454,6 @@ a:active {
   .about-image {
     margin: 15px;
     display: inline;
-    overflow: auto;
   }
 
   .about-image img {
@@ -825,7 +811,6 @@ a:active {
     /*Centering*/
     margin-left: auto;
     margin-right: auto;
-    line-height: 1.5em;
     /*Display*/
     z-index: 1;
     /*Spacing*/
@@ -1322,7 +1307,6 @@ a:active {
 .contact {
     /*Centering*/
     margin-left: auto;
-    line-height: 1.5em;
     margin-right: auto;
     /*Display*/
     z-index: 1;
