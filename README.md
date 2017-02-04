@@ -8,3 +8,8 @@ This is a clean and succinct place to showcase the things I build, design and pu
 
 #### Issue Contribution
 If you find any issues, let me know- submit an issue to the repository.
+
+### Installation
+``
+> git clone https://github.com/FlatlanderWoman/portfolio.git
+``
