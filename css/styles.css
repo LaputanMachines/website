@@ -179,6 +179,23 @@ a:active {
      -moz-transition: all .15s ease-in-out;
           transition: all .15s ease-in-out;
 }
+.subHeader {
+  /*Sizing*/
+  width: 100vw;
+  top: 0; left: 0;
+  /*Background*/
+  /*-- rgba(255,255,255,.5) -*/
+  background-color: #fafafa; 
+  border-bottom: 1px solid #e5e5e5;
+  /*Display*/
+  position: relative;
+  z-index: 5;
+  overflow: hidden; 
+   /*Transition*/
+  -webkit-transition: all .15s ease-in-out;
+     -moz-transition: all .15s ease-in-out;
+          transition: all .15s ease-in-out;
+}
 
 .header:hover,
 .focusHeader {
@@ -193,6 +210,36 @@ a:active {
   top: 0;
   left: 0;
     position: fixed;
+}
+
+.subHeader #navTitle {
+  /*Typography*/
+  font-family: 'Open Sans', 'Roboto', sans-serif;
+  font-weight: 300;
+  color: #666;
+  /*Spacing*/
+  padding: 7.5px;
+  padding-left: 15px;
+  /*Positioning*/
+  display: block;
+  float: left;
+}
+
+.subHeader #navTitleAlt {
+  /*Typography*/
+  font-family: 'Open Sans', 'Roboto', sans-serif;
+  font-weight: 300;
+  color: #666;
+  /*Spacing*/
+  padding: 7.5px;
+  padding-right: 15px;
+  /*Positioning*/
+  display: block;
+  float: right;
+}
+
+.subHeader #navTitle a{
+  font-size: .9em;
 }
 
 .header #navTitle {
@@ -390,6 +437,7 @@ a:active {
   .welcome #subtitle {
     font-size: 1.85em;
     letter-spacing: 1.8px;
+    margin-top: -1em;
   }
 }
 
@@ -836,11 +884,43 @@ a:active {
     border-bottom: 1px solid #e5e5e5;
   }
 
+  .linkCenter {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    /*Spacing*/
+    padding-top: 0px; 
+  }
+
+    .linkCenter .git,
+    .linkCenter .email {
+      marigin-top: 0px;
+    }
+
   .separator {
     /*Background*/
     border-top: 1px solid #e5e5e5;
     /*Spacing*/
     padding-top: 20px;
+  }
+
+  .projects #subtitle {
+    font-family: 'Open Sans', 'Roboto', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #848484;
+    text-align: center;
+    padding-bottom: 15px;
+  }
+
+  .projectDescription {
+    font-family: 'Open Sans', 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #848484;
+    font-style: normal;
+    text-align: left;
+    text-indent: 1em;
+    padding: 15px;
   }
 
   .projects #title {
