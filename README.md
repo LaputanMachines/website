@@ -1,4 +1,4 @@
-# [Portfolio](http://bassi.li) - v2.0 
+# [Portfolio](http://bassi.li) - v3.0 
 #### The source code for my personal website & portfolio- which hosts my work as well as some relevant contact information.
 
 ## Overview
