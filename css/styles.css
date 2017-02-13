@@ -668,7 +668,7 @@ a:active {
 
     .about #headshots img {
       /*Sizing*/
-      width: calc(100% / 6 - 3px);
+      width: calc(100% / 4 - 3px);
     }
 
     .about #headshots #imageMobile {
@@ -739,7 +739,8 @@ a:active {
   }
 
     .about #headshots img {
-      width: 50%;
+      width: 100%;
+      max-width: calc(50vw - 60px);
       padding: 10px;
     }
 
