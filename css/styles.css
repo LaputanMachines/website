@@ -357,7 +357,7 @@ a:active {
 /*Welcome*/
 
 .indexLanding {
-  overflow-y: hidden;
+  /*overflow-y: hidden;*/
 }
 
 .welcome {
@@ -408,12 +408,12 @@ a:active {
 
 #downArrow {
   /*Positioning*/
-  position: relative;
+  /*position: relative;*/
 }
 
 #downArrow img {
   /*Positioning*/
-  max-width: 1.5vw;
+  max-width: 2vw;
   left: 0; 
   right: 0; 
   margin-left: auto; 
