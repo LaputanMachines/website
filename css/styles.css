@@ -115,6 +115,104 @@ a:active {
 
 
 
+/* Style the Image Used to Trigger the Modal */
+#myImg, #deusEx1, #deusEx2, #deusEx3, #deusEx4 {
+    border-radius: 1px;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+#myImg:hover, #deusEx1:hover, 
+#deusEx2:hover, #deusEx3:hover, 
+#deusEx4:hover {
+  opacity: 0.9;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 100; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 100%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption, #caption2, #caption3, #caption4, #caption5 {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption,
+.modal-content, #caption2,
+.modal-content, #caption3,
+.modal-content, #caption4,
+.modal-content, #caption5, { 
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.25s;
+    animation-name: zoom;
+    animation-duration: 0.25s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.25s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+
+
+
+
 
 /*Construction*/
 
@@ -435,8 +533,8 @@ a:active {
   }
 
   .welcome #subtitle {
-    font-size: 1.85em;
-    letter-spacing: 2.8px;
+    font-size: 1.25em;
+    letter-spacing: 7.9px;
     margin-top: -1em;
   }
 }
@@ -449,8 +547,8 @@ a:active {
   }
 
   .welcome #subtitle {
-    font-size: 1.5em;
-    letter-spacing: 5.35px;
+    font-size: 1.25em;
+    letter-spacing: 7.8px;
     margin-top: -1em;
   }
 }
@@ -464,7 +562,7 @@ a:active {
 
   .welcome #subtitle {
     font-size: .88em;
-    letter-spacing: 3.05px;
+    letter-spacing: 3.4px;
     margin-top: -1.5em;
   }
 
@@ -922,6 +1020,8 @@ a:active {
     text-align: left;
     text-indent: 1em;
     padding: 15px;
+    font-size: 1.05em;
+    line-height: 1.5em;
   }
 
   .projects #title {
@@ -1318,6 +1418,7 @@ a:active {
       font-style: normal;
       color: #848484;
       text-align: center;
+      line-height: 1.5em;
 
       /*Spacing*/
       padding: 15px;
@@ -1377,7 +1478,7 @@ a:active {
 
     .testimonials #quote {
       /*Typography*/
-      font-size: 1em;
+      font-size: 1.05em;
     }
 
     .testimonials #author {
@@ -1619,7 +1720,7 @@ a:active {
 
   .contact #contactText {
     /*Typography*/
-    font-size: 1em;
+    font-size: 1.05em;
   }
 
   .contact #contactLinks {
