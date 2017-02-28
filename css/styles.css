@@ -116,16 +116,9 @@ a:active {
 
 
 /* Style the Image Used to Trigger the Modal */
-#myImg, #deusEx1, #deusEx2, #deusEx3, #deusEx4 {
-    border-radius: 1px;
+#hoverImg {
     cursor: pointer;
     transition: 0.25s;
-}
-
-#myImg:hover, #deusEx1:hover, 
-#deusEx2:hover, #deusEx3:hover, 
-#deusEx4:hover {
-  opacity: 0.9;
 }
 
 /* The Modal (background) */
@@ -277,6 +270,7 @@ a:active {
      -moz-transition: all .15s ease-in-out;
           transition: all .15s ease-in-out;
 }
+
 .subHeader {
   /*Sizing*/
   width: 100vw;
@@ -534,7 +528,7 @@ a:active {
 
   .welcome #subtitle {
     font-size: 1.25em;
-    letter-spacing: 7.9px;
+    letter-spacing: 8.9px;
     margin-top: -1em;
   }
 }
@@ -548,7 +542,7 @@ a:active {
 
   .welcome #subtitle {
     font-size: 1.25em;
-    letter-spacing: 7.8px;
+    letter-spacing: 8.9px;
     margin-top: -1em;
   }
 }
@@ -562,7 +556,7 @@ a:active {
 
   .welcome #subtitle {
     font-size: .88em;
-    letter-spacing: 3.4px;
+    letter-spacing: 4px;
     margin-top: -1.5em;
   }
 
