@@ -755,7 +755,7 @@ a:active {
 @media screen and (min-width: 2000px) {
   .about {
     /*Sizing*/
-    width: 1000px;
+    width: 800px;
   }
 
     .about #title {
@@ -1676,7 +1676,7 @@ a:active {
 @media screen and (min-width: 2000px) {
   .contact {
     /*Sizing*/
-    width: 1000px;
+    width: 800px;
   }
 
   .contact #title {
