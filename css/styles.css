@@ -262,7 +262,7 @@ a:active {
   /*background-color: #F3F5F6;*/ 
   border-bottom: 1px solid #e5e5e5;
   /*Display*/
-  position: relative;
+  position: fixed;
   z-index: 5;
   overflow: hidden; 
    /*Transition*/
@@ -642,7 +642,7 @@ a:active {
     text-align: left;
     text-indent: 1em;
     /*Spacing*/
-    padding: 15px;
+    /*padding: 15px;*/
   }
 
   .about .skills {
@@ -785,7 +785,7 @@ a:active {
 /*Desktop*/
 @media screen and (min-width: 1000px) and (max-width: 2000px) {
   .about {
-    width: 1000px;
+    width: 800px;
     padding-bottom: calc(15px + .25em);
   }
 
@@ -819,7 +819,7 @@ a:active {
 /*Mobile*/
 @media screen and (max-width: 1000px) {
   .about {
-    width: 100%;
+    max-width: 800px;
   }
 
     .about #title {
@@ -1007,15 +1007,20 @@ a:active {
   }
 
   .projectDescription {
+    /*Typography*/
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     color: #848484;
     font-style: normal;
     text-align: left;
     text-indent: 1em;
+    /*Spacing*/
     padding: 15px;
     font-size: 1.05em;
     line-height: 1.5em;
+    /*Sizing*/
+    max-width: 800px;
+    margin: 0 auto;
   }
 
   .projects #title {
@@ -1558,7 +1563,7 @@ a:active {
     text-align: left;
     text-indent: 1em;
     /*Spacing*/
-    padding: 15px;
+    /*padding: 15px;*/
     /*Display*/
     display: block;
     margin: 0 auto;
@@ -1590,6 +1595,7 @@ a:active {
     border-radius: 2px;
     color: #FEFEFE;
     margin: 20px 0 10px;
+    max-width: 800px;
   }
 
     button:hover {
@@ -1699,7 +1705,7 @@ a:active {
 @media screen and (min-width: 1000px) and (max-width: 2000px) {
   .contact {
     /*Sizing*/
-    width: 1000px;
+    width: 800px;
   }
 
   .contact #title {
@@ -1733,7 +1739,7 @@ a:active {
 @media screen and (max-width: 1000px) {
   .contact {
     /*Sizing*/
-    width: 100vw;
+    max-width: 800px;
   }
 
   .contact #title {
@@ -1812,6 +1818,7 @@ a:active {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     color: #848484;
+    /*text-indent: 1em;*/
     /*Spacing*/
     padding: 15px; 
     /*Display*/
@@ -1822,7 +1829,7 @@ a:active {
 @media screen and (min-width: 2000px) {
   .footer {
     /*Sizing*/
-    width: 1000px;
+    max-width: 800px;
   }
 
   .footer > #copyright {
@@ -1834,7 +1841,7 @@ a:active {
 @media screen and (min-width: 1000px) and (max-width: 2000px) {
   .footer {
     /*Sizing*/
-    width: 1000px;
+    max-width: 800px;
   }
 
   .footer > #copyright {
