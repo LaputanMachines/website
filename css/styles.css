@@ -262,7 +262,7 @@ a:active {
   /*background-color: #F3F5F6;*/ 
   border-bottom: 1px solid #e5e5e5;
   /*Display*/
-  position: fixed;
+  position: relative;
   z-index: 5;
   overflow: hidden; 
    /*Transition*/
@@ -270,6 +270,10 @@ a:active {
      -moz-transition: all .15s ease-in-out;
           transition: all .15s ease-in-out;
 }
+
+  .fixedHeader {
+    position: fixed;
+  }
 
 .subHeader {
   /*Sizing*/
