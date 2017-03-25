@@ -532,8 +532,9 @@ a:active {
 
   .welcome #subtitle {
     font-size: 1.25em;
-    letter-spacing: 8.9px;
-    margin-top: -1em;
+    letter-spacing: 10.4px;
+    text-indent: .5em;
+    margin-top: -1.5em;
   }
 }
 
@@ -546,8 +547,9 @@ a:active {
 
   .welcome #subtitle {
     font-size: 1.25em;
-    letter-spacing: 8.9px;
-    margin-top: -1em;
+    letter-spacing: 10.4px;
+    margin-top: -1.5em;
+    text-indent: .5em;
   }
 }
 
@@ -560,7 +562,8 @@ a:active {
 
   .welcome #subtitle {
     font-size: .88em;
-    letter-spacing: 4px;
+    letter-spacing: 4.9px;
+    text-indent: .4em;
     margin-top: -1.5em;
   }
 
