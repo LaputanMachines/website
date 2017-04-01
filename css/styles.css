@@ -1831,7 +1831,7 @@ a:active {
 
   .projectFooter {
     max-width: 1000px !important;
-    text-indent: 1em !important;
+    text-indent: .5em !important;
   }
 
   .footer > #copyright {
