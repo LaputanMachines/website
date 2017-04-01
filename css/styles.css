@@ -1248,7 +1248,7 @@ a:active {
     /*Display*/
     display: inline-block;
     /*Sizing*/
-    width: calc(45% - 0px);
+    width: calc(50% - 10px);
   }
 
   .projects #projectItemSmall {
