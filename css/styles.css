@@ -1030,6 +1030,15 @@ a:active {
     margin: 0 auto;
   }
 
+    .projectDescription a {
+      border-bottom: dotted 1px #848484;
+    }
+
+    .projectDescription a:hover {
+      border-bottom: solid 1px #848484 !important;
+      text-decoration: none;
+    }
+
   .projects #title {
     /*Typography*/
     font-family: 'Roboto', sans-serif;
@@ -1818,6 +1827,11 @@ a:active {
     margin-right: auto;
     /*Display*/
     z-index: 1;
+  }
+
+  .projectFooter {
+    max-width: 1000px !important;
+    text-indent: 1em !important;
   }
 
   .footer > #copyright {
