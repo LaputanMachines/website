@@ -1207,9 +1207,17 @@ a:active {
       font-style: normal;
       text-align: left;
       padding: 5px;
+      padding-bottom: 0px;
+      margin-bottom: 4px;
+      border-bottom: dotted 1px #848484;
       display: inline-block;
       text-align: right;
       float: right;
+    }
+
+    .card-image span:hover {
+      border-bottom: solid 1px #848484;
+      text-decoration: none ;
     }
 
   .card.photo img {
