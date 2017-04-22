@@ -88,6 +88,65 @@
         <h2 id="title">Laputan Machines</h2>
         <h3 id="subtitle">A WordPress theme for my personal video game blog.</h3>
 
+        <!-- Images -->
+        <div id="projectList">
+
+          <!-- Laputan 1 -->
+          <div data-wow-duration=".3s" class="wow fadeIn" id="projectItem">
+             <div class="card photo card-image">
+
+                <!-- Image -->
+                <img id="laputan1" src="../../assets/laputan.png" alt="Laputan Machines, Landing page">
+                 <p>Landing Page</p><a id="hoverImg" onclick="openModal();currentSlide(1)" class="images"><span>View Image</span></a>
+
+            </div>
+          </div>
+
+          <!-- Laputan 1 -->
+          <div data-wow-duration=".3s" class="wow fadeIn" id="projectItem">
+             <div class="card photo card-image">
+
+                <!-- Image -->
+                <img id="laputan2" src="../../assets/laputan2.png" alt="Laputan Machines, Single Post">
+                <p>Cross Section</p><a id="hoverImg" onclick="openModal();currentSlide(2)" class="images"><span>View Image</span></a>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal -->
+        <div id="myModal" class="modal">
+          <span class="close cursor" onclick="closeModal()">&times;</span>
+          <div class="modal-content">
+
+            <div class="mySlides">
+              <div class="numbertext">1 / 2</div>
+                <img src="../../assets/laputan.png" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">2 / 2</div>
+                <img src="../../assets/laputan2.png" style="width:100%">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <div class="caption-container">
+              <p id="caption"></p>
+            </div>
+  
+            <div class="column">
+            <img class="demo" src="../../assets/laputan.png" onclick="currentSlide(1)" alt="Laputan Machines, Landing Page">
+          </div>
+
+          <div class="column">
+            <img class="demo" src="../../assets/laputan2.png" onclick="currentSlide(2)" alt="Laputan Machines, Single Post">
+          </div>
+
+          </div>
+        </div>
+
         <!-- Text -->
         <div class="projectDescription">
           I wanted to start a video game blog, so I decided that the first step would be to design and develop a WordPress theme. This theme is very much tailored to me and my preferences, but it can be adapted with some tweaking. <br> <br>
@@ -100,6 +159,7 @@
         <!-- Links -->
         <div class="linkCenter" id="contactLinks">
           <a href="https://github.com/FlatlanderWoman/laputanMachines/releases"><button class="ease-in-out alt2">View Releases</button></a>
+          <a href="https://github.com/FlatlanderWoman/laputanMachines/archive/v1.0.zip"><button class="ease-in-out git">Download</button></a>
           <a href="https://github.com/FlatlanderWoman/laputanMachines"><button class="ease-in-out email">Visit Repo</button></a>
         </div>
 
