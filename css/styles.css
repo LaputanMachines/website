@@ -1014,6 +1014,8 @@ a:active {
     margin-right: auto;
     /*Spacing*/
     padding-top: 0px; 
+    /*Typography*/
+    font-family: "Roboto", sans-serif;
   }
 
     .linkCenter .git,
