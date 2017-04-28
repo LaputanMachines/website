@@ -328,14 +328,10 @@ a:active {
   color: #666;
   /*Spacing*/
   padding: 7.5px;
-  padding-right: 15px;
+  margin-right: calc(15px + 7.5px + 1em);
   /*Positioning*/
   display: block;
   float: right;
-}
-
-.subHeader #navTitle a{
-  font-size: .9em;
 }
 
 .header #navTitle {
@@ -363,9 +359,16 @@ a:active {
   float: right;
 }
 
-  .header a:hover {
+  .header a:hover,
+  .subHeader a:hover {
     border-bottom: solid 1px #848484 !important;
     text-decoration: none;
+  }
+
+  .subHeader #navArrows {
+    /*Typography*/
+    font-family: "Megrim", cursive;
+    font-weight: bold;
   }
 
 .header #navigationMobile {
@@ -412,6 +415,12 @@ a:active {
     margin-left: 15px;
     font-size: 1.15em;
   }
+
+  .subHeader #navTitle,
+  .subHeader #navTitleAlt,
+  .subHeader #navArrows {
+    font-size: .95em;
+  }
 }
 
 /*Mobile*/
@@ -434,6 +443,16 @@ a:active {
   #navTitle {
     font-size: 1em;
     padding: 10px !important;
+  }
+
+  .subHeader #navTitle,
+  .subHeader #navTitleAlt,
+  .subHeader #navArrows {
+    font-size: .85em;
+  }
+  .subHeader #navTitleAlt {
+    margin-right: 0px !important;
+    padding: 10px;
   }
 }
 
