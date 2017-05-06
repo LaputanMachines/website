@@ -36,23 +36,23 @@
     <meta property="og:image" content="http://bassi.li/assets/og.jpg" />
 
     <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="../../css/styles.css">
-    <link rel="stylesheet" type="text/css" href="../../css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="../../css/animate.css">
-    <link rel="stylesheet" type="text/css" href="../../css/modal.css">
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <link rel="stylesheet" type="text/css" href="../css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="../css/animate.css">
+    <link rel="stylesheet" type="text/css" href="../css/modal.css">
 
     <!--Favicon-->
-    <link rel="icon" type="image/png" href="../../assets/logo3.png" />
+    <link rel="icon" type="image/png" href="../assets/logo3.png" />
 
     <!-- Canonical -->
     <link rel="canonical" href="http://bassi.li" />
 
     <!-- JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script type="text/javascript" src="../../js/scripts.js"></script>
-    <script type="text/javascript" src="../../js/wow.min.js"></script>
-    <script type="text/javascript" src="../../js/particles.js"></script>
-    <script type="text/javascript" src="../../js/app.js"></script>
+    <script type="text/javascript" src="../js/scripts.js"></script>
+    <script type="text/javascript" src="../js/wow.min.js"></script>
+    <script type="text/javascript" src="../js/particles.js"></script>
+    <script type="text/javascript" src="../js/app.js"></script>
     <script>
       new WOW().init();
     </script>
@@ -62,29 +62,19 @@
 
   <body>
 
+     <!-- Header -->  
+      <header class="header" id="header">
 
+        <span id="navTitle"><a href="index.html"><span>Michael Bassili</a></span>
 
-
-      <!-- Header -->  
-      <header class="header focusHeader" id="header">
-        <!-- Title -->
-        <span id="navTitle"><a href="../../index.html"><span>Michael Bassili</a></span>
-        <!-- Desktop Nav Bar -->
         <nav id="navigationDesktop">
-          <a href="../work.html">Portfolio</a>
+          <a href="../index.html#projects">Projects</a>
         </nav>
-        <!-- Mobile Nav Bar -->
+  
         <nav id="navigationMobile">
-          <a href="../work.html">Portfolio</a>
+          <a href="../index.html#projects">Projects</a>
         </nav>
       </header>
-
-      <!-- Project Selection Header -->
-      <header class="subHeader">
-        <span id="navTitle"><a href="windowsCleaner.html"><span id="navArrows"><<</span> Windows Cleaner</a></span>
-        <span id="navTitleAlt"><a href=""></a></span>
-      </header>
-
 
 
 
@@ -102,7 +92,7 @@
              <div class="card photo card-image">
 
                 <!-- Image -->
-                <img id="deusEx1" src="../../assets/deusEx.png" alt="Deus Ex: Timeline, Landing page">
+                <img id="deusEx1" src="../assets/deusEx.png" alt="Deus Ex: Timeline, Landing page">
                  <p>Landing Page</p><a id="hoverImg" onclick="openModal();currentSlide(1)" class="images"><span>View Image</span></a>
 
             </div>
@@ -113,7 +103,7 @@
              <div class="card photo card-image">
 
                 <!-- Image -->
-                <img id="deusEx2" src="../../assets/deusEx2.png" alt="Deus Ex: Timeline, Cross Section">
+                <img id="deusEx2" src="../assets/deusEx2.png" alt="Deus Ex: Timeline, Cross Section">
                 <p>Cross Section</p><a id="hoverImg" onclick="openModal();currentSlide(2)" class="images"><span>View Image</span></a>
 
             </div>
@@ -127,12 +117,12 @@
 
             <div class="mySlides">
               <div class="numbertext">1 / 2</div>
-                <img src="../../assets/deusEx.png" style="width:100%">
+                <img src="../assets/deusEx.png" style="width:100%">
             </div>
 
             <div class="mySlides">
               <div class="numbertext">2 / 2</div>
-                <img src="../../assets/deusEx2.png" style="width:100%">
+                <img src="../assets/deusEx2.png" style="width:100%">
             </div>
 
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -143,11 +133,11 @@
             </div>
   
             <div class="column">
-            <img class="demo" src="../../assets/deusEx1.png" onclick="currentSlide(1)" alt="Deus Ex: Timeline, Landing Page">
+            <img class="demo" src="../assets/deusEx1.png" onclick="currentSlide(1)" alt="Deus Ex: Timeline, Landing Page">
           </div>
 
           <div class="column">
-            <img class="demo" src="../../assets/deusEx2.png" onclick="currentSlide(2)" alt="Deus Ex: Timeline, Cross Section">
+            <img class="demo" src="../assets/deusEx2.png" onclick="currentSlide(2)" alt="Deus Ex: Timeline, Cross Section">
           </div>
 
           </div>

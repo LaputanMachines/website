@@ -540,6 +540,16 @@ a:active {
   margin-right: auto; 
   bottom: 15px;
   position: absolute; 
+  /*Transition*/
+  opacity: .75;
+  -webkit-transition: all .1s ease-in-out;
+     -moz-transition: all .1s ease-in-out;
+          transition: all .1s ease-in-out;
+}
+
+#downArrow img:hover {
+  /*Trandition on Hover*/
+  opacity: 1;
 }
 
 /*4k*/
@@ -567,6 +577,11 @@ a:active {
 
   .welcome #title {
     font-size: 4.75em;
+  }
+
+   #downArrow img {
+    /*Positioning*/
+    max-width: 3vw;
   }
 
   .welcome #subtitle {
@@ -1331,7 +1346,7 @@ a:active {
     /*Display*/
     display: inline-block;
     /*Sizing*/
-    width: calc(50% - 3px);
+    width: 33%;
   }
 
   .projects #projectItemSmall {

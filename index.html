@@ -52,6 +52,9 @@
     <script type="text/javascript" src="js/wow.min.js"></script>
     <script type="text/javascript" src="js/particles.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
+    <script>
+      new WOW().init();
+    </script>
 
   </head>
 
@@ -60,23 +63,6 @@
 
       <!-- Particle Bk -->
       <div id="particles-js"></div>
-
-
-
-
-      <!-- Header -->  
-      <header class="header fixedHeader" id="header">
-        <!-- Title -->
-        <span id="navTitle"><a href="index.html"><span>Michael Bassili</a></span>
-        <!-- Desktop Nav Bar -->
-        <nav id="navigationDesktop">
-          <a href="html/work.html">Portfolio</a>
-        </nav>
-        <!-- Mobile Nav Bar -->
-        <nav id="navigationMobile">
-          <a href="html/work.html">Portfolio</a>
-        </nav>
-      </header>
 
 
 
@@ -91,7 +77,7 @@
         </div>
         <!-- Down Arrow -->
         <div id="downArrow">
-          <img src="assets/downArrow.svg" alt="Downwards pointng arrow.">
+          <a href="#about"><img src="assets/downArrow.svg" alt="Downwards pointng arrow."></a>
         </div>
       </div>
 
@@ -113,6 +99,42 @@
           I am currently a student at Simon Fraser University studying Computing Science and Mathematics. On the side, I pursue freelance projects, watch birds and play video games. My interests lie with front end development. As a result, most of my side projects concern the visual aspects of web development. I also try to regularly vary the types of side projects I pursue.
         </div>
       </div>
+
+
+
+
+      <div class="projects portfolio" id="projects">
+        <h2 id="title">Completed Projects</h2>
+
+        <!-- Projects List -->
+        <div id="projectList">
+
+          <!-- Laputan Machines -->
+          <div data-wow-duration=".3s" class="wow fadeIn projectItem" id="projectItem">
+             <div class="card photo card-image">
+              <img ondragstart="return false" src="assets/laputanMachines.png" alt="Laputan Machines banner."/>
+              <p>Laputan Machines </p><a class="images" href="html/laputanMachines.html"><span>Learn More</span></a>
+            </div>
+          </div>
+
+          <!-- Windows Cleaner-->
+          <div data-wow-duration=".3s" class="wow fadeIn projectItem" id="projectItem">
+             <div class="card photo card-image">
+              <img ondragstart="return false" src="assets/winCleanerThumbnail.png" alt="Windows Cleaner Logo."/>
+              <p>Windows Cleaner </p><a class="images" href="html/windowsCleaner.html"><span>Learn More</span></a>
+            </div>
+          </div>
+
+          <!-- Deus Ex Timeline -->
+          <div data-wow-duration=".3s" class="wow fadeIn" id="projectItem">
+             <div class="card photo card-image">
+              <img ondragstart="return false" src="assets/deusExThumbnail.png" alt="Deus Ex Timeline."/>
+               <p>Deus Ex: Timeline </p><a class="images" href="html/deusExTimeline.html"><span>Learn More</span></a>
+            </div>
+          </div>
+
+          </div>
+        </div>
         
 
 
