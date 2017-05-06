@@ -115,6 +115,97 @@ a:active {
 
 
 
+/* Style the Image Used to Trigger the Modal */
+#hoverImg {
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 100; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 100%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption, #caption2, #caption3, #caption4, #caption5 {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption,
+.modal-content, #caption2,
+.modal-content, #caption3,
+.modal-content, #caption4,
+.modal-content, #caption5, { 
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.25s;
+    animation-name: zoom;
+    animation-duration: 0.25s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.25s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+
+
+
+
 
 /*Construction*/
 
@@ -136,7 +227,7 @@ a:active {
 
 #building #buildingContainer h1 {
   /*Typography*/
-  font-family: 'Open Sans', 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 300;
   font-size: 2.5em;
   color: #777;
@@ -145,7 +236,7 @@ a:active {
 
 #building #buildingContainer p {
   /*Typography*/
-  font-family: 'Open Sans', 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 300;
   font-size: 1.25em;
   color: #777;
@@ -167,7 +258,8 @@ a:active {
   width: 100vw;
   top: 0; left: 0;
   /*Background*/
-  background-color: #F3F5F6; /*-- rgba(255,255,255,.5) -*/
+  /*-- rgba(255,255,255,.5) -*/
+  /*background-color: #F3F5F6;*/ 
   border-bottom: 1px solid #e5e5e5;
   /*Display*/
   position: relative;
@@ -177,6 +269,33 @@ a:active {
   -webkit-transition: all .15s ease-in-out;
      -moz-transition: all .15s ease-in-out;
           transition: all .15s ease-in-out;
+}
+
+  .fixedHeader {
+    position: fixed;
+  }
+
+.subHeader {
+  /*Sizing*/
+  width: 100vw;
+  top: 0; left: 0;
+  /*Background*/
+  /*-- rgba(255,255,255,.5) -*/
+  background-color: #fafafa; 
+  border-bottom: 1px solid #e5e5e5;
+  /*Display*/
+  position: relative;
+  z-index: 5;
+  overflow: hidden; 
+   /*Transition*/
+  -webkit-transition: all .15s ease-in-out;
+     -moz-transition: all .15s ease-in-out;
+          transition: all .15s ease-in-out;
+}
+
+.header:hover,
+.focusHeader {
+  background-color: #F3F5F6;
 }
 
 .headerFixed {
@@ -189,9 +308,35 @@ a:active {
     position: fixed;
 }
 
+.subHeader #navTitle {
+  /*Typography*/
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: #666;
+  /*Spacing*/
+  padding: 7.5px;
+  padding-left: 15px;
+  /*Positioning*/
+  display: block;
+  float: left;
+}
+
+.subHeader #navTitleAlt {
+  /*Typography*/
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: #666;
+  /*Spacing*/
+  padding: 7.5px;
+  margin-right: calc(15px + 7.5px + 1em);
+  /*Positioning*/
+  display: block;
+  float: right;
+}
+
 .header #navTitle {
   /*Typography*/
-  font-family: 'Open Sans', 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 300;
   color: #666;
   /*Spacing*/
@@ -203,7 +348,7 @@ a:active {
 
 .header #navigationDesktop {
   /*Typography*/
-  font-family: 'Open Sans', 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 300;
   color: #666;
   /*Spacing*/
@@ -214,9 +359,21 @@ a:active {
   float: right;
 }
 
+  .header a:hover,
+  .subHeader a:hover {
+    border-bottom: solid 1px #848484 !important;
+    text-decoration: none;
+  }
+
+  .subHeader #navArrows {
+    /*Typography*/
+    font-family: "Megrim", cursive;
+    font-weight: bold;
+  }
+
 .header #navigationMobile {
   /*Typography*/
-  font-family: 'Open Sans', 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 300;
   color: #666;
   /*Spacing*/
@@ -245,7 +402,7 @@ a:active {
 /*Desktop*/
 @media screen and (min-width: 1000px) {
   #navigationDesktop {
-    margin-right: 15px;
+    margin-right: calc(15px + 1em);
     font-size: 1.15em;
   }
 
@@ -257,6 +414,12 @@ a:active {
   #navTitle {
     margin-left: 15px;
     font-size: 1.15em;
+  }
+
+  .subHeader #navTitle,
+  .subHeader #navTitleAlt,
+  .subHeader #navArrows {
+    font-size: .95em;
   }
 }
 
@@ -281,6 +444,16 @@ a:active {
     font-size: 1em;
     padding: 10px !important;
   }
+
+  .subHeader #navTitle,
+  .subHeader #navTitleAlt,
+  .subHeader #navArrows {
+    font-size: .85em;
+  }
+  .subHeader #navTitleAlt {
+    margin-right: 0px !important;
+    padding: 10px;
+  }
 }
 
 
@@ -293,7 +466,7 @@ a:active {
   position: absolute;
   width: 100%;
   height: 100%;
-  z-index: 2;
+  z-index: 0;
   overflow-y: hidden;
 }
 
@@ -303,10 +476,14 @@ a:active {
 
 /*Welcome*/
 
+.indexLanding {
+  /*overflow-y: hidden;*/
+}
+
 .welcome {
     /*Sizing*/
     height: 100vh;
-    position: relative;
+    /*position: relative;*/
     /*Centering*/
     margin-left: auto;
     margin-right: auto;
@@ -318,7 +495,7 @@ a:active {
 
   #welcomeContainer {
     /*Sizing*/
-    /*width: 100vw;*/
+    width: 100vw;
     /*Centering*/
     vertical-align: middle;
     position: absolute;
@@ -340,7 +517,7 @@ a:active {
 
   .welcome #subtitle {
     /*Typography*/
-    font-family: 'Open Sans', 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 300;
     font-style: normal;
     color: #888;
@@ -351,12 +528,12 @@ a:active {
 
 #downArrow {
   /*Positioning*/
-  position: relative;
+  /*position: relative;*/
 }
 
 #downArrow img {
   /*Positioning*/
-  max-width: 1.5vw;
+  max-width: 2vw;
   left: 0; 
   right: 0; 
   margin-left: auto; 
@@ -378,8 +555,10 @@ a:active {
   }
 
   .welcome #subtitle {
-    font-size: 1.85em;
-    letter-spacing: 1.8px;
+    font-size: 1.25em;
+    letter-spacing: 10.95px;
+    text-indent: .55em;
+    margin-top: -1.5em;
   }
 }
 
@@ -391,8 +570,10 @@ a:active {
   }
 
   .welcome #subtitle {
-    font-size: 1.5em;
-    letter-spacing: 4.5px;
+    font-size: 1.25em;
+    letter-spacing: 10.95px;
+    margin-top: -1.5em;
+    text-indent: .55em;
   }
 }
 
@@ -405,7 +586,9 @@ a:active {
 
   .welcome #subtitle {
     font-size: .88em;
-    letter-spacing: 2.5px;
+    letter-spacing: 5.2px;
+    text-indent: .325em;
+    margin-top: -1.5em;
   }
 
   #downArrow img {
@@ -424,6 +607,7 @@ a:active {
     /*Centering*/
     margin-left: auto;
     margin-right: auto;
+    line-height: 1.5em;
     /*Display*/
     z-index: 1;
     /*Spacing*/
@@ -435,7 +619,7 @@ a:active {
 
     .about #title {
       /*Typography*/
-      font-family: 'Open Sans', 'Roboto', sans-serif;
+      font-family: 'Roboto', sans-serif;
       font-weight: 300;
       font-style: normal;
       color: #848484;
@@ -454,6 +638,7 @@ a:active {
   .about-image {
     margin: 15px;
     display: inline;
+    overflow: auto;
   }
 
   .about-image img {
@@ -481,14 +666,14 @@ a:active {
 
   .about #aboutMe {
     /*Typography*/
-    font-family: 'Open Sans', 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 300;
     color: #848484;
     font-style: normal;
     text-align: left;
     text-indent: 1em;
     /*Spacing*/
-    padding: 15px;
+    /*padding: 15px;*/
   }
 
   .about .skills {
@@ -510,7 +695,7 @@ a:active {
     .about .skills span {
       /*Typography*/
       text-align: center;
-      font-family: 'Open Sans', 'Roboto', sans-serif;
+      font-family: 'Roboto', sans-serif;
     font-weight: 300;
     color: #848484;
     font-style: normal;
@@ -532,7 +717,7 @@ a:active {
 
   .progressBar h4 {
     /*Typography*/
-    font-family: 'Open Sans', 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 300;
     color: #666;
     font-style: normal;
@@ -563,7 +748,7 @@ a:active {
     /*Typography*/
     text-align: right;
     color: white;
-    font-family: 'Open Sans', 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
   }
@@ -597,7 +782,7 @@ a:active {
 @media screen and (min-width: 2000px) {
   .about {
     /*Sizing*/
-    width: 1000px;
+    width: 800px;
   }
 
     .about #title {
@@ -606,7 +791,7 @@ a:active {
 
     .about #headshots img {
       /*Sizing*/
-      width: calc(100% / 6 - 3px);
+      width: calc(100% / 4 - 3px);
     }
 
     .about #headshots #imageMobile {
@@ -631,7 +816,7 @@ a:active {
 /*Desktop*/
 @media screen and (min-width: 1000px) and (max-width: 2000px) {
   .about {
-    width: 1000px;
+    width: 800px;
     padding-bottom: calc(15px + .25em);
   }
 
@@ -665,7 +850,7 @@ a:active {
 /*Mobile*/
 @media screen and (max-width: 1000px) {
   .about {
-    width: 100%;
+    max-width: 800px;
   }
 
     .about #title {
@@ -677,7 +862,8 @@ a:active {
   }
 
     .about #headshots img {
-      width: 50%;
+      width: 100%;
+      max-width: calc(50vw - 60px);
       padding: 10px;
     }
 
@@ -730,7 +916,7 @@ a:active {
 
 #cvTitle {
   /*Typography*/
-  font-family: 'Open Sans', 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 400;
   color: #444;
@@ -738,7 +924,7 @@ a:active {
 
 #cvInfo {
   /*Typography*/
-  font-family: 'Open Sans', 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 400;
   color: #666;
@@ -811,6 +997,7 @@ a:active {
     /*Centering*/
     margin-left: auto;
     margin-right: auto;
+    line-height: 1.5em;
     /*Display*/
     z-index: 1;
     /*Spacing*/
@@ -821,6 +1008,21 @@ a:active {
     border-bottom: 1px solid #e5e5e5;
   }
 
+  .linkCenter {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    /*Spacing*/
+    padding-top: 0px; 
+    /*Typography*/
+    font-family: "Roboto", sans-serif;
+  }
+
+    .linkCenter .git,
+    .linkCenter .email {
+      marigin-top: 0px;
+    }
+
   .separator {
     /*Background*/
     border-top: 1px solid #e5e5e5;
@@ -828,9 +1030,44 @@ a:active {
     padding-top: 20px;
   }
 
+  .projects #subtitle {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #848484;
+    text-align: center;
+    padding-bottom: 15px;
+  }
+
+  .projectDescription {
+    /*Typography*/
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #848484;
+    font-style: normal;
+    text-align: left;
+    text-indent: 1em;
+    /*Spacing*/
+    padding: 15px;
+    font-size: 1.05em;
+    line-height: 1.5em;
+    /*Sizing*/
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+    .projectDescription a {
+      border-bottom: dotted 1px #848484;
+    }
+
+    .projectDescription a:hover {
+      border-bottom: solid 1px #848484 !important;
+      text-decoration: none;
+    }
+
   .projects #title {
     /*Typography*/
-    font-family: 'Open Sans', 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 300;
     font-style: normal;
     color: #848484;
@@ -871,6 +1108,10 @@ a:active {
     box-shadow: 1px 1px 3px rgba(0,0,0,.15) ;
   }
 
+    .card-image > img {
+      display: inline !important;
+  }
+
   .card.info {
     background-color: #5C9DED;
     color: #fff;
@@ -904,7 +1145,7 @@ a:active {
   .card.photo > .card-content {
     padding: 15px;
     /*Typography*/
-    font-family: 'Open Sans', 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 300;
     color: #666;
     font-style: normal;
@@ -914,7 +1155,7 @@ a:active {
     .card-content  h3 {
       padding: 5px;
       /*Typography*/
-      font-family: 'Open Sans', 'Roboto', sans-serif;
+      font-family: 'Roboto', sans-serif;
       font-weight: normal;
       color: #555;
       font-style: normal;
@@ -962,9 +1203,13 @@ a:active {
     overflow: auto;
   }
 
+  .screencaps {
+    text-align: center;
+  }
+
   .card-image p {
     display: block;
-    font-family: 'Open Sans', 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 300;
     color: #848484;
     font-style: normal;
@@ -982,20 +1227,29 @@ a:active {
     .card-image span {
       /*Typography*/
       display: block;
-      font-family: 'Open Sans', 'Roboto', sans-serif;
+      font-family: 'Roboto', sans-serif;
       font-weight: 300;
       color: #848484;
       font-style: normal;
       text-align: left;
       padding: 5px;
+      padding-bottom: 0px;
+      margin-bottom: 4px;
+      border-bottom: dotted 1px #848484;
       display: inline-block;
       text-align: right;
       float: right;
     }
 
+    .card-image span:hover {
+      border-bottom: solid 1px #848484;
+      text-decoration: none ;
+    }
+
   .card.photo img {
     width: 100%;
     height: auto;
+    display: block;
   }
 
   .portfolioTitle {
@@ -1028,7 +1282,7 @@ a:active {
     /*Display*/
     display: inline-block;
     /*Sizing*/
-    width: calc(45% - 0px);
+    width: calc(50% - 10px);
   }
 
   .projects #projectItemSmall {
@@ -1113,6 +1367,11 @@ a:active {
 
 /*Mobile*/
 @media screen and (max-width: 1000px) {
+  .screencaps {
+    visibility: hidden;
+    display: none;
+  }
+
   .projects {
       /*Sizing*/
       width: 100vw;
@@ -1189,7 +1448,7 @@ a:active {
 
     .testimonials #title {
       /*Typography*/
-      font-family: 'Open Sans', 'Roboto', sans-serif;
+      font-family: 'Roboto', sans-serif;
       font-weight: 300;
       font-style: normal;
       color: #848484;
@@ -1202,11 +1461,13 @@ a:active {
       /*Display*/
       display: block;
       /*Typography*/
-      font-family: 'Open Sans', 'Roboto', sans-serif;
+      font-family: 'Roboto', sans-serif;
       font-weight: 300;
       color: #848484;
       font-style: normal;
+      color: #848484;
       text-align: center;
+      line-height: 1.5em;
 
       /*Spacing*/
       padding: 15px;
@@ -1216,7 +1477,7 @@ a:active {
       /*Display*/
       display: block;
       /*Typography*/
-      font-family: 'Open Sans', 'Roboto', sans-serif;
+      font-family: 'Roboto', sans-serif;
       font-weight: 300;
       color: #848484;
       font-style: normal;
@@ -1266,7 +1527,7 @@ a:active {
 
     .testimonials #quote {
       /*Typography*/
-      font-size: 1em;
+      font-size: 1.05em;
     }
 
     .testimonials #author {
@@ -1307,6 +1568,7 @@ a:active {
 .contact {
     /*Centering*/
     margin-left: auto;
+    line-height: 1.5em;
     margin-right: auto;
     /*Display*/
     z-index: 1;
@@ -1317,7 +1579,7 @@ a:active {
 
   .contact #title {
     /*Typography*/
-    font-family: 'Open Sans', 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 300;
     font-style: normal;
     color: #848484;
@@ -1330,7 +1592,7 @@ a:active {
     /*Display*/
     display: block;
     /*Typography*/
-    font-family: 'Open Sans', 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 300;
     color: #666;
     font-style: normal;
@@ -1344,14 +1606,14 @@ a:active {
 
   .contact #contactText {
     /*Typography*/
-    font-family: 'Open Sans', 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 300;
     color: #848484;
     font-style: normal;
     text-align: left;
     text-indent: 1em;
     /*Spacing*/
-    padding: 15px;
+    /*padding: 15px;*/
     /*Display*/
     display: block;
     margin: 0 auto;
@@ -1359,7 +1621,7 @@ a:active {
 
   .contact #contactLinks {
     /*Typography*/
-    font-family: 'Open Sans', 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 400;
     color: #444;
     font-style: normal;
@@ -1372,7 +1634,7 @@ a:active {
 
   .contact #contactLinks button {
     /*Typography*/
-    font-family: 'Open Sans', 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 300;
     color: #444;
     font-style: normal;
@@ -1383,6 +1645,7 @@ a:active {
     border-radius: 2px;
     color: #FEFEFE;
     margin: 20px 0 10px;
+    max-width: 800px;
   }
 
     button:hover {
@@ -1416,6 +1679,32 @@ a:active {
       margin: 20px 0 10px;
     }
 
+     .alt1 {
+      padding: 8px 30px;
+      background-color: #27ae60;
+      border: 1px solid #2ecc71;
+      font-weight: 300;
+      /*font-size: 0.92em;*/
+      border-radius: 2px;
+      color: #fff;
+      background-color: #27ae60;
+      border: 1px solid #2ecc71;
+      margin: 20px 0 10px;
+    }
+
+     .alt2 {
+      padding: 8px 30px;
+      background-color: #8e44ad;
+      border: 1px solid #9b59b6;
+      font-weight: 300;
+      /*font-size: 0.92em;*/
+      border-radius: 2px;
+      color: #fff;
+      background-color: #8e44ad;
+      border: 1px solid #9b59b6;
+      margin: 20px 0 10px;
+    }
+
     .linkedin {
       padding: 8px 30px;
       background-color: #D24D57;
@@ -1433,7 +1722,7 @@ a:active {
 @media screen and (min-width: 2000px) {
   .contact {
     /*Sizing*/
-    width: 1000px;
+    width: 800px;
   }
 
   .contact #title {
@@ -1466,7 +1755,7 @@ a:active {
 @media screen and (min-width: 1000px) and (max-width: 2000px) {
   .contact {
     /*Sizing*/
-    width: 1000px;
+    width: 800px;
   }
 
   .contact #title {
@@ -1481,7 +1770,7 @@ a:active {
 
   .contact #contactText {
     /*Typography*/
-    font-size: 1em;
+    font-size: 1.05em;
   }
 
   .contact #contactLinks {
@@ -1500,7 +1789,7 @@ a:active {
 @media screen and (max-width: 1000px) {
   .contact {
     /*Sizing*/
-    width: 100vw;
+    max-width: 800px;
   }
 
   .contact #title {
@@ -1566,7 +1855,7 @@ a:active {
 
 .footer {
     /*Background*/
-    border-top: 1px solid #e5e5e5;
+    /*border-top: 1px solid #e5e5e5;*/
     /*Centering*/
     margin-left: auto;
     margin-right: auto;
@@ -1574,11 +1863,17 @@ a:active {
     z-index: 1;
   }
 
+  .projectFooter {
+    max-width: 1000px !important;
+    text-indent: .5em !important;
+  }
+
   .footer > #copyright {
     /*Typography*/
-    font-family: 'Open Sans', 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 300;
     color: #848484;
+    /*text-indent: 1em;*/
     /*Spacing*/
     padding: 15px; 
     /*Display*/
@@ -1589,7 +1884,7 @@ a:active {
 @media screen and (min-width: 2000px) {
   .footer {
     /*Sizing*/
-    width: 1000px;
+    max-width: 800px;
   }
 
   .footer > #copyright {
@@ -1601,7 +1896,7 @@ a:active {
 @media screen and (min-width: 1000px) and (max-width: 2000px) {
   .footer {
     /*Sizing*/
-    width: 1000px;
+    max-width: 800px;
   }
 
   .footer > #copyright {
