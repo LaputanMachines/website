@@ -1,29 +1,33 @@
-<?xml version="1.0" encoding="UTF-8"?> 
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"> 
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
 <url>
-  <loc>http://bassi.li/html/designer.html</loc>
+  <loc>http://bassi.li/</loc>
+  <lastmod>2017-05-06T19:19:10+00:00</lastmod>
+  <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>http://bassi.li/html/webDev.html</loc>
+  <loc>http://bassi.li/html/laputanMachines.html</loc>
+  <lastmod>2017-05-06T19:19:10+00:00</lastmod>
+  <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>http://bassi.li</loc>
+  <loc>http://bassi.li/html/windowsCleaner.html</loc>
+  <lastmod>2017-05-06T19:19:10+00:00</lastmod>
+  <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>http://bassi.li/../cookies.txt</loc>
+  <loc>http://bassi.li/html/deusExTimeline.html</loc>
+  <lastmod>2017-05-06T19:19:10+00:00</lastmod>
+  <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>http://bassi.li/../index.html</loc>
+  <loc>http://bassi.li/index.html</loc>
+  <lastmod>2017-05-06T19:19:10+00:00</lastmod>
+  <changefreq>monthly</changefreq>
 </url>
-<url>
-  <loc>http://bassi.li/designer.html</loc>
-</url>
-<url>
-  <loc>http://bassi.li/webDev.html</loc>
-</url>
-<url>
-  <loc>http://bassi.li/../assets/mehdi.jpg</loc>
-</url>
-<url>
-  <loc>http://bassi.li/../assets/curvy.jpg</loc>
-</url>
+</urlset>
