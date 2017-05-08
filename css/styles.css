@@ -1123,6 +1123,8 @@ a:active {
     box-shadow: 1px 1px 3px rgba(0,0,0,.15) ;
   }
 
+  
+
     .card-image > img {
       display: inline !important;
   }
@@ -1297,7 +1299,14 @@ a:active {
     /*Display*/
     display: inline-block;
     /*Sizing*/
-    width: calc(50% - 10px);
+    width: 33%;
+  }
+
+  .large-card {
+    /*Display*/
+    display: inline-block;
+    /*Sizing*/
+    width: calc(50% - 10px) !important;
   }
 
   .projects #projectItemSmall {
@@ -1377,6 +1386,13 @@ a:active {
 
   .card.photo > .card-content .repo {
     font-size: 1em;
+  }
+
+  .large-card {
+    /*Display*/
+    display: inline-block;
+    /*Sizing*/
+    width: calc(50% - 10px) !important;
   }
 }
 
