@@ -1,25 +1,10 @@
-<!-- Portfolio :: index.html -->
-<!--
-=================================
-(C) 2015-16 Michael Bassili
-=================================
--->
-
-
-
-
-
 <!DOCTYPE html>
 
 <html>
-
   <head>
-
-    <!-- Title -->
-    <title>Michael Bassili - Home</title>
-
     <!-- Meta Data -->
     <meta charset="utf-8">
+    <title>Michael Bassili - Home</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords" content="Bassili, Michael, web developer, michael bassili, website, freelance, programmer, freelancer">
     <meta name="description" content="A Computing Science and Mathematics student pursuing freelance projects on the side.">
@@ -28,25 +13,21 @@
     <meta name="revisit-after" content="5 days">
     <meta name="theme-color" content="#f5f5f5">
 
-    <!-- OG Meta -->
+    <!-- OG Meta Data -->
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Michael Bassili - Designer, Student, Programmer" />
     <meta property="og:keywords" content="Bassili, Michael, web developer, michael bassili, website, freelance, programmer, freelancer" />
     <meta property="og:description" content="A Computing Science and Mathematics student pursuing freelance projects on the side." />
     <meta property="og:image" content="http://bassi.li/assets/og.jpg" />
 
-    <!-- CSS -->
+    <!-- Styles -->
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/animate.css">
-
-    <!--Favicon-->
     <link rel="icon" type="image/png" href="assets/logo.png" />
-
-    <!-- Canonical -->
     <link rel="canonical" href="http://bassi.li" />
 
-    <!-- JS -->
+    <!-- Scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/scripts.js"></script>
     <script type="text/javascript" src="js/wow.min.js"></script>
@@ -55,137 +36,80 @@
     <script>
       new WOW().init();
     </script>
-
   </head>
 
   <body class="indexLanding">
+    <!-- Particles Renderer -->
+    <div id="particles-js"></div>
 
-
-      <!-- Particle Bk -->
-      <div id="particles-js"></div>
-
-
-
-
-      <!-- Welcome -->
-      <div data-wow-duration=".45s" class="wow fadeIn welcome" id="welcome">
-        <!-- Titles -->
-        <div id="welcomeContainer">
-          <h1 data-wow-duration=".9s" class="wow fadeIn" id="title">MICHAEL BASSILI</h1>
-          <h2 data-wow-duration=".9s" class="wow fadeIn" id="subtitle">Howdy! It's Nice to Meet You</h2>
-          <div id="app"></div>
-        </div>
-        <!-- Down Arrow -->
-        <div id="downArrow">
-          <a href="#about"><img src="assets/downArrow.svg" alt="Downwards pointng arrow."></a>
-        </div>
+    <!-- Landing Page -->
+    <div data-wow-duration=".45s" class="wow fadeIn welcome" id="welcome">
+      <!-- Titles -->
+      <div id="welcomeContainer">
+        <h1 data-wow-duration=".9s" class="wow fadeIn" id="title">MICHAEL BASSILI</h1>
+        <h2 data-wow-duration=".9s" class="wow fadeIn" id="subtitle">Howdy! It's Nice to Meet You</h2>
+        <div id="app"></div>
       </div>
-
-
-
-
-
-      <!-- About -->
-      <div class="about" id="about">
-        <h2 data-wow-duration=".45s" class="wow fadeIn" id="title">About Me</h2>
-        <!-- Headshots -->
-        <!-- <div class="wow fadeIn" id="headshots">
-             <div class="about-image">
-              <img ondragstart="return false" src="assets/me.jpg" alt="My headshot."/>
-            </div>
-        </div> -->
-        <!-- About Me -->
-        <div class="wow fadeIn" data-wow-duration=".45s" id="aboutMe">
-          I am currently a student at Simon Fraser University studying Computing Science and Mathematics. On the side, I pursue freelance projects, watch birds and play video games. My interests lie with front end development. As a result, most of my side projects concern the visual aspects of web development. I also try to regularly vary the types of side projects I pursue.
-        </div>
+      <!-- Down Arrow -->
+      <div id="downArrow">
+        <a href="#about"><img src="assets/downArrow.svg" alt="Downwards pointng arrow."></a>
       </div>
+    </div>
 
+    <!-- About Me -->
+    <div class="about" id="about">
+      <h2 data-wow-duration=".45s" class="wow fadeIn" id="title">About Me</h2>
+      <div class="wow fadeIn" data-wow-duration=".45s" id="aboutMe">
+        I am currently a student at Simon Fraser University studying Computing Science and Mathematics. On the side, I pursue freelance projects, watch birds and play video games. My interests vary from time to time. As a result, my side projects are all over the place. I try to do something new every quarter, or so. <br><br> 
+        I began with front-end web development; many side projects involved making pretty websites and designing interfaces for web applications. From there, I regularly rotated new types of projects ranging from illustration &amp; animation to writing. 
+      </div>
+    </div>
 
-
-
-      <div class="projects portfolio" id="projects">
-        <h2 id="title">Completed Projects</h2>
-
-        <!-- Projects List -->
-        <div id="projectList">
-
-          <!-- Laputan Machines -->
-          <div data-wow-duration=".3s" class="wow fadeIn projectItem" id="projectItem">
-             <div class="card photo card-image">
-              <img ondragstart="return false" src="assets/laputanMachines.png" alt="Laputan Machines banner."/>
-              <p>Laputan Machines </p><a class="images" href="html/laputanMachines.html"><span>Learn More</span></a>
-            </div>
-          </div>
-
-          <!-- Windows Cleaner-->
-          <div data-wow-duration=".3s" class="wow fadeIn projectItem" id="projectItem">
-             <div class="card photo card-image">
-              <img ondragstart="return false" src="assets/winCleanerThumbnail.png" alt="Windows Cleaner Logo."/>
-              <p>Windows Cleaner </p><a class="images" href="html/windowsCleaner.html"><span>Learn More</span></a>
-            </div>
-          </div>
-
-          <!-- Deus Ex Timeline -->
-          <div data-wow-duration=".3s" class="wow fadeIn" id="projectItem">
-             <div class="card photo card-image">
-              <img ondragstart="return false" src="assets/deusExThumbnail.png" alt="Deus Ex Timeline."/>
-               <p>Deus Ex: Timeline </p><a class="images" href="html/deusExTimeline.html"><span>Learn More</span></a>
-            </div>
-          </div>
-
+    <!-- Completed Projects -->
+    <div class="projects portfolio" id="projects">
+      <h2 id="title">Completed Projects</h2>
+      <div id="projectList">
+        <div data-wow-duration=".3s" class="wow fadeIn projectItem" id="projectItem">
+           <div class="card photo card-image">
+            <img ondragstart="return false" src="assets/laputanMachines.png" alt="Laputan Machines banner."/>
+            <p>Laputan Machines </p><a class="images" href="html/laputanMachines.html"><span>Learn More</span></a>
           </div>
         </div>
-        
-
-
-
-
-      <!-- Testimonials -->
-      <!-- <div class="testimonials" id="testimonials">
-        <h2 data-wow-duration=".45s" class="wow fadeIn" id="title">Testimonials</h2>
-        <div>
-          <span data-wow-duration=".45s" class="wow fadeIn" id="quote">"Michael made sure I received exactly what I had in mind and didn't rest until I was completely happy with the end result! If his quality, knowledge and expertise were not enough, his price was extremely compatible as well!"</span>
-          <span data-wow-duration=".45s" class="wow fadeIn" id="author">-Christina Waschko, Motherpreneur TV</span>
+        <div data-wow-duration=".3s" class="wow fadeIn projectItem" id="projectItem">
+           <div class="card photo card-image">
+            <img ondragstart="return false" src="assets/winCleanerThumbnail.png" alt="Windows Cleaner Logo."/>
+            <p>Windows Cleaner </p><a class="images" href="html/windowsCleaner.html"><span>Learn More</span></a>
+          </div>
         </div>
-      </div> -->
-
-
-
-
-
-      <!-- Contact -->
-      <div class="contact" id="contact" style="margin-top: .5em;">
-        <h2 data-wow-duration=".45s" class="wow fadeIn" id="title">Contact Me</h2>
-        <!-- Summary Information -->
-        <div data-wow-duration=".45s" class="wow fadeIn" id="summary">
-          <!-- <span data-wow-duration=".45s" class="wow fadeIn" id="availability">I am currently <span>available</span> for hire.</span> -->
-          <span data-wow-duration=".45s" class="wow fadeIn" id="contactText">
-            I pursue freelance graphic design and web development contracts, whenever available, and am accessible via email. Public repositories I contribute to can be found on my GitHub profile.
-        </div>
-        <!-- Contact Methods -->
-        <div data-wow-duration=".45s" class="wow fadeIn" id="contactLinks">
-          <a href="https://github.com/FlatlanderWoman"><button class="ease-in-out git">GitHub</button></a>
-          <a href="mailto:michaelbassili539@gmail.com?subject=Howdy!"><button class="ease-in-out email">michael@bassi.li</button></a>
-          <a href="https://ca.linkedin.com/in/michaelbassili"><button class="ease-in-out linkedin">LinkedIn</button></a>
+        <div data-wow-duration=".3s" class="wow fadeIn" id="projectItem">
+           <div class="card photo card-image">
+            <img ondragstart="return false" src="assets/deusExThumbnail.png" alt="Deus Ex Timeline."/>
+             <p>Deus Ex: Timeline </p><a class="images" href="html/deusExTimeline.html"><span>Learn More</span></a>
+          </div>
         </div>
       </div>
+    </div>
 
-
-
-
-
-        <!-- Footer -->
-      <div class="footer" id="footer" style="border-top: 1px solid #e5e5e5;">
-        <span id="copyright">
-          &copy; <script>document.write(new Date().getFullYear())</script> Michael Bassili / / FlatlanderWoman
-        </span>
+    <!-- Contact Me -->
+    <div class="contact" id="contact" style="margin-top: .5em;">
+      <h2 data-wow-duration=".45s" class="wow fadeIn" id="title">Contact Me</h2>
+      <div data-wow-duration=".45s" class="wow fadeIn" id="summary">
+        <!-- <span data-wow-duration=".45s" class="wow fadeIn" id="availability">I am currently <span>available</span> for hire.</span> -->
+        <span data-wow-duration=".45s" class="wow fadeIn" id="contactText">
+          I pursue freelance graphic design and web development contracts, whenever available, and am accessible via email. Public repositories I contribute to can be found on my GitHub profile.
       </div>
+      <div data-wow-duration=".45s" class="wow fadeIn" id="contactLinks">
+        <a href="https://github.com/FlatlanderWoman"><button class="ease-in-out git">GitHub</button></a>
+        <a href="mailto:michaelbassili539@gmail.com?subject=Howdy!"><button class="ease-in-out email">michael@bassi.li</button></a>
+        <a href="https://ca.linkedin.com/in/michaelbassili"><button class="ease-in-out linkedin">LinkedIn</button></a>
+      </div>
+    </div>
 
-
-
-
-
-
+    <!-- Footer -->
+    <div class="footer" id="footer" style="border-top: 1px solid #e5e5e5;">
+      <span id="copyright">
+        &copy; <script>document.write(new Date().getFullYear())</script> Michael Bassili / / FlatlanderWoman
+      </span>
+    </div>
   </body>
-
 </html>
