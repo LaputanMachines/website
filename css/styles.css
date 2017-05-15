@@ -33,6 +33,11 @@ body {
   /*line-height: 1.5em;*/
 }
 
+hr {
+  border-top: 1px solid #e5e5e5;
+  border-bottom: none;
+}
+
 /*a-link Animations*/
 
 a:link, a:visited {
