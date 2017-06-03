@@ -1,4 +1,4 @@
-# [Portfolio](http://work.bassi.li)
+# Personal [Portfolio](http://work.bassi.li)
 #### The source code for my professional portfolio which hosts my work as well my contact information.
 
 ## Overview
