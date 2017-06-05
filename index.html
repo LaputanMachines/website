@@ -4,10 +4,10 @@
   <head>
     <!-- Meta Data -->
     <meta charset="utf-8">
-    <title>Work // Michael Bassili</title>
+    <title>Freelance Developer // Michael Bassili</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="keywords" content="Micahel Bassili, Freelance Programmer, Web Developer, Web Designer, Remote Worker">
-    <meta name="description" content="A Computing Science and Mathematics student pursuing freelance projects on the side.">
+    <meta name="keywords" content="Michael Bassili, Freelance Programmer, Web Developer, Web Designer, Remote Worker">
+    <meta name="description" content="Web designer, freelance developer, and easily-bored programmer.">
     <meta name="language" content="en">
     <meta name="robots" content="index, follow">
     <meta name="revisit-after" content="7 days">
@@ -15,9 +15,9 @@
 
     <!-- OG Meta Data -->
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Michael Bassili - Designer, Student, Programmer" />
-    <meta property="og:keywords" content="Bassili, Michael, web developer, michael bassili, website, freelance, programmer, freelancer" />
-    <meta property="og:description" content="A Computing Science and Mathematics student pursuing freelance projects on the side." />
+    <meta property="og:title" content="Freelance Developer // Michael Bassili" />
+    <meta property="og:keywords" content="Michael Bassili, Freelance Programmer, Web Developer, Web Designer, Remote Worker" />
+    <meta property="og:description" content="Web designer, freelance developer, and easily-bored programmer." />
     <meta property="og:image" content="http://bassi.li/assets/og.jpg" />
 
     <!-- Styles -->
@@ -31,60 +31,48 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/scripts.js"></script>
     <script type="text/javascript" src="js/wow.min.js"></script>
-    <script type="text/javascript" src="js/particles.js"></script>
-    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/moment.js"></script>
+    <script type="text/javascript" src="js/moment-timezone.js"></script>
     <script>
+      // Initialize WOW.js
       new WOW().init();
+
+      // Set locale variables
+      var timezone = 'America/Vancouver';
+      var currentLocation = 'Vancouver, BC';
     </script>
   </head>
 
   <body class="indexLanding">
-    <!-- Particles Renderer -->
-    <div id="particles-js"></div>
-
     <!-- Landing Page -->
     <div data-wow-duration=".45s" class="wow fadeIn welcome" id="welcome">
       <!-- Titles -->
       <div id="welcomeContainer">
         <h1 data-wow-duration=".9s" class="wow fadeIn" id="title">MICHAEL BASSILI</h1>
-        <h2 data-wow-duration=".9s" class="wow fadeIn" id="subtitle">Howdy! It's Nice to Meet You</h2>
+        <h2 data-wow-duration=".9s" class="wow fadeIn" id="subtitle">Howdy!</h2>
         <div id="app"></div>
-      </div>
-      <!-- Down Arrow -->
-      <div id="downArrow">
-        <a href="#about"><img src="assets/downArrow.svg" alt="Downwards pointng arrow."></a>
-      </div>
-    </div>
-
-    <!-- About Me -->
-    <div class="about" id="about">
-      <h2 data-wow-duration=".45s" class="wow fadeIn" id="title">About Me</h2>
-      <div class="wow fadeIn" data-wow-duration=".45s" id="aboutMe">
-        I am currently a student at Simon Fraser University studying Computing Science and Mathematics. On the side, I pursue freelance projects, watch birds and play video games. My interests vary from time to time. As a result, my side projects are all over the place. I try to do something new every quarter, or so. <br><br> 
-        I began with front-end web development; many side projects involved making pretty websites and designing interfaces for web applications. From there, I regularly rotated new types of projects ranging from illustration &amp; animation to writing. 
       </div>
     </div>
 
     <!-- Completed Projects -->
     <div class="projects portfolio" id="projects">
-      <h2 id="title">Completed Projects</h2>
       <div id="projectList">
         <div data-wow-duration=".3s" class="wow fadeIn projectItem" id="projectItem">
            <div class="card photo card-image">
             <img ondragstart="return false" src="assets/laputanMachines.png" alt="Laputan Machines banner."/>
-            <p>Laputan Machines </p><a class="images" href="html/laputanMachines.html"><span>Learn More</span></a>
+           <!--  <p>Laputan Machines </p><a class="images" href="html/laputanMachines.html"><span>Learn More</span></a> -->
           </div>
         </div>
         <div data-wow-duration=".3s" class="wow fadeIn projectItem" id="projectItem">
            <div class="card photo card-image">
             <img ondragstart="return false" src="assets/winCleanerThumbnail.png" alt="Windows Cleaner Logo."/>
-            <p>Windows Cleaner </p><a class="images" href="html/windowsCleaner.html"><span>Learn More</span></a>
+           <!--  <p>Windows Cleaner </p><a class="images" href="html/windowsCleaner.html"><span>Learn More</span></a> -->
           </div>
         </div>
         <div data-wow-duration=".3s" class="wow fadeIn" id="projectItem">
            <div class="card photo card-image">
             <img ondragstart="return false" src="assets/deusExThumbnail.png" alt="Deus Ex Timeline."/>
-             <p>Deus Ex: Timeline </p><a class="images" href="html/deusExTimeline.html"><span>Learn More</span></a>
+             <!-- <p>Deus Ex: Timeline </p><a class="images" href="html/deusExTimeline.html"><span>Learn More</span></a> -->
           </div>
         </div>
       </div>
@@ -96,19 +84,20 @@
       <div data-wow-duration=".45s" class="wow fadeIn" id="summary">
         <!-- <span data-wow-duration=".45s" class="wow fadeIn" id="availability">I am currently <span>available</span> for hire.</span> -->
         <span data-wow-duration=".45s" class="wow fadeIn" id="contactText">
-          The best way to contact me is through email. I pursue freelance graphic design and web development contracts, whenever available. Any public repositories I contribute to can be found on my GitHub profile, and my "professional profile" can be found on my LinkedIn. 
-      </div>
-      <div data-wow-duration=".45s" class="wow fadeIn" id="contactLinks">
-        <a href="https://github.com/FlatlanderWoman"><button class="ease-in-out git">GitHub</button></a>
-        <a href="mailto:michaelbassili539@gmail.com?subject=Howdy!" target="_top"><button class="ease-in-out email">michael@bassi.li</button></a>
-        <a href="https://ca.linkedin.com/in/michaelbassili"><button class="ease-in-out linkedin">LinkedIn</button></a>
+          The best way to contact me during the day is through email; GitHub, LinkedIn, Myspace, etc will not reach me. Emails received between 21:00 and 9:00 will go unnoticed until the coming morning.
+          <span id="currentTime">
+            Currently, I'm in <script type="text/javascript">document.write(currentLocation)</script>, and it's <script type="text/javascript">
+            var format = 'HH:mm:ss';
+            document.write(moment(new Date(), format).tz(timezone).format(format))
+          </script>
+          </span>
       </div>
     </div>
 
     <!-- Footer -->
-    <div class="footer" id="footer" style="border-top: 1px solid #e5e5e5;">
+    <div class="footer" id="footer">
       <span id="copyright">
-        &copy; <script>document.write(new Date().getFullYear())</script> Michael Bassili / / FlatlanderWoman
+        &copy; <script>document.write(new Date().getFullYear())</script> Michael Bassili<span style="float: right;">michael@bassi.li</span>
       </span>
     </div>
   </body>

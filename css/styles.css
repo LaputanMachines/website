@@ -31,6 +31,8 @@
 body {
   overflow-x: hidden;
   /*line-height: 1.5em;*/
+  /*Background Color*/
+  background-color: rgba(243, 240, 215, .5);
 }
 
 hr {
@@ -475,8 +477,6 @@ a:active {
 }
 
 .welcome {
-    /*Sizing*/
-    height: 100vh;
     /*position: relative;*/
     /*Centering*/
     margin-left: auto;
@@ -484,18 +484,12 @@ a:active {
     /*Display*/
     z-index: 3;
     /*Background*/
-    border-bottom: 1px solid #e5e5e5;
+    border-bottom: 1px solid rgba(94, 69, 75, .25);
   }
 
   #welcomeContainer {
     /*Sizing*/
     width: 100vw;
-    /*Centering*/
-    vertical-align: middle;
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
   }
 
   .welcome #title {
@@ -503,7 +497,7 @@ a:active {
     font-family: 'Megrim', sans-serif;
     font-weight: 300;
     font-style: normal;
-    color: #666;
+    color: #5e454b;
     text-align: center;
     /*Spacing*/
     padding-bottom: 15px;
@@ -514,37 +508,10 @@ a:active {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     font-style: normal;
-    color: #888;
+    color: #5e454b;
+    opacity: .75;
     text-align: center;
-    /*Spacing*/
-    padding-bottom: 15px;
   }
-
-#downArrow {
-  /*Positioning*/
-  /*position: relative;*/
-}
-
-#downArrow img {
-  /*Positioning*/
-  max-width: 2vw;
-  left: 0; 
-  right: 0; 
-  margin-left: auto; 
-  margin-right: auto; 
-  bottom: 15px;
-  position: absolute; 
-  /*Transition*/
-  opacity: .75;
-  -webkit-transition: all .1s ease-in-out;
-     -moz-transition: all .1s ease-in-out;
-          transition: all .1s ease-in-out;
-}
-
-#downArrow img:hover {
-  /*Trandition on Hover*/
-  opacity: 1;
-}
 
 /*4k*/
 @media screen and (min-width: 2000px) {
@@ -555,14 +522,19 @@ a:active {
   }
 
   .welcome #title {
-    font-size: 4.75em;
+    font-size: 3.5em;
   }
 
   .welcome #subtitle {
     font-size: 1.25em;
-    letter-spacing: 10.95px;
-    text-indent: .55em;
-    margin-top: -1.5em;
+    letter-spacing: 67.5px;
+    text-indent: 3.35em;
+    margin-top: -1.4em;
+  }
+
+  #welcomeContainer {
+    /*Spacing*/
+    padding: 25px;
   }
 }
 
@@ -570,7 +542,7 @@ a:active {
 @media screen and (min-width: 1000px) and (max-width: 2000px) {
 
   .welcome #title {
-    font-size: 4.75em;
+    font-size: 3.5em;
   }
 
    #downArrow img {
@@ -579,10 +551,15 @@ a:active {
   }
 
   .welcome #subtitle {
-    font-size: 1.25em;
-    letter-spacing: 10.95px;
+    font-size: 1em;
+    letter-spacing: 70px;
     margin-top: -1.5em;
-    text-indent: .55em;
+    text-indent: 4.35em;
+  }
+
+  #welcomeContainer {
+    /*Spacing*/
+    padding: 25px;
   }
 }
 
@@ -590,20 +567,20 @@ a:active {
 @media screen and (max-width: 1000px) {
 
   .welcome #title {
-    font-size: 2.75em;
+    font-size: 2em;
   }
 
   .welcome #subtitle {
     font-size: .88em;
-    letter-spacing: 5.2px;
-    text-indent: .325em;
+    letter-spacing: 36.9px;
+    text-indent: 1.4em;
     margin-top: -1.5em;
   }
 
-  #downArrow img {
-  /*Size*/
-  max-width: 5vw;
-}
+  #welcomeContainer {
+    /*Spacing*/
+    padding: 15px;
+  }
 }
 
 
@@ -1095,13 +1072,12 @@ a:active {
     /*Display*/
     display: inline-block;
     /*Spacing*/
-    padding: 5px;
     vertical-align: top;
   }
 
   .card {
     width: 100%;
-    background-color: #fcfcfc;
+    background-color: rgba(243, 240, 215, .75);
     position: relative;
     box-shadow: 1px 1px 3px rgba(0,0,0,.15);
     padding: 5px;    
@@ -1112,15 +1088,12 @@ a:active {
 
   .card-image {
     /*Frame*/
-    /*box-shadow: none !important;*/
-    padding: 8px !important;
     box-shadow: 1px 1px 3px rgba(0,0,0,.15) ;
   }
 
   
-
     .card-image > img {
-      display: inline !important;
+      /*display: inline !important;*/
   }
 
   .card.info {
@@ -1222,10 +1195,12 @@ a:active {
     display: block;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
-    color: #848484;
+    color: #5e454b;
+    opacity: .75;
     font-style: normal;
     text-align: left;
-    padding: 5px;
+    padding: 10px;
+    padding-top: 5px; 
     display: inline-block;
     float: left;
   }
@@ -1240,20 +1215,24 @@ a:active {
       display: block;
       font-family: 'Roboto', sans-serif;
       font-weight: 300;
-      color: #848484;
+      color: #5e454b;
+      opacity: .5;
       font-style: normal;
       text-align: left;
-      padding: 5px;
+      padding-top: 5px;
       padding-bottom: 0px;
-      margin-bottom: 4px;
-      border-bottom: dotted 1px #848484;
+      padding-right: 0px;
+      margin-bottom: 5px;
+      margin-right: 10px;
+      margin-left: 10px;
+      border-bottom: 1px dotted rgba(94, 69, 75, .25);
       display: inline-block;
       text-align: right;
       float: right;
     }
 
     .card-image span:hover {
-      border-bottom: solid 1px #848484;
+      opacity: .75;
       text-decoration: none ;
     }
 
@@ -1446,7 +1425,7 @@ a:active {
 }
 
 .portfolio {
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid rgba(94, 69, 75, .25);
   margin-top: .75em;
 }
 
@@ -1600,6 +1579,8 @@ a:active {
     /*Spacing*/
     margin-top: calc(1.5em + 45px);
     padding: 15px;
+    /*padding-bottom: .5em;*/
+    margin-bottom: .5em;
   }
 
   .contact #title {
@@ -1607,7 +1588,8 @@ a:active {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     font-style: normal;
-    color: #848484;
+    color: #5e454b;
+    opacity: .75;
     text-align: center;
     /*Spacing*/
     padding-bottom: 15px;
@@ -1633,10 +1615,10 @@ a:active {
     /*Typography*/
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
-    color: #848484;
+    color: #5e454b;
+    opacity: .75;
     font-style: normal;
     text-align: left;
-    text-indent: 1em;
     /*Spacing*/
     /*padding: 15px;*/
     /*Display*/
@@ -1741,8 +1723,8 @@ a:active {
       background-color: #D24D57;
       border: 1px solid #D64541;
       margin: 20px 0 10px;
-    }
-
+    } 
+    
 /*4k*/
 @media screen and (min-width: 2000px) {
   .contact {
@@ -1880,7 +1862,7 @@ a:active {
 
 .footer {
     /*Background*/
-    /*border-top: 1px solid #e5e5e5;*/
+    border-top: 1px solid rgba(94, 69, 75, .25);
     /*Centering*/
     margin-left: auto;
     margin-right: auto;
@@ -1897,7 +1879,8 @@ a:active {
     /*Typography*/
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
-    color: #848484;
+    color: #5e454b;
+    opacity: .75;
     /*text-indent: 1em;*/
     /*Spacing*/
     padding: 15px; 
