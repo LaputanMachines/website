@@ -17,6 +17,9 @@
   padding: 0;
 }
 
+:focus {outline:none;}
+::-moz-focus-inner {border:0;}
+
 *, html, body {
   /*Antialiasing*/
   -webkit-font-smoothing: antialiased;
@@ -1077,13 +1080,22 @@ a:active {
 
   .card {
     width: 100%;
-    background-color: rgba(243, 240, 215, .75);
+    background-color: #d8b384;
     position: relative;
     box-shadow: 1px 1px 3px rgba(0,0,0,.15);
     padding: 5px;    
     color: #444;
     font-weight: 300;
     margin-bottom: 10px;
+    /*Transition*/
+  -webkit-transition: all .05s ease-in-out;
+     -moz-transition: all .05s ease-in-out;
+          transition: all .05s ease-in-out;
+  }
+
+  .card:hover {
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 
   .card-image {
