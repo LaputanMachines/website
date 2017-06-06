@@ -1086,7 +1086,7 @@ a:active {
     padding: 5px;    
     color: #444;
     font-weight: 300;
-    margin-bottom: 10px;
+    margin-top: 4px;
     /*Transition*/
   -webkit-transition: all .05s ease-in-out;
      -moz-transition: all .05s ease-in-out;
