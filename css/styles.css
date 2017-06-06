@@ -1088,14 +1088,14 @@ a:active {
     font-weight: 300;
     margin-top: 4px;
     /*Transition*/
-  -webkit-transition: all .05s ease-in-out;
-     -moz-transition: all .05s ease-in-out;
-          transition: all .05s ease-in-out;
+  -webkit-transition: all .15s ease-in-out;
+     -moz-transition: all .15s ease-in-out;
+          transition: all .15s ease-in-out;
   }
 
   .card:hover {
     cursor: pointer;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transform: scale(.975, .975);
   }
 
   .card-image {
