@@ -1449,6 +1449,7 @@ a:active {
 .portfolio {
   border-bottom: 1px solid rgba(94, 69, 75, .25);
   margin-top: .75em;
+  padding-bottom: 30px;
 }
 
 
