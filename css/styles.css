@@ -575,8 +575,8 @@ a:active {
 
   .welcome #subtitle {
     font-size: .88em;
-    letter-spacing: 36.9px;
-    text-indent: 1.4em;
+    letter-spacing: 36.85px;
+    text-indent: 2.1em;
     margin-top: -1.5em;
   }
 
@@ -1381,8 +1381,18 @@ a:active {
   }
 }
 
+/*Tablet*/
+@media screen and (min-width: 400px) and (max-width: 1000px) {
+    .projects #projectItem {
+    /*Display*/
+    display: inline-block;
+    /*Sizing*/
+    width: 49%;
+  }
+}
+
 /*Mobile*/
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 400px) {
   .screencaps {
     visibility: hidden;
     display: none;
