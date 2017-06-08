@@ -555,9 +555,9 @@ a:active {
 
   .welcome #subtitle {
     font-size: 1em;
-    letter-spacing: 40.15px;
+    letter-spacing: 40px;
     margin-top: -1.5em;
-    text-indent: 2.5em;
+    text-indent: 2.35em;
   }
 
   #welcomeContainer {
