@@ -257,9 +257,7 @@ a:active {
   width: 100vw;
   top: 0; left: 0;
   /*Background*/
-  /*-- rgba(255,255,255,.5) -*/
-  /*background-color: #F3F5F6;*/ 
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid rgba(94, 69, 75, .25);
   /*Display*/
   position: relative;
   z-index: 5;
