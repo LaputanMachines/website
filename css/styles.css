@@ -3,6 +3,7 @@
 @import url(https://fonts.googleapis.com/css?family=Megrim);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300);
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300);
+@import url('https://fonts.googleapis.com/css?family=Sanchez');
 
 /*General*/
 
@@ -495,9 +496,10 @@ a:active {
 
   .welcome #title {
     /*Typography*/
-    font-family: 'Megrim', sans-serif;
+    font-family: 'Sanchez', sans-serif;
     font-weight: 300;
     font-style: normal;
+    opacity: .95;
     color: #5e454b;
     text-align: center;
     /*Spacing*/
@@ -528,9 +530,9 @@ a:active {
 
   .welcome #subtitle {
     font-size: 1.25em;
-    letter-spacing: 37.75px;
-    text-indent: 1.95em;
+    letter-spacing: 31px;
     margin-top: -1.3em;
+    text-indent: 1.55em;
   }
 
   #welcomeContainer {
@@ -553,9 +555,9 @@ a:active {
 
   .welcome #subtitle {
     font-size: 1em;
-    letter-spacing: 40px;
+    letter-spacing: 33.25px;
     margin-top: -1.5em;
-    text-indent: 2.5em;
+    text-indent: 2.2em;
   }
 
   #welcomeContainer {
@@ -568,14 +570,17 @@ a:active {
 @media screen and (max-width: 1000px) {
 
   .welcome #title {
-    font-size: 2em;
+    font-size: 1.9em;
+    padding-bottom: 0px;
   }
 
   .welcome #subtitle {
-    font-size: .88em;
+    /*font-size: .88em;
     letter-spacing: 19.8px;
     text-indent: 1.5em;
-    margin-top: -1.5em;
+    margin-top: -1.5em;*/
+    display: none;
+    visibility: hidden;
   }
 
   #welcomeContainer {
