@@ -993,9 +993,10 @@ a:active {
     /*Display*/
     z-index: 1;
     /*Spacing*/
-    margin-top: 1em;
+    margin-top: 25px;
     padding: 25px;
     padding-top: 0px;
+    padding-bottom: 0px;
   }
 
   .linkCenter {
@@ -1468,8 +1469,8 @@ a:active {
 }
 
 .portfolio {
-  margin-top: .75em;
-  padding-bottom: 30px;
+  /*margin-top: .75em;*/
+  padding-bottom: 25px;
 }
 
   .landingPortfolio {
