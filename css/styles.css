@@ -999,6 +999,16 @@ a:active {
     padding-bottom: 0px;
   }
 
+  .mySlides img {
+    display: block;
+  }
+
+  .next, .prev {
+    /*Hide Arrow Buttons*/
+    display: none;
+    visibility: hidden;
+  }
+
   .linkCenter {
     text-align: center;
     margin-left: auto;
