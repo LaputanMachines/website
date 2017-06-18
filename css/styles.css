@@ -1319,11 +1319,11 @@ a:active {
     width: 33%;
   }
 
-  .projects #epicItem {
+  #epicItem {
     /*Display*/
     display: inline-block;
     /*Sizing*/
-    width: 100%;
+    width: 49.75%;
   }
 
   .large-card {
@@ -1380,6 +1380,13 @@ a:active {
     display: inline-block;
     /*Sizing*/
     width: 33%;
+  }
+
+  #epicItem {
+    /*Display*/
+    display: inline-block;
+    /*Sizing*/
+    width: 49.75%;
   }
 
   .projects #projectItemSmall {
