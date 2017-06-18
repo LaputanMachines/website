@@ -1319,6 +1319,13 @@ a:active {
     width: 33%;
   }
 
+  .projects #epicItem {
+    /*Display*/
+    display: inline-block;
+    /*Sizing*/
+    width: 100%;
+  }
+
   .large-card {
     /*Display*/
     display: inline-block;
@@ -1419,7 +1426,7 @@ a:active {
     /*Display*/
     display: inline-block;
     /*Sizing*/
-    width: 40%;
+    width: 32%;
   }
 }
 
