@@ -1049,7 +1049,7 @@ a:active {
     text-align: left;
     text-indent: 1em;
     /*Spacing*/
-    /*padding: 25px;*/
+    padding-top: 25px;
     font-size: 1.05em;
     line-height: 1.5em;
     /*Sizing*/
