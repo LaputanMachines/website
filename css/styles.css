@@ -1014,7 +1014,7 @@ a:active {
     margin-left: auto;
     margin-right: auto;
     /*Spacing*/
-    padding-top: 0px; 
+    padding-top: 25px; 
     /*Typography*/
     font-family: "Roboto", sans-serif;
   }
@@ -1049,7 +1049,7 @@ a:active {
     text-align: left;
     text-indent: 1em;
     /*Spacing*/
-    padding: 25px;
+    /*padding: 25px;*/
     font-size: 1.05em;
     line-height: 1.5em;
     /*Sizing*/
