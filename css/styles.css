@@ -1271,11 +1271,11 @@ a:active {
 
   .contact #title {
     /*Typography*/
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Sanchez', sans-serif;
     font-weight: 300;
     font-style: normal;
     color: #5e454b;
-    opacity: .75;
+    opacity: .95;
     text-align: center;
     /*Spacing*/
     padding-bottom: 15px;
@@ -1306,7 +1306,7 @@ a:active {
     font-style: normal;
     text-align: left;
     /*Spacing*/
-    /*padding: 15px;*/
+    text-indent: 1em;
     /*Display*/
     display: block;
     margin: 0 auto;
