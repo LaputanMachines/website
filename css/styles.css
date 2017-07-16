@@ -18,9 +18,6 @@
   padding: 0;
 }
 
-:focus {outline:none;}
-::-moz-focus-inner {border:0;}
-
 *, html, body {
   /*Antialiasing*/
   -webkit-font-smoothing: antialiased;
@@ -610,7 +607,7 @@ a:active {
     z-index: 1;
     /*Spacing*/
     margin-top: 25px;
-    padding: 25px;
+    padding: 15px;
     padding-top: 0px;
     padding-bottom: 0px;
   }
