@@ -7,8 +7,6 @@ and description paragraphs. Some even have live demos and links to play with. Ot
 ### Why is this?
 I needed a place to hold all of my things. Anything from poetry to automated email checkers has a home here. 
 It also helps document my personal developments (without this site, I would just have 'stuff' laying around).
-### Who is this?
-That's a silly question.
 ## Installation Instructions
 ### Can I Play Too?
 Yes. I can't think of a good reason 'why' you'd want to clone and toy with my personal portfolio 
@@ -17,4 +15,5 @@ repository using this: `https://github.com/FlatlanderWoman/portfolio.git` Then, 
 call me out on all of my CSS issues (stay away from the lower-lines of `styles.css`, it's a bad neighborhood).
 ## Miscellaneous
 ### Why is this readme so unprofessional?
-Let your hair down once and a while.
+You gotta let your hair down once and a while, you know. Of all my projects that could use a readme, my portfolio 
+might be the best place to have a little fun.
