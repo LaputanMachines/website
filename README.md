@@ -1,4 +1,4 @@
-# Personal Portfolio
+# [Personal Portfolio](http://bassi.li) 
 ### Introduction & Debriefing
 #### What is this project?
 This is a repository which holds the code and assets for my personal website (more of a portfolio, really). 
@@ -17,3 +17,5 @@ call me out on all of my CSS issues (stay away from the lower-lines of `styles.c
 #### Why is this readme so unprofessional?
 You gotta let your hair down once and a while, you know. Of all my projects that could use a readme, my portfolio 
 might be the best place to have a little fun.
+
+[![License](http://img.shields.io/:license-mit-blue.svg)](http://doge.mit-license.org)
