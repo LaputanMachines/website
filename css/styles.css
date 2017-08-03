@@ -1276,6 +1276,7 @@ a:active {
     text-align: center;
     /*Spacing*/
     padding-bottom: 15px;
+    padding-top: 15px;
   }
 
   .contact #availability {
