@@ -1,0 +1,192 @@
+/*
+Description: Header styles for all site pages;
+Last Updated: 06-05-2017;
+Author: Michael Bassili;
+*/
+
+/*Optional Styles*/
+.headerFixed {
+  /*Transition*/
+  -webkit-transition: all .15s ease-in-out;
+     -moz-transition: all .15s ease-in-out;
+          transition: all .15s ease-in-out;
+  top: 0;
+  left: 0;
+  position: fixed;
+}
+.fixedHeader {
+  position: fixed;
+}
+
+/*Main Headers*/
+.header {
+  /*Sizing*/
+  width: 100vw;
+  top: 0; left: 0;
+  /*Background*/
+  border-bottom: 1px solid rgba(94, 69, 75, .25);
+  /*Display*/
+  position: relative;
+  z-index: 5;
+  overflow: hidden; 
+   /*Transition*/
+  -webkit-transition: all .15s ease-in-out;
+     -moz-transition: all .15s ease-in-out;
+          transition: all .15s ease-in-out;
+}
+.header:hover,
+.focusHeader {
+  /*Optional Fixture*/
+  background-color: #F3F5F6;
+}
+  .header #navTitle {
+    /*Typography*/
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #666;
+    /*Spacing*/
+    padding: 15px;
+    /*Positioning*/
+    display: block;
+    float: left;
+  }
+
+  .header #navigationDesktop {
+    /*Typography*/
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #666;
+    /*Spacing*/
+    padding-left: .5em;
+    padding: 15px;
+    /*Positioning*/
+    display: block;
+    float: right;
+  }
+    .header #navigationDesktop a {
+      /*Spacing*/
+      margin-left: 15px;
+    }
+  .header #navigationMobile {
+    /*Typography*/
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #666;
+    /*Spacing*/
+    padding-left: .5em;
+    padding: 15px;
+    /*Positioning*/
+    display: block;
+    float: right;
+  }
+    .header #navigationMobile a {
+      /*Spacing*/
+      margin-left: 5px;
+    }
+  .header #navigationAccent {
+    /*Underline Letters*/
+    border-bottom: 1px solid #777;
+  }
+  .header a:hover,
+  .subHeader a:hover {
+    border-bottom: solid 1px #848484 !important;
+    text-decoration: none;
+  }
+
+/*Secondary Headers*/
+.subHeader {
+  /*Sizing*/
+  width: 100vw;
+  top: 0; left: 0;
+  /*Background*/
+  /*-- rgba(255,255,255,.5) -*/
+  background-color: #fafafa; 
+  border-bottom: 1px solid #e5e5e5;
+  /*Display*/
+  position: relative;
+  z-index: 5;
+  overflow: hidden; 
+   /*Transition*/
+  -webkit-transition: all .15s ease-in-out;
+     -moz-transition: all .15s ease-in-out;
+          transition: all .15s ease-in-out;
+}
+  .subHeader #navTitle {
+    /*Typography*/
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #666;
+    /*Spacing*/
+    padding: 7.5px;
+    padding-left: 15px;
+    /*Positioning*/
+    display: block;
+    float: left;
+  }
+  .subHeader #navTitleAlt {
+    /*Typography*/
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #666;
+    /*Spacing*/
+    padding: 7.5px;
+    margin-right: calc(15px + 7.5px + 1em);
+    /*Positioning*/
+    display: block;
+    float: right;
+  }
+  .subHeader #navArrows {
+    /*Typography*/
+    font-family: "Megrim", cursive;
+    font-weight: bold;
+  }
+
+/*Desktop-Specific Styles*/
+@media screen and (min-width: 1000px) {
+  #navigationDesktop {
+    margin-right: calc(15px + 1em);
+    font-size: 1.15em;
+  }
+  #navigationMobile {
+    display: none;
+    visibility: hidden;
+  }
+  #navTitle {
+    margin-left: 15px;
+    font-size: 1.15em;
+  }
+  .subHeader #navTitle,
+  .subHeader #navTitleAlt,
+  .subHeader #navArrows {
+    font-size: .95em;
+  }
+}
+
+/*Mobile-Specific Styles*/
+@media screen and (max-width: 1000px) {
+  #navigationDesktop {
+    display: none !important;
+    visibility: hidden;
+  }
+  .desktopLinks {
+    visibility: hidden;
+    display: none;
+  }
+  #navigationMobile {
+      font-size: 1em;
+      padding: 10px !important;
+    }
+  #navTitle {
+    font-size: 1em;
+    padding: 10px !important;
+  }
+  .subHeader #navTitle,
+  .subHeader #navTitleAlt,
+  .subHeader #navArrows {
+    font-size: .85em;
+  }
+  .subHeader #navTitleAlt {
+    margin-right: 0px !important;
+    padding: 10px;
+  }
+}
