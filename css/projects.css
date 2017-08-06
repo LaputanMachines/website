@@ -4,6 +4,59 @@ Last Updated: 06-05-2017;
 Author: Michael Bassili;
 */
 
+/*Text Content*/
+.textContent {
+    /*Centering*/
+    margin-left: auto;
+    line-height: 1.5em;
+    margin-right: auto;
+    /*Display*/
+    z-index: 1;
+    /*Spacing*/
+    margin-top: calc(1.5em + 45px);
+    padding: 15px;
+    margin-bottom: .5em;
+    margin-top: .5em;
+  }
+  .textContent #title {
+    /*Typography*/
+    font-family: 'Sanchez', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #5e454b;
+    opacity: .95;
+    text-align: center;
+    /*Spacing*/
+    padding-bottom: 15px;
+    padding-top: 15px;
+  }
+  .textContent #contactText {
+    /*Typography*/
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #5e454b;
+    opacity: .75;
+    font-style: normal;
+    text-align: left;
+    /*Spacing*/
+    text-indent: 1em;
+    /*Display*/
+    display: block;
+    margin: 0 auto;
+  }
+  .textContent #contactLinks {
+    /*Typography*/
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #444;
+    font-style: normal;
+    text-align: center;
+    /*Spacing*/
+    padding-bottom: 15px;
+    /*Display*/
+    display: block;
+  }
+
 /*Projects Tiles*/
 .projects {
     /*Centering*/
@@ -270,6 +323,22 @@ Author: Michael Bassili;
 
 /*4k-Specific Styles*/
 @media screen and (min-width: 2000px) {
+  .textContent {
+    /*Sizing*/
+    width: 800px;
+  }
+  .textContent #title {
+    /*Typography*/
+    font-size: 1.5em;
+  }
+  .textContent #contactText {
+    /*Typography*/
+    font-size: 1.05em;
+  }
+  .textContent #contactLinks {
+    /*Typography*/
+    font-size: 1.05em;
+  }
   .projects {
     /*Sizing*/
     width: 1000px;
@@ -328,6 +397,22 @@ Author: Michael Bassili;
 
 /*Desktop-Specific Styles*/
 @media screen and (min-width: 1000px) and (max-width: 2000px) {
+  .textContent {
+    /*Sizing*/
+    width: 800px;
+  }
+  .textContent #title {
+    /*Typography*/
+    font-size: 1.5em;
+  }
+  .textContent #contactText {
+    /*Typography*/
+    font-size: 1.05em;
+  }
+  .textContent #contactLinks {
+    /*Typography*/
+    font-size: 1em;
+  }
   .projects {
     /*Sizing*/
     width: 1000px;
@@ -391,6 +476,23 @@ Author: Michael Bassili;
 
 /*Mobile-Specific Styles*/
 @media screen and (max-width: 400px) {
+  .textContent {
+    /*Sizing*/
+    max-width: 800px;
+  }
+  .textContent #title {
+    /*Typography*/
+    font-size: 1.5em;
+  }
+  .textContent #contactText {
+    /*Typography*/
+    font-size: 1em;
+  }
+  .textContent #contactLinks {
+    /*Typography*/
+    font-size: 1em;
+    margin: 0 auto;
+  }
   .screencaps {
     visibility: hidden;
     display: none;
