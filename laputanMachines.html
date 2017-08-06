@@ -1,7 +1,15 @@
+<!-- 
+Description: Laputan Machines markup for project page;
+Last Updated: 06-06-2017;
+Author: Michael Bassili;
+-->
+
 <!DOCTYPE html>
 
 <html>
+
   <head>
+
     <!-- Meta Data -->
     <meta charset="utf-8">
     <title>Laputan Machines | Michael Bassili</title>
@@ -21,8 +29,10 @@
     <meta property="og:image" content="http://bassi.li/assets/og.png" />
 
     <!-- Styles -->
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/general.css">
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+    <link rel="stylesheet" type="text/css" href="css/projects.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">    <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/animate.css">
     <link rel="icon" type="image/png" href="assets/logo.png" />
     <link rel="stylesheet" type="text/css" href="css/modal.css">
@@ -37,15 +47,18 @@
     <script>
       new WOW().init();
     </script>
+
   </head>
 
   <body>
 
-    <!-- Project Container -->
+    <!-- Project Title -->
     <div class="projectTitleContainer">
       <h2 id="title">Laputan Machines</h2>
       <h3 id="subtitle">A WordPress theme for my personal video game blog.</h3>
     </div>
+    
+    <!-- Project Image Tiles -->
     <div class="projects portfolio landingPortfolio" id="projects">
       <div id="projectList">
         <div data-wow-duration=".3s" class="wow fadeIn large-card" id="projectItem">
@@ -63,6 +76,8 @@
             </div>
         </div>
       </div>
+
+      <!-- Project Image Content -->
       <div id="myModal" class="modal">
         <span class="close cursor" onclick="closeModal()">&times;</span>
         <div class="modal-content">
@@ -89,26 +104,35 @@
       </div>
       </div>
 
-      <div class="contact" id="contact" style="margin-top: .5em;">
-      <h2 data-wow-duration=".45s" class="wow fadeIn" id="title">About Windows Cleaner</h2>
-      <div data-wow-duration=".45s" class="wow fadeIn" id="summary">
-          <span data-wow-duration=".45s" class="wow fadeIn" id="contactText">
-          I wanted to start a video game blog, so I decided that the first step would be to design and develop a WordPress theme. This theme is very much tailored to me and my preferences, but it can be adapted with some tweaking. <br> <br>
-        Posts are tagged as either 'editorials' or 'reviews.' Two pages display all articles tagged with their relevant tags. The landing page shows ten articles&mdash;one featured article (the most recently posted) and nine more listed in chronological order. Setting a featured thumbnail for each post is key as it is used for the article's display badge. Article excerpts are important too&mdash;they are shown when an article is in the featured position. <br><br>
-        The site description and links list (on the landing page) can be changed through WordPress' widget manager. On single posts, the right sidebar can similarly be changed to include different widgets. At the moment, the right sidebar shows comments, three recent articles and tagged categories.
+      <!-- Project Description Container -->
+      <div class="textContent" id="textContent">
+        
+        <!-- Project Description -->
+        <div id="descriptionText">
+        
+          <h2 id="title">About Windows Cleaner</h2>
+          <span id="contactText">
+            I wanted to start a video game blog, so I decided that the first step would be to design and develop a WordPress theme. This theme is very much tailored to me and my preferences, but it can be adapted with some tweaking. <br> <br>
+            Posts are tagged as either 'editorials' or 'reviews.' Two pages display all articles tagged with their relevant tags. The landing page shows ten articles&mdash;one featured article (the most recently posted) and nine more listed in chronological order. Setting a featured thumbnail for each post is key as it is used for the article's display badge. Article excerpts are important too&mdash;they are shown when an article is in the featured position. <br><br>
+            The site description and links list (on the landing page) can be changed through WordPress' widget manager. On single posts, the right sidebar can similarly be changed to include different widgets. At the moment, the right sidebar shows comments, three recent articles and tagged categories.
         </span>
+
       </div>
 
       <!-- Project Links -->
       <div class="linkCenter" id="contactLinks">
         <a class="projectLinks" href="https://github.com/FlatlanderWoman/laputanMachines">Visit Repo</a>
       </div>
+
     </div>
 
     <!-- Footer -->
     <div class="footer" id="footer">
       <span id="copyright">
-        &copy; <script>document.write(new Date().getFullYear())</script> Michael Bassili<span style="float: right;">michael@bassi.li</span>
+        &copy; <script>document.write(new Date().getFullYear())</script> Michael Bassili<span id="email">michael@bassi.li</span>
       </span>
+    </div>
+
   </body>
+
 </html>

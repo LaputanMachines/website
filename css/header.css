@@ -1,0 +1,113 @@
+/*
+Description: Header styles for all site pages;
+Last Updated: 06-06-2017;
+Author: Michael Bassili;
+*/
+
+/*Welcome*/
+.welcome {
+    /*Centering*/
+    margin-left: auto;
+    margin-right: auto;
+    /*Display*/
+    z-index: 3;
+    /*Background*/
+    border-bottom: 1px solid rgba(94, 69, 75, .25);
+  }
+  #welcomeContainer {
+    /*Sizing*/
+    width: 100vw;
+  }
+  .welcome #title {
+    /*Typography*/
+    font-family: 'Sanchez', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    opacity: .95;
+    color: #5e454b;
+    text-align: center;
+    /*Spacing*/
+    padding-bottom: 15px;
+  }
+  .welcome #subtitle {
+    /*Typography*/
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #5e454b;
+    opacity: .75;
+    text-align: center;
+  }
+
+/*4k-Specific Styles*/
+@media screen and (min-width: 2000px) {
+  .welcome #title {
+    font-size: 3.5em;
+  }
+  .welcome #subtitle {
+    font-size: 1.25em;
+    letter-spacing: 31px;
+    margin-top: -1.3em;
+    text-indent: 1.55em;
+  }
+  #welcomeContainer {
+    /*Spacing*/
+    padding: 25px;
+  }
+}
+
+/*Desktop-Specific Styles*/
+@media screen and (min-width: 1000px) and (max-width: 2000px) {
+  .welcome #title {
+    font-size: 3.5em;
+  }
+  .welcome #subtitle {
+    font-size: 1em;
+    letter-spacing: 33.25px;
+    margin-top: -1.5em;
+    text-indent: 2.2em;
+  }
+  #welcomeContainer {
+    /*Spacing*/
+    padding: 25px;
+  }
+}
+
+/*Mobile-Specific Styles*/
+@media screen and (max-width: 1000px) {
+  .welcome #title {
+    font-size: 1.9em;
+    padding-bottom: 0px;
+  }
+  .welcome #subtitle {
+    /*Hide Element*/
+    display: none;
+    visibility: hidden;
+  }
+  #welcomeContainer {
+    /*Spacing*/
+    padding: 15px;
+  }
+}
+
+/*Project Titles*/
+.projectTitleContainer {
+  padding: 25px;
+  border-bottom: 1px solid rgba(94, 69, 75, .25);
+}
+#title {
+  /*Typography*/
+  font-family: 'Sanchez', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: #5e454b;
+  opacity: .95;
+  text-align: center;
+} 
+#subtitle {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: #848484;
+  text-align: center;
+}

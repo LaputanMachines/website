@@ -1,7 +1,15 @@
+<!-- 
+Description: Deus Ex Timeline markup for project page;
+Last Updated: 06-06-2017;
+Author: Michael Bassili;
+-->
+
 <!DOCTYPE html>
 
 <html>
+
   <head>
+
     <!-- Meta Data -->
     <meta charset="utf-8">
     <title>Deus Ex: Timeline | Michael Bassili</title>
@@ -21,8 +29,10 @@
     <meta property="og:image" content="http://bassi.li/assets/og.png" />
 
     <!-- Styles -->
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/general.css">
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+    <link rel="stylesheet" type="text/css" href="css/projects.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">    <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/animate.css">
     <link rel="icon" type="image/png" href="assets/logo.png" />
     <link rel="stylesheet" type="text/css" href="css/modal.css">
@@ -37,16 +47,21 @@
     <script>
       new WOW().init();
     </script>
+
   </head>
 
   <body>
 
-    <!-- Project Container -->
+    <!-- Project Title -->
     <div class="projectTitleContainer">
       <h2 id="title">Deus Ex: Timeline</h2>
       <h3 id="subtitle">A comprehensive timeline of the Deus Ex universe.</h3>
     </div>
+
+    <!-- Project Content Container -->
     <div class="projects portfolio landingPortfolio" id="projects">
+
+      <!-- Project Image Tiles -->
       <div id="projectList">
         <div data-wow-duration=".3s" class="wow fadeIn large-card" id="projectItem">
           <div class="card photo card-image">
@@ -63,6 +78,8 @@
             </div>
         </div>
       </div>
+
+      <!-- Project Image Content -->
       <div id="myModal" class="modal">
         <span class="close cursor" onclick="closeModal()">&times;</span>
         <div class="modal-content">
@@ -87,14 +104,21 @@
           </div>
         </div>
       </div>
-      </div>
 
-      <div class="contact" id="contact" style="margin-top: .5em;">
-      <h2 data-wow-duration=".45s" class="wow fadeIn" id="title">About Deus Ex: Timeline</h2>
-      <div data-wow-duration=".45s" class="wow fadeIn" id="summary">
-        <span data-wow-duration=".45s" class="wow fadeIn" id="contactText">
+    </div>
+
+    <!-- Project Description Container -->
+    <div class="textContent" id="textContent">
+      
+      <!-- Project Description -->
+      <div id="descriptionText">
+
+        <h2 id="title">About Deus Ex: Timeline</h2>
+        <span id="contactText">
           In an attempt to make the <a href="http://deusex.wikia.com/wiki/Deus_Ex_Wiki">Deus Ex Wiki</a>'s Timeline more readable, Deus Ex: Timeline was created. A site which hosts the information found on the Deus Ex Wikia encapsulated in an improved interface. Designed mobile-first, Deus Ex: Timeline features data categorization which grants users the ability to shuffle through sub-categories of data- ranging from centuries to games. No fluff, no ads, just raw content. <br> <br>
-        Every important person, place or thing is a hyperlink which points to the, already curated, Wikia page. This allows for important event updates which are disjoint from this site. Moreover, I am free to update the style and format of the site- if the need arises -without affecting the core of the site.
+          Every important person, place or thing is a hyperlink which points to the, already curated, Wikia page. This allows for important event updates which are disjoint from this site. Moreover, I am free to update the style and format of the site- if the need arises -without affecting the core of the site.
+        </span>
+        
       </div>
 
       <!-- Project Links -->
@@ -102,12 +126,16 @@
         <a class="projectLinks" href="http://deusextimeline.ca/">Visit Site</a>
         <a class="projectLinks" href="https://github.com/FlatlanderWoman/deusExTimeline">Visit Repo</a>
       </div>
+
     </div>
 
     <!-- Footer -->
     <div class="footer" id="footer">
       <span id="copyright">
-        &copy; <script>document.write(new Date().getFullYear())</script> Michael Bassili<span style="float: right;">michael@bassi.li</span>
+        &copy; <script>document.write(new Date().getFullYear())</script> Michael Bassili<span id="email">michael@bassi.li</span>
       </span>
+    </div>
+
   </body>
+  
 </html>

@@ -1,0 +1,70 @@
+/*
+Description: Footer styles for all site pages;
+Last Updated: 06-05-2017;
+Author: Michael Bassili;
+*/
+
+/*Main Footer*/
+.footer {
+    /*Background*/
+    border-top: 1px solid rgba(94, 69, 75, .25);
+    /*Centering*/
+    margin-left: auto;
+    margin-right: auto;
+    /*Display*/
+    z-index: 1;
+  }
+  .footer > #copyright {
+    /*Typography*/
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #5e454b;
+    opacity: .75;
+    /*Spacing*/
+    padding: 15px; 
+    /*Display*/
+    display: block;
+  }
+    .footer > #copyright > #email {
+      /*Keep Email Right*/
+      float: right;
+    }
+
+/*Project Footers*/
+.projectFooter {
+  max-width: 1000px !important;
+  text-indent: .5em !important;
+}
+
+/*4k-Specific Styles*/
+@media screen and (min-width: 2000px) {
+  .footer {
+    /*Sizing*/
+    max-width: 800px;
+  }
+  .footer > #copyright {
+    font-size: 1.05em;
+  }
+}
+
+/*Desktop-Specific Styles*/
+@media screen and (min-width: 1000px) and (max-width: 2000px) {
+  .footer {
+    /*Sizing*/
+    max-width: 800px;
+  }
+  .footer > #copyright {
+    font-size: 1em;
+  }
+}
+
+/*Mobile-Specific Styles*/
+@media screen and (max-width: 1000px) {
+  .footer {
+    /*Sizing*/
+    width: 100vw;
+  }
+  .footer > #copyright {
+    font-size: .9em;
+  }
+}
