@@ -88,16 +88,6 @@ Author: Michael Bassili;
     /*Typography*/
     font-family: "Roboto", sans-serif;
   }
-    .linkCenter .git,
-    .linkCenter .email {
-      marigin-top: 0px;
-    }
-  .separator {
-    /*Background*/
-    border-top: 1px solid #e5e5e5;
-    /*Spacing*/
-    padding-top: 20px;
-  }
 
 /*Project Descriptions*/
 .projectDescription {
