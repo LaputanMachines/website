@@ -46,30 +46,6 @@ Author: Michael Bassili;
     padding-top: 20px;
   }
 
-/*Project Titles*/
-.projectTitleContainer {
-  padding: 25px;
-  border-bottom: 1px solid rgba(94, 69, 75, .25);
-}
-#title {
-  /*Typography*/
-  font-family: 'Sanchez', sans-serif;
-  font-weight: 300;
-  font-style: normal;
-  color: #5e454b;
-  opacity: .95;
-  text-align: center;
-  /*Spacing*/
-  /*padding-bottom: 5px;*/
-} 
-#subtitle {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-  font-style: normal;
-  color: #848484;
-  text-align: center;
-}
-
 /*Project Descriptions*/
 .projectDescription {
   /*Typography*/
