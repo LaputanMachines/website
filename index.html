@@ -1,7 +1,15 @@
+<!-- 
+Description: Main markup for index site page;
+Last Updated: 06-06-2017;
+Author: Michael Bassili;
+-->
+
 <!DOCTYPE html>
 
 <html>
+
   <head>
+
     <!-- Meta Data -->
     <meta charset="utf-8">
     <title>Home | Michael Bassili</title>
@@ -40,23 +48,25 @@
       // Initialize WOW.js
       new WOW().init();
 
-      // Set locale variables
+      // Set location
       var timezone = 'America/Vancouver';
       var currentLocation = 'Vancouver, BC';
     </script>
+
   </head>
 
-  <body class="indexLanding">
-    <!-- Landing Page -->
-    <div data-wow-duration=".45s" class="wow fadeIn welcome" id="welcome">
-      <!-- Titles -->
+  <!-- Main Content -->
+  <body id="mainContent">
+
+    <!-- Site Title and Subtitle -->
+    <div class="welcome" id="welcome">
       <div id="welcomeContainer">
-        <h1 data-wow-duration=".9s" class="wow fadeIn" id="title">MICHAEL BASSILI</h1>
-        <h2 data-wow-duration=".9s" class="wow fadeIn" id="subtitle">THINGS I MADE</h2>
+        <h1 id="title">MICHAEL BASSILI</h1>
+        <h2 id="subtitle">THINGS I MADE</h2>
       </div>
     </div>
 
-    <!-- Projects -->
+    <!-- Projects Tiles -->
     <div class="projects portfolio landingPortfolio" id="projects">
       <!-- Featured Projects -->
       <div id="projectList">
@@ -94,6 +104,7 @@
 
     <!-- About Me and Contact Section -->
     <div class="contact" id="contact" style="margin-top: .5em;">
+
       <h2 data-wow-duration=".45s" class="wow fadeIn" id="title">About the Human</h2>
       <div data-wow-duration=".45s" class="wow fadeIn" id="summary">
         <span data-wow-duration=".45s" class="wow fadeIn" id="contactText">
@@ -108,17 +119,20 @@
       </div>
 
       <!-- Project Links -->
-      <div class="linkCenter" id="contactLinks">
+      <div class="linkCenter wow fadeIn" id="contactLinks" data-wow-duration=".45s">
         <a class="projectLinks" href="https://github.com/FlatlanderWoman/">GitHub</a>
         <a class="projectLinks" href="https://open.spotify.com/user/mikajis/playlist/71ak9HVQcOQRxYQ9TUvV9m">Spotify</a>
       </div>
+
     </div>
 
     <!-- Footer -->
     <div class="footer" id="footer">
       <span id="copyright">
-        &copy; <script>document.write(new Date().getFullYear())</script> Michael Bassili<span style="float: right;">michael@bassi.li</span>
+        &copy; <script>document.write(new Date().getFullYear())</script> Michael Bassili<span id="email">michael@bassi.li</span>
       </span>
     </div>
+
   </body>
+  
 </html>

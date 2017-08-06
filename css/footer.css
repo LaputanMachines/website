@@ -20,12 +20,15 @@ Author: Michael Bassili;
     font-weight: 300;
     color: #5e454b;
     opacity: .75;
-    /*text-indent: 1em;*/
     /*Spacing*/
     padding: 15px; 
     /*Display*/
     display: block;
   }
+    .footer > #copyright > #email {
+      /*Keep Email Right*/
+      float: right;
+    }
 
 /*Project Footers*/
 .projectFooter {

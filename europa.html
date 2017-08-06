@@ -1,7 +1,15 @@
+<!-- 
+Description: Europa markup for project page;
+Last Updated: 06-06-2017;
+Author: Michael Bassili;
+-->
+
 <!DOCTYPE html>
 
 <html>
+
   <head>
+
     <!-- Meta Data -->
     <meta charset="utf-8">
     <title>Europa | Michael Bassili</title>
@@ -39,16 +47,21 @@
     <script>
       new WOW().init();
     </script>
+
   </head>
 
   <body>
 
-    <!-- Project Container -->
+    <!-- Project Title  -->
     <div class="projectTitleContainer">
       <h2 id="title">Simple Site Series: Europa</h2>
       <h3 id="subtitle">A simple, clean, and geometry-ridden free-to-use website.</h3>
     </div>
+
+    <!-- Project Content Contailer -->
     <div class="projects portfolio landingPortfolio" id="projects">
+
+      <!-- Project Image Tiles -->
       <div id="projectList">
         <div data-wow-duration=".3s" class="wow fadeIn large-card" id="projectItem">
           <div class="card photo card-image">
@@ -65,6 +78,8 @@
             </div>
         </div>
       </div>
+
+      <!-- Project Image Content -->
       <div id="myModal" class="modal">
         <span class="close cursor" onclick="closeModal()">&times;</span>
         <div class="modal-content">
@@ -89,27 +104,34 @@
           </div>
         </div>
       </div>
-      </div>
 
-      <div class="contact" id="contact" style="margin-top: .5em;">
-      <h2 data-wow-duration=".45s" class="wow fadeIn" id="title">About Europa</h2>
+    </div>
+
+    <!-- Project Description Container -->
+    <div class="contact" id="contact" style="margin-top: .5em;">
+      
       <div data-wow-duration=".45s" class="wow fadeIn" id="summary">
-          <span data-wow-duration=".45s" class="wow fadeIn" id="contactText">
+        <h2 id="title">About Europa</h2>
+        <span id="contactText">
           The first in a series of three free-to-use website templates, Europa boasts a clean and succinct landing page, pretty content pages, and a crisp color scheme. The font, like the landing page's backdrop, is highly geometric, and the showcase cards lead to dedicated showcase pages. Button and showcase links are all designed to play off of one another visually&mdash;your project's colors provide the accent.
-          </span>
+        </span>
       </div>
 
       <!-- Project Links -->
-      <div class="linkCenter" id="contactLinks">
+      <div class="linkCenter wow fadeIn" id="contactLinks" data-wow-duration=".45s">
         <a class="projectLinks" href="https://flatlanderwoman.github.io/simpleSiteSeries-Europa/">Visit Site</a>
         <a class="projectLinks" href="https://github.com/FlatlanderWoman/simpleSiteSeries-Europa">Visit Repo</a>
       </div>
+
     </div>
 
     <!-- Footer -->
     <div class="footer" id="footer">
       <span id="copyright">
-        &copy; <script>document.write(new Date().getFullYear())</script> Michael Bassili<span style="float: right;">michael@bassi.li</span>
+        &copy; <script>document.write(new Date().getFullYear())</script> Michael Bassili<span id="email">michael@bassi.li</span>
       </span>
+    </div>
+
   </body>
+
 </html>
