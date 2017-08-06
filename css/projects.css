@@ -164,9 +164,6 @@ Author: Michael Bassili;
   /*Frame*/
   box-shadow: 1px 1px 3px rgba(0,0,0,.15) ;
 }
-  .card-image > img {
-    /*display: inline !important;*/
-}
 .card.info {
   background-color: #5C9DED;
   color: #fff;
