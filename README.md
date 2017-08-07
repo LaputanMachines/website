@@ -46,7 +46,6 @@ call me out on all of my CSS issues (stay away from the lower-lines of `styles.c
 |-- windowsCleaner.html
 ```
 
-### Miscellaneous
-#### Why is this readme so unprofessional?
+### Why is this readme so unprofessional?
 You gotta let your hair down once and a while, you know. Of all my projects that could use a readme, my portfolio 
 might be the best place to have a little fun.
