@@ -23,7 +23,7 @@ Author: Michael Bassili;
     font-family: 'Sanchez', sans-serif;
     font-weight: 300;
     font-style: normal;
-    opacity: .95;
+    opacity: 1;
     color: #5e454b;
     text-align: center;
     /*Spacing*/
@@ -101,7 +101,7 @@ Author: Michael Bassili;
   font-weight: 300;
   font-style: normal;
   color: #5e454b;
-  opacity: .95;
+  opacity: 1;
   text-align: center;
 } 
 #subtitle {
