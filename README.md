@@ -46,6 +46,13 @@ call me out on all of my CSS issues (stay away from the lower-lines of `styles.c
 |-- windowsCleaner.html
 ```
 
+### Commit Scheme
+I use Clubhouse to manage this project, so the commit messages are formatted in a neat way (I think it's neat, for what it's worth). Behold, an example:
+```
+$ [ch##] [d|k] Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+```
+The first `[ch##]` is the story ID (e.g. `[ch69]`). The second `[d|k]` is an optional label for dying or killed stories. Stories are "dying" when they were completed, but reopened temporarily. A story is "killed" when it, and its parent project, was killed.
+
 ### Why is this readme so unprofessional?
 You gotta let your hair down once and a while, you know. Of all my projects that could use a readme, my portfolio 
 might be the best place to have a little fun.
