@@ -10,7 +10,7 @@ It also helps document my personal developments (without this site, I would just
 I can't think of a good reason 'why' you'd want to clone and toy with my personal portfolio 
 (I could make something up, but it would probably involve the Prime Minister and a ransom). You can clone the 
 repository using this: `https://github.com/FlatlanderWoman/portfolio.git` Then, you could pick appart my code and 
-call me out on all of my CSS issues (stay away from the lower-lines of `styles.css`, it's a bad neighborhood).
+call me out on all of my CSS issues.
 
 ### File Structure
 ```
