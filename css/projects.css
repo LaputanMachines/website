@@ -148,6 +148,8 @@ Author: Michael Bassili;
   overflow: hidden;
   /*Spacing*/
   padding: 15px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
   .projectItemLink:hover {
     /*Highlight Project*/
