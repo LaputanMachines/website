@@ -66,6 +66,8 @@ Author: Michael Bassili;
     /*Display*/
     z-index: 1;
     /*Spacing*/
+    padding-left: 10px;
+    padding-right: 10px;
     padding-bottom: 10px;
   }
   .mySlides img {
