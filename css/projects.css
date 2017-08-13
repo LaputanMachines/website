@@ -68,7 +68,7 @@ Author: Michael Bassili;
     /*Spacing*/
     padding-left: 15px;
     padding-right: 15px;
-    padding-bottom: 25px;
+    padding-bottom: 10px;
   }
   .mySlides img {
     display: block;
@@ -118,6 +118,7 @@ Author: Michael Bassili;
   /*Centering*/
   margin: 0 auto;
   text-align: center;
+  padding-top: 10px;
 }
   .projects #projectItem {
     /*Display*/
@@ -146,8 +147,12 @@ Author: Michael Bassili;
   display: block;
   overflow: hidden;
   /*Spacing*/
-  padding-top: 25px;
+  padding: 15px;
 }
+  .projectItemLink:hover {
+    /*Highlight Project*/
+    background-color: #EBDAC9;
+  }
   .projectItemLink > .projectItemLinkContent {
     /*Display*/
     display: inline;
@@ -175,7 +180,7 @@ Author: Michael Bassili;
     color: #848484;
     opacity: .75;
     font-family: 'Sanchez', serif;
-    border-bottom: 1px solid rgba(243, 240, 215, .5);
+    border-bottom: 1px solid #E3CEB9;
   }
     .projectItemLink > .projectItemLinkFollow a:hover {
       border-bottom: 1px solid rgba(94, 69, 75, .25);
