@@ -40,16 +40,12 @@ body {
 
 /*a-link Animations*/
 a:link, a:visited {
-  /*Opacity*/
-  /*-webkit-opacity: .85;*/
-     /*-moz-opacity: .85;*/
-          /*opacity: .85;*/
   /*Transition*/
   -webkit-transition: all .15s ease-in-out;
      -moz-transition: all .15s ease-in-out;
           transition: all .15s ease-in-out;
   /*Typography*/
-  color: inherit;
+  color: #848484;
   text-decoration: none;
 }
 a:hover {

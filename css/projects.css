@@ -24,7 +24,7 @@ Author: Michael Bassili;
     font-weight: 300;
     font-style: normal;
     color: #5e454b;
-    opacity: .95;
+    opacity: 1;
     text-align: center;
     /*Spacing*/
     padding-bottom: 15px;
@@ -34,10 +34,10 @@ Author: Michael Bassili;
     /*Typography*/
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
-    color: #444444;
-    opacity: .75;
+    color: #555555;
+    opacity: 1;
     font-style: normal;
-    text-align: left;
+    text-align: justify;
     /*Spacing*/
     text-indent: 1em;
     /*Display*/
@@ -66,10 +66,9 @@ Author: Michael Bassili;
     /*Display*/
     z-index: 1;
     /*Spacing*/
-    margin-top: 25px;
-    padding: 15px;
-    padding-top: 0px;
-    padding-bottom: 0px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 25px;
   }
   .mySlides img {
     display: block;
@@ -140,6 +139,48 @@ Author: Michael Bassili;
     border-bottom: 1px solid rgba(94, 69, 75, .25);
     text-decoration: none;
   }
+
+/*Item Links*/
+.projectItemLink {
+  /*Display*/
+  display: block;
+  overflow: hidden;
+  /*Spacing*/
+  padding-top: 25px;
+}
+  .projectItemLink > .projectItemLinkContent {
+    /*Display*/
+    display: inline;
+    float: left;
+    clear: left;
+    /*Typography*/
+    font-family: 'Sanchez', sans-serif;
+    font-weight: 300;
+    color: #5e454b;
+    opacity: 1;
+    font-style: normal;
+  }
+      .projectItemLink > .projectItemLinkContent > img {
+        /*Sizing*/
+        max-width: 1em;
+      }
+  .projectItemLink > .projectItemLinkFollow {
+    /*Display*/
+    display: inline;
+    float: right;
+    clear: right;
+  }
+  .projectItemLink > .projectItemLinkFollow a {
+    /*Typography*/
+    color: #848484;
+    opacity: .75;
+    font-family: 'Sanchez', serif;
+    border-bottom: 1px solid rgba(243, 240, 215, .5);
+  }
+    .projectItemLink > .projectItemLinkFollow a:hover {
+      border-bottom: 1px solid rgba(94, 69, 75, .25);
+      text-decoration: none;
+    }
 
 /*Tile Cards*/
 .card {
@@ -302,7 +343,7 @@ Author: Michael Bassili;
 /*Portfolio Items*/
 .portfolio {
   /*margin-top: .75em;*/
-  padding-bottom: 25px;
+  /*padding-bottom: 25px;*/
 }
   .landingPortfolio {
     border-bottom: 1px solid rgba(94, 69, 75, .25);
@@ -310,6 +351,9 @@ Author: Michael Bassili;
 
 /*4k-Specific Styles*/
 @media screen and (min-width: 2000px) {
+  .projectItemLink > .projectItemLinkContent {
+    font-size: 1.25em;
+  }
   .textContent {
     /*Sizing*/
     width: 800px;
@@ -328,7 +372,7 @@ Author: Michael Bassili;
   }
   .projects {
     /*Sizing*/
-    width: 1000px;
+    width: 800px;
   }
   #title {
     /*Typography*/
@@ -384,6 +428,9 @@ Author: Michael Bassili;
 
 /*Desktop-Specific Styles*/
 @media screen and (min-width: 1000px) and (max-width: 2000px) {
+  .projectItemLink > .projectItemLinkContent {
+    font-size: 1.25em;
+  }
   .textContent {
     /*Sizing*/
     width: 800px;
@@ -402,7 +449,7 @@ Author: Michael Bassili;
   }
   .projects {
     /*Sizing*/
-    width: 1000px;
+    width: 800px;
   }
   #title {
     /*Typography*/
@@ -453,6 +500,9 @@ Author: Michael Bassili;
 
 /*Tablet-Specific Styles*/
 @media screen and (min-width: 400px) and (max-width: 1000px) {
+    .projectItemLink > .projectItemLinkContent {
+      font-size: 1.25em;
+    }
     .projects #projectItem {
     /*Display*/
     display: inline-block;
@@ -463,6 +513,9 @@ Author: Michael Bassili;
 
 /*Mobile-Specific Styles*/
 @media screen and (max-width: 400px) {
+  .projectItemLink > .projectItemLinkContent {
+    font-size: 1.25em;
+  }
   .textContent {
     /*Sizing*/
     max-width: 800px;
