@@ -522,8 +522,13 @@ Author: Michael Bassili;
 
 /*Mobile-Specific Styles*/
 @media screen and (max-width: 400px) {
+  .projectItemLink > .projectItemLinkContent > img,
+  .projectItemLink > .projectItemLinkFollow > .visitSiteLink {
+    display: none;
+    visibility: hidden;
+  }
   .projectItemLink > .projectItemLinkContent {
-    font-size: 1.25em;
+    font-size: 1.1em;
   }
   .textContent {
     /*Sizing*/
