@@ -162,7 +162,7 @@ Author: Michael Bassili;
   }
       .projectItemLink > .projectItemLinkContent > img {
         /*Sizing*/
-        max-width: 1em;
+        max-height: 1em;
       }
   .projectItemLink > .projectItemLinkFollow {
     /*Display*/
