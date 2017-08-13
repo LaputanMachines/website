@@ -15,16 +15,19 @@ call me out on all of my CSS issues.
 ### File Structure
 ```
 |-- assets (images, icons, and thumbnails)
+|   |-- deusEx-icon.png (landing page icon)
 |   |-- deuxEx-showcase1.png
 |   |-- deuxEx-showcase2.png
-|   |-- deuxEx-thumbnail.png (landing page tile)
+|   |-- deuxEx-thumbnail.png (project banner)
 |   |-- europa-showcase1.png
 |   |-- europa-showcase2.png
-|   |-- europa-thumbnail.png (landing page tile)
+|   |-- europa-thumbnail.png (project banner)
+|   |-- laputanMachines-icon.png (landing page icon)
 |   |-- laputanMachines-showcase1.png
 |   |-- laputanMachines-showcase2.png
-|   |-- laputanMachines-thumbnail.png (landing page tile)
-|   |-- windowsCleaner-thumbnail.png (landing page tile)
+|   |-- laputanMachines-thumbnail.png (project banner)
+|   |-- windowsCleaner-icon.png (landing page icon)
+|   |-- windowsCleaner-thumbnail.png (project banner)
 |-- css (UI element styles)
 |   |-- animate.css (fadeIn animation)
 |   |-- footer.css
