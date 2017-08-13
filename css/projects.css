@@ -66,8 +66,6 @@ Author: Michael Bassili;
     /*Display*/
     z-index: 1;
     /*Spacing*/
-    padding-left: 15px;
-    padding-right: 15px;
     padding-bottom: 10px;
   }
   .mySlides img {
@@ -148,8 +146,6 @@ Author: Michael Bassili;
   overflow: hidden;
   /*Spacing*/
   padding: 15px;
-  padding-left: 0px;
-  padding-right: 0px;
 }
   .projectItemLink:hover {
     /*Highlight Project*/
