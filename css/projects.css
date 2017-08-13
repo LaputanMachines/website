@@ -352,6 +352,8 @@ Author: Michael Bassili;
 }
   .landingPortfolio {
     border-bottom: 1px solid rgba(94, 69, 75, .25);
+    padding-bottom: 25px;
+    padding-top: 10px;
   }
 
 /*4k-Specific Styles*/
