@@ -1,4 +1,4 @@
-# [Personal Portfolio](http://bassi.li) 
+# [Portfolio](http://bassi.li) 
 
 ## Project Overview
 ### Repository Contents
