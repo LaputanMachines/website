@@ -1,5 +1,6 @@
 # Portfolio & Blog
 
+## Table of Contents
 * [Setup Instructions](#setup-instructions)
   * [Installing Jekyll and Building Locally](#installing-jekyll-and-building-locally)
 * [File Structure](#file-structure)
