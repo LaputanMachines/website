@@ -1,4 +1,4 @@
-# Portfolio & Blog
+# Portfolio
 
 ## Table of Contents
 * [Setup Instructions](#setup-instructions)
