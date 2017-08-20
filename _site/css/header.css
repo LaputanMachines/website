@@ -1,0 +1,31 @@
+.header-link-content { padding-left: 25px; }
+@media screen and (min-width: 800px) { #header-title { font-size: 2em; } }
+@media screen and (max-width: 800px) { #header-title { font-size: 1.5em; } }
+
+.header-container {
+	display: grid;
+	margin: 0 auto;
+	max-width: 800px;
+	grid-template-columns: 1fr 1fr;
+}
+
+.header-content {
+	padding: 25px;
+}
+
+#header-title { 
+	color: #5e454b;
+	font-weight: 300;
+	font-style: normal;
+  	align-self: center;
+	font-family: 'Sanchez', sans-serif;
+}
+
+#header-link-container { 
+	text-align: right; 
+  	align-self: center;
+	font-weight: 300;
+	font-style: normal;
+  	align-self: center;
+	font-family: 'Sanchez', sans-serif;
+}
