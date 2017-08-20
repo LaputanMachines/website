@@ -7,38 +7,22 @@
 		<!-- Req. Markup -->
 		<title>{{page.title}} | Michael Bassili</title>
 		
-		<!-- Meta Data -->
-	    <meta charset="utf-8">
-	    <meta name="language" content="en">
-	    <meta name="theme-color" content="#5e454b">
-	    <meta name="robots" content="index, follow">
-	    <meta name="revisit-after" content="7 days">
-	    <meta name="title" content="{{page.title}} | Michael Bassili">
-	    <meta name="viewport" content="width=device-width, initial-scale=1">
-	    <meta name="keywords" content="michael bassili, personal portfolio, programming blog">
-	    <meta name="description" content="Michael Bassili pursues programming projects, writes words about stuff, and drinks coffee while listening to music. He also likes video games, I think.">
+		{% include meta.html %}
 
-	     <!-- Open Graph Meta Data -->
-	    <meta property="og:type" content="website" />
-	    <meta property="og:url" content="http://bassi.li" />
-	    <meta property="og:title" content="{{page.title}} | Michael Bassili">
-	    <meta property="og:image" content="http://bassi.li/assets/image-site-banner.png" />
-	    <meta property="og:keywords" content="michael bassili, personal portfolio, programming blog" />
-	    <meta property="og:description" content="Michael Bassili pursues programming projects, writes words about stuff, and drinks coffee while listening to music. He also likes video games, I think." />
+		{% include open-graph-meta.html %}
 
 	    <!-- Stylesheets -->
         <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/main.css">
+        <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/footer.css">
 	    <link rel="icon" type="image/png" href="{{site.baseurl}}/assets/image-logo.png" />
         <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/normalize.min.css">
 
 	</head>
 	
 	<body>
-		<!-- TODO -->
-	</body>
 	
-	<footer>
-		<!-- TODO -->
-	</footer>
+		{% include footer.html %}
+
+	</body>
 
 </html>

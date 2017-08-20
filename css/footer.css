@@ -1,0 +1,18 @@
+#personal-email { text-align: right; }
+#version-number { text-align: center; }
+#copyright-information { text-align: left; }
+
+.footer-container {
+	display: grid;
+	max-width: 800px;
+	margin: 0 auto;
+	grid-template-columns: 33% 33% 33%;
+	border-top: 1px solid rgba(94, 69, 75, .25);
+}
+
+.footer-content {
+	padding: 25px;
+	color: #5e454b;
+	font-weight: 300;
+	font-family: 'Roboto', sans-serif;
+}
