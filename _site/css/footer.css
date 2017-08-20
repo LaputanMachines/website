@@ -6,7 +6,7 @@
 	display: grid;
 	max-width: 800px;
 	margin: 0 auto;
-	grid-template-columns: 1fr auto 1fr;
+	grid-template-columns: auto auto auto;
 	border-top: 1px solid rgba(94, 69, 75, .25);
 }
 
