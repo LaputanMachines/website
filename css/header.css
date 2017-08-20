@@ -6,7 +6,7 @@
 	display: grid;
 	margin: 0 auto;
 	max-width: 800px;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: auto auto;
 }
 
 .header-content {
