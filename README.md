@@ -27,6 +27,7 @@ Excluding miscellaneous documents (such as this one, the following tree outlines
 ```
 .
 ├── _includes                              # UI/element components (e.g. navigation)
+|   └── ...                                # Header, footer, navigation bar, etc
 ├── _layouts                               # Defined template markup (e.g. main)
 │   └──  main.html                         # Main markup for index/blog/projects pages
 ├── _posts                                 # Raw posts written in markdown (e.g. 2017-09-18-test-post.md)
@@ -38,9 +39,13 @@ Excluding miscellaneous documents (such as this one, the following tree outlines
 │   ├── image-site-banner.png              # The site's banner image (i.e. og-image)
 │   └── ...                                # Any other project/showcase images
 ├── css                                    # Stylesheets for every UI element
+|   ├── footer.css                         # The footer element
+|   ├── header.css                         # The navigation bar/header element
 |   ├── main.css                           # Overall/default stylesheet
 │   ├── modal.css                          # Rules for the modal/image carousel element
 │   └── normalize.css                      # A CSS normalizer
+├── js                                     # Element-specific scripts
+│   └── ...                                # Current year variable, modal functionality, etc
 ├── _config.yml                            # Jekyll's YAML configuration file
 ├── blog.html                              # Blog page's markup, using the blog layout
 ├── index.html                             # Landing/main page's markup
