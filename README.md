@@ -54,4 +54,4 @@ Excluding miscellaneous documents (such as this one, the following tree outlines
 
 ---
 
-[![GitHub version](https://badge.fury.io/gh/flatlanderwoman%2Fportfolio.svg)](https://badge.fury.io/gh/flatlanderwoman%2Fportfolio) [![Coverage Status](https://coveralls.io/repos/flatlanderwoman/portfolio/badge.svg)](https://coveralls.io/r/flatlanderwoman/portfolio) [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.png?v=103)](https://opensource.org/licenses/mit-license.php)
+[![GitHub version](https://badge.fury.io/gh/flatlanderwoman%2Fportfolio.svg)](https://badge.fury.io/gh/flatlanderwoman%2Fportfolio) [![Coverage Status](https://coveralls.io/repos/flatlanderwoman/portfolio/badge.svg)](https://coveralls.io/r/flatlanderwoman/portfolio) [![Build Status](https://travis-ci.org/FlatlanderWoman/portfolio.svg?branch=master)](https://travis-ci.org/FlatlanderWoman/portfolio) [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.png?v=103)](https://opensource.org/licenses/mit-license.php)
