@@ -1,53 +1,57 @@
-# [Portfolio](http://bassi.li) 
+# Portfolio
 
-## Project Overview
-### Repository Contents
-This is a repository which holds the code and assets for my personal website (more of a portfolio, really). 
-Every front-facing project can seek refuge here; they are given their own dedicated page, thumbnail icon, 
-and description paragraphs. Some even have live demos and links to play with. Others don't. 
-### Project Motivations
-I needed a place to hold all of my things. Anything from poetry to automated email checkers has a home here. 
-It also helps document my personal developments (without this site, I would just have 'stuff' laying around).
+## Table of Contents
+* [Setup Instructions](#setup-instructions)
+  * [Installing Jekyll and Building Locally](#installing-jekyll-and-building-locally)
+* [File Structure](#file-structure)
 
 ## Setup Instructions
-### Project Installation
-I can't think of a good reason 'why' you'd want to clone and toy with my personal portfolio 
-(I could make something up, but it would probably involve the Prime Minister and a ransom). You can clone the 
-repository using this: `https://github.com/FlatlanderWoman/portfolio.git` Then, you could pick appart my code and 
-call me out on all of my CSS issues.
+### Installing Jekyll and Building Locally
+Before continuing, you must ensure that Jekyll and Ruby are installed. Execute the following in your BASH terminal before attempting to run the site locally:
+```
+$ sudo apt-get update -y && sudo apt-get upgrade -y
+$ sudo apt-get update -y && sudo apt-get upgrade -y
+$ sudo apt-get update && sudo apt-get install ruby2.3 ruby2.3-dev build-essential
+$ sudo gem update
+$ sudo gem install jekyll bundler
+$ jekyll -v
+```
+If Jekyll was successfully installed, a version number should've been printed out. Now that everything is correctly installed, you can run a local build of the site by executing the following into your BASH terminal:
+```
+$ bundle exec jekyll serve --watch --baseurl ""
+```
+This will build and run the site locally on port 4000 (i.e. `localhost:4000`). Visit said URL to view the site.
 
-## Contribution Instructions
-### File Structure
+## File Structure
+Excluding miscellaneous documents (such as this one, the following tree outlines the project's file structure:
 ```
-|-- assets (images, icons, and thumbnails)
-|   |-- projectImage-icon.png (landing page icon)
-|   |-- projectImage-showcase.png (project page screenshot)
-|   |-- projectImage-thumbnail.png (banner image)
-|-- css (UI element styles)
-|   |-- animate.css (fadeIn animation)
-|   |-- footer.css
-|   |-- general.css
-|   |-- header.css
-|   |-- modal.css (the image carousel)
-|   |-- normalize.css 
-|   |-- projects.css
-|-- js (UI element scripts)
-|   |-- moment-timezone.js (timezone library)
-|   |-- moment.js (time format library)
-|   |-- scripts.js
-|   |-- wow.min.js
-|-- README.md (this very file)
-|-- index.html
-|-- projectName.html (individual project page)
+.
+├── _includes                              # UI/element components (e.g. navigation)
+|   └── ...                                # Header, footer, navigation bar, etc
+├── _layouts                               # Defined template markup (e.g. main)
+│   └──  main.html                         # Main markup for index/blog/projects pages
+├── _posts                                 # Raw posts written in markdown (e.g. 2017-09-18-test-post.md)
+│   └── ...                                # List of posts, written in markdown
+├── _sites                                 # Compiled site, built with the above rules
+│   └── ...                                # Final (i.e. compiled) site markup and styles
+├── assets                                 # Images, icons, and the like (e.g. image-logo.png)
+│   ├── image-logo.png                     # The site's logo image (i.e. favicon)
+│   ├── image-site-banner.png              # The site's banner image (i.e. og-image)
+│   └── ...                                # Any other project/showcase images
+├── css                                    # Stylesheets for every UI element
+|   ├── footer.css                         # The footer element
+|   ├── header.css                         # The navigation bar/header element
+|   ├── main.css                           # Overall/default stylesheet
+│   ├── modal.css                          # Rules for the modal/image carousel element
+│   └── normalize.css                      # A CSS normalizer
+├── js                                     # Element-specific scripts
+│   └── ...                                # Current year variable, modal functionality, etc
+├── _config.yml                            # Jekyll's YAML configuration file
+├── blog.html                              # Blog page's markup, using the blog layout
+├── index.html                             # Landing/main page's markup
+└── projects.html                          # Project page's markup
 ```
-### Commit Scheme
-I use Clubhouse to manage this project, so the commit messages are formatted in a neat way (I think it's neat, for what it's worth). Behold, an example:
-```
-$ [ch##] [d|k] Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-```
-The first `[ch##]` is the story ID (e.g. `[ch69]`). The second `[d|k]` is an optional label for dying or killed stories. Stories are "dying" when they were completed, but reopened temporarily. A story is "killed" when it, and its parent project, was killed.
 
-## Miscellaneous Minutiae
-### Why is this readme so unprofessional?
-You gotta let your hair down once and a while, you know. Of all my projects that could use a readme, my portfolio 
-might be the best place to have a little fun.
+---
+
+[![GitHub version](https://badge.fury.io/gh/flatlanderwoman%2Fportfolio.svg)](https://badge.fury.io/gh/flatlanderwoman%2Fportfolio) [![Coverage Status](https://coveralls.io/repos/github/FlatlanderWoman/portfolio/badge.svg?branch=master)](https://coveralls.io/github/FlatlanderWoman/portfolio?branch=master) [![Build Status](https://travis-ci.org/FlatlanderWoman/portfolio.svg?branch=master)](https://travis-ci.org/FlatlanderWoman/portfolio) [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.png?v=103)](https://opensource.org/licenses/mit-license.php)
