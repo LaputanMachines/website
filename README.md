@@ -18,7 +18,7 @@ $ jekyll -v
 ```
 If Jekyll was successfully installed, a version number should've been printed out. Now that everything is correctly installed, you can run a local build of the site by executing the following into your BASH terminal:
 ```
-$ jekyll serve --watch --baseurl ""
+$ bundle exec jekyll serve --watch --baseurl ""
 ```
 This will build and run the site locally on port 4000 (i.e. `localhost:4000`). Visit said URL to view the site.
 

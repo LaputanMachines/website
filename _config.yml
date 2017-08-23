@@ -1,4 +1,4 @@
 markdown: kramdown
 baseurl: /
 exclude: ['README.md', vendor]
-version: 0.1
+version: 0.1.0

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Sanchez');
+@import url('https://fonts.googleapis.com/css?family=Droid+Serif');
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300);
 
 *, *:before, *:after {
@@ -22,6 +23,12 @@
 body {
 	overflow-x: hidden;
 	background-color: #fbf0d9;
+}
+
+figcaption {
+	font-size: .9em;
+	padding-top: 5px;
+	text-align: center;
 }
 
 a:link, a:visited {
@@ -52,4 +59,13 @@ a:active {
 
 ::-webkit-scrollbar-thumb {
 	background: #e5e5e5;
+}
+
+.main-content {
+	padding: 25px;
+	margin: 0 auto;
+	color: #5b4636;
+	max-width: 800px;
+	font-family: 'Droid Serif', serif;
+	border-top: 1px solid rgba(94, 69, 75, .25);
 }

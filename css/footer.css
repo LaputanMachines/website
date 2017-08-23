@@ -1,6 +1,7 @@
 #personal-email { text-align: right; }
 #version-number { text-align: center; }
 #copyright-information { text-align: left; }
+@media screen and (max-width: 500px) { #version-number { display: none; visibility: hidden; } }
 
 .footer-container {
 	display: grid;
@@ -12,7 +13,8 @@
 
 .footer-content {
 	padding: 25px;
-	color: #5e454b;
+	color: #848484;
 	font-weight: 300;
-	font-family: 'Roboto', sans-serif;
+	font-size: .9em;
+	font-family: 'Sanchez', sans-serif;
 }
