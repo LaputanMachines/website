@@ -46,10 +46,14 @@ Excluding miscellaneous documents (such as this one, the following tree outlines
 │   └── normalize.css                      # A CSS normalizer
 ├── js                                     # Element-specific scripts
 │   └── ...                                # Current year variable, modal functionality, etc
+├── script                                 # Automated installation scripts
+│   ├── cibuild                            # Travis CI build configuration 
+│   └── setup.sh                           # Initial Jekyll setup script
+├── test                                   # Integration, unit, and functional tests
+│   └── test_helper.rb                     # Coveralls setup script
 ├── _config.yml                            # Jekyll's YAML configuration file
 ├── blog.html                              # Blog page's markup, using the blog layout
-├── index.html                             # Landing/main page's markup
-└── projects.html                          # Project page's markup
+└── index.html                             # Landing/main page's markup
 ```
 
 ---
