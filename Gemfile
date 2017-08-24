@@ -8,5 +8,6 @@ gem 'rake'
 gem 'jekyll'
 gem 'nokogiri'
 gem 'github-pages'
+gem 'html-proofer'
 gem 'coveralls', require: false
 gem 'kramdown', versions['kramdown']
