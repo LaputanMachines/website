@@ -1,4 +1,5 @@
 # Portfolio
+The source code and documentation for my personal website and blog. Personal projects, blog posts, thoughts, etc are all aggregated here.
 
 ## Table of Contents
 * [Setup Instructions](#setup-instructions)
