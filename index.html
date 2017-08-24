@@ -1,147 +1,20 @@
-<!-- 
-Description: Main markup for index site page;
-Last Updated: 07-06-2017;
-Author: Michael Bassili;
--->
+---
+layout: main
+title: Home
+---
 
-<!DOCTYPE html>
+<!-- About Me -->
+			<div id="about-me-container">
 
-<html>
+				<!-- Profile Picture -->
+				<div id="profile-picture-container">
+					<img id="profile-picture-content" src="{{site.baseurl}}/assets/image-me.jpg" alt="Fig1. Me">
+					<figcaption>Fig1. Me</figcaption>
+				</div>
 
-  <head>
+				<!-- About Me Blurb -->
+				<div id="about-me-content">
+					Michael like to make things. He started off making mods for The Sims 2, Deus Ex, and The Movies. After a lengthy hiatus, Michael decided to float around, taking on miscellaneous projects and freelance web dev contracts. He has a bad habit of revisiting long-completed projects with the goal of completely redoing them: this site was redone over ten times (as of fall 2016). Michael doesn't know why this happens, but he's convinced that it's not entirely healthy. Maybe it's the caffeine.
+				</div>
 
-    <!-- Meta Data -->
-    <meta charset="utf-8">
-    <title>Home | Michael Bassili</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="keywords" content="Michael Bassili, Freelance Programmer, Web Developer, Web Designer, Remote Worker">
-    <meta name="description" content="Michael Bassili bounces around, completing side projects and drinking coffee.">
-    <meta name="language" content="en">
-    <meta name="robots" content="index, follow">
-    <meta name="revisit-after" content="7 days">
-    <meta name="theme-color" content="#eae7dc">
-
-    <!-- OG Meta Data -->
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Home | Michael Bassili" />
-    <meta property="og:keywords" content="Michael Bassili, Freelance Programmer, Web Developer, Web Designer, Remote Worker" />
-    <meta property="og:description" content="Michael Bassili bounces around, completing side projects and drinking coffee." />
-    <meta property="og:url" content="http://bassi.li" />
-    <meta property="og:image" content="http://bassi.li/assets/home-thumbnail.png" />
-
-
-    <!-- Styles -->
-    <link rel="stylesheet" type="text/css" href="css/general.css">
-    <link rel="stylesheet" type="text/css" href="css/header.css">
-    <link rel="stylesheet" type="text/css" href="css/projects.css">
-    <link rel="stylesheet" type="text/css" href="css/footer.css">
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/animate.css">
-    <link rel="icon" type="image/png" href="assets/logo.png" />
-    <link rel="canonical" href="http://bassi.li" />
-
-    <!-- Scripts -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script type="text/javascript" src="js/scripts.js"></script>
-    <script type="text/javascript" src="js/wow.min.js"></script>
-    <script type="text/javascript" src="js/moment.js"></script>
-    <script type="text/javascript" src="js/moment-timezone.js"></script>
-    <script>
-      // Initialize WOW.js
-      new WOW().init();
-
-      // Set location
-      var timezone = 'America/Vancouver';
-      var currentLocation = 'Vancouver, BC';
-    </script>
-
-  </head>
-
-  <!-- Main Content -->
-  <body id="mainContent">
-
-    <!-- Site Title and Subtitle -->
-    <div class="welcome" id="welcome">
-      <div id="welcomeContainer">
-        <h1 id="title">MICHAEL BASSILI</h1>
-        <h2 id="subtitle">THINGS I MADE</h2>
-      </div>
-    </div>
-
-    <!-- Projects Tiles -->
-    <div class="projects portfolio landingPortfolio" id="projects">
-      <!-- Featured Projects -->
-      <div id="projectList">
-        
-       <!-- Europa -->
-       <span data-wow-duration=".3s" class="wow fadeIn projectItemLink">
-         <span class="projectItemLinkContent">Europa</span>
-         <span class="dot"></span>
-         <span class="projectItemLinkFollow"><a class="visitSiteLink" href="https://flatlanderwoman.github.io/europa/" title="Visit Site">Visit Site</a> <a href="http://bassi.li/europa" title="Learn More">Learn More</a></span>
-       </span>
-
-       <!-- Laputan Machines -->
-       <span data-wow-duration=".3s" class="wow fadeIn projectItemLink">
-         <span class="projectItemLinkContent"><img src="assets/laputanMachines-icon.png" alt="Laputan Machines icon"> Laputan Machines</span>
-         <span class="projectItemLinkFollow"><a href="http://bassi.li/laputanMachines" title="Learn More">Learn More</a></span>
-       </span>
-
-       <!-- Windows Cleaner -->
-       <span data-wow-duration=".3s" class="wow fadeIn projectItemLink">
-         <span class="projectItemLinkContent"><img src="assets/windowsCleaner-icon.png" alt="Windows Cleaner icon"> Windows Cleaner</span>
-         <span class="projectItemLinkFollow"><a href="http://bassi.li/windowsCleaner" title="Learn More">Learn More</a></span>
-       </span>
-      
-      <!-- Deus Ex: Timeline -->
-       <span data-wow-duration=".3s" class="wow fadeIn projectItemLink">
-         <span class="projectItemLinkContent"><img src="assets/deusEx-icon.png" alt="Deus Ex: Timeline icon"> Deus Ex: Timeline</span>
-         <span class="projectItemLinkFollow"><a  class="visitSiteLink" href="http://flatlanderWoman.github.io/deusExTimeline/" title="Visit Site">Visit Site</a> <a href="http://bassi.li/deusExTimeline" title="Learn More">Learn More</a></span>
-       </span>
-
-      </div>
-    </div>
-
-
-
-    <!-- Description Content Container -->
-    <div class="textContent" id="textContent">
-
-      <!-- Description Text -->
-      <div id="descriptionText">
-
-      
-
-        <h2 id="title">About the Human</h2>
-        <span id="contactText">
-          Michael like to make things. He started off making mods for The Sims 1/2, Deus Ex, and The Movies. Past-Michael's interests turned to caricature creation, then cartoon illustration. Afterwards, Past-Michael floated about, taking on anything which came to mind.
-          <br>
-          Michael has a habit of revisiting old, long-forgotten projects with the goal of redoing them&mdash;for some reason. Deus Ex: Timeline, for instance, was remade four times (Future-Michael may revisit it again). This site was remade ten times. Current-Michael doesn't know <i>why</i> this happens, but he's convinced that it's not entirely healthy. 
-          <br><br>
-          The best way to contact Michael is through email; messages sent through social media (LinkedIn, GitHub) will never reach him. Any emails received between 21:00 and 09:00 will go unnoticed until the coming morning.
-          <span id="currentTime">
-            Currently, Michael is in <script type="text/javascript">document.write(currentLocation)</script>, and it's roughly <script type="text/javascript">
-            var format = 'HH:mm';
-            document.write(moment(new Date(), format).tz(timezone).format(format))
-          </script>.
-        </span>
-
-      </div>
-
-      <!-- Personal Links -->
-      <div class="linkCenter" id="contactLinks">
-        <a class="projectLinks" href="https://github.com/FlatlanderWoman/">GitHub</a>
-        <a class="projectLinks" href="https://www.linkedin.com/in/michaelbassili">LinkedIn</a>
-      </div>
-
-    </div>
-
-    <!-- Footer -->
-    <div class="footer" id="footer">
-      <span id="copyright">
-        &copy; <script>document.write(new Date().getFullYear())</script> Michael Bassili<span id="email">michael@bassi.li</span>
-      </span>
-    </div>
-
-  </body>
-  
-</html>
+			</div>
