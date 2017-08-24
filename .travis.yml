@@ -21,3 +21,6 @@ env:
 
 sudo: false # route your build to the container-based infrastructure for a faster build
 
+# Disable notifications
+notifications:
+  email: false
