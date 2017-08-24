@@ -22,7 +22,7 @@ If Jekyll was successfully installed, a version number should've been printed ou
 ```
 $ bundle exec jekyll serve --watch --baseurl ""
 ```
-This will build and run the site locally on port 4000 (i.e. `localhost:4000`). Visit said URL to view the site.
+This will build and run the site locally on port 4000 (i.e. `localhost:4000`). Visit said URL to view the site. **Note:** `bundle install/exec` will fail/crash when trying to bundle on Windows because of the nokogiri gem. 
 
 ## File Structure
 Excluding miscellaneous documents (such as this one, the following tree outlines the project's file structure:
