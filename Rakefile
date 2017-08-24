@@ -5,8 +5,6 @@ require 'date'
 require 'yaml'
 require 'tmpdir'
 require 'jekyll'
-require 'coveralls'
-Coveralls.wear!
 
 desc "Generate blog files"
 task :generate do
