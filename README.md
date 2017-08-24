@@ -4,6 +4,8 @@
 * [Setup Instructions](#setup-instructions)
   * [Installing Jekyll and Building Locally](#installing-jekyll-and-building-locally)
 * [File Structure](#file-structure)
+* [Miscellaneous Minutiae](#miscellaneous-minutiae)
+  * [Documentation and Commit Syntax](#documentation-and-commit-syntax)
 
 ## Setup Instructions
 ### Installing Jekyll and Building Locally
@@ -55,6 +57,10 @@ Excluding miscellaneous documents (such as this one, the following tree outlines
 ├── blog.html                              # Blog page's markup, using the blog layout
 └── index.html                             # Landing/main page's markup
 ```
+
+## Miscellaneous Minutiae
+### Documentation and Commit Syntax
+Commits should begin with a capital letter and should never end with a period. A good example of a commit message would be `$ [ch##] [d|k] This is a commit message`. While periods at the ends of commit messages is _technically_ fine, it looks aesthetically displeasing in GitHub. Using a `[ch##]` labels the commit as a contribution to a ClubHouse ticket. Using a `[d|k]` indicates whether the contribution was towards a _dead_ ticket (i.e. one that was already resolves) or a _killed_ ticket (i.e. one that was already closed/archived).
 
 ---
 
