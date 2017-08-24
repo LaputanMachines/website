@@ -2,3 +2,10 @@ markdown: kramdown
 baseurl: /
 exclude: ['README.md', vendor]
 version: 0.1.0
+
+username:             FlatlanderWoman
+repo:                 FlatlanderWoman.github.io
+branch:               flatlanderwoman/ch95/port-entire-site-to-jekyll
+
+source:               .
+destination:          _site
