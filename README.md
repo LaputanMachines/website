@@ -61,7 +61,7 @@ Excluding miscellaneous documents (such as this one, the following tree outlines
 
 ## Miscellaneous Minutiae
 ### Documentation and Commit Syntax
-Commits should begin with a capital letter and should never end with a period. A good example of a commit message would be `$ [ch##] [d|k] This is a commit message`. While periods at the ends of commit messages is _technically_ fine, it looks aesthetically displeasing in GitHub. Using a `[ch##]` labels the commit as a contribution to a ClubHouse ticket. Using a `[d|k]` indicates whether the contribution was towards a _dead_ ticket (i.e. one that was already resolves) or a _killed_ ticket (i.e. one that was already closed/archived).
+Commits should begin with a capital letter and should never end with a period. A good example of a commit message would be `$ [ch##] [d|k] This is a commit message`. While periods at the ends of commit messages is _technically_ fine, it looks aesthetically displeasing in GitHub. Using a `[ch##]` labels the commit as a contribution to a ClubHouse ticket. Using a `[d|k]` indicates whether the contribution was towards a _dead_ ticket (i.e. one that was already resolved) or a _killed_ ticket (i.e. one that was already closed/archived).
 
 ---
 
