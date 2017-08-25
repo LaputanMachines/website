@@ -1,3 +1,4 @@
+require 'html-proofer'
 require 'rubygems'
 require 'rake'
 require 'rdoc'
@@ -6,6 +7,7 @@ require 'yaml'
 require 'tmpdir'
 require 'jekyll'
 
+# Generate the site
 desc "Generate blog files"
 task :generate do
   Jekyll::Site.new(Jekyll.configuration({
@@ -14,7 +16,7 @@ task :generate do
   })).process
 end
 
-
+# Publish the site
 desc "Generate and publish blog to master"
 task :publish => [:generate] do
   Dir.mktmpdir do |tmp|
@@ -31,4 +33,12 @@ task :publish => [:generate] do
   end
 end
 
+# Execute publish
 task :default => :publish
+
+# HTML-Proofer
+task :test do
+  sh "bundle exec jekyll build"
+  options = { :assume_extension => true }
+  HTMLProofer.check_directory("./_site", options).run
+end
