@@ -6,6 +6,8 @@ The source code and documentation for my personal website and blog. Personal pro
   * [Installing Jekyll and Building Locally](#installing-jekyll-and-building-locally)
 * [Known Issues](#known-issues)
   * [Locally Running on Windows](#locally-running-on-windows)
+* [Creating a Post](#creating-a-post)
+  * [File Preparation](#file-preparation)
 * [File Structure](#file-structure)
 * [Miscellaneous Minutiae](#miscellaneous-minutiae)
   * [Documentation and Commit Syntax](#documentation-and-commit-syntax)
@@ -34,6 +36,18 @@ There is currently an issue when running `$ bundle exec jekyll serve --watch --b
 gem 'nokogiri'
 gem 'github-pages'
 gem 'html-proofer'
+```
+
+## Creating a Post
+### File Preparation
+Every post should be a Markdown file. It should be named `YYYY-MM-DD-TITLE-OF-POST.md` in order to have Jekyll see it. Before writing any content, the file should have the following fixture:
+```
+---
+layout: post
+title: TITLE OF POST
+category: CATEGORY OF POST
+excerpt: THE FIRST TWO LINES FROM THE POST BODY
+---
 ```
 
 ## File Structure
