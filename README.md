@@ -4,6 +4,8 @@ The source code and documentation for my personal website and blog. Personal pro
 ## Table of Contents
 * [Setup Instructions](#setup-instructions)
   * [Installing Jekyll and Building Locally](#installing-jekyll-and-building-locally)
+* [Known Issues](#known-issues)
+  * [Locally Running on Windows](#locally-running-on-windows)
 * [File Structure](#file-structure)
 * [Miscellaneous Minutiae](#miscellaneous-minutiae)
   * [Documentation and Commit Syntax](#documentation-and-commit-syntax)
@@ -24,6 +26,15 @@ If Jekyll was successfully installed, a version number should've been printed ou
 $ bundle exec jekyll serve --watch --baseurl ""
 ```
 This will build and run the site locally on port 4000 (i.e. `localhost:4000`). Visit said URL to view the site. **Note:** `bundle install/exec` will fail/crash when trying to bundle on Windows because of the nokogiri gem. 
+
+## Known Issues
+### Locally Running on Windows
+There is currently an issue when running `$ bundle exec jekyll serve --watch --baseurl ""` on Windows. The Nokogiri gem will never be found by the bundler. So, when working locally on a Windows machine, open up the `Gemfile`and comment out the following:
+```
+gem 'nokogiri'
+gem 'github-pages'
+gem 'html-proofer'
+```
 
 ## File Structure
 Excluding miscellaneous documents (such as this one, the following tree outlines the project's file structure:
