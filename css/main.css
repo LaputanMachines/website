@@ -49,9 +49,12 @@ a:active {
 	text-decoration: none;
 }
 
-*::selection, *::-moz-selection {
+::selection {
 	background: #cfeceb;
-    text-shadow: none;
+}
+
+::-moz-selection {
+	background: #cfeceb;
 }
 
 ::-webkit-scrollbar {

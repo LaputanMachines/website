@@ -1,7 +1,5 @@
 .header-link-content { margin-left: 25px; }
 .current-page { text-decoration: underline !important; }
-@media screen and (min-width: 800px) { #header-title { font-size: 2em; } }
-@media screen and (max-width: 800px) { #header-title { font-size: 1.5em; } }
 
 .header-container {
 	display: grid;

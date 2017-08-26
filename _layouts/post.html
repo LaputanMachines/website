@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+	
+	<head>
+
+		<!-- Req. Markup -->
+		<title>{{page.title}} | Blog | Michael Bassili</title>
+		
+		{% include meta.html %}
+
+		{% include open-graph-meta.html %}
+
+	    {% include stylesheets.html %}
+
+	</head>
+	
+	<body>
+	
+		{% include header.html %}
+
+		<!-- Main Content -->
+		<div class="main-content">
+			
+			<!-- Post Title -->
+			<div class="post-title-container">
+
+				<div id="post-title"><h2>{{ page.title }}</h2></div>
+				<div id="post-date">{{ page.date | date: "%b %d, %Y" }}</div>
+
+			</div>
+
+			<!-- Post Content -->
+			<div class="post-content">
+
+				{{content}}
+
+			</div>
+			
+		</div>
+
+		{% include footer.html %}
+
+	</body>
+
+</html>
