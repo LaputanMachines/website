@@ -27,3 +27,5 @@
   	align-self: center;
 	font-family: 'Sanchez', sans-serif;
 }
+
+@media screen and (max-width: 600px) { #blog-link { display: block; } }

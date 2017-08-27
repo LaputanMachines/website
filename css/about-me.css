@@ -28,5 +28,3 @@
 	line-height: 1.4em;
 	text-rendering: optimizeLegibility;
 }
-
-@media screen and (max-width: 600px) { #blog-link { display: block; } }
