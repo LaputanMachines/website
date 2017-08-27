@@ -48,3 +48,6 @@ Temporary Items
 
 # The _site folder that generates along with a local site
 _site/
+
+# Gemfile lock file
+.lock
