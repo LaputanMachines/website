@@ -11,6 +11,16 @@
 	vertical-align: middle;
 }
 
+@media screen and (max-width: 600px) { 
+	#about-me-container { display: block; } 
+
+	#profile-picture-container #profile-picture-content { 
+		margin: 0 auto;
+		display: block;
+		max-width: 75vw; 
+	}
+}
+
 #about-me-container #about-me-content { 
 	text-align: left;
 	align-self: center;
@@ -18,3 +28,5 @@
 	line-height: 1.4em;
 	text-rendering: optimizeLegibility;
 }
+
+@media screen and (max-width: 600px) { #blog-link { display: block; } }
