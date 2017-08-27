@@ -5,7 +5,15 @@ version: 0.1.0
 
 username:             FlatlanderWoman
 repo:                 FlatlanderWoman.github.io
-branch:               flatlanderwoman/ch95/port-entire-site-to-jekyll
+branch:               master
+
+title:                Michael Bassili
+url:                  http://bassi.li
+author:               Michael Bassili
+description:          Michael Bassili pursues programming projects, writes words about stuff, and drinks coffee while listening to music. He also likes video games, I think.
 
 source:               .
 destination:          _site
+
+gems:
+  - jekyll-feed
