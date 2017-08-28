@@ -4,7 +4,6 @@ The source code and documentation for my personal website and blog. Personal pro
 ## Table of Contents
 * [Setup Instructions](#setup-instructions)
   * [Installing Jekyll and Building Locally](#installing-jekyll-and-building-locally)
-* [File Structure](#file-structure)
 * [Miscellaneous Minutiae](#miscellaneous-minutiae)
   * [Documentation and Commit Syntax](#documentation-and-commit-syntax)
 
@@ -15,40 +14,6 @@ If Jekyll was successfully installed, a version number should've been printed ou
 $ bundle exec jekyll serve --watch --baseurl ""
 ```
 This will build and run the site locally on port 4000 (i.e. `localhost:4000`). Visit said URL to view the site. **Note:** `bundle install/exec` will fail/crash when trying to bundle on Windows because of the nokogiri gem. 
-
-## File Structure
-Excluding miscellaneous documents (such as this one, the following tree outlines the project's file structure:
-```
-.
-├── _includes                              # UI/element components (e.g. navigation)
-|   └── ...                                # Header, footer, navigation bar, etc
-├── _layouts                               # Defined template markup (e.g. main)
-│   └──  main.html                         # Main markup for index/blog/projects pages
-├── _posts                                 # Raw posts written in markdown (e.g. 2017-09-18-test-post.md)
-│   └── ...                                # List of posts, written in markdown
-├── _sites                                 # Compiled site, built with the above rules
-│   └── ...                                # Final (i.e. compiled) site markup and styles
-├── assets                                 # Images, icons, and the like (e.g. image-logo.png)
-│   ├── image-logo.png                     # The site's logo image (i.e. favicon)
-│   ├── image-site-banner.png              # The site's banner image (i.e. og-image)
-│   └── ...                                # Any other project/showcase images
-├── css                                    # Stylesheets for every UI element
-|   ├── footer.css                         # The footer element
-|   ├── header.css                         # The navigation bar/header element
-|   ├── main.css                           # Overall/default stylesheet
-│   ├── modal.css                          # Rules for the modal/image carousel element
-│   └── normalize.css                      # A CSS normalizer
-├── js                                     # Element-specific scripts
-│   └── ...                                # Current year variable, modal functionality, etc
-├── script                                 # Automated installation scripts
-│   ├── cibuild                            # Travis CI build configuration 
-│   └── setup.sh                           # Initial Jekyll setup script
-├── test                                   # Integration, unit, and functional tests
-│   └── test_helper.rb                     # Coveralls setup script
-├── _config.yml                            # Jekyll's YAML configuration file
-├── blog.html                              # Blog page's markup, using the blog layout
-└── index.html                             # Landing/main page's markup
-```
 
 ## Miscellaneous Minutiae
 ### Documentation and Commit Syntax
