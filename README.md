@@ -4,51 +4,17 @@ The source code and documentation for my personal website and blog. Personal pro
 ## Table of Contents
 * [Setup Instructions](#setup-instructions)
   * [Installing Jekyll and Building Locally](#installing-jekyll-and-building-locally)
-* [Known Issues](#known-issues)
-  * [Locally Running on Windows](#locally-running-on-windows)
-* [Creating a Post](#creating-a-post)
-  * [File Preparation](#file-preparation)
 * [File Structure](#file-structure)
 * [Miscellaneous Minutiae](#miscellaneous-minutiae)
   * [Documentation and Commit Syntax](#documentation-and-commit-syntax)
 
 ## Setup Instructions
 ### Installing Jekyll and Building Locally
-Before continuing, you must ensure that Jekyll and Ruby are installed. Execute the following in your BASH terminal before attempting to run the site locally:
-```
-$ sudo apt-get update -y && sudo apt-get upgrade -y
-$ sudo apt-get update -y && sudo apt-get upgrade -y
-$ sudo apt-get update && sudo apt-get install ruby2.3 ruby2.3-dev build-essential
-$ sudo gem update
-$ sudo gem install jekyll bundler
-$ jekyll -v
-```
 If Jekyll was successfully installed, a version number should've been printed out. Now that everything is correctly installed, you can run a local build of the site by executing the following into your BASH terminal:
 ```
 $ bundle exec jekyll serve --watch --baseurl ""
 ```
 This will build and run the site locally on port 4000 (i.e. `localhost:4000`). Visit said URL to view the site. **Note:** `bundle install/exec` will fail/crash when trying to bundle on Windows because of the nokogiri gem. 
-
-## Known Issues
-### Locally Running on Windows
-There is currently an issue when running `$ bundle exec jekyll serve --watch --baseurl ""` on Windows. The Nokogiri gem will never be found by the bundler. So, when working locally on a Windows machine, open up the `Gemfile`and comment out the following:
-```
-gem 'nokogiri'
-gem 'github-pages'
-gem 'html-proofer'
-```
-
-## Creating a Post
-### File Preparation
-Every post should be a Markdown file. It should be named `YYYY-MM-DD-TITLE-OF-POST.md` in order to have Jekyll see it. Before writing any content, the file should have the following fixture:
-```
----
-layout: post
-title: TITLE OF POST
-category: CATEGORY OF POST
-excerpt: THE FIRST TWO LINES FROM THE POST BODY
----
-```
 
 ## File Structure
 Excluding miscellaneous documents (such as this one, the following tree outlines the project's file structure:
