@@ -12,9 +12,21 @@
 	vertical-align: middle;
 }
 
+#about-me-container #about-me-content { 
+	text-align: left;
+	align-self: center;
+	padding-left: 25px; 
+	line-height: 1.6em;
+	text-rendering: optimizeLegibility;
+}
+
+#about-me-container #about-me-title {
+	display: contents;
+}
+
 @media screen and (max-width: 500px) { 
 	#about-me-container { display: block; } 
-
+	#about-me-container #about-me-content { padding-left: 0px; }
 	#profile-picture-container { margin-bottom: 25px; }
 
 	#profile-picture-container #profile-picture-content { 
@@ -22,16 +34,4 @@
 		display: block;
 		max-width: 75vw; 
 	}
-}
-
-#about-me-container #about-me-content { 
-	text-align: left;
-	align-self: center;
-	padding-left: 25px; 
-	line-height: 1.4em;
-	text-rendering: optimizeLegibility;
-}
-
-#about-me-container #about-me-title {
-	display: contents;
 }

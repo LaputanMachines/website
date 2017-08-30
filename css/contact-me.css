@@ -1,4 +1,7 @@
+#github-link { text-align: left; }
+#linkedin-link { text-align: right; }
 #profile-picture-container { align-self: center; }
+.contact-me-links a { padding: 0px 25px 0px 25px }
 
 #contact-me-container {
 	display: grid;
@@ -13,26 +16,37 @@
 	vertical-align: middle;
 }
 
+#contact-me-container #contact-me-content { 
+	text-align: left;
+	align-self: center;
+	padding-right: 25px; 
+	line-height: 1.6em;
+	text-rendering: optimizeLegibility;
+}
+
+#contact-me-container #contact-me-title {
+	display: contents;
+}
+
+.contact-me-links {
+	display: grid;
+	padding-top: 25px;
+	grid-template-columns: 1fr 1fr;
+}
+
 @media screen and (max-width: 500px) { 
 	#contact-me-container { display: block; } 
-
+	#contact-me-container #contact-me-content { padding-right: 0px; }
 	#profile-picture-container { margin-bottom: 25px; }
+	
+	#contact-me-container #profile-picture-container {
+		display: none;
+		visibility: hidden;
+	}
 
 	#profile-picture-container #profile-picture-content { 
 		margin: 0 auto;
 		display: block;
 		max-width: 75vw; 
 	}
-}
-
-#contact-me-container #contact-me-content { 
-	text-align: left;
-	align-self: center;
-	padding-right: 25px; 
-	line-height: 1.4em;
-	text-rendering: optimizeLegibility;
-}
-
-#contact-me-container #contact-me-title {
-	display: contents;
 }
