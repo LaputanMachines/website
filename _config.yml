@@ -15,5 +15,5 @@ description:          Michael Bassili pursues programming projects, writes words
 source:               .
 destination:          _site
 
-gems:
+plugins:
   - jekyll-feed
