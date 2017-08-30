@@ -73,3 +73,7 @@ a:active {
 	font-family: 'Droid Serif', serif;
 	border-top: 1px solid rgba(94, 69, 75, .25);
 }
+
+.code-block {
+	font-family: monospace;
+}
