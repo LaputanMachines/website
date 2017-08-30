@@ -50,4 +50,4 @@ Temporary Items
 _site/
 
 # Gemfile lock file
-.lock
+*.lock
