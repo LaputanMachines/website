@@ -1,9 +1,10 @@
 #profile-picture-container { align-self: center; }
 
-#about-me-container {
+#contact-me-container {
 	display: grid;
-	grid-template-columns: 2fr 3fr;
-	padding-bottom: 25px;
+	grid-template-columns: 3fr 2fr;
+	padding-top: 25px;
+	border-top: 1px solid rgba(94, 69, 75, .25);
 }
 
 #profile-picture-container #profile-picture-content { 
@@ -13,7 +14,7 @@
 }
 
 @media screen and (max-width: 500px) { 
-	#about-me-container { display: block; } 
+	#contact-me-container { display: block; } 
 
 	#profile-picture-container { margin-bottom: 25px; }
 
@@ -24,14 +25,14 @@
 	}
 }
 
-#about-me-container #about-me-content { 
+#contact-me-container #contact-me-content { 
 	text-align: left;
 	align-self: center;
-	padding-left: 25px; 
+	padding-right: 25px; 
 	line-height: 1.4em;
 	text-rendering: optimizeLegibility;
 }
 
-#about-me-container #about-me-title {
+#contact-me-container #contact-me-title {
 	display: contents;
 }
