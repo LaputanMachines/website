@@ -1,7 +1,7 @@
 markdown: kramdown
 baseurl: http://bassi.li
 exclude: ['README.md', vendor]
-version: 0.2.0
+version: 0.2.1
 
 username:             FlatlanderWoman
 repo:                 FlatlanderWoman.github.io
