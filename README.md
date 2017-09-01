@@ -4,8 +4,6 @@ The source code and documentation for my personal website and blog. Personal pro
 ## Table of Contents
 * [Setup Instructions](#setup-instructions)
   * [Installing Jekyll and Building Locally](#installing-jekyll-and-building-locally)
-* [Miscellaneous Minutiae](#miscellaneous-minutiae)
-  * [Documentation and Commit Syntax](#documentation-and-commit-syntax)
 
 ## Setup Instructions
 ### Installing Jekyll and Building Locally
@@ -14,10 +12,6 @@ If Jekyll was successfully installed, a version number should've been printed ou
 $ bundle exec jekyll serve --watch --baseurl ""
 ```
 This will build and run the site locally on port 4000 (i.e. `localhost:4000`). Visit said URL to view the site. **Note:** `bundle install/exec` will fail/crash when trying to bundle on Windows because of the nokogiri gem. 
-
-## Miscellaneous Minutiae
-### Documentation and Commit Syntax
-Commits should begin with a capital letter and should never end with a period. A good example of a commit message would be `$ [ch##] [d|k] This is a commit message`. While periods at the ends of commit messages is _technically_ fine, it looks aesthetically displeasing in GitHub. Using a `[ch##]` labels the commit as a contribution to a ClubHouse ticket. Using a `[d|k]` indicates whether the contribution was towards a _dead_ ticket (i.e. one that was already resolved) or a _killed_ ticket (i.e. one that was already closed/archived).
 
 ---
 
