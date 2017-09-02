@@ -1,7 +1,7 @@
 #github-link { text-align: left; }
 #linkedin-link, #linkedin-container { text-align: right; }
 #profile-picture-container { align-self: center; }
-.contact-me-links a { padding: 0px 25px 0px 25px }
+.contact-me-links a { margin: 0px 25px 0px 25px }
 
 #contact-me-container {
 	display: grid;
