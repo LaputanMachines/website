@@ -1,3 +1,6 @@
+require 'coveralls'
+Coveralls.wear!
+
 require 'html-proofer'
 require 'rubygems'
 require 'rake'
