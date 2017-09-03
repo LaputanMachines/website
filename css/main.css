@@ -83,3 +83,8 @@ blockquote {
 	margin-bottom: 25px; 
 	border-left: 1px solid rgba(94, 69, 75, .25);
 }
+
+.hidden {
+	display: none !important;
+	visibility: hidden;
+}
