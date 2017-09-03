@@ -1,0 +1,5 @@
+<!-- Footer Navigation -->
+		<div class="footer-navigation {% if page.previous.title != blank or page.next.title != blank %}hidden{% endif %}">
+			<div id="post-back"><a href="{{page.previous.url}}">{{page.previous.title}}</a></div>
+			<div id="next-post"><a href="{{page.next.url}}">{{page.next.title}}</a></div>
+		</div>
