@@ -77,3 +77,9 @@ a:active {
 .code-block {
 	font-family: monospace;
 }
+
+blockquote {
+	padding: 25px;
+	margin-bottom: 25px; 
+	border-left: 1px solid rgba(94, 69, 75, .25);
+}

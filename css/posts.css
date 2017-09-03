@@ -1,5 +1,6 @@
 .post-content p:last-child { padding-bottom: 0px; }
 .post-content p:first-child { text-indent: 0em; } 
+.post-excerpt-container { align-self: center; }
 .post-excerpt-container .post-excerpt-content { text-align: right; }
 .post-title-container > #post-title, #post-date { text-align: center; }
 .post-information > #post-title, .post-information > #post-date { text-align: left; }
@@ -20,8 +21,10 @@
 	margin: 0 auto;
 	color: #5b4636;
 	max-width: 800px;
+	margin-top: 25px;
 	padding-top: 25px;
 	font-family: 'Droid Serif', serif;
+	border-top: 1px solid rgba(94, 69, 75, .25);
 }
 
 .post-content p {
@@ -31,4 +34,19 @@
 	line-height: 1.4em;
 	padding-bottom: 25px;
 	text-rendering: optimizeLegibility;
+}
+
+.post-page {
+	padding: 0px !important;
+	border-bottom: none !important;
+}
+
+img { 
+	width: 100%;
+	margin-left: -2em; 
+} 
+
+.post-content figcaption {
+	margin-top: -25px;
+	padding-bottom: 25px;
 }
