@@ -2,3 +2,22 @@
 layout: main
 title: Projects
 ---
+
+{% for post in site.categories.projects %}
+  <div class="post-title-container post-list">
+  	
+  		<!-- Post Title and Date -->
+  		<div class="post-information">
+  			<div id="post-title"><h2><a href="{{ post.url }}">{{ post.title }}</a></h2></div>
+  			<div id="post-date">{{ post.date | date: "%b %d, %Y" }}</div>
+  		</div>
+
+  		<!-- Post Excerpt -->
+  		<div class="post-excerpt-container">
+  			<div class="post-excerpt-content">
+  				"<i>{{ post.excerpt }}</i>"
+  			</div>
+  		</div>
+
+  </div>
+{% endfor %}
