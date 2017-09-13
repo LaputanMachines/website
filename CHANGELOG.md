@@ -7,7 +7,7 @@ Focussed on article (post) styling and general administration updates.
 - Added support for an RSS feed generator (feed only generates when there are a nonzero number of posts on the site)
 - Added admin dashboard for local users (i.e. building locally) which allows you to create, edit, and publish posts in a WYSIWYG editor
 
-## v0.2.0 - Refactoring Backend
+## v0.2.1 - Refactoring Backend
 Cleans up backend code, file structures, and markup as well as refactored documentation.
 - Fleshed out readme file and added a WIKI for documentation
 - Cleaned up stylesheets and scripts
