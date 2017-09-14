@@ -17,6 +17,7 @@ destination:          _site
 
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
 
 jekyll_admin:
   hidden_links:
