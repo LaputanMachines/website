@@ -1,4 +1,4 @@
-#personal-email { text-align: right; }
+#rss-feed { text-align: right; }
 #version-number { text-align: center; }
 #copyright-information { text-align: left; }
 @media screen and (max-width: 500px) { #version-number { display: none; visibility: hidden; } }

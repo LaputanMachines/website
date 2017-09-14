@@ -31,7 +31,7 @@
 .contact-me-links {
 	display: grid;
 	padding-top: 25px;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr;
 }
 
 @media screen and (max-width: 500px) { 
