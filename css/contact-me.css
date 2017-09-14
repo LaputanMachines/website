@@ -35,10 +35,13 @@
 }
 
 @media screen and (max-width: 500px) { 
-	.contact-me-links { display: block; }
-	#contact-me-container { display: block; } 
+	.contact-me-links { display: block; } 
 	#profile-picture-container { margin-bottom: 25px; }
 	#contact-me-container #contact-me-content { padding-right: 0px; }
+	#contact-me-container { 
+		display: block; 
+		text-align: center;
+	}
 	#contact-me-container #profile-picture-container {
 		display: none;
 		visibility: hidden;
