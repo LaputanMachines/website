@@ -1,7 +1,6 @@
 .post-content p:last-child { padding-bottom: 0px; }
 .post-content p:first-child { text-indent: 0em; } 
 .post-excerpt-container { align-self: center; }
-.post-excerpt-container .post-excerpt-content { text-align: right; }
 .post-title-container > #post-title, #post-date { text-align: center; }
 .post-information > #post-title, .post-information > #post-date { text-align: left; }
 
@@ -16,6 +15,12 @@
 	padding-bottom: 0px;
 	border-bottom: none;
 }
+
+.post-excerpt-container .post-excerpt-content { 
+	text-align: right; 
+	margin-left: 25px;
+}
+
 
 .post-content {
 	margin: 0 auto;
