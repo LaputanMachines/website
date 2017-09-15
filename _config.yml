@@ -1,7 +1,7 @@
-markdown: kramdown
-baseurl: https://bassi.li
-exclude: ['README.md', vendor]
-version: 0.3.2
+markdown:             kramdown
+baseurl:              https://bassi.li
+exclude:              ['README.md', vendor]
+version:              0.3.2
 
 username:             FlatlanderWoman
 repo:                 FlatlanderWoman.github.io
@@ -9,6 +9,7 @@ branch:               master
 
 title:                Michael Bassili
 author:               Michael Bassili
+url:                  https://bassi.li
 description:          Michael Bassili pursues side projects, writes words about stuff, and drinks coffee while listening to music. He also likes video games, I think.
 
 source:               .
