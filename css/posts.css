@@ -55,3 +55,14 @@
 	margin-top: -25px;
 	padding-bottom: 25px;
 }
+
+@media screen and (max-width: 600px) {
+	.post-excerpt-container {
+		display: none;
+		visibility: hidden;
+	}
+
+	.post-title-container {
+		grid-template-columns: unset;
+	}
+}
