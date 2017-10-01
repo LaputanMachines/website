@@ -7,7 +7,7 @@ The source code and documentation for my personal website and blog. Personal pro
 
 ## Setup Instructions
 ### Installing Jekyll and Building Locally
-If Jekyll was successfully installed, a version number should've been printed out. Now that everything is correctly installed, you can run a local build of the site by executing the following into your BASH terminal:
+Run `setup.sh`. If Jekyll was successfully installed, a version number should've been printed out. Now that everything is correctly installed, you can run a local build of the site by executing the following into your BASH terminal:
 ```
 $ bundle exec jekyll serve --watch --baseurl ""
 ```
