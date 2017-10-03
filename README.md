@@ -9,7 +9,7 @@ The source code and documentation for my personal website and blog. Personal pro
 ### Installing Jekyll and Building Locally
 Run `setup.sh`. If Jekyll was successfully installed, a version number should've been printed out. Now that everything is correctly installed, you can run a local build of the site by executing the following into your BASH terminal:
 ```
-$ bundle exec jekyll serve --watch --baseurl ""
+$ ./build.sh
 ```
 This will build and run the site locally on port 4000 (i.e. `localhost:4000`). Visit said URL to view the site. **Note:** `bundle install/exec` will fail/crash when trying to bundle on Windows because of the nokogiri gem. 
 
