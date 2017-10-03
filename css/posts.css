@@ -23,6 +23,11 @@
 	text-align: right; 
 }
 
+.post-content ul {
+	padding-left: 25px;
+	padding-bottom: 25px;
+}
+
 #post-title h2 {
 	font-size: 1.25em;
 }
