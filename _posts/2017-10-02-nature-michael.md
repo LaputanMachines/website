@@ -4,6 +4,7 @@ layout: post
 excerpt: July, August, and September were dedicated to being outdoors. I work from
   the confines of an office for the most part, so I needed to stretch my legs.
 category: project
+permalink: /nature-michael/
 ---
 
 July, August, and September were dedicated to being outdoors. I work from the confines of an office for the most part, so I needed to stretch my legs. I bought a bike and decided to set some stretch goals:
