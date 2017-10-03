@@ -12,15 +12,25 @@
 }
 
 .post-list:last-child {
+	padding-top: 25px;
 	padding-bottom: 0px;
 	border-bottom: none;
 }
 
 .post-excerpt-container .post-excerpt-content { 
-	text-align: right; 
+	font-size: .95em;
 	margin-left: 25px;
+	text-align: right; 
 }
 
+#post-title h2 {
+	font-size: 1.25em;
+}
+
+.posts-heading-info {
+	padding-bottom: 25px;
+	border-bottom: 1px solid rgba(94, 69, 75, .25);
+}
 
 .post-content {
 	margin: 0 auto;
