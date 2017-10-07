@@ -11,7 +11,7 @@
 	border-bottom: 1px solid rgba(94, 69, 75, .25);
 }
 
-.post-list:last-child {
+.post-list {
 	padding-top: 25px;
 	padding-bottom: 0px;
 	border-bottom: none;
