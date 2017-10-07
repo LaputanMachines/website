@@ -3,7 +3,7 @@ title: 'Q3-2017: Nature Michael'
 layout: post
 excerpt: July, August, and September were dedicated to being outdoors. I work from
   the confines of an office for the most part, so I needed to stretch my legs.
-category: project
+category: article
 permalink: /nature-michael/
 ---
 
