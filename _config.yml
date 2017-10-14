@@ -1,5 +1,4 @@
 markdown:             kramdown
-baseurl:              https://bassi.li
 exclude:              ['README.md', vendor]
 version:              0.3.7
 
