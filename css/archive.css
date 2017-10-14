@@ -1,0 +1,19 @@
+.archive-title-container > #archive-title, #post-date { text-align: center; }
+.archive-information > #archive-title, .archive-information > #post-date { text-align: left; }
+#archive-post-date { text-align: right; }
+
+.archive-title-container {
+	display: grid;
+	padding: 25px 0px 0px 0px;
+	grid-template-columns: auto auto;
+}
+
+#archive-title h2 {
+	font-size: 1.25em;
+}
+
+@media screen and (max-width: 600px) {
+	.archive-title-container {
+		grid-template-columns: unset;
+	}
+}
