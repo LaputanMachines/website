@@ -1,6 +1,6 @@
 markdown:             kramdown
 exclude:              ['README.md', vendor]
-version:              0.3.7
+version:              0.3.8
 
 username:             FlatlanderWoman
 repo:                 FlatlanderWoman.github.io
