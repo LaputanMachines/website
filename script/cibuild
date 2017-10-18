@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 set -e
 
-bundle exec jekyll build
+bundle exec jekyll build --baseurl "https://bassi.li"
 bundle exec htmlproofer --only-4xx ./_site
