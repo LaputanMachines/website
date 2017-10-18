@@ -8,7 +8,7 @@ branch:               master
 
 title:                Michael Bassili
 author:               Michael Bassili
-baseurl:                  https://bassi.li
+url:                  https://bassi.li
 description:          Michael Bassili pursues side projects, writes words about stuff, and drinks coffee while listening to music. He also likes video games, I think.
 
 source:               .
