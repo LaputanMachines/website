@@ -1,5 +1,12 @@
 <!-- Footer Navigation -->
 		<div class="footer-navigation">
-			<div id="post-back"><a href="{{page.previous.url}}">{{page.previous.title}}</a></div>
-			<div id="next-post"><a href="{{page.next.url}}">{{page.next.title}}</a></div>
+			
+			{% assign previous_content = page.previous.content | strip_newlines %}
+			{% if previous_content != "" %}<div id="post-back">Previous Post:</div>
+			<div id="next-post"><a href="{{page.previous.url}}">{{page.previous.title}}</a></div>{% endif %}
+
+			{% assign next_content = page.next.content | strip_newlines %}
+			{% if next_content != "" %} <div id="post-back">Next Post:</div>
+			<div id="next-post"><a href="{{page.next.url}}">{{page.next.title}}</a></div>{% endif %}
+
 		</div>
