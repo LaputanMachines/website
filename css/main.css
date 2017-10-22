@@ -76,6 +76,12 @@ a:active {
 
 .code-block {
 	font-family: monospace;
+	background-color: moccasin;
+}
+
+code {
+	background-color: moccasin;
+	text-indent: 0px !important;
 }
 
 blockquote {
@@ -87,4 +93,8 @@ blockquote {
 .hidden {
 	display: none !important;
 	visibility: hidden;
+}
+
+li {
+	margin-bottom: .5em;
 }
