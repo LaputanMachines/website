@@ -18,6 +18,7 @@ destination:          _site
 
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
 
 jekyll_admin:
   hidden_links:
