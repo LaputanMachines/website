@@ -1,6 +1,6 @@
 markdown:             kramdown
 exclude:              ['README.md', vendor]
-version:              1.0.1
+version:              1.0.2
 
 paginate:             1
 
