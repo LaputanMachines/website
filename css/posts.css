@@ -42,11 +42,9 @@
 .post-content {
 	margin: 0 auto;
 	color: #5b4636;
-	max-width: 800px;
+	max-width: 600px;
 	margin-top: 25px;
-	padding-top: 25px;
 	font-family: 'Droid Serif', serif;
-	border-top: 1px solid rgba(94, 69, 75, .25);
 }
 
 .post-content p {
@@ -59,8 +57,8 @@
 }
 
 .post-page {
-	padding: 0px !important;
-	border-bottom: none !important;
+	padding-bottom: 25px;
+	border-bottom: 1px solid rgba(94, 69, 75, .25);
 }
 
 .post-content img { 
