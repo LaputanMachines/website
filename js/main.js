@@ -1,1 +1,1 @@
-var currentYear = document.write(new Date().getFullYear())
+var currentYear = document.write(new Date().getFullYear());
