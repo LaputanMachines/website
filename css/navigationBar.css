@@ -5,8 +5,8 @@
   top: 0;
   left: 0;
   z-index: 1;
+  width: 256px;
   height: 100vh;
-  max-width: 20%;
   overflow-x: hidden;
 
   background-color: #F3F5F6;
