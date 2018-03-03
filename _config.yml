@@ -11,7 +11,7 @@ branch:               master
 title:                Michael Bassili
 author:               Michael Bassili
 url:                  https://bassi.li
-description:          Michael Bassili pursues side projects, writes words about stuff, and drinks coffee while listening to music. He also likes video games, I think.
+description:          Michael Bassili is a remote programmer and side-project advocate.
 
 source:               .
 destination:          _site

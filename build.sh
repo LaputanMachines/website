@@ -1,2 +1,1 @@
-bundle install
-bundle exec jekyll serve --watch --baseurl ""
+bundle exec jekyll serve --watch --baseurl "" --incremental --port 5672
