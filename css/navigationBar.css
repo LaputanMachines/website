@@ -1,9 +1,20 @@
  @import url('https://fonts.googleapis.com/css?family=Megrim');
  @import url('https://fonts.googleapis.com/css?family=Roboto');
 
+.collapsedNavigationBar {
+  position: absolute;
+  overflow-y: hidden;
+  left: calc(-256px + 1em);
+}
+
+.expandedNavigationBar {
+  left: inherit;
+  overflow-y: auto;
+  position: inherit;
+}
+
 .navigationBar {
   top: 0;
-  left: 0;
   z-index: 1;
   width: 256px;
   height: 100vh;
@@ -11,6 +22,29 @@
 
   background-color: #F3F5F6;
   border-right: 1px solid #e5e5e5;
+}
+
+.navigationBar #collapseContainer {
+  margin: 0em 3em 0em 3em;
+  padding: 3em 1em 3em 1em;
+
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.navigationBar #collapseContainer button {
+  border: none;
+  background-color: inherit;
+
+  font-size: 1.5em;
+  font-weight: 300;
+  color: rgba(102, 102, 102, 1);
+  font-family: 'Megrim', cursive;
+}
+
+.navigationBar #collapseContainer button:hover {
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 .navigationBar #picture {
@@ -26,7 +60,7 @@
   text-align: center;
   margin-bottom: -1.25em;
 
-  font-size: 2.15em;
+  font-size: 2.2em;
   font-weight: 300;
   color: rgba(102, 102, 102, 1);
   font-family: 'Megrim', cursive;
@@ -45,7 +79,8 @@
   font-family: 'Roboto', sans-serif;
 }
 
-.navigationBar #pageLinks * a:link {
+.navigationBar #pageLinks * a:link,
+.navigationBar #pageLinks * a:visited {
   color: inherit;
   text-decoration: none;
 }
@@ -64,4 +99,22 @@
   font-weight: 100;
   color: rgba(102, 102, 102, 1);
   font-family: 'Roboto', sans-serif;
+}
+
+@media screen and (max-width: 500px) {
+  .navigationBar #picture {
+    padding-bottom: 1em;
+    margin: 3em 1em 0em 1em;
+    max-width: calc(100% - 2 * 1em);
+  }
+
+  .navigationBar #pageLinks,
+  .navigationBar #collapseContainer,
+  .navigationBar #footer {
+    padding: 1em 1em 1em 1em;
+  }
+
+  .navigationBar #name {
+    padding-top: .25em;
+  }
 }

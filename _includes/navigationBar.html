@@ -1,12 +1,15 @@
-<div class="navigationBar" id="navigationBar">
+<div class="navigationBar expandedNavigationBar" id="navigationBar">
   <h1 id="name">MICHAEL B</h1>
-  <img id="picture" src="{{site.baseurl}}/assets/personalPhoto.png" alt="Me looking into the camera.">
+  <img id="picture" src="{{site.baseurl}}/assets/personalPhoto.png" alt="Me, Looking at You.">
   <ul id="pageLinks">
     <li><a href="{{site.baseurl}}/about.html">About</a></li>
     <li><a href="{{site.baseurl}}/blog.html">Blog</a></li>
     <li><a href="{{site.baseurl}}/project.html">Projects</a></li>
     <li><a href="{{site.baseurl}}/contact.html">Contact</a></li>
   </ul>
+  <div id="collapseContainer">
+    <button type="button" onclick="collapseNavigationBar()" id="collapseButton">< <</button>
+  </div>
   <div id="footer">
     <span id="copyright">&#169; <script>document.write(new Date().getFullYear());</script> Michael Bassili</span>
   </div>
