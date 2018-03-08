@@ -34,10 +34,22 @@ function toggleNavigationBar() {
     swapClasses(collapseContainerEl, "collapsedNavigationButton", "expandedNavigationButton");
     swapClasses(titleBarEl, "collapsedTitleBar", "expandedTitleBar");
     updateText(collapseButtonEl, "<");
+    document.cookie = "navigationIsExpanded = true";
   } else {  // Collapses the navigation bar and navigation button
     swapClasses(navigationBarEl, "expandedNavigationBar", "collapsedNavigationBar");
     swapClasses(collapseContainerEl, "expandedNavigationButton", "collapsedNavigationButton");
     swapClasses(titleBarEl, "expandedTitleBar", "collapsedTitleBar");
     updateText(collapseButtonEl, ">");
+    document.cookie = "navigationIsExpanded = false";
    }
+}
+
+function fetchCookies() {
+  /**
+  * Fetches the cookies onload, and uses them to decide whether to expand/collapse
+  * the navigation bar.
+  */
+  var currentCookies = document.cookie;
+  // If navigationIsExpanded in currentCookies, then do nothing
+  // Else collapse the navigation bar on load
 }

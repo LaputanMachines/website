@@ -5,7 +5,7 @@
     <title>{{page.title}} // Michael Bassili</title>
     {% include header.html %}
   </head>
-  <body>
+  <body onload="fetchCookies()">
     {% include navigationBar.html %}
     <div class="main">
       {{content}}
