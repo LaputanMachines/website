@@ -1,5 +1,5 @@
 # Personal Website
-The source code and documentation for my personal website and blog. Personal projects, blog posts, thoughts, etc are all aggregated here. See the [Wiki](https://github.com/FlatlanderWoman/portfolio/wiki) for more information.
+The source code and documentation for my personal website and blog.
 
 ## Table of Contents
 * [Setup Instructions](#setup-instructions)
