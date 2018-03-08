@@ -6,13 +6,13 @@ The source code and documentation for my personal website and blog. Personal pro
   * [Installing Jekyll and Building Locally](#installing-jekyll-and-building-locally)
 
 ## Setup Instructions
-### Installing Jekyll and Building Locally
-Run `setup.sh`. If Jekyll was successfully installed, a version number should've been printed out. Now that everything is correctly installed, you can run a local build of the site by executing the following into your BASH terminal:
+### Building Site Locally
+If Jekyll is installed, you can serve the Jekyll site locally by typing the following into your BASH terminal:
 ```
-$ ./build.sh
+$ jekyll serve
 ```
-This will build and run the site locally on port 4000 (i.e. `localhost:4000`). Visit said URL to view the site. **Note:** `bundle install/exec` will fail/crash when trying to bundle on Windows because of the nokogiri gem. 
+This will build and run the site locally on port 4000 (i.e. `localhost:4000`). Visit said URL to view the site. **Note:** `bundle install/exec` will fail/crash when trying to bundle on Windows because of the nokogiri gem.
 
 ---
 
-[![Code Climate](https://codeclimate.com/github/FlatlanderWoman/portfolio.svg)](https://codeclimate.com/github/FlatlanderWoman/portfolio) [![Build Status](https://travis-ci.org/FlatlanderWoman/personalWebsite.svg?branch=master)](https://travis-ci.org/FlatlanderWoman/personalWebsite) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Repo Version](https://img.shields.io/badge/version-0.3.1-blue.svg)](https://img.shields.io/badge/version-0.3.1-blue.svg)
+[![Code Climate](https://codeclimate.com/github/FlatlanderWoman/portfolio.svg)](https://codeclimate.com/github/FlatlanderWoman/portfolio) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Repo Version](https://img.shields.io/badge/version-0.3.1-blue.svg)](https://img.shields.io/badge/version-0.3.1-blue.svg)
