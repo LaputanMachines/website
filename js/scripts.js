@@ -1,19 +1,43 @@
+function swapClasses(element, initialClass, finalClass) {
+  /**
+  * Swaps the classes of elements.
+  * @param {Element} element - Element whose classes we wish to swap.
+  * @param {string} initialClass - Initial class name of the element.
+  * @param {string} finalClass - Desired class name of the element.
+  */
+  element.classList.remove(initialClass);
+  element.classList.add(finalClass);
+}
+
+function updateText(element, newText) {
+  /**
+  * Updates an element's text value.
+  * @param {Element} element - Element whose text we wish to update.
+  * @param {string} newText - Text with which to update the element with.
+  */
+  element.innerHTML = newText;
+  element.textContent = newText;
+}
+
 function toggleNavigationBar() {
-  if (document.getElementById("navigationBar").classList.contains("collapsedNavigationBar")) {
-    // Expands the navigation bar division and navigation button
-    document.getElementById("navigationBar").classList.remove("collapsedNavigationBar");
-    document.getElementById("navigationBar").classList.add("expandedNavigationBar");
-    document.getElementById("collapseContainer").classList.remove("collapsedNavigationButton");
-    document.getElementById("collapseContainer").classList.add("expandedNavigationButton");
-    document.getElementById("collapseButton").innerHTML="<";  // Legacy
-    document.getElementById("collapseButton").textContent="<";
-  } else if (document.getElementById("navigationBar").classList.contains("expandedNavigationBar")) {
-    // Collapses the navigation bar and navigation button
-    document.getElementById("navigationBar").classList.remove("expandedNavigationBar");
-    document.getElementById("navigationBar").classList.add("collapsedNavigationBar");
-    document.getElementById("collapseContainer").classList.remove("expandedNavigationButton");
-    document.getElementById("collapseContainer").classList.add("collapsedNavigationButton");
-    document.getElementById("collapseButton").innerHTML=">";  // Legacy
-    document.getElementById("collapseButton").textContent=">";
+  /**
+  * Toggles the position of the navigation bar and main frame.
+  */
+  var titleBarEl = document.getElementById("titleBar");
+  var navigationBarEl = document.getElementById("navigationBar");
+  var collapseButtonEl = document.getElementById("collapseButton");
+  var collapseContainerEl = document.getElementById("collapseContainer");
+
+  var isNavigationBarcollapsed = navigationBarEl.classList.contains("collapsedNavigationBar");
+  if (isNavigationBarcollapsed) {  // Expands the navigation bar division and navigation button
+    swapClasses(navigationBarEl, "collapsedNavigationBar", "expandedNavigationBar");
+    swapClasses(collapseContainerEl, "collapsedNavigationButton", "expandedNavigationButton");
+    swapClasses(titleBarEl, "collapsedTitleBar", "expandedTitleBar");
+    updateText(collapseButtonEl, "<");
+  } else {  // Collapses the navigation bar and navigation button
+    swapClasses(navigationBarEl, "expandedNavigationBar", "collapsedNavigationBar");
+    swapClasses(collapseContainerEl, "expandedNavigationButton", "collapsedNavigationButton");
+    swapClasses(titleBarEl, "expandedTitleBar", "collapsedTitleBar");
+    updateText(collapseButtonEl, ">");
    }
 }

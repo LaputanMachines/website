@@ -1,0 +1,37 @@
+.collapsedTitleBar {
+  width: calc(100% - 1em - 1px);
+  left: calc(1em + 1px);
+}
+
+.expandedTitleBar {
+  left: calc(256px + 1px);
+  width: calc(100% - 256px - 1px);
+}
+
+.titleBar {
+  height: auto;
+  margin-bottom: 1em;
+
+  position: absolute;
+  background-color: #fcfcfc;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.titleBar #title {
+  color: #848484;
+  font-weight: 300;
+  font-size: 1.2em;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.titleBar #subTitleLinks {
+  margin-top: -.5em;
+
+  font-size: .9em;
+  color: #848484;
+  font-weight: 300;
+  word-spacing: 1em;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
