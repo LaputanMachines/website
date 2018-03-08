@@ -63,10 +63,8 @@
 }
 
 .navigationBar #picture {
-  margin: 3em 3em 0em 3em;
-  padding-bottom: 3em;
+  margin: 3em 3em 3em 3em;
   max-width: calc(100% - 2 * 3em);
-  border-bottom: 1px solid #e5e5e5;
 }
 
 .navigationBar #name {
@@ -90,6 +88,7 @@
   font-weight: 300;
   line-height: 2em;
   color: rgba(102, 102, 102, 1);
+  border-top: 1px solid #e5e5e5;
   border-bottom: 1px solid #e5e5e5;
   font-family: 'Roboto', sans-serif;
 }

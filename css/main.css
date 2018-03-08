@@ -2,3 +2,10 @@ body {
   display: flex;
   text-rendering: optimizeLegibility;
 }
+
+::selection {
+  background: #BDC3C7;
+}
+::-moz-selection {
+  background: #BDC3C7;
+}
