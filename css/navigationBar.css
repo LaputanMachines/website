@@ -13,6 +13,14 @@
   position: inherit;
 }
 
+.collapsedNavigationButton {
+  left: calc(1em + 1px);
+}
+
+.expandedNavigationButton {
+  left: 257px;
+}
+
 .navigationBar {
   top: 0;
   z-index: 1;
@@ -24,25 +32,32 @@
   border-right: 1px solid #e5e5e5;
 }
 
-.navigationBar #collapseContainer {
-  margin: 0em 3em 0em 3em;
-  padding: 3em 1em 3em 1em;
+#collapseContainer {
+  line-height: 30px;
+  background: #F3F5F6;
+  padding-right: .25em;
+  box-sizing: border-box;
+  vertical-align: middle;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
 
+  top: 50%;
+  position: absolute;
   text-align: center;
-  border-bottom: 1px solid #e5e5e5;
+  border: 1px solid #e5e5e5;
 }
 
-.navigationBar #collapseContainer button {
+#collapseContainer button {
   border: none;
   background-color: inherit;
 
-  font-size: 1.5em;
+  font-size: 1em;
   font-weight: 300;
   color: rgba(102, 102, 102, 1);
   font-family: 'Megrim', cursive;
 }
 
-.navigationBar #collapseContainer button:hover {
+#collapseContainer button:hover {
   cursor: pointer;
   text-decoration: underline;
 }
@@ -109,7 +124,6 @@
   }
 
   .navigationBar #pageLinks,
-  .navigationBar #collapseContainer,
   .navigationBar #footer {
     padding: 1em 1em 1em 1em;
   }
