@@ -1,3 +1,13 @@
+.collapsed {
+  width: calc(100% - 1em - 1px);
+  left: calc(1em + 1px);
+}
+
+.expanded {
+  left: calc(256px + 1px);
+  width: calc(100% - 256px - 1px);
+}
+
 body {
   display: flex;
   text-rendering: optimizeLegibility;
@@ -11,7 +21,6 @@ body {
 }
 
 .main {
-  width: 100%;
   position: absolute;
 }
 

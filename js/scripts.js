@@ -23,7 +23,7 @@ function toggleNavigationBar() {
   /**
   * Toggles the position of the navigation bar and main frame.
   */
-  var titleBarEl = document.getElementById("titleBar");
+  var mainEl = document.getElementById("main");
   var navigationBarEl = document.getElementById("navigationBar");
   var collapseButtonEl = document.getElementById("collapseButton");
   var collapseContainerEl = document.getElementById("collapseContainer");
@@ -32,12 +32,14 @@ function toggleNavigationBar() {
   if (isNavigationBarcollapsed) {  // Expands the navigation bar division and navigation button
     swapClasses(navigationBarEl, "collapsedNavigationBar", "expandedNavigationBar");
     swapClasses(collapseContainerEl, "collapsedNavigationButton", "expandedNavigationButton");
-    swapClasses(titleBarEl, "collapsedTitleBar", "expandedTitleBar");
+    swapClasses(mainEl, "collapsed", "expanded");
     updateText(collapseButtonEl, "<");
+    document.cookie = "navigationIsExpanded = true";
   } else {  // Collapses the navigation bar and navigation button
     swapClasses(navigationBarEl, "expandedNavigationBar", "collapsedNavigationBar");
     swapClasses(collapseContainerEl, "expandedNavigationButton", "collapsedNavigationButton");
-    swapClasses(titleBarEl, "expandedTitleBar", "collapsedTitleBar");
+    swapClasses(mainEl, "expanded", "collapsed");
     updateText(collapseButtonEl, ">");
+    document.cookie = "navigationIsExpanded = false";
    }
 }

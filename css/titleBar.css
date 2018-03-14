@@ -1,18 +1,7 @@
-.collapsedTitleBar {
-  width: calc(100% - 1em - 1px);
-  left: calc(1em + 1px);
-}
-
-.expandedTitleBar {
-  left: calc(256px + 1px);
-  width: calc(100% - 256px - 1px);
-}
-
 .titleBar {
   height: auto;
   margin-bottom: 1em;
 
-  position: absolute;
   background-color: #fcfcfc;
   border-bottom: 1px solid #e5e5e5;
 }
