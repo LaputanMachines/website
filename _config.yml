@@ -2,8 +2,6 @@ markdown:             kramdown
 exclude:              ['README.md', vendor]
 version:              1.0.2
 
-paginate:             1
-
 username:             FlatlanderWoman
 repo:                 FlatlanderWoman.github.io
 branch:               master
@@ -11,7 +9,7 @@ branch:               master
 title:                Michael Bassili
 author:               Michael Bassili
 url:                  https://bassi.li
-description:          Michael Bassili is a remote programmer and side-project advocate.
+description:          TODO
 
 source:               .
 destination:          _site
@@ -19,6 +17,7 @@ destination:          _site
 plugins:
   - jekyll-feed
   - jekyll-sitemap
+  - jekyll-paginate
 
 jekyll_admin:
   hidden_links:

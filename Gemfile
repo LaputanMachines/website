@@ -8,5 +8,6 @@ gem 'rake'
 gem 'jekyll'
 gem 'jekyll-feed'
 gem 'jekyll-sitemap'
+gem 'jekyll-paginate'
 gem 'coveralls', require: false
 gem 'kramdown', versions['kramdown']
