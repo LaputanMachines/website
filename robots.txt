@@ -1,4 +1,3 @@
 User-agent: *
-Disallow:
 Disallow: /cgi-bin/
 Sitemap: http://bassi.li/sitemap.xml
