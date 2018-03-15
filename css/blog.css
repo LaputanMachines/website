@@ -30,3 +30,10 @@
 #backLink {
   word-spacing: normal;
 }
+
+blockquote {
+  margin-left: 0;
+  padding-left: 2em;
+  color: #999;
+  border-left: 1px solid #e5e5e5;
+}
