@@ -9,7 +9,7 @@ branch:               master
 title:                Michael Bassili
 author:               Michael Bassili
 url:                  https://bassi.li
-description:          TODO
+description:          Michael Bassili is a programmer and a side-project advocate.
 
 source:               .
 destination:          _site
