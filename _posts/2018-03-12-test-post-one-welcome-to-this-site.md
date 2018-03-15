@@ -1,5 +1,5 @@
 ---
-layout: main
+layout: post
 title: Test Post One Isn't This Neat
 ---
 

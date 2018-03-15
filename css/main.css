@@ -34,3 +34,28 @@ body {
   color: inherit;
   text-decoration: underline;
 }
+
+.mainBody {
+  margin: 0 auto;
+  max-width: 800px;
+
+  color: #777;
+  line-height: 1.5em;
+  font-family: 'Roboto', sans-serif;
+}
+
+.mainBody .mainBodyHeading {
+  padding-top: 1em;
+  border-top: 1px solid #e5e5e5;
+
+  color: #666;
+  text-align: center;
+}
+
+.headingLarge {
+  font-size: 1.25em;
+}
+
+.mainBody .mainBodyCentered {
+  text-align: center;
+}

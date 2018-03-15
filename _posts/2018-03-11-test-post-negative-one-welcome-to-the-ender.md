@@ -1,5 +1,5 @@
 ---
-layout: main
+layout: post
 title: Test Post Negative One Woa This Rocks
 ---
 
