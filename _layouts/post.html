@@ -1,58 +1,20 @@
 <!DOCTYPE html>
-
 <html>
-	
-	<head>
-
-		<!-- Req. Markup -->
-		<title>{{page.title}} | Blog | Michael Bassili</title>
-		
-		{% include meta.html %}
-
-		{% include open-graph-meta.html %}
-
-	    {% include stylesheets.html %}
-		
-		{% feed_meta %}
-		
-	</head>
-	
-	<body>
-	
-		{% include header.html %}
-
-		<!-- Main Content -->
-		<div class="main-content">
-			
-			<!-- Post Title and Date -->
-			<div class="post-title-container post-page">
-
-				<!-- Post Title -->
-				<div class="post-information">
-					<div id="post-title"><h2>{{ page.title }}</h2></div>
-					<div id="post-date">{{ page.date | date: "%b %d, %Y" }}</div>
-				</div>
-
-				<!-- Post Excerpt -->
-		  		<div class="post-excerpt-container">
-		  			<div class="post-excerpt-content">
-		  				"<i>{{ page.excerpt }}</i>"
-		  			</div>
-		  		</div>
-
-			</div>
-
-			<!-- Post Content -->
-			<div class="post-content">
-				{{content}}
-			</div>
-			
-		</div>
-
-		{% include footer-navigation.html %}
-
-		{% include footer.html %}
-
-	</body>
-
+  <head>
+    <meta charset="utf-8">
+    <title>{{page.title}} // Michael Bassili</title>
+    {% include header.html %}
+  </head>
+  <body onload="fetchCookies()">
+    {% include navigationBar.html %}
+    <div class="main expanded" id="main">
+      <div class="titleBar expandedTitleBar" id="titleBar">
+        <h1 id="title">{{page.title}}</h1>
+        <h2 id="subTitleLinks"><a id="backLink" href="{{site.url}}/blog.html">Back to Blog Page</a></h2>
+      </div>
+      <div class="postContent">
+        {{content}}
+      </div>
+    </div>
+  </body>
 </html>

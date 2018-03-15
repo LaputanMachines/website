@@ -1,0 +1,39 @@
+.posts {
+  margin: 0 auto;
+  max-width: 800px;
+
+  font-size: 1em;
+  font-family: 'Roboto', sans-serif;
+}
+
+#postDate {
+  color: #999;
+  font-size: .9em;
+  font-weight: lighter;
+}
+
+#postTitle {
+  color: #888;
+  margin-left: 1.5em;
+  font-weight: lighter;
+}
+
+.postContent {
+  margin: 0 auto;
+  max-width: 800px;
+
+  color: #777;
+  line-height: 1.5em;
+  font-family: 'Roboto', sans-serif;
+}
+
+#backLink {
+  word-spacing: normal;
+}
+
+blockquote {
+  margin-left: 0;
+  padding-left: 2em;
+  color: #999;
+  border-left: 1px solid #e5e5e5;
+}

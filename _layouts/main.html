@@ -1,35 +1,14 @@
 <!DOCTYPE html>
-
 <html>
-	
-	<head>
-
-		<!-- Req. Markup -->
-		<title>{{page.title}} | Michael Bassili</title>
-		
-		{% include meta.html %}
-
-		{% include open-graph-meta.html %}
-
-	    {% include stylesheets.html %}
-		
-		{% feed_meta %}
-		
-	</head>
-	
-	<body>
-	
-		{% include header.html %}
-
-		<!-- Main Content -->
-		<div class="main-content">
-			
-			{{content}}
-			
-		</div>
-
-		{% include footer.html %}
-
-	</body>
-
+  <head>
+    <meta charset="utf-8">
+    <title>{{page.title}} // Michael Bassili</title>
+    {% include header.html %}
+  </head>
+  <body onload="fetchCookies()">
+    {% include navigationBar.html %}
+    <div class="main expanded" id="main">
+      {{content}}
+    </div>
+  </body>
 </html>

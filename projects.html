@@ -3,26 +3,10 @@ layout: main
 title: Projects
 ---
 
-<!-- Page Intro -->
-            <div class="posts-heading-info">
-              <p>The meat and potatoes of this website. These posts document all my personal projects, ranging from websites to written work.</p> 
-            </div>
+<div class="titleBar expandedTitleBar" id="titleBar">
+  <h1 id="title">{{page.title}}</h1>
+</div>
 
-{% for post in site.categories.project %}
-  <div class="post-title-container post-list">
-  	
-  		<!-- Post Title and Date -->
-  		<div class="post-information">
-  			<div id="post-title"><h2><a href="{{ post.url }}">{{ post.title }}</a></h2></div>
-  			<div id="post-date">{{ post.date | date: "%b %d, %Y" }}</div>
-  		</div>
-
-  		<!-- Post Excerpt -->
-  		<div class="post-excerpt-container">
-  			<div class="post-excerpt-content">
-  				"<i>{{ post.excerpt }}</i>"
-  			</div>
-  		</div>
-
-  </div>
-{% endfor %}
+<div class="mainBody">
+  
+</div>

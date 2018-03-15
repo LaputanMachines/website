@@ -1,0 +1,25 @@
+.titleBar {
+  height: auto;
+  margin-bottom: 1em;
+
+  background-color: #fcfcfc;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.titleBar #title {
+  color: #848484;
+  font-weight: 300;
+  font-size: 1.2em;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.titleBar #subTitleLinks {
+  margin-top: -.5em;
+
+  font-size: .9em;
+  color: #848484;
+  font-weight: 300;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
