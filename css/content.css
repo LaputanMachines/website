@@ -38,6 +38,8 @@ body {
 .mainBody {
   margin: 0 auto;
   max-width: 800px;
+  padding-left: 1em;
+  padding-right: 1em;
 
   color: #777;
   line-height: 1.5em;

@@ -105,10 +105,14 @@
 }
 
 @media screen and (max-width: 500px) {
+  .navigationBar {
+    max-width: 175px;
+  }
+
   .navigationBar #picture {
     padding-bottom: 1em;
-    margin: 3em 3em 0em 3em;
-    max-width: calc(100% - 2 * 3em);
+    margin: 3em 1em 0em 1em;
+    max-width: calc(100% - 2 * 1em);
   }
 
   .navigationBar #pageLinks,
@@ -117,6 +121,25 @@
   }
 
   .navigationBar #name {
+    font-size: 2em;
     padding-top: .25em;
+  }
+
+  .expanded,
+  .collapsed {
+    left: 0;
+    width: 100%;
+  }
+
+  .navigationBar #pageLinks {
+    margin: 0em 1em 0em 1em;
+  }
+
+  .expandedNavigationButton {
+    left: 176px;
+  }
+
+  .collapsedNavigationButton {
+    left: 0;
   }
 }
