@@ -2,9 +2,9 @@
   <h1 id="name">MICHAEL B</h1>
   <img id="picture" src="{{site.baseurl}}/assets/personalPhoto.png" alt="Me, Looking at You.">
   <ul id="pageLinks">
-    <li><a href="{{site.baseurl}}/about">About</a></li>
-    <li><a href="{{site.baseurl}}/index">Blog</a></li>
-    <li><a href="{{site.baseurl}}/projects">Projects</a></li>
+    <li><a href="{{site.baseurl}}/about" class={% if page.url == '/about.html' %}"current"{% endif %}>About</a></li>
+    <li><a href="{{site.baseurl}}/index" class={% if page.url == '/' %}"current"{% endif %}>Blog</a></li>
+    <li><a href="{{site.baseurl}}/projects" class={% if page.url == '/projects.html' %}"current"{% endif %}>Projects</a></li>
   </ul>
   <div id="footer">
     <span id="copyright">&#169; <script>document.write(new Date().getFullYear());</script> Michael Bassili</span>
