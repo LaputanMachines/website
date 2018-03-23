@@ -4,6 +4,10 @@
   left: calc(-256px + 1em);
 }
 
+.current {
+  text-decoration: underline !important;
+}
+
 .expandedNavigationBar {
   left: inherit;
   overflow-y: auto;
