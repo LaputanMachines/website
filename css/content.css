@@ -42,6 +42,7 @@ body {
   padding-right: 3em;
 
   color: #777;
+  font-size: .95em;
   line-height: 1.5em;
   font-family: 'Roboto', sans-serif;
 }
@@ -59,5 +60,22 @@ body {
 }
 
 .mainBody .mainBodyCentered {
+  text-align: center;
+}
+
+#aboutBody #aboutPhoto {
+  margin: 0 auto;
+  display: block;
+  width: calc(90% - 2em);
+
+  padding: 1em;
+  background-color: #fcfcfc;
+  box-shadow: 1px 1px 3px rgba(0,0,0,.15);
+}
+
+figcaption {
+  font-size: .9em;
+  font-style: italic;
+
   text-align: center;
 }
