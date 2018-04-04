@@ -66,7 +66,7 @@ body {
 #aboutBody #aboutPhoto {
   margin: 0 auto;
   display: block;
-  width: calc(90% - 2em);
+  width: 100%;
 
   padding: 1em;
   background-color: #fcfcfc;
