@@ -27,21 +27,37 @@ function toggleNavigationBar() {
   var navigationBarEl = document.getElementById("navigationBar");
   var collapseButtonEl = document.getElementById("collapseButton");
   var collapseContainerEl = document.getElementById("collapseContainer");
-
   var isNavigationBarcollapsed = navigationBarEl.classList.contains("collapsedNavigationBar");
-  if (isNavigationBarcollapsed) {  // Expands the navigation bar division and navigation button
-    swapClasses(navigationBarEl, "collapsedNavigationBar", "expandedNavigationBar");
-    swapClasses(collapseContainerEl, "collapsedNavigationButton", "expandedNavigationButton");
-    swapClasses(mainEl, "collapsed", "expanded");
-    updateText(collapseButtonEl, "<");
-    document.cookie = "navigationIsExpanded = true";
-  } else {  // Collapses the navigation bar and navigation button
-    swapClasses(navigationBarEl, "expandedNavigationBar", "collapsedNavigationBar");
-    swapClasses(collapseContainerEl, "expandedNavigationButton", "collapsedNavigationButton");
-    swapClasses(mainEl, "expanded", "collapsed");
-    updateText(collapseButtonEl, ">");
-    document.cookie = "navigationIsExpanded = false";
+
+  var originalNavigationBarState, desiredNavigationBarState, originalNavigationButtonState,
+  desiredNavigationButtonState, originalBodyState, desiredBodyState, desiredTextValue,
+  navigationCookieValue;
+
+  if (isNavigationBarcollapsed) {
+    originalNavigationBarState = "collapsedNavigationBar";
+    desiredNavigationBarState = "expandedNavigationBar";
+    originalNavigationButtonState = "collapsedNavigationButton";
+    desiredNavigationButtonState = "expandedNavigationButton";
+    originalBodyState = "collapsed";
+    desiredBodyState = "expanded";
+    desiredTextValue = "<";
+    navigationCookieValue = "true";
+  } else {
+    originalNavigationBarState = "expandedNavigationBar";
+    desiredNavigationBarState = "collapsedNavigationBar";
+    originalNavigationButtonState = "expandedNavigationButton";
+    desiredNavigationButtonState = "collapsedNavigationButton";
+    originalBodyState = "expanded";
+    desiredBodyState = "collapsed";
+    desiredTextValue = ">";
+    navigationCookieValue = "false";
    }
+
+   swapClasses(navigationBarEl, originalNavigationBarState, desiredNavigationBarState);
+   swapClasses(collapseContainerEl, originalNavigationButtonState, desiredNavigationButtonState);
+   swapClasses(mainEl, originalBodyState, desiredBodyState);
+   updateText(collapseButtonEl, desiredTextValue);
+   document.cookie = "navigationIsExpanded = ".concat(navigationCookieValue);
 }
 
 function fetchCookies() {
