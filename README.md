@@ -15,5 +15,5 @@ This will build and run the site locally on port 4000 (i.e. `localhost:4000`). V
 
 ---
 
-[![Code Climate](https://codeclimate.com/github/FlatlanderWoman/portfolio.svg)](https://codeclimate.com/github/FlatlanderWoman/portfolio) [![License: MIT](https://img.shields.io/github/license/mashape/apistatus.svg)](https://opensource.org/licenses/MIT) [![Repo Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://img.shields.io/badge/version-1.0.0-blue.svg)
+[![Code Climate](https://img.shields.io/codeclimate/maintainability/angular/angular.js.svg)](https://codeclimate.com/github/FlatlanderWoman/portfolio) [![License: MIT](https://img.shields.io/github/license/mashape/apistatus.svg)](https://opensource.org/licenses/MIT) [![Repo Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://img.shields.io/badge/version-1.0.0-blue.svg)
 [![GitHub issues](https://img.shields.io/github/issues/badges/shields.svg)](https://github.com/FlatlanderWoman/personalWebsite/issues)
