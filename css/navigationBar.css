@@ -1,40 +1,22 @@
+/*
+Navigation Bar
+*/
+
+
+/*Contextuals*/
 .collapsedNavigationBar {
   position: absolute;
   overflow-y: hidden;
   left: calc(-256px + 1em);
 }
-
-.current {
-  text-decoration: underline !important;
-}
-
 .expandedNavigationBar {
   left: inherit;
   overflow-y: auto;
   position: inherit;
 }
-
-.collapsedNavigationButton {
-  left: calc(1em + 1px);
-}
-
-.expandedNavigationButton {
-  left: 257px;
-}
-
-.navigationBar {
-  top: 0;
-  z-index: 1;
-  width: 256px;
-  height: 100vh;
-  position: fixed;
-  overflow-x: hidden;
-
-  background-color: #F3F5F6;
-  border-right: 1px solid #e5e5e5;
-  border-bottom: 1px solid #e5e5e5;
-}
-
+.collapsedNavigationButton { left: 0px; }
+.expandedNavigationButton { left: 201px; }
+.current { text-decoration: underline !important; }
 #collapseContainer {
   line-height: 30px;
   background: #F3F5F6;
@@ -50,7 +32,6 @@
   text-align: center;
   border: 1px solid #e5e5e5;
 }
-
 #collapseContainer button {
   border: none;
   background-color: inherit;
@@ -60,91 +41,92 @@
   color: rgba(102, 102, 102, 1);
   font-family: 'Megrim', cursive;
 }
-
 #collapseContainer button:hover {
   cursor: pointer;
   text-decoration: underline;
 }
 
-.navigationBar #picture {
-  margin: 3em 3em 3em 3em;
-  max-width: calc(100% - 2 * 3em);
+/*Navigation Bar Container*/
+.navigationBar {
+  top: 0;
+  z-index: 1;
+  width: 200px;
+  height: 100vh;
+  position: fixed;
+  overflow-x: hidden;
+
+  background-color: #F3F5F6;
+  border-right: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
 }
 
+/*Navigation Bar Content*/
+.navigationBar #picture {
+  margin: 3em 2em 3em 2em;
+  max-width: calc(100% - 2 * 2em);
+}
 .navigationBar #name {
   margin: 0 auto;
   padding-top: 1em;
   text-align: center;
   margin-bottom: -1.25em;
 
-  font-size: 2.2em;
+  font-size: 1.85em;
   font-weight: 300;
   color: rgba(102, 102, 102, 1);
   font-family: 'Megrim', cursive;
 }
-
 .navigationBar #pageLinks {
   list-style: none;
   text-align: center;
-  margin: 0em 3em 0em 3em;
+  margin: 0em 2em 0em 2em;
   padding: 3em 0em 3em 0em;
 
   font-weight: 300;
   line-height: 2em;
+  font-size: .9em;
   color: rgba(102, 102, 102, 1);
   border-top: 1px solid #e5e5e5;
   border-bottom: 1px solid #e5e5e5;
   font-family: 'Roboto', sans-serif;
 }
 
+/*Navigation Bar Footer*/
 .navigationBar #footer {
   max-width: 100%;
   text-align: center;
   padding: 3em 0 1em 0;
 
-  font-size: .8em;
+  font-size: .75em;
   font-weight: 100;
   color: rgba(102, 102, 102, 1);
   font-family: 'Roboto', sans-serif;
 }
 
+/*Mobile Contextuals*/
 @media screen and (max-width: 500px) {
+  .navigationBar #pageLinks { margin: 0em 1em 0em 1em; }
+  .expandedNavigationButton { left: 151px; }
+  .collapsedNavigationButton { left: 0; }
   .navigationBar {
-    max-width: 175px;
+    max-width: 150px;
     box-shadow: 1px 0px 10px 0px rgba(0,0,0,0.1);
   }
-
   .navigationBar #picture {
     padding-bottom: 1em;
-    margin: 3em 1em 0em 1em;
+    margin: 2em 1em 0em 1em;
     max-width: calc(100% - 2 * 1em);
   }
-
   .navigationBar #pageLinks,
   .navigationBar #footer {
     padding: 1em 1em 1em 1em;
   }
-
   .navigationBar #name {
-    font-size: 2em;
+    font-size: 1.6em;
     padding-top: .25em;
   }
-
-  .expanded,
-  .collapsed {
+  .expanded, .collapsed {
     left: 0;
     width: 100%;
-  }
-
-  .navigationBar #pageLinks {
-    margin: 0em 1em 0em 1em;
-  }
-
-  .expandedNavigationButton {
-    left: 176px;
-  }
-
-  .collapsedNavigationButton {
-    left: 0;
   }
 }

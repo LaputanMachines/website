@@ -1,3 +1,8 @@
+/*
+Blog Posts
+*/
+
+
 .posts {
   margin: 0 auto;
   max-width: 800px;
@@ -6,18 +11,19 @@
   font-family: 'Roboto', sans-serif;
 }
 
+/*Post Information*/
 #postDate {
   color: #999;
   font-size: .9em;
   font-weight: lighter;
 }
-
 #postTitle {
   color: #888;
   margin-left: 1.5em;
   font-weight: lighter;
 }
 
+/*Post Content*/
 .postContent {
   margin: 0 auto;
   max-width: 800px;
@@ -27,13 +33,14 @@
   font-family: 'Roboto', sans-serif;
 }
 
-#backLink {
-  word-spacing: normal;
-}
-
 blockquote {
   margin-left: 0;
   padding-left: 2em;
   color: #999;
   border-left: 1px solid #e5e5e5;
+}
+
+/*Miscellaneous*/
+#backLink {
+  word-spacing: normal;
 }
