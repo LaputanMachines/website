@@ -23,6 +23,10 @@ body {
 ::-webkit-scrollbar-thumb:hover {
     background: rgba(102, 102, 102, .75);
 }
+hr {
+  border-top: #777 dotted 1px;
+  border-bottom: 0px;
+}
 
 /*Contextuals*/
 .collapsed {
@@ -95,4 +99,8 @@ figcaption {
   font-size: .9em;
   text-align: center;
   font-style: italic;
+}
+.about #workExperience {
+  margin-top: -.5em;
+  padding-top: 0px;
 }
