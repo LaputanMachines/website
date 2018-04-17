@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>{{page.title}} // Michael Bassili</title>
+    <title>{{page.title}} | Blog | Michael Bassili</title>
     {% include header.html %}
   </head>
   <body onload="fetchCookies()">
@@ -10,10 +10,9 @@
     <div class="main expanded" id="main">
       <div class="titleBar expandedTitleBar" id="titleBar">
         <h1 id="title">{{page.title}}</h1>
-        <h2 id="subTitleLinks"><a id="backLink" href="{{site.url}}/blog.html">Back to Blog Page</a></h2>
       </div>
       <div class="postContent">
-        {{content}}
+        {{page.content}}
       </div>
     </div>
   </body>

@@ -47,10 +47,18 @@ hr {
 * a:hover {
   color: inherit;
 }
-.mainBody a {
+.mainBody a,
+.postLinkContent,
+#rssLink,
+.postContent p a,
+.postContent ul li a {
     border-bottom: dotted #777 1px;
 }
-.mainBody a:hover {
+.mainBody a:hover,
+.postLinkContent:hover,
+#rssLink:hover,
+.postContent p a:hover,
+.postContent ul li a:hover {
     border-bottom: solid #777 1px;
 }
 
@@ -100,7 +108,8 @@ figcaption {
   text-align: center;
   font-style: italic;
 }
-.about #workExperience {
+.about #workExperience,
+ul {
   margin-top: -.5em;
   padding-top: 0px;
 }
