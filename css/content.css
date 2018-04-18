@@ -69,8 +69,8 @@ hr {
 .mainBody {
   margin: 0 auto;
   max-width: 800px;
-  padding-left: 3em;
-  padding-right: 3em;
+  padding-left: 2.5em;
+  padding-right: 2.5em;
 
   color: #777;
   font-size: .95em;
@@ -112,4 +112,15 @@ figcaption {
 ul {
   margin-top: -.5em;
   padding-top: 0px;
+}
+.about #workDetails {
+  padding-top: 1em;
+}
+
+/*Mobile*/
+@media screen and (max-width:500px) {
+  #aboutBody #aboutPhoto {
+    width: 100%;
+    padding: 0em;
+  }
 }

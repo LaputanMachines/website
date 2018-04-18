@@ -3,9 +3,11 @@ Blog Posts
 */
 
 
+/*Containers*/
 .posts {
   margin: 0 auto;
   max-width: 800px;
+  padding: 0 2.5em 0 2.5em;
 
   font-size: 1em;
   font-family: 'Roboto', sans-serif;
@@ -22,19 +24,37 @@ Blog Posts
   margin-left: 1.5em;
   font-weight: lighter;
 }
+#postInformation {
+  font-size: 1em;
+}
+#markdown-toc {
+  color: #999;
+  float: right;
+  margin-top: 0em;
+  max-width: 400px;
+  margin-bottom: 0em;
+  line-height: 1.5em;
+}
+#markdown-toc ul {
+  padding-top: .5em;
+}
 
 /*Post Content*/
 .postContent {
   margin: 0 auto;
   max-width: 800px;
+  padding: 0 2.5em 0 2.5em;
 
   color: #777;
   line-height: 1.5em;
   font-family: 'Roboto', sans-serif;
 }
-.postContent h3 {
+.postContent h3,
+.postContent h4 {
+  font-size: 1.15em;
   text-align: center;
 }
+.postContent h4 { font-size: 1em;}
 .postContent blockquote + p {
   text-indent: 0em;
 }
@@ -57,4 +77,20 @@ blockquote {
 /*Miscellaneous*/
 #backLink {
   word-spacing: normal;
+}
+
+/*Mobile*/
+@media screen and (max-width: 500px) {
+  #postDate,
+  #markdown-toc {
+    display: none;
+    visibility: hidden;
+  }
+  #postTitle {
+    margin-left: 0;
+  }
+  .postContent p > img {
+    padding: 0em;
+    width: 100%;
+  }
 }
