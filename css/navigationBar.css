@@ -105,6 +105,10 @@ Navigation Bar
 
 /*Mobile Contextuals*/
 @media screen and (max-width: 500px) {
+  #collapseContainer { 
+    display: none;
+    visibility: hidden;
+  }
   .navigationBar #pageLinks { margin: 0em 1em 0em 1em; }
   .expandedNavigationButton { left: 151px; }
   .collapsedNavigationButton { left: 0; }
