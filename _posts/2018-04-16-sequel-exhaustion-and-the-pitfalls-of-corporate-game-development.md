@@ -4,9 +4,6 @@ author: Michael Bassili
 layout: post
 ---
 
-* TOC Table of Contents
-{:toc}
-
 ### Part I: Timelessness and Corporate Game Design
 
 > Games shouldn't only be fun. They should teach or spark an interest in other things.
