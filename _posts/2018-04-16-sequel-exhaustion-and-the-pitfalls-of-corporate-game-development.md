@@ -50,7 +50,7 @@ In order for more developers to take risks in game development, it's important t
 
 ![High-resolution screencap of the new Star Wars Battefront 2 ([Source](https://cdni.rt.com/files/2016.11/article/58194adcc46188f21e8b456f.jpg))]({{ "/assets/sequel_exhaustion/star_wars_battlefront_screenshot.jpg" }})
 
-<figcaption>Fig.3 High-resolution screencap of Battefront 2 (2017) Source(https://www.rt.com/usa/365039-resort-worlds-casino-slot/)</figcaption>
+<figcaption>Fig.3 High-resolution screencap of Battefront 2 (2017) (https://www.rt.com/usa/365039-resort-worlds-casino-slot/)</figcaption>
 
 #### Final Thoughts and Considerations
 
