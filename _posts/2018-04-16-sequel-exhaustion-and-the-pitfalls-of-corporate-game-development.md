@@ -3,6 +3,7 @@ title: Sequel Exhaustion & The Pitfalls of Corporate Game Development
 author: Michael Bassili
 layout: post
 tags: Video Games
+category: Blog
 ---
 
 ### Part I: Timelessness and Corporate Game Design

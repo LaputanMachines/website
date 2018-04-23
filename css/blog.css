@@ -48,6 +48,7 @@ Blog Posts
 /*Tags*/
 .VideoGames { background-color: #6C7A89; }
 .Programming { background-color: #BDC3C7; }
+.Writing { background-color: #ABB7B7; }
 
 /*Post Content*/
 .postContent {
@@ -102,5 +103,13 @@ blockquote {
   .postContent p > img {
     padding: 0em;
     width: 100%;
+  }
+}
+
+/*Mobile*/
+@media screen and (max-width: 1200px) {
+  #postTags {
+    display: none;
+    visibility: hidden;
   }
 }
