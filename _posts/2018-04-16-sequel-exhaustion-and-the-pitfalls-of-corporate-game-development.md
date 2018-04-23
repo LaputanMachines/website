@@ -2,6 +2,7 @@
 title: Sequel Exhaustion & The Pitfalls of Corporate Game Development
 author: Michael Bassili
 layout: post
+tags: Video Games
 ---
 
 ### Part I: Timelessness and Corporate Game Design
@@ -12,7 +13,7 @@ It was about the same time as I was watching the Far Cry 5 teaser that I realize
 
 This was Far Cry, not Far Cry 5; this game was the newest Far Cry game in the same way Madden NFL 18 was the newest Madden NFL game.
 
-And, there's nothing wrong with that. Annual-ish franchise sequels come out all the time, and whatever market there is for annual-ish franchise sequels go out and buy this stuff. My issue here is that I am looking forward to playing less games every year, because some company or another keeps absorbing the franchises/companies/developers I like, suffocating them in their capitalist fold, ripe for milking. We saw this with [Maxis](https://www.nytimes.com/1997/06/05/business/electronic-arts-will-buy-maxis-in-swap.html), and we saw the release of SimCity, [a pile of hot garbage](http://www.metacritic.com/game/pc/simcity) boasting less content than its ten year old sibling--it was also one of those stupid Always Online games we'll never get to play in ten years' time since their servers will eventually be re purposed for the next pile of hot garbage. More recently, we saw [Konami cancelling Silent Hills](https://www.polygon.com/2015/4/27/8503201/silent-hills-canceled-konami-confirms), [canning Kojima](https://www.polygon.com/2015/12/16/10220356/hideo-kojima-konami-explainer-metal-gear-solid-silent-hills), and releasing Metal Gear Survive, [another pile of hot garbage](http://www.metacritic.com/game/playstation-4/metal-gear-survive). At this rate, new, creative and quality IPs are being created slower than the ones I like are being canceled. 
+And, there's nothing wrong with that. Annual-ish franchise sequels come out all the time, and whatever market there is for annual-ish franchise sequels go out and buy this stuff. My issue here is that I am looking forward to playing less games every year, because some company or another keeps absorbing the franchises/companies/developers I like, suffocating them in their capitalist fold, ripe for milking. We saw this with [Maxis](https://www.nytimes.com/1997/06/05/business/electronic-arts-will-buy-maxis-in-swap.html), and we saw the release of SimCity, [a pile of hot garbage](http://www.metacritic.com/game/pc/simcity) boasting less content than its ten year old sibling--it was also one of those stupid Always Online games we'll never get to play in ten years' time since their servers will eventually be re purposed for the next pile of hot garbage. More recently, we saw [Konami cancelling Silent Hills](https://www.polygon.com/2015/4/27/8503201/silent-hills-canceled-konami-confirms), [canning Kojima](https://www.polygon.com/2015/12/16/10220356/hideo-kojima-konami-explainer-metal-gear-solid-silent-hills), and releasing Metal Gear Survive, [another pile of hot garbage](http://www.metacritic.com/game/playstation-4/metal-gear-survive). At this rate, new, creative and quality IPs are being created slower than the ones I like are being canceled.
 
 #### Corporate Games & Consumer Interests
 

@@ -35,9 +35,19 @@ Blog Posts
   margin-bottom: 0em;
   line-height: 1.5em;
 }
-#markdown-toc ul {
-  padding-top: .5em;
+#postTags {
+  color: white;
+  font-size: .9em;
+  font-weight: lighter;
+
+  border-radius: 5%;
+  margin-left: calc(1.5em + 2.5px);
+  padding: 2.5px 4px 2.5px 4px;
 }
+
+/*Tags*/
+.VideoGames { background-color: #6C7A89; }
+.Programming { background-color: #BDC3C7; }
 
 /*Post Content*/
 .postContent {

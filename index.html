@@ -14,6 +14,7 @@ title: Blog
       <h3 id="postInformation">
         <span id="postDate">{{ post.date | date: "%d-%m-%Y" }}</span>
         <span id="postTitle"><a class="postLinkContent" href="{{ post.url }}">{{ post.title }}</a></span>
+        <span id="postTags" class="{{ post.tags }}">{{ post.tags }}</span>
       </h3>
     </div>
   {% endfor %}
