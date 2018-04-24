@@ -48,7 +48,7 @@ Blog Posts
 
 /*Tags*/
 .VideoGames { background-color: #6C7A89; }
-.Programming { background-color: #BDC3C7; }
+.Programming { background-color: #95A5A6; }
 .Writing { background-color: #ABB7B7; }
 
 /*Post Content*/
@@ -90,6 +90,14 @@ blockquote {
 #backLink {
   word-spacing: normal;
 }
+.highlight {
+  padding: .5em;
+  font-size: .9em;
+  overflow-x: scroll;
+  border-radius: 5px;
+  background-color: #ececec;
+}
+.lineno { color: #999; }
 
 /*Mobile*/
 @media screen and (max-width: 500px) {
