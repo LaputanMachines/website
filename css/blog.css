@@ -40,6 +40,7 @@ Blog Posts
   font-size: .9em;
   font-weight: lighter;
 
+  float: right;
   border-radius: 5%;
   margin-left: calc(1.5em + 2.5px);
   padding: 2.5px 4px 2.5px 4px;
