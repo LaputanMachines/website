@@ -90,7 +90,7 @@ blockquote {
 #backLink {
   word-spacing: normal;
 }
-.highlight {
+pre.highlight {
   padding: .5em;
   font-size: .9em;
   overflow-x: scroll;
