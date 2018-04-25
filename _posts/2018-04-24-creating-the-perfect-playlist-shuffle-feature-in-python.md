@@ -184,4 +184,6 @@ We should probably test these! For the simpler methods, we’ll test using the f
 
 ### Appendix II: Personal Preference
 
+> We understand tornadoes scientifically, but it still feels supernatural. The randomness makes it feel supernatural.
+
 I am fully aware that some people don’t care about this as much as I do, but I listen to a lot of music, and it frustrates me when I shuffle to the next track only to have the neighboring track play. If I wanted the next track in the album, I wouldn’t have enabled the damn shuffle feature, Ford. Moreover, it’s obvious at this point that I wrote this is a hate-fueled rage. I don’t want to listen to Vietnow, I want something else! On the plus side, I now have sample code to refer to when I come around to building my shuffle-oriented Spotify competitor!
