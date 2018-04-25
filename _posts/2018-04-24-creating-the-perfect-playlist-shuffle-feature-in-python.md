@@ -112,7 +112,7 @@ We count and store the length of the playlist. We randomly select an integer bet
 
 This achieves two things: tracks begin to feel random (which is what we’re going for—it’s all about the user experience), and “random” quirks are still included (rolling a 3 when we’re on 1). But there’s another issue…
 
-### Shuffle v2.1:
+### Shuffle v2.1: The Algorithm I've Been Looking For
 
 > Even though there is randomness and improvisation in my music, I want to have some concrete idea that I can hold onto.
 
