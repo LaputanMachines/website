@@ -91,12 +91,17 @@ blockquote {
 #backLink {
   word-spacing: normal;
 }
+.MJXc-display,
 .highlight {
   padding: .5em;
-  font-size: .9em;
-  overflow-x: scroll;
+  font-size: 1em;
   border-radius: 5px;
+  font-weight: lighter;
   background-color: #ececec;
+  overflow-x: scroll;
+}
+.MJXc-display {
+  padding: 1em !important;
 }
 .lineno { color: #999; }
 

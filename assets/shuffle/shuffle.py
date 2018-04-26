@@ -30,7 +30,7 @@ def shuffle_v1(playlist):
     return (current_position + 1) % playlist_length
 
 
-def shuffle_v11(playlist):
+def shuffle_v1_1(playlist):
     """
     Generate an index within the playlist. When the current track is chosen, reshuffle.
     :param (dict) playlist:
@@ -64,7 +64,7 @@ def shuffle_v2(playlist):
     return shuffle_position
 
 
-def shuffle_v21(playlist):
+def shuffle_v2_1(playlist):
     """
     Implements v2, but generates the entire permutation before playing anything. This reduces the
     disproportionate wait times between shuffles by offloading it to the initial playlist load.
@@ -132,17 +132,17 @@ if __name__ == "__main__":
 
     print(strftime("%Y-%m-%d %H:%M:%S", gmtime()) + " : Testing Shuffle v1.1...")
     initial_position = evil_empire['Meta Data']['Current Position']
-    shuffled_position = shuffle_v11(evil_empire)
+    shuffled_position = shuffle_v1_1(evil_empire)
     delta_shuffle = abs(int(shuffled_position) - int(initial_position))
     print_shuffle_details(initial_position, shuffled_position, delta_shuffle)
     evil_empire['Meta Data']['Current Position'] = int(evil_empire['Meta Data']['Length']) / 2
     initial_position = evil_empire['Meta Data']['Current Position']
-    shuffled_position = shuffle_v11(evil_empire)
+    shuffled_position = shuffle_v1_1(evil_empire)
     delta_shuffle = abs(int(shuffled_position) - int(initial_position))
     print_shuffle_details(initial_position, shuffled_position, delta_shuffle)
     evil_empire['Meta Data']['Current Position'] = int(evil_empire['Meta Data']['Length']) - 1
     initial_position = evil_empire['Meta Data']['Current Position']
-    shuffled_position = shuffle_v11(evil_empire)
+    shuffled_position = shuffle_v1_1(evil_empire)
     delta_shuffle = abs(int(shuffled_position) - int(initial_position))
     print_shuffle_details(initial_position, shuffled_position, delta_shuffle)
     print(strftime("%Y-%m-%d %H:%M:%S", gmtime()) + " : Ending test of Shuffle v1.1...")
@@ -166,14 +166,14 @@ if __name__ == "__main__":
 
     print(strftime("%Y-%m-%d %H:%M:%S", gmtime()) + " : Testing Shuffle v2.1...")
     initial_position = evil_empire['Meta Data']['Current Position']
-    shuffled_permutation = shuffle_v21(evil_empire)
+    shuffled_permutation = shuffle_v2_1(evil_empire)
     print(strftime("%Y-%m-%d %H:%M:%S", gmtime()) + " : \tShuffle permutation is {0}".format(shuffled_permutation))
     evil_empire['Meta Data']['Current Position'] = int(evil_empire['Meta Data']['Length']) / 2
     initial_position = evil_empire['Meta Data']['Current Position']
-    shuffled_permutation = shuffle_v21(evil_empire)
+    shuffled_permutation = shuffle_v2_1(evil_empire)
     print(strftime("%Y-%m-%d %H:%M:%S", gmtime()) + " : \tShuffle permutation is {0}".format(shuffled_permutation))
     evil_empire['Meta Data']['Current Position'] = int(evil_empire['Meta Data']['Length']) - 1
     initial_position = evil_empire['Meta Data']['Current Position']
-    shuffled_permutation = shuffle_v21(evil_empire)
+    shuffled_permutation = shuffle_v2_1(evil_empire)
     print(strftime("%Y-%m-%d %H:%M:%S", gmtime()) + " : \tShuffle permutation is {0}".format(shuffled_permutation))
     print(strftime("%Y-%m-%d %H:%M:%S", gmtime()) + " : Ending test of Shuffle v2.1...")

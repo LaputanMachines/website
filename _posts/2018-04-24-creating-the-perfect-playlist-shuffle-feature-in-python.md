@@ -67,7 +67,7 @@ This initial implementation has *many* major faults, the primary being that it d
 Count and store the length of the playlist. Then, with your pseudorandom number generator of choice, generate an integer between zero and the length of your playlist. Great! So now when the next track is requested, a random track in the playlist will play. If the index of the current track is chosen, reshuffle. Now we’re at a thousand-dollar implantation of the shuffle feature since this is what my car does. Obviously, this is crap, and to understand why, we need to put ourselves in a user’s shoes.
 
 ```python
-  def shuffle_v11(playlist):
+  def shuffle_v1_1(playlist):
       """
       Generate an index within the playlist. When the current track is chosen, reshuffle.
       :param (dict) playlist:
@@ -119,7 +119,7 @@ This achieves two things: tracks begin to feel random (which is what we’re goi
 We got to go fast! We can’t do all this shuffling when the track is requested, because it would create disproportionate transition times between tracks, among other obvious problems. We remedy this by creating a permutation of tracks whenever the playlist is loaded up. Count the number of tracks, and shuffle once for every track, abiding by the rules set in v2, until we have a permutation of “random” tracks. The larger the playlist, the less likely we are to re-shuffle, and an average album is 15 tracks long.
 
 ```python
-  def shuffle_v21(playlist):
+  def shuffle_v2_1(playlist):
       """
       Implements v2, but generates the entire permutation before playing anything. This reduces the
       disproportionate wait times between shuffles by offloading it to the initial playlist load.
@@ -152,6 +152,24 @@ We got to go fast! We can’t do all this shuffling when the track is requested,
 So, we’ll say that the average number of times we’d reshuffle is the number of indices we’d reshuffle times their probabilities. If we say that the neighboring 1st, 2nd, and 3rd index reshuffle with a probability of 100%, 50%, and 25%, respectively, we’d reshuffle about (1/15)(1) + (1/14)(0.5) + (1/13)(0.25) = 0.12 = 12% of the time. We’ll call that our benchmark. Let’s not do worse than a 12% re-shuffle rate.
 
 All together, we get what I consider to be a rich, user-oriented implementation of the shuffle feature on music players. Take note, Ford.
+
+### Performance of Our Playlist Permutations
+
+> Fascism is a genus of political ideology whose mythic core in its various permutations is a palingenetic form of populist ultra-nationalism.
+
+Let’s try to generalize the performance of this shuffle algorithm. As the length of the playlist goes to infinity, the probability of reshuffling goes to zero.
+
+<script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+$$
+\begin{align*}
+  \normalsize \lim_{n\to\infty} \frac{1}{n}(100\%) + \frac{1}{n - 1}(50\%) + \frac{1}{n - 2}(25\%) = \frac{1}{\infty}(1) + \frac{1}{\infty - 1}(0.5) + \frac{1}{\infty - 2}(0.25) = 0
+\end{align*}
+$$
+
+The average performance is O(n), where n is the length of the playlist since it must go through all the indices of the playlist to order them. For small playlists, performance is actually worse than O(n), as the probability of reshuffling is high.
 
 ### Appendix I: Testing the Implementations
 
