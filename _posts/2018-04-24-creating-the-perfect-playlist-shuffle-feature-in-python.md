@@ -165,7 +165,7 @@ Let’s try to generalize the performance of this shuffle algorithm. As the leng
 
 $$
 \begin{align*}
-  \normalsize \lim_{n\to\infty} \frac{1}{n}(100\%) + \frac{1}{n - 1}(50\%) + \frac{1}{n - 2}(25\%) = \frac{1}{\infty}(1) + \frac{1}{\infty - 1}(0.5) + \frac{1}{\infty - 2}(0.25) = 0
+  \small \lim_{n\to\infty} \frac{1}{n}(100\%) + \frac{1}{n - 1}(50\%) + \frac{1}{n - 2}(25\%) = \frac{1}{\infty}(1) + \frac{1}{\infty - 1}(0.5) + \frac{1}{\infty - 2}(0.25) = 0
 \end{align*}
 $$
 
