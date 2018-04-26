@@ -25,7 +25,7 @@ Blog Posts
   font-weight: lighter;
 }
 #postInformation {
-  font-size: 1em;
+  font-size: .95em;
 }
 #markdown-toc {
   color: #999;
@@ -58,6 +58,7 @@ Blog Posts
   padding: 0 2.5em 0 2.5em;
 
   color: #777;
+  font-size: .95em;
   line-height: 1.5em;
   font-family: 'Roboto', sans-serif;
 }
@@ -90,7 +91,7 @@ blockquote {
 #backLink {
   word-spacing: normal;
 }
-pre.highlight {
+.highlight {
   padding: .5em;
   font-size: .9em;
   overflow-x: scroll;

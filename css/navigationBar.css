@@ -105,17 +105,17 @@ Navigation Bar
 
 /*Mobile Contextuals*/
 @media screen and (min-width: 500px) {
-   #collapseContainer { 
+   #collapseContainer {
     display: none;
     visibility: hidden;
-  } 
+  }
 }
 @media screen and (max-width: 500px) {
   .navigationBar #pageLinks { margin: 0em 1em 0em 1em; }
-  .expandedNavigationButton { left: 151px; }
+  .expandedNavigationButton { left: 126px; }
   .collapsedNavigationButton { left: 0; }
   .navigationBar {
-    max-width: 150px;
+    max-width: 125px;
     box-shadow: 1px 0px 10px 0px rgba(0,0,0,0.1);
   }
   .navigationBar #picture {
@@ -128,7 +128,7 @@ Navigation Bar
     padding: 1em 1em 1em 1em;
   }
   .navigationBar #name {
-    font-size: 1.6em;
+    font-size: 1.25em;
     padding-top: .25em;
   }
   .expanded, .collapsed {
