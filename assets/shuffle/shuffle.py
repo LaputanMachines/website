@@ -94,6 +94,31 @@ def shuffle_v2_1(playlist):
     return track_permutation
 
 
+def shuffle_v2_2(playlist):
+    """
+    Implements v2.1 but generalizes the probability of reshuffling.
+    :param (dict) playlist: Dictionary of track information, including the track data.
+    :return (list): Permutation of tracks to shuffle through.
+    """
+    track_permutation = []
+
+    current_position = int(playlist['Meta Data']['Current Position'])
+    playlist_length = int(playlist['Meta Data']['Length'])
+
+    if playlist_length in [0, 1]:
+        return [0]  # An empty, or small playlist
+
+    while len(track_permutation) < playlist_length:
+        shuffle_position = randint(0, playlist_length - 1)
+        delta_position = abs(shuffle_position - current_position)
+        if shuffle_position not in track_permutation:
+            if playlist_length > 2 and random() < float(1 / delta_position) :
+                shuffle_position = randint(0, playlist_length - 1)
+            track_permutation.append(shuffle_position)
+
+    return track_permutation
+
+
 if __name__ == "__main__":
     """Test the Various Shuffle Versions"""
 

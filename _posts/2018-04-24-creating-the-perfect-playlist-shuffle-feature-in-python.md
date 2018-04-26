@@ -151,7 +151,39 @@ We got to go fast! We can’t do all this shuffling when the track is requested,
 
 So, we’ll say that the average number of times we’d reshuffle is the number of indices we’d reshuffle times their probabilities. If we say that the neighboring 1st, 2nd, and 3rd index reshuffle with a probability of 100%, 50%, and 25%, respectively, we’d reshuffle about (1/15)(1) + (1/14)(0.5) + (1/13)(0.25) = 0.12 = 12% of the time. We’ll call that our benchmark. Let’s not do worse than a 12% re-shuffle rate.
 
-All together, we get what I consider to be a rich, user-oriented implementation of the shuffle feature on music players. Take note, Ford.
+### Shuffle v2.2: Final Implementation
+
+> Mathematics is the art of giving the same name to different things.
+
+We take v2.1 and generalize the probability of reshuffling for n tracks in playlist p. We say that the probability of reshuffling is 1 / delta_position, giving us a scalable probably set for all tracks in the playlist (instead of just the two neighboring indices).
+
+```python
+  def shuffle_v2_2(playlist):
+      """
+      Implements v2.1 but generalizes the probability of reshuffling.
+      :param (dict) playlist: Dictionary of track information, including the track data.
+      :return (list): Permutation of tracks to shuffle through.
+      """
+      track_permutation = []
+
+      current_position = int(playlist['Meta Data']['Current Position'])
+      playlist_length = int(playlist['Meta Data']['Length'])
+
+      if playlist_length in [0, 1]:
+          return [0]  # An empty, or small playlist
+
+      while len(track_permutation) < playlist_length:
+          shuffle_position = randint(0, playlist_length - 1)
+          delta_position = abs(shuffle_position - current_position)
+          if shuffle_position not in track_permutation:
+              if playlist_length > 2 and random() < float(1 / delta_position) :
+                  shuffle_position = randint(0, playlist_length - 1)
+              track_permutation.append(shuffle_position)
+
+      return track_permutation
+```
+
+An added bonus is that, by default, the probability of reshuffling goes to zero as delta_position goes to n. All together, we get what I consider to be a rich, user-oriented implementation of the shuffle feature on music players. Take note, Ford.
 
 ### Performance of Our Playlist Permutations
 
@@ -165,7 +197,7 @@ Let’s try to generalize the performance of this shuffle algorithm. As the leng
 
 $$
 \begin{align*}
-  \small \lim_{n\to\infty} \frac{1}{n}(100\%) + \frac{1}{n - 1}(50\%) + \frac{1}{n - 2}(25\%) = \frac{1}{\infty}(1) + \frac{1}{\infty - 1}(0.5) + \frac{1}{\infty - 2}(0.25) = 0
+  \small \lim_{n\to\infty} \frac{1}{n}(100\%) + \frac{1}{n - 1}(50\%) + \frac{1}{n - 2}(25\%) + \ldots = \frac{1}{\infty}(1) + \frac{1}{\infty - 1}(0.5) + \frac{1}{\infty - 2}(0.25) + \ldots = 0
 \end{align*}
 $$
 
