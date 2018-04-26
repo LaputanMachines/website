@@ -17,6 +17,8 @@ Title Bar
   font-weight: 300;
   font-size: 1.15em;
   text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
   font-family: 'Roboto', sans-serif;
 }
 .titleBar #subTitleLinks {
