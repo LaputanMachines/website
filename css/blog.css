@@ -93,7 +93,7 @@ blockquote {
 }
 .MJXc-display,
 pre.highlight {
-  padding: .5em;
+  padding: 0 1em 0 1em;
   font-size: .95em;
   border-radius: 5px;
   font-weight: lighter;
