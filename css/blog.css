@@ -98,7 +98,7 @@ pre.highlight {
   border-radius: 5px;
   font-weight: lighter;
   background-color: #ececec;
-  overflow-x: scroll;
+  overflow-x: auto;
 }
 .MJXc-display {
   padding: 1em !important;
