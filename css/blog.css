@@ -26,6 +26,7 @@ Blog Posts
 }
 #postInformation {
   font-size: .95em;
+  line-height: 1.35em;
 }
 #markdown-toc {
   color: #999;

@@ -114,7 +114,11 @@ ul {
   padding-top: 0px;
 }
 .about #workDetails {
-  padding-top: 1em;
+  padding-top: .5em;
+  padding-left: 1em;
+}
+.about #workDetails li:first-child {
+  padding-top: .5em;
 }
 
 /*Mobile*/

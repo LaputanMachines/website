@@ -59,13 +59,3 @@ function toggleNavigationBar() {
    updateText(collapseButtonEl, desiredTextValue);
    document.cookie = "navigationIsExpanded = ".concat(navigationCookieValue);
 }
-
-function fetchCookies() {
-  /**
-  * Fetches the cookies onload, and uses them to decide whether to expand/collapse
-  * the navigation bar.
-  */
-  var currentCookies = document.cookie;
-  // If navigationIsExpanded in currentCookies, then do nothing
-  // Else collapse the navigation bar on load
-}
