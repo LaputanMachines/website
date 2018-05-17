@@ -2,7 +2,7 @@
 title: Creating the Perfect Playlist Shuffle Feature in Python
 author: Michael Bassili
 layout: post
-tags: Programming
+tags: Programming, Favorite
 category: Blog
 ---
 
