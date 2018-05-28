@@ -70,7 +70,7 @@ Count and store the length of the playlist. Then, with your pseudorandom number 
   def shuffle_v1_1(playlist):
       """
       Generate an index within the playlist. When the current track is chosen, reshuffle.
-      :param (dict) playlist:
+      :param (dict) playlist: Dictionary of track information, including the track data.
       :return (int): Track number to shuffle to.
       """
       current_position = int(playlist['Meta Data']['Current Position'])
