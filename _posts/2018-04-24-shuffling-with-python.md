@@ -3,6 +3,7 @@ title: Creating the Perfect Playlist Shuffle Feature in Python
 author: Michael Bassili
 layout: post
 tags: Programming
+favorite: Favorite
 category: Blog
 ---
 
@@ -201,7 +202,7 @@ $$
 \end{align*}
 $$
 
- For small playlists, performance is actually worse than O(n), as the probability of reshuffling is high. There are only two real playlist sizes to concern ourselves with: EPs (1-3 tracks) and Albums. For EPs, what will probably happen most of the time is that the first track will shuffle to the third track, finishing off with the second track. This "waterfalling" behavior can actually be observed with playlists of any length, since the probability of reshuffling gets smaller the farther away from the initial track you are. 
+ For small playlists, performance is actually worse than O(n), as the probability of reshuffling is high. There are only two real playlist sizes to concern ourselves with: EPs (1-3 tracks) and Albums. For EPs, what will probably happen most of the time is that the first track will shuffle to the third track, finishing off with the second track. This "waterfalling" behavior can actually be observed with playlists of any length, since the probability of reshuffling gets smaller the farther away from the initial track you are.
 
 ### Appendix I: Testing the Implementations
 
