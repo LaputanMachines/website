@@ -1,0 +1,24 @@
+---
+layout: main
+title: Blog
+---
+
+<div class="titleBar expandedTitleBar" id="titleBar">
+  <h1 id="title">{{page.title}}</h1>
+  <h2 id="subTitleLinks"><a id="rssLink" href="{{ site.baseurl }}/feed.xml">View RSS Feed</a></h2>
+</div>
+
+<div class="posts" id="posts">
+  {% for post in site.posts %}
+    {% if post.category contains 'Blog' %}
+      <div class="postLink" id="postLink">
+        <h3 id="postInformation">
+          <span id="postDate">{{ post.date | date: "%d-%m-%Y" }}</span>
+          <span id="postTitle"><a class="postLinkContent" href="{{ post.url }}">{{ post.title }}</a></span>
+          <span id="postTags" class="{{ post.tags }}">{{ post.tags }}</span>
+          <span id="postTags" class="{{ post.favorite }}">{{ post.favorite }}</span>
+        </h3>
+      </div>
+    {% endif %}
+  {% endfor %}
+</div>

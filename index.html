@@ -1,24 +1,42 @@
 ---
 layout: main
-title: Blog
+title: About
 ---
 
 <div class="titleBar expandedTitleBar" id="titleBar">
   <h1 id="title">{{page.title}}</h1>
-  <h2 id="subTitleLinks"><a id="rssLink" href="{{ site.baseurl }}/feed.xml">View RSS Feed</a></h2>
 </div>
 
-<div class="posts" id="posts">
-  {% for post in site.posts %}
-    {% if post.category contains 'Blog' %}
-      <div class="postLink" id="postLink">
-        <h3 id="postInformation">
-          <span id="postDate">{{ post.date | date: "%d-%m-%Y" }}</span>
-          <span id="postTitle"><a class="postLinkContent" href="{{ post.url }}">{{ post.title }}</a></span>
-          <span id="postTags" class="{{ post.tags }}">{{ post.tags }}</span>
-          <span id="postTags" class="{{ post.favorite }}">{{ post.favorite }}</span>
-        </h3>
-      </div>
-    {% endif %}
-  {% endfor %}
+<div class="mainBody about" id="about">
+  <p id="aboutBody">
+    Howdy! My name is Michael Bassili, and I am a programmer.
+    I also do other things, many of which are not conventionally productive or helpful to my career.
+    I’m a big fan of those productivity self-help books you can find in the Business section of Chapters (<a href="https://www.amazon.ca/Myth-Revisited-Small-Businesses-About-ebook/dp/B000RO9VJK">I especially like it when authors of said productivity self-help books talk about themselves like they’re the Productivity Messiahs</a>, or something).
+    <br>&emsp;&emsp;I am also a side project activist.
+    <br>&emsp;&emsp;I’ve been working towards a Bachelor of Science at Simon Fraser University since 2015, majoring in Computing Science and minoring in Mathematics.
+    While pursuing said degree, I’ve been working as a software QA at <a href="https://www.deltacontrols.com/">Delta Controls Inc.</a> remotely, part-time.
+  </p>
+  <p id="aboutBody">
+    <img id="aboutPhoto" src="{{site.baseurl}}/assets/personalPhotoLarge.jpg" alt="Fig.1 Me smiling away from the camera">
+    <figcaption>Fig.1 Me smiling away from the camera</figcaption>
+  </p>
+  <p id="aboutBody">
+    You can find the source code of my technical side projects, <a href="https://github.com/FlatlanderWoman/personalWebsite">including this website</a>, on GitHub.
+    I'm <a href="https://github.com/FlatlanderWoman">FlatlanderWoman</a>.
+    Significant projects, unlike this website, will be showcased in the <a href="{{site.baseurl}}/projects">Projects</a> page of this site.
+    In addition to providing links and gallery images of said projects, I enjoy writing little retrospectives. Nothing too fancy, just a little blurb.
+  </p>
+  <hr>
+  <p id="aboutBody">
+    The section below lists my professional work experience, excluding all freelance contracts:
+    <ul id="workExperience">
+      <li>Software QA Specialist at <a href="https://www.deltacontrols.com/">Delta Controls Inc.</a> since May 2017.
+        <ul id="workDetails">
+          <li>Helped improve and maintain an automated testing framework, written in Python and utilizing <a href="https://www.seleniumhq.org/docs/">Selenium</a>, <a href="https://flask-restful.readthedocs.io/en/latest/">Flask RESTful</a> and <a href="https://docs.pytest.org/en/latest/contents.html#toc">PyTest</a></li>
+          <li>Worked closely with developers to create test cases for new features in enteliWEB using TestRail, and automated them using our automated testing framework</li>
+          <li>Collaborated with team leads to outline, develop, and automate test cases and suites for enteliWEB's API &amp; UI</li>
+        </ul>
+      </li>
+    </ul>
+  </p>
 </div>
