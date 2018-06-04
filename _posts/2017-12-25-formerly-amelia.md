@@ -8,11 +8,8 @@ category: Project
 
 ### Getting Your Hands on Copies
 Before reading the below author's note, you should probably read the book.
-You can get the book on most Amazon localizations (paperback or eBook), on Google Play, or simply download it for free here.
-You'll find links to the mentioned storefronts here:
+You can get the book on most Amazon localizations (paperback or eBook). You'll find links to the mentioned storefronts here:
 * [$2.99 - 9.99] Amazon ([CA](http://a.co/hyTnIoa), [US](http://a.co/hbu8iaw), [UK](http://amzn.eu/3dh3Tu7), [DE](https://www.amazon.de/dp/B077YGK1R4), [FR](http://amzn.eu/iaOC8uc), [ES](), [IT](http://amzn.eu/6hcn5Y2), [JP](http://amzn.asia/dSwC5Qb), [BR](http://a.co/18ArQtF), [MX](http://a.co/95C7n8g), [AU](https://www.amazon.com.au/dp/B077YGK1R4), [IN](http://amzn.in/2X2pp2T))
-* [$2.99] Google Play Books ([International](https://play.google.com/store/books/details/Michael_Bassili_Formerly_Amelia?id=qaVBDwAAQBAJ))
-* [$0.00] Source Files ([PDF]({{site.url}}//assets/formerly_amelia/Formerly, Amelia.pdf), [ePUB]({{site.url}}//assets/formerly_amelia/Formerly, Amelia - Michael Bassili.epub), [MOBI]({{site.url}}//assets/formerly_amelia/Formerly, Amelia - Michael Bassili.mobi))
 
 ---
 
