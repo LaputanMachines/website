@@ -48,7 +48,7 @@ Blog Posts
 }
 .imageLeft {
   max-width: 25%;
-  float: right; 
+  float: right;
   margin-left: 1em;
 }
 
@@ -70,7 +70,8 @@ Blog Posts
   font-family: 'Roboto', sans-serif;
 }
 .postContent h3,
-.postContent h4 {
+.postContent h4,
+.about h3 {
   font-size: 1.15em;
   text-align: center;
 }
