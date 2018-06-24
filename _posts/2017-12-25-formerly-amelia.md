@@ -1,5 +1,5 @@
 ---
-title: Formerly, Amelia&#58; A Story Told In Two Parts
+title: Formerly, Amelia
 author: Michael Bassili
 layout: post
 tags: Writing
