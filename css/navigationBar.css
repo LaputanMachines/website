@@ -115,24 +115,37 @@ Navigation Bar
   .expandedNavigationButton { left: 126px; }
   .collapsedNavigationButton { left: 0; }
   .navigationBar {
-    max-width: 125px;
+    width: 100%;
+    max-height: 50px;
     box-shadow: 1px 0px 10px 0px rgba(0,0,0,0.1);
   }
   .navigationBar #picture {
-    padding-bottom: 1em;
-    margin: 2em 1em 0em 1em;
-    max-width: calc(100% - 2 * 1em);
+    display: none;
+    visibility: hidden;
   }
   .navigationBar #pageLinks,
   .navigationBar #footer {
-    padding: 1em 1em 1em 1em;
+    display: flex;
+    font-size: .8em;
+    border-top: 0px;
+    text-align: center;
+    border-bottom: 0px;
+    padding: 1.25em 1.25em 1.25em 1.25em;
+    justify-content: space-around;
   }
   .navigationBar #name {
-    font-size: 1.25em;
-    padding-top: .25em;
+    padding: .25em;
+    font-size: 1.15em;
+    font-weight: bold;
+    text-align: center;
   }
   .expanded, .collapsed {
     left: 0;
     width: 100%;
+  }
+  .navigationBar #footer,
+  .collapseContainer {
+    display: none;
+    visibility: hidden;
   }
 }

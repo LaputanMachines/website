@@ -30,3 +30,9 @@ Title Bar
   text-align: center;
   font-family: 'Roboto', sans-serif;
 }
+
+@media screen and (max-width: 500px) {
+  #titleBar {
+    margin-top: 60px;
+  }
+}
