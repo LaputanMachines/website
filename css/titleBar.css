@@ -33,6 +33,7 @@ Title Bar
 
 @media screen and (max-width: 500px) {
   #titleBar {
-    margin-top: 60px;
+    display: none;
+    visibility: hidden;
   }
 }
