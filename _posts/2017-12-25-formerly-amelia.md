@@ -1,5 +1,5 @@
 ---
-title: Author's Notes from my book Formerly, Amelia
+title: Author's Notes From My Book Formerly, Amelia
 author: Michael Bassili
 layout: post
 tags: Writing
