@@ -6,6 +6,7 @@ Title Bar
 /*Title Bar Container*/
 .titleBar {
   height: auto;
+  max-height: 25vh;
   margin-bottom: 1em;
   background-color: #fcfcfc;
   border-bottom: 1px solid #e5e5e5;
@@ -19,6 +20,7 @@ Title Bar
   text-align: center;
   padding-left: 1em;
   padding-right: 1em;
+  margin-top: 0 !important;
   font-family: 'Roboto', sans-serif;
 }
 .titleBar #subTitleLinks {

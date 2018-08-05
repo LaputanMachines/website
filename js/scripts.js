@@ -59,3 +59,5 @@ function toggleNavigationBar() {
    updateText(collapseButtonEl, desiredTextValue);
    document.cookie = "navigationIsExpanded = ".concat(navigationCookieValue);
 }
+
+particlesJS.load('particles-js', 'particles.json', function() {});

@@ -67,7 +67,7 @@ hr {
   position: absolute;
 }
 .mainBody {
-  margin: 0 auto;
+  margin: 0 auto 2.5em auto;
   max-width: 800px;
   padding-left: 2.5em;
   padding-right: 2.5em;

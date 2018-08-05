@@ -1,0 +1,48 @@
+/*
+Landing Div
+*/
+
+.landing {
+  min-height: 75vh;
+  position: relative;
+  text-align: center;
+  padding: 1em 0 1em 0;
+  background-color: #fcfcfc;
+}
+
+.landingContent {
+  top: 50%;
+  position: absolute;
+  text-align: center;
+  transform: translateY(-50%);
+  left: calc(50vw - 200px - 4em);
+}
+
+.landingContent h2 {
+  color: #888;
+  font-size: 3em;
+  font-weight: lighter;
+  font-family: 'Megrim', cursive;
+}
+
+.landingContent h3 {
+  color: #888;
+  font-size: 1em;
+  margin-top: -2.75em;
+  font-weight: lighter;
+  font-family: 'Roboto', sans-serif;
+}
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+@media screen and (max-width: 500px) {
+  .landing {
+    display: none;
+    visibility: hidden;
+  }
+}
