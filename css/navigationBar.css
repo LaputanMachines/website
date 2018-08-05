@@ -132,6 +132,8 @@ Navigation Bar
     border-bottom: 0px;
     padding: 1.25em 1.25em 1.25em 1.25em;
     justify-content: space-around;
+    padding-left: 5px;
+    padding-right: 5px;
   }
   .navigationBar #name {
     padding: .25em;
@@ -147,5 +149,8 @@ Navigation Bar
   .collapseContainer {
     display: none;
     visibility: hidden;
+  }
+  .navigationBar {
+    overflow-y: hidden;
   }
 }

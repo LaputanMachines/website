@@ -32,8 +32,8 @@ We need to create a data structure that can hold tracks as well as meta data. Th
       evil_empire[track] = {'Song': [getrandbits(1000000)]}
 
   evil_empire['Meta Data'] = {
-      'Contributing Artists': ['Zach de la Rocha, Tom Morello, Tim Commerford, Brad Wilk'],
-      'Genres': ['Rap Metal, Nu Metal'],
+      'Contributing Artists': ['Zach de la Rocha', 'Tom Morello', 'Tim Commerford', 'Brad Wilk'],
+      'Genres': ['Rap Metal', 'Nu Metal'],
       'Length': '11',
       'Current Position': '1'
   }

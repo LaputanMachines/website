@@ -1,9 +1,9 @@
 ---
-title: Formerly, Amelia
+title: Author's Notes From My Book Formerly, Amelia
 author: Michael Bassili
 layout: post
 tags: Writing
-category: Project
+category: Blog
 ---
 
 ### Getting Your Hands on Copies
