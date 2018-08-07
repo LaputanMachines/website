@@ -58,7 +58,8 @@ hr {
 .postLinkContent:hover,
 #rssLink:hover,
 .postContent p a:hover,
-.postContent ul li a:hover {
+.postContent ul li a:hover,
+.postLinkImageTitle a:hover {
     border-bottom: solid #777 1px;
 }
 

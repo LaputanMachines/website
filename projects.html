@@ -7,16 +7,10 @@ title: Projects
   <h1 id="title">{{page.title}}</h1>
 </div>
 
-<div class="posts" id="posts">
-  {% for post in site.posts %}
-    {% if post.category contains 'Project' %}
-      <div class="postLink" id="postLink">
-        <h3 id="postInformation">
-          <span id="postDate">{{ post.date | date: "%d-%m-%Y" }}</span>
-          <span id="postTitle"><a class="postLinkContent" href="{{ post.url }}">{{ post.title }}</a></span>
-          <span id="postTags" class="{{ post.tags }}">{{ post.tags }}</span>
-        </h3>
-      </div>
-    {% endif %}
-  {% endfor %}
+<div class="posts projectPosts" id="posts">
+  <!-- Formerly, Amelia Book Link -->
+  <div class="postLink imagePost" id="postLink">
+    <img class="postLinkImage" src="{{site.baseurl}}/assets/formerlyAmelia/formerlyAmelia.jpg" alt="Cover artwork for Formerly, Amelia.">
+    <span class="postLinkImageTitle"><a href="http://a.co/d2jio6L">Formerly, Amelia</a></span>
+  </div>
 </div>

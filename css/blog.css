@@ -94,6 +94,29 @@ blockquote {
   color: #999;
   border-left: 1px solid #e5e5e5;
 }
+.projectPosts {
+  display: flex;
+  flex-wrap: wrap;
+}
+.imagePost {
+  padding: .5em;
+  margin: 0 auto 1em auto;
+  max-width: 200px;
+  width: calc(100vw - 200px);
+  text-align: center;
+  background-color: #fcfcfc;
+  border: 1px solid #e5e5e5;
+  box-shadow: 1px 0px 10px 0px rgba(0,0,0,0.05);
+}
+.postLinkImage {
+  width: 100%;
+  margin-bottom: .5em;
+}
+.postLinkImageTitle {
+  color: #888;
+  font-weight: lighter;
+  border-bottom: dotted #777 1px;
+}
 
 /*Miscellaneous*/
 #backLink {
