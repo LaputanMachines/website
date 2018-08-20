@@ -16,8 +16,7 @@ title: Blog
           <span id="postDate">{{ post.date | date: "%d-%m-%Y" }}</span>
           <span id="postTitle"><a class="postLinkContent" href="{{ post.url }}">{{ post.title }}</a></span>
           <span id="postTags" class="{{ post.tags }}">{{ post.tags }}</span>
-          {% if post.favorite != blank %} <span id="postTags" class="{{ post.favorite }}">{{ post.favorite }}</span> {% endif %}
-          {% if post.devlog != blank %}<span id="postTags" class="{{ post.devlog }}">{{ post.devlog }}</span>{% endif %}
+          <span id="postTags" class="{{ post.favorite }}">{{ post.favorite }}</span>
         </h3>
       </div>
     {% endif %}

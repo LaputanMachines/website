@@ -2,8 +2,7 @@
 title: Developer Log for Project Forrester
 author: Michael Bassili
 layout: post
-tags: Programming
-devlog: Devlog
+tags: Devlog
 category: Blog
 ---
 
