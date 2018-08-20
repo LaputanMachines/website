@@ -54,6 +54,7 @@ Navigation Bar
   height: 100vh;
   position: fixed;
   overflow-x: hidden;
+  overflow-y: hidden;
 
   background-color: #F3F5F6;
   border-right: 1px solid #e5e5e5;

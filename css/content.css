@@ -121,6 +121,12 @@ ul {
 .about #workDetails li:first-child {
   padding-top: .5em;
 }
+.task-list li {
+  list-style: none;
+}
+.task-list li input {
+  margin-right: 1em;
+}
 
 /*Mobile*/
 @media screen and (max-width:500px) {
