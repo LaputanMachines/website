@@ -147,7 +147,8 @@ Navigation Bar
     width: 100%;
   }
   .navigationBar #footer,
-  .collapseContainer {
+  .collapseContainer,
+  #aboutLink {
     display: none;
     visibility: hidden;
   }
