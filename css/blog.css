@@ -53,9 +53,12 @@ Blog Posts
 }
 
 /*Tags*/
+.Favorite { 
+  margin-right: -1em;
+  background-color: #F9BF3B;
+}
 .Programming { background-color: #E08283; }
 .Writing { background-color: #D24D57; }
-.Favorite { background-color: #F9BF3B; }
 .Devlog { background-color: #67809F; }
 
 /*Post Content*/
