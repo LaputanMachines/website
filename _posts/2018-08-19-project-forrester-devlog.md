@@ -10,7 +10,7 @@ category: Blog
 
 The following outlines the progress of Project Forrester.
 Milestones are updated as they are undertaken and are listed in their order of (desired) completion:
-- [X] ~~Create documentation and repositories for the project (Github, and blog post)~~
+- [X] Create documentation and repositories for the project (Github, and blog post)
 - [ ] Complete all Godot tutorials which are found on their website
 - [ ] Draft a design document for the principle gameplay elements
 
