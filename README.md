@@ -1,11 +1,6 @@
-# Personal Website
-The source code and documentation for my personal website and blog.
+## Personal Website
+The source code and documentation for my personal website and blog. Hosts portfolio sections for all my miscellaneous projects as well as my professional work experience.
 
-## Table of Contents
-* [Setup Instructions](#setup-instructions)
-  * [Installing Jekyll and Building Locally](#installing-jekyll-and-building-locally)
-
-## Setup Instructions
 ### Building Site Locally
 If Jekyll is installed, you can serve the Jekyll site locally by typing the following into your BASH terminal:
 ```
@@ -15,5 +10,4 @@ This will build and run the site locally on port 4000 (i.e. `localhost:4000`). V
 
 ---
 
-[![Code Climate](https://img.shields.io/codeclimate/maintainability/angular/angular.js.svg)](https://codeclimate.com/github/FlatlanderWoman/portfolio) [![License: MIT](https://img.shields.io/github/license/mashape/apistatus.svg)](https://opensource.org/licenses/MIT) [![Repo Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://img.shields.io/badge/version-1.0.0-blue.svg)
-[![GitHub issues](https://img.shields.io/github/issues/badges/shields.svg)](https://github.com/FlatlanderWoman/personalWebsite/issues)
+[![License: MIT](https://img.shields.io/github/license/mashape/apistatus.svg)](https://opensource.org/licenses/MIT) [![Repo Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://img.shields.io/badge/version-1.0.0-blue.svg)
