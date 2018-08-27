@@ -53,7 +53,7 @@ Blog Posts
 }
 
 /*Tags*/
-.Favorite { 
+.Favorite {
   margin-right: -1em;
   background-color: #F9BF3B;
 }
@@ -116,9 +116,18 @@ blockquote {
   margin-bottom: .5em;
 }
 .postLinkImageTitle {
-  color: #888;
+  color: #666;
   font-weight: lighter;
   border-bottom: dotted #777 1px;
+}
+.postLinkImageDescription {
+  color: #888;
+  padding: 1em;
+  display: block;
+  font-size: .8em;
+  text-align: justify;
+  font-weight: lighter;
+  font-family: 'Roboto', sans-serif;
 }
 
 /*Miscellaneous*/
