@@ -1,6 +1,4 @@
-The source code and documentation for my personal website and blog. Hosts portfolio sections for all my miscellaneous projects as well as my professional work experience.
-
-If Jekyll is installed, you can serve the Jekyll site locally by typing the following into your BASH terminal:
+The source code and documentation for my personal website and blog. Hosts portfolio sections for all my miscellaneous projects as well as my professional work experience. If Jekyll is installed, you can serve the Jekyll site locally by typing the following into your BASH terminal:
 ```
 $ jekyll serve
 ```
