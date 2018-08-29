@@ -39,10 +39,3 @@ Landing Div
   height: 100%;
   z-index: 0;
 }
-
-@media screen and (max-width: 500px) {
-  .landing {
-    display: none;
-    visibility: hidden;
-  }
-}
