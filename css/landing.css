@@ -39,3 +39,9 @@ Landing Div
   height: 100%;
   z-index: 0;
 }
+
+@media screen and (max-width: 500px) {
+  .landingContent {
+    left: 15% !important;
+  }
+}
