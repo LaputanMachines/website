@@ -137,10 +137,8 @@ Navigation Bar
     padding-right: 5px;
   }
   .navigationBar #name {
-    padding: .25em;
-    font-size: 1.15em;
-    font-weight: bold;
-    text-align: center;
+    display: none;
+    visibility: hidden;
   }
   .expanded, .collapsed {
     left: 0;
