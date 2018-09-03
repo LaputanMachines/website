@@ -44,4 +44,12 @@ Landing Div
   .landingContent {
     left: 0% !important;
   }
+  
+  .landingContent h2 {
+    font-size: 2em;
+  }
+  
+  .landingContent h3 {
+    margin-top: -2em;
+  }
 }
