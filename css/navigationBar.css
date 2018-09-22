@@ -77,7 +77,7 @@ Navigation Bar
   color: rgba(102, 102, 102, 1);
   font-family: 'Megrim', cursive;
 }
-.navigationBar #pageLinks {
+.navigationBar .links {
   list-style: none;
   text-align: center;
   margin: 0em 2em 0em 2em;
@@ -87,9 +87,14 @@ Navigation Bar
   line-height: 2em;
   font-size: .9em;
   color: rgba(102, 102, 102, 1);
+  font-family: 'Roboto', sans-serif;
+}
+.navigationBar #pageLinks {
   border-top: 1px solid #e5e5e5;
   border-bottom: 1px solid #e5e5e5;
-  font-family: 'Roboto', sans-serif;
+}
+.navigationBar #projectLinks {
+  border-bottom: 1px solid #e5e5e5;
 }
 
 /*Navigation Bar Footer*/

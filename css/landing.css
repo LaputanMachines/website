@@ -33,22 +33,16 @@ Landing Div
   font-family: 'Roboto', sans-serif;
 }
 
-#particles-js {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
-}
 
 @media screen and (max-width: 500px) {
   .landingContent {
     left: 0% !important;
   }
-  
+
   .landingContent h2 {
     font-size: 2em;
   }
-  
+
   .landingContent h3 {
     margin-top: -2em;
   }

@@ -95,10 +95,13 @@ hr {
 }
 
 /*Main Body Content*/
+#aboutBody {
+  text-indent: 2em;
+}
 #aboutBody #aboutPhoto {
   margin: 0 auto;
   display: block;
-  width: calc(100% - 2 * 1em);
+  width: calc(100% - 10em);
 
   padding: 1em;
   background-color: #fcfcfc;
