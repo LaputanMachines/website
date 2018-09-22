@@ -2,4 +2,4 @@ The source code and documentation for my personal website and blog. Hosts portfo
 ```
 $ jekyll serve | $ jekyll serve &
 ```
-This will build and run the site locally on port 4000 (i.e. `localhost:4000`), and optionally run the server in the background. Visit said URL to view the site. Note that `bundle install/exec` will fail/crash when trying to bundle on Windows because of the nokogiri gem.
+This will build and run the site locally on port 4000 (i.e. `localhost:4000`), and optionally run the server in the background. 
