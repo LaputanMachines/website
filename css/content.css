@@ -114,11 +114,12 @@ figcaption {
 }
 .about #workExperience,
 ul {
-  margin-top: -.5em;
   padding-top: 0px;
+  margin-top: -.5em;
+  padding-left: 2em;
+  padding-right: 2em;
 }
 .about #workDetails {
-  padding-top: .5em;
   padding-left: 1em;
 }
 .about #workDetails li:first-child {
