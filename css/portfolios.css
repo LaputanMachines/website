@@ -3,3 +3,10 @@
   float: right;
   font-size: .95em;
 }
+
+@media screen and (max-width: 800p) {
+ #employmentDate {
+   display: none;
+   visibility: hidden;
+  }
+}
