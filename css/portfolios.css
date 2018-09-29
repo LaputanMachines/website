@@ -4,7 +4,7 @@
   font-size: .95em;
 }
 
-@media screen and (max-width: 800p) {
+@media screen and (max-width: 800px) {
  #employmentDate {
    display: none;
    visibility: hidden;
