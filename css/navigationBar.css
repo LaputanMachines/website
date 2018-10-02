@@ -132,7 +132,7 @@ Navigation Bar
   .navigationBar #pageLinks,
   .navigationBar #footer {
     display: flex;
-    font-size: .7em;
+    font-size: .8em;
     border-top: 0px;
     text-align: center;
     border-bottom: 0px;
