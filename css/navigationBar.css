@@ -41,7 +41,8 @@ Navigation Bar
   color: rgba(102, 102, 102, 1);
   font-family: 'Megrim', cursive;
 }
-#collapseContainer button:hover {
+#collapseContainer button:hover,
+.pageLinks a:hover {
   cursor: pointer;
   text-decoration: underline;
 }
