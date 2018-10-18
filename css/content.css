@@ -46,6 +46,7 @@ hr {
 }
 * a:hover {
   color: inherit;
+  text-decoration: underline;
 }
 .mainBody a,
 .postLinkContent,
