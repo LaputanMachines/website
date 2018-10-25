@@ -166,7 +166,8 @@ pre.highlight {
 
 /*Mobile*/
 @media screen and (max-width: 1200px) {
-  #postTags {
+  #postTags,
+  .imageLeft {
     display: none;
     visibility: hidden;
   }

@@ -44,7 +44,7 @@ hr {
   color: inherit;
   text-decoration: none;
 }
-* a:hover {
+.links li a:hover {
   color: inherit;
   text-decoration: underline;
 }
@@ -114,6 +114,7 @@ figcaption {
   font-style: italic;
 }
 .about #workExperience,
+.about #impossibleGoal,
 ul {
   padding-top: 0px;
   margin-top: -.5em;
@@ -141,7 +142,7 @@ ul {
   }
   .mainBody,
   .postContent {
-    margin-top: 5em;
+    margin-top: 4.5em;
     padding-left: 1em;
     padding-right: 1em;
     margin-bottom: 0em;

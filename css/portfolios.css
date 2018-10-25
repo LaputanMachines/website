@@ -1,11 +1,12 @@
-#employmentDate {
+#employmentDate,
+#listProof {
   color: #888;
   float: right;
   font-size: .95em;
 }
 
 @media screen and (max-width: 800px) {
- #employmentDate {
+ #employmentDate, {
    display: none;
    visibility: hidden;
   }

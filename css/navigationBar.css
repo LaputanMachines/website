@@ -112,7 +112,8 @@ Navigation Bar
 
 /*Mobile Contextuals*/
 @media screen and (min-width: 500px) {
-   #collapseContainer {
+   #collapseContainer,
+   .hiddenOnDesktop {
     display: none;
     visibility: hidden;
   }
@@ -126,7 +127,8 @@ Navigation Bar
     max-height: 55px;
     box-shadow: 1px 0px 10px 0px rgba(0,0,0,0.1);
   }
-  .navigationBar #picture {
+  .navigationBar #picture,
+  .hiddenOnMobile {
     display: none;
     visibility: hidden;
   }
