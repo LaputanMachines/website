@@ -102,7 +102,7 @@ hr {
 #aboutBody #aboutPhoto {
   margin: 0 auto;
   display: block;
-  width: calc(100% - 10em);
+  width: calc(100% - 2em);
 
   padding: 1em;
   background-color: #fcfcfc;
