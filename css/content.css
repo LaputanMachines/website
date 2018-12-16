@@ -134,6 +134,15 @@ ul {
   margin-right: 1em;
 }
 
+/* GitHub Project Cards */
+.githubCardContainer {
+  display: flex;
+  justify-content: center;
+}
+iframe {
+  width: 100%;
+}
+
 /*Mobile*/
 @media screen and (max-width:500px) {
   #aboutBody #aboutPhoto {
