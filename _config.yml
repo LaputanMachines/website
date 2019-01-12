@@ -1,20 +1,19 @@
-markdown:             kramdown
-exclude:              ['README.md', vendor]
-version:              1.0.1
+markdown:    kramdown
+exclude:     ['README.md', vendor]
+version:     1.0.1
+username:    FlatlanderWoman
+repo:        FlatlanderWoman.github.io
+branch:      master
+title:       Michael Bassili
+author:      Michael Bassili
+url:         https://bassi.li
+description: My name is Michael Bassili, and I am a programmer. I also do other things, many of which are not conventionally productive or helpful to my career. Moreover, I really like those productivity self-help books you can find in the Business section of Chapters—I especially like it when authors of said productivity self-help books talk about themselves like they’re the Productivity Messiah, or something.
+source:      .
+destination: _site
+highlighter: rouge
+linenos:     true
 
-username:             FlatlanderWoman
-repo:                 FlatlanderWoman.github.io
-branch:               master
-
-title:                Michael Bassili
-author:               Michael Bassili
-url:                  https://bassi.li
-description:          My name is Michael Bassili, and I am a programmer. I also do other things, many of which are not conventionally productive or helpful to my career. Moreover, I really like those productivity self-help books you can find in the Business section of Chapters—I especially like it when authors of said productivity self-help books talk about themselves like they’re the Productivity Messiah, or something.
-
-source:               .
-destination:          _site
-
-plugins:
+gems:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-paginate
@@ -23,10 +22,6 @@ jekyll_admin:
   hidden_links:
     - datafiles
 
-highlighter: rouge
-
-linenos: true
-
 highlight:
   linenos: true
 
@@ -34,10 +29,8 @@ highlight_options:
   linenos: true
 
 kramdown:
-  input:          GFM
-  # https://github.com/jekyll/jekyll/pull/4090
+  input: GFM
   syntax_highlighter: rouge
-
   syntax_highlighter_opts:
     css_class: 'highlight'
     span:
