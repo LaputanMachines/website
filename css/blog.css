@@ -103,6 +103,7 @@ blockquote {
   flex-wrap: wrap;
 }
 .imagePost {
+  height: 100%;
   padding: .5em;
   margin: 0 auto 1em auto;
   max-width: 200px;
