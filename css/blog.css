@@ -107,12 +107,20 @@ blockquote {
   padding: .5em;
   margin: 0 auto 1em auto;
   max-width: 200px;
-  width: calc(100vw - 200px);
   text-align: center;
   background-color: #fcfcfc;
   border: 1px solid #e5e5e5;
   box-shadow: 1px 0px 10px 0px rgba(0,0,0,0.05);
 }
+
+.formerly-amelia {
+  max-width: 15vw;
+}
+
+.collect {
+  max-width: 20vw;
+}
+
 .postLinkImage {
   width: 100%;
   margin-bottom: .5em;
