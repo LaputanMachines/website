@@ -104,7 +104,6 @@ blockquote {
 }
 .imagePost {
   height: 100%;
-  max-height: 50vh;
   padding: .5em;
   margin: 0 auto 1em auto;
   text-align: center;
@@ -118,7 +117,7 @@ blockquote {
 }
 
 .collect {
-  max-width: 20vw;
+  max-width: 18vw;
 }
 
 .postLinkImage {
