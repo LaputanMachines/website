@@ -7,6 +7,8 @@ versions = JSON.parse(open('https://pages.github.com/versions.json').read)
 gem 'rake'
 gem 'jekyll'
 gem 'jekyll-feed'
+gem 'http_parser'
+gem 'eventmachine'
 gem 'jekyll-sitemap'
 gem 'jekyll-paginate'
 gem 'coveralls', require: false
