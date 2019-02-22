@@ -57,10 +57,14 @@ Blog Posts
   margin-right: -1em;
   background-color: #F9BF3B;
 }
+.InProgress { 
+  margin-right: -1em;
+  background-color: #e55039; 
+}
 .Programming { background-color: #E08283; }
 .Writing { background-color: #D24D57; }
-.Devlog { background-color: #67809F; }
-.Music { background-color: #336e7b; }
+.App { background-color: #67809F; }
+.Book { background-color: #ffa502; }
 
 /*Post Content*/
 .postContent {
