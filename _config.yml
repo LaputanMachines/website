@@ -16,7 +16,6 @@ linenos:     true
 gems:
   - jekyll-feed
   - jekyll-sitemap
-  - jekyll-paginate
 
 jekyll_admin:
   hidden_links:

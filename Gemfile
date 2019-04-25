@@ -5,11 +5,11 @@ require 'open-uri'
 versions = JSON.parse(open('https://pages.github.com/versions.json').read)
 
 gem 'rake'
-gem 'jekyll'
 gem 'jekyll-feed'
 gem 'http_parser'
 gem 'eventmachine'
+gem 'github-pages'
+gem 'json', :git => 'https://github.com/flori/json.git'
 gem 'jekyll-sitemap'
-gem 'jekyll-paginate'
 gem 'coveralls', require: false
 gem 'kramdown', versions['kramdown']
