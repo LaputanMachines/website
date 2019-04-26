@@ -15,12 +15,12 @@ Blog Posts
 
 /*Post Information*/
 #postDate {
-  color: #999;
+  color: #777;
   font-size: .9em;
   font-weight: lighter;
 }
 #postTitle {
-  color: #888;
+  color: #666;
   margin-left: 1.5em;
   font-weight: lighter;
 }
