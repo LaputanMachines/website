@@ -55,6 +55,9 @@ hr {
 .postContent ul li a {
     border-bottom: dotted #777 1px;
 }
+#rssLink {
+  margin: 0 1em;
+}
 .mainBody a:hover,
 .postLinkContent:hover,
 #rssLink:hover,
