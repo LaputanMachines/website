@@ -41,7 +41,7 @@ hr {
   width: calc(100% - 200px - 1px);
 }
 
- #aboutBody #aboutPhoto {
+#aboutPhoto {
   margin: 0 auto;
   display: block;
   width: calc(100% - 2em);
