@@ -58,7 +58,7 @@ hr {
 }
 
 #rssLink {
-  margin: 0 1em;
+  margin: 0 0.5em;
 }
 
 .mainBody a:hover,.postLinkContent:hover,#rssLink:hover,.postContent p a:hover,.postContent ul li a:hover {
