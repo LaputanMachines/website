@@ -2,8 +2,8 @@
 Title Bar
 */
 
-
 /*Title Bar Container*/
+
 .titleBar {
   height: auto;
   max-height: 25vh;
@@ -14,6 +14,7 @@ Title Bar
 }
 
 /*Title Bar Body*/
+
 .titleBar #title {
   color: #848484;
   font-weight: 300;
@@ -24,9 +25,9 @@ Title Bar
   margin-top: 0 !important;
   font-family: 'Roboto', sans-serif;
 }
+
 .titleBar #subTitleLinks {
   margin-top: -.5em;
-
   font-size: .9em;
   color: #848484;
   font-weight: 300;

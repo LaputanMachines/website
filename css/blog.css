@@ -2,125 +2,122 @@
 Blog Posts
 */
 
-
 /*Containers*/
+
 .posts {
   margin: 0 auto;
   max-width: 800px !important;
   padding: 0 2.5em 0 2.5em;
-
   font-size: 1em;
   font-family: 'Roboto', sans-serif;
 }
 
 /*Post Information*/
+
 #postDate {
   color: #777;
   font-size: .9em;
   font-weight: lighter;
 }
+
 #postTitle {
   color: #666;
   margin-left: 1.5em;
   font-weight: lighter;
 }
+
 #postInformation {
   font-size: .95em;
   line-height: 1.35em;
 }
-#markdown-toc {
-  color: #999;
-  float: right;
-  margin-top: 0em;
-  max-width: 400px;
-  margin-bottom: 0em;
-  line-height: 1.5em;
-}
+
 .postLinkDescription {
   color: #999;
   margin-left: 1.5em;
   font-weight: lighter;
 }
-#postTags,
-#postTagsSmall {
+
+#postTags,#postTagsSmall {
   color: white;
   font-size: .9em;
   font-weight: lighter;
-
   float: right;
   border-radius: 5%;
   margin-left: calc(1.5em + 2.5px);
   padding: 2.5px 5px 2.5px 5px;
 }
-.imageLeft {
-  max-width: 25%;
-  float: right;
-  margin-left: 1em !important;
-}
 
 /*Tags*/
+
 .Favorite {
   margin-right: -1em;
   background-color: #F9BF3B;
 }
-.InProgress { 
+
+.InProgress {
   margin-right: -1em;
-  background-color: #e55039; 
+  background-color: #e55039;
 }
-.Programming { background-color: #E08283; }
-.Writing { background-color: #D24D57; }
-.App { background-color: #67809F; }
-.Book { background-color: #1dd1a1; }
-.Music { background-color: #222f3e; }
+
+.Programming {
+  background-color: #E08283;
+}
+
+.Writing {
+  background-color: #D24D57;
+}
+
+.App {
+  background-color: #67809F;
+}
+
+.Book {
+  background-color: #1dd1a1;
+}
+
+.Music {
+  background-color: #222f3e;
+}
 
 /*Post Content*/
+
 .postContent {
   margin: 0 auto 1em auto;
   max-width: 600px;
   padding: 0 2.5em 0 2.5em;
-
   color: #777;
   font-size: .95em;
   line-height: 1.5em;
   font-family: 'Roboto', sans-serif;
 }
-.postContent h3,
-.postContent h4,
-.about h3 {
+
+.postContent h3,.postContent h4,.about h3 {
   font-size: 1.15em;
   text-align: center;
 }
-.postContent h4 { font-size: 1em;}
+
+.postContent h4 {
+  font-size: 1em;
+}
+
 .postContent blockquote + p {
   text-indent: 0em;
 }
+
 .postContent p > img {
   margin: 0 auto;
   display: block;
   width: calc(100% - 2 * 1em);
-
   padding: 1em;
   background-color: #fcfcfc;
   box-shadow: 1px 1px 3px rgba(0,0,0,.25);
 }
+
 blockquote {
   margin-left: 0;
   padding-left: 2em;
   color: #999;
   border-left: 1px solid #e5e5e5;
-}
-.projectPosts {
-  display: flex;
-  flex-wrap: wrap;
-}
-.imagePost {
-  height: 100%;
-  padding: .5em;
-  margin: 0 auto 1em auto;
-  text-align: center;
-  background-color: #fcfcfc;
-  border: 1px solid #e5e5e5;
-  box-shadow: 1px 0px 10px 0px rgba(0,0,0,0.05);
 }
 
 .formerly-amelia {
@@ -131,30 +128,8 @@ blockquote {
   max-width: 300px;
 }
 
-.postLinkImage {
-  width: 100%;
-  margin-bottom: .5em;
-}
-.postLinkImageTitle {
-  color: #666;
-  font-weight: lighter;
-  border-bottom: dotted #777 1px;
-}
-.postLinkImageDescription {
-  color: #888;
-  padding: 1em;
-  display: block;
-  font-size: .8em;
-  text-align: justify;
-  font-weight: lighter;
-  font-family: 'Roboto', sans-serif;
-}
-
 /*Miscellaneous*/
-#backLink {
-  word-spacing: normal;
-}
-.MJXc-display,
+
 pre.highlight {
   padding: 0 1em 0 1em;
   font-size: .95em;
@@ -163,21 +138,23 @@ pre.highlight {
   background-color: #ececec;
   overflow-x: auto;
 }
-.MJXc-display {
-  padding: 1em !important;
+
+.lineno {
+  color: #999;
 }
-.lineno { color: #999; }
 
 /*Mobile*/
+
 @media screen and (max-width: 500px) {
-  #postDate,
-  #markdown-toc {
+  #postDate {
     display: none;
     visibility: hidden;
   }
+
   #postTitle {
     margin-left: 0;
   }
+
   .postContent p > img {
     padding: 0em;
     width: 100%;
@@ -185,28 +162,31 @@ pre.highlight {
 }
 
 /*Mobile*/
+
 @media screen and (max-width: 1200px) {
-  #postTags,
-  .imageLeft {
+  #postTags {
     display: none;
     visibility: hidden;
   }
 }
+
 @media screen and (max-width: 700px) {
   #postTagsSmall {
     display: none;
     visibility: hidden;
   }
 }
+
 @media screen and (max-width: 500px) {
- .posts {
+  .posts {
     margin-top: 5em;
     padding-left: 1em;
     padding-right: 1em;
     margin-bottom: 0em;
     font-size: .95em;
-  } 
-  .MJXc-display, pre.highlight {
-   font-size: .75em;     
+  }
+
+  pre.highlight {
+    font-size: .75em;
   }
 }
