@@ -25,8 +25,6 @@ The following author's note appears at the end of the book. I wrote it about hal
 
 ### Venez Vous: Henry, Ian, and Dealing With Loss
 
-<img id="aboutPhoto" class="imageLeft" src="{{site.baseurl}}/assets/formerlyAmelia/formerlyAmelia.jpg" alt="Front cover of the book">
-
 Venez Vous follows Henry & Ian as they struggle to find themselves in a world that they find utterly unappealing. When I initially, wrote it I wanted to display the outcome of abandoning your ship at the slightest hint of difficulty, how two grown men repudiate their former (well developed, might I add) lives at the first encounter of any real struggle. They are fired, and people are fired all the time. Ian loses his companion, but people lose their companions all the time. These two men decide that their lives are no longer worth much at all because of some slights to their livelihoods. That’s no way to live a life—not in my opinion. Acts like these are never the right ones: you shouldn’t uplift your life when the universe deals you a bad hand.
 
 That’s just irresponsible.
