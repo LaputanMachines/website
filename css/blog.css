@@ -49,16 +49,6 @@ Blog Posts
 
 /*Tags*/
 
-.Favorite {
-  margin-right: -1em;
-  background-color: #F9BF3B;
-}
-
-.InProgress {
-  margin-right: -1em;
-  background-color: #e55039;
-}
-
 .Programming {
   background-color: #E08283;
 }
@@ -67,24 +57,16 @@ Blog Posts
   background-color: #D24D57;
 }
 
-.App {
-  background-color: #67809F;
-}
-
-.Book {
-  background-color: #1dd1a1;
-}
-
 .Music {
-  background-color: #222f3e;
-}
-
-.Tool {
-  background-color: #e67e22;
+  background-color: #f78fb3;
 }
 
 .Games {
-  background-color: #5f27cd;
+  background-color: #778beb;
+}
+
+.Performance {
+  background-color: #786fa6;
 }
 
 /*Post Content*/
