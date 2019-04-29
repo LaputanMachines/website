@@ -124,6 +124,13 @@ ul {
   padding-right: 1em;
 }
 
+.posts h3 {
+  color: #777;
+  font-size: 1.15em;
+  line-height: 1.5em;
+  font-family: 'Roboto', sans-serif; 
+}
+
 /* GitHub Project Cards */
 
 /*Mobile*/
