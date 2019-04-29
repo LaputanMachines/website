@@ -12,6 +12,16 @@ title: Blog
 </div>
 
 <div class="posts" id="posts">
+  <h3>Favorites</h3>
+  <div class="postLink" id="postLink">
+    <h3 id="postInformation">
+      <span id="postDate">24-04-2018</span>
+      <span id="postTitle"><a class="postLinkContent" href="/blog/2018/04/24/shuffling-with-python.html">Creating the Perfect Playlist Shuffle Feature in Python</a></span>
+      <span id="postTags" class="Programming">Programming</span>
+    </h3>
+  </div>
+  <hr>
+  <h3>Archive</h3>
   {% for post in site.posts %}
     {% if post.category contains 'Blog' %}
       <div class="postLink" id="postLink">
