@@ -1,5 +1,5 @@
 ---
-title: SaaSS: How to Openly Steal From Your Customers 
+title: How to Openly Steal From Your Customers With SaaSS
 author: Michael Bassili
 layout: post
 tags: Programming
