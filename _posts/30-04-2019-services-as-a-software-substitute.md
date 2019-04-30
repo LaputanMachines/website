@@ -17,3 +17,11 @@ My biggest issue with SaaSS is that I don’t actually own what I bought. Todois
 ### I Want To Own The Things I Buy
 
 In summary, I don’t like SaaSS. As of today, I’ve opened up the code to [the app I’ve been writing](https://github.com/FlatlanderWoman/collect) to the public. I’ve updated the licence in order to allow for open contribution and interaction with the software. I’ll add an option for donations once the application is actually completed, but for now, this scratches that itch I’ve been having for a while. I’m no longer buying games that are always-online, or have some DRM that needs an internet connection to activate, or straight-up services. I won’t be buying a Google Stadia. I won’t consciously buy into this crazy dystopia where nobody owns the software they buy.
+
+---
+
+### Further Readings & Viewings 
+There are tons of great people out there who are advocating for better software practices. Stallman is a big one in my mind. I also have to bring up Accursed Farms' video that inspired me to complain about my personal software issues in a blog post.
+- ["Games as a service" is fraud.](https://www.youtube.com/watch?v=tUAX0gnZ3Nw) by Accursed Farms
+- [Who does that server really serve?](https://www.gnu.org/philosophy/who-does-that-server-really-serve.html) by Richard Stallman
+- [Did You Say "Intellectual Property"? It's a Seductive Mirage](https://www.gnu.org/philosophy/not-ipr.en.html) by Richard Stallman
