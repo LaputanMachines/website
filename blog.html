@@ -12,7 +12,7 @@ title: Blog
 </div>
 
 <div class="posts" id="posts">
-  <h3>Favorites</h3>
+  <h3>Favorite Posts</h3>
   <div class="postLink" id="postLink">
     <h3 id="postInformation">
       <span id="postDate">24-04-2018</span>
@@ -20,7 +20,7 @@ title: Blog
       <span id="postTags" class="Programming">Programming</span>
     </h3>
   </div>
-  <h3 class="postTitleClassTopPadding">Archive</h3>
+  <h3 class="postTitleClassTopPadding">Blog Archive</h3>
   {% for post in site.posts %}
     {% if post.category contains 'Blog' %}
       <div class="postLink" id="postLink">
