@@ -25,3 +25,7 @@ There are tons of great people out there who are advocating for better software 
 - ["Games as a service" is fraud.](https://www.youtube.com/watch?v=tUAX0gnZ3Nw) by Accursed Farms
 - [Who does that server really serve?](https://www.gnu.org/philosophy/who-does-that-server-really-serve.html) by Richard Stallman
 - [Did You Say "Intellectual Property"? It's a Seductive Mirage](https://www.gnu.org/philosophy/not-ipr.en.html) by Richard Stallman
+- [Cloud PC Gaming: A Pie in the Sky?](https://youtu.be/Wv8FnM__04s) by George Weidman
+- [Online Only? Avoid Wholly!](https://youtu.be/7BKw4eNFGqc) by George Weidman
+- [The Importance of Modding](https://www.youtube.com/watch?v=TvNzj0GVMDI) by George Weidman
+- [Why Buy SimCity, Anyway?](https://www.youtube.com/watch?v=d2aR0txGY-k) by George Weidman
