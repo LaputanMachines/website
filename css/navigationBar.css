@@ -83,7 +83,7 @@ Navigation Bar
 
 /*Mobile Contextuals*/
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 750px) {
   .navigationBar #pageLinks {
     margin: 0em 1em 0em 1em;
   }
@@ -91,6 +91,7 @@ Navigation Bar
   .navigationBar {
     width: 100%;
     max-height: 30px;
+    overflow-y: hidden;
     box-shadow: 1px 0px 10px 0px rgba(0,0,0,0.1);
   }
 
@@ -122,9 +123,5 @@ Navigation Bar
   .navigationBar #footer {
     display: none;
     visibility: hidden;
-  }
-
-  .navigationBar {
-    overflow-y: hidden;
   }
 }
