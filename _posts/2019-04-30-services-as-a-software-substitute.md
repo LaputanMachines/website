@@ -1,5 +1,5 @@
 ---
-title: How to Openly Steal From Your Customers With SaaSS
+title: SaaSS & Video Games Don't Mix
 author: Michael Bassili
 layout: post
 tags: Programming
