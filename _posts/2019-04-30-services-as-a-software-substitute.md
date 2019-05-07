@@ -2,7 +2,7 @@
 title: SaaSS & Video Games Don't Mix
 author: Michael Bassili
 layout: post
-tags: Programming
+tags: Games
 category: Blog
 ---
 
