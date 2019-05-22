@@ -1,5 +1,5 @@
 ---
-title: Collect Developer Log Number 1
+title: Collect Developer Log Number One
 author: Michael Bassili
 layout: post
 tags: Programming
@@ -23,8 +23,6 @@ At this point in time, I took to planning, coding, and testing all the pages I t
 Our current objectives are to (1) get user authentication and management to work, and (2) get trivial task management to work, requiring an authenticated user. These are really the only two milestones that are needed to get this thing to its MVP milestone; anything extra would be considered bonus! Development on the bonus elements really depends on how much potential I see in the MVP, and whether I want to dedicate even more of my time to this project. I have like ten things going on at once, so I need to be cautious with my time and energy.
 
 For now, we’ll leave you with some pictures taken of the UI elements that were completed in this first little sprint of the project. More to come in due time! Wish us luck!
-
-<hr>
 
 ### Screenshot Gallery
 
