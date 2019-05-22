@@ -11,6 +11,9 @@ Blog Posts
   font-size: 1em;
   font-family: 'Roboto', sans-serif;
 }
+.projectParagraph {
+  padding-top: 0.25em;  
+}
 
 /*Post Information*/
 
