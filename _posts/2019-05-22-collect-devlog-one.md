@@ -26,6 +26,8 @@ For now, we’ll leave you with some pictures taken of the UI elements that were
 
 <hr>
 
+### Screenshot Gallery
+
 <img id="aboutPhoto" src="{{site.baseurl}}/assets/collectDevlog1/collect-homepage.png" alt="Fig.1 Home page of the Collect application">
 <figcaption>Fig.1 Home page of the Collect application</figcaption>
 
