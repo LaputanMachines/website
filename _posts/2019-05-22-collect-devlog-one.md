@@ -1,4 +1,4 @@
- ---
+---
 title: Collect Developer Log Number 1
 author: Michael Bassili
 layout: post
