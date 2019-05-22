@@ -24,14 +24,19 @@ Our current objectives are to (1) get user authentication and management to work
 
 For now, we’ll leave you with some pictures taken of the UI elements that were completed in this first little sprint of the project. More to come in due time! Wish us luck!
 
+<hr>
+
 <img id="aboutPhoto" src="{{site.baseurl}}/assets/collectDevlog1/collect-homepage.png" alt="Fig.1 Home page of the Collect application">
 <figcaption>Fig.1 Home page of the Collect application</figcaption>
+
 
 <img id="aboutPhoto" src="{{site.baseurl}}/assets/collectDevlog1/collect-features.png" alt="Fig.2 Features page of the Collect application">
 <figcaption>Fig.2 Features page of the Collect application</figcaption>
 
+
 <img id="aboutPhoto" src="{{site.baseurl}}/assets/collectDevlog1/collect-pricing.png" alt="Fig.3 Pricing page of the Collect application">
 <figcaption>Fig.3 Pricing page of the Collect application</figcaption>
+
 
 <img id="aboutPhoto" src="{{site.baseurl}}/assets/collectDevlog1/collect-accounts.png" alt="Fig.4 Accounts page of the Collect application">
 <figcaption>Fig.4 Accounts page of the Collect application</figcaption>
