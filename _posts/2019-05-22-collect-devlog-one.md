@@ -1,5 +1,5 @@
 ---
-title: Collect Developer Log Number One
+title: Collect Developer Log 1
 author: Michael Bassili
 layout: post
 tags: Programming
