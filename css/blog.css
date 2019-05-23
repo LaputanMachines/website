@@ -11,6 +11,7 @@ Blog Posts
   font-size: 1em;
   font-family: 'Roboto', sans-serif;
 }
+
 .projectParagraph {
   padding-top: 0.25em;  
 }
@@ -181,5 +182,9 @@ pre.highlight {
 
   pre.highlight {
     font-size: .75em;
+  }
+  
+  .postsDescription {
+    margin-top: 0px;
   }
 }
