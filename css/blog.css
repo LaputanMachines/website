@@ -80,12 +80,13 @@ Blog Posts
 }
 
 .postContent {
-  margin: 0 auto 1em auto;
   max-width: 600px;
-  padding: 0 2.5em 0 2.5em;
   color: #777;
   font-size: .95em;
+  overflow-x: hidden; 
   line-height: 1.5em;
+  margin: 0 auto 1em auto;
+  padding: 0 2.5em 0 2.5em;
   font-family: 'Roboto', sans-serif;
 }
 

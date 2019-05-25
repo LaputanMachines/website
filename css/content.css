@@ -141,8 +141,13 @@ ul {
     padding: 0em;
   }
 
-  .mainBody,  .postContent {
-    margin-top: 3.2em;
+  .mainBody {
+    margin-bottom: 0;
+  }
+
+  .mainBody,  
+  .postContent {
+    margin-top: 2em;
     padding-left: 1em;
     padding-right: 1em;
   }
