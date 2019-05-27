@@ -5,4 +5,6 @@ If Jekyll is installed, you can serve the Jekyll site locally by typing the foll
 bundle exec jekyll serve
 ```
 
-<img src="https://img.shields.io/badge/Version-1.0.0-blue.svg" /> <img src="https://img.shields.io/badge/license-GNU-red.svg" /> <img src="https://img.shields.io/badge/type-project-yellow.svg" />
+<p align="center">
+  <img src="https://img.shields.io/badge/Version-1.0.0-blue.svg" /> <img src="https://img.shields.io/badge/license-GNU-red.svg" /> <img src="https://img.shields.io/badge/type-project-yellow.svg" /> <img src="https://img.shields.io/badge/status-complete-ff69b4.svg" />
+</p>
