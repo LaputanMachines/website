@@ -37,7 +37,28 @@ Title Bar
 
 @media screen and (max-width: 500px) {
   #titleBar {
-    display: none;
-    visibility: hidden;
+    margin-top: 30px;
+    padding-bottom: 1em;
+  }
+
+  .titleBar #title,
+  .titleBar #subTitleLinks {
+    display: inline;
+    font-size: 0.9em;
+  }
+
+  .titleBar #title {
+    float: right;
+    text-align: right;
+    text-decoration: underline;
+  }
+
+  .titleBar #subTitleLinks {
+    text-align: right;
+    padding-left: 1em;
+  }
+
+  .titleBar #subTitleLinks a {
+    margin-left: 0em;
   }
 }
