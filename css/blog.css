@@ -192,4 +192,8 @@ pre.highlight {
   .postsDescription {
     margin-top: 0px !important;
   }
+
+  .postContent h3 {
+    margin-top: 0;
+  }
 }
