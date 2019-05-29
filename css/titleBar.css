@@ -47,12 +47,6 @@ Title Bar
     font-size: 0.9em;
   }
 
-  .titleBar #title {
-    float: right;
-    text-align: right;
-    text-decoration: underline;
-  }
-
   .titleBar #subTitleLinks {
     text-align: right;
     padding-left: 1em;
@@ -60,5 +54,12 @@ Title Bar
 
   .titleBar #subTitleLinks a {
     margin-left: 0em;
+    margin-right: 1em; 
+  }
+
+  .hiddenMobileTitleBar,
+  .titleBar #title {
+    display: none;
+    visibility: hidden;
   }
 }
