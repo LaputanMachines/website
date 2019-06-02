@@ -92,7 +92,6 @@ Navigation Bar
     width: 100%;
     max-height: 30px;
     overflow-y: hidden;
-    box-shadow: 1px 0px 10px 0px rgba(0,0,0,0.1);
   }
 
   .navigationBar #picture {

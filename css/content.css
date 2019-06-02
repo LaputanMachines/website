@@ -64,7 +64,8 @@ hr {
   text-decoration: underline;
 }
 
-.mainBody a,.postLinkContent,#rssLink,.postContent p a,.postContent ul li a {
+.mainBody a,.postLinkContent,#rssLink,.postContent p a,.postContent ul li a,
+.portfolioLink {
   border-bottom: dotted #777 1px;
 }
 
@@ -72,7 +73,9 @@ hr {
   margin: 0 0.25em;
 }
 
-.mainBody a:hover,.postLinkContent:hover,#rssLink:hover,.postContent p a:hover,.postContent ul li a:hover {
+.mainBody a:hover,.postLinkContent:hover,
+#rssLink:hover,.postContent p a:hover,
+.postContent ul li a:hover, .portfolioLink:hover {
   border-bottom: solid #777 1px;
 }
 

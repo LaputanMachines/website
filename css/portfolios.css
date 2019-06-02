@@ -5,9 +5,77 @@
   font-size: .95em;
 }
 
+.portfolioShowcase {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.portfolioEntry {
+  width: 100%;
+  padding: 1em;
+  background-color: #fcfcfc;
+  border: 1px solid #e5e5e5;
+  
+  /* Grid To Force Uniform Spacing */
+  display: grid;
+
+  /* Deliberately Larger Than Horizontal Margin */
+  margin-bottom: 0.4em;
+
+  /* Size Accounts For Padding & Border */
+  max-width: calc(400px - 2em - 2px - 0.2em);
+}
+
+.portfolioEntry:nth-child(odd) {
+  /* Add Spacing Between Elements */
+  margin-right: 0.1em;
+}
+
+.portfolioEntry:nth-child(even) {
+  /* Add Spacing Between Elements */
+  margin-left: 0.1em;
+}
+
+.portfolioImage {
+  max-width: 100%;
+  box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.1);
+  -moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.1);
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.1);
+}
+
+.portfolioTitle {
+  font-size: 1em;
+  font-weight: 300;
+  color: #666 !important;
+  font-family: 'Roboto', sans-serif;
+}
+
+.portfolioTitle a {
+  float: right;
+  font-size: 1em;
+  font-weight: 300;
+  color: #555 !important;
+  font-family: 'Roboto', sans-serif;
+}
+
+.portfolioDescription {
+  color: #777;
+  font-size: 0.9em;
+  font-weight: 300;
+  font-family: 'Roboto', sans-serif;
+}
+
 @media screen and (max-width: 800px) {
- #employmentDate, {
+ #employmentDate {
    display: none;
    visibility: hidden;
+  }
+
+  .portfolioEntry:nth-child(odd),
+  .portfolioEntry:nth-child(even) {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 1em;
   }
 }
