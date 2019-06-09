@@ -9,3 +9,11 @@ Landing Div
   overflow-y: hidden;
   background-color: #fcfcfc;
 }
+
+.noMarginBottom {
+  margin-bottom: 0px;
+}
+
+.smallMarginBottom {
+  margin-bottom: 0.5em;
+}

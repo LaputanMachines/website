@@ -84,3 +84,11 @@
     margin-bottom: 1em;
   }
 }
+
+
+@media screen and (max-width: 500px) {
+  .portfolioEntry:nth-child(odd),
+  .portfolioEntry:nth-child(even) {
+    margin-bottom: 0.5em;
+  }
+}
