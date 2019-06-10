@@ -37,8 +37,8 @@
   margin-left: 0.1em;
 }
 
-.portfolioEntry a,
-.portfolioEntry a:hover {
+.portfolioEntry > a,
+.portfolioEntry > a:hover {
   border-bottom: 0;
 }
 
