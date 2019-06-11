@@ -1,5 +1,5 @@
 ---
-title: SaaSS & Video Games Don't Mix
+title: SaaSS & Video Games Facilitate Loss
 author: Michael Bassili
 layout: post
 tags: Games
