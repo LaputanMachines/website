@@ -1,5 +1,5 @@
 ---
-title: Designing the Initial UI and Database For Collect (Devlog &num;1)
+title: Collect Devlog &num;1, Initial UI, Database
 author: Michael Bassili
 layout: post
 tags: Programming
