@@ -1,5 +1,5 @@
 ---
-title: Collect Devlog &num;1, Initial UI, Database
+title: Collect Devlog &num;1&#58; Initial UI, Database
 author: Michael Bassili
 layout: post
 tags: Programming
