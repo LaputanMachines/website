@@ -134,6 +134,12 @@ ul {
   font-family: 'Roboto', sans-serif; 
 }
 
+.homePage {
+  margin-bottom: 0em;
+  padding-bottom: 0em;
+  padding-top: 0.75em;
+}
+
 /* GitHub Project Cards */
 
 /*Mobile*/
