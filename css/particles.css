@@ -1,0 +1,43 @@
+/* Styles for the Landing Page */
+
+.landingPage, .welcomeContainer {
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.particleDisplay {
+    height: calc(100vh - 4em);
+}
+
+#welcomeContainer {
+    top: 45%;
+    left: 50%;
+    width: 100vw;
+    position: absolute;
+    vertical-align: middle;
+    transform: translate(-50%, -50%);
+}
+
+#welcomeContainer #title {
+    color: #666;
+    font-size: 4em;
+    font-weight: 300;
+    text-align: center;
+    font-style: normal;
+    padding-bottom: 15px;
+    letter-spacing: 0.15em;
+    font-family: 'Megrim', sans-serif;
+}
+
+#welcomeContainer #subtitle {
+    color: #888;
+    font-weight: 300;
+    text-align: center;
+    font-style: normal;
+    padding-bottom: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25em;
+    letter-spacing: 0.65em;
+    margin-top: -3em;
+    text-indent: .15em;
+}
