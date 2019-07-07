@@ -6,6 +6,7 @@ General Content
 
 body {
   display: flex;
+  overflow-x: hidden;
   text-rendering: optimizeLegibility;
 }
 

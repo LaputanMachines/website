@@ -3,56 +3,12 @@ layout: main
 title: Homepage
 ---
 
-<div class="titleBar expandedTitleBar hiddenMobileTitleBar" id="titleBar">
-  <h1 id="title">Home</h1>
-</div>
-
-<div class="mainBody about noMarginBottom" id="about">
-  <p id="aboutBody">
-    Howdy! My name is Michael Bassili, and I am a programmer.
-    I also do other things, many of which are not conventionally productive or helpful to my career. Here are some things I'm proud of! 
-    If you want to get in touch, email is best. Otherwise, I maintain a LinkedIn and GitHub profile which I try to monitor once a week.
-  </p>
-  <p id="aboutBody">
-      <ul>
-        <li><a href="mailto:michaelybassili@gmail.com">Email me</a> directly at michaelybassili@gmail.com</li>  
-        <li>Follow me on <a href="https://github.com/FlatlanderWoman/">GitHub</a> to see some of the code I've written for personal projects</li>
-        <li>Connect with me on <a href="https://www.linkedin.com/in/michael-bassili">LinkedIn</a> if you're into that sort of thing</li>
-      </ul>
-    </p>
-    <hr>
-</div>
-
-<div class="mainBody posts portfolioShowcase homePage" id="posts">
-  <div class="portfolioEntry">
-    <a href="https://flatlanderwoman.github.io/crappyComics/">
-        <img class="portfolioImage" src="{{site.url}}/assets/portfolio/crappyComics.png" alt="Crappy Comics landing page.">
-    </a>
-    <span class="portfolioInformation">
-        <p class="portfolioTitle">
-            Crappy Comics
-            <a class="portfolioLink" href="https://flatlanderwoman.github.io/crappyComics/">View Site</a>
-        </p>
-    </span>
-    <span class="portfolioDescription">
-        Website hosting programming-related comic strips, built using Jekyll. 
-        Hosted for free via GitHub Pages.
-    </span>
-  </div>
-
-  <div class="portfolioEntry">
-    <a href="https://github.com/FlatlanderWoman/collect">
-        <img class="portfolioImage" src="{{site.url}}/assets/portfolio/collect.png" alt="Collect landing page.">
-    </a>
-    <span class="portfolioInformation">
-        <p class="portfolioTitle">
-            Collect
-            <a class="portfolioLink" href="https://github.com/FlatlanderWoman/collect">View Source</a>
-        </p>
-    </span>
-    <span class="portfolioDescription">
-        Todo list application for power users, built with Django. 
-        Hosted locally, by the user. Can be run remotely on a server or VM.
-    </span>
+<div class="landingPage" id="welcome">
+  <div class="particleDisplay" id="particles-js"></div>
+  <!-- Titles -->
+  <div id="welcomeContainer">
+    <h1 id="title">Michael Bassili</h1>
+    <h2 id="subtitle">Remote Software Developer</h2>
+    <div id="app"></div>
   </div>
 </div>
