@@ -41,3 +41,15 @@
     margin-top: -3em;
     text-indent: .15em;
 }
+
+@media screen and (max-width:500px) {
+    #welcomeContainer #title {
+        font-size: 3em;
+        letter-spacing: 0em;
+    }
+    
+    #welcomeContainer #subtitle {
+        margin-top: -2.5em;
+        letter-spacing: .17em;
+    }
+}
