@@ -53,9 +53,9 @@
         "width": 1
       },
       "move": {
-        "enable": false,
+        "enable": true,
         "speed": 1,
-        "direction": "bottom",
+        "direction": "none",
         "random": true,
         "straight": false,
         "out_mode": "out",
