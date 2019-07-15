@@ -53,7 +53,7 @@
         "width": 1
       },
       "move": {
-        "enable": true,
+        "enable": false,
         "speed": 1,
         "direction": "bottom",
         "random": true,
