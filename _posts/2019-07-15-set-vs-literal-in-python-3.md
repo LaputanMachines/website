@@ -57,7 +57,7 @@ Now that we've gotten to the bottom of this, we can change that pesky function c
 
 #### Further Reading Materials
 
-Here are some articles and documentation that I found interesting when researching this topic:
+Here are some articles and documentation that I found interesting:
 
-1. https://sites.cs.ucsb.edu/~pconrad/cs8/topics.beta/theStack/02/
-2. https://www.codementor.io/mjpieters/python-optimization-how-it-can-make-you-a-better-programmer-ajiiftqbo
+1. [https://sites.cs.ucsb.edu/~pconrad/cs8/topics.beta/theStack/02/](https://sites.cs.ucsb.edu/~pconrad/cs8/topics.beta/theStack/02/)
+2. [https://www.codementor.io/mjpieters/python-optimization-how-it-can-make-you-a-better-programmer-ajiiftqbo](https://www.codementor.io/mjpieters/python-optimization-how-it-can-make-you-a-better-programmer-ajiiftqbo)
