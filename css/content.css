@@ -66,7 +66,7 @@ hr {
 }
 
 .mainBody a,.postLinkContent,#rssLink,.postContent p a,.postContent ul li a, 
-.portfolioInformation .portfolioTitle .portfolioLink {
+.portfolioInformation .portfolioTitle .portfolioLink, .postContent a {
   border-bottom: dotted #777 1px;
 }
 
@@ -76,7 +76,8 @@ hr {
 
 .mainBody a:hover,.postLinkContent:hover,
 #rssLink:hover,.postContent p a:hover,
-.postContent ul li a:hover, .portfolioInformation .portfolioTitle .portfolioLink:hover {
+.postContent ul li a:hover, .portfolioInformation .portfolioTitle .portfolioLink:hover,
+.postContent a:hover {
   border-bottom: solid #777 1px;
 }
 
