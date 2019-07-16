@@ -51,8 +51,13 @@ That's a lot of stuff Python needs to do in order to handle your `set()` call! I
 
 Python can do this pretty quickly, resulting in faster generation of sets when using the set literal than when using the `set()` function, which itself has to build the set from a generator instead of using constant folding. The result? Faster set generation with the literals than with the function (for most cases I tested). _In reality, you might be able to achieve equivalent performance using `set()` when your data is already an iterable or a generator object._
 
+### Summary Information
+
+Now that we've gotten to the bottom of this, we can change that pesky function call to a set literal in our project, thus shutting-up PyCharm! I hope this helps someone who's wondering why the heck their IDE is angry at them for using a convenient, built-in Python function. The solution: use an even-more convenient Python literal!
+
 #### Further Reading Materials
 
 Here are some articles and documentation that I found interesting when researching this topic:
 
 1. https://sites.cs.ucsb.edu/~pconrad/cs8/topics.beta/theStack/02/
+2. https://www.codementor.io/mjpieters/python-optimization-how-it-can-make-you-a-better-programmer-ajiiftqbo
