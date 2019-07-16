@@ -1,5 +1,5 @@
 ---
-title: Python 3 set() Vs. {*}
+title: Python 3 Which Is Faster In Converting A list To A Set&colon; set() or {*} 
 author: Michael Bassili
 layout: post
 tags: Programming
@@ -27,8 +27,8 @@ print(timeit("my_set = {*[1, 2, 3, 4, 5, 6, 7, 8, 9, 0]}"))
 ```
 
 ```bash
-\$ 0.3326582070000086
-\$ 0.28732166300000017 
+0.3326582070000086
+0.28732166300000017 
 ```
 
 You’ll probably see a negligible difference, but there *is* a difference! That's because Python is doing a lot more work for the function call then it is in the literal. Mainly, Python is storing the namespace and stack as it executes the function.
