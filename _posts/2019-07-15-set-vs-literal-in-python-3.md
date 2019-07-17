@@ -8,7 +8,7 @@ category: Blog
 
 ### PyCharm Prefers Literals To Function Calls 
 
-While porting my team’s code over to Python 3, I encountered a PyCharm warning I found interesting: “Function call can be replaced with set literal.” The snippet of code looked a little something like this... We were converting a list of elements into a set using the `set()` function built into Python 3. 
+While porting my team’s code over to Python 3, I encountered a PyCharm warning I found interesting: “Function call can be replaced with set literal.” The snippet of code looked a little something like this... We were converting a list of elements into a set using the `set()` function built into Python 3. In our case, we were randomly generating a list and then converting it into a set; we didn't want to write a for-loop which adds every element in the list into a dictionary. 
 
 ```python
 my_set = set([1, 2, 3, 4, 5])  # PyCharm doesn’t like when you do this
@@ -54,6 +54,30 @@ Python can do this pretty quickly, resulting in faster generation of sets when u
 ### Summary Information
 
 Now that we've gotten to the bottom of this, we can change that pesky function call to a set literal in our project, thus shutting-up PyCharm! I hope this helps someone who's wondering why the heck their IDE is angry at them for using a convenient, built-in Python function. The solution: use an even-more convenient Python literal!
+
+### FAQ Why Add The * Character After The Curly Brace
+
+Python doesn't really like it when you try to convert an unhashable/mutable object into a dictionary. It might be because set() uses generators to perform conversions, but I honestly don't know. Don't believe me? Execute the following in Python 3!
+
+```python
+my_list = [1, 2, 3, 4, 5]  # This already existed somewhere
+try: 
+    my_dict = {my_list}  # Try to convert the list outright
+except TypeError:
+    print("See! I told you so!")
+```
+
+So in order to force Python 3 to convert our list into a set object, we add that * character after the first curly brace. That will result in a dictionary with keys **but no values** that we can use.
+
+```python
+print(type({*[1, 2, 3, 4, 5]}))
+```
+
+```bash
+<class 'set'>
+```
+
+So that's why there's a star character after the first curly brace! 
 
 #### Further Reading Materials
 
