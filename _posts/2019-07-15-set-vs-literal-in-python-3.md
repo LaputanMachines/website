@@ -6,20 +6,22 @@ tags: Programming
 category: Blog
 ---
 
-### PyCharm Prefers Literals To Function Calls 
+### PyCharm Prefers Set Syntax To A Function Call 
 
-While porting my team’s code over to Python 3, I encountered a PyCharm warning I found interesting: “Function call can be replaced with set literal.” The snippet of code looked a little something like this... We were converting a list of elements into a set using the `set()` function built into Python 3. In our case, we were randomly generating a list and then converting it into a set; we didn't want to write a for-loop which adds every element in the list into a set. 
+**First, a big THANKS to all those who emailed me about the inaccuracies of my original post. I appreciate those comments and I used them to fix the post, making the content more accurate.**
+
+ While porting my team’s code over to Python 3, I encountered a PyCharm warning I found interesting: “Function call can be replaced with set literal.” The snippet of code looked a little something like this... We were converting an exising collection into a set using the `set()` function.  
 
 ```python
-list_to_convert_to_set = [1, 2, 3, 4, 5]
-my_set = set(list_to_convert_to_set)  # PyCharm doesn’t like when you do this
+list_to_convert_to_set = [1, 2, 3, 4, 5]  # Imagine this existed somewhere in memory
+my_set = set(list_to_convert_to_set)      # PyCharm complained when I did this
 ```
 
-So after some digging, I learned a little more about the way Python deals with function calls vs. how they deal with literals, in terms of performance. In summary: **using literals is faster because Python has less overhead involved with literals.** That's why PyCharm recommends literals. So let’s dive in!
+So after some digging, I learned a little more about the way Python deals with function calls vs. how they deal with set syntax, in terms of performance. In summary: **using set syntax is faster because Python has less overhead involved compared to when it uses a function.** That's why PyCharm recommends set syntax over the `set()` function. So let’s dive in!
 
 ### Benchmarking Function Calls Vs. Literals
 
-Try the following code in your terminal. It should print two lines, one for each function call and assignment. The first uses `set()` to convert a list to a set, and the second uses set literals (i.e. `{*}`) to perform the conversion. There is a non-zero performance increase for the literal.
+Try the following code in your terminal. It should print two lines, one for each function call and assignment. The first uses `set()` to convert an existing collection into a set, and the second uses set syntax (i.e. `{*}`) to perform the conversion. The `*` character unpacks the collection. As you can see, there is a non-zero performance increase for the literal.
 
 ```python
 from timeit import timeit
@@ -32,7 +34,7 @@ print(timeit("my_set = {*[1, 2, 3, 4, 5, 6, 7, 8, 9, 0]}"))
 0.28732166300000017 
 ```
 
-You’ll probably see a negligible difference, but there *is* a difference! That's because Python is doing a lot more work for the function call then it is in the literal. Mainly, Python is storing the namespace and stack as it executes the function.
+You’ll probably see a negligible difference, but there *is* a difference! That's because Python is doing a lot more work for the function call then it is when it uses set syntax. Mainly, Python is storing the namespace and stack as it executes the function.
 
 ### What Python Is Actually Doing
 
@@ -46,19 +48,19 @@ Here are a few things that Python needs to do with functions:
 4. It needs to store activation records (i.e. call frames) that are kept on the runtime stack
 5. It needs to push the frame to the top of the stack when it's finally called
 
-That's a lot of stuff Python needs to do in order to handle your `set()` call! In contrast, here's what Python needs to do with a set literal:
+That's a lot of stuff Python needs to do in order to handle your `set()` call! In contrast, here's what Python needs to do when using set syntax:
 
 1. It needs to load the constant (i.e. constant folding) for the operator
 
-Python can do this pretty quickly, resulting in faster generation of sets when using the set literal than when using the `set()` function, which itself has to build the set from a generator instead of using constant folding. The result? Faster set generation with the literals than with the function (for most cases I tested). _In reality, you might be able to achieve equivalent performance using `set()` when your data is already an iterable or a generator object._
+Python can do this pretty quickly, resulting in faster generation of sets when using set syntax than when using the `set()` function, which itself has to build the set from a generator. The result? Faster set conversion with the set syntax than with the function (for most cases I tested). _In reality, you might be able to achieve equivalent performance using `set()` when your data is already an iterable or a generator object._
 
 ### Summary Information
 
-Now that we've gotten to the bottom of this, we can change that pesky function call to a set literal in our project, thus shutting-up PyCharm! I hope this helps someone who's wondering why the heck their IDE is angry at them for using a convenient, built-in Python function. The solution: use an even-more convenient Python literal!
+Now that we've gotten to the bottom of this, we can change that function call to set syntax in our project, thus shutting-up PyCharm! I hope this helps someone who's wondering why the heck their IDE is angry at them for using a convenient, built-in Python function. The solution: use an even-more convenient Python literal!
 
-### FAQ Why Add The * Character After The Curly Brace
+### FAQ The * Character
 
-Python doesn't really like it when you try to convert an unhashable/mutable object into a set. It might be because set() uses generators to perform conversions, but I honestly don't know. Don't believe me? Execute the following in Python 3!
+The `*` character unpacks a collection so that it can be converted into a set using set syntax. Try the following in your terminal... A `TypeError` will be raised when you try to convert `my_list` to a set. Python complains with the following: `TypeError: unhashable type: 'list'` To resolve, this, we need to unpack the collection with the `*` character.
 
 ```python
 my_list = [1, 2, 3, 4, 5]
@@ -68,7 +70,7 @@ except TypeError:
     print("See! I told you so!")
 ```
 
-So in order to force Python 3 to convert our list into a set object, we add that * character after the first curly brace. That will result in a set with keys **but no values** that we can use.
+Now with the `*` character unpacking our collection, we get a proper set object!
 
 ```python
 print(type({*[1, 2, 3, 4, 5]}))
@@ -77,8 +79,7 @@ print(type({*[1, 2, 3, 4, 5]}))
 ```bash
 <class 'set'>
 ```
-
-So that's why there's a star character after the first curly brace! I had a lot of trouble finding the exact documentation for this * feature, so if you find some docs that talk about it, I'd love to add it to the reading list below! 
+When you do `{[1, 2, 3]}`, Python will try to make a set with one element. The `*` character uses list expansion to construct the set from the containing members, not the list object. Thanks to all the people who emailed me to share their knowledge! You all helped make this blog post more accurate and informative. 
 
 #### Further Reading Materials
 
@@ -86,3 +87,5 @@ Here are some articles and documentation that I found interesting:
 
 1. [https://sites.cs.ucsb.edu/~pconrad/cs8/topics.beta/theStack/02/](https://sites.cs.ucsb.edu/~pconrad/cs8/topics.beta/theStack/02/)
 2. [https://www.codementor.io/mjpieters/python-optimization-how-it-can-make-you-a-better-programmer-ajiiftqbo](https://www.codementor.io/mjpieters/python-optimization-how-it-can-make-you-a-better-programmer-ajiiftqbo)
+3. [https://docs.python.org/dev/reference/expressions.html#set-displays](https://docs.python.org/dev/reference/expressions.html#set-displays)
+4. [https://docs.python.org/dev/reference/expressions.html#grammar-token-starred-list](https://docs.python.org/dev/reference/expressions.html#grammar-token-starred-list)
