@@ -8,11 +8,11 @@ category: Blog
 
 ### PyCharm Prefers Literals To Function Calls 
 
-While porting my team’s code over to Python 3, I encountered a PyCharm warning I found interesting: “Function call can be replaced with set literal.” The snippet of code looked a little something like this... We were converting a list of elements into a set using the `set()` function built into Python 3. In our case, we were randomly generating a list and then converting it into a set; we didn't want to write a for-loop which adds every element in the list into a dictionary. 
+While porting my team’s code over to Python 3, I encountered a PyCharm warning I found interesting: “Function call can be replaced with set literal.” The snippet of code looked a little something like this... We were converting a list of elements into a set using the `set()` function built into Python 3. In our case, we were randomly generating a list and then converting it into a set; we didn't want to write a for-loop which adds every element in the list into a set. 
 
 ```python
-list_to_convert_to_dict = [1, 2, 3, 4, 5]
-my_set = set(list_to_convert_to_dict)  # PyCharm doesn’t like when you do this
+list_to_convert_to_set = [1, 2, 3, 4, 5]
+my_set = set(list_to_convert_to_set)  # PyCharm doesn’t like when you do this
 ```
 
 So after some digging, I learned a little more about the way Python deals with function calls vs. how they deal with literals, in terms of performance. In summary: **using literals is faster because Python has less overhead involved with literals.** That's why PyCharm recommends literals. So let’s dive in!
@@ -58,17 +58,17 @@ Now that we've gotten to the bottom of this, we can change that pesky function c
 
 ### FAQ Why Add The * Character After The Curly Brace
 
-Python doesn't really like it when you try to convert an unhashable/mutable object into a dictionary. It might be because set() uses generators to perform conversions, but I honestly don't know. Don't believe me? Execute the following in Python 3!
+Python doesn't really like it when you try to convert an unhashable/mutable object into a set. It might be because set() uses generators to perform conversions, but I honestly don't know. Don't believe me? Execute the following in Python 3!
 
 ```python
 my_list = [1, 2, 3, 4, 5]
 try: 
-    my_dict = {my_list}
+    my_set = {my_list}
 except TypeError:
     print("See! I told you so!")
 ```
 
-So in order to force Python 3 to convert our list into a set object, we add that * character after the first curly brace. That will result in a dictionary with keys **but no values** that we can use.
+So in order to force Python 3 to convert our list into a set object, we add that * character after the first curly brace. That will result in a set with keys **but no values** that we can use.
 
 ```python
 print(type({*[1, 2, 3, 4, 5]}))
