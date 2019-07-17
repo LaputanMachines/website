@@ -11,7 +11,8 @@ category: Blog
 While porting my team’s code over to Python 3, I encountered a PyCharm warning I found interesting: “Function call can be replaced with set literal.” The snippet of code looked a little something like this... We were converting a list of elements into a set using the `set()` function built into Python 3. In our case, we were randomly generating a list and then converting it into a set; we didn't want to write a for-loop which adds every element in the list into a dictionary. 
 
 ```python
-my_set = set([1, 2, 3, 4, 5])  # PyCharm doesn’t like when you do this
+list_to_convert_to_dict = [1, 2, 3, 4, 5]
+my_set = set(list_to_convert_to_dict)  # PyCharm doesn’t like when you do this
 ```
 
 So after some digging, I learned a little more about the way Python deals with function calls vs. how they deal with literals, in terms of performance. In summary: **using literals is faster because Python has less overhead involved with literals.** That's why PyCharm recommends literals. So let’s dive in!
@@ -60,9 +61,9 @@ Now that we've gotten to the bottom of this, we can change that pesky function c
 Python doesn't really like it when you try to convert an unhashable/mutable object into a dictionary. It might be because set() uses generators to perform conversions, but I honestly don't know. Don't believe me? Execute the following in Python 3!
 
 ```python
-my_list = [1, 2, 3, 4, 5]  # This already existed somewhere
+my_list = [1, 2, 3, 4, 5]
 try: 
-    my_dict = {my_list}  # Try to convert the list outright
+    my_dict = {my_list}
 except TypeError:
     print("See! I told you so!")
 ```
@@ -77,7 +78,7 @@ print(type({*[1, 2, 3, 4, 5]}))
 <class 'set'>
 ```
 
-So that's why there's a star character after the first curly brace! 
+So that's why there's a star character after the first curly brace! I had a lot of trouble finding the exact documentation for this * feature, so if you find some docs that talk about it, I'd love to add it to the reading list below! 
 
 #### Further Reading Materials
 
