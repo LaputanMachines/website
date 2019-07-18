@@ -58,8 +58,8 @@
         "direction": "none",
         "random": true,
         "straight": false,
-        "out_mode": "out",
-        "bounce": false,
+        "out_mode": "bounce",
+        "bounce": true,
         "attract": {
           "enable": false,
           "rotateX": 600,
