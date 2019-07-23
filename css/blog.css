@@ -18,6 +18,11 @@ Blog Posts
 
 /*Post Information*/
 
+ol {
+  padding-left: 2em;
+  margin-top: -0.75em;
+}
+
 #postDate {
   color: #777;
   font-size: .9em;
