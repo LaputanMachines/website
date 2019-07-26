@@ -67,6 +67,7 @@
   float: right;
   font-size: 1em;
   font-weight: 300;
+  margin-left: 0.5em;
   color: #555 !important;
   font-family: 'Roboto', sans-serif;
 }
@@ -96,5 +97,9 @@
   .portfolioEntry:nth-child(odd),
   .portfolioEntry:nth-child(even) {
     margin-bottom: 0.5em;
+  }
+
+  .portfolioTitle a {
+    margin-left: 1em;
   }
 }
