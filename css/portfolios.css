@@ -12,7 +12,8 @@
 }
 
 .portfolioEntry {
-  width: 100%;
+  width: auto;
+  height: auto;
   padding: 1em;
   background-color: #fcfcfc;
   border: 1px solid #e5e5e5;
@@ -24,6 +25,7 @@
   margin-bottom: 0.4em;
 
   /* Size Accounts For Padding & Border */
+  max-height: calc(400px);
   max-width: calc(400px - 2em - 2px - 0.2em);
 }
 
@@ -45,6 +47,7 @@
 
 .portfolioImage {
   max-width: 100%;
+  max-height: 190px;  /* Keep for Chrome support */
   box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
   -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
   -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
