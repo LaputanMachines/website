@@ -31,15 +31,15 @@
 
 #welcomeContainer #subtitle {
     color: #888;
+    margin-top: -3em;
     font-weight: 300;
+    font-size: 1.25em;
     text-align: center;
     font-style: normal;
-    padding-bottom: 15px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.25em;
-    letter-spacing: 0.65em;
-    margin-top: -3em;
     text-indent: .15em;
+    padding-bottom: 15px;
+    letter-spacing: 0.665em;
+    font-family: 'Roboto', sans-serif;
 }
 
 @media screen and (max-width:500px) {
