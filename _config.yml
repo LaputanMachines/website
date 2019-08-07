@@ -13,9 +13,10 @@ destination: _site
 highlighter: rouge
 linenos:     true
 
-gems:
+plugins:
   - jekyll-feed
   - jekyll-sitemap
+  - jekyll-watch
 
 jekyll_admin:
   hidden_links:
