@@ -6,7 +6,7 @@
 }
 
 .particleDisplay {
-    height: calc(100vh - 1em);
+    height: 100vh;
 }
 
 #welcomeContainer {
