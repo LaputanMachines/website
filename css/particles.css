@@ -50,7 +50,7 @@
 #project-showcase-title {
     color: #848484;
     font-weight: 300;
-    font-size: 1.15em;
+    font-size: 1.5em;
     text-align: center;
     padding-left: 1em;
     padding-right: 1em;
@@ -66,19 +66,42 @@
 }
 
 .project-showcase-button {
+    font-size: 1.5em;
     text-align: center;
     margin-bottom: 1em;
     flex: 0 calc(50% - 2em);
-    background-color: yellow;
+    box-shadow: 0px 0px 5px 0px rgba(213, 194, 190, 0.25);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(213, 194, 190, 0.25);
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(213, 194, 190, 0.25);
 }
 
-.project-showcase-button:last-child {
-    margin-bottom: 2em;
+.project-showcase-button:hover, .project-showcase-button:active {
+    transition: 0.1s;
+    box-shadow: 0px 0px 5px 0px rgba(213, 194, 190, .75);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(213, 194, 190, .75);
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(213, 194, 190, .75);
+
 }
 
 .project-showcase-button a {
     padding: 1em;
     display: block;
+}
+
+.project-showcase-button#mikes-gaming-trove {
+    background-color: #e7dfc6;
+    border: solid 1px #d5c2be;
+    font-family: 'Alfa Slab One', serif;
+}
+
+.project-showcase-button#mikes-gaming-trove a {
+    color: #3c0101;
+}
+
+.project-showcase-button#mikes-gaming-trove a::first-letter,
+.project-showcase-button#mikes-gaming-trove a:hover,
+.project-showcase-button#mikes-gaming-trove a:active {
+    color: #b02336;
 }
 
 @media screen and (max-width:500px) {
