@@ -57,7 +57,7 @@
         "speed": 1,
         "direction": "bottom",
         "random": true,
-        "straight": false,
+        "straight": true,
         "out_mode": "out",
         "bounce": true,
         "attract": {
