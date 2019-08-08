@@ -7,3 +7,4 @@ If Jekyll is installed, you can serve the Jekyll site locally by typing the foll
 source venv/bin/activate  # Activate the virtual environment and...
 bundle install && bundle exec jekyll serve  # Execute the local server
 ```
+<img src="https://img.shields.io/badge/version-final-blue.svg" /> <img src="https://img.shields.io/badge/type-portfolio-yellow.svg" /> <img src="https://img.shields.io/badge/type-blog,%20portfolio-brightgreen.svg" /> <img src="https://img.shields.io/badge/license-GNU-red.svg" /> <img src="https://img.shields.io/badge/status-complete-ff69b4.svg" /> <img src="https://img.shields.io/badge/maintainer-FlatlanderWoman-informational.svg" />
