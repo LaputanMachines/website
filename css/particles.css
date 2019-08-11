@@ -62,6 +62,8 @@
     margin: 0 auto;
     flex-wrap: wrap;
     max-width: 900px;
+    padding-left: 2em;
+    padding-right: 2em;
     justify-content: space-between;
 }
 
