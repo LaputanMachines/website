@@ -91,13 +91,23 @@
 }
 
 .project-showcase-button#mikes-gaming-trove {
+    color: #3c0101;
     background-color: #e7dfc6;
     border: solid 1px #d5c2be;
     font-family: 'Alfa Slab One', serif;
 }
 
-.project-showcase-button#mikes-gaming-trove a {
-    color: #3c0101;
+.project-showcase-button#formerly-amelia {
+    color: #1d1024;
+    font-weight: 700;
+    background-color: #cc8674;
+    border: solid 1px #d5c2be;
+    font-family: 'Oswald', sans-serif;
+}
+
+.project-showcase-button#formerly-amelia a:hover,
+.project-showcase-button#formerly-amelia a:active {
+    color: #ecc397;
 }
 
 .project-showcase-button#mikes-gaming-trove a::first-letter,
