@@ -88,13 +88,13 @@ hr {
 }
 
 .mainBody {
-  margin: 0 auto 2.5em auto;
-  max-width: 600px;
-  padding-left: 2.5em;
-  padding-right: 2.5em;
   color: #666;
   font-size: .95em;
+  max-width: 600px;
   line-height: 1.5em;
+  padding-left: 2.5em;
+  padding-right: 2.5em;
+  margin: 0 auto;
   font-family: 'Roboto', sans-serif;
 }
 
