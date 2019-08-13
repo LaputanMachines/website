@@ -156,4 +156,7 @@
         margin-top: 30px;   
         height: calc(100vh - 30px);
     }
+    
+    .project-showcase-button {
+        flex: 0 100%;
 }
