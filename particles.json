@@ -55,10 +55,10 @@
       "move": {
         "enable": true,
         "speed": 1,
-        "direction": "bottom",
+        "direction": "none",
         "random": true,
-        "straight": true,
-        "out_mode": "out",
+        "straight": false,
+        "out_mode": "bounce",
         "bounce": true,
         "attract": {
           "enable": false,
