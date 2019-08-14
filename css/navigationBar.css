@@ -19,6 +19,25 @@ Navigation Bar
   text-decoration: underline;
 }
 
+#icons {
+  display: flex;
+  padding: 1em 0;
+  margin: 0 1.8em;
+  justify-content: space-between;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+#icons a:hover, #icons a:active {
+  opacity: .8;
+  transition: 0.1s;
+}
+
+#icons img {
+  opacity: .6;
+  max-width: 20px;
+  padding: 0 0.75em;
+}
+
 /*Navigation Bar Container*/
 
 .navigationBar {
@@ -94,7 +113,7 @@ Navigation Bar
     overflow-y: hidden;
   }
 
-  .navigationBar #picture {
+  .navigationBar #picture, #icons {
     display: none;
     visibility: hidden;
   }
