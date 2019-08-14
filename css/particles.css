@@ -6,7 +6,7 @@
 }
 
 .particleDisplay {
-    height: 100vh;
+    height: calc(100vh - 4.5em);
 }
 
 #landing-page-down {
@@ -152,11 +152,7 @@
         letter-spacing: .16em;
     }
     
-    .particleDisplay {
-        margin-top: 30px;   
-        height: calc(100vh - 30px);
-    }
-    
     .project-showcase-button {
         flex: 0 100%;
+    }
 }
