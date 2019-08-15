@@ -37,6 +37,18 @@ hr {
 
 /*Contextuals*/
 
+ul + p {
+  margin-top: -.25em;
+}
+
+#my-signature {
+  opacity: .6;
+  float: left;
+  max-width: 46px;
+  margin-right: 1em;
+  padding: .1em 0 0 .1em;
+}
+
 .expanded {
   left: calc(200px + 1px);
   width: calc(100% - 200px - 1px);
