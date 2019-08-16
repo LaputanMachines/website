@@ -7,7 +7,7 @@
 
 .particleDisplay {
     overflow: hidden;
-    height: calc(100vh - 11em);
+    height: calc(100vh);
 }
 
 #landing-page-down {
@@ -25,7 +25,7 @@
 }
 
 #welcomeContainer {
-    top: 35%; /* Move Title A Little Above Center */
+    top: 40%; /* Move Title A Little Above Center */
     left: 50%;
     width: 100%;
     position: absolute;
