@@ -1,5 +1,5 @@
 ---
-title: "[Summer Project 1/5] Mike's Gaming Trove"
+title: "[Summer Project 1/4] Mike's Gaming Trove"
 author: Michael Bassili
 layout: post
 tags: Writing
