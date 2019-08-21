@@ -51,3 +51,5 @@ _site/
 
 # Gemfile lock file
 *.lock
+
+.directory
