@@ -15,9 +15,10 @@ About two years ago, I set out to quit coffee. I mainly resented my dependence o
  
 Obviously, my mood and energy levels are subjective, but I think the data generated from my personal survey was interesting enough to graph and document. [Click here to download the spreadsheet, along with all the graphs](/assets/quittingCoffee/coffeeLog.xlsx). The data in this post has been pulled from this spreadsheet.
 
-### Weekly Energy, Mood Averages
+<img id="aboutPhoto" src="{{site.baseurl}}/assets/quittingCoffee/coffee-log-spreadsheet.png" alt="Fig.1 Screenshot of the spreadsheet.">
+<figcaption>Fig.1 Screenshot of the 'coffeeLog' spreadsheet.</figcaption>
 
-Here's the data pulled from my spreadsheet. I've only included the weekly averages, as 21 data tables sounds like a bit much. The original spreadsheet includes all 21 days of data and figures.
+So, here's the data pulled from my spreadsheet. I've only included the weekly averages, as 21 data tables sounds like a bit much. The original spreadsheet includes all 21 days of data and figures.
 
 ### Week 1: Absolutely Terrible
 
