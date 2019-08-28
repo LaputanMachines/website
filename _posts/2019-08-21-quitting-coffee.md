@@ -13,7 +13,9 @@ About two years ago, I set out to quit coffee. I mainly resented my dependence o
 - Only decaf coffee is allowed, no drip coffee or espresso beverages
 - Sodas are “okay” but I never drink sodas, so this never actually came out
  
-Obviously, my mood and energy levels are subjective, but I think the data generated from my personal survey was interesting enough to graph and document. [Click here to download the spreadsheet, along with all the graphs](/assets/quittingCoffee/coffeeLog.xlsx). The data in this post has been pulled from this spreadsheet.
+Obviously, my mood and energy levels are subjective, but I think the data generated from my personal survey was interesting enough to graph and document.
 
 <img id="aboutPhoto" src="{{site.baseurl}}/assets/quittingCoffee/coffee-log-spreadsheet.png" alt="Fig.1 Screenshot of the spreadsheet.">
 <figcaption>Fig.1 Screenshot of the 'coffeeLog' spreadsheet.</figcaption>
+
+You can [click here to download the spreadsheet, along with all the graphs](/assets/quittingCoffee/coffeeLog.xlsx). The spreadsheet includes various graphs and averages, along with some little summaries.
