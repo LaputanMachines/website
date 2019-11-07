@@ -37,21 +37,12 @@ hr {
 
 /*Contextuals*/
 
-table {
-  margin: 0 auto 1em auto;
-}
-
 th, tr {
   padding: 0 1.5em;
 }
 
 ul + p {
   margin-top: -.25em;
-}
-
-tr td {
-  text-align: center;
-  /* padding-right: 2em; */
 }
 
 #my-signature {
