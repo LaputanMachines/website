@@ -6,7 +6,7 @@
 }
 
 .particleDisplay {
-    height: 65vh;
+    max-height: 50vh;
     overflow: hidden;
     border-bottom: 1px solid #e5e5e5;
 }
@@ -26,7 +26,7 @@
 }
 
 #welcomeContainer {
-    top: 32%;
+    top: 25%;
     left: 50%;
     width: 100%;
     position: absolute;
