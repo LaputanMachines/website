@@ -17,3 +17,8 @@ Landing Div
 .smallMarginBottom {
   margin-bottom: 0.5em;
 }
+
+.aboutSection {
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
