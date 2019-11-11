@@ -41,6 +41,10 @@ th, tr {
   padding: 0 1.5em;
 }
 
+hr + #aboutBody {
+  text-indent: 0em;
+}
+
 ul + p {
   margin-top: -.25em;
 }
