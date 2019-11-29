@@ -2,6 +2,7 @@
 title: Which Is Faster In Converting A list To A Set In Python 3&colon; set() or {*} 
 author: Michael Bassili
 layout: post
+favourite: 'true'
 tags: Programming
 category: Blog
 ---
