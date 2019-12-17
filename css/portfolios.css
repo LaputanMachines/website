@@ -84,6 +84,11 @@
   font-family: 'Roboto', sans-serif;
 }
 
+.bookImage {
+  /* Overwrite Book Assets, Covers Only */
+  max-height: 300px !important;
+}
+
 @media screen and (max-width: 800px) {
  #employmentDate {
    display: none;
