@@ -6,7 +6,7 @@
 }
 
 .particleDisplay {
-    max-height: 50vh;
+    max-height: 60vh;
     overflow: hidden;
     border-bottom: 1px solid #e5e5e5;
 }
