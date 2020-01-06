@@ -29,6 +29,11 @@ ol {
   font-weight: lighter;
 }
 
+#postStar {
+  margin-left: 1em;
+  margin-right: -1.5em;
+}
+
 #postTitle {
   color: #666;
   margin-left: 1.5em;
@@ -198,6 +203,11 @@ pre.highlight {
 }
 
 @media screen and (max-width: 500px) {
+  #postStar {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
   .posts {
     padding-left: 1em;
     padding-right: 1em;
