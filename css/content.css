@@ -141,7 +141,7 @@ figcaption {
   font-style: italic;
 }
 
-ul {
+ul, ol {
   padding-top: 0px;
   margin-top: -.5em;
   padding-left: 2em;
