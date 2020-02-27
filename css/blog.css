@@ -42,6 +42,7 @@ Blog Posts
 
 .postLinkDescription {
   color: #999;
+  float: right;
   margin-left: 1.5em;
   font-weight: lighter;
 }
