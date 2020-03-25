@@ -26,7 +26,6 @@
   margin-bottom: 0.4em;
 
   /* Size Accounts For Padding & Border */
-  max-height: calc(400px);
   max-width: calc(400px - 2em - 2px - 0.2em);
 }
 
