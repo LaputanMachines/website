@@ -131,13 +131,7 @@ ul + p {
   font-family: 'Roboto', sans-serif;
 }
 
-/**Main Meta Data*/
-
 /*Main Body Content*/
-
-#aboutBody {
-  text-indent: 2em;
-}
 
 #aboutBody #aboutPhoto {
   margin: 0 auto;
