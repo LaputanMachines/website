@@ -31,8 +31,8 @@ body {
 }
 
 hr {
-  border-top: #777 dotted 1px;
   border-bottom: 0px;
+  border-top: #777 dotted 1px;
 }
 
 /*Contextuals*/
@@ -136,9 +136,9 @@ ul + p {
 #aboutBody #aboutPhoto {
   margin: 0 auto;
   display: block;
-  width: calc(100% - 2em);
   padding: 1em;
   margin-top: -0.5em;
+  width: calc(100% - 2em);
   background-color: #fcfcfc;
   box-shadow: 1px 1px 3px rgba(0,0,0,.25);
 }
@@ -151,7 +151,6 @@ figcaption {
 
 ul, ol {
   padding-top: 0px;
-  margin-top: -.5em;
   padding-left: 2em;
   padding-right: 1em;
 }
