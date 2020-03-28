@@ -90,6 +90,41 @@
   max-height: 300px !important;
 }
 
+/* 
+  Reuse Portfolio Showcase
+  Alter To Make It Fit In Programming Portal
+ */
+.programmingPortfolioShowcase {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  margin-top: 1.2em !important;
+  justify-content: space-between;
+  
+}
+
+.programmingPortfolioShowcase .portfolioEntry {
+  max-width: calc((600px / 2) - 2.5em) !important;
+}
+
+.testimonial {
+  color: #888;
+  padding-left: 1em;
+  border-left: 5px solid #e5e5e5;
+}
+
+.showcaseInfo {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.showcaseInfo:first-of-type {
+  margin-bottom: 1em !important;
+}
+
+.showcaseInfo:last-of-type {
+  margin-top: 1em !important;
+}
+
 @media screen and (max-width: 800px) {
  #employmentDate {
    display: none;
@@ -112,5 +147,9 @@
 
   .portfolioTitle a {
     margin-left: 1em;
+  }
+
+  .programmingPortfolioShowcase .portfolioEntry {
+    max-width: 100% !important;
   }
 }

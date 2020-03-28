@@ -126,9 +126,15 @@ ul + p {
   max-width: 600px;
   line-height: 1.5em;
   padding-left: 2.5em;
+  text-align: justify;
   padding-right: 2.5em;
   margin: 0 auto;
   font-family: 'Roboto', sans-serif;
+}
+
+.mainBody ul {
+  /* List Elements Look Weird Justified */
+  text-align: left !important;
 }
 
 /*Main Body Content*/
@@ -187,7 +193,7 @@ ul, ol {
     padding-left: 1em;
     padding-right: 1em;
     margin-top: 2.75em;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
   }
 
   .homePage {
