@@ -149,6 +149,10 @@
     margin-left: 1em;
   }
 
+  .programmingPortfolioShowcase {
+    margin-bottom: 0 !important;
+  }
+
   .programmingPortfolioShowcase .portfolioEntry {
     max-width: 100% !important;
   }
