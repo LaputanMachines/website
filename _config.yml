@@ -1,8 +1,8 @@
 markdown:    kramdown
 exclude:     ['README.md', vendor]
 version:     1.0.1
-username:    FlatlanderWoman
-repo:        FlatlanderWoman.github.io
+username:    LaputanMachines
+repo:        LaputanMachines.github.io
 branch:      master
 title:       Michael Bassili
 author:      Michael Bassili

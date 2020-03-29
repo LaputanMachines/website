@@ -23,7 +23,7 @@ The problem was as follows: **"I want a dynamic website, but I don't want to pay
 
 > "When I first got into technology I didn't really understand what open source was. Once I started writing software, I realized how important this would be." &mdash;Matt Mullenweg
 
-There are seemingly limitless options out there for dynamic websites, but I had my eyes on a single, static-only site technology: [Jekyll](https://jekyllrb.com/docs/). The Jekyll backend has been [my personal website's go-to tech](https://github.com/FlatlanderWoman/personalWebsite) for years now, and I've been nothing but satisfied. But, Jekyll is a static site generator, and I crave dynamism in my newly-brainstormed side project! I really _really_ like Jekyll, but I refuse to sacrifice the benefits and possibilities offered up by having a dynamic website. That's when it hit me!
+There are seemingly limitless options out there for dynamic websites, but I had my eyes on a single, static-only site technology: [Jekyll](https://jekyllrb.com/docs/). The Jekyll backend has been [my personal website's go-to tech](https://github.com/LaputanMachines/personalWebsite) for years now, and I've been nothing but satisfied. But, Jekyll is a static site generator, and I crave dynamism in my newly-brainstormed side project! I really _really_ like Jekyll, but I refuse to sacrifice the benefits and possibilities offered up by having a dynamic website. That's when it hit me!
 
 <img id="aboutPhoto" src="{{site.baseurl}}/assets/dynamic-site/product-pipeline.png" alt="Picture of the flow of the project I was developing using the Jekyll technology.">
 <figcaption>Fig.1 Proposed product pipeline for my new side-project.</figcaption>
