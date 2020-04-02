@@ -8,7 +8,7 @@
 .portfolioShowcase {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .portfolioEntry {
@@ -26,17 +26,7 @@
   margin-bottom: 0.4em;
 
   /* Size Accounts For Padding & Border */
-  max-width: calc(400px - 2em - 2px - 0.2em);
-}
-
-.portfolioEntry:nth-child(odd) {
-  /* Add Spacing Between Elements */
-  margin-right: 0.2em;
-}
-
-.portfolioEntry:nth-child(even) {
-  /* Add Spacing Between Elements */
-  margin-left: 0.1em;
+  max-width: calc((800px / 3) - 2.5em);
 }
 
 .portfolioEntry > a,
@@ -147,6 +137,10 @@
 
   .portfolioTitle a {
     margin-left: 1em;
+  }
+
+  .portfolioShowcase {
+    justify-content: center;
   }
 
   .programmingPortfolioShowcase {
