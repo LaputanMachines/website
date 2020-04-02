@@ -6,7 +6,11 @@ tags: Lifestyle
 category: Blog
 ---
 
-### Sweet, Black Beverage
+**TL;DR:** you can [click here to download the spreadsheet](/assets/quittingCoffee/coffeeLog.xlsx). It contains graphs, notes, and time series data taken during my time as an office worker.
+
+## Enough Is Enough: Quitting Coffee
+
+> "Kate wondered who was more addicted to their high, serial killers or coffee addicts." &mdash;Victoria Schwab, Our Dark Duet 
 
 About two years ago, I set out to quit coffee. I mainly resented my dependence on an unnecessary substance, and I had a lot of free time on my hands. Over the course of 21 days, I tracked my mood and energy levels every hour, on the hour, after quitting coffee cold-turkey. I got used to drinking 4 large coffees a day; about 95mg per large coffee by four coffees makes 380mg of caffeine in my system a day. Here were the rules:
 

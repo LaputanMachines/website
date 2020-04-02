@@ -7,17 +7,15 @@ favourite: 'true'
 category: Blog
 ---
 
-### Why Even Bother Doing This? Don't You Have a Life?
+**TL;DR** You can [click here to download the completed Python program]({{site.baseurl}}/assets/shuffle/shuffle.py). This is the result of many iterations, as listed below. Benchmarking data can also be found at the very end.
 
-> So much of life, it seems to me, is determined by pure randomness. --- Sidney Poitier
+## Why Even Bother Doing This? Don't You Have a Life?
 
 The car I drive has a shuffle feature for CDs. It must be re-toggled whenever the car power cycles, and routinely bugs out whenever I try to flip though my Evil Empire disk. Sometimes, the next “shuffled” track is simply the following track, defeating the purpose of shuffling a CD! This frustrates me to no end. When it happens, it derails my whole week. In contrast, Spotify’s shuffle has never let me down (this might be because of the sheer size of my Spotify playlists—roughly one thousand tracks per playlist), but I suspect that Spotify, iTunes, and various other shuffle-supporting platforms have figured out the ideal way to shuffle a playlist. For clarity, I’ll be referring to any list-based collection of music as a playlist (e.g. CDs, records, etc.). Let’s start from scratch…
 
 If you are lazy (or keen), you can download the completed program, along with tests, by clicking [here]({{site.baseurl}}/assets/shuffle/shuffle.py).
 
-### Shuffle v0: Preparing our Data
-
-> There's a lot of randomness in the decisions that people make. --- Daniel Kahneman
+## Shuffle v0: Preparing our Data
 
 We need to create a data structure that can hold tracks as well as meta data. The easy solution would be to create a playlist data structure and populate every element in said data structure with its respective track’s information. But I’m lazy, so we won’t be doing that. Instead, we’ll be defining a dictionary of elements (tracks ), and we’ll populate each track with random bits to pretend they’re filled with music data.
 
@@ -41,9 +39,7 @@ We need to create a data structure that can hold tracks as well as meta data. Th
 
 This is obviously gross to look at and not scalable, but the goal of this adventure is to build the best shuffle algorithm. I’m not convinced that implanting a simple data structure to help us is a productive use of my free time. Also, this is my blog, so…
 
-### Shuffle v1: Literally Just Playing the Playlist
-
-> Creativity is the ability to introduce order into the randomness of nature. --- Eric Hoffer
+## Shuffle v1: Literally Just Playing the Playlist
 
 Take some playlist p and treat it like a list of dictionaries. Each dictionary contains a track’s data, including its title, contributing artists, and the song itself, encoded in some format. The dumbest way to “shuffle” a “playlist” would be to simply play the damn thing in-order. When the next track is requested, the user will be disappointed. Yeah it doesn’t really do what we want it to do yet, but I figure if Ford can’t get this right, then it wouldn’t hurt to start from square one.
 
@@ -61,9 +57,7 @@ Take some playlist p and treat it like a list of dictionaries. Each dictionary c
 
 This initial implementation has *many* major faults, the primary being that it doesn’t shuffle the playlist. Tough. Well, we can do better…
 
-### Shuffle v1.1: Randomizing the Indices
-
-> Expose yourself to as much randomness as possible. --- Ben Casnocha
+## Shuffle v1.1: Randomizing the Indices
 
 Count and store the length of the playlist. Then, with your pseudorandom number generator of choice, generate an integer between zero and the length of your playlist. Great! So now when the next track is requested, a random track in the playlist will play. If the index of the current track is chosen, reshuffle. Now we’re at a thousand-dollar implantation of the shuffle feature since this is what my car does. Obviously, this is crap, and to understand why, we need to put ourselves in a user’s shoes.
 
@@ -84,9 +78,7 @@ Count and store the length of the playlist. Then, with your pseudorandom number 
 
 A user doesn’t really want a perfectly random shuffle of their playlist, but rather a “random” song somewhere distant in their playlist. A good way to convince yourself of this principle is to imagine popping a new CD into your CD player. The first of twenty tracks play. You request the next track using the CD player. Now imagine: (1) the third song plays, or (2) the tenth song plays. The closer the randomly selected song is to your current position, the less likely the user is to feel that this permutation of tracks was properly shuffled. Our solution will be as follows…
 
-### Shuffle v2: User Experience Tweaking
-
-> Chance doesn't mean meaningless randomness, but historical contingency. This happens rather than that, and that's the way that novelty, new things, come about. --- John Polkinghorne
+## Shuffle v2: User Experience Tweaking
 
 We count and store the length of the playlist. We randomly select an integer between zero and the length of the playlist. If the integer is within some tolerance—or distance, we reshuffle. For example, starting from track 1, an index of 3 might be too close. We reshuffle, and we get an index of 8. Better. We can introduce probabilities of reshuffling based on the distance between the two indices. Rolling a 3 when we’re currently at 1 yields a 50% chance of reshuffling; rolling a 2 when we’re currently at 1 yields a 100% chance of reshuffling. We can halve this probability every increment. We can add base cases for smaller playlists (<= 5 tracks). If we roll the same index as our current track, we’d re-shuffle with 100% probability.
 
@@ -113,9 +105,7 @@ We count and store the length of the playlist. We randomly select an integer bet
 
 This achieves two things: tracks begin to feel random (which is what we’re going for—it’s all about the user experience), and “random” quirks are still included (rolling a 3 when we’re on 1). But there’s another issue…
 
-### Shuffle v2.1: The Algorithm I've Been Looking For
-
-> Even though there is randomness and improvisation in my music, I want to have some concrete idea that I can hold onto. --- Miguel Zenon
+## Shuffle v2.1: The Algorithm I've Been Looking For
 
 We got to go fast! We can’t do all this shuffling when the track is requested, because it would create disproportionate transition times between tracks, among other obvious problems. We remedy this by creating a permutation of tracks whenever the playlist is loaded up. Count the number of tracks, and shuffle once for every track, abiding by the rules set in v2, until we have a permutation of “random” tracks. The larger the playlist, the less likely we are to re-shuffle, and an average album is 15 tracks long.
 
@@ -152,9 +142,7 @@ We got to go fast! We can’t do all this shuffling when the track is requested,
 
 So, we’ll say that the average number of times we’d reshuffle is the number of indices we’d reshuffle times their probabilities. If we say that the neighboring 1st, 2nd, and 3rd index reshuffle with a probability of 100%, 50%, and 25%, respectively, we’d reshuffle about (1/15)(1) + (1/14)(0.5) + (1/13)(0.25) = 0.12 = 12% of the time. We’ll call that our benchmark. Let’s not do worse than a 12% re-shuffle rate.
 
-### Shuffle v2.2: Final Implementation
-
-> Mathematics is the art of giving the same name to different things. --- Henri Poincare
+## Shuffle v2.2: Final Implementation
 
 We take v2.1 and generalize the probability of reshuffling for n tracks in playlist p. We say that the probability of reshuffling is 1 / delta_position, giving us a scalable probably set for all tracks in the playlist (instead of just the two neighboring indices).
 
@@ -186,9 +174,7 @@ We take v2.1 and generalize the probability of reshuffling for n tracks in playl
 
 An added bonus is that, by default, the probability of reshuffling goes to zero as delta_position goes to n. All together, we get what I consider to be a rich, user-oriented implementation of the shuffle feature on music players. Take note, Ford.
 
-### Performance of Our Playlist Permutations
-
-> What people fear most about tragedy is its randomness - a taxi cab jumps the curb and hits a pedestrian, a gun misfires and kills a bystander. Better to have some rational cause and effect between incident and injury. And if cause and effect aren't possible, better that there at least be some reward for all the suffering. --- Jeffrey Kluger
+## Performance of Our Playlist Permutations
 
 Let’s try to generalize the performance of this shuffle algorithm. As the length of the playlist goes to infinity, the probability of reshuffling goes to zero. The average performance is O(n), where n is the length of the playlist since it must go through all the indices of the playlist to order them.
 
@@ -204,9 +190,7 @@ $$
 
  For small playlists, performance is actually worse than O(n), as the probability of reshuffling is high. There are only two real playlist sizes to concern ourselves with: EPs (1-3 tracks) and Albums. For EPs, what will probably happen most of the time is that the first track will shuffle to the third track, finishing off with the second track. This "waterfalling" behavior can actually be observed with playlists of any length, since the probability of reshuffling gets smaller the farther away from the initial track you are.
 
-### Appendix I: Testing the Implementations
-
-> I listen to Radio 4 and put the iPod on shuffle. I like the randomness of, say, the Stones, then something from Nina Simone, Nick Drake or Bob Dylan. --- Catherine McCormack
+## Appendix I: Testing the Implementations
 
 We should probably test these! For the simpler methods, we’ll test using the first and last index of the playlist. For the more complex and feature-rich methods, we’ll test them recursively, passing in the previous shuffle’s index as the new current index. We expect the shuffles to “feel” random.
 
@@ -233,8 +217,6 @@ We should probably test these! For the simpler methods, we’ll test using the f
   2018-04-24 16:18:35 : Ending test of Shuffle v2.1...
 ```
 
-### Appendix II: Personal Preference
-
-> We understand tornadoes scientifically, but it still feels supernatural. The randomness makes it feel supernatural. --- Michael Koryta
+## Appendix II: Personal Preference
 
 I am fully aware that some people don’t care about this as much as I do, but I listen to a lot of music, and it frustrates me when I shuffle to the next track only to have the neighboring track play. If I wanted the next track in the album, I wouldn’t have enabled the damn shuffle feature, Ford. Moreover, it’s obvious at this point that I wrote this is a hate-fueled rage. I don’t want to listen to Vietnow, I want something else! On the plus side, I now have sample code to refer to when I come around to building my shuffle-oriented Spotify competitor!
