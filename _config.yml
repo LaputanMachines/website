@@ -7,7 +7,7 @@ branch:      master
 title:       Michael Bassili
 author:      Michael Bassili
 url:         https://bassi.li
-description: My name is Michael Bassili, and I am a programmer. I also do other things, many of which are not conventionally productive or helpful to my career. Moreover, I really like those productivity self-help books you can find in the Business section of Chapters—I especially like it when authors of said productivity self-help books talk about themselves like they’re the Productivity Messiah, or something.
+description:  Howdy! My name is Michael, and I'm many things. I work a day-job as a programmer. I moonlight as a drummer, journalist, and writer. If you want to hire me to do one of these things, shoot me an email! Otherwise, feel free to browse the site. I try to keep my portfolios up-to-date. 
 source:      .
 destination: _site
 highlighter: rouge
