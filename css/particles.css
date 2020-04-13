@@ -52,7 +52,8 @@
     font-size: 1.25em;
     text-align: center;
     font-style: normal;
-    letter-spacing: 0.13em;
+    text-indent: -0.35em;
+    letter-spacing: 0.12em;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -157,7 +158,7 @@
     #welcomeContainer #subtitle {
         font-size: 1.1em;
         margin-top: -3em;
-        letter-spacing: .16em;
+        letter-spacing: 0em;
     }
 
     .project-showcase-button {
