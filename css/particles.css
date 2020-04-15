@@ -150,6 +150,10 @@
 }
 
 @media screen and (max-width:500px) {
+    #welcomeContainer {
+        max-width: calc(100vw - 2em);
+    }
+    
     #welcomeContainer #title {
         font-size: 3em;
         letter-spacing: 0em;
