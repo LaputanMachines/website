@@ -98,9 +98,9 @@ Blog Posts
 }
 
 .postContent {
-  max-width: 600px;
   color: #777;
-  font-size: .95em;
+  font-size: 1em;
+  max-width: 600px;
   overflow-x: hidden; 
   line-height: 1.5em;
   margin: 0 auto 1em auto;
