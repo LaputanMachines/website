@@ -41,7 +41,7 @@ Landing Div
   cursor: pointer;
   border-radius: 3px;
   background-color: #fcfcfc;
-  max-width: calc((600px / 3) - 0.5em);
+  max-width: calc((600px / 2) - 0.5em);
   
   /* Override Link Dashed Underline */
   border: 1px solid #e5e5e5 !important;
