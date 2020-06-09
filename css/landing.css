@@ -30,15 +30,18 @@ Landing Div
 
 .largeButtonContainer {
   display: flex;
+  flex-wrap: wrap;
   margin-top: 1.1em;
   justify-content: space-between;
 }
 
 .largeButton {
   flex-grow: 1;
+  flex: 1 0 50%;
   display: block;
   padding: 1em 0;
   cursor: pointer;
+  margin-bottom: 1em;
   border-radius: 3px;
   background-color: #fcfcfc;
   max-width: calc((600px / 2) - 0.5em);
@@ -52,6 +55,10 @@ Landing Div
   text-align: center;
   color: #666 !important;
   font-family: 'Roboto', sans-serif;
+}
+
+.largeButton:nth-last-of-type(1) {
+  margin-bottom: 0;
 }
 
 .largeButton:hover,
