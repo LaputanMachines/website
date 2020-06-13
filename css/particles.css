@@ -6,7 +6,6 @@
 }
 
 .particleDisplay {
-    max-height: 60vh;
     overflow: hidden;
     border-bottom: 1px solid #e5e5e5;
 }
@@ -36,10 +35,11 @@
 
 #welcomeContainer #title {
     color: #666;
-    font-size: 4em;
+    font-size: 3.5em;
     font-weight: 300;
     text-align: center;
     font-style: normal;
+    margin: 0.75em auto;
     padding-bottom: 15px;
     letter-spacing: 0.15em;
     font-family: 'Megrim', sans-serif;
@@ -53,7 +53,7 @@
     text-align: center;
     font-style: normal;
     text-indent: -0.35em;
-    letter-spacing: 0.12em;
+    letter-spacing: 0.047em;
     font-family: 'Roboto', sans-serif;
 }
 

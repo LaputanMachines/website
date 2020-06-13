@@ -24,8 +24,8 @@ Landing Div
 }
 
 .mainPageContainer {
-  height: 50vh;
-  max-height: 50vh;
+  height: auto;
+  max-height: 10vh;
 }
 
 .largeButtonContainer {
