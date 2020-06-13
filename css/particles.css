@@ -170,9 +170,6 @@
     }
 
     .aboutSection {
-        padding-top: 0;
-        margin-bottom: 0;
-        padding-bottom: 0;
-        margin-top: -0.25em;
+        padding-bottom: 2em;
     }
 }
