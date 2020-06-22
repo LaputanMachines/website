@@ -86,7 +86,6 @@ table thead th {
 
 table tbody td {
   line-height: 1.5em;
-  text-align: center;
   color: var(#777);
   margin-bottom: 0.5em;
 }
