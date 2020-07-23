@@ -195,7 +195,7 @@ pre.highlight {
 
 /*Mobile*/
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 500px) {
   #postDate {
     display: none;
     visibility: hidden;
