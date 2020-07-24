@@ -22,10 +22,6 @@ I'm going to break these reviews down into sub-categories for easier skimming. I
 
 I'm using a 6-point rating system for all metrics (with some comedic exceptions). For the most part, ratings translate to the following numeric scores. I don't think this is a good way to review _anything_ let alone video games, but I spent too long researching the "best" way to do this, and after a certain point, you just need to wrap things up. (I'm also going to say whether you should pick the game up. I debated having a rating system for _that_ too, but I think a simple Yes/No will suffice. If you disagree, please see [the following section](#iii-who-am-i).)
 
-| Terrible | Bad | Meh | Good | Great | Amazing |
---- | --- | --- | --- | --- | ---
-0% | 20% | 40% | 60% | 80% | 100%
-
 Hopefully, these ratings make sense. "Terrible" and "Amazing" scores are quite rare, with most ratings falling between the 20% and 80% range. While it's pretty much impossible to objectively rate any given metric, I'll try my darndest to make sure I can back up my assignments. There will always be people who vehemently disagree with me, and to them, I say: "You try reviewing the next thirty games and report back." 
 
 ### [I.II: Who Am I](#iii-who-am-i)
@@ -48,10 +44,6 @@ I grew up on Mortal Kombat, something that would probably make my parents audibl
 
 I've probably played more hours of MK9 than most other fighting games. I bought it on my XBOX 360 back in 2011. Then, I re-bought it on Steam in 2016. After work, I'd play MK9; after school, I'd play MK9. I can't really tell you _why_ I played so much MK9, but I suppose something about it resonated with me.
 
-| Gameplay Fluidity | Roster Diversity | Content Variety | Presentation | Balance | Creativity | Buy It? |
---- | --- | --- | --- | --- | --- | ---
-Meh | Good | Good | Meh | Bad | Good | On Sale
-
 MK9 came out in the early 2010s while remaining just as rigid as fighters from the late 1990s. I suspect the way NeatherRealm Studios does their animation emphasizes "realism" as opposed to the sloppy, sloshy movement of other fighters. That's a shame because spectating a game of MK9 often looks like two tall trees extending their branches to whack one another (with exceptions from characters such as [Sheeva](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=2ahUKEwiahfO408LmAhXTPn0KHe37AYgQFjAAegQIARAG&url=https%3A%2F%2Fmortalkombat.fandom.com%2Fwiki%2FSheeva&usg=AOvVaw0Y4McYUL7JZFS2d02lcslP)). In terms of playable characters, MK9 does well to provide a cast of both technically AND visually distinct fighters. [Raiden](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=2&cad=rja&uact=8&ved=2ahUKEwjvp-3T08LmAhV7ITQIHbmPDZEQFjABegQIBhAG&url=https%3A%2F%2Fmortalkombat.fandom.com%2Fwiki%2FRaiden&usg=AOvVaw0cPG2iyaylUWNhxLSyC47W) looks and plays much differently compared to [Quan Chi](https://mortalkombat.fandom.com/wiki/Quan_Chi), despite both of them being wizard-adjacent. Content is just as diverse as the roster; there's a good amount of co-op modes, single-player ladders, and multi-player tournaments. The campaign is really something else; fully voiced, well animated, and interesting, the campaign is a welcome addition in my book. The training mode is serviceable for a game released in 2011. Presentation is _fine_, but other games that were out-and-about in 2011 looked better and were more fun to spectate (e.g. Street Fighter IV). Regardless, MK9's gore and crunchy violence still do a good job of hit-confirming, children's ears be damned. 
 
 <figure class="post-content-figure">
@@ -66,10 +58,6 @@ Balance is the hardest to talk about (mainly because these games are archaic, ma
 
 After about a hundred more hours with MKX, I can safely say that _I completely forgot this game existed_. Besides being anecdotally forgettable, MKX serves as a moderate step up from its predecessor. Is it good? I mean, sure. But, the specifics are far less flattering.
 
-| Gameplay Fluidity | Roster Diversity | Content Variety | Presentation | Balance | Creativity | Buy It? |
---- | --- | --- | --- | --- | --- | ---
-Good | Good | Good | Meh | Meh | Meh | On Sale
-
 Just like before, the movement of pretty much every character is stiff and static. It still looks like two trees fighting, but now the graphics are a little nicer and the animations are a little more dynamic. This still makes watching MK tournaments a test of patience, as you wait for the only flashy part of the fight: the finishers. However, I concede that the look and feel of the characters have improved. Gameplay now feels much smoother and tighter than MK9. Again, just like before, MKX has a nice, well-rounded roster of characters. Everybody's playstyle should be present and accounted for. Nothing too crazy here. And, again (I'm sounding like a broken record here), _there is an adequate amount of single-player, multi-player, and miscellaneous game modes to satisfy all_. I should get that tattooed onto my forehead.
 
 <figure class="post-content-figure">
@@ -83,10 +71,6 @@ Presentation is just as adequate as MK9; there's nothing that really impresses m
 The surprising news is that MK11 is actually a substantial improvement from MKX. I was getting a little cynical about MK while going through the games, but this is actually a lot of fun. But. BUT. MK11 brings microtransactions to the series. While this _could_ contribute to the game's creativity score, every shit-box developer has adopted the inclusion of microtransactions in a CAD$80 release. Wow! Good job, NeatherRealm! The in-game economy is so catastrophically skewed towards grinding for hours, incentivizing players to spend real-world money to buy the skins they want. This economy is so complex, chaotic, and annoying that Kotaku actually wrote a little guide about how to traverse it[^2]. (That's about all I'm gonna talk about in terms of the in-game economy because the game underneath is actually pretty great.)
 
 [^2]: https://kotaku.com/you-cant-actually-buy-your-way-out-of-mortal-kombat-11s-1834311465
-
-| Gameplay Fluidity | Roster Diversity | Content Variety | Presentation | Balance | Creativity | Buy It? | 
---- | --- | --- | --- | --- | --- | ---
-Great | Good | Good | Good | Good | Good | Sure
 
 This is the first MK game where every character feels good to play. All are tight, well-animated, and fluid, contributing to slick gameplay. This is actually quite odd considering the reduced movement speed and the lack of running. It's this slower movement that turns fights in MK11 into these methodical, resource-heavy encounters that are way more tense than MK9 or MKX. Pretty good! Like those that came before it, MK11 has a large collection of diverse characters to choose from. There are 24 base game characters along with 9 more DLC fighters. Each one is well designed and unique enough to justify its inclusion. In terms of content, the single-player campaign is honestly amazing. It's short, sweet, and satisfying. The cutscenes are surprisingly well animated (the faces especially), and the plot is entertaining. There's also the mandatory single-player and multi-player offerings you'd expect in a fighter. Everything is looking good so far.
 
@@ -108,10 +92,6 @@ It's important to remember that SF games are typically released on arcades (usua
 
 This was the first Street Fighter game I had ever played. Coming from MK, I was thoroughly confused by the blocking mechanism. I truly had no idea how to successfully block attacks, and as a result, I got my twink ass handed to me by every rando online. A few forum posts later, and I'm jumping up and down, blocking left-right-and-center. Getting the hang of directional blocking opened me up to a literal treasure trove of other fighters; it turns out MK misleads me to think that every other fighter would have a dedicated block button...
 
-| Gameplay Fluidity | Roster Diversity | Content Variety | Presentation | Balance | Creativity | Buy It? |
---- | --- | --- | --- | --- | --- | ---
-Great | Great | Good | Good | Good | Good | Definitely
-
 USF4 felt like a more fluid, dynamic game than MK9 (I began playing them both around the same time). It's a shame I couldn't get the hang of blocking in those early years or else I'd have played a lot less MK9. Characters move, attack, and defend tightly and responsively, and their animations are clear and attractive. Nothing to complain about. Content variety is fine. It has everything I expect in a fighter: an assortment of single-player, multi-player, and versus modes along with bonus challenges and extras.  In terms of its roster, it has 44 characters which all feel unique-enough. Each one has exaggerated proportions, a whacky catchphrase, and a set of fun moves. I can't stress how goofy some of these bozos look. [Blanka](http://wiki.shoryuken.com/Ultra_Street_Fighter_IV/Blanka) looks like the Hulk's weird brother. [Poison](http://wiki.shoryuken.com/Ultra_Street_Fighter_IV/Poison) is the first trans character I've ever played in a video game[^3], so that's something.
 
 [^3]: https://streetfighter.fandom.com/wiki/Poison#Controversy
@@ -125,10 +105,6 @@ The game is goofy & playful and presents itself as such. Colours are all vibrant
 ### [III.II: Street Fighter V (2016)](#iiiii-street-fighter-v-2016)
 
 SFV really upset me. I can't think of another release that pushes all my buttons the way SFV did. In-game ads? Check! An in-game currency that's skewed intending to get players to buy characters through the shop? Check! An initial lack of content, with re-releases that contain _the complete game_? Check! I can keep going for another thousand words, but honestly, that's not what this mega mix is all about. I'll try to keep the review focused on the game itself.
-
-| Gameplay Fluidity | Roster Diversity | Content Variety | Presentation | Balance | Creativity | Buy It? |
---- | --- | --- | --- | --- | --- | ---
-Good | Meh | What Content? | Meh | Good[^6] | Meh | Nope
 
 [^6]: They're still releasing characters for SFV, and everyone releases with balance issues. It will take a few years + the definitive complete edition before things can even out. I will say that the balance in SFV's base game is the best it's ever been.
 
@@ -145,10 +121,6 @@ SFV is also a "service-based game" which demands a player's daily attention to g
 ### [III.III: Street Fighter II (All Of Them, Damnit)](#iiiiii-street-fighter-ii-all-of-them-damnit)
 
 A classic six-times over, SF2 remains one of the tightest fighters out there. It somehow remains timeless despite its look, features, and feel. It's weird; it's one of the few classic retro games that have aged especially well. It doesn't do anything offensively, and it's not all that special nowadays. It's pure. There's something to it that demands your respect.
-
-| Gameplay Fluidity | Roster Diversity | Content Variety | Presentation | Balance | Creativity | Buy It? |
---- | --- | --- | --- | --- | --- | ---
-Amazing | Good | Meh | Meh | Amazing | Good | Sure
 
 The game is five years older than me, but it plays as good as some contemporary releases. Capcom struck gold with SF2. Every character is crisp, tight, and responsive. Movement is flashy but restrained. A masterclass. Anybody looking to make a 2D fighter nowadays should take notes. There are only around 12 fighters (depending on the version you pick up), but each one is completely unique, both in appearance and in playstyle. No redundancy. Every playstyle is present and well-represented. However, this being a game from the early 90s, it doesn't bring the trove of single-player, multi-player, and bonus modes modern players have come to expect and demand. That's not a knock on the game, however. These older titles were meant first-and-foremost to be in-person arcade titles. A local versus mode is all they needed. More contemporary re-releases brought arcade and multiplayer modes along with them, which helps this game stay relevant almost thirty years later. It's small-ish roster also draws from the fact that (a) this was an arcade title from the 90s and (b) that this game was the first of a whole new wave of fighters going forward.
 
@@ -171,10 +143,6 @@ Every few years, a Soulcalibur game is released. People talk about it for a whil
 
 I love Soulcalibur, despite my comment about how forgetful this series is. I don't think I'm all that wrong, though. SC games aren't as talked about as Tekken or Mortal Kombat; they're almost a nice series within a niche genre, like some sort of niche-stromboli. Despite all that, I hold SC4 in high regard. It was a breath of fresh air! A third dimension! Weapons! Character creation! Little baby-Michael played this thing all day and all night (when I would get bored with MK9, or when religious friends came over). Looking online, I don't see much love for SC4 anymore, which is a shame.
 
-| Gameplay Fluidity | Roster Diversity | Content Variety | Presentation | Balance | Creativity | Buy It? |
---- | --- | --- | --- | --- | --- | --- 
-Meh | Good | Good | Good | Good | Good | Nope
-
 SC4 suffers from the same problem MK9 did: all characters feel stiff and look like tall, floppy brick walls. I suspect it's a constraint of the times, but it nevertheless makes spectating SC4 look kind of janky. Roster diversity is good, featuring a variety of characters across varying playstyles, personalities, weapons, and appearances. Since weapons are a part of combat, your character will also have a hand on deciding your playstyle. A [list containing the weapons characters can use](https://soulcalibur.fandom.com/wiki/Weapons) highlights the high variance in character builds. Content variety is also good. There's a healthy mix of single-player, versus, and multi-player modes. It also includes a Museum option, a feature/extra I wish more games had. I love looking at concept art and B.T.S. information. 
 
 <figure class="post-content-figure">
@@ -186,10 +154,6 @@ The game's presentation is dated, but fine. Menus are nice, combos and effects a
 ### [IV.II: Soulcalibur VI (2018)](#ivii-soulcalibur-vi-2018)
 
 The most recent SC game is very-okay. I like it a lot, but I'm confident it will fade away into obscurity again within a few years. While it's character creator [can make disgusting creatures not worthy of life](https://www.youtube.com/watch?v=y6z2PBK_VhE), the combat and modes on offer haven't evolved much since the last game I played, ten years ago.
-
-| Gameplay Fluidity | Roster Diversity | Content Variety | Presentation | Balance | Creativity | Buy It? |
---- | --- | --- | --- | --- | --- | ---
-Good | Good | Good | Good | Good | Good | Sure
 
 Lighting-round! Gameplay feels a lot tighter and more flashy than SF4, making it more fun to both watch and play. The roster remains diverse, whacky, interesting, and accepting. Plus, the character creator can make any creature you want, lending the roster a sense of possibility and potential. The content remains varied, including all of the essential fighting game features, modes, and elements.
 
@@ -209,10 +173,6 @@ The king of casual-competitive fighters, Smash has been alive and kicking in the
 
 Listen. I'm afraid to talk about this game in public. Every quirk, every game-breaking exploit has been found, documented, and used to win an EVO tournament. I've seen like ten YouTube videos on different sets of Melee bugs-turned-tricks. There's literally nothing more I can say about Melee. It's an iconic fighter turned competitive queen. Every university student living in a dorm has at least _one_ copy of Melee lying around. Anything positive I say about the game will be shot down by full-time Melee players; anything negative I say will be shot down by Sakurai-san himself. I can't win here. If it helps, try reading this review in Jerry Seinfeld's voice. Nobody hates Jerry, not even Newman. (Side-note: I'm well aware Newman hated Jerry, but I was making a joke. I'm very afraid of upsetting the Melee community. Please don't hurt me. I'm just a humble games journalist.)
 
-| Gameplay Fluidity | Roster Diversity | Content Variety | Presentation | Balance | Creativity |  Buy It? |
---- | --- | --- | --- | --- | --- | ---
-Amazing | Amazing | Amazing | Amazing | Good | Amazing | Definitely
-
 Melee feels fantastic. Everyone plays fast, tight, and responsive. Tech and combos are all interesting and visually defined. This is a magnificent fighter to play. Simply moving around with the roster is fun on its own right; I think they struck gameplay gold with Melee. In terms of the roster, Melee brings out the big guns. 26 characters across Nintendo's catalogue, including [Mario](https://simple.wikipedia.org/wiki/Mario), [Donkey Kong](https://simple.wikipedia.org/wiki/Donkey_Kong), and [Mewtwo](https://simple.wikipedia.org/wiki/Mew_(Pok%C3%A9mon)#Mewtwo). If you've ever played a video game, you'd probably be able to identify at least one character in Melee. Pretty much everyone is diverse and interesting to play. Clone characters like [Dr. Mario](https://www.ssbwiki.com/Dr._Mario_(SSBM)) and [Young Link](https://www.ssbwiki.com/Young_Link_(SSBM)) are a bit odd to me (why not just have them listed as a different skin), but it's nothing to complain about. Content is oozing out the turgid stomach of Melee. Single-player, multi-player, and versus modes galore! Tons of bonus content as well! In fact, all of the Smash games have an exquisite amount of content, so I'll refrain from repeating myself in this section. 
 
 <figure class="post-content-figure">
@@ -224,10 +184,6 @@ Everything is presented in a fun, whacky way. The announcer yells each character
 ### [V.II: Super Smash Bros. Brawl (2008)](#vii-super-smash-bros-brawl-2008)
 
 While Brawl isn't as competitively viable as Melee or Ultimate, it still stands as a fun, creative fighter in its own right. It has all the charm and execution one would expect from Smash up till now. There's a lot of review-overlap between all the Smash games, so it's time for another Lighting Round!
-
-| Gameplay Fluidity | Roster Diversity | Content Variety | Presentation | Balance | Creativity | Buy It? |
---- | --- | --- | --- | --- | --- | ---
-Good | Amazing | Amazing | Amazing | Good | Good | On Sale
 
 Gameplay is slower and far more sluggish than Melee or Ultimate. It makes the moment-to-moment stuff far less tense and interesting, but it's not a disaster or anything. Brawl feels like a more methodical fighter, and as a result, it might actually end up being a better casual fighter. Like all Smash games, the roster, and content variety are top. They're the bee's knees; they're smash-ing!
 
@@ -241,10 +197,6 @@ Again, like all Smash games, its presentation, balance, and creativity are still
 
 Welcome back, picture clarity! It feels good to have you with us! Smash 4, as I'll be referring to it from now on, is a solid fighter and a worthy representative on the WiiU/3DS. This is actually the first Smash game I ever owned, picking it up on my 3DS. Street Smash was a magical experience. I also discovered that I could no longer main [Ice Climbers](https://www.ssbwiki.com/Ice_Climbers), which hurt more than I'd like to admit. 
 
-| Gameplay Fluidity | Roster Diversity | Content Variety | Presentation | Balance | Creativity | Buy It? |
---- | --- | --- | --- | --- | --- | ---
-Amazing | Amazing | Amazing | Amazing | Good | Good | Sure
-
 We're also back to slick, fast gameplay! Thank you, Sakurai-san! Smash 4 feels tight-tight-tight! Even on my lowly 3DS, Smash 4 played extremely well, potentially signalling a return to viable competitive play. Just like all Smash games, the roster and content variety is exceptional. One thing I loved doing was to pit four level-9 [Toon Links](https://www.ssbwiki.com/Toon_Link_(SSB4)) against one another, 5-minutes with no stock. It's how I spent my summers.
 
 <figure class="post-content-figure">
@@ -256,10 +208,6 @@ And just like all the other Smash games, it's presented well, balanced well, and
 ### [V.IV: Super Smash Bros. Ultimate (2018)](#viv-super-smash-bros-ultimate-2018)
 
 What else is there to say about Smash Ultimate? Every living life-form on this planet has already sung this game's praises. It has a fuck-ton of characters, a shit-ton of stages, and a god-damned earful of tracks. It will be totally impossible to top this game going forward (my sympathies, Sakurai-san).
-
-| Gameplay Fluidity | Roster Diversity | Content Variety | Presentation | Balance | Creativity | Buy It? |
---- | --- | --- | --- | --- | --- | ---
-Amazing | Amazing | Amazing | Great | Great | Great | Definitely
 
 I've played Smash Ultimate for almost a hundred hours now, and I'm _still_ discovering new stages and tracks. This is the first Switch game that earns its CAD$80 price tag (I'm jealous of you Americans who still pay USD$60 for a video game). The people behind Smash Ultimate seemingly did the impossible; they added everything possible to the game. Roster diversity and content diversity get a straight A+ from me. There isn't a bone in my body that could ask for more... _and they STILL added more through DLC!_ Calm down, Sakurai-san. I can't handle this much quality content! Of course, the fluidity of gameplay is fantastic. Smash is the only fighting game that basically doubles as a co-op platformer, stage-depending. Characters jump and dash and roll and side-step all the time, creating these wild matches where players will be competing for weakest knees. 
 
@@ -277,10 +225,6 @@ Wanna hear a secret? I actually forgot Tekken existed until just now. It doesn't
 
 ### [VI.I: Tekken 6 (2007)](#vii-tekken-6-2007)
 
-| Gameplay Fluidity | Roster Diversity | Content Variety | Presentation | Balance | Creativity |  Buy It? |
---- | --- | --- | --- | --- | --- | ---
-Good | Good | Amazing | Meh | Good | Meh | Sure
-
 While Tekken is the most "realistic" of the fighters on this list, it still feels fluid and tight. Where other games like MK let fighters leap over one another, Tekken keeps them low, opting instead to have fighters strafe around each other. This makes Tekken matches look and feel _deeper_ than most other fighters. (Deeper in the sense that there is more _depth_ in any given match, as flying over opponents isn't allowed.) There are a ton of playable fighters, all with different movesets and mechanics. [Armor King](https://www.giantbomb.com/armor-king/3005-3512/)'s pro-wrestling throws and offensive fighting style differs from [Bob](https://www.giantbomb.com/bob/3005-1824/)'s offensive style, with Bob being faster, stronger, and well-equipped for ranged battle. The strong showing of diverse characters opens up worlds of matchup possibilities. The content variety on display is pretty great, too. There's a wealth of single-player, multi-player, and versus modes to keep you busy indefinitely. The training modes are good too, essential for a 3D-casual like myself who needed to learn to stick low and strafe wide. Tekken is still an arcade-sweetheart, so this begs me to ask why Capcom finds it acceptable to release arcade titles on consoles without any supplementary modes... 
 
 <figure class="post-content-figure">
@@ -292,10 +236,6 @@ The game is presented about as well as a late-2000s fighter _can_ be presented. 
 ### [VI.II: Tekken 7 (2015)](#viii-tekken-7-2015)
 
 More good things to come. Tekken 7 feels like an overall upgrade to T6, from graphics to gameplay, to everything in between. (Man, I'm running out of fun transitional phrases...) The stand-out feature of T7 is the sublime story mode, which saw me putting in way too much time and effort. I think I'm a sucker for a corny fighting game story, so colour me elated. 
-
-| Gameplay Fluidity | Roster Diversity | Content Variety | Presentation | Balance | Creativity | Buy It? |
---- | --- | --- | --- | --- | --- | ---
-Good | Good | Good | Good | Good | Good | Sure
 
 Gameplay feels better than ever, in my opinion. Strong hits freeze-frame for a half-second to really hit home their impact. Strafing feels way more fluid, making it seem like these characters are slipping and sliding around one another. The impressive roster is still here, now with [Akuma](https://tekken.fandom.com/wiki/Akuma) of Street Fighter-fame. He actually plays an integral part of the story this time around, which makes the fighting game scene feel like a small world, in a good way. Content variety still pleases me. Nothing new to write home about; I'd say I'm satisfied.
 
@@ -315,10 +255,6 @@ Okay, I admit it. The only reason I know this series exists is because of their 
 
 Dead or Alive 5 feels like a faster play than Tekken, but that's not necessarily a good thing. While DoA's speed and finesse outdoes Tekken, it thoroughly lacks the impact and spectacle that a good Tekken match provides.
 
-| Gameplay Fluidity | Roster Diversity | Content Variety | Presentation | Balance | Creativity | Buy It? |
---- | --- | --- | --- | --- | --- | ---
-Good | Good | Good | Meh | Good | Meh | On Sale
-
 Again, gameplay feels a lot faster than Tekken 6 or 7, but it lacks that impactful crash that comes with massive moves. Regardless, DoA5 makes it work, with responsive, tight controls and wrestling-style throws. It feels _a bit worse_ to play than say Tekken 6, but it's not terrible. Just different. The roster is turgid and vast, including characters from Virtua Fighter as well. Everyone feels fine to play, and they all seem to stand out from their competition. Content variety is fine, with a fully-animated story mode (which I adore), competitive modes, and training. All good things; nothing really stands out here.
 
 <figure class="post-content-figure">
@@ -331,10 +267,6 @@ The game's presented pretty weakly when compared to other fighters of that era. 
 
 DoA6 took the series in a _dark_, _edgy_ direction. It kind of feels and plays like Mortal Kombat but without the fatalities. This lends it some creativity and presentation points, mostly for making it feel like _something substantial_ is happening on screen. I guess my biggest complaint of DoA5 was that is was so flaccid and bland. DoA6 has a little more charm, a little more personality, and a lot more substance than its predecessor.
 
-| Gameplay Fluidity | Roster Diversity | Content Variety | Presentation | Balance | Creativity | Buy It? |
---- | --- | --- | --- | --- | --- | ---
-Good | Good | Good | Good | Good | Good | On Sale
-
 Gameplay still feels faster than Tekken while lacking impact. However this time around, things _do_ feel more substantial and impactful, which is nice. Rolls and strafes feel tight, and combos are flashier. Character variety is still good. You can customize characters before fighting, making the game stand out just one notch more than before. All playstyles are still present and accounted for. Nothing new here. Content variety is still sharp, bringing all the modes you've come to expect in a contemporary release. Training mode is good, and the story is still great. In fact, the story mode is probably my favourite part of this game; I don't know if that's good or bad, but I'm happy.
 
 <figure class="post-content-figure">
@@ -342,10 +274,6 @@ Gameplay still feels faster than Tekken while lacking impact. However this time 
 </figure>
 
 Presentation has seen a good jump since the last title, with hits and throws looking just a bit more flashy and impactful. Music and overall spectacle is still less-impressive than Tekken, but it's now more in-line with its contemporaries. This game just came out, so I can't say anything about its balance. Patches are constantly coming out, listing hundreds of minute changes to everybody. As of Jan 01, 2019, everyone feels fine to me (but, pro players definitely have their quarrels). Finally, the _edge_ brings some much-needed creativity to the series. Character customization is good too. The game feels less like a novice attempt and more like a worthy competitor to games like Tekken and Soulcalibur.
-
-| Another Brief Intermission |
-| --- |
-| Grab Another Coffee, Go Pee Or Something | 
 
 ## [VIII: The King of Fighters](#viii-the-king-of-fighters)
 
@@ -359,10 +287,6 @@ You may be asking _why_ I'm reviewing the KoF games _before_ the Fatal Fury game
 
 KoF '94 is a classic. It's also an arcade game that's older than me, so there's that. My first thoughts were of its art style. Specifically, how amazing this thing looks. It completely outshines most _contemporary_ sprite art fighters with its magical, flashy sprite work and fluid animations. This game sets the bar for visual fidelity, one that its own sequels fail to meet. It's also a simple, fun-as-heck fighter. No mess, no fuss. 
 
-| Gameplay Fluidity | Roster Diversity | Content Variety | Presentation | Balance | Creativity | Buy It? |
---- | --- | --- | --- | --- | --- | ---
-Good | Good | Meh | Meh | Good | Meh | On Sale
-
 For a game that came out in 1994, the animations are on point. Every move, every interaction is gloriously rendered. Every hit and every block is clean, crisp, and tight. It's crazy how well Kof '94 did sprite work. Roster diversity is a different story entirely. You select from teams of 3 fighters, all from different countries. The odd thing is that you can't change the team up in any way. This does a few things. First, it means you need to figure out matchups between groups of three instead of individuals (less work than 3v3 matchups in games like FighterZ, more work than SF2). Since you choose from preset teams, you need to balance the pros of one fighter with the cons of another. It makes for some surprisingly complex matches for a game that came out in the mid-90s. Content variety is a solid "meh," as it came out in an arcade. As I've mentioned before, arcade releases are barebones and to-the-point. No complaints there, really.
 
 <figure class="post-content-figure">
@@ -375,10 +299,6 @@ As an arcade title, the game isn't as flashy or as heavy on the presentation as 
 
 Many years have passed, the fan-favourite KoF '98 has been released, and I'm but a small child. While I was busy being potty trained, the developers of KoF '99 were hard at work improving every single aspect of the KoF experience. Teams now bring a fourth support character into fights, lending a great deal more complexity to matchups. 
 
-| Gameplay Fluidity | Roster Diversity | Content Variety | Presentation | Balance | Creativity | Buy It? |
---- | --- | --- | --- | --- | --- | ---
-Good | Good | meh | Meh | Good | Good | Sure
-
 Gameplay and roster diversity are both still good. The graphics have been upgraded substantially, and moment-to-moment gameplay has become tighter and flashier. The decade has proven generous. You can now pick your team of 3 fighters, plus a single support fighter that can be used in battle. This brings the number of possible matchups to a crazy-high level. I'd be lying if I said I remembered a single good matchup in my 30+ hours of play. A lot is going on, leading to a high amount of replay value. Content variety is still on-point for a fighting game. 
 
 <figure class="post-content-figure">
@@ -390,10 +310,6 @@ The game's presentation has seen an upgrade. UI and sound design have gotten goo
 ### [VIII.III: The King of Fighters XIV (2016)](#viiiiii-the-king-of-fighters-xiv-2016)
 
 This game does not look good. There, I said it. That's a disappointment, considering it looked _breathtaking_ in 1994. Remember when Sonic made the switch to 3D? How all of his games looked so... odd, blocky, yet fuzzy at the same time? I suspect the KoF developers brought the art directors from Sonic 3D Blast to help make KoF XIV...
-
-| Gameplay Fluidity | Roster Diversity | Content Variety | Presentation | Balance | Creativity | Buy It? |
---- | --- | --- | --- | --- | --- | ---
-Bad | Good | Good | Meh | Meh | Meh | Nope
 
 Attack animations, blocks, and everything in-between look like dog shit. Massive hits look like mere slaps; slides look like trips. Everything looks so _very weak_ for some reason. Nothing looks impactful. As a result, everyone feels worse to play than they did just one decade earlier. The roster holds up, still allowing for these crazy-dynamic mashups. Every fight feels varied and exciting. Content variety has gone up due to it being released on an actual console. There are fully-rendered cutscenes (that look leagues better than the actual fighting) and enough modes to satisfy the mainstream console player.
 
@@ -413,10 +329,6 @@ As the precursor to KoF, how could I not love Fatal Fury? I don't really have mu
 
 A quality classic, FFS is as old-school as it was influential. It came in the era of SF2, where fighters were taking off in arcades, and the potential for creativity was exceptionally high. FFS doesn't do anything crazy, just enough. It came out in a special time where being a good fighter _was_ enough. It _was_ different. Modern sensibilities may scoff at the gameplay of FFS, but for the sea of fighting game developers-to-come, FFS was another example of this new and popular genre called the "fighting game." 
 
-| Gameplay Fluidity | Roster Diversity | Content Variety | Presentation | Balance | Creativity | Buy It? |
---- | --- | --- | --- | --- | --- | ---
-Good | Good | Good | Meh | Good | Meh | On Sale
-
 For 1993, the gameplay was great. (Now, not so much.) Everything has this thick layer of jank which never quite disappears. Spritework is crisp and colourful, but the animations aren't quite there yet. Everyone plays super stiff, and the _number_ of movement and attack frames is far less than what we're used to now. Roster diversity is fine; there are tons of great characters here. From the distance-closing [Terry](https://snk.fandom.com/wiki/Terry_Bogard) to the close-gamed [Big Bear/Raiden](https://snk.fandom.com/wiki/Raiden). Everyone feels necessary. As for content variety, this was an arcade title, so there wasn't much more than a versus mode, which is fine.
 
 <figure class="post-content-figure">
@@ -428,10 +340,6 @@ Presentation was great for 1993. The announcer, the maps, the stages, the hit co
 ### [IX.II: Real Bout Fatal Fury (1995)](#ixii-real-bout-fatal-fury-1995)
 
 RBFF is a peak-90s fighter for me. It has just enough style, charm, and personality to make it stand out without being overbearing. It might not be as well-regarded as SF2, but I stand by RBFF as one of my favourite fighters from this generation. RBFF also introduced Ring Outs! They are easy to pull off, which is both a good and a bad thing. It's trivial to push your opponent out of the ring, but the same goes for you. Unlike Soulcalibur, which prevents your character from straight walking off the stage, RBFF is content to just let you take the easy way out. 
-
-| Gameplay Fluidity | Roster Diversity | Content Variety | Presentation | Balance | Creativity | Buy It? |
---- | --- | --- | --- | --- | --- | ---
-Good | Good | Good | Meh | Good | Good | Sure
 
 Attack animations are crisp. Everyone feels tight and responsive to play. RBFF finds a healthy middle ground between sloshy movement animations and overall responsiveness. There are enough characters to keep the game interesting, but not enough to justify a console release. However, for an arcade title, both the roster diversity and content variety are serviceable. Every character feels unique enough to justify its inclusion.
 
@@ -451,10 +359,6 @@ The poster child for anime fighters, Guilty Gear occupies a weird space in the f
 
 We finally get around to talking about my favourite sub-genre of fighting games: the anime fighter. Guilty Gear is flashy, bombastic, and slick-as-hell. Spectating GG is like watching old Dragon Ball cartoons. It's like smashing your action figures together. It's a breath of fresh air. Everything is steeped in this cocktail of sexy action and rewarding combat. You feel like a rockstar playing GG. 
 
-| Gameplay Fluidity | Roster Diversity | Content Variety | Presentation | Balance | Creativity | Buy It? |
---- | --- | --- | --- | --- | --- | ---
-Amazing | Good | Good | Good | Good | Good | Sure
-
 Every character feels like the main character in some action anime. Moves are satisfying to pull off, rewarding to watch play out, and as responsive as possible. To top it all off, the game is _fast_. Real fast. It makes KoF and FF look like they're being played at half-speed. Every character has a completely unique appearance and moveset. You can tell the designers really had some fun creating them. It's as if the Guilty Gear developers reached back through time and asked my younger self for design ideas. This game is just leaking visual charm. Now, while this game came out on the original PlayStation, it still lacks a little here-and-there. It does, however, have a training mode, arcade mode, and versus mode, which is all an early console player expected.
 
 <figure class="post-content-figure">
@@ -466,10 +370,6 @@ Presentation is off the charts. The whole game, from the UI, to the hits, to the
 ### [X.II: Guilty Gear X (2000)](#xii-guilty-gear-x-2000)
 
 Arc System Works really brought their A-game in 2000. Everything that made GG great in 1998 was turned up to 11. Better movement, better visuals, better sound, better tech. It's all so _very good_. You can tell that ASW found its niche in the fighting game scene. Arc System Works games are all about closing the gap and punishing hard. They're about flashy, spectacular combat and stylish presentations. They're what I consider "fun."
-
-| Gameplay Fluidity | Roster Diversity | Content Variety | Presentation | Balance | Creativity | Buy It? |
---- | --- | --- | --- | --- | --- | ---
-Amazing | Good | Good | Amazing | Good | Good | Definitely
 
 Movement is on another level here. Closing the gap _fast_ lets you lock your opponent into this mega-ultra-suplex combo that sends them soaring into the stratosphere. Everyone feels so good to play, it puts all early 90's fighters to shame. (Not really, though. We all stand on the shoulders of giants, and the Arc System Works games are no exception. They feel like the next logical step from the early KoF games, which is crazy considering people don't even talk about The King of Fighters anymore.) The roster is still as diverse as ever, and now there are a ton more modes for play. 
 
@@ -489,10 +389,6 @@ I'd heard about Skullgirls from an EVO tournament I skimmed. It looked like some
 
 I had always heard of Skullgirls. It always sort of existed in the background for me. One day, I picked it up on the Switch eShop and discovered that I had been ignoring a tight, stylish fighter for years. The art style is really the cherry on top. Expressive, flashy, and responsive gameplay is shown to you through the lens of some amazing artwork.
 
-| Gameplay Fluidity | Roster Diversity | Content Variety | Presentation | Balance | Creativity | Buy It? |
---- | --- | --- | --- | --- | --- | ---
-Good | Good | Great | Great | Great | Great | Definitely
-
 Playing Skullgirls is incredibly tight. Every move feels predictable, flashy, and fluid. Jumps and dashes flow seamlessly into attacks. So, not only does Skullgirls _look_ good, it plays well too. While the roster of playable characters may seem sparse at first, each one is meticulously drawn, programmed, and animated. Everyone is unique. Everyone has a fun name and a fun playstyle. I'd go as far as to say that no two characters in Skullgirls play the same. [Parasoul](https://skullgirls.fandom.com/wiki/Parasoul)'s umbrella attacks promote playing at a distance, while [Valentine](https://skullgirls.fandom.com/wiki/Valentine)'s ninja-like attacks (while similar to Parasoul's) allow her to more freely, incorporating more jump attacks. Valentine also carries a bone saw which helps her bridge the gap. Super-versatile characters here. In terms of content variety, Skullgirls doesn't skimp. It features the best training/tutorial mode in a fighter I've ever seen, containing dialogue, combo blocking training, and more of that slick presentation I mentioned earlier. There's a full single-player campaign, versus modes, online modes, etcetera. If J.C Denton has his way, disabling the internet and plunging the world into a communications dark-age, I'm confident I'd be able to keep playing Skullgirls no-problem. There's just so much to do, and that's _before_ mentioning any of its online content.
 
 <figure class="post-content-figure">
@@ -510,10 +406,6 @@ I picked FighterZ on a Nintendo eShop sale this year, and boy-howdy did it blow 
 ### [XII.I: Dragon Ball FighterZ (2018)](#xiii-dragon-ball-fighterz-2018)
 
 A masterclass of anime fighting games, FighterZ is everything I want in a fighter. It looks like someone reached into a Dragon Ball manga and ripped out a panel. The developers behind this bad-boy must've really cared about the Dragon Ball property. The labour of love here shines through every asset, every interaction, every mechanic.
-
-| Gameplay Fluidity | Roster Diversity | Content Variety | Presentation | Balance | Creativity | Buy It? |
---- | --- | --- | --- | --- | --- | ---
-Amazing | Amazing | Amazing | Amazing | Amazing | Amazing | Definitely
 
 Everything about this game is perfect. The gameplay is tight, responsive, fluid, creative, and exciting. Hot damn. The roster has characters from the anime and the manga, 21 to start with 3 unlockables and 8 DLC characters (as of 2019, fighters' passes are still being released). Every character looks, feels, and plays slightly differently. If you're a Dragon Ball fan, this game is sure to satisfy. Even the character introduction cinematics are true to the source material. In terms of content variety, there's a single-player campaign, a detailed training mode (with combo tutorials for every character), as well as a multitude of single-player & multi-player battle offerings. Connect to the internet to roam around a cute little hub world, challenging all you see.
 
