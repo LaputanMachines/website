@@ -48,7 +48,7 @@ Landing Div
   font-size: 1em;
   font-weight: 300;
   text-align: center;
-  color: #666 !important;
+  color: #444 !important;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -59,9 +59,9 @@ Landing Div
 .largeButton:hover,
 .largeButton:active {
   transition: .03s;
-  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.05);
-  -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.05);
-  -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.05);
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
 }
 
 @media screen and (max-width: 500px) {

@@ -66,25 +66,25 @@ Navigation Bar
 }
 
 .navigationBar #name {
+  color: #222;
   margin: 0 auto;
   padding-top: 1em;
+  font-weight: 300;
+  font-size: 1.85em;
   text-align: center;
   margin-bottom: -1.25em;
-  font-size: 1.85em;
-  font-weight: 300;
-  color: rgba(102, 102, 102, 1);
   font-family: 'Megrim', cursive;
 }
 
 .navigationBar .links {
+  color: #333;
+  font-size: .9em;
   list-style: none;
+  line-height: 2em;
+  font-weight: 300;
   text-align: center;
   margin: 0em 2em 0em 2em;
   padding: 3em 0em 3em 0em;
-  font-weight: 300;
-  line-height: 2em;
-  font-size: .9em;
-  color: rgba(102, 102, 102, 1);
   font-family: 'Roboto', sans-serif;
 }
 
@@ -96,12 +96,12 @@ Navigation Bar
 /*Navigation Bar Footer*/
 
 .navigationBar #footer {
+  color: #333;
   max-width: 100%;
-  text-align: center;
-  padding: 3em 0 1em 0;
   font-size: .75em;
   font-weight: 100;
-  color: rgba(102, 102, 102, 1);
+  text-align: center;
+  padding: 3em 0 1em 0;
   font-family: 'Roboto', sans-serif;
 }
 

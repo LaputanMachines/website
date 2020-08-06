@@ -30,7 +30,7 @@ Blog Posts
 }
 
 #postTitle {
-  color: #666;
+  color: #444;
   margin-left: 1.5em;
   font-weight: lighter;
 }
@@ -130,7 +130,7 @@ table tbody td {
 }
 
 .postContent {
-  color: #777;
+  color: #444;
   font-size: 1em;
   max-width: 800px;
   overflow-x: hidden; 
