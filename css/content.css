@@ -122,13 +122,14 @@ ul + p {
 
 .mainBody {
   color: #444;
+  margin: 0 auto;
   font-size: 1em;
   max-width: 600px;
   line-height: 1.5em;
   padding-left: 2.5em;
   text-align: justify;
+  padding-bottom: 1em;
   padding-right: 2.5em;
-  margin: 0 auto;
   font-family: 'Roboto', sans-serif;
 }
 
