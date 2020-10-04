@@ -31,11 +31,11 @@ Landing Div
 }
 
 .largeButton {
-  flex-grow: 1;
   flex: 1 0 50%;
   display: block;
   padding: 1em 0;
   cursor: pointer;
+  max-height: 24px;
   margin-bottom: 1em;
   border-radius: 3px;
   background-color: #fcfcfc;

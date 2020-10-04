@@ -115,6 +115,83 @@
   margin-top: 1em !important;
 }
 
+
+@font-face {
+  font-family: 'Pixel';
+  src: url('../assets/fonts/8-bit-webfont.woff2') format('woff2'),
+       url('../assets/fonts/8-bit-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+#gameDevButton {
+  min-width: 100%;
+  line-height: 1.5em;
+  color: white !important;
+  background-color: #0083ED;
+  font-family: "Pixel", sans-serif;
+  text-shadow: 3px 3px rgba(37,41,52,0.5);
+}
+
+#gameDevButton:hover, #gameDevButton:active {
+  color: #97653B !important;
+}
+
+/* @font-face {
+  font-family: 'Monaco';
+  src: url('../assets/fonts/monaco.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+#renderingEngineButton {
+  line-height: 1.5;
+  font-weight: bolder;
+  letter-spacing: -1px;
+  background: #151515;
+  color: #b5e853 !important;
+  font-family: "Monaco", sans-serif;
+  text-shadow: 0 1px 1px rgba(0,0,0,0.1),0 0 5px rgba(181,232,83,0.1),0 0 10px rgba(181,232,83,0.1);
+}
+
+#renderingEngineButton:hover, #renderingEngineButton:active {
+  color: #eaeaea !important;
+}
+
+#programmingButton {
+  font-weight: bolder;
+  color: #e31b6d !important;
+  background-color: #252934;
+  font-family: "Roboto", sans-serif;
+  text-shadow: 0px 1px 0px #e31b6d;
+}
+
+#programmingButton:hover, #programmingButton:active {
+  color: white !important;
+}
+
+#simpleScriptButton {
+  color: white !important;
+  font-family: "Copse", serif;
+  background-color: #4276b6;
+  text-shadow: 0px 2px 0px #235796;
+}
+
+#simpleScriptButton:active, #simpleScriptButton:hover {
+  color: #ffcc00 !important;
+}
+
+#journalismButton {
+  color: #fff !important;
+  background-color: #286090;
+  text-shadow: 0px 2px 0px #204d74;
+  font-family: "Source Serif Pro", serif;
+}
+
+#journalismButton:active, #journalismButton:hover {
+  color: #222222 !important;
+} */
+
 @media screen and (max-width: 800px) {
  #employmentDate {
    display: none;
