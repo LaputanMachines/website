@@ -130,7 +130,7 @@
   color: white !important;
   background-color: #0083ED;
   font-family: "Pixel", sans-serif;
-  text-shadow: 3px 3px rgba(37,41,52,0.5);
+  text-shadow: 2px 2px rgba(37,41,52,0.5);
 }
 
 #gameDevButton:hover, #gameDevButton:active {
