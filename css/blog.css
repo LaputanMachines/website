@@ -196,6 +196,11 @@ pre.highlight {
   color: #999;
 }
 
+.geDiagramContainer  {
+  float: left;
+  margin-right: 2em;
+}
+
 /*Mobile*/
 
 @media screen and (max-width: 500px) {
@@ -211,6 +216,11 @@ pre.highlight {
   .postContent p > img {
     padding: 0em;
     width: 100%;
+  }
+
+  .geDiagramContainer  {
+    float: none;
+    margin: 0em auto;
   }
 }
 
