@@ -1,9 +1,9 @@
 ---
-layout: post
 title:  "Fighting Game Mega Mix"
 permalink: /blog/fighting-game-mega-mix
 author: Michael Bassili
 favourite: 'true'
+layout: post
 tags: Games
 ---
 

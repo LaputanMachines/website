@@ -1,10 +1,10 @@
 ---
 title: Implementing Playlist Shuffle in Python
+permalink: /blog/smart-shuffling-with-python
 author: Michael Bassili
-layout: post
 tags: Programming
 favourite: 'true'
-permalink: /blog/smart-shuffling-with-python
+layout: post
 ---
 
 ## Why Even Bother Doing This? Don't You Have a Life?

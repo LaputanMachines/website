@@ -1,10 +1,10 @@
 ---
 title: Common Python Design Patterns
+permalink: /blog/python-design-patterns
 author: Michael Bassili
-layout: post
 tags: Programming
 favourite: 'true'
-permalink: /blog/python-design-patterns
+layout: post
 ---
 
 I found these design patterns to be the most useful in my professional life. I hope someone stumbles upon this and finds it somewhat useful. 

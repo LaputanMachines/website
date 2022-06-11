@@ -1,10 +1,10 @@
 ---
 title: Test Driven Game Development
-layout: post
-tags: Programming
+permalink: /blog/test-driven-game-development
 author: Michael Bassili
 favourite: 'false'
-permalink: /blog/test-driven-game-development
+tags: Programming
+layout: post
 ---
 
 Writing clean and maintainable code often follows well-defined practices for structuring and testing software. In today's example, we're going to go cover testing and test-driven development, specifically in Godot. While the tools mentioned may be unique to Godot, the principles here can be applied to any non-trivial software project. After some deliberating, we've drilled down our development and testing pipeline to the following.

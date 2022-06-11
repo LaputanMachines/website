@@ -1,10 +1,10 @@
 ---
 title: Which Is Faster In Converting A list To A Set In Python 3&colon; set() or {*} 
+permalink: /blog/python-set-creation-performance
 author: Michael Bassili
-layout: post
 favourite: 'false'
 tags: Programming
-permalink: /blog/python-set-creation-performance
+layout: post
 ---
 
 ## PyCharm Prefers Set Syntax To A Function Call 

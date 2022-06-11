@@ -1,10 +1,10 @@
 ---
 title: Installing Custom Proton Builds On Linux
-author: Michael Bassili
-layout: post
-tags: Programming
-favourite: 'false'
 permalink: /blog/installing-custom-proton-builds
+author: Michael Bassili
+favourite: 'false'
+tags: Programming
+layout: post
 ---
 
 If you're like me, you play a lot of games. Proton has been a godsend for me. It pretty much made it possible for me to transition entirely over to Linux from Windows. Some games still don't work with Proton, but talented folks are constantly developing new builds. This doc will walk you through installing custom builds.
