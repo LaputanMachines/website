@@ -4,7 +4,6 @@ author: Michael Bassili
 layout: post
 favourite: 'false'
 tags: Programming
-category: Blog
 permalink: /blog/python-set-creation-performance
 ---
 

@@ -3,7 +3,6 @@ title: Simulating Dynamic Web Interactions With Jekyll, TravisCI, and Cron Jobs
 author: Michael Bassili
 layout: post
 tags: Programming
-category: Blog
 favourite: 'false'
 permalink: /blog/simulating-dynamic-web-interactions
 ---

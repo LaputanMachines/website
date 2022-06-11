@@ -3,7 +3,6 @@ title: Test Driven Game Development
 layout: post
 tags: Programming
 author: Michael Bassili
-category: Blog
 favourite: 'false'
 permalink: /blog/test-driven-game-development
 ---

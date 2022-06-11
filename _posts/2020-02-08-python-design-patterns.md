@@ -3,7 +3,6 @@ title: Common Python Design Patterns
 author: Michael Bassili
 layout: post
 tags: Programming
-category: Blog
 favourite: 'true'
 permalink: /blog/python-design-patterns
 ---

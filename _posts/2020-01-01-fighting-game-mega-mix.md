@@ -5,7 +5,6 @@ permalink: /blog/fighting-game-mega-mix
 author: Michael Bassili
 favourite: 'true'
 tags: Games
-category: Blog
 ---
 
 ## [Introduction To The Madness](#introduction-to-the-madness)

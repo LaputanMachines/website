@@ -4,7 +4,6 @@ author: Michael Bassili
 layout: post
 tags: Programming
 favourite: 'true'
-category: Blog
 permalink: /blog/smart-shuffling-with-python
 ---
 

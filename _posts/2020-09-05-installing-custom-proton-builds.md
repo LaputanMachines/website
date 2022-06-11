@@ -3,7 +3,6 @@ title: Installing Custom Proton Builds On Linux
 author: Michael Bassili
 layout: post
 tags: Programming
-category: Blog
 favourite: 'false'
 permalink: /blog/installing-custom-proton-builds
 ---
