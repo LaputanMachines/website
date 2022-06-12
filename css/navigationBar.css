@@ -77,6 +77,12 @@ Navigation Bar
   font-family: 'Megrim', cursive;
 }
 
+.navigationBar #name a:hover,
+.navigationBar #name a:active {
+  color: inherit;
+  opacity: .7;
+}
+
 .navigationBar .links {
   color: #333;
   font-size: .9em;
@@ -97,12 +103,12 @@ Navigation Bar
 /*Navigation Bar Footer*/
 
 .navigationBar #footer {
-  color: #333;
+  color: #666;
   max-width: 100%;
   font-size: .75em;
   font-weight: 100;
   text-align: center;
-  padding: 3em 0 1em 0;
+  padding: 1em 0 1em 0;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -119,9 +125,8 @@ Navigation Bar
   }
 
   .navigationBar {
-    width: 100%;
-    max-height: 30px;
-    overflow-y: hidden;
+    display: none;
+    visibility: hidden;
   }
 
   .navigationBar #picture,

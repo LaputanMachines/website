@@ -39,11 +39,11 @@ Landing Div
   margin-bottom: 1em;
   border-radius: 3px;
   background-color: #fcfcfc;
-  max-width: calc((600px / 2) - 0.5em);
-  
+  max-width: calc((700px / 2) - 0.5em);
+
   /* Override Link Dashed Underline */
   border: 1px solid #e5e5e5 !important;
-  
+
   /* Text */
   font-size: 1em;
   font-weight: 300;
@@ -59,16 +59,16 @@ Landing Div
 .largeButton:hover,
 .largeButton:active {
   transition: .03s;
-  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
-  -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
-  -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
 }
 
 #programmingButton {
   color: #fff !important;
   font-weight: 500 !important;
   background-color: #252934 !important;
-  font-family: 'Raleway' ,sans-serif !important;
+  font-family: 'Raleway', sans-serif !important;
   text-shadow: 1px 1px #8f9095 !important;
 }
 
@@ -114,7 +114,7 @@ Landing Div
     display: block;
     margin-top: 1.5em;
   }
-  
+
   .largeButton {
     max-width: 100%;
     margin-bottom: 1em;

@@ -7,13 +7,13 @@ Blog Posts
 .posts {
   margin: 0 auto;
   font-size: 1em;
-  max-width: 800px !important;
+  max-width: 700px !important;
   padding: 0 2.5em 0.5em 2.5em;
   font-family: 'Roboto', sans-serif;
 }
 
 .projectParagraph {
-  padding-top: 0.25em;  
+  padding-top: 0.25em;
 }
 
 /*Post Information*/
@@ -36,7 +36,7 @@ Blog Posts
 }
 
 #postInformation {
-  font-size: .95em;
+  font-size: 1em;
   line-height: 1em;
 }
 
@@ -47,7 +47,8 @@ Blog Posts
   font-weight: lighter;
 }
 
-#postTags,#postTagsSmall {
+#postTags,
+#postTagsSmall {
   color: white;
   float: right;
   font-size: .9em;
@@ -112,21 +113,21 @@ table tbody td {
 }
 
 .Devlog {
-  background-color: #6c5ce7; 
+  background-color: #6c5ce7;
 }
 
 .Lifestyle {
- background-color: #27ae60; 
+  background-color: #27ae60;
 }
 
 .Cities {
-  background-color: #e74c3c; 
- }
+  background-color: #e74c3c;
+}
 
 /*Post Content*/
 
 .postTitleClassTopPadding {
-  padding-top: 1em; 
+  padding-top: 1em;
 }
 
 .postContent p {
@@ -137,14 +138,16 @@ table tbody td {
   color: #444;
   font-size: 1em;
   max-width: 800px;
-  overflow-x: hidden; 
+  overflow-x: hidden;
   line-height: 1.5em;
   margin: 0 auto 1em auto;
   padding: 0 2.5em 0 2.5em;
   font-family: 'Roboto', sans-serif;
 }
 
-.postContent h3,.postContent h4,.about h3 {
+.postContent h3,
+.postContent h4,
+.about h3 {
   margin-top: 0;
   font-size: 1.15em;
 }
@@ -153,17 +156,17 @@ table tbody td {
   font-size: 1em;
 }
 
-.postContent blockquote + p {
+.postContent blockquote+p {
   text-indent: 0em;
 }
 
-.postContent p > img {
+.postContent p>img {
   margin: 0 auto;
   display: block;
   width: calc(100% - 2 * 1em);
   padding: 1em;
   background-color: #fcfcfc;
-  box-shadow: 1px 1px 3px rgba(0,0,0,.25);
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, .25);
 }
 
 blockquote {
@@ -196,7 +199,7 @@ pre.highlight {
   color: #999;
 }
 
-.geDiagramContainer  {
+.geDiagramContainer {
   float: left;
   margin-right: 2em;
 }
@@ -213,12 +216,12 @@ pre.highlight {
     margin-left: 0;
   }
 
-  .postContent p > img {
+  .postContent p>img {
     padding: 0em;
     width: 100%;
   }
 
-  .geDiagramContainer  {
+  .geDiagramContainer {
     float: none;
     margin: 0em auto;
   }
@@ -260,7 +263,7 @@ pre.highlight {
   pre.highlight {
     font-size: .75em;
   }
-  
+
   .postsDescription {
     margin-top: 0px !important;
   }

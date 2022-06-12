@@ -37,15 +37,16 @@ hr {
 
 /*Contextuals*/
 
-th, tr {
+th,
+tr {
   padding: 0 1.5em;
 }
 
-hr + #aboutBody {
+hr+#aboutBody {
   text-indent: 0em;
 }
 
-ul + p {
+ul+p {
   margin-top: -.25em;
 }
 
@@ -66,14 +67,14 @@ ul + p {
   float: left;
   width: 100%;
   display: block;
-  max-width: 200px; 
+  max-width: 200px;
   margin-top: 1em !important;
   margin-bottom: 1em !important;
   margin-right: 1.25em !important;
 
   padding: 1em;
   background-color: #fcfcfc;
-  box-shadow: 1px 1px 3px rgba(0,0,0,.25);
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, .25);
 }
 
 #aboutPhoto {
@@ -83,12 +84,13 @@ ul + p {
 
   padding: 1em;
   background-color: #fcfcfc;
-  box-shadow: 1px 1px 3px rgba(0,0,0,.25);
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, .25);
 }
 
 /*A-Links*/
 
-* a:link,* a:visited {
+* a:link,
+* a:visited {
   color: inherit;
   text-decoration: none;
 }
@@ -98,8 +100,13 @@ ul + p {
   text-decoration: underline;
 }
 
-.mainBody a,.postLinkContent,#rssLink,.postContent p a,.postContent ul li a, 
-.portfolioInformation .portfolioTitle .portfolioLink, .postContent a {
+.mainBody a,
+.postLinkContent,
+#rssLink,
+.postContent p a,
+.postContent ul li a,
+.portfolioInformation .portfolioTitle .portfolioLink,
+.postContent a {
   border-bottom: dotted #777 1px;
 }
 
@@ -107,9 +114,12 @@ ul + p {
   margin: 0 0.25em;
 }
 
-.mainBody a:hover,.postLinkContent:hover,
-#rssLink:hover,.postContent p a:hover,
-.postContent ul li a:hover, .portfolioInformation .portfolioTitle .portfolioLink:hover,
+.mainBody a:hover,
+.postLinkContent:hover,
+#rssLink:hover,
+.postContent p a:hover,
+.postContent ul li a:hover,
+.portfolioInformation .portfolioTitle .portfolioLink:hover,
 .postContent a:hover {
   border-bottom: solid #777 1px;
 }
@@ -124,7 +134,7 @@ ul + p {
   color: #444;
   margin: 0 auto;
   font-size: 1em;
-  max-width: 600px;
+  max-width: 700px;
   line-height: 1.5em;
   padding-left: 2.5em;
   text-align: justify;
@@ -147,7 +157,7 @@ ul + p {
   margin-top: -0.5em;
   width: calc(100% - 2em);
   background-color: #fcfcfc;
-  box-shadow: 1px 1px 3px rgba(0,0,0,.25);
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, .25);
 }
 
 figcaption {
@@ -156,7 +166,8 @@ figcaption {
   font-style: italic;
 }
 
-ul, ol {
+ul,
+ol {
   padding-top: 0px;
   padding-left: 2em;
   padding-right: 1em;
@@ -166,7 +177,7 @@ ul, ol {
   color: #777;
   font-size: 1.15em;
   line-height: 1.5em;
-  font-family: 'Roboto', sans-serif; 
+  font-family: 'Roboto', sans-serif;
 }
 
 .homePage {
@@ -189,11 +200,11 @@ ul, ol {
     margin-bottom: 0;
   }
 
-  .mainBody,  
+  .mainBody,
   .postContent {
     padding-left: 1em;
     padding-right: 1em;
-    margin-top: 2.75em;
+    margin-top: 1em;
     margin-bottom: 50px;
   }
 
