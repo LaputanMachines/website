@@ -1,5 +1,5 @@
 ---
-title: Which Is Faster In Converting A list To A Set In Python 3&colon; set() or {*} 
+title: Speed of Python's set() vs {*} 
 author: Michael Bassili
 layout: post
 favourite: 'false'
