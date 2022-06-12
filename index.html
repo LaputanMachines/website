@@ -4,46 +4,66 @@ title: Homepage
 ---
 
 <div class="mainPageContainer">
-  <div class="titleBar expandedTitleBar" id="titleBar">
-    <h1 id="title">Michael Bassili's Homepage</h1>
-    <h2 id="subTitleLinks">
-      <a id="rssLink" target="_blank" href="https://twitter.com/michaelbassili">Twitter Profile</a>
-      <a id="rssLink" target="_blank" href="https://www.linkedin.com/in/michael-bassili">LinkedIn Profile</a>
-      <a id="rssLink" target="_blank" href="mailto:michael@bassi.li">Email Me</a>
-      <a id="rssLink" target="_blank" href="https://github.com/LaputanMachines">GitHub Profile</a>
-    </h2>
-  </div>
-  
-  <div class="aboutSection mainBody about" id="about">
-    <p id="aboutBody">
-      Howdy! My name is Michael, and I'm many things. 
-      I work a day-job as a programmer. 
-      I moonlight as a drummer, journalist, and writer. 
-      If you want to hire me to do one of these things, shoot me an email! 
-      Otherwise, feel free to browse the site. 
-      I try to keep my portfolios up-to-date.
-    </p>
-
-    <div class="largeButtonContainer">
-      <a target="_blank" class="largeButton" id="gameDevButton" href="https://aquinasgames.ca">Aquinas Games <sup><i class="fas fa-external-link-alt fa-xs"></i></sup></a>
-      <a target="_blank" class="largeButton" href="https://opengl.bassi.li/">Rendering Engine <sup><i class="fas fa-external-link-alt fa-xs"></i></sup></a>
-      <a target="_blank" class="largeButton" href="https://simplescript.bassi.li/">SimpleScript Language <sup><i class="fas fa-external-link-alt fa-xs"></i></sup></a>
-      <a target="_blank" class="largeButton" href="https://journalism.bassi.li">Journalism Profile <sup><i class="fas fa-external-link-alt fa-xs"></i></sup></a>
-      <a target="_blank" class="largeButton" href="https://code.bassi.li">Programming Profile <sup><i class="fas fa-external-link-alt fa-xs"></i></sup></a>
+    <div class="titleBar expandedTitleBar" id="titleBar">
+        <h1 id="title">Michael Bassili's Homepage</h1>
+        <h2 id="subTitleLinks">
+            <a id="rssLink" target="_blank" href="https://twitter.com/michaelbassili">Twitter Profile</a>
+            <a id="rssLink" target="_blank" href="https://www.linkedin.com/in/michael-bassili">LinkedIn Profile</a>
+            <a id="rssLink" target="_blank" href="mailto:michael@bassi.li">Email Me</a>
+            <a id="rssLink" target="_blank" href="https://github.com/LaputanMachines">GitHub Profile</a>
+        </h2>
     </div>
 
-    <p id="aboutBody">
-      You can reach me via email. 
-      I also have a LinkedIn profile for networking-purposes, but I rarely interact with it. 
-      You can see some of the code I've written in GitHub. 
-      <ul>
-        <li><a href="https://twitter.com/michaelbassili">Follow me</a> on Twitter <sup>[1]</sup></li>  
-        <li>Connect with me on <a href="https://www.linkedin.com/in/michael-bassili">LinkedIn</a></li>
-        <li><a href="mailto:michael@bassi.li">Email me</a> directly at michael@bassi.li</li>  
-        <li>Follow me on <a href="https://github.com/LaputanMachines/">GitHub</a> to see code I've written</li>
-      </ul>
-      <sup>[1]</sup> My Twitter account is reserved for journalism purposes. 
-      However, I won't object if you want to follow me... It's mostly journalism promo.
-    </p>
-  </div>
+    <div class="aboutSection mainBody about" id="about">
+        <p id="aboutBody">
+            Howdy! My name is Michael, and I'm many things.
+            I work a day-job as a programmer.
+            I moonlight as a drummer, journalist, and writer.
+            If you want to hire me to do one of these things, shoot me an email!
+            Otherwise, feel free to browse the site.
+            I try to keep my portfolios up-to-date.
+        </p>
+
+        <div class="largeButtonContainer">
+            <a target="_blank" class="largeButton" id="gameDevButton" href="https://aquinasgames.ca">Aquinas Games
+                <sup><i class="fas fa-external-link-alt fa-xs"></i></sup></a>
+            <a target="_blank" class="largeButton" href="https://opengl.bassi.li/">Rendering Engine <sup><i
+                        class="fas fa-external-link-alt fa-xs"></i></sup></a>
+            <a target="_blank" class="largeButton" href="https://simplescript.bassi.li/">SimpleScript Language <sup><i
+                        class="fas fa-external-link-alt fa-xs"></i></sup></a>
+            <a target="_blank" class="largeButton" href="https://journalism.bassi.li">Journalism Profile <sup><i
+                        class="fas fa-external-link-alt fa-xs"></i></sup></a>
+            <a target="_blank" class="largeButton" href="https://code.bassi.li">Programming Profile <sup><i
+                        class="fas fa-external-link-alt fa-xs"></i></sup></a>
+        </div>
+
+        <p id="aboutBody">
+            You can reach me via email.
+            I also have a LinkedIn profile for networking-purposes, but I rarely interact with it.
+            You can see some of the code I've written in GitHub.
+        <ul>
+            <li><a href="https://twitter.com/michaelbassili">Follow me</a> on Twitter <sup>[1]</sup></li>
+            <li>Connect with me on <a href="https://www.linkedin.com/in/michael-bassili">LinkedIn</a></li>
+            <li><a href="mailto:michael@bassi.li">Email me</a> directly at michael@bassi.li</li>
+            <li>Follow me on <a href="https://github.com/LaputanMachines/">GitHub</a> to see code I've written</li>
+        </ul>
+        <sup>[1]</sup> My Twitter account is reserved for journalism purposes.
+        However, I won't object if you want to follow me... It's mostly journalism promo.
+        </p>
+    </div>
+    <hr><br>
+    <div class="mainBody posts" id="posts">
+        {% for post in site.posts %}
+        {% if post.category contains 'Blog' %}
+        <div class="postLink" id="postLink">
+            <h3 id="postInformation">
+                <span id="postDate">{{ post.date | date: "%d-%m-%Y" }}</span>
+                <span id="postStar">{% if post.favourite contains 'true' %}&#9733;{% endif %}</span>
+                <span id="postTitle"><a class="postLinkContent" href="{{ post.url }}">{{ post.title }}</a></span>
+                <span id="postTags" class="{{ post.tags }}">{{ post.tags }}</span>
+            </h3>
+        </div>
+        {% endif %}
+        {% endfor %}
+    </div>
 </div>

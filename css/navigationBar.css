@@ -32,7 +32,8 @@ Navigation Bar
   border-bottom: 1px solid #e5e5e5;
 }
 
-#icons a:hover, #icons a:active {
+#icons a:hover,
+#icons a:active {
   opacity: .8;
   transition: 0.1s;
 }
@@ -61,7 +62,7 @@ Navigation Bar
 /*Navigation Bar Content*/
 
 .navigationBar #picture {
-  margin: 3em 2em 3em 2em;
+  margin: 3em 2em 0em 2em;
   max-width: calc(100% - 2 * 2em);
 }
 
@@ -123,12 +124,14 @@ Navigation Bar
     overflow-y: hidden;
   }
 
-  .navigationBar #picture, #icons {
+  .navigationBar #picture,
+  #icons {
     display: none;
     visibility: hidden;
   }
 
-  .navigationBar #pageLinks,  .navigationBar #footer {
+  .navigationBar #pageLinks,
+  .navigationBar #footer {
     display: flex;
     font-size: .9em;
     border-top: 0px;
