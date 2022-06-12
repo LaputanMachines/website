@@ -94,7 +94,7 @@
 }
 
 .programmingPortfolioShowcase .portfolioEntry {
-  max-width: calc((600px / 2) - 2.5em) !important;
+  max-width: calc((700px / 2) - 2.5em) !important;
 }
 
 .testimonial {

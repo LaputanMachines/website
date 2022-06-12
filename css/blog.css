@@ -229,7 +229,7 @@ pre.highlight {
 
 /*Mobile*/
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 850px) {
   #postTags {
     display: none;
     visibility: hidden;

@@ -109,6 +109,12 @@ Landing Div
   color: #666 !important;
 }
 
+@media screen and (max-width: 1000px) {
+  .largeButton {
+    max-width: 100%;
+  }
+}
+
 @media screen and (max-width: 500px) {
   .largeButtonContainer {
     display: block;
