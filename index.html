@@ -1,59 +1,147 @@
----
-layout: main
-title: Homepage
----
+<!DOCTYPE html>
 
-<div class="mainPageContainer">
-    <div class="titleBar expandedTitleBar" id="titleBar">
-        <h1 id="title">Michael Bassili's Homepage</h1>
-        <h2 id="subTitleLinks">
-            <a id="rssLink" target="_blank" href="https://twitter.com/michaelbassili">Twitter</a>
-            <a id="rssLink" target="_blank" href="https://www.linkedin.com/in/michael-bassili">LinkedIn</a>
-            <a id="rssLink" target="_blank" href="mailto:michael@bassi.li">Email</a>
-            <a id="rssLink" target="_blank" href="https://github.com/LaputanMachines">GitHub</a>
-        </h2>
+<html lang="en" xml:lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="I'm a Cloud Developer Who Loves to Build Cool Stuff With AWS, Azure, and Python.">
+  <title>Michael Bassili — Experienced Cloud Developer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="Michael Bassili, michael bassili, oceans across, aquinas games">
+  <meta name="language" content="en">
+  <meta name="robots" content="index,follow">
+  <meta name="revisit-after" content="5 days">
+  <meta name="theme-color" content="#F3F5F6">
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Michael Bassili — Experienced Cloud Developer" />
+  <meta property="og:keywords" content="Michael Bassili, michael bassili, oceans across, aquinas games" />
+  <meta property="og:description"
+    content="I'm a Cloud Developer Who Loves to Build Cool Stuff With AWS, Azure, and Python." />
+  <meta property="og:image" content="assets/oceansacross.png" />
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/animate.css">
+  <link rel="icon" type="image/png" href="assets/personalPhoto.png" />
+  <script src="https://kit.fontawesome.com/45f8ee0a76.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/scripts.js"></script>
+  <script type="text/javascript" src="js/wow.min.js"></script>
+  <script type="text/javascript" src="js/particles.js"></script>
+  <script type="text/javascript" src="js/app.js"></script>
+
+  <script>
+    // WOW Config...
+    new WOW().init();
+    var screenHeight = $(window).height();
+    $(window).scroll(function () {
+      if ($(window).scrollTop() > screenHeight) {
+        $('#header').addClass('fixedHeader');
+      } else {
+        $('#header').removeClass('fixedHeader');
+      }
+    });
+  </script>
+</head>
+
+<body class="indexLanding">
+  <div id="particles-js"></div>
+
+  <div data-wow-duration=".45s" class="wow fadeIn welcome" id="welcome">
+    <div id="welcomeContainer">
+      <h1 data-wow-duration=".9s" class="wow fadeIn" id="title">Michael Bassili</h1>
+      <h2 data-wow-duration=".9s" class="wow fadeIn" id="subtitle">Experienced Cloud Developer</h2>
+      <div id="app"></div>
     </div>
+    <div id="downArrow">
+      <a href="#paragraphContainer"><img src="assets/downArrow.svg" alt="Downwards Pointng Arrow"></a>
+    </div>
+  </div>
 
-    <div class="aboutSection mainBody about" id="about">
-        <p id="aboutBody">
-            Hi! My name is Michael, and I'm many things. During the day, I work as a software automation developer for
-            Agio, where I build tools for internal and external clients. I do a lot of things on the side: journalism,
-            drumming, writing, 3D modelling, music production, and more! If you want to hire me to do one of these
-            things, shoot me an email. Otherwise, feel free to browse this site.
-        </p>
+  <!-- Header Navigation Bar -->
+  <header class="header" id="header">
+    <span id="navTitle"><a href="#welcome"><span>Home</a></span>
+    <nav aria-label="Desktop Navbar Links" id="navigationDesktop">
+      <a href="blog.bassi.li">Blog <sup><em class="fas fa-external-link-alt fa-xs"></em></sup></a>
+    </nav>
+    <nav aria-label="Mobile Navbar Links" id="navigationMobile">
+      <a href="blog.bassi.li">Blog <sup><em class="fas fa-external-link-alt fa-xs"></em></sup></a>
+    </nav>
+  </header>
 
-        <div class="largeButtonContainer">
-            <a target="_blank" class="largeButton" id="gameDevButton" href="https://aquinasgames.ca">Aquinas Games
-                <sup><i class="fas fa-external-link-alt fa-xs"></i></sup></a>
-            <a target="_blank" class="largeButton renderingProfileButton" href="https://opengl.bassi.li/">Rendering
-                Engine <sup><i class="fas fa-external-link-alt fa-xs"></i></sup></a>
-            <a target="_blank" class="largeButton languageProfileButton"
-                href="https://simplescript.bassi.li/">SimpleScript Language <sup><i
-                        class="fas fa-external-link-alt fa-xs"></i></sup></a>
-            <a target="_blank" class="largeButton journalismProfileButton" href="https://journalism.bassi.li">Journalism
-                Profile <sup><i class="fas fa-external-link-alt fa-xs"></i></sup></a>
-            <a target="_blank" class="largeButton programmingProfileButton" href="https://code.bassi.li">Programming
-                Profile <sup><i class="fas fa-external-link-alt fa-xs"></i></sup></a>
+  <div class="paragraphContainer" id="paragraphContainer">
+    <h2 data-wow-duration=".45s" class="wow fadeIn" id="title">
+      Hi!
+      <img alt="A Cat Saying Hello" src="https://media.giphy.com/media/mGcNjsfWAjY5AEZNw6/giphy.gif" width="50">
+      I'm Michael, and I Develop Software For Money
+    </h2>
+    <div class="wow fadeIn" data-wow-duration=".45s" id="paragraphContainerMe">
+      I've been developing software professionally since 2017. Nowadays, I'm primarily a cloud developer who uses a
+      mixture of AWS and Azure resources. Most of my code's written in Python, but I've worked on projects written in
+      Go, C, Groovy, and PHP throughout the years. My "specialty" is CICD Jenkins development. I've built reliable and
+      cost-effective AWS auto-scaling groups which scaled according to developer use. These systems were self-healing
+      and idempotent too. I take pride in the quality of documentation I write; in my opinion, a project isn't complete
+      until there's a beautiful Markdown document describing every little detail.
+    </div>
+  </div>
+
+  <div class="cardContainer imageShowcase" id="cardContainer">
+    <div id="cardList">
+      <div data-wow-duration=".3s" class="wow fadeIn" id="projectItem">
+        <div class="card photo card-image">
+          <img ondragstart="return false" src="assets/twinstick-arcade.png" alt="Twinstick Arcade" />
+          <p>Twinstick Arcade</p>
+          <a class="images" href="https://aquinasgames.ca/TwinstickArcade/" target="_blank"><span>Visit Site <sup><em
+                  class="fas fa-external-link-alt fa-xs"></em></sup></span></a>
         </div>
-
-        <p id="aboutBody">
-            You can reach me via email: <b>michael@bassi.li</b>. You'll also find me on LinkedIn, GitHub, and Twitter. I
-            try to respond to emails as best as I can.
-        </p>
-    </div>
-    <hr><br>
-    <div class="mainBody posts" id="posts">
-        {% for post in site.posts %}
-        {% if post.category contains 'Blog' %}
-        <div class="postLink" id="postLink">
-            <h3 id="postInformation">
-                <span id="postDate">{{ post.date | date: "%d-%m-%Y" }}</span>
-                <span id="postStar">{% if post.favourite contains 'true' %}&#9733;{% endif %}</span>
-                <span id="postTitle"><a class="postLinkContent" href="{{ post.url }}">{{ post.title }}</a></span>
-                <span id="postTags" class="{{ post.tags }}">{{ post.tags }}</span>
-            </h3>
+      </div>
+      <div data-wow-duration=".3s" class="wow fadeIn projectItem" id="projectItem">
+        <div class="card photo card-image">
+          <img ondragstart="return false" src="assets/simple-script.png" alt="Simple Script Language" />
+          <p>SimpleScript Language</p><a class="images" href="https://simplescript.bassi.li/"
+            target="_blank"><span>Visit Site
+              <sup><em class="fas fa-external-link-alt fa-xs"></em></sup></span></a>
         </div>
-        {% endif %}
-        {% endfor %}
+      </div>
+      <div data-wow-duration=".3s" class="wow fadeIn projectItem" id="projectItem">
+        <div class="card photo card-image">
+          <img ondragstart="return false" src="assets/opengl-rendering-engine.png" alt="OpenGL Rendering Engine" />
+          <p>OpenGL Rendering Engine</p><a class="images" href="https://opengl.bassi.li/" target="_blank"><span>Visit
+              Site <sup><em class="fas fa-external-link-alt fa-xs"></em></sup></span></a>
+        </div>
+      </div>
+      <div data-wow-duration=".3s" class="wow fadeIn projectItem" id="projectItem">
+        <div class="card photo card-image">
+          <img ondragstart="return false" src="assets/oceansacross.png"
+            alt="Abandonware: Preserving The Now For Tomorrow" />
+          <p>Oceans Across</p><a class="images" href="https://open.spotify.com/artist/0l3DY4l3KkgO9v4UxIOpvi"
+            target="_blank"><span>View
+              Spotify Page <sup><em class="fas fa-external-link-alt fa-xs"></em></sup></span></a>
+        </div>
+      </div>
+      <div data-wow-duration=".3s" class="wow fadeIn projectItem" id="projectItem">
+        <div class="card photo card-image">
+          <img ondragstart="return false" src="assets/abandonware.png"
+            alt="Abandonware: Preserving The Now For Tomorrow" />
+          <p>Abandonware Article</p><a class="images"
+            href="https://uppercutcrit.com/abandonware-preserving-the-now-for-tomorrow/" target="_blank"><span>Read
+              Article <sup><em class="fas fa-external-link-alt fa-xs"></em></sup></span></a>
+        </div>
+      </div>
+      <div data-wow-duration=".3s" class="wow fadeIn projectItem" id="projectItem">
+        <div class="card photo card-image">
+          <img ondragstart="return false" src="assets/ms-rants.png" alt="Microsoft Rants" />
+          <p>Microsoft Rants</p><a class="images" href="https://microsoftrants.com/" target="_blank"><span>Visit Site
+              <sup><em class="fas fa-external-link-alt fa-xs"></em></sup></span></a>
+        </div>
+      </div>
     </div>
-</div>
+  </div>
+
+  <div class="footer" id="footer" style="border-top: 1px solid #e5e5e5;">
+    <span id="copyright">&copy;
+      <script>document.write(new Date().getFullYear())</script> Michael Bassili, All Rights Reserved
+    </span>
+  </div>
+</body>
+
+</html>
