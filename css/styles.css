@@ -600,7 +600,7 @@ animation-duration: 0.25s;
 
   .welcome #subtitle {
     font-size: 1.25em;
-    letter-spacing: 10px;
+    letter-spacing: 9.9px;
     text-indent: .55em;
     margin-top: -1.5em;
   }
