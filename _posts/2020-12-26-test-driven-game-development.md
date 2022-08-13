@@ -36,6 +36,7 @@ The following tools and frameworks can help you structure and write excellent te
 
 - [GUT Godot Unit Test](https://github.com/bitwes/Gut), unit testing tool for the Godot engine
 - [WAT Automated Testing](https://github.com/CodeDarigan/WAT), automated testing plugin for the Godot engine
+- [GdUnit3](https://github.com/MikeSchulze/gdUnit3), A Godot Embedded Unit Testing Framework (GdScript/C#)
 
 We did not go over specifics in this article because the GUT and WAT docs are quite extensive.
 Please refer to them for specific examples and quick-start guides.
