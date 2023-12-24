@@ -11,7 +11,6 @@ GEM
     eventmachine (1.2.7)
     ffi (1.16.3)
     forwardable-extended (2.6.0)
-    google-protobuf (3.25.1-x86_64-darwin)
     google-protobuf (3.25.1-x86_64-linux)
     http_parser.rb (0.8.0)
     i18n (1.14.1)
@@ -39,8 +38,6 @@ GEM
     jekyll-paginate (1.1.0)
     jekyll-sass-converter (3.0.0)
       sass-embedded (~> 1.54)
-    jekyll-sitemap (1.4.0)
-      jekyll (>= 3.7, < 5.0)
     jekyll-watch (2.2.1)
       listen (~> 3.0)
     kramdown (2.4.0)
@@ -71,8 +68,6 @@ GEM
     webrick (1.8.1)
 
 PLATFORMS
-  x86_64-darwin-20
-  x86_64-darwin-22
   x86_64-linux
 
 DEPENDENCIES
@@ -80,8 +75,7 @@ DEPENDENCIES
   jekyll-environment-variables
   jekyll-feed (~> 0.15.1)
   jekyll-paginate
-  jekyll-sitemap (~> 1.4.0)
   webrick (~> 1.7)
 
 BUNDLED WITH
-   2.3.11
+   2.4.12

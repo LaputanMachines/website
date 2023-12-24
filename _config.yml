@@ -12,8 +12,8 @@ plugins:
   - jekyll-environment-variables
   - jekyll-paginate
   - jekyll-feed
-  - jekyll-sitemap
-  - jekyll-watch
+  # - jekyll-sitemap
+  # - jekyll-watch
 
 paginate: 6
 paginate_path: "/blog/page/:num"
