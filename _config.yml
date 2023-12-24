@@ -1,40 +1,182 @@
-markdown:    kramdown
-exclude:     ['README.md', vendor]
-version:     1.0.1
-username:    LaputanMachines
-repo:        LaputanMachines.github.io
-branch:      master
-title:       Homepage | Michael Bassili
-author:      Michael Bassili
-url:         https://bassi.li
-description:  Howdy! My name is Michael, and I'm many things. I work a day-job as a programmer. I moonlight as a drummer, journalist, and writer. If you want to hire me to do one of these things, shoot me an email! Otherwise, feel free to browse the site. I try to keep my portfolios up-to-date. 
-source:      .
-destination: _site
+# -------------------
+# Jekyll Config
+# --------------------
+baseurl: ""
+url: "bassi.li"
+permalink: pretty
+markdown: kramdown
 highlighter: rouge
-linenos:     true
 
+# Plugins
 plugins:
+  - jekyll-environment-variables
+  - jekyll-paginate
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-watch
 
-jekyll_admin:
-  hidden_links:
-    - datafiles
+paginate: 6
+paginate_path: "/blog/page/:num"
 
-highlight:
-  linenos: true
+# Collections
+collections_dir: collections
+collections:
+  posts:
+    output: true
+    permalink: /blog/:path/
 
-highlight_options:
-  linenos: true
+# Pages
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      weight: 999
+  - scope:
+      path: category
+    values:
+      layout: category
+  - scope:
+      path: "pages"
+    values:
+      permalink: /:basename/
+  - scope:
+      path: "images"
+    values:
+      image: true
 
-kramdown:
-  input: GFM
-  syntax_highlighter: rouge
-  syntax_highlighter_opts:
-    css_class: 'highlight'
-    span:
-      line_numbers: false
-    block:
-      line_numbers: true
-      start_line: 1
+# SCSS
+sass:
+  style: compact
+
+# Excludes
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENSE
+  - netlify.toml
+
+
+# -------------------
+# Theme Config
+# --------------------
+title: "Michael Bassili"
+category_dir: 'category'
+
+colors:
+  #light-mode colors
+  primary_bg: "#EC255A"
+  primary_bg_2: "#eed2d9"
+  primary_bg_3: "#eed2d9"
+  primary_text: "#f9fafb"
+  base_bg: "#ffffff"
+  base_bg_2: "#ebeef0"
+  base_bg_3: "#d6dbe0"
+  base_text: "#191a1a"
+  base_text_2: "#555555"
+  logo_text: "#191a1a"
+  menu_text: "#191a1a"
+
+  # dark-mode colors
+  primary_bg_dark: "#EC255A"
+  primary_bg_2_dark: "#eed2d9"
+  primary_bg_3_dark: "#eed2d9"
+  primary_text_dark: "#f9fafb"
+  base_bg_dark: "#121418"
+  base_bg_2_dark: "#1d2026"
+  base_bg_3_dark: "#24272d"
+  base_text_dark: "#F4F4F5"
+  base_text_2_dark: "#D1D5DB"
+  logo_text_dark: "#F4F4F5"
+  menu_text_dark: "#F4F4F5"
+
+fonts:
+  use_google_fonts: false # will use external google_fonts url below
+  google_fonts_url: "https://fonts.googleapis.com/css2?&family=Schibsted+Grotesk:wght@400;500&family=Open+Sans:wght@300;400;500;600;700&family=Fira+Mono&display=swap"
+  use_self_hosted_fonts: true # font files must be placed in /assets/fonts folder and the @font-face definitions must be added to /assets/css/fonts.css
+  heading: "Schibsted Grotesk"
+  base: "Open Sans"
+  monospace: "Fira Mono"
+  logo: "Schibsted Grotesk"
+
+logo:
+  logo_text: "Michael Bassili"
+  logo_image: assets/images/logo/logo.svg
+  logo_image_mobile: assets/images/logo/logo-mobile.svg
+  logo_image_invert: assets/images/logo/logo-invert.svg
+  logo_image_invert_mobile: assets/images/logo/logo-invert-mobile.svg
+  logo_image_desktop_height: "30px"
+  logo_image_desktop_width: "30px"
+  logo_image_mobile_height: "28px"
+  logo_image_mobile_width: "28px"
+  show_logo_image_on_mobile: true
+  show_logo_image_on_desktop: true
+  show_logo_text_on_mobile: false
+  show_logo_text_on_desktop: true
+
+header: 
+  fixed: false
+
+open_graph:
+  meta_opengraph_type: "website"
+  meta_twitter_card: "summary"
+  meta_twitter_site: "@zerostaticio"
+  meta_twitter_creator: "@zerostaticio"
+
+darkmode:
+  enable_dark_mode: true
+  show_dark_mode_toggle_in_header: false 
+  show_dark_mode_toggle_in_bottom: true # displays the dark mode toggle switch in the footer and allows the user to manually change the mode
+  show_dark_mode_toggle_in_mobile_menu: false # displays the dark mode toggle switch in the footer and allows the user to manually change the mode
+
+cookie_banner:
+  enabled: true
+  show_manage_cookies_at_bottom: true
+
+analytics:
+  google_analytics_id: "G-SL5FWY00S6" # G-XXXXXXXXXX
+  gtm_id: "" # GTM-XXXXXXXX
+  plausible_data_domain: "" # example: mywebsite.com
+  umami_data_website_id: "" # example: "ddd14336-5fb0-4cdd-8f32-e1bfa906cc2b"
+  umami_src: "" # "https://analytics.eu.umami.is/script.js"
+
+comments:
+  commento:
+    enabled: true # you must have a commento account and be on the correct domain. does not work locally.
+  disqus:
+    shortname: "" # Your disqus shortcode for example "zerostatic". leave this blank ie "" to disable.
+
+newsletter:
+  mailchimp:
+    form_action_url: ""
+    form_title: "Stay Up Signup"
+
+contact_form: 
+  use_netlify_form: true
+  use_formspree_form: false
+  formspree_endpoint: https://formspree.io/f/moqyklqv
+  netlify_form_name: "contact"
+
+menu: 
+  show_dropdown_items_in_mobile_menu: false
+  show_social_media_in_mobile_menu: true
+
+footer:
+  enable_footer: false # show/hide the entire footer
+  footer_title: "Michael Bassili"
+  footer_description: "I'm Michael, and I'm a Cloud Developer who loves to build cool stuff with AWS, Azure, and Python."
+  enable_social_media_icons: true
+  enable_menu_footer_primary: true
+  enable_menu_footer_secondary: false
+  enable_menu_footer_tertiary: false
+  footer_primary_menu_title: "Menu"
+  footer_secondary_menu_title: "Menu 2"
+  footer_tertiary_menu_title: "Menu 3"
+
+bottom:
+  enable_bottom: true # show/hide the entire bottom (below the footer)
+  enable_bottom_menu: true # if enabled, the bottom menu can be edited in `_data/menu.yml`
+  copyright_text: "© 2023 Michael Bassili"
+  show_rss_icon: true

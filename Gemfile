@@ -1,15 +1,8 @@
-source 'https://rubygems.org'
+source "https://rubygems.org"
 
-require 'json'
-require 'open-uri'
-versions = JSON.parse(open('https://pages.github.com/versions.json').read)
-
-gem 'rake'
-gem 'jekyll-feed'
-gem 'http_parser'
-gem 'eventmachine'
-gem 'github-pages'
-gem 'jekyll-watch'
-gem 'jekyll-sitemap'
-gem 'coveralls', require: false
-gem 'kramdown', versions['kramdown']
+gem 'jekyll-environment-variables'
+gem 'jekyll-paginate'
+gem "webrick", "~> 1.7"
+gem "jekyll", "~> 4.3"
+gem "jekyll-feed", "~> 0.15.1"
+gem "jekyll-sitemap", "~> 1.4.0"

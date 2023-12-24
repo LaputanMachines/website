@@ -1,0 +1,81 @@
+---
+layout: default
+body_classes: page-post page-post-1
+---
+
+<div class="section">
+  <div class="container post-header">
+
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-8">
+          {% if page.date %}
+            <div class="post-date">{{ page.date | date_to_long_string }}</div>
+          {% endif %}
+          {% if page.categories %}
+          <div class="post-categories">
+          {% include framework/categories-badges.html 
+              categories=page.categories
+          %}
+          {% endif %}
+          </div>
+          <div class="post-title">
+            <h1>{{ page.title }}</h1>
+          </div>
+          {% if page.description %}
+            <div class="post-description">
+              <p>{{ page.description }}</p>
+            </div>
+          {% endif %}
+
+          {% if page.authors %}
+            <div class="post-authors">
+              {% for author in page.authors %}
+              {% assign author_id = author | replace: " ", "_" | downcase %}
+              {% assign author_object = site.data.authors[author_id] %}
+              {% include framework/author.html 
+                name=author_object.name
+                job=author_object.job
+                image=author_object.image
+              %}
+              {% endfor %}
+            </div>
+          {% endif %}
+
+      </div>
+    </div>
+          
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-8">
+        {% if page.image %}
+          <div class="post-image">
+            <img src="{{ page.image | relative_url }}" alt="{{ page.title }}" />
+          </div>
+        {% endif %}
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section pt-0">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-8">
+        <div class="content">{{ content }}</div>
+        {% include framework/comments.html %}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% if site.newsletter.mailchimp.form_action_url and site.newsletter.mailchimp.form_action_url != '' %}
+<div class="section section-base-bg-2">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        {% include framework/subscribe.html %}
+      </div>
+    </div>
+  </div>
+</div>
+{% endif %}

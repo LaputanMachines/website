@@ -1,0 +1,59 @@
+---
+layout: default
+body_classes: page-contact
+---
+
+<div class="section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12">
+        {% include framework/title.html
+        title=page.title
+        description=page.description
+        image=page.image
+        %}
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section pt-0">
+  <div class="container">
+    <div class="row justify-content-start">
+      {% if site.contact_form.use_netlify_form or site.contact_form.use_formspree_form %}
+      <div class="col-12 col-lg-8">
+        {% if site.contact_form.use_netlify_form %}
+        {% include framework/form-contact-netlify.html %}
+        {% elsif site.contact_form.use_formspree_form %}
+        {% include framework/form-contact-formspree.html %}
+        {% endif %}
+      </div>
+      {% if site.data.contact %}
+      <div class="col-12 col-lg-4">
+        <div class="sidebar">
+          <h4>Contact Info</h4>
+          {% include framework/contact.html contact=site.data.contact %}
+        </div>
+      </div>
+      {% endif %}
+      {% elsif site.data.contact %}
+      <div class="col-12 col-lg-10">
+        {% include framework/contact.html contact=site.data.contact %}
+      </div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+{% assign content = content | strip_newlines %}
+{% if content != "" %}
+<div class="section">
+  <div class="container">
+    <div class="row justify-content-start">
+      <div class="col-12 col-lg-8">
+        <div class="content">{{ content }}</div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endif %}

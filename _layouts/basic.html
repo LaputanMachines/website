@@ -1,0 +1,47 @@
+---
+layout: default
+body_classes: page-basic
+---
+
+<div class="section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-8">
+        <div class="title">
+
+          {% if page.title %}
+          <div class="title-heading">
+            <h1>{{ page.title }}</h1>
+          </div>
+          {% endif %}
+
+          {% if page.description %}
+          <div class="title-description">
+            <p>{{ page.description }}</p>
+          </div>
+          {% endif %}
+
+          {% if page.image and page.image != "" %}
+            <div class="title-image mt-3">
+              <img {% if page.title %} alt="{{ page.title }}" {% endif %} src="{{ page.image | relative_url }}" />
+            </div>
+          {% endif %}
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% assign content = content | strip_newlines %}
+{% if content != "" %}
+<div class="section pt-0">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-8">
+        <div class="content">{{ content }}</div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endif %}
