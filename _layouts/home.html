@@ -1,98 +1,19 @@
 ---
 layout: default
-body_classes: page-home
 ---
 
-<div class="section">
-  <div class="container">
-    <div class="row">
-      {% if page.image and page.image != '' %}
-      <div class="col-12">
-        {% include framework/title.html
-          title=page.title
-          description=page.description
-          image=page.image
-          show_social=page.show_social_media_in_title
-        %}
-      </div>
-      {% else %}
-      <div class="col-10">
-        {% include framework/title.html
-          title=page.title
-          description=page.description
-          show_social=page.show_social_media_in_title
-        %}
-      </div>
-      {% endif %}
-    </div>
-  </div>
-</div>
+{{ content }}
+{% assign contentwonl = content | strip_newlines %} {% unless contentwonl == ""  %} <br /> {% endunless %} <!-- add line break if there is any content -->
 
-{% assign cards = site.posts | sort: 'date' | reverse %}
-{% assign limit = page.posts.limit | default: 6 %}
-{% assign sort_by = page.posts.sort | default: 'date' %}
-{% assign columns =  page.posts.columns | default: 3 %}
-{% capture columns %}col-lg-{{ 12 | divided_by:columns }}{% endcapture %}
-{% if sort_by == 'weight' %}
-  {% assign cards = cards | sort: 'weight' %}
-{% endif %}
+<hr class="blog-hr">
 
-{% if cards.size > 0 %}
-<div class="section bg-base-bg pt-0">
-  <div class="container">
-    <div class="row">
-
-      {% include framework/grid-header.html 
-        heading=page.posts.heading 
-        sub_heading=page.posts.sub_heading 
-      %}
-
-      {% for card in cards limit: limit %}
-
-        {% assign categories = "" %}
-        {% assign authors = "" %}
-        {% if page.posts.show_categories %}
-          {% assign categories = card.categories %}
-        {% endif %}
-        {% if page.posts.show_authors %}
-          {% assign authors = card.authors %}
-        {% endif %}
-
-        <div class="col-12 col-md-4 {{ columns }}{% if forloop.first %}mt-0{% endif %} {% if forloop.last %}mb-0{% endif %} mb-3 mb-md-6">
-          {% include theme/cards/card-post.html 
-            title=card.title 
-            description=card.description
-            thumbnail=card.thumbnail
-            image=card.image
-            authors=authors
-            categories=categories
-            date=card.date
-            url=card.url 
-            weight=card.weight
-          %}
-        </div>
-      {% endfor %}
-
-      <!-- {% include framework/grid-footer.html 
-        view_more_button_text=page.posts.view_more_button_text
-        view_more_button_link=page.posts.view_more_button_link
-        align="center"
-        icon=""
-      %} -->
-
-    </div>
-  </div>
-</div>
-{% endif %}
-
-{% if site.newsletter.mailchimp.form_action_url and site.newsletter.mailchimp.form_action_url != '' %}
-<div class="section section-base-bg-2">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        {% include framework/subscribe.html %}
-      </div>
-    </div>
-  </div>
-</div>
-{% endif %}
+{%- if site.posts.size > 0 -%}
+  <ul>
+    {%- for post in site.posts -%}
+    <li>
+      {%- assign date_format = "%Y-%m-%d" -%}
+      [ {{ post.date | date: date_format }} ] <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+    </li>
+    {%- endfor -%}
+  </ul>
+{%- endif -%}

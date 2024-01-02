@@ -1,3 +1,10 @@
+PATH
+  remote: .
+  specs:
+    jekyll-theme-console (0.4.0)
+      jekyll (>= 3.5)
+      jekyll-seo-tag
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -15,7 +22,7 @@ GEM
     http_parser.rb (0.8.0)
     i18n (1.14.1)
       concurrent-ruby (~> 1.0)
-    jekyll (4.3.2)
+    jekyll (4.3.3)
       addressable (~> 2.4)
       colorator (~> 1.0)
       em-websocket (~> 0.5)
@@ -31,13 +38,15 @@ GEM
       safe_yaml (~> 1.0)
       terminal-table (>= 1.8, < 4.0)
       webrick (~> 1.7)
-    jekyll-environment-variables (1.0.1)
-      jekyll (>= 3.0, < 5.x)
     jekyll-feed (0.15.1)
       jekyll (>= 3.7, < 5.0)
     jekyll-paginate (1.1.0)
     jekyll-sass-converter (3.0.0)
       sass-embedded (~> 1.54)
+    jekyll-seo-tag (2.8.0)
+      jekyll (>= 3.8, < 5.0)
+    jekyll-sitemap (1.4.0)
+      jekyll (>= 3.7, < 5.0)
     jekyll-watch (2.2.1)
       listen (~> 3.0)
     kramdown (2.4.0)
@@ -71,10 +80,14 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  bundler
   jekyll (~> 4.3)
-  jekyll-environment-variables
   jekyll-feed (~> 0.15.1)
   jekyll-paginate
+  jekyll-seo-tag
+  jekyll-sitemap (~> 1.4.0)
+  jekyll-theme-console!
+  rake
   webrick (~> 1.7)
 
 BUNDLED WITH
