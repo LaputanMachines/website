@@ -30,4 +30,4 @@ I volunteer my time to a few organizations outside of work.
 
 - [ 2023-03 - Now ] Co-Founder, Organizer of [Strong Towns Nanaimo](https://www.beautifulnanaimo.ca/)
 - [ 2023-08 - Now ] Board of Variance Comittee Member for the [City of Nanaimo](https://www.nanaimo.ca/)
-- [ 2023-11 - Now ] Community Leader for [MADD Canada](https://www.madd.ca/)
+- [ 2023-11 - 2024-01 ] Community Leader for [MADD Canada](https://www.madd.ca/)
