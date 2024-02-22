@@ -1,22 +1,24 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; img-src 'self'; font-src 'self' https://fonts.gstatic.com; connect-src 'self'; media-src 'self'; object-src 'self'; child-src 'self'; form-action 'none'; base-uri 'self'" />
-<meta http-equiv="X-XSS-Protection"  content="1;mode=block" always>
-<meta http-equiv="Referrer-Policy" content="no-referrer, strict-origin-when-cross-origin">
+<html lang="en">
 
-  {%- include head.html -%}
+{% include head.html %}
 
-  <body>
-    <div class="container">
+<body>
+  {% if site.google-analytics %}
+    {% include google-analytics.html %}
+  {% endif %}
 
-      {%- include header.html -%}
+  {% include header.html %}
 
-    <main>
-      {{ content }}
-    </main>
+  <!-- begin content -->
+  <main class="content" aria-label="Content">
+    {{ content }}
+  </main> 
+  <!-- end content -->
+  
+  <div class="top" title="Top"><i class="ion ion-ios-arrow-up"></i></div>
+  {% include footer.html %}
+  {% include javascripts.html %}
+</body>
 
-    {%- include footer.html -%}
-
-    </div>
-  </body>
 </html>

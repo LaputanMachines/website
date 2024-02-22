@@ -1,24 +1,17 @@
-PATH
-  remote: .
-  specs:
-    jekyll-theme-console (0.4.0)
-      jekyll (>= 3.5)
-      jekyll-seo-tag
-
 GEM
   remote: https://rubygems.org/
   specs:
     addressable (2.8.6)
       public_suffix (>= 2.0.2, < 6.0)
     colorator (1.1.0)
-    concurrent-ruby (1.2.2)
+    concurrent-ruby (1.2.3)
     em-websocket (0.5.3)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0)
     eventmachine (1.2.7)
     ffi (1.16.3)
     forwardable-extended (2.6.0)
-    google-protobuf (3.25.1-x86_64-linux)
+    google-protobuf (3.25.3-x86_64-linux)
     http_parser.rb (0.8.0)
     i18n (1.14.1)
       concurrent-ruby (~> 1.0)
@@ -38,15 +31,13 @@ GEM
       safe_yaml (~> 1.0)
       terminal-table (>= 1.8, < 4.0)
       webrick (~> 1.7)
-    jekyll-feed (0.15.1)
-      jekyll (>= 3.7, < 5.0)
     jekyll-paginate (1.1.0)
     jekyll-sass-converter (3.0.0)
       sass-embedded (~> 1.54)
-    jekyll-seo-tag (2.8.0)
-      jekyll (>= 3.8, < 5.0)
     jekyll-sitemap (1.4.0)
       jekyll (>= 3.7, < 5.0)
+    jekyll-tagging (1.1.0)
+      nuggets
     jekyll-watch (2.2.1)
       listen (~> 3.0)
     kramdown (2.4.0)
@@ -58,6 +49,7 @@ GEM
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
     mercenary (0.4.0)
+    nuggets (1.6.1)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
     public_suffix (5.0.4)
@@ -81,14 +73,10 @@ PLATFORMS
 
 DEPENDENCIES
   bundler
-  jekyll (~> 4.3)
-  jekyll-feed (~> 0.15.1)
+  jekyll
   jekyll-paginate
-  jekyll-seo-tag
-  jekyll-sitemap (~> 1.4.0)
-  jekyll-theme-console!
-  rake
-  webrick (~> 1.7)
+  jekyll-sitemap
+  jekyll-tagging
 
 BUNDLED WITH
    2.4.12
