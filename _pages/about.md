@@ -1,30 +1,28 @@
 ---
 layout: page
-title: About
-permalink: /about/
-image: '/images/60.jpg'
+title: About Me
+permalink: /about
+title_description: "Who Is Michael Bassili?"
+image: '/images/about.jpg'
 ---
 
-Hi, my name is Robert Wilson. Sin tantum modo ad indicia veteris memoriae virtute cognoscenda, curiosorum. Haec et tu ita posuisti, et verba vestra sunt. Idemne potest esse dies saepius, qui semel fuit? Ampulla enim sit necne sit, quis non iure optimo irrideatur, si laboret? Ego vero volo in virtute vim esse quam maximam. Serpere genere anguiculos, nare anaticulas, evolare merulas, cornibus uti videmus boves, nepas aculeis. Conferam tecum, quam cuique verso rem subicias; Si longus, levis. Neque enim disputari sine reprehensione nec cum iracundia aut pertinacia recte disputari disseretur inter.
+I'm an experienced Software Engineer and Cloud Architect with a versatile background spanning Data Engineering, Backend Engineering, and Cloud Development. Possessing over 7 years of expertise in both AWS and Azure platforms. I'm proficient in a range of languages and technologies, including Python, C, Golang, K8s, Docker, Terraform, Ansible, and more!
 
-![Time to think]({{site.baseurl}}/images/501.jpg)
-*Minimalism / [Unsplash](https://unsplash.com/)*
+- **2021-12 - Now** — Sr. Software Engineer at [Agio](https://agio.com/)
+- **2021-03 - 2021-11** — DevOps Engineer at [Gubagoo](https://www.gubagoo.com/)
+- **2020-07 - 2021-03** — Software Engineer at [WISI Group](https://wisigroup.com/)
+- **2017-05 - 2019-08** — Software Developer in Test at [Delta Controls](https://deltacontrols.com/)
 
-In qua quid est boni praeter summam voluptatem, et eam sempiternam? Cur post Tarentum ad Archytam? Qua ex cognitione facilior facta est investigatio rerum occultissimarum. Negat enim tenuissimo victu, id est contemptissimis escis et potionibus, minorem voluptatem percipi quam rebus exquisitissimis ad epulandum. Non enim iam stirpis bonum quaeret, sed animalis. Qui autem esse poteris, nisi te amor ipse ceperit? Sic igitur in homine perfectio ista in eo potissimum, quod est optimum, id est in virtute, laudatur. An, partus ancillae sitne in fructu disseretur sine reprehensione iracundia.
+I'm also a passionate urbanist activist. I'm the founder and organizer of [Strong Towns Nanaimo](https://www.beautifulnanaimo.ca/), a grassroots organization advocating for the City of Nanaimo to put _people over cars_. I'm also the Director of Communications for [Better Island Transit](https://betterislandtransit.ca/), a non-profit advocacy group pushing for for better public transit on Vancouver Island.
 
-<div class="gallery-box">
-  <div class="gallery">
-    <img src="/images/900.jpg">
-    <img src="/images/901.jpg">
-    <img src="/images/902.jpg">
-  </div>
-  <em>Gallery / <a href="https://unsplash.com/" target="_blank">Unsplash</a></em>
-</div>
+![]({{site.baseurl}}/images/nanaimo.png)
+*Nanaimo, British Columbia, Canada*
 
-In omni enim arte vel studio vel quavis scientia vel in ipsa virtute optimum quidque rarissimum est. Quod est, ut dixi, habere ea, quae secundum naturam sint, vel omnia vel plurima et maxima. Quodsi ipsam honestatem undique pertectam atque absolutam. Tecum optime, deinde etiam cum mediocri amico. Neque enim disputari sine pertectam reprehensione nec cum iracundia aut pertinacia recte disputari potest. An, partus ancillae sitne in fructu habendus, disseretur inter principes civitatis, P. Ut in geometria, prima si dederis, danda sunt omnia. Longum est enim ad omnia respondere, quae a te dicta sunt. Nam cui proposito sit conservatio sui, necesse est huic partes quoque sui caras suo genere laudabiles. Servari enim iustitia nisi a forti viro, nisi a sapiente nona civitatis.
+Most activism takes place in and around the city of Nanaimo, located on Vancouver Island. In my spare time, I enjoy climbing, hiking, cycling, and exploring the island. 
 
-<p><iframe src="https://www.youtube.com/embed/QyQ85DEVpbc" frameborder="0" allowfullscreen></iframe></p>
+![]({{site.baseurl}}/images/drumming.jpg)
+*Photo from back when I would gig with my band in Vancouver*
 
-Ego quoque, inquit, didicerim libentius si quid attuleris, quam te reprehenderim. Iam insipientes alios ita esse, ut nullo modo ad sapientiam possent pervenire, alios, qui possent, si id egissent, sapientiam consequi. Id quaeris, inquam, in quo, utrum respondero, verses te huc atque illuc necesse est. Sed quid ages tandem, si utilitas ab amicitia, ut fit saepe, defecerit? Sed isti ipsi, qui voluptate et dolore omnia metiuntur, nonne clamant sapienti plus semper adesse quod velit quam quod nolit? Quae quidem sapientes sequuntur duce natura tamquam videntes. Quod enim fitus dissolutum sit, id esse sine sensu, utilitas quod autem sine sensu sit, id nihil ad nos pertinere omnino. Idne consensisse de Calatino plurimas gentis arbitramur, primarium populi fuisse, quod praestantissimus fuisset in conficiendis voluptatibus? Utram tandem linguam nescio.
+I'm always working on creative projects. I love to write and paint, and I play both the guitar and the drums. I used to play shows with my punk band pre-COVID. Nowadays, I spend my time writing and recording music in my home studio with local musicians.
 
-<hr>
+Want to connect? Feel free to reach out to me on [LinkedIn](https://www.linkedin.com/in/michael-bassili), [GitHub](https://github.com/LaputanMachines/), or [email](mailto:michael@bassi.li). 
