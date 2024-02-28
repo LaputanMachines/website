@@ -34,7 +34,7 @@
     width: 106px;
     height: 38px;
     border-radius: 4px 0px 0px 4px;
-    background: linear-gradient(90deg, $brand-color -5.19%, rgba($background-color, 0) 100%);;
+    background: linear-gradient(90deg, $brand-color -5.19%, rgba($background-color, 0) 100%);
   }
   @media only screen and (max-width: $desktop) {
     font-size: 24px;
@@ -67,6 +67,7 @@
   border-radius: 16px;
   overflow: hidden;
   background: $dark;
+  
   img {
     position: absolute;
     top: 0;

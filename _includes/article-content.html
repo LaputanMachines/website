@@ -26,19 +26,8 @@
       <p class="article__excerpt">{{ post.description }}</p>
 
       <div class="article__bottom">
-
-        {% if site.author.avatar %}
-        <div class="article__author">
-          <a href="{{site.baseurl}}/about/" aria-label="{{site.author.name}}"><img class="article__author-image lazy" data-src="{{site.baseurl}}{{site.author.avatar}}" alt="{{site.author.name}}'s Picture"></a>
-        </div>
-        {% endif %}
-
         <div class="article__bottom-meta">
-          {% if site.author.name %}
-            <a href="{{site.baseurl}}/about/" class="article__author-link">{{ site.author.name }}</a>
-          {% endif %}
           {% if post.tags.size >= 1 %}
-            <span>in</span>
             <span class="article-tags">
               {% for tag in post.tags %}
                 <a href="{{ site.baseurl }}/tag/{{ tag }}" class="article__tag">{{ tag }}</a>
