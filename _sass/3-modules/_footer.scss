@@ -166,8 +166,9 @@
 
 /* Footer */
 .footer {
-  position: relative;
   padding: 64px 0;
+  margin-top: 64px;
+  position: relative;
   border-top: 2px solid $dark;
 
   .footer__inner {
