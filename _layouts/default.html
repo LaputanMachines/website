@@ -3,22 +3,29 @@
 
 {% include head.html %}
 
-<body>
-  {% if site.google-analytics %}
+<body class="{% if page.url == '/' %}home-page{% endif %}">
+
+  {% if site.data.settings.google_analytics %}
     {% include google-analytics.html %}
   {% endif %}
 
-  {% include header.html %}
-
-  <!-- begin content -->
-  <main class="content" aria-label="Content">
-    {{ content }}
-  </main> 
-  <!-- end content -->
+  <!-- begin global wrap -->
+  <div class="global-wrap">
   
-  <div class="top" title="Top"><i class="ion ion-ios-arrow-up"></i></div>
-  {% include footer.html %}
-  {% include javascripts.html %}
+    {% include header.html %}
+  
+    <!-- begin content -->
+    <main class="content" aria-label="Content">
+      {{ content }}
+    </main>
+    <!-- end content -->
+
+    {% include footer.html %}
+  </div>
+  <!-- end global wrap -->
+
+  <script src="{{ site.baseurl }}/js/scripts.js"></script>
+  <script src="{{ site.baseurl }}/js/common.js"></script>
 </body>
 
 </html>

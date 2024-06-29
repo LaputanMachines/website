@@ -1,34 +1,29 @@
-/* Scroll Button */
+/* Scroll Button Top */
 .top {
-  position: fixed;
-  bottom: 25px;
-  right: -100px;
-  z-index: 5;
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
-  text-align: center;
-  border-radius: 8px;
-  background-color: $dark;
-  color: $white;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: var(--heading-font-color);
   cursor: pointer;
-  transition: all .25s ease;
 
   &:hover {
-    color: $dark;
-    background: $brand-color;
+    .top__text {
+      text-decoration-color: var(--heading-font-color);
+    }
   }
-  
-  &.is-active {
-    right: 30px;
-  }
-}
 
-@media only screen and (max-width: $tablet) {
-  .top {
-    bottom: 15px;
-    &.is-active {
-      right: 25px;
+  .top__text {
+    margin-left: 8px;
+    font-size: 15px;
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
+  }
+
+  @media (max-width: $tablet) {
+    .top__text {
+      font-size: 14px;
     }
   }
 }

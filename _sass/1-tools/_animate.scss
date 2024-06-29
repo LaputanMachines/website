@@ -1,17 +1,13 @@
 /* Animate */
 .animate {
-  animation: animateElement cubic-bezier(.300,.450,.450,.950) .75s;
-  animation-duration: 0.75s;
-  animation-iteration-count: 1;
-  transition: transform .2s;
+  animation: animateElement cubic-bezier(0.3, 0.45, 0.45, 0.95) .5s;
+  will-change: transform;
 
-  @keyframes animateElement{
+  @keyframes animateElement {
     0% {
-      opacity:0;
       transform: translate(0px,50px);
     }
     100% {
-      opacity:1;
       transform: translate(0px,0px);
     }
   }

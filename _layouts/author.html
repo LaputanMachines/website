@@ -1,0 +1,53 @@
+---
+layout: default
+---
+
+<!-- begin author -->
+<section class="section author">
+
+  <div class="container">
+    {% assign post_count = site.posts | where: 'author', page.username %}
+
+    <div class="author__content">
+      <div class="author__image"><img class="lazy" data-src="{{ page.image }}" alt="{{ page.name }}"></div>
+      <h1 class="author__name">{{ page.name }}</h1>
+
+      <div class="author__info">
+      {% if page.location %}
+        <span class="author__social__item"><i class="ion ion-md-pin"></i> {{ page.location }}</span>
+      {% endif %}
+      {% if page.website %}
+        <a class="author__social__item" href="{{ page.website }}" aria-label="Website link"><i class="ion ion-ios-link"></i> Website</a>
+      {% endif %}
+      {% if page.facebook %}
+        <a class="author__social__item" href="{{ page.facebook }}" aria-label="Facebook link"><i class="ion ion-logo-facebook"></i> Facebook</a>
+      {% endif %}
+      {% if page.twitter %}
+        <a class="author__social__item" href="{{ page.twitter }}" aria-label="Twitter link"><i class="ion ion-logo-twitter"></i> Twitter</a>
+      {% endif %}
+      {% if page.instagram %}
+        <a class="author__social__item" href="{{ page.instagram }}" aria-label="Instagram link"><i class="ion ion-logo-instagram"></i> Instagram</a>
+      {% endif %}
+      </div>
+
+      {{ content }}
+
+    </div>
+
+  </div>
+
+  {% if post_count.size >= 1 %}
+  <div class="container">
+    <h2 class="author__posts__count">{{ post_count.size }}{% if post_count.size < 2 %}Post{% else %} Posts{% endif %}</h2>
+    <div class="row animate">
+      {% for post in post_count %}
+      <div class="col col-4 col-d-6 col-t-12">
+        {% include article.html %}
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+  {% endif %}
+
+</section>
+<!-- end author -->

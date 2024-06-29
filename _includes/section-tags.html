@@ -1,0 +1,55 @@
+{% if site.data.settings.tags_section.enable == true and site.data.settings.tags_section.tags != null %}
+
+{% if site.data.settings.tags_section.number_columns == 1 %}
+  {% assign number_columns = 12 %}
+{% elsif site.data.settings.tags_section.number_columns == 2 %}
+  {% assign number_columns = 6 %}
+{% elsif site.data.settings.tags_section.number_columns == 3 %}
+  {% assign number_columns = 4 %}
+{% elsif site.data.settings.tags_section.number_columns == 4 %}
+  {% assign number_columns = 3 %}
+{% endif %}
+
+{% if site.data.settings.tags_section.number_posts %}
+  {% assign number_posts = site.data.settings.tags_section.number_posts %}
+{% else %}
+  {% assign number_posts = 3 %}
+{% endif %}
+
+{% for tag_word in site.data.settings.tags_section.tags %}
+<!-- begin section-tag -->
+<section class="section section-tags animate">
+  <div class="container">
+    <div class="row">
+      <div class="col col-12">
+        <div class="section__inner">
+
+          <div class="section__info">
+            <div class="section__head">
+              <h2 class="section__title"><a href="{{ site.baseurl }}/tags/?tag={{ tag_word.tag | downcase }}" class="section__link">{{ tag_word.tag | capitalize }}</a></h2>
+              {% if site.data.settings.tags_section.number_posts < site.tags.[tag_word.tag].size %}
+              <a href="{{ site.baseurl }}/tags/?tag={{ tag_word.tag | downcase }}" class="button">View all <i class="ion ion-ios-arrow-forward"></i></a>
+              {% elsif {{number_posts}} < site.tags.[tag_word.tag].size %}
+              <a href="{{ site.baseurl }}/tags/?tag={{ tag_word.tag | downcase }}" class="button">View all <i class="ion ion-ios-arrow-forward"></i></a>
+              {% endif %}
+            </div>
+          </div>
+
+          <div class="row">
+            {% assign count = 0 %}
+            {% for post in site.tags.[tag_word.tag] limit:{{number_posts}} %}
+            {% assign count = count | plus: 1 %}
+            <div class="col {% if site.data.settings.tags_section.number_columns > 0 and site.data.settings.tags_section.number_columns <= 4 %}col-{{number_columns}} col-d-6 col-t-12{% else %}col-4 col-d-6 col-t-12{% endif %}">
+              {% include article.html %}
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end section-tag -->
+{% endfor %}
+
+{% endif %}

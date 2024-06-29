@@ -1,0 +1,111 @@
+#-------------------------------
+# Site Settings
+title: Michael Bassili
+description: I'm a Cloud Developer Who Loves to Build Cool Stuff With AWS, Azure, Python, and AI.
+# logo: "/images/logo.svg" 
+logo_dark: "/images/logo-dark.svg"
+color_scheme: light 
+
+
+#-------------------------------
+# Navigation Settings
+menu_settings:
+  menu_items:
+    - title: "Home"
+      url: "/"
+    - title: "Latest"
+      url: "/latest/"
+    - title: "Pages"
+      submenu:
+      - url: "/about/"
+        title: "About"
+      - url: "/contact/"
+        title: "Contact"
+      - url: "/featured/"
+        title: "Featured"
+
+# Call to action button
+cta_button:
+  enable: true
+  cta_button_link: '/contact/'
+  cta_button_text: Get in touch
+
+
+#-------------------------------
+# Hero Settings
+hero:
+  enable: true
+  hero_title: Thoughts On Software Development & Productivity.
+  hero_description: Hello 👋 I've built a lot of cool stuff with AWS, Azure, Python, and AI. I'm passionate about sharing my knowledge with others. Check back often!
+
+
+#-------------------------------
+# Tags Section Settings
+tags_section:
+  enable: true
+  number_posts: 3 # To control how many posts to show under each tag section, set the value to a number. Three is the default.
+  number_columns: 3 # You can specify the number of columns from 1-4 for large screen resolution. By default, the theme uses three columns grid.
+  tags:
+    - tag: "lifestyle"
+    - tag: "shopping"
+    - tag: "business"
+    - tag: "food"
+    - tag: "sport"
+
+# You can add many tag sections to the homepage; each section will show the recent posts by the tag.
+
+
+#-------------------------------
+# Authors Section Settings
+authors_section:
+  enable: false
+  section_title: Meet our authors
+
+
+#-------------------------------
+# Footer Settings
+footer_description: I'm a Cloud Developer Who Loves to Build Cool Stuff With AWS, Azure, Python, and AI.
+
+
+# Social Links
+social:
+- {icon: "twitter", link: "https://twitter.com"}
+- {icon: "facebook", link: "https://facebook.com"}
+- {icon: "codepen", link: "https://codepen.io"}
+- {icon: "pinterest", link: "https://pinterest.com"}
+- {icon: "github", link: "https://github.com"}
+- {icon: "youtube", link: "https://youtube.com"}
+
+# Example of adding a new link to the footer - {icon: "instagram", link: "https://instagram.com"}
+# Other icons can be found at https://ionicons.com/v4/
+
+
+#-------------------------------
+# Newsletter Settings
+mailchimp_settings:
+  enable: true
+  mailchimp_title: Get interesting news
+  mailchimp_description: Subscribe to our newsletter and we’ll send you the emails of latest posts.
+  mailchimp_identifier: frnla.us6.list-manage.com/subscribe/post?u=6314d69a3f315af7ce3fb00a0&amp;id=3038727cc3 # Add your MailChimp form identifier. For example - frnla.us6.list-manage.com/subscribe/post?u=6314d69a3f315af7ce3fb00a0&amp;id=3038727cc3
+  mailchimp_input_text: Your email address
+  mailchimp_button_text: Subscribe
+
+
+#-------------------------------
+# Contact Settings
+contact:
+  email: your@email.com # Add your form_id
+  description: Danto comes with a built-in contact form, that you can use with Formspree service to handle up to 50 submissions per month for free. You could also easily switch to another contact form service if you want. # Add a description of your form
+
+# NOTE
+# Danto theme comes with a contact form built-in. You can use this form with Formspree (https://formspree.io/) service and get up to 50 submissions for free. Also, you can easily switch to another service if you want.
+
+
+#-------------------------------
+# Comment Section (Disqus)
+disqus_identifier: anvod-studio-test # Add your shortname for Disqus Comment. For example anvod-studio-test
+
+
+#-------------------------------
+# Google Analytics
+google_analytics: # Add your GA Tracking Id

@@ -1,0 +1,33 @@
+{% if site.data.settings.authors_section.enable == true %}
+<!-- begin section-authors -->
+<section class="section section-authors animate">
+  <div class="container">
+    <div class="row">
+      <div class="col col-12">
+        <div class="section-authors__inner">
+
+          {% if site.data.settings.authors_section.section_title %}
+          <h3 class="section-authors__title">{{ site.data.settings.authors_section.section_title }}</h3>
+          {% endif %}
+
+          <div class="section-authors__content">
+            <div class="section-authors__box">
+            {% for author in site.authors limit:5 %}
+            {% assign post_count = site.posts | where:"author", author.username %}
+              <a href="{{ author.url }}" class="section-authors__image">
+                <img class="lazy" data-src="{{ author.image }}" alt="{{ author.name }}">
+              </a>
+            {% endfor %}
+            </div>
+            {% if site.authors.size > 5 %}
+            <a href="/authors/" class="section-authors__link">See all authors</a>
+            {% endif %}
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end section-authors -->
+{% endif %}

@@ -1,24 +1,36 @@
-<!-- begin footer-widgets -->
-<!-- <section class="footer-widgets">
-  <div class="container">
-    <div class="row">
-      {% include footer-widgets/widget-recent-posts.html %}
-      {% include footer-widgets/widget-tag-cloud.html %}
-      {% include footer-widgets/widget-subscribe.html %}
-    </div>
-  </div>
-</section> -->
-<!-- end footer-widgets -->
-
 <!-- begin footer -->
 <footer class="footer">
   <div class="container">
     <div class="row">
       <div class="col col-12">
-      <div class="footer__inner">
-        <div class="copyright">{{site.time | date: '%Y'}} &copy; <a href="/">{{ site.title }}</a> all rights reserved. </div>
-        {% include social-links.html %}
+
+        <div class="footer__inner">
+          <div class="row">
+            {% include footer-widgets/widget-info.html %}
+            {% include footer-widgets/widget-recent-posts.html %}
+            {% include footer-widgets/widget-subscribe.html %}
+          </div>
         </div>
+
+        <div class="footer__info">
+          <div class="copyright">{{site.time | date: '%Y'}} &copy; <a href="/">{{site.data.settings.title}}</a>. Crafted & Designed by <a href="https://jekyllthemes.io/developers/artem-sheludko">Artem Sheludko</a>.</div>
+          <div class="footer__info__right">
+            {% if site.data.settings.color_scheme == "auto" %}
+            <div class="toggle-theme">
+              <div class="toggle-moon" title="Enable dark mode" aria-hidden="true"><i class="ion ion-ios-moon"></i> <span class="toggle-text">Dark</span></div>
+              <div class="toggle-sun" title="Enable light mode" aria-hidden="true"><i class="ion ion-ios-sunny"></i> <span class="toggle-text">Light</span></div>
+            </div>
+            {% elsif site.data.settings.color_scheme == "light" or site.data.settings.color_scheme == "dark" %}
+            {% else %}
+            <div class="toggle-theme">
+              <div class="toggle-moon" title="Enable dark mode"><i class="ion ion-ios-moon" aria-hidden="true"></i></div>
+              <div class="toggle-sun" title="Enable light mode"><i class="ion ion-ios-sunny" aria-hidden="true"></i></div>
+            </div>
+            {% endif %}
+            <div class="top" title="Top"><i class="ion-md-arrow-round-up"></i> <span class="top__text">Back to top</span></div>
+          </div>
+        </div>
+
       </div>
     </div>
   </div>
