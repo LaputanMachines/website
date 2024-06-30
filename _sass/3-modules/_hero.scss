@@ -2,6 +2,20 @@
 .hero {
   margin: 48px 0;
 
+  .hero__underline {
+    text-decoration: underline;
+    text-decoration-thickness: 5px;
+
+  }
+  
+  #hero__software {
+    text-decoration-color: #0ea5e9;
+  }
+
+  #hero__productivity {
+    text-decoration-color: #22c55e;
+  }
+  
   .hero__inner {
     max-width: 900px;
     margin: 0 auto;

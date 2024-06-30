@@ -35,7 +35,7 @@ cta_button:
 # Hero Settings
 hero:
   enable: true
-  hero_title: Thoughts On Software Development & Productivity.
+  hero_title: "Thoughts On <span class='hero__underline' id='hero__software'>Software Development</span> & <span class='hero__underline' id='hero__productivity'>Productivity</span>."
   hero_description: Hello 👋 I've built a lot of cool stuff with AWS, Azure, Python, and AI. I'm passionate about sharing my knowledge with others. Check back often!
 
 
@@ -66,13 +66,8 @@ footer_description: I'm a Cloud Developer Who Loves to Build Cool Stuff With AWS
 
 # Social Links
 social:
-- {icon: "twitter", link: "https://twitter.com"}
-- {icon: "facebook", link: "https://facebook.com"}
-- {icon: "codepen", link: "https://codepen.io"}
-- {icon: "pinterest", link: "https://pinterest.com"}
-- {icon: "github", link: "https://github.com"}
-- {icon: "youtube", link: "https://youtube.com"}
-
+- {icon: "linkedin", link: "https://www.linkedin.com/in/michael-bassili/"}
+- {icon: "github", link: "https://github.com/LaputanMachines/"}
 # Example of adding a new link to the footer - {icon: "instagram", link: "https://instagram.com"}
 # Other icons can be found at https://ionicons.com/v4/
 
