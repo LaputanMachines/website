@@ -13,7 +13,7 @@ plugins:
   - jekyll-sitemap
 
 paginate: 12
-paginate_path: "/latest/page/:num"
+paginate_path: "/articles/page/:num"
 
 
 #-------------------------------
@@ -24,7 +24,7 @@ collections:
     permalink: /:name
   posts:
     output: true
-    permalink: /latest/:slug
+    permalink: /articles/:slug
   authors:
     output: true
     permalink: /:name

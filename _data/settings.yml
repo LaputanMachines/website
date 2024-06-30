@@ -13,14 +13,14 @@ menu_settings:
   menu_items:
     - title: "Home"
       url: "/"
-    - title: "Latest"
-      url: "/latest/"
-    - title: "Pages"
+    - title: "Articles"
+      url: "/articles/"
+    - url: "/about/"
+      title: "About"
+    - url: "/contact/"
+      title: "Contact"
+    - title: "Projects"
       submenu:
-      - url: "/about/"
-        title: "About"
-      - url: "/contact/"
-        title: "Contact"
       - url: "/featured/"
         title: "Featured"
 
@@ -43,14 +43,11 @@ hero:
 # Tags Section Settings
 tags_section:
   enable: true
-  number_posts: 3 # To control how many posts to show under each tag section, set the value to a number. Three is the default.
-  number_columns: 3 # You can specify the number of columns from 1-4 for large screen resolution. By default, the theme uses three columns grid.
+  number_posts: 3 
+  number_columns: 3
   tags:
-    - tag: "lifestyle"
-    - tag: "shopping"
-    - tag: "business"
-    - tag: "food"
-    - tag: "sport"
+    - tag: "software-development"
+    - tag: "productivity"
 
 # You can add many tag sections to the homepage; each section will show the recent posts by the tag.
 
@@ -58,7 +55,7 @@ tags_section:
 #-------------------------------
 # Authors Section Settings
 authors_section:
-  enable: true
+  enable: false
   section_title: Meet our authors
 
 
