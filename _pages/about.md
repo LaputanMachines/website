@@ -1,28 +1,17 @@
 ---
 layout: page
-title: About Me
-permalink: /about
-title_description: "Who Is Michael Bassili?"
-image: '/images/about.jpg'
+title: Hello! I'm Michael Bassili
+permalink: /about/
+image: '/images/pages/about/michael-bassili.jpg'
 ---
 
-I'm an experienced Software Engineer and Cloud Architect with a versatile background spanning Data Engineering, Backend Engineering, and Cloud Development. Possessing over 7 years of expertise in both AWS and Azure platforms. I'm proficient in a range of languages and technologies, including Python, C, Golang, K8s, Docker, Terraform, Ansible, and more!
+I'm a software engineer and cloud architect with a versatile background spanning data engineering, backend development, and cloud computing. 
+I've built cool things with AWS, Azure and GCP. I've been working in tech since 2017. 
+I do a lot of things, but I'm most passionate about building scalable, reliable, and secure cloud-native applications.
+_Most importantly_, I try to be a good human being and help others whenever I can.
 
-- **2021-12 - Now** — Sr. Software Engineer at [Agio](https://agio.com/)
-- **2021-03 - 2021-11** — DevOps Engineer at [Gubagoo](https://www.gubagoo.com/)
-- **2020-07 - 2021-03** — Software Engineer at [WISI Group](https://wisigroup.com/)
-- **2017-05 - 2019-08** — Software Developer in Test at [Delta Controls](https://deltacontrols.com/)
+> At the end of the day people won't remember what you said or did, they will remember how you made them feel.
 
-I'm also a passionate urbanist activist. I'm the founder and organizer of [Strong Towns Nanaimo](https://www.beautifulnanaimo.ca/), a grassroots organization advocating for the City of Nanaimo to put _people over cars_. I'm also the Director of Communications for [Better Island Transit](https://betterislandtransit.ca/), a non-profit advocacy group pushing for for better public transit on Vancouver Island.
-
-![]({{site.baseurl}}/images/nanaimo.png)
-*Nanaimo, British Columbia, Canada*
-
-Most activism takes place in and around the city of Nanaimo, located on Vancouver Island. In my spare time, I enjoy climbing, hiking, cycling, and exploring the island. 
-
-![]({{site.baseurl}}/images/drumming.jpg)
-*Photo from back when I would gig with my band in Vancouver*
-
-I'm always working on creative projects. I love to write and paint, and I play both the guitar and the drums. I used to play shows with my punk band pre-COVID. Nowadays, I spend my time writing and recording music in my home studio with local musicians.
-
-Want to connect? Feel free to reach out to me on [LinkedIn](https://www.linkedin.com/in/michael-bassili), [GitHub](https://github.com/LaputanMachines/), or [email](mailto:michael@bassi.li). 
+I've been fortunate to work with some amazing people and companies. 
+At the end of the day, I'm just a guy who loves to learn and build things.
+This blog is a place for me to share my thoughts, experiences, and learnings with the world. 

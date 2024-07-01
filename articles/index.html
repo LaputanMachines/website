@@ -1,0 +1,29 @@
+---
+layout: default
+title: Where The Magic Happens
+description: {{ site.footer_description }}
+---
+
+<!-- begin hero -->
+<section class="hero hero--left">
+  <div class="container">
+    {% if page.title %}
+    <h1 class="hero__title">{{ page.title }}</h1>
+    {% endif %}
+  </div>
+</section>
+<!-- end hero -->
+
+<section class="section">
+  <div class="container">
+    <div class="row grid">
+      {% if site.posts.size > 0 %}
+        {% for post in paginator.posts offset:0 %}
+          {% include article.html class="col col-4 col-d-6 col-t-12 animate grid__post" %}
+        {% endfor %}
+      {% endif %}
+    </div>
+  </div>
+
+  {% include pagination.html %}
+</section>

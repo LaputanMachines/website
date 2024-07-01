@@ -1,0 +1,33 @@
+{% for post in site.posts %}
+  {% if post.featured == true %}
+    {% assign is-featured = true %}
+  {% endif %}
+{% endfor %}
+
+{% if is-featured == true %}
+{% assign count = 0 %}
+{% assign featuredPosts = site.posts | where: 'featured', true %}
+<div class="widget-sidebar widget-featured-posts">
+  <h2 class="widget-sidebar-title">Featured posts</h2>
+  {% for fp in featuredPosts %}
+    {% if fp.url != page.url %}
+    {% assign count = count | plus:1 %}
+    <div class="post-featured-content">
+      <a href="{{ fp.url }}" class="post-featured-image">
+        {% if fp.image and fp.video_embed %}
+        <div class="video-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+            <polygon points="40,30 70,50 40,70"></polygon>
+          </svg>
+        </div>
+        {% endif %}
+        <img class="lazy" data-src="{{ fp.image }}" alt="{{ fp.title }}">
+      </a>
+      <h3 class="post-featured-title"><a href="{{ fp.url }}">{{ fp.title }}</a></h3>
+    </div>
+    {% if count == 3 %}{% break %}
+    {% endif %}
+  {% endif %}
+{% endfor %}
+</div>
+{% endif %}

@@ -1,0 +1,35 @@
+<div class="col col-4 col-d-12">
+  <div class="widget-footer widget-info">
+
+    <div class="logo-footer">
+      <a class="logo-footer__link widget-title" href="{{ site.baseurl }}/">
+        {% if site.data.settings.logo or site.data.settings.logo_dark %}
+        <img class="logo-footer__image" src="{{ site.baseurl }}{{ site.data.settings.logo }}"
+          alt="{{ site.data.settings.title }}">
+        <img class="logo-footer__image__dark" src="{{ site.baseurl }}{{ site.data.settings.logo_dark }}"
+          alt="{{ site.data.settings.title }}">
+        {% else %}
+          {{ site.data.settings.title }}
+        {% endif %}
+      </a>
+    </div>
+
+    {% if site.data.settings.footer_description %}
+    <p class="widget-footer__desc">{{site.data.settings.footer_description}}</p>
+    {% endif %}
+
+    {% if site.data.settings.social %}
+    <div class="social">
+      <ul class="social__list list-reset">
+        {% for social in site.data.settings.social %}
+        <li class="social__item">
+          <a class="social__link" href="{{social.link}}" target="_blank" rel="noopener"
+            aria-label="{{social.icon | capitalize}} link"><i class="ion ion-logo-{{social.icon}}"></i></a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endif %}
+
+  </div>
+</div>

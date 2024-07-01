@@ -1,58 +1,60 @@
-{% if page.id %}
-  {% assign class = '' %}
-  {% elsif page.url contains 'tag' %}
-  {% assign class = '' %}
-  {% else %}
-  {% assign class = 'header--top' %}
-{% endif %}
-
 <!-- begin header -->
-<header class="header {{ class }}">
-  <div class="container">
+<header class="header">
+  <div class="container-big">
     <div class="row">
       <div class="header__inner col col-12">
 
-      <div class="logo">
-        <a class="logo__link" href="{{ site.baseurl }}/">
-        {%if site.logo %}
-          <img class="logo__image" src="{{ site.baseurl }}{{ site.logo }}" alt="{{ site.title }}">
-        {% else %}
-          {{ site.title }}
-        {% endif %}
-        </a>
-      </div>
-        
-      <div class="menu-overlay">
-        <nav class="main-nav">
+        <div class="logo">
+          <span class="logo__details">[</span>
+          <a class="logo__link" href="{{ site.baseurl }}/">
+            {% if site.data.settings.logo or site.data.settings.logo_dark %}
+              <img class="logo__image" src="{{ site.baseurl }}{{ site.data.settings.logo }}" alt="{{ site.data.settings.title }}">
+              <img class="logo__image__dark" src="{{ site.baseurl }}{{ site.data.settings.logo_dark }}" alt="{{ site.data.settings.title }}">
+            {% else %}
+              {{ site.data.settings.title }}
+            {% endif %}
+          </a>
+          <span class="logo__details">]</span>
+        </div>
+
+        <div class="hamburger">
+          <div></div>
+        </div>
+
+        <nav class="main-nav" aria-label="Main menu">
           <div class="main-nav__box">
-            <div class="nav__icon-close">
-              <i class="ion ion-md-close"></i>
-            </div>
-            <div class="nav-grid">
-              <div class="nav-grid__item">
-                <h2 class="nav-grid__title">Menu</h2>
-                <div class="mobile-nav">
-                  {% include navigation.html %}
+            <ul class="nav__list list-reset">
+
+              {% for item in site.data.settings.menu_settings.menu_items %}
+              {% if item.submenu %}
+              <li class="nav__item dropdown">
+                <span class="nav__link dropdown-toggle">{{ item.title }} <i class="ion ion-ios-arrow-down arrow-down"></i></span>
+                <div class="dropdown-menu">
+                {% for submenu-item in item.submenu %}
+                  <a href="{{ submenu-item.url }}" class="nav__link{% if page.url == submenu-item.url %} active-link{% endif %}">{{submenu-item.title}} {% if item.title == "Projects" %}<i class="fa fa-external-link"></i>{% endif %}</a> 
+                {% endfor %}
                 </div>
-              </div>
+              </li>
+              {% else %}
+              <li class="nav__item">
+                <a href="{{ item.url | relative_url }}" class="nav__link{% if page.url == item.url %} active-link{% endif %}">{{ item.title }}</a>
+              </li>
+              {% endif %}
+              {% endfor %}
+
+            </ul>
+          </div>
+
+          <div class="nav-button">
+            <div class="search-button">
+              <i class="search-button__icon ion ion-md-search"></i>
+              <span class="search-button__text">Search</span>
             </div>
+            {% if site.data.settings.cta_button.enable == true %}
+            <a href="{% if site.data.settings.cta_button.cta_button_link %}{{ site.data.settings.cta_button.cta_button_link }}{% else %}#{% endif %}" class="button cta-button">{{ site.data.settings.cta_button.cta_button_text }}</a>
+            {% endif %}
           </div>
         </nav>
-      </div>
-
-      <div class="navigation">
-        <div class="top-nav">
-          {% include navigation.html %}
-        </div>
-      </div>
-
-      <div class="nav-buttons">
-        <i class="nav__icon nav__icon-menu ion ion-md-menu"></i>
-        <div class="search-button">
-          <i class="nav__icon nav__icon-search ion ion-md-search"></i>
-          <span>Search</span>
-        </div>
-      </div>
 
       </div>
     </div>

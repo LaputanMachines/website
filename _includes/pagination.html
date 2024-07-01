@@ -1,13 +1,18 @@
-<div class="container">
-  <div class="row">
-    <div class="col col-12 load-more">
-      {% assign postCount = site.posts | size %}
-      {% assign postsCovered = site.paginate | plus:offset %}
-      {% if postsCovered < postCount %}
-      <div class="load-more-section">
-        <button class="load-more-posts button button--middle">Load More</button>
-      </div>
-      {% endif %}
-    </div>
+{% assign postCount = site.posts | size %}
+{% assign postsCovered = site.paginate | plus:offset %}
+{% if postsCovered < postCount %}
+<!-- begin pagination -->
+<div class="container animate">
+  <div class="pagination">
+    <button class="load-more-posts button button--big">Load more posts</button>
   </div>
 </div>
+<!-- end pagination -->
+{% endif %}
+
+<script>
+  var base_url = "",
+    pagination_next_url = base_url + '/articles/page2',
+    pagination_next_page_number = '{{ paginator.next_page }}',
+    pagination_available_pages_number = '{{ paginator.total_pages }}';
+</script>

@@ -1,0 +1,69 @@
+{% for post in site.posts %}
+  {% if post.featured == true %}
+    {% assign is-featured = true %}
+  {% endif %}
+{% endfor %}
+
+{% if is-featured == true %}
+<!-- begin featured-post -->
+<section class="section featured-post animate">
+  <div class="container">
+    <div class="section__inner">
+
+      <h2 class="screen-reader-text">Featured</h2>
+      <div class="row">
+    
+        <div class="col col-3 col-d-12">
+          <div class="row">
+            {% assign count = 0 %}
+            {% for post in site.posts %}
+            {% if post.featured == true %}
+            {% assign count = count | plus: 1 %}
+            {% if count <= 2 %}
+            <div class="col col-12 col-d-6 col-t-12">
+              {% include article.html %}
+            </div>
+            {% endif %}
+            {% endif %}
+            {% endfor %}
+          </div>
+        </div>
+    
+        <div class="col col-6 col-d-12">
+          <div class="row">
+            {% assign count = 0 %}
+            {% for post in site.posts %}
+            {% if post.featured == true %}
+            {% assign count = count | plus: 1 %}
+            {% if count == 3 %}
+            <div class="col col-12 col-t-12">
+              {% include article.html description=true class="article--big" %}
+            </div>
+            {% endif %}
+            {% endif %}
+            {% endfor %}
+          </div>
+        </div>
+    
+        <div class="col col-3 col-d-12">
+          <div class="row">
+            {% assign count = 0 %}
+            {% for post in site.posts %}
+            {% if post.featured == true %}
+            {% assign count = count | plus: 1 %}
+            {% if count >= 4 and count <=5 %}
+            <div class="col col-12 col-d-6 col-t-12">
+              {% include article.html %}
+            </div>
+            {% endif %}
+            {% endif %}
+            {% endfor %}
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end featured-post -->
+{% endif %}

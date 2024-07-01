@@ -1,12 +1,7 @@
 /* Pagination */
-.load-more {
-  margin: 0 auto;
-}
-
-.load-more-section {
-  margin: 30px auto;
-  text-align: center;
-  @media only screen and (max-width: $mobile) {
-    margin: 20px auto;
-  }
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 16px;
 }

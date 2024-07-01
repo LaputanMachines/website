@@ -1,0 +1,98 @@
+#-------------------------------
+# Site Settings
+title: Michael Bassili
+description: I'm a Cloud Developer Who Loves to Build Cool Stuff With AWS, Azure, Python, and AI.
+# logo: "/images/logo.svg" 
+# logo_dark: "/images/logo-dark.svg"
+color_scheme: light 
+
+
+#-------------------------------
+# Navigation Settings
+menu_settings:
+  menu_items:
+    - title: "Home"
+      url: "/"
+    - title: "Articles"
+      url: "/articles/"
+    - url: "/about/"
+      title: "About"
+
+
+# Call to action button
+cta_button:
+  enable: false
+  cta_button_link: '/contact/'
+  cta_button_text: Get in touch
+
+
+#-------------------------------
+# Hero Settings
+hero:
+  enable: true
+  hero_title: "Thoughts On <span class='hero__underline' id='hero__software'>Software Development</span> & <span class='hero__underline' id='hero__productivity'>Productivity</span>."
+  hero_description: Hello 👋 I've built a lot of cool stuff with AWS, Azure, Python, and AI. I'm passionate about sharing my knowledge with others. Check back often!
+
+
+#-------------------------------
+# Tags Section Settings
+tags_section:
+  enable: true
+  number_posts: 3 
+  number_columns: 3
+  tags:
+    # - tag: "software-development"
+    # - tag: "productivity"
+
+# You can add many tag sections to the homepage; each section will show the recent posts by the tag.
+
+
+#-------------------------------
+# Authors Section Settings
+authors_section:
+  enable: false
+  section_title: Meet our authors
+
+
+#-------------------------------
+# Footer Settings
+footer_description: I'm a Cloud Developer Who Loves to Build Cool Stuff With AWS, Azure, Python, and AI. Email me at <b>michael@bassi.li</b> if you want to chat. Enjoy your stay! 🚀
+
+
+# Social Links
+social:
+- {icon: "linkedin", link: "https://www.linkedin.com/in/michael-bassili/"}
+- {icon: "github", link: "https://github.com/LaputanMachines/"}
+# Example of adding a new link to the footer - {icon: "instagram", link: "https://instagram.com"}
+# Other icons can be found at https://ionicons.com/v4/
+
+
+#-------------------------------
+# Newsletter Settings
+mailchimp_settings:
+  enable: true
+  mailchimp_title: Join The Newsletter
+  mailchimp_description: Subscribe to my newsletter for productivty tips, software development insights, and more.
+  mailchimp_identifier: https://bassi.us22.list-manage.com/subscribe/post # Add your MailChimp form identifier. For example - frnla.us6.list-manage.com/subscribe/post?u=6314d69a3f315af7ce3fb00a0&amp;id=3038727cc3
+  mailchimp_input_text: Your Email Address
+  mailchimp_button_text: Subscribe
+
+
+#-------------------------------
+# Contact Settings
+contact:
+  email: michael@bassi.li 
+  description: Danto comes with a built-in contact form, that you can use with Formspree service to handle up to 50 submissions per month for free. You could also easily switch to another contact form service if you want. # Add a description of your form
+
+# NOTE
+# Danto theme comes with a contact form built-in. You can use this form with Formspree (https://formspree.io/) service and get up to 50 submissions for free. Also, you can easily switch to another service if you want.
+
+
+#-------------------------------
+# Comment Section (Disqus)
+disqus_identifier: anvod-studio-test # Add your shortname for Disqus Comment. For example anvod-studio-test
+
+
+#-------------------------------
+# Google Analytics
+google_analytics: # Add your GA Tracking Id
