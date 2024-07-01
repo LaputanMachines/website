@@ -3,7 +3,7 @@
 title: Michael Bassili
 description: I'm a Cloud Developer Who Loves to Build Cool Stuff With AWS, Azure, Python, and AI.
 # logo: "/images/logo.svg" 
-logo_dark: "/images/logo-dark.svg"
+# logo_dark: "/images/logo-dark.svg"
 color_scheme: light 
 
 
@@ -17,16 +17,11 @@ menu_settings:
       url: "/articles/"
     - url: "/about/"
       title: "About"
-    - url: "/contact/"
-      title: "Contact"
-    - title: "Projects"
-      submenu:
-      - url: "/featured/"
-        title: "Featured"
+
 
 # Call to action button
 cta_button:
-  enable: true
+  enable: false
   cta_button_link: '/contact/'
   cta_button_text: Get in touch
 
@@ -46,8 +41,8 @@ tags_section:
   number_posts: 3 
   number_columns: 3
   tags:
-    - tag: "software-development"
-    - tag: "productivity"
+    # - tag: "software-development"
+    # - tag: "productivity"
 
 # You can add many tag sections to the homepage; each section will show the recent posts by the tag.
 
@@ -61,7 +56,7 @@ authors_section:
 
 #-------------------------------
 # Footer Settings
-footer_description: I'm a Cloud Developer Who Loves to Build Cool Stuff With AWS, Azure, Python, and AI.
+footer_description: I'm a Cloud Developer Who Loves to Build Cool Stuff With AWS, Azure, Python, and AI. Email me at <b>michael@bassi.li</b> if you want to chat. Enjoy your stay! 🚀
 
 
 # Social Links
@@ -76,10 +71,10 @@ social:
 # Newsletter Settings
 mailchimp_settings:
   enable: true
-  mailchimp_title: Get interesting news
-  mailchimp_description: Subscribe to our newsletter and we’ll send you the emails of latest posts.
-  mailchimp_identifier: frnla.us6.list-manage.com/subscribe/post?u=6314d69a3f315af7ce3fb00a0&amp;id=3038727cc3 # Add your MailChimp form identifier. For example - frnla.us6.list-manage.com/subscribe/post?u=6314d69a3f315af7ce3fb00a0&amp;id=3038727cc3
-  mailchimp_input_text: Your email address
+  mailchimp_title: Join The Newsletter
+  mailchimp_description: Subscribe to my newsletter for productivty tips, software development insights, and more.
+  mailchimp_identifier: https://bassi.us22.list-manage.com/subscribe/post # Add your MailChimp form identifier. For example - frnla.us6.list-manage.com/subscribe/post?u=6314d69a3f315af7ce3fb00a0&amp;id=3038727cc3
+  mailchimp_input_text: Your Email Address
   mailchimp_button_text: Subscribe
 
 
