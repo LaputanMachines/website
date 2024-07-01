@@ -70,7 +70,7 @@ social:
 #-------------------------------
 # Newsletter Settings
 mailchimp_settings:
-  enable: true
+  enable: false
   mailchimp_title: Join The Newsletter
   mailchimp_description: Subscribe to my newsletter for productivty tips, software development insights, and more.
   mailchimp_identifier: https://bassi.us22.list-manage.com/subscribe/post # Add your MailChimp form identifier. For example - frnla.us6.list-manage.com/subscribe/post?u=6314d69a3f315af7ce3fb00a0&amp;id=3038727cc3
