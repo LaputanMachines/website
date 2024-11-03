@@ -9,4 +9,5 @@ twitter:
 instagram: 
 ---
 
-I'm a seasoned veteran of editorial and content management with the skills to make a difference.
+I'm a software engineer and cloud architect with a versatile background spanning data engineering, backend development, and cloud computing. 
+I do a lot of things, but I’m most passionate about building scalable, reliable, and secure cloud-native applications.
