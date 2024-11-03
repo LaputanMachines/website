@@ -4,7 +4,7 @@
 
   {% if author.image %}
   <div class="post-author-image">
-    <a href="{{ author.url }}" class="post__author__image">
+    <a href="/about" class="post__author__image">
       <img class="lazy" data-src="{{ author.image }}" alt="{{ author.name }}">
     </a>
   </div>
@@ -12,7 +12,7 @@
 
   {% if author %}
   <h2 class="post-author-name">
-    <a href="{{ author.url }}">{{ author.name }}</a>
+    <a href="/about">{{ author.name }}</a>
   </h2>
   {% endif %}
   {% if author.content %}
