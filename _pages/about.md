@@ -10,7 +10,7 @@ I've built cool things with AWS, Azure and GCP. I've been working in tech since 
 I do a lot of things, but I'm most passionate about building scalable, reliable, and secure cloud-native applications.
 _Most importantly_, I try to be a good human being and help others whenever I can.
 
-> At the end of the day people won't remember what you said or did, they will remember how you made them feel.
+> "At the end of the day people won't remember what you said or did, they will remember how you made them feel." &mdash;Maya Angelou
 
 I've been fortunate to work with some amazing people and companies. 
 At the end of the day, I'm just a guy who loves to learn and build things.
