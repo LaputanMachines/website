@@ -41,8 +41,7 @@ tags_section:
   number_posts: 3 
   number_columns: 3
   tags:
-    # - tag: "software-development"
-    # - tag: "productivity"
+    - tag: "productivity"
 
 # You can add many tag sections to the homepage; each section will show the recent posts by the tag.
 
@@ -50,8 +49,8 @@ tags_section:
 #-------------------------------
 # Authors Section Settings
 authors_section:
-  enable: false
-  section_title: Meet our authors
+  enable: true
+  section_title: <blockquote>At the end of the day people won't remember what you said or did, they will remember how you made them feel.” &mdash;Maya Angelou</blockquote>
 
 
 #-------------------------------
@@ -63,6 +62,7 @@ footer_description: I'm a Cloud Developer Who Loves to Build Cool Stuff With AWS
 social:
 - {icon: "linkedin", link: "https://www.linkedin.com/in/michael-bassili/"}
 - {icon: "github", link: "https://github.com/LaputanMachines/"}
+- {icon: "rss", link: "/feed.xml"}
 # Example of adding a new link to the footer - {icon: "instagram", link: "https://instagram.com"}
 # Other icons can be found at https://ionicons.com/v4/
 

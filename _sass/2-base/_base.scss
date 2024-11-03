@@ -28,6 +28,10 @@ body {
   }
 }
 
+::selection {
+  background: #F1DB4B;
+}
+
 .global-wrap {
   &.is-active {
     overflow-x: hidden;
