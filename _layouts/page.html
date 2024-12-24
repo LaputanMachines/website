@@ -8,7 +8,11 @@ layout: default
   <article class="page">
     <div class="page__head">
       <div class="page__info">
+        {% if page.permalink == "/about/" %}
+        <h1 class="page__title">Hello! I'm Michael Bassili</h1>
+        {% else %}
         <h1 class="page__title">{{ page.title | escape }}</h1>
+        {% endif %}
         {% if page.description %}
         <div class="page__description">{{ page.description }}</div>
         {% endif %}

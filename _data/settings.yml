@@ -17,6 +17,16 @@ menu_settings:
       url: "/articles/"
     - url: "/about/"
       title: "About"
+    - title: "Projects"
+      submenu:
+      - url: "https://aquinasgames.ca/"
+        title: "Aquinas Games"
+      - url: "https://muckrack.com/michaelbassili"
+        title: "Journalism"
+      - url: "https://www.flickr.com/photos/michaelbassili/"
+        title: "Photography"
+      - url: "https://www.beautifulnanaimo.ca/"
+        title: "Strong Towns Nanaimo"
 
 
 # Call to action button
