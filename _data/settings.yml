@@ -100,7 +100,7 @@ contact:
 
 #-------------------------------
 # Comment Section (Disqus)
-disqus_identifier: anvod-studio-test # Add your shortname for Disqus Comment. For example anvod-studio-test
+disqus_identifier:  # Add your shortname for Disqus Comment. For example anvod-studio-test
 
 
 #-------------------------------

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Is GitHub Copilot Helping Me Code, or Just Filling in the Blanks?"
+title: "Are We Sacrificing Developer Skills for AI Convenience?"
 description: "After attending All Things Open, I've been thinking a lot about the mass acceptance of tools like Copilot and their effects on our personal development. AI tools like GitHub Copilot boost coding efficiency but risk eroding core skills, especially for new developers. Are we trading deep understanding for convenience?"
 image: '/images/posts/2024/2024-11-02-copilot-convenience-vs-skills/vscode-copilot-autocomplete-and-chat.png'
 tags: [copilot, development, productivity, software, skill-building, career]
@@ -16,9 +16,6 @@ Like most developers, I’ve been leaning on GitHub Copilot in VSCode. It’s be
 > "[By] no longer using Copilot, I'm taking my coding skills back." &mdash;Dreams of Code
 
 But as I nestled deeper into my AI-boosted workflow, I couldn’t ignore a gnawing feeling. Sure, Copilot has transformed my productivity, but I wondered what I might be sacrificing for this newfound convenience. On one shoulder, Copilot whispers suggestions like a guardian angel of efficiency, nudging me forward with pre-generated snippets and ready-made fixes. On the other shoulder, I feel a different presence: the looming worry that my skills might start slipping away, like sand through an hourglass. With Copilot, I’m no longer wrestling with code the way I used to. I’m just validating its output, cruising through the “how” and skimming right over the “why.” It’s a bit like assembling IKEA furniture without the instructions—sure, the end product might look alright, but do I really understand how that drawer slider works?
-
-![Programming Books On My Desk]({{site.baseurl}}/images/posts/2024/2024-11-02-copilot-convenience-vs-skills/programming-books-on-desk.jpg)
-*Personally, I still find value in working through a copy of a programming book, whether that be physical or digital. Here's my current collection of physical programming books. I have a more extensive collection of ePUB and PDFs on both my Kindle and my Supernote Nomad.*
 
 These days, a stubborn Kubernetes networking issue no longer drags me down documentation rabbit holes. Instead, I pass Copilot a helm chart and watch it handle things. It’s efficient, but I’m realizing it’s making me a slightly more passive participant in my own projects.
 
