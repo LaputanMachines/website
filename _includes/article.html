@@ -38,12 +38,12 @@
       <p class="article__excerpt">{% if post.description %}{{ post.description }}{% else %}{{ post.content | strip_html | truncate: 250 }}{% endif %}</p>
       {% endif %}
 
-      <div class="article__info">
+      <!-- <div class="article__info">
         {% assign author = site.authors | where: 'username', post.author | first %}
         {% if author %}
           By <a class="article__author__name" href="{{ author.url }}">{{ author.name }}</a>
         {% endif %}
-      </div>
+      </div> -->
 
     </div>
   </div>
