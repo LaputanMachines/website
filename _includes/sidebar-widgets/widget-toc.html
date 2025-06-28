@@ -1,0 +1,14 @@
+{% if page.toc != false %}
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/toc-widget.css">
+
+<div class="widget-sidebar widget-toc" id="widget-toc">
+  <h3 class="widget-sidebar-title">Table of Contents</h3>
+  <nav class="toc-nav">
+    <ul class="toc-list" id="toc-list">
+      <!-- TOC items will be populated by JavaScript -->
+    </ul>
+  </nav>
+</div>
+
+<script src="{{ site.baseurl }}/assets/js/toc-widget.js"></script>
+{% endif %} 
