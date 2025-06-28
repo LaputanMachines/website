@@ -3,7 +3,7 @@ layout: post
 title: "Are We Sacrificing Developer Skills for AI Convenience?"
 description: "After attending All Things Open, I've been thinking a lot about the mass acceptance of tools like Copilot and their effects on our personal development. AI tools like GitHub Copilot boost coding efficiency but risk eroding core skills, especially for new developers. Are we trading deep understanding for convenience?"
 image: '/images/posts/2024/2024-11-02-copilot-convenience-vs-skills/vscode-copilot-autocomplete-and-chat.png'
-tags: [copilot, development, productivity, software, skill-building, career]
+tags: [copilot, development, ai, models, LLM, IDE, Skill-Building, Velocity]
 author: admin
 ---
 
