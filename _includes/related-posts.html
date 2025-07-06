@@ -54,7 +54,7 @@
             {% if sameTagCount >= minCommonTags %}
 
             <div class="col col-3 col-d-6 col-m-12">
-              {% include article.html %}
+              {% include article.html description=true %}
             </div>
 
             {% assign maxRelatedCounter = maxRelatedCounter | plus: 1 %}

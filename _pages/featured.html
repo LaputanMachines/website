@@ -21,7 +21,7 @@ permalink: /featured/
       {% for post in site.posts %}
       {% if post.featured == true %}
       <div class="col col-4 col-d-6 col-t-12">
-        {% include article.html %}
+        {% include article.html description=true %}
       </div>
       {% endif %}
       {% endfor %}

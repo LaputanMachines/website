@@ -29,7 +29,7 @@ permalink: /tags/
           {% for post in site.tags[this_word] %}
             {% if post.title != null %}
               <div class="col col-4 col-d-6 col-t-12">
-                {% include article.html %}
+                {% include article.html description=true %}
               </div>
             {% endif %}
           {% endfor %}

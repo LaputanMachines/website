@@ -40,7 +40,7 @@
             {% for post in site.tags.[tag_word.tag] limit:{{number_posts}} %}
             {% assign count = count | plus: 1 %}
             <div class="col {% if site.data.settings.tags_section.number_columns > 0 and site.data.settings.tags_section.number_columns <= 4 %}col-{{number_columns}} col-d-6 col-t-12{% else %}col-4 col-d-6 col-t-12{% endif %}">
-              {% include article.html %}
+              {% include article.html description=true %}
             </div>
             {% endfor %}
           </div>

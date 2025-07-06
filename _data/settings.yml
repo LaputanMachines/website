@@ -59,7 +59,7 @@ tags_section:
 #-------------------------------
 # Authors Section Settings
 authors_section:
-  enable: true
+  enable: false
   section_title: <blockquote>At the end of the day people won't remember what you said or did, they will remember how you made them feel.” &mdash;Maya Angelou</blockquote>
 
 
@@ -96,7 +96,6 @@ contact:
 
 # NOTE
 # Danto theme comes with a contact form built-in. You can use this form with Formspree (https://formspree.io/) service and get up to 50 submissions for free. Also, you can easily switch to another service if you want.
-
 
 #-------------------------------
 # Comment Section (Disqus)

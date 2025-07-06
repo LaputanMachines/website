@@ -21,7 +21,7 @@
             {% assign count = count | plus: 1 %}
             {% if count <= 2 %}
             <div class="col col-12 col-d-6 col-t-12">
-              {% include article.html %}
+              {% include article.html description=true %}
             </div>
             {% endif %}
             {% endif %}
@@ -53,7 +53,7 @@
             {% assign count = count | plus: 1 %}
             {% if count >= 4 and count <=5 %}
             <div class="col col-12 col-d-6 col-t-12">
-              {% include article.html %}
+              {% include article.html description=true %}
             </div>
             {% endif %}
             {% endif %}

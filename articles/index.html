@@ -17,7 +17,7 @@ description: {{ site.footer_description }}
     <div class="row grid">
       {% if site.posts.size > 0 %}
         {% for post in paginator.posts offset:0 %}
-          {% include article.html class="col col-4 col-d-6 col-t-12 animate grid__post" %}
+          {% include article.html description=true class="col col-4 col-d-6 col-t-12 animate grid__post" %}
         {% endfor %}
       {% endif %}
     </div>
