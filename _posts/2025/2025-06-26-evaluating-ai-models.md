@@ -3,7 +3,7 @@ layout: post
 title: "Evaluating AI Systems: From Criteria to Pipelines"
 description: "A detailed breakdown of how to evaluate AI systems effectively. Covers evaluation criteria, model selection, instruction-following, safety, latency, cost, and building robust pipelines to guide model quality."
 image: '/images/posts/2025/2025-06-26-evaluating-ai-models/open-source-vs-commercial-model-performance.png'
-tags: [AI, evaluation, benchmarks, LLM, model-selection, development]
+tags: [AI, Evaluation, Benchmarks, LLM, Model Selection, Development]
 author: admin
 ---
 

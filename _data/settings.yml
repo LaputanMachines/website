@@ -51,7 +51,8 @@ tags_section:
   number_posts: 3 
   number_columns: 3
   tags:
-    - tag: "development"
+    - tag: "Development"
+    - tag: "Literature"
 
 # You can add many tag sections to the homepage; each section will show the recent posts by the tag.
 
