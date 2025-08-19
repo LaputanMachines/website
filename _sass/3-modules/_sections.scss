@@ -5,6 +5,10 @@
   @media (max-width: $mobile) {
     margin-bottom: 48px;
   }
+
+  &:last-child .section__inner {
+    border-bottom: none;
+  }
 }
 
 .section__inner {
