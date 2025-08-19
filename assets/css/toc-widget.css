@@ -67,7 +67,6 @@
 
 @media (max-width: 768px) {
   .widget-toc {
-    position: relative;
-    top: auto;
+    display: none;
   }
 } 
