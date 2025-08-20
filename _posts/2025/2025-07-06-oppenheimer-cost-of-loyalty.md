@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "The Singular Devotion of Oppenheimer and the Cost of Absolute Loyalty"
-description: "How J. Robert Oppenheimer’s total commitment to science and country led to his destruction—and why his story parallels both modern geopolitics and Metal Gear Solid 3."
+description: "How J. Robert Oppenheimer’s total commitment to science and country led to his destruction, and why his story parallels both modern geopolitics and Metal Gear Solid 3."
 image: '/images/posts/2025/2025-07-06-oppenheimer-cost-of-loyalty/oppenheimer-teaching.jpg'
 tags: [Culture, Literature, History, Video Games, MGS3, Oppenheimer]
 author: admin
