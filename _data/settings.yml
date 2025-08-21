@@ -40,8 +40,8 @@ cta_button:
 # Hero Settings
 hero:
   enable: true
-  hero_title: "Thoughts On <span class='hero__underline' id='hero__software'>Software Development</span> & <span class='hero__underline' id='hero__productivity'>Productivity</span>."
-  hero_description: Hello 👋 I've built a lot of cool stuff with AWS, Azure, Python, and AI. I'm passionate about sharing my knowledge with others. Check back often!
+  hero_title: "Thoughts On <span class='hero__underline' id='hero__software'>Software Development</span>, <span class='hero__underline' id='hero__productivity'>Productivity</span> & <span class='hero__underline' id='hero__community'>Community Building</span>."
+  hero_description: Hello 👋 I'm a cloud developer who loves building cool stuff with AWS, Azure, Python, and AI. I'm also passionate about building better communities through advocacy and activism. Check back often!
 
 
 #-------------------------------
@@ -53,6 +53,7 @@ tags_section:
   tags:
     - tag: "Development"
     - tag: "Literature"
+    - tag: "Activism"
 
 # You can add many tag sections to the homepage; each section will show the recent posts by the tag.
 
@@ -66,7 +67,7 @@ authors_section:
 
 #-------------------------------
 # Footer Settings
-footer_description: I'm a Cloud Developer Who Loves to Build Cool Stuff With AWS, Azure, Python, and AI. Email me at <b>michael@bassi.li</b> if you want to chat. Enjoy your stay! 🚀
+footer_description: I'm a Cloud Developer Who Loves to Build Cool Stuff With AWS, Azure, Python, and AI. I'm also passionate about building better communities through advocacy and activism. Email me at <b>michael@bassi.li</b> if you want to chat. Enjoy your stay! 🚀
 
 
 # Social Links
