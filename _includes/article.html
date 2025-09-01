@@ -2,7 +2,7 @@
   <div class="article__inner">
 
     <div class="article__head">
-      {% if post.image and post.video_embed %}
+      {% if post.video_embed %}
       <div class="video-icon">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
           <polygon points="40,30 70,50 40,70"></polygon>
@@ -10,11 +10,23 @@
       </div>
       {% endif %}
 
-      {% if post.image %}
-      <a href="{{ post.url | prepend: site.baseurl }}" class="article__image" aria-hidden="true" tabindex="-1">
-        <img class="lazy" data-src="{{site.baseurl}}{{post.image}}" alt="{{post.title}}">
+      <a href="{{ post.url | prepend: site.baseurl }}" class="article__gradient" aria-hidden="true" tabindex="-1">
+        <div class="article__gradient-bg" data-gradient-id="{{ post.slug | default: post.title | slugify }}"></div>
+        <div class="article__gradient-content">
+          <div class="article__gradient-preview">
+            {{ post.content | strip_html | truncatewords: 6 }}
+          </div>
+          <div class="article__gradient-reading-time">
+            {% assign words = post.content | number_of_words %}
+            {% if words < 360 %}
+              {% assign reading_time = 1 %}
+            {% else %}
+              {% assign reading_time = words | divided_by: 180 %}
+            {% endif %}
+            {{ reading_time }} min read
+          </div>
+        </div>
       </a>
-      {% endif %}
     </div>
 
     <div class="article__content">

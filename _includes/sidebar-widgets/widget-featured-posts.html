@@ -13,15 +13,29 @@
     {% if fp.url != page.url %}
     {% assign count = count | plus:1 %}
     <div class="post-featured-content">
-      <a href="{{ fp.url }}" class="post-featured-image">
-        {% if fp.image and fp.video_embed %}
+      <a href="{{ fp.url }}" class="post-featured-gradient">
+        {% if fp.video_embed %}
         <div class="video-icon">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
             <polygon points="40,30 70,50 40,70"></polygon>
           </svg>
         </div>
         {% endif %}
-        <img class="lazy" data-src="{{ fp.image }}" alt="{{ fp.title }}">
+        <div class="post-featured-gradient-bg" data-gradient-id="{{ fp.slug | default: fp.title | slugify }}"></div>
+        <div class="post-featured-gradient-content">
+          <div class="post-featured-gradient-preview">
+            {{ fp.content | strip_html | truncatewords: 4 }}
+          </div>
+          <div class="post-featured-gradient-reading-time">
+            {% assign words = fp.content | number_of_words %}
+            {% if words < 360 %}
+              {% assign reading_time = 1 %}
+            {% else %}
+              {% assign reading_time = words | divided_by: 180 %}
+            {% endif %}
+            {{ reading_time }} min
+          </div>
+        </div>
       </a>
       <h3 class="post-featured-title"><a href="{{ fp.url }}">{{ fp.title }}</a></h3>
       <p class="post-featured-excerpt">{% if fp.description %}{{ fp.description }}{% else %}{{ fp.content | strip_html | truncate: 120 }}{% endif %}</p>
