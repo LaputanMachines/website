@@ -2,30 +2,7 @@
   <div class="post__navigation">
     {% if page.previous.url %}
     <div class="post__prev">
-      <a href="{{page.previous.url}}" class="prev__gradient">
-        {% if page.previous.video_embed %}
-        <div class="video-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-            <polygon points="40,30 70,50 40,70"></polygon>
-          </svg>
-        </div>
-        {% endif %}
-        <div class="prev__gradient-bg" data-gradient-id="{{ page.previous.slug | default: page.previous.title | slugify }}"></div>
-        <div class="prev__gradient-content">
-          <div class="prev__gradient-preview">
-            {{ page.previous.content | strip_html | truncatewords: 6 }}
-          </div>
-          <div class="prev__gradient-reading-time">
-            {% assign words = page.previous.content | number_of_words %}
-            {% if words < 360 %}
-              {% assign reading_time = 1 %}
-            {% else %}
-              {% assign reading_time = words | divided_by: 180 %}
-            {% endif %}
-            {{ reading_time }} min read
-          </div>
-        </div>
-      </a>
+
       <div class="prev__box">
         <span class="post__nav post__nav__prev">Older post</span>
         <h2 class="post__nav__title"><a href="{{page.previous.url}}">{{page.previous.title}}</a></h2>
@@ -39,30 +16,7 @@
         <span class="post__nav post__nav__next">Newer post</span>
         <h2 class="post__nav__title"><a href="{{page.next.url}}">{{page.next.title}}</a></h2>
       </div>
-      <a href="{{page.next.url}}" class="next__gradient">
-        {% if page.next.video_embed %}
-        <div class="video-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-            <polygon points="40,30 70,50 40,70"></polygon>
-          </svg>
-        </div>
-        {% endif %}
-        <div class="next__gradient-bg" data-gradient-id="{{ page.next.slug | default: page.next.title | slugify }}"></div>
-        <div class="next__gradient-content">
-          <div class="next__gradient-preview">
-            {{ page.next.content | strip_html | truncatewords: 6 }}
-          </div>
-          <div class="next__gradient-reading-time">
-            {% assign words = page.next.content | number_of_words %}
-            {% if words < 360 %}
-              {% assign reading_time = 1 %}
-            {% else %}
-              {% assign reading_time = words | divided_by: 180 %}
-            {% endif %}
-            {{ reading_time }} min read
-          </div>
-        </div>
-      </a>
+
     </div>
     {% endif %}
   </div>

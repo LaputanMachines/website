@@ -13,11 +13,8 @@ _Most importantly_, I try to be a good human being and help others whenever I ca
 
 > "At the end of the day people won't remember what you said or did, they will remember how you made them feel." &mdash;Maya Angelou
 
-Beyond my work in technology, I'm deeply committed to building better communities. 
-I believe that everyone deserves to live in an affordable, equitable, and financially secure city. 
-
-I'm the co-founder and active member of Strong Towns Nanaimo, a grassroots organization working to create more financially resilient, sustainable, and equitable cities. 
-Our work focuses on urban planning and development that prioritizes people over cars, supporting housing affordability through missing middle housing, and working to make our streets safer for all users. 
+I co-founded the non-profit Strong Towns Nanaimo, a grassroots organization working to create more financially resilient, sustainable, and equitable cities. 
+Our work focusesed on urban planning and development that prioritizes people over cars, supporting housing affordability through missing middle housing, and working to make our streets safer for all users. 
 
 I've been fortunate to work with some amazing people and companies. 
 At the end of the day, I'm just a guy who loves to learn and build things.

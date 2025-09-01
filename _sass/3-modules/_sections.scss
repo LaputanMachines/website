@@ -1,6 +1,6 @@
 /* Sections */
 .section {
-  margin-bottom: 64px;
+  margin-bottom: 32px;
 
   @media (max-width: $mobile) {
     margin-bottom: 48px;
@@ -9,10 +9,6 @@
   &:last-child .section__inner {
     border-bottom: none;
   }
-}
-
-.section__inner {
-  border-bottom: 1px solid var(--border-color);
 }
 
 .section__info {
