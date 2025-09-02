@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "I Miss Using Em Dashes"
-description: "Large language models don’t just write—they reshape how humans write. This reflection unpacks how fear of being mistaken for a machine alters punctuation, tone, and voice, quietly eroding authenticity in modern writing."
 tags: [AI, Writing, Art]
 author: admin
 ---

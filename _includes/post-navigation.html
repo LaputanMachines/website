@@ -5,7 +5,21 @@
 
       <div class="prev__box">
         <span class="post__nav post__nav__prev">Older post</span>
+        <div class="article__meta-info">
+          <span class="article__date"><time datetime="{{ page.previous.date | date_to_xmlschema }}">{% assign date_format = site.minima.date_format | default: "%d %-b, %Y" %}{{ page.previous.date | date: date_format }}</time></span>
+          <span class="article__separator">•</span>
+          <span class="article__reading-time">
+            {% assign words = page.previous.content | number_of_words %}
+            {% if words < 360 %}
+              {% assign reading_time = 1 %}
+            {% else %}
+              {% assign reading_time = words | divided_by: 180 %}
+            {% endif %}
+            {{ reading_time }} min read
+          </span>
+        </div>
         <h2 class="post__nav__title"><a href="{{page.previous.url}}">{{page.previous.title}}</a></h2>
+        <p class="post__nav__excerpt">{{ page.previous.content | strip_html | truncate: 250 }}</p>
       </div>
     </div>
     {% endif %}
@@ -14,7 +28,21 @@
     <div class="post__next">
       <div class="next__box">
         <span class="post__nav post__nav__next">Newer post</span>
+        <div class="article__meta-info">
+          <span class="article__date"><time datetime="{{ page.next.date | date_to_xmlschema }}">{% assign date_format = site.minima.date_format | default: "%d %-b, %Y" %}{{ page.next.date | date: date_format }}</time></span>
+          <span class="article__separator">•</span>
+          <span class="article__reading-time">
+            {% assign words = page.next.content | number_of_words %}
+            {% if words < 360 %}
+              {% assign reading_time = 1 %}
+            {% else %}
+              {% assign reading_time = words | divided_by: 180 %}
+            {% endif %}
+            {{ reading_time }} min read
+          </span>
+        </div>
         <h2 class="post__nav__title"><a href="{{page.next.url}}">{{page.next.title}}</a></h2>
+        <p class="post__nav__excerpt">{{ page.next.content | strip_html | truncate: 250 }}</p>
       </div>
 
     </div>

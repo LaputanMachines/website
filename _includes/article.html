@@ -34,7 +34,7 @@
       </h2>
 
       {% if include.description == true %}
-      <p class="article__excerpt">{% if post.description %}{{ post.description }}{% else %}{{ post.content | strip_html | truncate: 250 }}{% endif %}</p>
+      <p class="article__excerpt">{{ post.content | strip_html | truncate: 250 }}</p>
       {% endif %}
 
 

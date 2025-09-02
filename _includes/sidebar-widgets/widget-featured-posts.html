@@ -28,7 +28,7 @@
       </div>
 
       <h3 class="post-featured-title"><a href="{{ fp.url }}">{{ fp.title }}</a></h3>
-      <p class="post-featured-excerpt">{% if fp.description %}{{ fp.description }}{% else %}{{ fp.content | strip_html | truncate: 120 }}{% endif %}</p>
+      <p class="post-featured-excerpt">{% if fp.description %}{{ fp.description }}{% else %}{{ fp.content | strip_html | truncate: 250 }}{% endif %}</p>
     </div>
     {% if count == 3 %}{% break %}
     {% endif %}
