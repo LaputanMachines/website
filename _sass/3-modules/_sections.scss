@@ -36,6 +36,13 @@
   }
 }
 
+.section__description {
+  margin-top: 8px;
+  font-size: 16px;
+  color: var(--text-color);
+  opacity: 0.8;
+}
+
 .section__link {
   text-decoration: underline;
   text-decoration-color: transparent;

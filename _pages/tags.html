@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Tags
+title: All Tags
 permalink: /tags/
 ---
 {% capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
@@ -8,46 +8,38 @@ permalink: /tags/
 
 <!-- begin tags -->
 <section class="section tags">
-
-  {% for item in (0..site.tags.size) %}{% unless forloop.last %}
-  {% capture this_word %}{{ tag_words[item] | strip_newlines }}{% endcapture %}
-
-  <div class="tags__inner is-hidden" id="{{ this_word | cgi_escape }}">
-
-      <div class="container">
-        <div class="row">
-          <div class="col col-12">
-            <div class="tag__info">
-              <h1 class="tag__title">{{ this_word }} <span class="tag__counter">{{ site.tags[this_word].size }}</span></h1>
-            </div>
-          </div>
+  <div class="container">
+    <div class="row">
+      <div class="col col-12">
+        <div class="tag__info">
+          <h1 class="tag__title">All Tags</h1>
+          <p class="tag__description">Browse all {{ site.tags.size }} topics and categories</p>
+          <a href="{{ site.baseurl }}/articles/" class="button button--small">← Back to articles</a>
         </div>
       </div>
+    </div>
+  </div>
 
-      <div class="container animate">
-        <div class="row">
-          {% for post in site.tags[this_word] %}
-            {% if post.title != null %}
-              <div class="col col-4 col-d-6 col-t-12">
-                {% include article.html description=true %}
-              </div>
-            {% endif %}
+  <div class="container">
+    <div class="row">
+      <div class="col col-12">
+        <div class="tags-cloud">
+          {% comment %} All Articles button to reset filter {% endcomment %}
+          <a href="{{ site.baseurl }}/articles/" class="tag-cloud-item tag-cloud-item--all">
+            All Articles
+          </a>
+          
+          {% for item in (0..site.tags.size) %}{% unless forloop.last %}
+          {% capture this_word %}{{ tag_words[item] | strip_newlines }}{% endcapture %}
+          <a href="{{ site.baseurl }}/articles/?tag={{ this_word | downcase | url_encode }}" class="tag-cloud-item">
+            {{ this_word }} 
+            <span class="tag-count">({{ site.tags[this_word].size }})</span>
+          </a>
+          {% endunless %}
           {% endfor %}
         </div>
       </div>
-
     </div>
-
-    {% endunless %}
-    {% endfor %}
-
+  </div>
 </section>
 <!-- end tags -->
-
-<script>
-  var tag_name = window.location.search.replace("?tag=", "#");
-  if (tag_name) {
-    var el = document.querySelector(tag_name);
-    el.classList.remove("is-hidden");
-  }
-</script>

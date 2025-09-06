@@ -115,8 +115,6 @@
   overflow: auto;
 
   .search-results__item {
-    display: flex;
-    align-items: center;
     margin-left: 24px;
     margin-right: 24px;
     padding-bottom: 12px;
@@ -130,25 +128,6 @@
     &:last-child {
       padding-bottom: 12px;
       border-bottom: 0;
-    }
-  }
-
-  .search-results__image {
-    position: relative;
-    display: inline-block;
-    margin-right: 16px;
-    min-width: 100px;
-    height: 90px;
-    border-radius: 22px;
-    transition: transform .3s ease;
-    will-change: transform;
-    background-size: cover;
-    background-color: var(--background-alt-color);
-    background-position: center;
-    background-repeat: no-repeat;
-
-    &:hover {
-      transform: translateY(-2px);
     }
   }
 

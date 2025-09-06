@@ -118,7 +118,7 @@ document.addEventListener("DOMContentLoaded", function() {
     searchInput: document.getElementById("js-search-input"),
     resultsContainer: document.getElementById("js-results-container"),
     json: "/search.json",
-    searchResultTemplate: '<div class="search-results__item"><a href="{url}" class="search-results__image" style="background-image: url({image})"></a> <a href="{url}" class="search-results__link"><time class="search-results-date" datetime="{date}">{date}</time><div class="search-results-title">{title}</div></a></div>',
+    searchResultTemplate: '<div class="search-results__item"><a href="{url}" class="search-results__link"><time class="search-results-date" datetime="{date}">{date}</time><div class="search-results-title">{title}</div></a></div>',
     noResultsText: '<div class="no-results">No results found...</div>'
   });
 

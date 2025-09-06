@@ -1,14 +1,14 @@
 /* Animate */
 .animate {
   animation: animateElement cubic-bezier(0.3, 0.45, 0.45, 0.95) .5s;
-  will-change: transform;
+  will-change: opacity;
 
   @keyframes animateElement {
     0% {
-      transform: translate(0px,50px);
+      opacity: 0;
     }
     100% {
-      transform: translate(0px,0px);
+      opacity: 1;
     }
   }
 }
