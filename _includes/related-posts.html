@@ -29,7 +29,7 @@
               {% if page.tags.size >= 1 %}
                 {% for tag in page.tags %}
                   {% if forloop.index == 1 %}
-                    <a href="{{ site.baseurl }}/tags/?tag={{ tag | downcase | url_encode }}" class="button">View all <i class="ion ion-ios-arrow-forward"></i></a>
+                    <a href="{{ site.baseurl }}/articles/?tag={{ tag | downcase | url_encode }}" class="button">View all <i class="ion ion-ios-arrow-forward"></i></a>
                   {% endif %}
                 {% endfor %}
               {% endif %}
