@@ -26,11 +26,11 @@
 
           <div class="section__info">
             <div class="section__head">
-              <h2 class="section__title"><a href="{{ site.baseurl }}/tags/?tag={{ tag_word.tag | downcase }}" class="section__link">{{ tag_word.tag | capitalize }}</a></h2>
+              <h2 class="section__title"><a href="{{ site.baseurl }}/articles/?tag={{ tag_word.tag | downcase }}" class="section__link">{{ tag_word.tag | capitalize }}</a></h2>
               {% if site.data.settings.tags_section.number_posts < site.tags.[tag_word.tag].size %}
-              <a href="{{ site.baseurl }}/tags/?tag={{ tag_word.tag | downcase }}" class="button">View all <i class="ion ion-ios-arrow-forward"></i></a>
+              <a href="{{ site.baseurl }}/articles/?tag={{ tag_word.tag | downcase }}" class="button">View all <i class="ion ion-ios-arrow-forward"></i></a>
               {% elsif {{number_posts}} < site.tags.[tag_word.tag].size %}
-              <a href="{{ site.baseurl }}/tags/?tag={{ tag_word.tag | downcase }}" class="button">View all <i class="ion ion-ios-arrow-forward"></i></a>
+              <a href="{{ site.baseurl }}/articles/?tag={{ tag_word.tag | downcase }}" class="button">View all <i class="ion ion-ios-arrow-forward"></i></a>
               {% endif %}
             </div>
           </div>
