@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "The Singular Devotion of Oppenheimer and the Cost of Absolute Loyalty"
-tags: [Culture, Literature, History, Video Games, MGS3, Oppenheimer]
+tags: [Culture, Literature, History, Games]
 author: admin
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Evaluating AI Systems: From Criteria to Pipelines"
-tags: [AI, Evaluation, Benchmarks, LLM, Model Selection, Development]
+tags: [AI, Evals, LLM, Development]
 author: admin
 ---
 

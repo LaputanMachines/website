@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Are We Sacrificing Developer Skills for AI Convenience?"
-tags: [Copilot, Development, AI, Models, LLM, IDE, Skill Building, Velocity]
+tags: [Development, AI, Career]
 author: admin
 ---
 
