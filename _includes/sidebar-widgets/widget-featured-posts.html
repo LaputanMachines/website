@@ -29,6 +29,14 @@
 
       <h3 class="post-featured-title"><a href="{{ fp.url }}">{{ fp.title }}</a></h3>
       <p class="post-featured-excerpt">{% if fp.description %}{{ fp.description }}{% else %}{{ fp.content | strip_html | truncate: 250 }}{% endif %}</p>
+      
+      {% if fp.tags.size >= 1 %}
+      <div class="article__tags">
+        {% for tag in fp.tags %}
+          <a href="{{ site.baseurl }}/articles/?tag={{ tag | downcase | url_encode }}" class="tag-cloud-item">{{ tag }}</a>
+        {% endfor %}
+      </div>
+      {% endif %}
     </div>
     {% if count == 3 %}{% break %}
     {% endif %}
