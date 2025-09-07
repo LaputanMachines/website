@@ -1,0 +1,11 @@
+{% if page.tags.size >= 1 %}
+<div class="widget-sidebar widget-tags">
+  <h3 class="widget-sidebar-title">Article tags</h3>
+
+  <div class="tag-cloud">
+    {% for tag in page.tags %}
+      <a href="{{ site.baseurl }}/articles/?tag={{ tag | downcase | url_encode }}" class="tag-cloud-item">{{ tag }}</a>
+    {% endfor %}
+  </div>
+</div>
+{% endif %}
