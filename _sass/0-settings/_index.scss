@@ -1,0 +1,9 @@
+// Settings entry point. Partials load this with `@use '0-settings' as *;`
+// to get every variable, breakpoint, and mixin without a namespace prefix.
+//
+// Only declaration-only modules belong here — never a partial that emits CSS,
+// or that CSS would land wherever the module happens to be loaded first.
+
+@forward 'variables';
+@forward 'breakpoints';
+@forward 'mixins';

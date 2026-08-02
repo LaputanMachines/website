@@ -1,3 +1,5 @@
+@use '0-settings' as *;
+
 /* Section Tags */
 .section-tags {
   @media (max-width: $desktop) {

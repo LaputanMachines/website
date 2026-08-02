@@ -1,14 +1,5 @@
 /* Grid */
-$columns: 12;
-$container-base-width: 1332px;
-$container-offset: $base-spacing-unit;
-
-$wide: 1400px;
-$desktop: 1024px;
-$tablet: 768px;
-$mobile: 576px;
-
-$mq: ( $mobile:$columns, $tablet:$columns, $desktop:$columns );
+@use '0-settings' as *;
 
 .container {
   max-width: $container-base-width;
