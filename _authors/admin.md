@@ -2,7 +2,7 @@
 username: admin
 name: Michael Bassili
 image: '/images/pages/about/michael-bassili.jpg'
-location: Nanaimo, British Columbia
+location: Victoria, British Columbia
 website: 
 facebook: 
 twitter: 
