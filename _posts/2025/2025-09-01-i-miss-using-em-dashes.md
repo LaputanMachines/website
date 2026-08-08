@@ -3,6 +3,7 @@ layout: post
 title: "I Miss Using Em Dashes"
 tags: [AI, Writing, Art]
 author: admin
+featured: true
 ---
 
 I really miss using em dashes in my writing. Ever since content creators started using ChatGPT to help (or supplement) their writing, em dashes have become indicators of AI use. Students are routinely caught with their pants down as professors flag an essay as AI-generated based on the presence of lists, positive-leaning prose, and em dashes. 

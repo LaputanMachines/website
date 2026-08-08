@@ -50,8 +50,7 @@ tags_section:
   number_columns: 3
   tags:
     - tag: "Development"
-    - tag: "Literature"
-    - tag: "AI"
+    - tag: "Games"
 
 # You can add many tag sections to the homepage; each section will show the recent posts by the tag.
 

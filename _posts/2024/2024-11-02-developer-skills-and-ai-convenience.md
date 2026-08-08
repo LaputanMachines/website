@@ -3,6 +3,7 @@ layout: post
 title: "Are We Sacrificing Developer Skills for AI Convenience?"
 tags: [Development, AI, Career]
 author: admin
+featured: true
 ---
 
 Last week, I had the pleasure of attending All Things Open in Raleigh, North Carolina. Now, AI may not have been the explicit focus of the conference, but let’s just say it completely stole the show. It felt like every other session was talking about it. [Craig McLuckie](https://x.com/cmcluck) from Stacklok covered considerations for securing AI-generated code; [Chris Gill](https://x.com/chrisraygill) introduced Firebase Genkit, a framework for building AI-powered applications using RAG (which I learned does not, in fact, refer to a cleaning cloth); and my friend even attended a talk with [Rishab Kumar](https://x.com/rishabincloud) on LangChain. All told, [there were over 40 talks about AI and its implications at this year's conference](https://2024.allthingsopen.org/schedule), and by the end, I felt like I’d attended an AI-themed family reunion.
