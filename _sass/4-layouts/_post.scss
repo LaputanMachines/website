@@ -170,6 +170,31 @@
   }
 }
 
+// Post content embeds
+.post__content {
+  // Display math is often wider than the text column: scroll it instead of
+  // letting it bleed past the page edge on narrow screens.
+  mjx-container[display="true"] {
+    max-width: 100%;
+    margin-bottom: 32px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-bottom: 8px;
+  }
+
+  // draw.io diagrams: fill the column and keep the heading rhythm below.
+  .mxgraph {
+    width: 100%;
+    margin-bottom: 32px;
+
+    svg {
+      width: 100%;
+      height: auto;
+      max-width: 100%;
+    }
+  }
+}
+
 // Page
 .page {
   max-width: 780px;

@@ -34,7 +34,7 @@
       </h2>
 
       {% if include.description == true %}
-      <p class="article__excerpt">{{ post.content | strip_html | truncate: 250 }}</p>
+      <p class="article__excerpt">{{ post.content | markdownify | strip_html | truncate: 250 }}</p>
       {% endif %}
 
       {% if post.tags.size >= 1 %}

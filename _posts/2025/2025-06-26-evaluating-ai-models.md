@@ -3,6 +3,7 @@ layout: post
 title: "Evaluating AI Systems: From Criteria to Pipelines"
 tags: [AI, Evals, LLM, Development]
 author: admin
+featured: true
 ---
 
 I am reading the book [AI Engineering by Chip Huyen](https://www.oreilly.com/library/view/ai-engineering/9781098166298/) for an AI book club at work. 
