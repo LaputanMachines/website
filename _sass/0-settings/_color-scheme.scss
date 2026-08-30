@@ -1,6 +1,8 @@
 /* Color Scheme */
 
 :root {
+  color-scheme: light;
+
   --primary-color: #f8ce5f;
   --white: #fff;
   --light-gray: rgb(64, 64, 64);
@@ -59,6 +61,8 @@
 }
 
 :root[dark] {
+  color-scheme: dark;
+
   --primary-color: #fbdab1;
   --white: #fff;
   --light-gray: #f5f5f5;

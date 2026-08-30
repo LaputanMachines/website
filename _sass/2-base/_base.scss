@@ -4,6 +4,12 @@
   box-sizing: border-box;
 }
 
+// Also on html so the browser canvas is themed before body paints,
+// otherwise navigation flashes the white default.
+html {
+  background-color: var(--background-color);
+}
+
 body {
   font-family: $base-font-family;
   font-size: $base-font-size;

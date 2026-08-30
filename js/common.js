@@ -79,10 +79,24 @@ document.addEventListener("DOMContentLoaded", function() {
       html.classList.remove('dark-mode');
       localStorage.removeItem("theme");
       document.documentElement.removeAttribute("dark");
+      paintCanvas(false);
     } else {
       html.classList.add('dark-mode');
       localStorage.setItem("theme", "dark");
       document.documentElement.setAttribute("dark", "");
+      paintCanvas(true);
+    }
+  };
+
+  // The pre-paint script in head.html sets these inline, and inline styles
+  // beat the stylesheet, so the toggle has to keep them in sync.
+  function paintCanvas(dark) {
+    const root = document.documentElement;
+    root.style.colorScheme = dark ? "dark" : "light";
+    root.style.backgroundColor = dark ? "#181818" : "#fff";
+    const themeColor = document.querySelector('meta[name="theme-color"]');
+    if (themeColor) {
+      themeColor.content = dark ? "#181818" : "#ffffff";
     }
   };
 
