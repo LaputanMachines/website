@@ -13,6 +13,15 @@
 }
 
 /* Logo */
+.logo {
+  // Centers the brackets against the name instead of sharing a baseline;
+  // without this the box is sized by the 18px strut and the 24px name sits
+  // high inside it, so it never lines up with the hamburger.
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
 .logo__link {
   font-size: 24px;
   line-height: 1;
@@ -27,8 +36,9 @@
   }
 }
 
-.logo__details{
+.logo__details {
   font-weight: 800;
+  line-height: 1;
   color: #3094ff;
   opacity: .7;
 }
@@ -253,8 +263,9 @@
 
 /* Humburger Menu */
 .hamburger {
-  width: 28px;
-  height: 28px;
+  // Scaled down from 28px to sit in proportion with the 24px logo text.
+  width: 22px;
+  height: 22px;
   display: none;
   cursor: pointer;
 
@@ -267,8 +278,8 @@
 .hamburger div,
 .hamburger div:after,
 .hamburger div:before {
-  width: 28px;
-  height: 4px;
+  width: 22px;
+  height: 3px;
   border-radius: 10px;
   transition: all 0.15s linear;
   background-color: var(--heading-font-color);
