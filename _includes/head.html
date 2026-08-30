@@ -3,6 +3,40 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <script>
+    (function () {
+      var root = document.documentElement;
+      {% if site.data.settings.color_scheme == "light" %}
+      var dark = false;
+      {% elsif site.data.settings.color_scheme == "dark" %}
+      var dark = true;
+      {% else %}
+      var dark = localStorage.getItem("theme") === "dark";
+      {% endif %}
+      if (dark) {
+        root.setAttribute("dark", "");
+        root.classList.add("dark-mode");
+      } else {
+        {% if site.data.settings.color_scheme == "light" %}
+        root.setAttribute("light", "");
+        root.classList.add("light-mode");
+        {% endif %}
+      }
+      // Paint the canvas before any render-blocking stylesheet loads, so
+      // navigating between pages does not flash the browser's white default.
+      root.style.colorScheme = dark ? "dark" : "light";
+      root.style.backgroundColor = dark ? "#181818" : "#fff";
+
+      // Emitted here rather than as a static tag so mobile browser chrome
+      // matches the restored theme instead of always being white.
+      var themeColor = document.createElement("meta");
+      themeColor.name = "theme-color";
+      themeColor.content = dark ? "#181818" : "#ffffff";
+      document.head.appendChild(themeColor);
+    })();
+  </script>
+
+
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.data.settings.title }}{% endif %} - Michael Bassili</title>
   <meta name='description' content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.data.settings.description }}{% endif %}">
 
@@ -21,7 +55,6 @@
   <link rel="manifest" href="/site.webmanifest">
   <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
   <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="theme-color" content="#ffffff">
 
   <!-- Facebook OpenGraph -->
   <meta property="og:title" content="{% if page.url == "/" %}{{ site.data.settings.title }}{% else %}{{ page.title }} – {{ site.data.settings.title }}{% endif %}">
@@ -43,26 +76,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Megrim&display=swap" rel="stylesheet">
-
-  <script>
-    {% if site.data.settings.color_scheme == "auto" %}
-    if (localStorage.getItem("theme") === "dark") {
-      document.documentElement.setAttribute("dark", "");
-      document.documentElement.classList.add('dark-mode');
-    }
-    {% elsif site.data.settings.color_scheme == "light" %}
-      document.documentElement.setAttribute("light", "");
-      document.documentElement.classList.add('light-mode');
-    {% elsif site.data.settings.color_scheme == "dark" %}
-      document.documentElement.setAttribute("dark", "");
-      document.documentElement.classList.add('dark-mode');
-    {% else %}
-    if (localStorage.getItem("theme") === "dark") {
-      document.documentElement.setAttribute("dark", "");
-      document.documentElement.classList.add('dark-mode');
-    }
-    {% endif %}
-  </script>
 
   <style>
   {% capture include_to_scssify %}
