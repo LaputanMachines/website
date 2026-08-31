@@ -27,7 +27,10 @@
   <!-- end global wrap -->
 
   <script src="{{ site.baseurl }}/js/scripts.js"></script>
-  <script src="{{ site.baseurl }}/js/common.js"></script>
+  <!-- data-cfasync="false" for the same reason as the pre-paint script in
+       head.html: Rocket Loader would otherwise defer this to after load,
+       leaving the theme toggle, menu and search dead until it ran. -->
+  <script data-cfasync="false" src="{{ site.baseurl }}/js/common.js"></script>
 </body>
 
 </html>
