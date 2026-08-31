@@ -3,7 +3,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <script>
+  <!-- data-cfasync="false" keeps Cloudflare Rocket Loader from rewriting this
+       tag's type and deferring it to after load, which would undo the whole
+       point of running before first paint. -->
+  <script data-cfasync="false">
     (function () {
       var root = document.documentElement;
       {% if site.data.settings.color_scheme == "light" %}
