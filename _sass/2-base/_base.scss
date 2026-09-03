@@ -4,10 +4,20 @@
   box-sizing: border-box;
 }
 
-// Also on html so the browser canvas is themed before body paints,
-// otherwise navigation flashes the white default.
+// The canvas background lives on html, not body, so it is themed before body
+// paints and navigation does not flash the white default.
+//
+// The grain is an inline SVG data URI, so it costs no extra request. The filter
+// chain is: fractal noise -> desaturate -> remap into a narrow band centred on
+// #181818 (scale .18, offset .004) with alpha forced to 1. Centring the band is
+// what keeps the grain mean-preserving: it darkens as much as it lightens, so
+// the page stays the same #181818 the html tag paints inline instead of being
+// washed lighter. sRGB interpolation is set explicitly because filters default
+// to linearRGB, which would skew that band. `stitchTiles` makes the 240px tile
+// repeat seamlessly.
 html {
   background-color: var(--background-color);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='grain' color-interpolation-filters='sRGB'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3CfeColorMatrix values='.18 0 0 0 .004 0 .18 0 0 .004 0 0 .18 0 .004 0 0 0 0 1'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23grain)'/%3E%3C/svg%3E");
 }
 
 body {
@@ -16,7 +26,6 @@ body {
   line-height: $base-line-height;
   overflow-x: hidden;
   color: var(--text-color);
-  background-color: var(--background-color);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
