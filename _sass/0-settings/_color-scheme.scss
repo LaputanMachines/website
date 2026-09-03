@@ -1,66 +1,6 @@
-/* Color Scheme */
+/* Color Scheme (dark only) */
 
 :root {
-  color-scheme: light;
-
-  --primary-color: #f8ce5f;
-  --white: #fff;
-  --light-gray: rgb(64, 64, 64);
-  --lighten-blue: #eaecef;
-  --light-blue: #e4e6eb;
-  --blue-gray: #697177;
-  --gray: #9e9e9e;
-  --dark: #111;
-  --dark-blue: #1e2943;
-
-  --background-color: var(--white);
-  --background-alt-color: var(--lighten-blue);
-  --background-alt-color-2: var(--light-blue);
-  
-  --text-color: rgb(64, 64, 64); // var(--dark);
-  --text-alt-color: var(--blue-gray);
-  
-  --heading-font-color: var(--dark);
-
-  --link-color: var(--dark);
-  --link-color-hover: var(--dark);
-
-  --button-color: #320101;
-  --button-background-color: var(--primary-color);
-  --button-background-hover: #edc352;
-
-  --border-color: var(--light-blue);
-  --border-alt-color: var(--white);
-
-  --th-color: var(--light-gray);
-  --tr-color: var(--light-gray);
-
-  // Code blocks (light)
-  --code-background: #f7f8fa;
-  --code-border-color: var(--light-blue);
-  --code-text-color: #383d45;
-  --code-inline-background: var(--lighten-blue);
-  --code-inline-color: #383d45;
-
-  --code-comment-color: #6e7781;
-  --code-keyword-color: #cf222e;
-  --code-string-color: #0a3069;
-  --code-regex-color: #116329;
-  --code-number-color: #0550ae;
-  --code-function-color: #8250df;
-  --code-class-color: #953800;
-  --code-builtin-color: #0550ae;
-  --code-variable-color: #24292f;
-  --code-operator-color: #cf222e;
-  --code-error-color: #82071e;
-  --code-deleted-background: #ffebe9;
-  --code-inserted-color: #116329;
-  --code-inserted-background: #dafbe1;
-
-  --syntax-highlighting-background: var(--code-background);
-}
-
-:root[dark] {
   color-scheme: dark;
 
   --primary-color: #fbdab1;
@@ -73,10 +13,10 @@
   --background-color: var(--dark-blue);
   --background-alt-color: var(--dark);
   --background-alt-color-2: #262729;
-  
+
   --text-color: var(--gray);
   --text-alt-color: var(--gray);
-  
+
   --heading-font-color: var(--light-gray);
 
   --link-color: var(--light-gray);
@@ -92,7 +32,7 @@
   --th-color: var(--dark);
   --tr-color: var(--dark);
 
-  // Code blocks (dark)
+  // Code blocks
   --code-background: #1f2023;
   --code-border-color: #33353a;
   --code-text-color: #e6edf3;

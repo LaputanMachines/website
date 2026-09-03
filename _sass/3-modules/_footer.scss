@@ -68,22 +68,16 @@
     max-height: 50px;
   }
 
-  .logo-footer__image__dark {
-    display: none;
-  }
-
-  @media (max-width: $wide) {
-    width: 100%;
-  }
-}
-
-.dark-mode {
   .logo-footer__image {
     display: none;
   }
 
   .logo-footer__image__dark {
     display: block;
+  }
+
+  @media (max-width: $wide) {
+    width: 100%;
   }
 }
 

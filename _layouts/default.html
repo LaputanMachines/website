@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<!-- The inline canvas paint is on the tag itself so it applies before the
+     render-blocking font stylesheets load, instead of flashing white. -->
+<html lang="en" style="color-scheme: dark; background-color: #181818;">
 
 {% include head.html %}
 
@@ -22,14 +24,12 @@
 
     {% include footer.html %}
 
-    {% include theme-toggle.html %}
   </div>
   <!-- end global wrap -->
 
   <script src="{{ site.baseurl }}/js/scripts.js"></script>
-  <!-- data-cfasync="false" for the same reason as the pre-paint script in
-       head.html: Rocket Loader would otherwise defer this to after load,
-       leaving the theme toggle, menu and search dead until it ran. -->
+  <!-- data-cfasync="false" stops Rocket Loader deferring this to after load,
+       which would leave the menu and search dead until it ran. -->
   <script data-cfasync="false" src="{{ site.baseurl }}/js/common.js"></script>
 </body>
 

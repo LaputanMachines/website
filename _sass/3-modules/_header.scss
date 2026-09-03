@@ -48,18 +48,12 @@
   max-height: 50px;
 }
 
-.logo__image__dark {
+.logo__image {
   display: none;
 }
 
-.dark-mode {
-  .logo__image {
-    display: none;
-  }
-
-  .logo__image__dark {
-    display: block;
-  }
+.logo__image__dark {
+  display: block;
 }
 
 /* Nav */
@@ -250,14 +244,12 @@
   }
 }
 
-.dark-mode {
-  .main-nav {
-    .dropdown-menu {
-      background-color: var(--background-alt-color);
-    }
-    @media (max-width: $desktop) {
-      background-color: var(--background-alt-color);
-    }
+.main-nav {
+  .dropdown-menu {
+    background-color: var(--background-alt-color);
+  }
+  @media (max-width: $desktop) {
+    background-color: var(--background-alt-color);
   }
 }
 
