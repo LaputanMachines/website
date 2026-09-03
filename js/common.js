@@ -136,6 +136,38 @@ document.addEventListener("DOMContentLoaded", function() {
   load_posts_button&&load_posts_button.addEventListener("click",function(e){e.preventDefault();var o=document.querySelector(".pagination"),e=pagination_next_url.split("/page")[0]+"/page/"+pagination_next_page_number+"/";fetch(e).then(function(e){if(e.ok)return e.text()}).then(function(e){var n=document.createElement("div");n.innerHTML=e;for(var t=document.querySelector(".grid"),a=n.querySelectorAll(".grid__post"),i=0;i<a.length;i++)t.appendChild(a.item(i));new LazyLoad({elements_selector:".lazy"});pagination_next_page_number++,pagination_next_page_number>pagination_available_pages_number&&(o.style.display="none")})});
 
 
+  /* ==========================================
+  // Background Grid Parallax
+  ========================================== */
+  // The graph paper layer is position: fixed, so on its own it would sit dead
+  // still while the page moves. Shifting it by a fraction of the scroll offset
+  // reads as depth instead. The offset is taken modulo the 120px major-grid
+  // tile the pattern repeats on, which is invisible because the grid is
+  // identical after a whole tile, and it keeps the transform bounded however
+  // long the page is so the layer never slides off its own overscan.
+  const gridTile = 120,
+    gridParallaxRatio = 0.3;
+
+  if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    let gridTicking = false;
+
+    const updateGridParallax = () => {
+      const offset = (window.scrollY * gridParallaxRatio) % gridTile;
+      body.style.setProperty("--grid-parallax", `${-offset}px`);
+      gridTicking = false;
+    };
+
+    window.addEventListener("scroll", () => {
+      if (!gridTicking) {
+        gridTicking = true;
+        requestAnimationFrame(updateGridParallax);
+      }
+    }, { passive: true });
+
+    updateGridParallax();
+  }
+
+
   /* =======================
   // Scroll Top Button
   ======================= */
