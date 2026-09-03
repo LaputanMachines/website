@@ -6,7 +6,7 @@
   .widget-sidebar {
     margin-bottom: 32px;
     padding-bottom: 32px;
-    border-bottom: 1px solid var(--border-color);
+    border-bottom: $separator-width solid var(--separator-color);
 
     &:last-child {
       border-bottom: none;
@@ -109,7 +109,7 @@
   @media (max-width: $desktop) {
     margin-top: 64px;
     padding-top: 32px;
-    border-top: 1px solid var(--border-color);
+    border-top: $separator-width solid var(--separator-color);
 
     .post-author-description {
       font-size: 16px;

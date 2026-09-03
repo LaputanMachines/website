@@ -261,7 +261,7 @@
     margin: 48px 0 32px;
     padding-bottom: 40px;
     text-align: center;
-    border-bottom: 1px solid var(--border-color);
+    border-bottom: $separator-width solid var(--separator-color);
 
     p {
       max-width: 560px;
