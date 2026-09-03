@@ -28,6 +28,9 @@
 
   --border-color: #333;
   --border-alt-color: #333;
+  // Full-width rules sit directly on the graph paper background, so they are
+  // lighter than the boxed borders to stay clear of the grid lines.
+  --separator-color: #4a4a4a;
 
   --th-color: var(--dark);
   --tr-color: var(--dark);

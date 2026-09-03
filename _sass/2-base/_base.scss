@@ -221,10 +221,10 @@ a {
 
 hr {
   width: 100%;
-  height: 1px;
+  height: $separator-width;
   margin: 64px 0;
   border: 0;
-  background-color: var(--border-color);
+  background-color: var(--separator-color);
 
   @media (max-width: $mobile) {
     margin: 48px 0;

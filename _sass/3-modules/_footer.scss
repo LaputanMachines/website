@@ -3,8 +3,8 @@
 /* Footer */
 .footer__inner {
   padding: 64px 0;
-  border-top: 1px solid var(--border-color);
-  border-bottom: 1px solid var(--border-color);
+  border-top: $separator-width solid var(--separator-color);
+  border-bottom: $separator-width solid var(--separator-color);
 
   .row .col {
     flex-grow: 1;

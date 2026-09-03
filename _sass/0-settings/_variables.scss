@@ -8,6 +8,10 @@ $base-spacing-unit: 16px;
 // Border radius
 $global-radius: 22px;
 
+// Separator rules. Thicker than a hairline so they read as structure against
+// the 1px background grid rather than as another one of its lines.
+$separator-width: 3px;
+
 // Transition
 $global-transition: all .2s;
 
