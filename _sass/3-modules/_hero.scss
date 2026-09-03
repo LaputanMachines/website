@@ -2,24 +2,47 @@
 
 /* Hero */
 .hero {
-  margin: 48px 0;
+  margin: 100px 0;
 
+  // The rule is a background layer rather than text-decoration, because a
+  // background can be resized and text-decoration cannot. A no-repeat gradient
+  // pinned to the bottom of the inline box at 15% height sits behind the glyphs
+  // and overlaps their descenders; hover grows it to the full height so the word
+  // reads as highlighted instead of underlined. The text flips to the page
+  // background colour at the same time, since light gray on a saturated fill is
+  // unreadable. box-decoration-break: clone gives each line its own bar when the
+  // title wraps, instead of one bar stretched across the whole inline box.
   .hero__underline {
-    text-decoration: underline;
-    text-decoration-thickness: 5px;
+    background-image: linear-gradient(var(--underline-color), var(--underline-color));
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+    background-size: 100% 15%;
+    transition: background-size .25s ease, color .25s ease;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
 
+    &:hover {
+      color: var(--background-color);
+      background-size: 100% 100%;
+    }
   }
-  
+
+  @media (prefers-reduced-motion: reduce) {
+    .hero__underline {
+      transition: none;
+    }
+  }
+
   #hero__software {
-    text-decoration-color: #0ea5e9;
+    --underline-color: #0ea5e9;
   }
 
   #hero__productivity {
-    text-decoration-color: #22c55e;
+    --underline-color: #22c55e;
   }
 
   #hero__community {
-    text-decoration-color: #76d313;
+    --underline-color: #76d313;
   }
   
   .hero__inner {
