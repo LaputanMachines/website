@@ -1,8 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
   'use strict';
 
-  const html = document.querySelector('html'),
-    globalWrap = document.querySelector('.global-wrap'),
+  const globalWrap = document.querySelector('.global-wrap'),
     body = document.querySelector('body'),
     menuToggle = document.querySelector(".hamburger"),
     menuList = document.querySelector(".main-nav"),
@@ -11,12 +10,11 @@ document.addEventListener("DOMContentLoaded", function() {
     searchOverlay = document.querySelector(".search__overlay"),
     searchInput = document.querySelector(".search__text"),
     search = document.querySelector(".search"),
-    toggleTheme = document.querySelector(".toggle-theme"),
     btnScrollToTop = document.querySelector(".top");
 
 
   /* =======================================================
-  // Menu + Search + Theme Switcher
+  // Menu + Search
   ======================================================= */
   menuToggle.addEventListener("click", () => {
     menu();
@@ -67,50 +65,10 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 
 
-  // Theme Switcher
-  if (toggleTheme) {
-    toggleTheme.addEventListener("click", () => {
-      darkMode();
-    });
-  };
-
-  function darkMode() {
-    if (html.classList.contains('dark-mode')) {
-      html.classList.remove('dark-mode');
-      localStorage.removeItem("theme");
-      document.documentElement.removeAttribute("dark");
-      paintCanvas(false);
-    } else {
-      html.classList.add('dark-mode');
-      localStorage.setItem("theme", "dark");
-      document.documentElement.setAttribute("dark", "");
-      paintCanvas(true);
-    }
-  };
-
-  // The pre-paint script in head.html sets these inline, and inline styles
-  // beat the stylesheet, so the toggle has to keep them in sync.
-  function paintCanvas(dark) {
-    const root = document.documentElement;
-    root.style.colorScheme = dark ? "dark" : "light";
-    root.style.backgroundColor = dark ? "#181818" : "#fff";
-    const themeColor = document.querySelector('meta[name="theme-color"]');
-    if (themeColor) {
-      themeColor.content = dark ? "#181818" : "#ffffff";
-    }
-  };
-
-
-  /* ================================================================
-  // Stop Animations During Window Resizing and Switching Theme Modes
-  ================================================================ */
+  /* ==========================================
+  // Stop Animations During Window Resizing
+  ========================================== */
   let disableTransition;
-
-  if (toggleTheme) {
-    toggleTheme.addEventListener("click", () => {
-      stopAnimation();
-    });
-  }
 
   window.addEventListener("resize", () => {
     stopAnimation();
@@ -158,8 +116,8 @@ document.addEventListener("DOMContentLoaded", function() {
   imageLink = document.querySelectorAll(".page__content a img, .post__content a img, .gallery__image a img");
 
   if (imageLink) {
-    for (const i = 0; i < imageLink.length; i++) imageLink[i].parentNode.classList.add("image-link");
-    for (const i = 0; i < imageLink.length; i++) imageLink[i].classList.add("no-lightense");
+    for (let i = 0; i < imageLink.length; i++) imageLink[i].parentNode.classList.add("image-link");
+    for (let i = 0; i < imageLink.length; i++) imageLink[i].classList.add("no-lightense");
   };
 
   if (lightense) {

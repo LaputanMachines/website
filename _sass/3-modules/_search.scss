@@ -179,12 +179,10 @@
   }
 }
 
-.dark-mode {
-  .search__box {
-    background-color: var(--background-alt-color);
-  }
+.search__box {
+  background-color: var(--background-alt-color);
+}
 
-  .search__text {
-    background-color: var(--background-alt-color);
-  }
+.search__text {
+  background-color: var(--background-alt-color);
 }
