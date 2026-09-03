@@ -14,6 +14,16 @@
     }
   }
 
+  // Ionicons only styles the :before pseudo-element, so the <i> itself keeps the
+  // inherited 1.6 body line-height. As a flex item that gives it a 25.6px box
+  // with the glyph sitting on the Poppins baseline near the bottom of it, which
+  // drops the arrow below the label and the rest of the footer bar. Collapsing
+  // the line-height to the glyph makes the box the icon's own height, so
+  // align-items: center has something honest to centre.
+  i {
+    line-height: 1;
+  }
+
   .top__text {
     margin-left: 8px;
     font-size: 15px;
