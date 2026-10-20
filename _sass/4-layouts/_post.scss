@@ -317,8 +317,10 @@
     margin-right: 20px
   }
 
+  // Block rather than inline-block, so the label does not sit on a body-height
+  // line box whose strut pads the top of the block more than the bottom.
   .post__nav {
-    display: inline-block;
+    display: block;
     margin-bottom: 8px;
     font-size: 14px;
     line-height: 1;
@@ -400,7 +402,9 @@
 
 
 
-    .post__prev {
+    // Only space the stacked links apart when a newer post follows; on the
+    // latest post this would pad the bottom of the block past its top.
+    .post__prev:not(:last-child) {
       margin-bottom: 32px;
     }
 
@@ -411,9 +415,11 @@
 }
 
 /* Related posts */
+// The bottom margin is the top one less the 32px every card already carries
+// below itself, so the section sits evenly between the rules either side.
 .related-posts {
   display: none;
-  margin: 64px auto 0;
+  margin: 64px auto 32px;
 
   &.is-related {
     display: block;
@@ -431,7 +437,7 @@
   }
 
   @media (max-width: $mobile) {
-     margin: 48px auto 0;
+     margin: 48px auto 16px;
   }
 }
 
