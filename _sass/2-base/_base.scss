@@ -14,7 +14,7 @@ html {
 // extra request and stays crisp at any zoom. Each is a 1px line plus a
 // transparent remainder, repeated by background-size into a 120px grid. There
 // is deliberately no finer grid under it and the alpha is very low: against
-// #181818 it reads as roughly #1c1c1c, enough to sense the grid without it
+// white it reads as roughly #f9f9f9, enough to sense the grid without it
 // competing with the text.
 //
 // It is a fixed layer rather than html's own background so common.js can
@@ -31,8 +31,8 @@ body::before {
   z-index: -1;
   pointer-events: none;
   background-image:
-    linear-gradient(rgba(255, 255, 255, 0.018) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.018) 1px, transparent 1px);
+    linear-gradient(rgba(0, 0, 0, 0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.025) 1px, transparent 1px);
   background-size: 120px 120px;
   transform: translate3d(0, var(--grid-parallax, 0px), 0);
 }

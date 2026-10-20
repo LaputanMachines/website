@@ -1,63 +1,66 @@
-/* Color Scheme (dark only) */
+/* Color Scheme (light only) */
 
 :root {
-  color-scheme: dark;
+  color-scheme: light;
 
-  --primary-color: #fbdab1;
+  --primary-color: #f8ce5f;
   --white: #fff;
-  --light-gray: #f5f5f5;
-  --gray: #9a9a9a;
-  --dark: #2a2b2d;
-  --dark-blue: #181818;
+  --light-gray: rgb(64, 64, 64);
+  --lighten-blue: #eaecef;
+  --light-blue: #e4e6eb;
+  --blue-gray: #697177;
+  --gray: #9e9e9e;
+  --dark: #111;
+  --dark-blue: #1e2943;
 
-  --background-color: var(--dark-blue);
-  --background-alt-color: var(--dark);
-  --background-alt-color-2: #262729;
+  --background-color: var(--white);
+  --background-alt-color: var(--lighten-blue);
+  --background-alt-color-2: var(--light-blue);
 
-  // Body copy is lighter than the gray used for meta text so long-form reading
-  // has proper contrast (about 9:1 on the background, versus 6:1 for gray).
-  --text-color: #bababa;
-  --text-alt-color: var(--gray);
+  // Body copy is about 10:1 on white; meta text uses the blue-gray, about 5:1,
+  // so it still sits a step below the text it describes.
+  --text-color: rgb(64, 64, 64);
+  --text-alt-color: var(--blue-gray);
 
-  --heading-font-color: var(--light-gray);
+  --heading-font-color: var(--dark);
 
-  --link-color: var(--light-gray);
-  --link-color-hover: var(--light-gray);
+  --link-color: var(--dark);
+  --link-color-hover: var(--dark);
 
-  --button-color: var(--dark);
+  --button-color: #320101;
   --button-background-color: var(--primary-color);
-  --button-background-hover:#d3b795;
+  --button-background-hover: #edc352;
 
-  --border-color: #333;
-  --border-alt-color: #333;
+  --border-color: var(--light-blue);
+  --border-alt-color: var(--white);
   // Full-width rules sit directly on the graph paper background, so they are
-  // lighter than the boxed borders to stay clear of the grid lines.
-  --separator-color: #4a4a4a;
+  // darker than the boxed borders to stay clear of the grid lines.
+  --separator-color: #d3d6dc;
 
-  --th-color: var(--dark);
-  --tr-color: var(--dark);
+  --th-color: var(--light-gray);
+  --tr-color: var(--light-gray);
 
   // Code blocks
-  --code-background: #1f2023;
-  --code-border-color: #33353a;
-  --code-text-color: #e6edf3;
-  --code-inline-background: #26282c;
-  --code-inline-color: #e6edf3;
+  --code-background: #f7f8fa;
+  --code-border-color: var(--light-blue);
+  --code-text-color: #383d45;
+  --code-inline-background: var(--lighten-blue);
+  --code-inline-color: #383d45;
 
-  --code-comment-color: #8b949e;
-  --code-keyword-color: #ff7b72;
-  --code-string-color: #a5d6ff;
-  --code-regex-color: #7ee787;
-  --code-number-color: #79c0ff;
-  --code-function-color: #d2a8ff;
-  --code-class-color: #ffa657;
-  --code-builtin-color: #79c0ff;
-  --code-variable-color: #e6edf3;
-  --code-operator-color: #ff7b72;
-  --code-error-color: #ffa198;
-  --code-deleted-background: #3c1618;
-  --code-inserted-color: #7ee787;
-  --code-inserted-background: #14261a;
+  --code-comment-color: #6e7781;
+  --code-keyword-color: #cf222e;
+  --code-string-color: #0a3069;
+  --code-regex-color: #116329;
+  --code-number-color: #0550ae;
+  --code-function-color: #8250df;
+  --code-class-color: #953800;
+  --code-builtin-color: #0550ae;
+  --code-variable-color: #24292f;
+  --code-operator-color: #cf222e;
+  --code-error-color: #82071e;
+  --code-deleted-background: #ffebe9;
+  --code-inserted-color: #116329;
+  --code-inserted-background: #dafbe1;
 
   --syntax-highlighting-background: var(--code-background);
 }

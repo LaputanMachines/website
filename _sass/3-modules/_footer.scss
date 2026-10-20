@@ -68,12 +68,8 @@
     max-height: 50px;
   }
 
-  .logo-footer__image {
-    display: none;
-  }
-
   .logo-footer__image__dark {
-    display: block;
+    display: none;
   }
 
   @media (max-width: $wide) {

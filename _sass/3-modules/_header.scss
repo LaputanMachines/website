@@ -48,12 +48,8 @@
   max-height: 50px;
 }
 
-.logo__image {
-  display: none;
-}
-
 .logo__image__dark {
-  display: block;
+  display: none;
 }
 
 /* Nav */
@@ -241,15 +237,6 @@
 
   &:hover {
     text-decoration-color: var(--link-color);
-  }
-}
-
-.main-nav {
-  .dropdown-menu {
-    background-color: var(--background-alt-color);
-  }
-  @media (max-width: $desktop) {
-    background-color: var(--background-alt-color);
   }
 }
 
