@@ -10,33 +10,6 @@ html {
   background-color: var(--background-color);
 }
 
-// The graph paper is two tiled gradients rather than an image, so it costs no
-// extra request and stays crisp at any zoom. Each is a 1px line plus a
-// transparent remainder, repeated by background-size into a 120px grid. There
-// is deliberately no finer grid under it and the alpha is very low: against
-// white it reads as roughly #f9f9f9, enough to sense the grid without it
-// competing with the text.
-//
-// It is a fixed layer rather than html's own background so common.js can
-// parallax it: the layer holds still while the page scrolls and translate3d
-// nudges it by a fraction of the scroll offset. body carries no background of
-// its own, so a z-index: -1 child sits above html's canvas and below the
-// content. The 120px overscan covers the edges the translate exposes, and 120
-// is a whole tile of the grid, so bleeding the layer past the viewport does
-// not shift the pattern relative to it.
-body::before {
-  content: "";
-  position: fixed;
-  inset: -120px 0;
-  z-index: -1;
-  pointer-events: none;
-  background-image:
-    linear-gradient(rgba(0, 0, 0, 0.025) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(0, 0, 0, 0.025) 1px, transparent 1px);
-  background-size: 120px 120px;
-  transform: translate3d(0, var(--grid-parallax, 0px), 0);
-}
-
 body {
   font-family: $base-font-family;
   font-size: $base-font-size;

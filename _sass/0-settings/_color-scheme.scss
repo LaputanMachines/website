@@ -33,8 +33,8 @@
 
   --border-color: var(--light-blue);
   --border-alt-color: var(--white);
-  // Full-width rules sit directly on the graph paper background, so they are
-  // darker than the boxed borders to stay clear of the grid lines.
+  // Full-width rules are darker than the boxed borders so they read as
+  // structure rather than as the outline of a card or pill.
   --separator-color: #d3d6dc;
 
   --th-color: var(--light-gray);
