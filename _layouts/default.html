@@ -27,9 +27,11 @@
   </div>
   <!-- end global wrap -->
 
-  <script src="{{ site.baseurl }}/js/scripts.js"></script>
-  <!-- data-cfasync="false" stops Rocket Loader deferring this to after load,
-       which would leave the menu and search dead until it ran. -->
+  <!-- data-cfasync="false" stops Rocket Loader deferring these to after load,
+       which would leave the menu and search dead until they ran. scripts.js
+       needs it too: it defines the libraries common.js calls on
+       DOMContentLoaded, so deferring it alone makes that first run throw. -->
+  <script data-cfasync="false" src="{{ site.baseurl }}/js/scripts.js"></script>
   <script data-cfasync="false" src="{{ site.baseurl }}/js/common.js"></script>
 </body>
 

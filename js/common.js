@@ -1,6 +1,13 @@
 document.addEventListener("DOMContentLoaded", function() {
   'use strict';
 
+  // Rocket Loader replays DOMContentLoaded once it has run the scripts it
+  // deferred, so this handler fires twice on the live site. A second run would
+  // attach every listener again, and two toggles on the hamburger cancel out,
+  // leaving the menu impossible to open.
+  if (window.commonInitialized) return;
+  window.commonInitialized = true;
+
   const globalWrap = document.querySelector('.global-wrap'),
     body = document.querySelector('body'),
     menuToggle = document.querySelector(".hamburger"),
