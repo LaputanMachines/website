@@ -172,6 +172,10 @@
 
 // Post content embeds
 .post__content {
+  // Cap the measure at roughly 70 characters; the full column runs to ~120 on
+  // desktop, which is too long to track comfortably from one line to the next.
+  max-width: 720px;
+
   // Display math is often wider than the text column: scroll it instead of
   // letting it bleed past the page edge on narrow screens.
   mjx-container[display="true"] {

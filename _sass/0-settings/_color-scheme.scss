@@ -14,7 +14,9 @@
   --background-alt-color: var(--dark);
   --background-alt-color-2: #262729;
 
-  --text-color: var(--gray);
+  // Body copy is lighter than the gray used for meta text so long-form reading
+  // has proper contrast (about 9:1 on the background, versus 6:1 for gray).
+  --text-color: #bababa;
   --text-alt-color: var(--gray);
 
   --heading-font-color: var(--light-gray);
