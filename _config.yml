@@ -9,11 +9,7 @@ url: "https://bassi.li"
 markdown: kramdown
 permalink: /:title
 plugins:
-  - jekyll-paginate
   - jekyll-sitemap
-
-paginate: 12
-paginate_path: "/articles/page/:num"
 
 
 #-------------------------------
@@ -26,8 +22,7 @@ collections:
     output: true
     permalink: /articles/:slug
   authors:
-    output: true
-    permalink: /:name
+    output: false
 
 # Pages Path
 defaults:
@@ -45,11 +40,6 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-  - scope:
-      path: ""
-      type: "authors"
-    values:
-      layout: "author"
 
 
 sass:

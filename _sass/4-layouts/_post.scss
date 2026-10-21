@@ -101,35 +101,6 @@
   }
 }
 
-.post-video,
-.page-video {
-  margin-bottom: 32px;
-  border-radius: 22px;
-  overflow: hidden;
-  transform: translate(0);
-  background-color: var(--background-alt-color);
-
-  .post-video__wrap,
-  .page-video__wrap {
-    position: relative;
-    width: 100%;
-    height: 0;
-    padding-bottom: 75%;
-
-    iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-    }
-  }
-
-  @media (max-width: $mobile) {
-    border-radius: 16px;
-  }
-}
-
 .post,
 .page {
   color: var(--text-color);
@@ -140,9 +111,7 @@
     text-underline-offset: 2px;
   }
 
-  img,
-  .lightense-wrap,
-  .gallery {
+  img {
     &+em {
       a {
         text-decoration: none;
@@ -155,18 +124,9 @@
     }
   }
 
-  img, .js-reframe {
+  img {
     border-radius: 16px;
     overflow: hidden;
-
-    &.lightense-open {
-      border-radius: 0;
-    }
-  }
-
-  .button {
-    border: none;
-    text-decoration: none;
   }
 }
 
@@ -199,17 +159,6 @@
   }
 }
 
-// Post Disclaimer
-.post__disclaimer {
-  max-width: 720px;
-  margin-top: 48px;
-  padding-top: 24px;
-  border-top: 1px solid var(--separator-color);
-  font-size: 14px;
-  font-style: italic;
-  color: var(--text-alt-color);
-}
-
 // Page
 .page {
   max-width: 780px;
@@ -236,199 +185,253 @@
 }
 
 /* Navigation */
-.post__navigation {
-  display: flex;
-  justify-content: space-between;
+// The older and newer posts drawn as a stretch of the homepage's strip map:
+// previous stop, this post, next stop. Between two stops the track carries the
+// lines both posts ride, one stripe each; posts with no line in common are
+// joined by a dotted walking transfer instead.
+.stops-nav {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  gap: 16px 24px;
   margin-top: 64px;
-  padding: 48px 0;
-  border-top: $separator-width solid var(--separator-color);
-  border-bottom: $separator-width solid var(--separator-color);
-
-  .post__prev,
-  .post__next {
-    display: flex;
-    align-items: center;
-    width: 48%;
-    border: none;
-  }
-
-  .prev__box {
-    margin-left: 20px;
-  }
-
-  .next__box {
-    margin-right: 20px
-  }
-
-  // Block rather than inline-block, so the label does not sit on a body-height
-  // line box whose strut pads the top of the block more than the bottom.
-  .post__nav {
-    display: block;
-    margin-bottom: 8px;
-    font-size: 14px;
-    line-height: 1;
-    font-weight: 500;
-    color: var(--text-alt-color);
-  }
-
-  .post__nav__title {
-    margin-bottom: 8px;
-    font-size: 24px;
-
-    a {
-      text-decoration: underline;
-      text-decoration-color: transparent;
-      text-decoration-thickness: 1.5px;
-      text-underline-offset: 3px;
-
-      &:hover {
-        text-decoration-color: var(--link-color-hover);
-      }
-    }
-  }
-
-  .post__nav__excerpt {
-    margin: 0;
-    font-size: 14px;
-    line-height: 1.4;
-    color: var(--text-alt-color);
-    display: -webkit-box;
-    overflow-y: hidden;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-  }
-
-  .post__next {
-    text-align: right;
-    margin-left: auto;
-
-    .article__meta-info {
-      flex-flow: row-reverse;
-    }
-  }
-
-  @media (max-width: $wide) {
-    .post__nav__title {
-      font-size: 22px;
-    }
-  }
-
-  @media (max-width: $desktop) {
-    padding: 0 0 48px;
-    border-top: none;
-    border-bottom: $separator-width solid var(--separator-color);
-
-    .post__prev,
-    .post__next {
-      align-items: normal;
-      flex-direction: column;
-    }
-
-
-
-    .prev__box,
-    .next__box {
-      order: 1;
-      margin: 0;
-    }
-
-  }
+  padding: 40px 0 48px;
+  border-top: 1px solid var(--separator-color);
 
   @media (max-width: $mobile) {
-    flex-wrap: wrap;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     margin-top: 48px;
-
-    .post__prev,
-    .post__next {
-      width: 100%;
-    }
-
-
-
-    // Only space the stacked links apart when a newer post follows; on the
-    // latest post this would pad the bottom of the block past its top.
-    .post__prev:not(:last-child) {
-      margin-bottom: 32px;
-    }
-
-    .post__next {
-      margin-left: 0;
-    }
+    padding: 32px 0 40px;
   }
 }
 
-/* Related posts */
-// The bottom margin is the top one less the 32px every card already carries
-// below itself, so the section sits evenly between the rules either side.
-.related-posts {
-  display: none;
-  margin: 64px auto 32px;
+.stops-nav__track {
+  position: relative;
+  grid-column: 1 / -1;
+  height: 28px;
+  margin: 0 12px;
+}
 
-  &.is-related {
+.stops-nav__segment {
+  position: absolute;
+  top: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  transform: translateY(-50%);
+
+  &--older {
+    left: 0;
+    right: 50%;
+  }
+
+  &--newer {
+    left: 50%;
+    right: 0;
+  }
+
+  i {
     display: block;
+    height: 5px;
+    background-color: var(--lc);
   }
 
-  @media (max-width: $wide) {
-    .article__meta,
-    .article__info {
-      display: none;
-    }
-
-    .article__title {
-      font-size: 18px;
-    }
-  }
-
-  @media (max-width: $mobile) {
-     margin: 48px auto 16px;
+  .is-walk {
+    height: 0;
+    background: none;
+    border-top: 4px dotted var(--separator-color);
   }
 }
 
-/* Disqus */
-.show-comments {
+.stops-nav__stop {
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  width: 20px;
+  height: 20px;
+  background-color: var(--background-color);
+  border: 3px solid var(--heading-font-color);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+
+  &--older {
+    left: 0;
+  }
+
+  &--here {
+    left: 50%;
+    width: 28px;
+    height: 28px;
+    background-color: var(--heading-font-color);
+    box-shadow: inset 0 0 0 5px var(--background-color);
+  }
+
+  &--newer {
+    left: 100%;
+  }
+}
+
+.stops-nav__older,
+.stops-nav__newer {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+}
+
+.stops-nav__newer {
+  align-items: flex-end;
+  text-align: right;
+}
+
+.stops-nav__here {
+  font-family: $mono-font-family;
+  font-size: 12px;
+  color: var(--text-alt-color);
   text-align: center;
-}
-
-.disqus-button {
-  margin: 64px 0;
 
   @media (max-width: $mobile) {
-    margin: 48px 0;
+    display: none;
   }
 }
 
-.post__comments {
-  max-width: 780px;
-  margin: 0 auto;
+.stops-nav__label {
+  font-family: $mono-font-family;
+  font-size: 12px;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--text-alt-color);
+}
 
-  &.is-open {
-    margin: 64px auto;
+.stops-nav__title {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.3;
+  color: var(--heading-font-color);
+  text-wrap: balance;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 3px;
+
+  &:hover {
+    text-decoration-color: var(--link-color-hover);
   }
 
   @media (max-width: $mobile) {
-     &.is-open {
-       margin: 48px auto;
-     }
+    font-size: 16px;
   }
+}
+
+.stops-nav__meta {
+  font-size: 13px;
+  color: var(--text-alt-color);
 }
 
 /* 404 */
 .error {
+  display: grid;
+  justify-items: center;
+  gap: 24px;
+  margin: 80px 0 96px;
   text-align: center;
 
-  .error__title {
-    margin-bottom: 24px;
-    font-size: 140px;
-    line-height: 1;
+  // The message and the button share a row as wide as the sign above it.
+  .error__row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px 24px;
+    width: 100%;
+    max-width: 760px;
+    text-align: left;
   }
 
   .error__text {
+    margin-bottom: 0;
     color: var(--text-alt-color);
   }
-  
-  @media (max-width: $mobile) {
-    .error__title {
-      font-size: 100px;
+
+  .error__link {
+    font-weight: 500;
+    color: var(--heading-font-color);
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+
+    &:hover {
+      text-decoration-thickness: 2px;
     }
+  }
+
+  @media (max-width: $mobile) {
+    margin: 32px 0 56px;
+  }
+}
+
+// The 404 page is a bus destination sign. Unlit LEDs are a dot grid painted
+// on the panel; the lit text is a pixel font cut into the same grid of dots by
+// a mask, so each glyph reads as a cluster of amber LEDs.
+.headsign {
+  --led: #ffb21f;
+  --led-off: #2b2216;
+  --led-panel: #0d0d0c;
+  --led-pitch: 4px;
+  --led-dot: 1.6px;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  width: 100%;
+  max-width: 760px;
+  overflow: hidden;
+  background-color: var(--led-panel);
+  border: 2px solid #2a2a2a;
+  border-radius: 10px;
+  box-shadow: inset 0 0 0 6px #050505;
+
+  @media (max-width: $mobile) {
+    --led-pitch: 3px;
+    --led-dot: 1.2px;
+  }
+}
+
+.headsign__route,
+.headsign__text {
+  display: flex;
+  align-items: center;
+  min-height: 112px;
+  padding: 20px 24px;
+  background-image: radial-gradient(circle, var(--led-off) calc(var(--led-dot) - .3px), transparent var(--led-dot));
+  background-size: var(--led-pitch) var(--led-pitch);
+
+  @media (max-width: $mobile) {
+    min-height: 76px;
+    padding: 12px 14px;
+  }
+}
+
+.headsign__route {
+  justify-content: center;
+  border-right: 2px solid #1f1f1f;
+}
+
+.headsign__text {
+  justify-content: flex-end;
+}
+
+.headsign__led {
+  font-family: 'DotGothic16', $mono-font-family;
+  font-size: 48px;
+  line-height: 1.1;
+  color: var(--led);
+  filter: drop-shadow(0 0 5px rgba(255, 170, 20, .55));
+  -webkit-mask: radial-gradient(circle, #000 var(--led-dot), transparent calc(var(--led-dot) + .3px)) 0 0 / var(--led-pitch) var(--led-pitch);
+  mask: radial-gradient(circle, #000 var(--led-dot), transparent calc(var(--led-dot) + .3px)) 0 0 / var(--led-pitch) var(--led-pitch);
+
+  @media (max-width: $tablet) {
+    font-size: 36px;
+  }
+
+  @media (max-width: $mobile) {
+    font-size: 24px;
   }
 }

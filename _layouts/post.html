@@ -20,11 +20,22 @@ layout: default
               {% endif %}
               {{ reading_time }} min read
             </span>
+            {% if page.featured %}
+            <a class="express-flag express-flag--post" href="{{ site.baseurl }}/" title="An express stop: one of the posts I'd start with">Express</a>
+            {% endif %}
           </div>
         </div>
   
         {% if page.title %}
         <h1 class="post__title">{{ page.title | escape }}</h1>
+        {% endif %}
+
+        {% if page.tags.size > 0 %}
+        <div class="post__tags">
+          {% for tag in page.tags %}
+          <a class="post__tag" href="{{ site.baseurl }}/?tag={{ tag | downcase | url_encode }}">{{ tag }}</a>
+          {% endfor %}
+        </div>
         {% endif %}
   
         {% if page.description %}
@@ -42,32 +53,16 @@ layout: default
   <div class="row">
     <div class="sidebar-left col col-3 col-w-4 col-d-12">
       <aside class="sidebar">
-        {% include sidebar-widgets/widget-post-author.html %}
-        {% include sidebar-widgets/widget-featured-posts.html %}
-        {% include sidebar-widgets/widget-article-tags.html %}
         {% include sidebar-widgets/widget-toc.html %}
+        {% include sidebar-widgets/widget-post-author.html %}
       </aside>
     </div>
 
     <div class="col col-9 col-w-8 col-d-12">
       <article class="post">
-    
-        {% if page.video_embed %}
-        <div class="post-video">
-          <div class="post-video__wrap">
-            <iframe src="{{ page.video_embed }}" loading="lazy" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-          </div>
-        </div>
-
-        {% else %}
-
-        {% endif %}
-
         <div class="post__content">
           {{ content }}
         </div>
-
-        <p class="post__disclaimer">{{ site.data.settings.disclaimer }}</p>
 
       </article>
     </div>
@@ -77,9 +72,3 @@ layout: default
 <!-- end post -->
 
 {% include post-navigation.html %}
-
-{% include related-posts.html %}
-
-{% if site.data.settings.disqus_identifier %}
-  {% include disqus-comments.html %}
-{% endif %}

@@ -31,7 +31,7 @@
                 <span class="nav__link dropdown-toggle">{{ item.title }} <i class="ion ion-ios-arrow-down arrow-down"></i></span>
                 <div class="dropdown-menu">
                 {% for submenu-item in item.submenu %}
-                  <a href="{{ submenu-item.url }}" {% if item.title == "Projects" %}target="_blank"{% endif %} class="nav__link{% if page.url == submenu-item.url %} active-link{% endif %}">{{submenu-item.title}} {% if item.title == "Projects" %}<i class="fa fa-external-link"></i>{% endif %}</a> 
+                  <a href="{{ submenu-item.url }}" {% if item.title == "Projects" %}target="_blank"{% endif %} class="nav__link{% if page.url == submenu-item.url %} active-link{% endif %}">{{submenu-item.title}} {% if item.title == "Projects" %}<i class="ion ion-md-open"></i>{% endif %}</a> 
                 {% endfor %}
                 </div>
               </li>
@@ -50,9 +50,6 @@
               <i class="search-button__icon ion ion-md-search"></i>
               <span class="search-button__text">Search</span>
             </div>
-            {% if site.data.settings.cta_button.enable == true %}
-            <a href="{% if site.data.settings.cta_button.cta_button_link %}{{ site.data.settings.cta_button.cta_button_link }}{% else %}#{% endif %}" class="button cta-button">{{ site.data.settings.cta_button.cta_button_text }}</a>
-            {% endif %}
           </div>
         </nav>
 

@@ -149,16 +149,13 @@ code {
   word-break: break-word;
 }
 
-img,
-.lightense-wrap {
+img {
   max-width: 100%;
   height: auto;
   vertical-align: middle;
 }
 
-img,
-.lightense-wrap,
-.gallery {
+img {
   &+em {
     display: block;
     margin-top: 16px;
@@ -201,12 +198,6 @@ hr {
   }
 }
 
-.table-container {
-  display: block;
-  max-width: 100%;
-  overflow-x: auto;
-}
-
 table {
   font-size: 12px;
   color: var(--dark);
@@ -247,8 +238,4 @@ table td {
 
 .lazy.loaded {
   opacity: 1;
-}
-
-.lightense-backdrop {
-  background-color: var(--background-color) !important;
 }

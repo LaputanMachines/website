@@ -1,0 +1,377 @@
+@use '0-settings' as *;
+
+/* Transit Map (homepage) */
+// Every post is a station on a strip map. Topic lines and the express line are
+// columns of a CSS grid; each post is one row. The track colour comes from
+// --lc on each cell, and --t / --b trim a track to the station centre where a
+// line starts or ends, so the termini stop at a station instead of a row edge.
+.transit {
+  --zone: 64px;
+  --col: 26px;
+  // Distance from the top of a row to the station's centre line, which sits on
+  // the first line of the post title.
+  --stop-y: 25px;
+  margin: 56px 0;
+
+  @media (max-width: $mobile) {
+    --zone: 38px;
+    --col: 18px;
+    --stop-y: 23px;
+    margin: 16px 0;
+  }
+}
+
+.transit__inner {
+  display: grid;
+  gap: 28px;
+  max-width: 900px;
+
+  > * {
+    min-width: 0;
+  }
+
+  @media (max-width: $mobile) {
+    gap: 22px;
+  }
+}
+
+// The intro is as wide as the title, and the description wraps to that width.
+// The title's max-width sets it: a balanced title never fills its box, so the
+// box has to be capped for the description to match the lines you see.
+.transit__intro {
+  display: grid;
+  width: fit-content;
+  max-width: 100%;
+}
+
+.transit__title {
+  max-width: 11.5em;
+  margin-bottom: 12px;
+  font-size: 44px;
+  line-height: 1.12;
+  text-wrap: balance;
+
+  @media (max-width: $tablet) {
+    font-size: 34px;
+  }
+
+  @media (max-width: $mobile) {
+    font-size: 28px;
+  }
+}
+
+.transit__description {
+  // Zero width keeps the description out of the intro's sizing; min-width
+  // then stretches it to the title's width.
+  width: 0;
+  min-width: 100%;
+  margin-bottom: 0;
+  font-size: 18px;
+  color: var(--text-color);
+
+  @media (max-width: $mobile) {
+    font-size: 16px;
+  }
+}
+
+
+/* Service switch */
+.transit__service-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px 20px;
+}
+
+.transit__service {
+  display: inline-flex;
+  border: 2px solid var(--heading-font-color);
+  border-radius: 10px;
+  overflow: hidden;
+
+  button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    font: inherit;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--heading-font-color);
+    background-color: var(--background-color);
+    border: 0;
+    cursor: pointer;
+
+    & + button {
+      border-left: 2px solid var(--heading-font-color);
+    }
+
+    &[aria-pressed="true"] {
+      color: var(--background-color);
+      background-color: var(--heading-font-color);
+    }
+  }
+}
+
+.transit__express-icon {
+  width: 10px;
+  height: 10px;
+  background-color: var(--express-color);
+  transform: rotate(45deg);
+}
+
+.transit__service-note {
+  margin-bottom: 0;
+  font-size: 14px;
+  color: var(--text-alt-color);
+
+  // On phones the switch alone is enough; the note wraps to two lines and
+  // pushes the map down.
+  @media (max-width: $mobile) {
+    display: none;
+  }
+}
+
+// Also marks featured posts on their own pages.
+.express-flag {
+  display: inline-block;
+  margin-right: 4px;
+  padding: 3px 9px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: var(--express-color);
+  border-radius: 6px;
+}
+
+// In a post's date line, next to the reading time.
+.express-flag--post {
+  margin: 0;
+  padding: 1px 7px;
+  font-size: 10px;
+  line-height: 1.6;
+  border-radius: 4px;
+
+  &:hover {
+    color: #fff;
+  }
+}
+
+
+/* Legend */
+.transit__legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.transit__line {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 5px 12px 5px 5px;
+  font: inherit;
+  font-size: 14px;
+  color: var(--heading-font-color);
+  background-color: var(--background-color);
+  border: 1px solid var(--border-color);
+  border-radius: 999px;
+  cursor: pointer;
+
+  small {
+    font-size: 12px;
+    color: var(--text-alt-color);
+  }
+
+  &[aria-pressed="true"] {
+    border-color: var(--heading-font-color);
+    box-shadow: inset 0 0 0 1px var(--heading-font-color);
+  }
+}
+
+.transit__bullet {
+  display: inline-grid;
+  place-items: center;
+  flex: none;
+  width: 22px;
+  height: 22px;
+  font-size: 11px;
+  font-weight: 700;
+  background-color: var(--lc);
+  border-radius: 50%;
+}
+
+
+/* Map */
+.transit__map {
+  display: grid;
+}
+
+.transit__zone {
+  padding-top: 15px;
+  font-family: $mono-font-family;
+  font-size: 12px;
+  color: var(--text-alt-color);
+
+  @media (max-width: $mobile) {
+    padding-top: 13px;
+    font-size: 11px;
+  }
+}
+
+.transit__track {
+  position: relative;
+  transition: opacity .15s;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: var(--t, 0);
+    bottom: var(--b, 0);
+    left: 50%;
+    width: 6px;
+    margin-left: -3px;
+    background-color: var(--lc);
+
+    @media (max-width: $mobile) {
+      width: 4px;
+      margin-left: -2px;
+    }
+  }
+
+  &.is-off::before {
+    display: none;
+  }
+}
+
+.transit__express-stop {
+  z-index: 2;
+  align-self: start;
+  justify-self: center;
+  width: 16px;
+  height: 16px;
+  margin-top: calc(var(--stop-y) - 8px);
+  background-color: var(--express-color);
+  border: 3px solid var(--background-color);
+  outline: 2px solid var(--express-color);
+  transform: rotate(45deg);
+
+  @media (max-width: $mobile) {
+    width: 12px;
+    height: 12px;
+    margin-top: calc(var(--stop-y) - 6px);
+    border-width: 2px;
+  }
+}
+
+// One capsule per post, spanning every line it rides: an interchange.
+.transit__station {
+  z-index: 2;
+  align-self: start;
+  height: 20px;
+  margin: calc(var(--stop-y) - 10px) 2px 0;
+  background-color: var(--background-color);
+  border: 3px solid var(--heading-font-color);
+  border-radius: 10px;
+  transition: opacity .15s;
+
+  @media (max-width: $mobile) {
+    height: 15px;
+    margin: calc(var(--stop-y) - 7.5px) 1px 0;
+    border-width: 2.5px;
+  }
+}
+
+.transit__stop {
+  min-width: 0;
+  padding: 12px 0;
+  line-height: 1.35;
+  transition: opacity .15s;
+}
+
+.transit__stop-title {
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 1.35;
+  color: var(--heading-font-color);
+
+  &:hover {
+    box-shadow: inset 0 -.45em 0 color-mix(in srgb, var(--primary-color) 40%, transparent);
+  }
+
+  @media (max-width: $mobile) {
+    font-size: 15px;
+  }
+}
+
+.transit__latest {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 1px 6px;
+  font-size: 11px;
+  font-weight: 600;
+  vertical-align: 2px;
+  color: var(--button-color);
+  background-color: var(--primary-color);
+  border-radius: 4px;
+}
+
+.transit__stop-meta {
+  display: block;
+  margin-top: 2px;
+  font-size: 13px;
+  color: var(--text-alt-color);
+  font-variant-numeric: tabular-nums;
+}
+
+// Filtering by line, or by a tag from a /?tag= link, dims everything that
+// doesn't match.
+.transit__map .is-dim,
+.transit__map .is-untagged {
+  opacity: .14;
+}
+
+.transit__stop.is-dim,
+.transit__stop.is-untagged {
+  opacity: .3;
+}
+
+.transit__tag-note {
+  margin-bottom: 0;
+  font-size: 15px;
+  color: var(--text-alt-color);
+
+  &[hidden] {
+    display: none;
+  }
+
+  b {
+    color: var(--heading-font-color);
+  }
+
+  a {
+    color: var(--heading-font-color);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+}
+
+// Express service fades the local stops back.
+.transit__map.is-express-only .is-local {
+  opacity: .22;
+}
+
+.transit__map.is-express-only .transit__stop.is-local .transit__stop-title {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .transit__track,
+  .transit__station,
+  .transit__stop {
+    transition: none;
+  }
+}

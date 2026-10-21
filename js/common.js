@@ -103,44 +103,56 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
   /* =======================
-  // Responsive Videos
+  // Transit Map
   ======================= */
-  reframe(".post__content iframe:not(.reframe-off), .page__content iframe:not(.reframe-off)");
+  const transitMap = document.querySelector(".transit__map");
 
+  if (transitMap) {
+    const lineButtons = document.querySelectorAll(".transit__line"),
+      serviceButtons = document.querySelectorAll(".transit__service button");
+    let focusedLine = null;
 
-  /* =======================
-  // LazyLoad Images
-  ======================= */
-  var lazyLoadInstance = new LazyLoad({
-    elements_selector: ".lazy"
-  })
+    // Picking a line dims every track and station not on it; picking it again
+    // brings them all back.
+    lineButtons.forEach(function (button) {
+      button.addEventListener("click", function () {
+        focusedLine = focusedLine === button.dataset.line ? null : button.dataset.line;
 
+        lineButtons.forEach(function (b) {
+          b.setAttribute("aria-pressed", b.dataset.line === focusedLine ? "true" : "false");
+        });
 
-  /* =======================
-  // Zoom Image
-  ======================= */
-  const lightense = document.querySelector(".page__content img, .post__content img, .gallery__image img"),
-  imageLink = document.querySelectorAll(".page__content a img, .post__content a img, .gallery__image a img");
-
-  if (imageLink) {
-    for (let i = 0; i < imageLink.length; i++) imageLink[i].parentNode.classList.add("image-link");
-    for (let i = 0; i < imageLink.length; i++) imageLink[i].classList.add("no-lightense");
-  };
-
-  if (lightense) {
-    Lightense(".page__content img:not(.no-lightense), .post__content img:not(.no-lightense), .gallery__image img:not(.no-lightense)", {
-    padding: 60,
-    offset: 30
+        transitMap.querySelectorAll("[data-lines]").forEach(function (el) {
+          el.classList.toggle("is-dim", focusedLine !== null && el.dataset.lines.split(" ").indexOf(focusedLine) < 0);
+        });
+      });
     });
-  };
 
+    // Tag links elsewhere on the site land here as /?tag=name.
+    const tag = new URLSearchParams(window.location.search).get("tag");
 
-  // =====================
-  // Load More Posts
-  // =====================
-  var load_posts_button = document.querySelector('.load-more-posts');
+    if (tag) {
+      const tagNote = document.querySelector(".transit__tag-note");
+      const wanted = tag.toLowerCase();
 
-  load_posts_button&&load_posts_button.addEventListener("click",function(e){e.preventDefault();var o=document.querySelector(".pagination"),e=pagination_next_url.split("/page")[0]+"/page/"+pagination_next_page_number+"/";fetch(e).then(function(e){if(e.ok)return e.text()}).then(function(e){var n=document.createElement("div");n.innerHTML=e;for(var t=document.querySelector(".grid"),a=n.querySelectorAll(".grid__post"),i=0;i<a.length;i++)t.appendChild(a.item(i));new LazyLoad({elements_selector:".lazy"});pagination_next_page_number++,pagination_next_page_number>pagination_available_pages_number&&(o.style.display="none")})});
+      tagNote.querySelector(".transit__tag-name").textContent = tag;
+      tagNote.hidden = false;
+
+      transitMap.querySelectorAll("[data-tags]").forEach(function (el) {
+        el.classList.toggle("is-untagged", el.dataset.tags.split(",").indexOf(wanted) < 0);
+      });
+    }
+
+    serviceButtons.forEach(function (button) {
+      button.addEventListener("click", function () {
+        transitMap.classList.toggle("is-express-only", button.dataset.service === "express");
+
+        serviceButtons.forEach(function (b) {
+          b.setAttribute("aria-pressed", b === button ? "true" : "false");
+        });
+      });
+    });
+  }
 
 
   /* =======================

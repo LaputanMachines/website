@@ -2,7 +2,7 @@
   transition: all 0.3s ease;
   background: var(--background-color, #fff);
   border-radius: 8px;
-  padding: 16px 16px 16px 0;
+  padding: 0 16px 16px 0;
   margin-bottom: 20px;
   z-index: 1000;
 }

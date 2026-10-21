@@ -1,0 +1,14 @@
+{%- comment -%}
+  Prints the indexes of the transit lines include.post rides, each followed by
+  a space ("1 2 "). A post rides a line when any of its tags is in that line's
+  tag list. Callers capture it with a leading space so `contains " 1 "` can
+  match the first index too, and can't match 11 or 21.
+{%- endcomment -%}
+{%- for line in site.data.settings.transit.lines -%}
+  {%- assign line_index = forloop.index0 -%}
+  {%- assign hit = false -%}
+  {%- for tag in include.post.tags -%}
+    {%- if line.tags contains tag %}{% assign hit = true %}{% endif -%}
+  {%- endfor -%}
+  {%- if hit %}{{ line_index }} {% endif -%}
+{%- endfor -%}

@@ -211,7 +211,7 @@
       box-shadow: 0 8px 40px -8px rgba(0, 0, 0, .22);
       background-color: var(--background-color);
 
-      .fa-external-link {
+      .ion-md-open {
         font-size: 12px;
       }
 
@@ -321,9 +321,6 @@
     }
   }
 
-  .cta-button {
-    margin-left: 24px;
-  }
 
   @media (max-width: $desktop) {
     flex-direction: column;
@@ -336,13 +333,6 @@
         margin-left: 4px;
         font-size: 16px;
       }
-    }
-
-    .cta-button {
-      padding: 6px 12px;
-      margin-top: 14px;
-      margin-left: 0;
-      font-size: 15px;
     }
   }
 }

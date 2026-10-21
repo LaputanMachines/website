@@ -1,16 +1,20 @@
 ---
-layout: page
+layout: default
+title: Not in service
 permalink: /404.html
 ---
 
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap">
+
 <div class="container">
-  <div class="row">
-    <div class="col col-12">
-      <div class="error">
-        <h2 class="error__title">404</h2>
-        <p class="error__text">The requested page could not be found.</p>
-        <a class="button button--big" href="/">Back to homepage</a>
-      </div>
+  <div class="error">
+    <div class="headsign" role="img" aria-label="Bus sign reading 404, Not in service">
+      <span class="headsign__route"><span class="headsign__led">404</span></span>
+      <span class="headsign__text"><span class="headsign__led">NOT IN SERVICE</span></span>
+    </div>
+    <div class="error__row">
+      <p class="error__text">The link may be wrong, or the page may have moved.</p>
+      <a class="error__link" href="{{ site.baseurl }}/">Back to the map</a>
     </div>
   </div>
 </div>

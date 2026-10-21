@@ -13,8 +13,6 @@ menu_settings:
   menu_items:
     - title: "Home"
       url: "/"
-    - title: "Articles"
-      url: "/articles/"
     - url: "/about/"
       title: "About"
     - title: "Projects"
@@ -27,80 +25,29 @@ menu_settings:
         title: "Photography"
 
 
-# Call to action button
-cta_button:
-  enable: false
-  cta_button_link: '/contact/'
-  cta_button_text: Get in touch
-
-
 #-------------------------------
-# Hero Settings
-hero:
-  enable: true
-  hero_title: "Thoughts On <span class='hero__underline' id='hero__software'>Software Development</span>, <span class='hero__underline' id='hero__productivity'>Productivity</span> & <span class='hero__underline' id='hero__community'>Community Building</span>."
-  hero_description: Hello 👋 I'm a cloud developer who loves building cool stuff with AWS, Azure, Python, and AI. I'm also passionate about building better communities through advocacy and activism. Check back often!
-
-
-#-------------------------------
-# Tags Section Settings
-tags_section:
-  enable: true
-  number_posts: 3 
-  number_columns: 3
-  tags:
-    - tag: "Development"
-    - tag: "Games"
-
-# You can add many tag sections to the homepage; each section will show the recent posts by the tag.
-
-
-#-------------------------------
-# Authors Section Settings
-authors_section:
-  enable: false
-  section_title: <blockquote>At the end of the day people won't remember what you said or did, they will remember how you made them feel.” &mdash;Maya Angelou</blockquote>
-
-
-#-------------------------------
-# Footer Settings
-footer_description: I'm a Cloud Developer Who Loves to Build Cool Stuff With AWS, Azure, Python, and AI. I'm also passionate about building better communities through advocacy and activism. Email me at <b>michael@bassi.li</b> if you want to chat.
-
-
-# Social Links
-social:
-- {icon: "linkedin", link: "https://www.linkedin.com/in/michael-bassili/"}
-- {icon: "github", link: "https://github.com/LaputanMachines/"}
-- {icon: "rss", link: "/feed.xml"}
-# Example of adding a new link to the footer - {icon: "instagram", link: "https://instagram.com"}
-# Other icons can be found at https://ionicons.com/v4/
-
-
-#-------------------------------
-# Newsletter Settings
-mailchimp_settings:
-  enable: false
-  mailchimp_title: Join The Newsletter
-  mailchimp_description: Subscribe to my newsletter for productivty tips, software development insights, and more.
-  mailchimp_identifier: https://bassi.us22.list-manage.com/subscribe/post # Add your MailChimp form identifier. For example - frnla.us6.list-manage.com/subscribe/post?u=6314d69a3f315af7ce3fb00a0&amp;id=3038727cc3
-  mailchimp_input_text: Your Email Address
-  mailchimp_button_text: Subscribe
-
-
-#-------------------------------
-# Contact Settings
-contact:
-  email: michael@bassi.li 
-  description: Danto comes with a built-in contact form, that you can use with Formspree service to handle up to 50 submissions per month for free. You could also easily switch to another contact form service if you want. # Add a description of your form
-
-# NOTE
-# Danto theme comes with a contact form built-in. You can use this form with Formspree (https://formspree.io/) service and get up to 50 submissions for free. Also, you can easily switch to another service if you want.
-
-#-------------------------------
-# Comment Section (Disqus)
-disqus_identifier:  # Add your shortname for Disqus Comment. For example anvod-studio-test
-
-
-#-------------------------------
-# Google Analytics
-google_analytics: # Add your GA Tracking Id
+# Transit Map (homepage)
+# Each line is a topic. A post rides every line that shares one of its tags,
+# and a post on two lines is drawn as an interchange. Lines are drawn left to
+# right in this order, so keep lines that share posts next to each other.
+# The express line stops at posts with `featured: true`.
+transit:
+  title: Writing on software, AI, games, and cities.
+  description: I'm Michael, a software engineer in Victoria British Columbia. New here? Take the express.
+  lines:
+    - name: Python
+      color: "#7259c4"
+      tags: [Python]
+    - name: Development
+      color: "#2f7ed8"
+      tags: [Development]
+    - name: AI
+      color: "#e2b12c"
+      ink: "#3a2c00"
+      tags: [AI]
+    - name: Culture & Writing
+      color: "#cf5a40"
+      tags: [Culture, Writing, Literature, History, Art, Reviews]
+    - name: Games
+      color: "#2e9a5a"
+      tags: [Games]

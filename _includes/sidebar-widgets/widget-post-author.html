@@ -2,30 +2,11 @@
 {% if author %}
 <div class="widget-sidebar widget-post-author">
 
-  {% if author %}
   <h2 class="post-author-name">
     <a href="/about">{{ author.name }}</a>
   </h2>
-  {% endif %}
   {% if author.content %}
   <p class="post-author-description">{{ author.content }}</p>
   {% endif %}
-
-  <div class="post-author-social">
-  {% if author %}
-    {% if author.website %}
-    <a class="post-author-link" href="{{ author.website }}" aria-label="Website link"><i class="ion ion-ios-link"></i></a>
-    {% endif %}
-    {% if author.facebook %}
-    <a class="post-author-link" href="{{ author.facebook }}" aria-label="Facebook link"><i class="ion ion-logo-facebook"></i></a>
-    {% endif %}
-    {% if author.twitter %}
-    <a class="post-author-link" href="{{ author.twitter }}" aria-label="Twitter link"><i class="ion ion-logo-twitter"></i></a>
-    {% endif %}
-    {% if author.instagram %}
-    <a class="post-author-link" href="{{ author.instagram }}" aria-label="Instagram link"><i class="ion ion-logo-instagram"></i></a>
-    {% endif %}
-  {% endif %}
-  </div>
 </div>
 {% endif %}
