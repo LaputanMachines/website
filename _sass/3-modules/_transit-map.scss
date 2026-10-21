@@ -1,8 +1,8 @@
 @use '0-settings' as *;
 
 /* Transit Map (homepage) */
-// Every post is a station on a strip map. Topic lines and the express line are
-// columns of a CSS grid; each post is one row. The track colour comes from
+// Every post is a station on a strip map. Topic lines are columns
+// of a CSS grid; each post is one row. The track colour comes from
 // --lc on each cell, and --t / --b trim a track to the station centre where a
 // line starts or ends, so the termini stop at a station instead of a row edge.
 .transit {
@@ -71,91 +71,6 @@
 
   @media (max-width: $mobile) {
     font-size: 16px;
-  }
-}
-
-
-/* Service switch */
-.transit__service-row {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 12px 20px;
-}
-
-.transit__service {
-  display: inline-flex;
-  border: 2px solid var(--heading-font-color);
-  border-radius: 10px;
-  overflow: hidden;
-
-  button {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    padding: 8px 16px;
-    font: inherit;
-    font-size: 14px;
-    font-weight: 500;
-    color: var(--heading-font-color);
-    background-color: var(--background-color);
-    border: 0;
-    cursor: pointer;
-
-    & + button {
-      border-left: 2px solid var(--heading-font-color);
-    }
-
-    &[aria-pressed="true"] {
-      color: var(--background-color);
-      background-color: var(--heading-font-color);
-    }
-  }
-}
-
-.transit__express-icon {
-  width: 10px;
-  height: 10px;
-  background-color: var(--express-color);
-  transform: rotate(45deg);
-}
-
-.transit__service-note {
-  margin-bottom: 0;
-  font-size: 14px;
-  color: var(--text-alt-color);
-
-  // On phones the switch alone is enough; the note wraps to two lines and
-  // pushes the map down.
-  @media (max-width: $mobile) {
-    display: none;
-  }
-}
-
-// Also marks featured posts on their own pages.
-.express-flag {
-  display: inline-block;
-  margin-right: 4px;
-  padding: 3px 9px;
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: .06em;
-  text-transform: uppercase;
-  color: #fff;
-  background-color: var(--express-color);
-  border-radius: 6px;
-}
-
-// In a post's date line, next to the reading time.
-.express-flag--post {
-  margin: 0;
-  padding: 1px 7px;
-  font-size: 10px;
-  line-height: 1.6;
-  border-radius: 4px;
-
-  &:hover {
-    color: #fff;
   }
 }
 
@@ -243,26 +158,6 @@
 
   &.is-off::before {
     display: none;
-  }
-}
-
-.transit__express-stop {
-  z-index: 2;
-  align-self: start;
-  justify-self: center;
-  width: 16px;
-  height: 16px;
-  margin-top: calc(var(--stop-y) - 8px);
-  background-color: var(--express-color);
-  border: 3px solid var(--background-color);
-  outline: 2px solid var(--express-color);
-  transform: rotate(45deg);
-
-  @media (max-width: $mobile) {
-    width: 12px;
-    height: 12px;
-    margin-top: calc(var(--stop-y) - 6px);
-    border-width: 2px;
   }
 }
 
@@ -356,16 +251,6 @@
     text-decoration: underline;
     text-underline-offset: 2px;
   }
-}
-
-// Express service fades the local stops back.
-.transit__map.is-express-only .is-local {
-  opacity: .22;
-}
-
-.transit__map.is-express-only .transit__stop.is-local .transit__stop-title {
-  font-size: 14px;
-  font-weight: 400;
 }
 
 @media (prefers-reduced-motion: reduce) {

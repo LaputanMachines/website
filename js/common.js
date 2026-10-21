@@ -108,8 +108,7 @@ document.addEventListener("DOMContentLoaded", function() {
   const transitMap = document.querySelector(".transit__map");
 
   if (transitMap) {
-    const lineButtons = document.querySelectorAll(".transit__line"),
-      serviceButtons = document.querySelectorAll(".transit__service button");
+    const lineButtons = document.querySelectorAll(".transit__line");
     let focusedLine = null;
 
     // Picking a line dims every track and station not on it; picking it again
@@ -142,16 +141,6 @@ document.addEventListener("DOMContentLoaded", function() {
         el.classList.toggle("is-untagged", el.dataset.tags.split(",").indexOf(wanted) < 0);
       });
     }
-
-    serviceButtons.forEach(function (button) {
-      button.addEventListener("click", function () {
-        transitMap.classList.toggle("is-express-only", button.dataset.service === "express");
-
-        serviceButtons.forEach(function (b) {
-          b.setAttribute("aria-pressed", b === button ? "true" : "false");
-        });
-      });
-    });
   }
 
 

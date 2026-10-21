@@ -29,26 +29,10 @@
   {%- assign counts = counts | push: count -%}
 {%- endfor -%}
 
-{%- comment -%} The express line stops only at featured posts. {%- endcomment -%}
-{%- assign express_first = -1 -%}
-{%- assign express_last = -1 -%}
-{%- assign express_count = 0 -%}
-{%- assign express_minutes = 0 -%}
-{%- for post in posts -%}
-  {%- if post.featured -%}
-    {%- if express_first == -1 %}{% assign express_first = forloop.index0 %}{% endif -%}
-    {%- assign express_last = forloop.index0 -%}
-    {%- assign express_count = express_count | plus: 1 -%}
-    {%- assign words = post.content | number_of_words -%}
-    {%- if words < 360 %}{% assign minutes = 1 %}{% else %}{% assign minutes = words | divided_by: 180 %}{% endif -%}
-    {%- assign express_minutes = express_minutes | plus: minutes -%}
-  {%- endif -%}
-{%- endfor -%}
-
 {%- comment -%}
-  Grid columns: year, express line, spacer, one per topic line, gap, title.
+  Grid columns: year, one per topic line, gap, title.
 {%- endcomment -%}
-{%- assign title_column = lines.size | plus: 5 -%}
+{%- assign title_column = lines.size | plus: 3 -%}
 
 <!-- begin transit map -->
 <section class="transit">
@@ -59,16 +43,6 @@
         <h1 class="transit__title">{{ site.data.settings.transit.title }}</h1>
         <p class="transit__description">{{ site.data.settings.transit.description }}</p>
       </div>
-
-      {% if express_count > 0 %}
-      <div class="transit__service-row">
-        <div class="transit__service" role="group" aria-label="Service">
-          <button type="button" data-service="all" aria-pressed="true">All stops</button>
-          <button type="button" data-service="express" aria-pressed="false"><span class="transit__express-icon"></span>Express</button>
-        </div>
-        <p class="transit__service-note"><span class="express-flag">Express</span> stops at {{ express_count }} of {{ posts.size }} posts, about {{ express_minutes }} minutes end to end.</p>
-      </div>
-      {% endif %}
 
       <div class="transit__legend">
         {%- for line in lines %}
@@ -82,24 +56,16 @@
       {%- comment -%} Tag links across the site point here as /?tag=name. {%- endcomment %}
       <p class="transit__tag-note" hidden>Showing posts tagged <b class="transit__tag-name"></b>. <a href="{{ site.baseurl }}/">Show all posts</a></p>
 
-      <div class="transit__map" style="grid-template-columns: var(--zone) var(--col) 10px repeat({{ lines.size }}, var(--col)) 20px minmax(0, 1fr);">
+      <div class="transit__map" style="grid-template-columns: var(--zone) repeat({{ lines.size }}, var(--col)) 20px minmax(0, 1fr);">
         {%- assign last_year = "" -%}
         {%- for post in posts -%}
           {%- assign i = forloop.index0 -%}
           {%- assign row = forloop.index -%}
           {%- assign ride = rides[i] -%}
           {%- assign year = post.date | date: "%Y" -%}
-          {%- if post.featured %}{% assign local = "" %}{% else %}{% assign local = " is-local" %}{% endif %}
 
-        <div class="transit__zone{{ local }}" style="grid-area: {{ row }} / 1;">{% if year != last_year %}{{ year }}{% endif %}</div>
+        <div class="transit__zone" style="grid-area: {{ row }} / 1;">{% if year != last_year %}{{ year }}{% endif %}</div>
           {%- assign last_year = year -%}
-
-          {%- if express_count > 0 %}
-        <span class="transit__track{% if i < express_first or i > express_last %} is-off{% endif %}" style="grid-area: {{ row }} / 2; --lc: var(--express-color);{% if i == express_first %} --t: var(--stop-y);{% endif %}{% if i == express_last %} --b: calc(100% - var(--stop-y));{% endif %}"></span>
-            {%- if post.featured %}
-        <span class="transit__express-stop" style="grid-area: {{ row }} / 2;" title="Express stop"></span>
-            {%- endif -%}
-          {%- endif -%}
 
           {%- capture post_tags %}{% for tag in post.tags %}{{ tag | downcase }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture -%}
           {%- assign station_from = 0 -%}
@@ -107,11 +73,11 @@
           {%- assign line_names = "" -%}
           {%- for line in lines -%}
             {%- assign line_index = forloop.index0 -%}
-            {%- assign column = line_index | plus: 4 -%}
+            {%- assign column = line_index | plus: 2 -%}
             {%- assign first = firsts[line_index] -%}
             {%- assign last = lasts[line_index] -%}
             {%- capture key %} {{ line_index }} {% endcapture %}
-        <span class="transit__track{{ local }}{% if first == -1 or i < first or i > last %} is-off{% endif %}" data-lines="{{ line_index }}" style="grid-area: {{ row }} / {{ column }}; --lc: {{ line.color }};{% if i == first %} --t: var(--stop-y);{% endif %}{% if i == last %} --b: calc(100% - var(--stop-y));{% endif %}"></span>
+        <span class="transit__track{% if first == -1 or i < first or i > last %} is-off{% endif %}" data-lines="{{ line_index }}" style="grid-area: {{ row }} / {{ column }}; --lc: {{ line.color }};{% if i == first %} --t: var(--stop-y);{% endif %}{% if i == last %} --b: calc(100% - var(--stop-y));{% endif %}"></span>
             {%- if ride contains key -%}
               {%- if station_from == 0 %}{% assign station_from = column %}{% endif -%}
               {%- assign station_to = column -%}
@@ -120,13 +86,13 @@
           {%- endfor -%}
 
           {%- if station_from > 0 %}
-        <span class="transit__station{{ local }}" data-lines="{{ ride | strip }}" data-tags="{{ post_tags }}" style="grid-area: {{ row }} / {{ station_from }} / {{ row | plus: 1 }} / {{ station_to | plus: 1 }};"></span>
+        <span class="transit__station" data-lines="{{ ride | strip }}" data-tags="{{ post_tags }}" style="grid-area: {{ row }} / {{ station_from }} / {{ row | plus: 1 }} / {{ station_to | plus: 1 }};"></span>
           {%- endif -%}
 
           {%- assign words = post.content | number_of_words -%}
           {%- if words < 360 %}{% assign minutes = 1 %}{% else %}{% assign minutes = words | divided_by: 180 %}{% endif %}
 
-        <div class="transit__stop{{ local }}" data-lines="{{ ride | strip }}" data-tags="{{ post_tags }}" style="grid-area: {{ row }} / {{ title_column }};">
+        <div class="transit__stop" data-lines="{{ ride | strip }}" data-tags="{{ post_tags }}" style="grid-area: {{ row }} / {{ title_column }};">
           <a class="transit__stop-title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
           {%- if forloop.first %} <span class="transit__latest">Latest</span>{% endif %}
           <span class="transit__stop-meta"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time> · {{ minutes }} min{% if line_names != "" %} · {{ line_names }}{% endif %}</span>

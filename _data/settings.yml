@@ -30,10 +30,9 @@ menu_settings:
 # Each line is a topic. A post rides every line that shares one of its tags,
 # and a post on two lines is drawn as an interchange. Lines are drawn left to
 # right in this order, so keep lines that share posts next to each other.
-# The express line stops at posts with `featured: true`.
 transit:
   title: Writing on software, AI, games, and cities.
-  description: I'm Michael, a software engineer in Victoria British Columbia. New here? Take the express.
+  description: I'm Michael, a software engineer in Victoria British Columbia.
   lines:
     - name: Python
       color: "#7259c4"
