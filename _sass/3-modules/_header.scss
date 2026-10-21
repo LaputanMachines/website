@@ -8,7 +8,18 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    padding: $base-spacing-unit;
+    padding: $base-spacing-unit ($base-spacing-unit + $bar-inset);
+
+    // Inset by the column padding, so the line spans the same width as the
+    // footer's top border.
+    &::after {
+      content: "";
+      position: absolute;
+      left: $base-spacing-unit;
+      right: $base-spacing-unit;
+      bottom: 0;
+      border-bottom: 1px solid var(--separator-color);
+    }
   }
 }
 

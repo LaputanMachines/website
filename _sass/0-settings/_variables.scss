@@ -9,6 +9,10 @@ $base-spacing-unit: 16px;
 // read as structure rather than as another outline.
 $separator-width: 3px;
 
+// How far the navbar and footer content sit inside their rules, so each rule
+// runs a little past the content on both sides.
+$bar-inset: 12px;
+
 // Transition
 $global-transition: all .2s;
 
