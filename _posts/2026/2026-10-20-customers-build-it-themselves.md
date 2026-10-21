@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "The Rise of Personal Software"
+title: "The Rise of Highly Personal Software"
 tags: [AI, Programming, Development]
 author: admin
 featured: true
