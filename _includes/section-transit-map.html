@@ -94,7 +94,6 @@
 
         <div class="transit__stop" data-lines="{{ ride | strip }}" data-tags="{{ post_tags }}" style="grid-area: {{ row }} / {{ title_column }};">
           <a class="transit__stop-title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-          {%- if forloop.first %} <span class="transit__latest">Latest</span>{% endif %}
           <span class="transit__stop-meta"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time> · {{ minutes }} min{% if line_names != "" %} · {{ line_names }}{% endif %}</span>
         </div>
         {%- endfor %}
