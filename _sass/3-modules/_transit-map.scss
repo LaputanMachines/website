@@ -6,7 +6,6 @@
 // --lc on each cell, and --t / --b trim a track to the station centre where a
 // line starts or ends, so the termini stop at a station instead of a row edge.
 .transit {
-  --zone: 64px;
   --col: 26px;
   // Distance from the top of a row to the station's centre line, which sits on
   // the first line of the post title.
@@ -14,7 +13,6 @@
   margin: 56px 0;
 
   @media (max-width: $mobile) {
-    --zone: 38px;
     --col: 18px;
     --stop-y: 23px;
     margin: 16px 0;
@@ -132,18 +130,6 @@
   display: grid;
 }
 
-.transit__zone {
-  padding-top: 15px;
-  font-family: $mono-font-family;
-  font-size: 12px;
-  color: var(--text-alt-color);
-
-  @media (max-width: $mobile) {
-    padding-top: 13px;
-    font-size: 11px;
-  }
-}
-
 .transit__track {
   position: relative;
   transition: opacity .15s;
@@ -184,6 +170,35 @@
     height: 15px;
     margin: calc(var(--stop-y) - 7.5px) 1px 0;
     border-width: 2.5px;
+  }
+
+  // The newest station of each year is labelled with it, growing past its
+  // lines when the year is wider than they are.
+  &.has-year {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+    min-width: calc(100% - 4px);
+    padding: 0 5px;
+    font-family: $mono-font-family;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 1;
+    color: var(--heading-font-color);
+    cursor: pointer;
+
+    @media (max-width: $mobile) {
+      min-width: calc(100% - 2px);
+      padding: 0 3px;
+      font-size: 9px;
+    }
+
+    // Filled while its year is picked.
+    &[aria-pressed="true"] {
+      color: var(--background-color);
+      background-color: var(--heading-font-color);
+    }
   }
 }
 

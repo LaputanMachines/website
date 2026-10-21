@@ -109,7 +109,24 @@ document.addEventListener("DOMContentLoaded", function() {
 
   if (transitMap) {
     const lineButtons = document.querySelectorAll(".transit__line");
+    const yearButtons = transitMap.querySelectorAll(".transit__station.has-year");
     let focusedLine = null;
+    let focusedYear = null;
+
+    // Dims an element off the picked line or outside the picked year; with
+    // both picked, only that line's posts from that year stay lit. Year
+    // stations stay lit through a year pick, so another year is one click away.
+    const dim = function (el) {
+      const offLine = focusedLine !== null && el.dataset.lines.split(" ").indexOf(focusedLine) < 0;
+      const yearButton = el.classList.contains("has-year");
+      const offYear = focusedYear !== null && !yearButton && el.dataset.year !== undefined && el.dataset.year !== focusedYear;
+
+      el.classList.toggle("is-dim", offLine || offYear);
+    };
+
+    const applyFocus = function () {
+      transitMap.querySelectorAll("[data-lines]").forEach(dim);
+    };
 
     // Picking a line dims every track and station not on it; picking it again
     // brings them all back.
@@ -121,9 +138,20 @@ document.addEventListener("DOMContentLoaded", function() {
           b.setAttribute("aria-pressed", b.dataset.line === focusedLine ? "true" : "false");
         });
 
-        transitMap.querySelectorAll("[data-lines]").forEach(function (el) {
-          el.classList.toggle("is-dim", focusedLine !== null && el.dataset.lines.split(" ").indexOf(focusedLine) < 0);
+        applyFocus();
+      });
+    });
+
+    // A year's station does the same for the posts published that year.
+    yearButtons.forEach(function (button) {
+      button.addEventListener("click", function () {
+        focusedYear = focusedYear === button.dataset.year ? null : button.dataset.year;
+
+        yearButtons.forEach(function (b) {
+          b.setAttribute("aria-pressed", b.dataset.year === focusedYear ? "true" : "false");
         });
+
+        applyFocus();
       });
     });
 
@@ -196,8 +224,12 @@ document.addEventListener("DOMContentLoaded", function() {
       let at = start;
       let step = Math.random() < .5 ? 1 : -1;
 
+      // A rider takes the year of the station it is at or heading for, so
+      // picking a year dims the riders outside it.
       const place = function () {
         rider.style.transform = stationPoint(stations[at], line.track);
+        rider.dataset.year = stations[at].dataset.year;
+        dim(rider);
       };
 
       const leg = function () {
@@ -285,7 +317,6 @@ document.addEventListener("DOMContentLoaded", function() {
           const rider = document.createElement("span");
           rider.className = "transit__rider";
           rider.dataset.lines = line;
-          rider.classList.toggle("is-dim", focusedLine !== null && focusedLine !== line);
           riders.appendChild(rider);
           places.push(walk(rider, shared, n % stations.length));
         }
