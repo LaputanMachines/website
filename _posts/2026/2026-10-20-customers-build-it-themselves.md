@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "The Rise of Highly Personal Software"
-tags: [AI, Programming, Development]
+tags: [AI, Development]
 author: admin
 ---
 

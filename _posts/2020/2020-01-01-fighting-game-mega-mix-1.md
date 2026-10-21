@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Fighting Game Mega Mix"
-tags: [Games, Culture, Reviews]
+tags: [Games, Culture]
 author: admin
 ---
 

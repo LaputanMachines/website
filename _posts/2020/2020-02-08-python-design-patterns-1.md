@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Common Python Design Patterns"
-tags: [Development, Python, Architecture]
+tags: [Development, Python]
 author: admin
 ---
 

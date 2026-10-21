@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Implementing Playlist Shuffle in Python"
-tags: [Development, Python, Algorithms]
+tags: [Development, Python]
 author: admin
 ---
 

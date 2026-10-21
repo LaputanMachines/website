@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "I Miss Using Em Dashes"
-tags: [AI, Writing, Art]
+tags: [AI, Writing]
 author: admin
 ---
 

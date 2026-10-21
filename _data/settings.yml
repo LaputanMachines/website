@@ -46,7 +46,7 @@ transit:
       tags: [AI]
     - name: Culture & Writing
       color: "#cf5a40"
-      tags: [Culture, Writing, Literature, History, Art, Reviews]
+      tags: [Culture, Writing]
     - name: Games
       color: "#2e9a5a"
       tags: [Games]

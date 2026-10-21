@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Simulating Dynamic Web Interactions"
-tags: [Development, Python, Web]
+tags: [Development, Python]
 author: admin
 ---
 

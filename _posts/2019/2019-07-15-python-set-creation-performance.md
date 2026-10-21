@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Speed of Python's set() vs {*}"
-tags: [Development, Python, Performance]
+tags: [Development, Python]
 author: admin
 ---
 

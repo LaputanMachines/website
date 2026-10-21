@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Test Driven Game Development"
-tags: [Development, Testing, Games]
+tags: [Development, Games]
 author: admin
 ---
 

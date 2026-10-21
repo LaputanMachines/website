@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Installing Custom Proton Builds On Linux"
-tags: [Linux, Games, Development]
+tags: [Games, Development]
 author: admin
 ---
 
