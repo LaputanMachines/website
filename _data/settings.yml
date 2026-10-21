@@ -19,8 +19,6 @@ menu_settings:
       submenu:
       - url: "https://aquinasgames.ca/"
         title: "Aquinas Games"
-      - url: "https://muckrack.com/michaelbassili"
-        title: "Journalism"
       - url: "https://www.flickr.com/photos/michaelbassili/"
         title: "Photography"
 
