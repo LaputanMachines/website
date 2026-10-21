@@ -8,8 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
   if (window.commonInitialized) return;
   window.commonInitialized = true;
 
-  const globalWrap = document.querySelector('.global-wrap'),
-    body = document.querySelector('body'),
+  const body = document.querySelector('body'),
     menuToggle = document.querySelector(".hamburger"),
     menuList = document.querySelector(".main-nav"),
     searchOpenButton = document.querySelector(".search-button"),
@@ -51,7 +50,6 @@ document.addEventListener("DOMContentLoaded", function() {
   function searchOpen() {
     search.classList.add("is-visible");
     body.classList.add("search-is-visible");
-    globalWrap.classList.add("is-active");
     menuToggle.classList.remove("is-open");
     menuList.classList.remove("is-visible");
     setTimeout(function () {
@@ -62,7 +60,6 @@ document.addEventListener("DOMContentLoaded", function() {
   function searchClose() {
     search.classList.remove("is-visible");
     body.classList.remove("search-is-visible");
-    globalWrap.classList.remove("is-active");
   }
 
   document.addEventListener('keydown', function(e){

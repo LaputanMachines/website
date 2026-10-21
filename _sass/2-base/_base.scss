@@ -8,6 +8,11 @@
 // paints and navigation does not flash the white default.
 html {
   background-color: var(--background-color);
+
+  // Always reserve the scrollbar's width, so the layout does not shift
+  // between short pages (no scrollbar) and long ones, or when search locks
+  // scrolling.
+  scrollbar-gutter: stable;
 }
 
 body {
@@ -37,13 +42,6 @@ body {
 
 ::selection {
   background: #F1DB4B;
-}
-
-.global-wrap {
-  &.is-active {
-    overflow-x: hidden;
-    overflow-y: scroll;
-  }
 }
 
 h1,
