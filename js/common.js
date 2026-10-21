@@ -60,12 +60,38 @@ document.addEventListener("DOMContentLoaded", function() {
   function searchClose() {
     search.classList.remove("is-visible");
     body.classList.remove("search-is-visible");
+
+    // Focus left in the hidden input made "Q" type into it instead of
+    // reopening search.
+    searchInput.blur();
   }
 
   document.addEventListener('keydown', function(e){
     if (e.key == 'Escape') {
       searchClose();
     }
+  });
+
+  // "Q" opens search, like the Search button. Skipped while typing in a
+  // field (so "q" still types in the search box) or with a modifier held.
+  document.addEventListener('keydown', function(e) {
+    if (!e.key || e.key.toLowerCase() !== 'q') {
+      return;
+    }
+
+    if (e.ctrlKey || e.metaKey || e.altKey || e.repeat) {
+      return;
+    }
+
+    const target = e.target;
+    const isTyping = target.matches('input, textarea, select') || target.isContentEditable;
+    if (isTyping || search.classList.contains('is-visible')) {
+      return;
+    }
+
+    // Stop the "q" from landing in the search input once it gains focus.
+    e.preventDefault();
+    searchOpen();
   });
 
 

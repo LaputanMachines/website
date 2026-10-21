@@ -330,6 +330,22 @@
       line-height: 1;
       font-weight: 500;
     }
+
+    // Keycap hint for the "Q" shortcut in js/common.js.
+    .search-button__key {
+      margin-left: 8px;
+      padding: 2px 6px;
+      font-size: 12px;
+      line-height: 1;
+      color: var(--text-alt-color);
+      border: 1px solid var(--separator-color);
+      border-radius: 4px;
+
+      // No keyboard on mobile, tablet or touch-only devices.
+      @media (max-width: $desktop), (hover: none) {
+        display: none;
+      }
+    }
   }
 
 
