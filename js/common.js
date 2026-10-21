@@ -116,12 +116,16 @@ document.addEventListener("DOMContentLoaded", function() {
   // =====================
   // Simple Jekyll Search
   // =====================
+  const SEARCH_RESULT_LIMIT = 50;
+
   SimpleJekyllSearch({
     searchInput: document.getElementById("js-search-input"),
     resultsContainer: document.getElementById("js-results-container"),
     json: "/search.json",
-    searchResultTemplate: '<div class="search-results__item"><a href={url} class="search-results__link"><time class="search-results-date" datetime="{date}">{date}</time><div class="search-results-title">{title}{external}</div></a></div>',
+    searchResultTemplate: '<div class="search-results__item"><a href={url} class="search-results__link"><div class="search-results-date"><time datetime="{date}">{date}</time>{tags}</div><div class="search-results-title">{title}{external}</div>{preview}</a></div>',
     templateMiddleware: searchResultPart,
+    // The default of 10 cut tag searches short (Urbanism alone has 15 posts).
+    limit: SEARCH_RESULT_LIMIT,
     noResultsText: '<div class="no-results">No results found...</div>'
   });
 
@@ -134,15 +138,24 @@ document.addEventListener("DOMContentLoaded", function() {
       return `"${value}"${newTab}`;
     }
 
-    if (prop !== "external") {
-      return undefined;
-    }
-
+    // Optional fields render nothing when empty, instead of the raw "{tags}".
     if (!value) {
       return "";
     }
 
-    return `<i class="search-results__external ion ion-md-open" aria-hidden="true"></i><span class="screen-reader-text"> (opens ${value} in a new tab)</span>`;
+    if (prop === "tags") {
+      return ` · ${value}`;
+    }
+
+    if (prop === "preview") {
+      return `<p class="search-results-preview">${value}</p>`;
+    }
+
+    if (prop === "external") {
+      return `<i class="search-results__external ion ion-md-open" aria-hidden="true"></i><span class="screen-reader-text"> (opens ${value} in a new tab)</span>`;
+    }
+
+    return undefined;
   }
 
 

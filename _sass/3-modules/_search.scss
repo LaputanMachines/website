@@ -170,6 +170,15 @@
     color: var(--text-alt-color);
   }
 
+  // The few words under the title; plain text, not the link's bold.
+  .search-results-preview {
+    margin: 4px 0 0;
+    font-size: 14px;
+    line-height: 1.4;
+    font-weight: 400;
+    color: var(--text-color);
+  }
+
   .no-results {
     width: 100%;
     margin: 0;
