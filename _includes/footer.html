@@ -13,7 +13,9 @@
         </div>
 
         <div class="footer__info">
-          <div class="copyright">{{site.time | date: '%Y'}} &copy; <a href="/">{{site.data.settings.title}}</a>. Please be nice and build cool things.</div>
+          <div class="copyright">{{site.time | date: '%Y'}} &copy; <a href="/">{{site.data.settings.title}}</a>. Please be nice and build cool things.
+            <div class="footer__disclaimer">{{ site.data.settings.disclaimer }}</div>
+          </div>
           <div class="footer__info__right">
             <div class="top" title="Top"><i class="ion-md-arrow-round-up"></i> <span class="top__text">Back to top</span></div>
           </div>
