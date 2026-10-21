@@ -117,6 +117,7 @@ document.addEventListener("DOMContentLoaded", function() {
   // Simple Jekyll Search
   // =====================
   const SEARCH_RESULT_LIMIT = 50;
+  const SEARCH_DEBOUNCE_MS = 150;
 
   SimpleJekyllSearch({
     searchInput: document.getElementById("js-search-input"),
@@ -126,6 +127,9 @@ document.addEventListener("DOMContentLoaded", function() {
     templateMiddleware: searchResultPart,
     // The default of 10 cut tag searches short (Urbanism alone has 15 posts).
     limit: SEARCH_RESULT_LIMIT,
+    // Search once typing pauses. The library rebuilds the list one
+    // innerHTML += per result, so searching on every key made typing lag.
+    debounceTime: SEARCH_DEBOUNCE_MS,
     noResultsText: '<div class="no-results">No results found...</div>'
   });
 
