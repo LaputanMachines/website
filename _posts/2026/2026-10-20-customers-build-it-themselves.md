@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "What Happens When Your Customers Build It Themselves?"
+title: "The Rise of Personal Software"
 tags: [AI, Programming, Development]
 author: admin
 featured: true
