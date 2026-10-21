@@ -121,16 +121,34 @@
   max-width: 720px;
   padding-bottom: 48px;
 
+  // One gap after every block, so a quote or heading sits no further from its
+  // neighbours than one paragraph from the next. Overrides the site-wide 32px
+  // and the 48px blockquote margin, but not :last-child below.
+  > :is(h1, h2, h3, h4, h5, h6, p, ul, ol, dl, blockquote, pre, table, figure) {
+    margin-top: 0;
+    margin-bottom: $content-spacing;
+  }
+
+  // Code blocks: Rouge nests the surface inside a wrapper div.
+  div.highlight {
+    margin-bottom: $content-spacing;
+  }
+
+  li {
+    margin-bottom: $content-spacing * 0.25;
+  }
+
   // The padding alone sets the gap to the footer, whatever the last block is.
   > :last-child {
     margin-bottom: 0;
   }
 
   // Display math is often wider than the text column: scroll it instead of
-  // letting it bleed past the page edge on narrow screens.
-  mjx-container[display="true"] {
+  // letting it bleed past the page edge on narrow screens. [jax] outranks
+  // MathJax's own 1em margin, which loads after this sheet.
+  mjx-container[jax][display="true"] {
     max-width: 100%;
-    margin-bottom: 32px;
+    margin: 0 0 $content-spacing;
     overflow-x: auto;
     overflow-y: hidden;
     padding-bottom: 8px;
@@ -139,7 +157,7 @@
   // draw.io diagrams: fill the column and keep the heading rhythm below.
   .mxgraph {
     width: 100%;
-    margin-bottom: 32px;
+    margin-bottom: $content-spacing;
 
     svg {
       width: 100%;

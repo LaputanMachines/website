@@ -5,6 +5,9 @@
 // Spaces
 $base-spacing-unit: 16px;
 
+// Gap between blocks in an article: paragraphs, headings, lists, quotes, code.
+$content-spacing: $base-spacing-unit;
+
 // Separator rules. Thicker than the 1px boxed borders so the full-width rules
 // read as structure rather than as another outline.
 $separator-width: 3px;
