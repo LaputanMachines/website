@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<!-- A post published on another site. Listings link straight to external_url; this stub only forwards stray visits to its /articles/ URL. -->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>{{ page.title | escape }}</title>
+  <link rel="canonical" href="{{ page.external_url }}">
+  <meta name="robots" content="noindex">
+  <meta http-equiv="refresh" content="0; url={{ page.external_url }}">
+</head>
+<body>
+  <p><a href="{{ page.external_url }}">{{ page.title | escape }}</a> is published on {{ page.external_site }}.</p>
+</body>
+</html>

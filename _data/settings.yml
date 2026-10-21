@@ -50,3 +50,6 @@ transit:
     - name: Games
       color: "#2e9a5a"
       tags: [Games]
+    - name: Urbanism
+      color: "#c2477f"
+      tags: [Urbanism]

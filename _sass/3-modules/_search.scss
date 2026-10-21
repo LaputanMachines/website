@@ -156,6 +156,13 @@
     text-underline-offset: 2px;
   }
 
+  // Matches the transit map's badge for posts published elsewhere.
+  .search-results__external {
+    margin-left: 6px;
+    font-size: .8em;
+    color: var(--text-alt-color);
+  }
+
   .search-results-date {
     font-size: 12px;
     font-weight: 500;

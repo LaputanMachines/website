@@ -120,9 +120,30 @@ document.addEventListener("DOMContentLoaded", function() {
     searchInput: document.getElementById("js-search-input"),
     resultsContainer: document.getElementById("js-results-container"),
     json: "/search.json",
-    searchResultTemplate: '<div class="search-results__item"><a href="{url}" class="search-results__link"><time class="search-results-date" datetime="{date}">{date}</time><div class="search-results-title">{title}</div></a></div>',
+    searchResultTemplate: '<div class="search-results__item"><a href={url} class="search-results__link"><time class="search-results-date" datetime="{date}">{date}</time><div class="search-results-title">{title}{external}</div></a></div>',
+    templateMiddleware: searchResultPart,
     noResultsText: '<div class="no-results">No results found...</div>'
   });
+
+  // Posts published elsewhere have an absolute url and an "external" site
+  // name. Like on the transit map, they open in a new tab with a badge.
+  // Returning undefined keeps the library's default substitution.
+  function searchResultPart(prop, value) {
+    if (prop === "url") {
+      const newTab = /^https?:\/\//.test(value) ? ' target="_blank" rel="noopener"' : "";
+      return `"${value}"${newTab}`;
+    }
+
+    if (prop !== "external") {
+      return undefined;
+    }
+
+    if (!value) {
+      return "";
+    }
+
+    return `<i class="search-results__external ion ion-md-open" aria-hidden="true"></i><span class="screen-reader-text"> (opens ${value} in a new tab)</span>`;
+  }
 
 
   /* =======================

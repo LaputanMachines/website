@@ -100,8 +100,15 @@
           {%- if words < 360 %}{% assign minutes = 1 %}{% else %}{% assign minutes = words | divided_by: 180 %}{% endif %}
 
         <div class="transit__stop" data-lines="{{ ride | strip }}" data-tags="{{ post_tags }}" data-year="{{ year }}" style="grid-area: {{ row }} / {{ title_column }};">
+          {%- comment -%} Posts published elsewhere open there in a new tab, badged, with the site's name in place of a reading time. {%- endcomment -%}
+          {%- if post.external_url %}
+          <a class="transit__stop-title" href="{{ post.external_url }}" target="_blank" rel="noopener">{{ post.title }}<i class="transit__external ion ion-md-open" aria-hidden="true"></i><span class="screen-reader-text"> (opens {{ post.external_site }} in a new tab)</span></a>
+          {%- assign minutes_text = post.external_site -%}
+          {%- else %}
           <a class="transit__stop-title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-          <span class="transit__stop-meta"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time> · {{ minutes }} min{% if line_names != "" %} · {{ line_names }}{% endif %}</span>
+          {%- capture minutes_text %}{{ minutes }} min{% endcapture -%}
+          {%- endif %}
+          <span class="transit__stop-meta"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time> · {{ minutes_text }}{% if line_names != "" %} · {{ line_names }}{% endif %}</span>
         </div>
         {%- endfor %}
       </div>

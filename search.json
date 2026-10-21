@@ -5,7 +5,8 @@ layout: null
   {% for post in site.posts %}
     {
       "title"  : "{{ post.title | escape }}",
-      "url"    : "{{ site.baseurl }}{{ post.url }}",
+      "url"    : "{% if post.external_url %}{{ post.external_url }}{% else %}{{ site.baseurl }}{{ post.url }}{% endif %}",
+      {% if post.external_url %}"external": "{{ post.external_site | escape }}",{% endif %}
       "date"   : "{{ post.date | date_to_long_string }}"
     } {% unless forloop.last %},{% endunless %}
   {% endfor %}

@@ -14,13 +14,26 @@
                                             ( ) Next stop
 {%- endcomment -%}
 {%- assign lines = site.data.settings.transit.lines -%}
+
+{%- comment -%}
+  Neighbours skip posts published elsewhere (external_url), so the stops stay
+  on this site. site.posts runs newest first: older is index + 1, newer index - 1.
+{%- endcomment -%}
+{%- assign local_posts = site.posts | where_exp: "post", "post.external_url == nil" -%}
+{%- assign previous_post = nil -%}
+{%- assign next_post = nil -%}
+{%- for post in local_posts -%}
+  {%- unless post.url == page.url %}{% continue %}{% endunless -%}
+  {%- assign previous_post = local_posts[forloop.index] -%}
+  {%- unless forloop.first %}{% assign newer_index = forloop.index0 | minus: 1 %}{% assign next_post = local_posts[newer_index] %}{% endunless -%}
+{%- endfor -%}
 {%- capture here %} {% include transit-rides.html post=page %}{% endcapture -%}
-{%- if page.previous %}{% capture older %} {% include transit-rides.html post=page.previous %}{% endcapture %}{% endif -%}
-{%- if page.next %}{% capture newer %} {% include transit-rides.html post=page.next %}{% endcapture %}{% endif -%}
+{%- if previous_post %}{% capture older %} {% include transit-rides.html post=previous_post %}{% endcapture %}{% endif -%}
+{%- if next_post %}{% capture newer %} {% include transit-rides.html post=next_post %}{% endcapture %}{% endif -%}
 
 {%- comment -%} The stripes on each half of the track, and each neighbour's label, title and meta. {%- endcomment -%}
 {%- for neighbour in (1..2) -%}
-  {%- if neighbour == 1 %}{% assign other = older %}{% assign stop = page.previous %}{% assign label = "Previous stop" %}{% else %}{% assign other = newer %}{% assign stop = page.next %}{% assign label = "Next stop" %}{% endif -%}
+  {%- if neighbour == 1 %}{% assign other = older %}{% assign stop = previous_post %}{% assign label = "Previous stop" %}{% else %}{% assign other = newer %}{% assign stop = next_post %}{% assign label = "Next stop" %}{% endif -%}
   {%- unless stop %}{% continue %}{% endunless -%}
 
   {%- capture stripes -%}
@@ -50,7 +63,7 @@
 
 {%- if include.variant == "rail" %}
 <nav class="stops-rail" aria-label="Older and newer posts">
-  {%- if page.previous %}
+  {%- if previous_post %}
   <div class="stops-rail__row">
     <span class="stops-rail__segment" aria-hidden="true">{{ older_stripes }}</span>
     <span class="stops-rail__dot" aria-hidden="true"></span>
@@ -59,14 +72,14 @@
   {%- endif %}
 
   <div class="stops-rail__row stops-rail__row--here">
-    {%- if page.next %}
+    {%- if next_post %}
     <span class="stops-rail__segment" aria-hidden="true">{{ newer_stripes }}</span>
     {%- endif %}
     <span class="stops-rail__dot" aria-hidden="true"></span>
     <div class="stops-rail__text"><span class="stops-nav__label">You are here</span></div>
   </div>
 
-  {%- if page.next %}
+  {%- if next_post %}
   <div class="stops-rail__row">
     <span class="stops-rail__dot" aria-hidden="true"></span>
     <div class="stops-rail__text">{{ newer_text }}</div>
@@ -78,12 +91,12 @@
   <nav class="stops-nav" aria-label="Older and newer posts">
 
     <div class="stops-nav__track" aria-hidden="true">
-      {%- if page.previous %}
+      {%- if previous_post %}
       <span class="stops-nav__segment stops-nav__segment--older">{{ older_stripes }}
       </span>
       <span class="stops-nav__stop stops-nav__stop--older"></span>
       {%- endif %}
-      {%- if page.next %}
+      {%- if next_post %}
       <span class="stops-nav__segment stops-nav__segment--newer">{{ newer_stripes }}
       </span>
       <span class="stops-nav__stop stops-nav__stop--newer"></span>
@@ -92,7 +105,7 @@
     </div>
 
     <div class="stops-nav__older">
-      {%- if page.previous %}{{ older_text }}
+      {%- if previous_post %}{{ older_text }}
       {%- else %}
       <span class="stops-nav__label">End of the line</span>
       <span class="stops-nav__meta">This is the first post.</span>
@@ -102,7 +115,7 @@
     <div class="stops-nav__here">You are here</div>
 
     <div class="stops-nav__newer">
-      {%- if page.next %}{{ newer_text }}
+      {%- if next_post %}{{ newer_text }}
       {%- else %}
       <span class="stops-nav__label">End of the line</span>
       <span class="stops-nav__meta">This is the newest post.</span>

@@ -255,6 +255,13 @@
   }
 }
 
+// Badge on posts published elsewhere: the link leaves this site.
+.transit__external {
+  margin-left: 6px;
+  font-size: .8em;
+  color: var(--text-alt-color);
+}
+
 .transit__stop-meta {
   display: block;
   margin-top: 2px;
