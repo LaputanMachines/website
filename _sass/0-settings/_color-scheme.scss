@@ -9,9 +9,7 @@
   --lighten-blue: #eaecef;
   --light-blue: #e4e6eb;
   --blue-gray: #697177;
-  --gray: #9e9e9e;
   --dark: #111;
-  --dark-blue: #1e2943;
 
   --background-color: var(--white);
   --background-alt-color: var(--lighten-blue);
@@ -28,14 +26,11 @@
   --link-color-hover: var(--dark);
 
   --button-color: #320101;
-  --button-background-color: var(--primary-color);
-  --button-background-hover: #edc352;
 
   // Express service: the homepage map's express line and the flag on featured posts.
   --express-color: #f26b1d;
 
   --border-color: var(--light-blue);
-  --border-alt-color: var(--white);
   // Full-width rules are darker than the boxed borders so they read as
   // structure rather than as the outline of a card or pill.
   --separator-color: #d3d6dc;
@@ -64,6 +59,4 @@
   --code-deleted-background: #ffebe9;
   --code-inserted-color: #116329;
   --code-inserted-background: #dafbe1;
-
-  --syntax-highlighting-background: var(--code-background);
 }

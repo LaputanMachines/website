@@ -200,7 +200,6 @@ hr {
 
 table {
   font-size: 12px;
-  color: var(--dark);
   width: 100%;
   border-width: 1px;
   border-color: var(--background-alt-color);
@@ -229,13 +228,4 @@ table td {
   padding: 10px;
   font-size: 14px;
   border: 1px solid var(--background-alt-color);
-}
-
-.lazy {
-  opacity: 0;
-  transition: opacity .3s ease;
-}
-
-.lazy.loaded {
-  opacity: 1;
 }

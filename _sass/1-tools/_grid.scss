@@ -59,119 +59,24 @@
   padding-right: $base-spacing-unit;
 }
 
-[class^="col-"] {
-  flex: auto;
-}
-
-
 @for $i from 0 through $columns {
   .col-#{$i} {
     width: calc(#{$i} / #{$columns} * 100%);
   }
 }
 
-@for $i from 0 through $columns {
-  .push-#{$i} {
-    margin-left: calc(#{$i} / #{$columns} * 100%);
+@media(max-width: $wide) {
+  @for $i from 0 through $columns {
+    .col-w-#{$i} {
+      width: calc(#{$i} / #{$columns} * 100%);
+    }
   }
 }
 
-@for $i from 0 through $columns {
-  .pull-#{$i} {
-    margin-right: calc(#{$i} / #{$columns} * 100%);
-  }
-}
-
-
-@each $key,
-$val in $mq {
-
-  // WIDE
-  @media(max-width: $wide) {
-
-    @for $i from 0 through $columns {
-      .col-w-#{$i} {
-        width: calc(#{$i} / #{$columns} * 100%);
-      }
-    }
-
-    @for $i from 0 through $columns {
-      .push-w-#{$i} {
-        margin-left: calc(#{$i} / #{$columns} * 100%);
-      }
-    }
-
-    @for $i from 0 through $columns {
-      .pull-w-#{$i} {
-        margin-right: calc(#{$i} / #{$columns} * 100%);
-      }
+@media(max-width: $desktop) {
+  @for $i from 0 through $columns {
+    .col-d-#{$i} {
+      width: calc(#{$i} / #{$columns} * 100%);
     }
   }
-
-  // DESKTOP
-  @media(max-width: $desktop) {
-
-    @for $i from 0 through $columns {
-      .col-d-#{$i} {
-        width: calc(#{$i} / #{$columns} * 100%);
-      }
-    }
-
-    @for $i from 0 through $columns {
-      .push-d-#{$i} {
-        margin-left: calc(#{$i} / #{$columns} * 100%);
-      }
-    }
-
-    @for $i from 0 through $columns {
-      .pull-d-#{$i} {
-        margin-right: calc(#{$i} / #{$columns} * 100%);
-      }
-    }
-  }
-
-  // TABLET
-  @media(max-width: $tablet) {
-
-    @for $i from 0 through $columns {
-      .col-t-#{$i} {
-        width: calc(#{$i} / #{$columns} * 100%);
-      }
-    }
-
-    @for $i from 0 through $columns {
-      .push-t-#{$i} {
-        margin-left: calc(#{$i} / #{$columns} * 100%);
-      }
-    }
-
-    @for $i from 0 through $columns {
-      .pull-t-#{$i} {
-        margin-right: calc(#{$i} / #{$columns} * 100%);
-      }
-    }
-  }
-
-  // MOBILE
-  @media(max-width: $mobile) {
-
-    @for $i from 0 through $columns {
-      .col-m-#{$i} {
-        width: calc(#{$i} / #{$columns} * 100%);
-      }
-    }
-
-    @for $i from 0 through $columns {
-      .push-m-#{$i} {
-        margin-left: calc(#{$i} / #{$columns} * 100%);
-      }
-    }
-
-    @for $i from 0 through $columns {
-      .pull-m-#{$i} {
-        margin-right: calc(#{$i} / #{$columns} * 100%);
-      }
-    }
-  }
-
 }

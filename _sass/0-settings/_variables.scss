@@ -5,9 +5,6 @@
 // Spaces
 $base-spacing-unit: 16px;
 
-// Border radius
-$global-radius: 22px;
-
 // Separator rules. Thicker than the 1px boxed borders so the full-width rules
 // read as structure rather than as another outline.
 $separator-width: 3px;
@@ -20,9 +17,6 @@ $global-transition: all .2s;
 // Typography
 // *****************
 $base-font-size: 18px;
-$base-font-style: normal;
-$base-font-variant: normal;
-$base-font-weight: normal;
 $base-font-family: 'Poppins', Helvetica Neue, Helvetica, Arial, sans-serif;
 $base-line-height: 1.6;
 
