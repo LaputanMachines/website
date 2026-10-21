@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Are We Sacrificing Developer Skills for AI Convenience?"
-tags: [Development, AI, Career]
+tags: [Development, AI]
 author: admin
 ---
 

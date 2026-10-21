@@ -32,7 +32,7 @@ menu_settings:
 # right in this order, so keep lines that share posts next to each other.
 transit:
   title: Writing on software, AI, games, and cities.
-  description: I'm Michael, a software engineer in Victoria British Columbia.
+  description: I'm Michael, a software engineer in Victoria British Columbia. I love software, art, games, and cities.
   lines:
     - name: Python
       color: "#7259c4"
@@ -46,7 +46,7 @@ transit:
       tags: [AI]
     - name: Culture & Writing
       color: "#cf5a40"
-      tags: [Culture, Writing]
+      tags: [Culture]
     - name: Games
       color: "#2e9a5a"
       tags: [Games]
