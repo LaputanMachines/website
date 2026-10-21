@@ -1,8 +1,9 @@
 @use '0-settings' as *;
 
-/* Article meta: date, separator and reading time */
+/* Article meta: date, separator, reading time and tags */
 .article__meta-info {
   display: flex;
+  flex-wrap: wrap;
   align-items: baseline;
   gap: 12px;
   margin-bottom: 8px;
@@ -25,7 +26,8 @@
   opacity: 0.6;
 }
 
-.article__reading-time {
+.article__reading-time,
+.article__tags {
   font-size: 12px;
   line-height: 1;
   font-weight: 500;

@@ -11,6 +11,14 @@
   overflow-y: auto;
 }
 
+/* Desktop: the full list, never a scrollbar. */
+@media (min-width: 1025px) {
+  .toc-nav {
+    max-height: none;
+    overflow-y: visible;
+  }
+}
+
 .toc-list {
   list-style: none;
   padding: 0;

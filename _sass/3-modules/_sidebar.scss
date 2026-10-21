@@ -29,7 +29,12 @@
 
 
 // Widget Post Author
+// Mobile only: the post rail takes its place in the desktop sidebar.
 .widget-post-author {
+  @media (min-width: $desktop + 1) {
+    display: none;
+  }
+
   .post-author-name {
     margin-bottom: 8px;
     font-size: 20px;

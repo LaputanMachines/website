@@ -2,11 +2,17 @@
 layout: default
 ---
 
+{% include post-navigation.html %}
+
 <div class="container">
   <div class="row">
     <div class="col col-10 col-w-12">
       <div class="post__head">
   
+        {% if page.title %}
+        <h1 class="post__title">{{ page.title | escape }}</h1>
+        {% endif %}
+
         <div class="post__meta">
           <div class="article__meta-info">
             <span class="article__date"><time datetime="{{ page.date | date_to_xmlschema }}">{% assign date_format = site.minima.date_format | default: "%d %-b, %Y" %}{{ page.date | date: date_format }}</time></span>
@@ -20,20 +26,12 @@ layout: default
               {% endif %}
               {{ reading_time }} min read
             </span>
+            {% if page.tags.size > 0 %}
+            <span class="article__separator">•</span>
+            <span class="article__tags">{{ page.tags | join: ", " }}</span>
+            {% endif %}
           </div>
         </div>
-  
-        {% if page.title %}
-        <h1 class="post__title">{{ page.title | escape }}</h1>
-        {% endif %}
-
-        {% if page.tags.size > 0 %}
-        <div class="post__tags">
-          {% for tag in page.tags %}
-          <a class="post__tag" href="{{ site.baseurl }}/?tag={{ tag | downcase | url_encode }}">{{ tag }}</a>
-          {% endfor %}
-        </div>
-        {% endif %}
   
         {% if page.description %}
         <div class="post__description">{{ page.description }}</div>
@@ -51,6 +49,7 @@ layout: default
     <div class="sidebar-left col col-3 col-w-4 col-d-12">
       <aside class="sidebar">
         {% include sidebar-widgets/widget-toc.html %}
+        {% include post-navigation.html variant="rail" %}
         {% include sidebar-widgets/widget-post-author.html %}
       </aside>
     </div>
@@ -67,5 +66,3 @@ layout: default
   </div>
 </div>
 <!-- end post -->
-
-{% include post-navigation.html %}

@@ -2,45 +2,97 @@
   The neighbouring posts as a stretch of the homepage map: previous stop (older),
   this post, next stop (newer). Each half of the track carries one stripe per
   line both posts ride, or a dotted walking transfer when they share none.
+
+  Two layouts: a horizontal strip above the article (the default, shown below
+  desktop width) and, with variant="rail", a vertical rail for the desktop
+  sidebar.
+
+    strip:  ( )=====(●)=====( )      rail:  ( ) Previous stop
+                                             ‖
+                                            (●) You are here
+                                             ‖
+                                            ( ) Next stop
 {%- endcomment -%}
 {%- assign lines = site.data.settings.transit.lines -%}
 {%- capture here %} {% include transit-rides.html post=page %}{% endcapture -%}
 {%- if page.previous %}{% capture older %} {% include transit-rides.html post=page.previous %}{% endcapture %}{% endif -%}
 {%- if page.next %}{% capture newer %} {% include transit-rides.html post=page.next %}{% endcapture %}{% endif -%}
 
+{%- comment -%} The stripes on each half of the track, and each neighbour's label, title and meta. {%- endcomment -%}
+{%- for neighbour in (1..2) -%}
+  {%- if neighbour == 1 %}{% assign other = older %}{% assign stop = page.previous %}{% assign label = "Previous stop" %}{% else %}{% assign other = newer %}{% assign stop = page.next %}{% assign label = "Next stop" %}{% endif -%}
+  {%- unless stop %}{% continue %}{% endunless -%}
+
+  {%- capture stripes -%}
+    {%- assign shared = 0 -%}
+    {%- for line in lines -%}
+      {%- capture key %} {{ forloop.index0 }} {% endcapture -%}
+      {%- if here contains key and other contains key %}
+        <i style="--lc: {{ line.color }};"></i>
+        {%- assign shared = shared | plus: 1 -%}
+      {%- endif -%}
+    {%- endfor -%}
+    {%- if shared == 0 %}
+        <i class="is-walk"></i>
+    {%- endif -%}
+  {%- endcapture -%}
+
+  {%- capture text %}
+      <span class="stops-nav__label">{{ label }}</span>
+      <a class="stops-nav__title" href="{{ stop.url | prepend: site.baseurl }}">{{ stop.title }}</a>
+      {%- assign words = stop.content | number_of_words -%}
+      {%- if words < 360 %}{% assign minutes = 1 %}{% else %}{% assign minutes = words | divided_by: 180 %}{% endif %}
+      <span class="stops-nav__meta"><time datetime="{{ stop.date | date_to_xmlschema }}">{{ stop.date | date: "%b %-d, %Y" }}</time> · {{ minutes }} min</span>
+  {%- endcapture -%}
+
+  {%- if neighbour == 1 %}{% assign older_stripes = stripes %}{% assign older_text = text %}{% else %}{% assign newer_stripes = stripes %}{% assign newer_text = text %}{% endif -%}
+{%- endfor -%}
+
+{%- if include.variant == "rail" %}
+<nav class="stops-rail" aria-label="Older and newer posts">
+  {%- if page.previous %}
+  <div class="stops-rail__row">
+    <span class="stops-rail__segment" aria-hidden="true">{{ older_stripes }}</span>
+    <span class="stops-rail__dot" aria-hidden="true"></span>
+    <div class="stops-rail__text">{{ older_text }}</div>
+  </div>
+  {%- endif %}
+
+  <div class="stops-rail__row stops-rail__row--here">
+    {%- if page.next %}
+    <span class="stops-rail__segment" aria-hidden="true">{{ newer_stripes }}</span>
+    {%- endif %}
+    <span class="stops-rail__dot" aria-hidden="true"></span>
+    <div class="stops-rail__text"><span class="stops-nav__label">You are here</span></div>
+  </div>
+
+  {%- if page.next %}
+  <div class="stops-rail__row">
+    <span class="stops-rail__dot" aria-hidden="true"></span>
+    <div class="stops-rail__text">{{ newer_text }}</div>
+  </div>
+  {%- endif %}
+</nav>
+{%- else %}
 <div class="container">
   <nav class="stops-nav" aria-label="Older and newer posts">
 
     <div class="stops-nav__track" aria-hidden="true">
-      {%- for neighbour in (1..2) -%}
-        {%- if neighbour == 1 %}{% assign other = older %}{% assign side = "older" %}{% assign exists = page.previous %}{% else %}{% assign other = newer %}{% assign side = "newer" %}{% assign exists = page.next %}{% endif -%}
-        {%- if exists %}
-      <span class="stops-nav__segment stops-nav__segment--{{ side }}">
-          {%- assign shared = 0 -%}
-          {%- for line in lines -%}
-            {%- capture key %} {{ forloop.index0 }} {% endcapture -%}
-            {%- if here contains key and other contains key %}
-        <i style="--lc: {{ line.color }};"></i>
-              {%- assign shared = shared | plus: 1 -%}
-            {%- endif -%}
-          {%- endfor -%}
-          {%- if shared == 0 %}
-        <i class="is-walk"></i>
-          {%- endif %}
+      {%- if page.previous %}
+      <span class="stops-nav__segment stops-nav__segment--older">{{ older_stripes }}
       </span>
-      <span class="stops-nav__stop stops-nav__stop--{{ side }}"></span>
-        {%- endif -%}
-      {%- endfor %}
+      <span class="stops-nav__stop stops-nav__stop--older"></span>
+      {%- endif %}
+      {%- if page.next %}
+      <span class="stops-nav__segment stops-nav__segment--newer">{{ newer_stripes }}
+      </span>
+      <span class="stops-nav__stop stops-nav__stop--newer"></span>
+      {%- endif %}
       <span class="stops-nav__stop stops-nav__stop--here"></span>
     </div>
 
     <div class="stops-nav__older">
-      {%- if page.previous %}
-      <span class="stops-nav__label">Previous stop</span>
-      <a class="stops-nav__title" href="{{ page.previous.url | prepend: site.baseurl }}">{{ page.previous.title }}</a>
-      {%- assign words = page.previous.content | number_of_words -%}
-      {%- if words < 360 %}{% assign minutes = 1 %}{% else %}{% assign minutes = words | divided_by: 180 %}{% endif %}
-      <span class="stops-nav__meta"><time datetime="{{ page.previous.date | date_to_xmlschema }}">{{ page.previous.date | date: "%b %-d, %Y" }}</time> · {{ minutes }} min</span>
+      {%- if page.previous %}{{ older_text }}
       {%- else %}
       <span class="stops-nav__label">End of the line</span>
       <span class="stops-nav__meta">This is the first post.</span>
@@ -50,12 +102,7 @@
     <div class="stops-nav__here">You are here</div>
 
     <div class="stops-nav__newer">
-      {%- if page.next %}
-      <span class="stops-nav__label">Next stop</span>
-      <a class="stops-nav__title" href="{{ page.next.url | prepend: site.baseurl }}">{{ page.next.title }}</a>
-      {%- assign words = page.next.content | number_of_words -%}
-      {%- if words < 360 %}{% assign minutes = 1 %}{% else %}{% assign minutes = words | divided_by: 180 %}{% endif %}
-      <span class="stops-nav__meta"><time datetime="{{ page.next.date | date_to_xmlschema }}">{{ page.next.date | date: "%b %-d, %Y" }}</time> · {{ minutes }} min</span>
+      {%- if page.next %}{{ newer_text }}
       {%- else %}
       <span class="stops-nav__label">End of the line</span>
       <span class="stops-nav__meta">This is the newest post.</span>
@@ -64,3 +111,4 @@
 
   </nav>
 </div>
+{%- endif %}
