@@ -3,7 +3,6 @@ layout: post
 title: "Fighting Game Mega Mix"
 tags: [Games, Culture, Reviews]
 author: admin
-featured: true
 ---
 
 ## I: Introduction To The Madness

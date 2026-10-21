@@ -3,7 +3,6 @@ layout: post
 title: "The Rise of Highly Personal Software"
 tags: [AI, Programming, Development]
 author: admin
-featured: true
 ---
 
 I think there's a strong desire for uniquely personalized software permeating the market these days, spurred by the commodification of cheap large language models from Anthropic, OpenAI, and Google. We saw companies try their hand as enabling this kind of behaviour through MCP and other model-level integrations, but Muse and other forms of agentic helper tools have turned the tides again. My friend is using Muse to help him look for a new apartment. Unlike the APIs of yesteryear, foundation models are really good at distilling vague, nebulous requirements into tangible outcomes. 
