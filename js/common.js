@@ -171,14 +171,17 @@ document.addEventListener("DOMContentLoaded", function() {
   if (transitMap) {
     const lineButtons = document.querySelectorAll(".transit__line");
     const yearButtons = transitMap.querySelectorAll(".transit__station.has-year");
-    let focusedLine = null;
+    const focusedLines = new Set();
     let focusedYear = null;
 
-    // Dims an element off the picked line or outside the picked year; with
-    // both picked, only that line's posts from that year stay lit. Year
+    // Dims an element on none of the picked lines or outside the picked year;
+    // with both picked, only those lines' posts from that year stay lit. Year
     // stations stay lit through a year pick, so another year is one click away.
     const dim = function (el) {
-      const offLine = focusedLine !== null && el.dataset.lines.split(" ").indexOf(focusedLine) < 0;
+      const onLine = el.dataset.lines.split(" ").some(function (line) {
+        return focusedLines.has(line);
+      });
+      const offLine = focusedLines.size > 0 && !onLine;
       const yearButton = el.classList.contains("has-year");
       const offYear = focusedYear !== null && !yearButton && el.dataset.year !== undefined && el.dataset.year !== focusedYear;
 
@@ -189,16 +192,19 @@ document.addEventListener("DOMContentLoaded", function() {
       transitMap.querySelectorAll("[data-lines]").forEach(dim);
     };
 
-    // Picking a line dims every track and station not on it; picking it again
-    // brings them all back.
+    // Picking lines dims every track and station on none of them, e.g. AI and
+    // Games together light both; picking a line again drops it.
     lineButtons.forEach(function (button) {
       button.addEventListener("click", function () {
-        focusedLine = focusedLine === button.dataset.line ? null : button.dataset.line;
+        const line = button.dataset.line;
 
-        lineButtons.forEach(function (b) {
-          b.setAttribute("aria-pressed", b.dataset.line === focusedLine ? "true" : "false");
-        });
+        if (focusedLines.has(line)) {
+          focusedLines.delete(line);
+        } else {
+          focusedLines.add(line);
+        }
 
+        button.setAttribute("aria-pressed", focusedLines.has(line) ? "true" : "false");
         applyFocus();
       });
     });
