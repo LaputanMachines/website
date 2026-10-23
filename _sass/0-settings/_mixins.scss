@@ -1,3 +1,5 @@
+@use 'variables' as *;
+
 // Reset list
 @mixin list-reset() {
   list-style-type: none;
@@ -13,4 +15,23 @@
   position: absolute !important;
   width: 1px;
   word-wrap: normal !important;
+}
+
+// One gap after every block, so a quote or heading sits no further from its
+// neighbours than one paragraph from the next. Overrides the site-wide 32px
+// and the 48px blockquote margin. Shared by articles and pages.
+@mixin content-blocks() {
+  > :is(h1, h2, h3, h4, h5, h6, p, ul, ol, dl, blockquote, pre, table, figure) {
+    margin-top: 0;
+    margin-bottom: $content-spacing;
+  }
+
+  // Code blocks: Rouge nests the surface inside a wrapper div.
+  div.highlight {
+    margin-bottom: $content-spacing;
+  }
+
+  li {
+    margin-bottom: $content-spacing * 0.25;
+  }
 }
